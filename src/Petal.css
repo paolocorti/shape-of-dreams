@@ -1,0 +1,434 @@
+.st0 {
+  fill: #c97d75;
+}
+.st1 {
+  opacity: 0.7;
+}
+
+.shadow {
+  opacity: 0.7;
+  fill: url(#SVGID_1_);
+}
+
+#petal-1 {
+  transform: rotate(0);
+  animation: rotationPositive4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-2 {
+  transform: rotate(0);
+  animation: rotationPositive3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-3 {
+  transform: rotate(0);
+  animation: rotationPositive2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-4 {
+  transform: rotate(0);
+  animation: rotationPositive1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-5 {
+  transform: rotate(0);
+  animation: rotation0 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-6 {
+  transform: rotate(0);
+  animation: rotationNegative1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-7 {
+  transform: rotate(0);
+  animation: rotationNegative2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-8 {
+  transform: rotate(0);
+  animation: rotationNegative3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-9 {
+  transform: rotate(0);
+  animation: rotationNegative4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-10 {
+  transform: rotate(0);
+  animation: rotationNegative5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-11 {
+  transform: rotate(0);
+  animation: rotationNegative4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-12 {
+  transform: rotate(0);
+  animation: rotationNegative3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-13 {
+  transform: rotate(0);
+  animation: rotationNegative2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-14 {
+  transform: rotate(0);
+  animation: rotationNegative1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-15 {
+  transform: rotate(0);
+  animation: rotation0 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-16 {
+  transform: rotate(0);
+  animation: rotationPositive1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-17 {
+  transform: rotate(0);
+  animation: rotationPositive2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-18 {
+  transform: rotate(0);
+  animation: rotationPositive3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-19 {
+  transform: rotate(0);
+  animation: rotationPositive4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-20 {
+  transform: rotate(0);
+  animation: rotationPositive5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-21 {
+  transform: rotate(0);
+  animation: rotationNegative6 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-22 {
+  transform: rotate(0);
+  animation: rotationNegative5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-23 {
+  transform: rotate(0);
+  animation: rotationNegative4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-24 {
+  transform: rotate(0);
+  animation: rotationNegative3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-25 {
+  transform: rotate(0);
+  animation: rotationNegative2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-26 {
+  transform: rotate(0);
+  animation: rotationNegative1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-27 {
+  transform: rotate(0);
+  animation: rotation0 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-28 {
+  transform: rotate(0);
+  animation: rotationPositive1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-29 {
+  transform: rotate(0);
+  animation: rotationPositive2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-30 {
+  transform: rotate(0);
+  animation: rotationPositive3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-31 {
+  transform: rotate(0);
+  animation: rotationPositive4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-32 {
+  transform: rotate(0);
+  animation: rotationPositive5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-33 {
+  transform: rotate(0);
+  animation: rotationPositive6 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+@keyframes rotationNegative6 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-81.6deg);
+  }
+}
+
+@keyframes rotationNegative5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-68deg);
+  }
+}
+
+@keyframes rotationNegative4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-54.4deg);
+  }
+}
+
+@keyframes rotationNegative3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-40.8deg);
+  }
+}
+
+@keyframes rotationNegative2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-27.2deg);
+  }
+}
+
+@keyframes rotationNegative1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-13.6deg);
+  }
+}
+
+@keyframes rotation0 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotationPositive1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(13.6deg);
+  }
+}
+
+@keyframes rotationPositive2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(27.2deg);
+  }
+}
+
+@keyframes rotationPositive3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(40.8deg);
+  }
+}
+
+@keyframes rotationPositive4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(54.4deg);
+  }
+}
+
+@keyframes rotationPositive5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(68deg);
+  }
+}
+
+@keyframes rotationPositive6 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(81.6deg);
+  }
+}
+
+.petal-row-1 {
+  transform: translate(0px, -500px);
+  animation: gravity1 4s forwards;
+  animation-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.petal-row-2 {
+  transform: translate(0px, -500px);
+  animation: gravity2 4s forwards;
+  animation-delay: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.petal-row-3 {
+  transform: translate(0px, -500px);
+  animation: gravity3 4s forwards;
+  animation-delay: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes movement {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(6px, 0px);
+  }
+  50% {
+    transform: translate(6px, 6px);
+  }
+  75% {
+    transform: translate(0px, 6px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes gravity1 {
+  0% {
+    transform: translate(0px, -500px);
+  }
+  98% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes gravity2 {
+  0% {
+    transform: translate(0px, -500px);
+  }
+  98% {
+    transform: translate(0px, 60px);
+  }
+  100% {
+    transform: translate(0px, 60px);
+  }
+}
+
+@keyframes gravity3 {
+  0% {
+    transform: translate(0px, -500px);
+  }
+  98% {
+    transform: translate(0px, 126px);
+  }
+  100% {
+    transform: translate(0px, 126px);
+  }
+}

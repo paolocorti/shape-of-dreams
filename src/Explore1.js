@@ -1,5 +1,6 @@
 import React from 'react';
 import Swipe from 'react-easy-swipe';
+import Petals from './Petals';
 
 const Explore1 = ({ history }) => {
   const onSwipeRight = () => {
@@ -22,6 +23,8 @@ const Explore1 = ({ history }) => {
     >
       <div className='w-100 flex flex-column pa4'>
         <div className='pa4 tc'>Explore1</div>
+
+        <Petals />
       </div>
 
       <div
