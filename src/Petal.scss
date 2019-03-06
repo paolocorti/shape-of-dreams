@@ -10,233 +10,243 @@
   fill: url(#SVGID_1_);
 }
 
+$rotation-time: 2s;
+
+$first-row-fall-time: 0.5s;
+$second-row-fall-time: 1s;
+$third-row-fall-time: 1.5s;
+
+$first-row-delay-time: $first-row-fall-time - 0.2s;
+$second-row-delay-time: $second-row-fall-time - 0.2s;
+$third-row-delay-time: $third-row-fall-time - 0.2s;
+
 #petal-1 {
   transform: rotate(81.6deg);
-  animation: rotationPositive4 2s 0.5s forwards;
+  animation: rotationPositive4 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-2 {
   transform: rotate(81.6deg);
-  animation: rotationPositive3 2s 0.5s forwards;
+  animation: rotationPositive3 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-3 {
   transform: rotate(81.6deg);
-  animation: rotationPositive2 2s 0.5s forwards;
+  animation: rotationPositive2 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-4 {
   transform: rotate(81.6deg);
-  animation: rotationPositive1 2s 0.5s forwards;
+  animation: rotationPositive1 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-5 {
   transform: rotate(81.6deg);
-  animation: rotation0 2s 0.5s forwards;
+  animation: rotation0 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-6 {
   transform: rotate(81.6deg);
-  animation: rotationNegative1 2s 0.5s forwards;
+  animation: rotationNegative1 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-7 {
   transform: rotate(81.6deg);
-  animation: rotationNegative2 2s 0.5s forwards;
+  animation: rotationNegative2 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-8 {
   transform: rotate(81.6deg);
-  animation: rotationNegative3 2s 0.5s forwards;
+  animation: rotationNegative3 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-9 {
   transform: rotate(81.6deg);
-  animation: rotationNegative4 2s 0.5s forwards;
+  animation: rotationNegative4 $rotation-time $first-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-10 {
   transform: rotate(81.6deg);
-  animation: rotationPositive5 2s 1s forwards;
+  animation: rotationPositive5 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-11 {
   transform: rotate(81.6deg);
-  animation: rotationPositive4 2s 1s forwards;
+  animation: rotationPositive4 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-12 {
   transform: rotate(81.6deg);
-  animation: rotationPositive3 2s 1s forwards;
+  animation: rotationPositive3 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-13 {
   transform: rotate(81.6deg);
-  animation: rotationPositive2 2s 1s forwards;
+  animation: rotationPositive2 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-14 {
   transform: rotate(81.6deg);
-  animation: rotationPositive1 2s 1s forwards;
+  animation: rotationPositive1 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-15 {
   transform: rotate(81.6deg);
-  animation: rotation0 2s 1s forwards;
+  animation: rotation0 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-16 {
   transform: rotate(81.6deg);
-  animation: rotationNegative1 2s 1s forwards;
+  animation: rotationNegative1 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-17 {
   transform: rotate(81.6deg);
-  animation: rotationNegative2 2s 1s forwards;
+  animation: rotationNegative2 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-18 {
   transform: rotate(81.6deg);
-  animation: rotationNegative3 2s 1s forwards;
+  animation: rotationNegative3 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-19 {
   transform: rotate(81.6deg);
-  animation: rotationNegative4 2s 1s forwards;
+  animation: rotationNegative4 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-20 {
   transform: rotate(81.6deg);
-  animation: rotationNegative5 2s 1s forwards;
+  animation: rotationNegative5 $rotation-time $second-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-21 {
   transform: rotate(81.6deg);
-  animation: rotationPositive6 2s 1.5s forwards;
+  animation: rotationPositive6 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-22 {
   transform: rotate(81.6deg);
-  animation: rotationPositive5 2s 1.5s forwards;
+  animation: rotationPositive5 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-23 {
   transform: rotate(81.6deg);
-  animation: rotationPositive4 2s 1.5s forwards;
+  animation: rotationPositive4 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-24 {
   transform: rotate(81.6deg);
-  animation: rotationPositive3 2s 1.5s forwards;
+  animation: rotationPositive3 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-25 {
   transform: rotate(81.6deg);
-  animation: rotationPositive2 2s 1.5s forwards;
+  animation: rotationPositive2 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-26 {
   transform: rotate(81.6deg);
-  animation: rotationPositive1 2s 1.5s forwards;
+  animation: rotationPositive1 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-27 {
   transform: rotate(81.6deg);
-  animation: rotation0 2s 1.5s forwards;
+  animation: rotation0 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-28 {
   transform: rotate(81.6deg);
-  animation: rotationNegative1 2s 1.5s forwards;
+  animation: rotationNegative1 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-29 {
   transform: rotate(81.6deg);
-  animation: rotationNegative2 2s 1.5s forwards;
+  animation: rotationNegative2 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-30 {
   transform: rotate(81.6deg);
-  animation: rotationNegative3 2s 1.5s forwards;
+  animation: rotationNegative3 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-31 {
   transform: rotate(81.6deg);
-  animation: rotationNegative4 2s 1.5s forwards;
+  animation: rotationNegative4 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-32 {
   transform: rotate(81.6deg);
-  animation: rotationNegative5 2s 1.5s forwards;
+  animation: rotationNegative5 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-33 {
   transform: rotate(81.6deg);
-  animation: rotationNegative6 2s 1.5s forwards;
+  animation: rotationNegative6 $rotation-time $third-row-delay-time forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
@@ -360,23 +370,20 @@
 
 .petal-row-1 {
   transform: translate(0px, -500px);
-  animation: gravity1 0.5s forwards;
-  animation-delay: 0s;
-  transition-timing-function: ease-in-out;
+  animation: gravity1 $first-row-fall-time forwards;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .petal-row-2 {
   transform: translate(0px, -500px);
-  animation: gravity2 1s forwards;
-  animation-delay: 0s;
-  transition-timing-function: ease-in-out;
+  animation: gravity2 $second-row-fall-time forwards;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .petal-row-3 {
   transform: translate(0px, -500px);
-  animation: gravity3 1.5s forwards;
-  animation-delay: 0s;
-  transition-timing-function: ease-in-out;
+  animation: gravity3 $third-row-fall-time forwards;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes movement {

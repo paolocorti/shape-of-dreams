@@ -1,5 +1,5 @@
 import React from 'react';
-import './Petal.css';
+import './Petal.scss';
 
 const Petal = ({ id }) => {
   return (

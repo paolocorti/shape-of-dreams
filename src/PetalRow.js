@@ -1,7 +1,7 @@
 import React from 'react';
 import PetalStroke from './PetalStroke.js';
 
-import './Petal.css';
+import './Petal.scss';
 
 const PetalRow = ({ id, petals, translate, offset }) => {
   const petalsArray = [...Array(petals).keys()].reverse();
