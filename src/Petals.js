@@ -7,10 +7,12 @@ const getNumberOfPetals = n => {
     return 1;
   } else if (n >= 50 && n < 100) {
     return 2;
-  } else if (n > 3000) {
-    return 33;
-  } else {
+  } else if (n >= 100 && n < 3000) {
     return Math.floor(n / 100) + 2;
+  } else if (n >= 3000 && n < 5000) {
+    return 33;
+  } else if (n >= 5000) {
+    return 33;
   }
 };
 

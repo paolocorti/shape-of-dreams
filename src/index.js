@@ -23,17 +23,17 @@ class App extends React.Component {
       <BrowserRouter>
         <div className='w-100 h-100'>
           <Switch>
-            <Route exact path='/' component={Landing} />
-            <Route exact path={'/chapter1'} component={Chapter1} />
-            <Route exact path={'/chapter2'} component={Chapter2} />
-            <Route exact path={'/chapter3'} component={Chapter3} />
-            <Route exact path={'/chapter4'} component={Chapter4} />
-            <Route exact path={'/chapter5'} component={Chapter5} />
-            <Route exact path={'/explore1'} component={Explore1} />
-            <Route exact path={'/explore2'} component={Explore2} />
-            <Route exact path={'/explore3'} component={Explore3} />
-            <Route exact path={'/explore4'} component={Explore4} />
-            <Route exact path={'/explore5'} component={Explore5} />
+            <Route path='/' component={Landing} />
+            <Route path={'/chapter1'} component={Chapter1} />
+            <Route path={'/chapter2'} component={Chapter2} />
+            <Route path={'/chapter3'} component={Chapter3} />
+            <Route path={'/chapter4'} component={Chapter4} />
+            <Route path={'/chapter5'} component={Chapter5} />
+            <Route path={'/explore1'} component={Explore1} />
+            <Route path={'/explore2'} component={Explore2} />
+            <Route path={'/explore3'} component={Explore3} />
+            <Route path={'/explore4'} component={Explore4} />
+            <Route path={'/explore5'} component={Explore5} />
           </Switch>
         </div>
       </BrowserRouter>
