@@ -34,7 +34,7 @@ const Petals = ({ name, language, year, value }) => {
         viewBox='0 0 300 300'
         width={svgWidth}
         height={svgWidth}
-        style={{ border: '1px solid black', margin: 'auto' }}
+        style={{ border: '1px solid rgba(0,0,0,0.2)', margin: 'auto' }}
       >
         <defs>
           <linearGradient

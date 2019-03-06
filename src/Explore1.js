@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Swipe from 'react-easy-swipe';
 import Petals from './Petals';
 import topics from './data/topics.json';
+import './Explore.scss';
 
 const Explore1 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -27,25 +28,30 @@ const Explore1 = ({ history }) => {
       onSwipeLeft={onSwipeLeft}
       onSwipeRight={onSwipeRight}
       style={{ height: '100%' }}
+      className='explore1'
     >
       <div className='w-100 flex flex-column pa4'>
         <div className='pa4 tc'>Explore1</div>
-        <button
-          onClick={() =>
-            setSelectedIndex(selectedIndex > 0 ? selectedIndex - 1 : 0)
-          }
-        >
-          PREV
-        </button>
-        <button
-          onClick={() =>
-            setSelectedIndex(
-              selectedIndex < topics.length ? selectedIndex + 1 : topics.length
-            )
-          }
-        >
-          NEXT
-        </button>
+        <div className='w-100 flex justify-around pa4'>
+          <button
+            onClick={() =>
+              setSelectedIndex(selectedIndex > 0 ? selectedIndex - 1 : 0)
+            }
+          >
+            PREV
+          </button>
+          <button
+            onClick={() =>
+              setSelectedIndex(
+                selectedIndex < topics.length
+                  ? selectedIndex + 1
+                  : topics.length
+              )
+            }
+          >
+            NEXT
+          </button>
+        </div>
         <Petals
           value={topic.value}
           name={topic.subject}
