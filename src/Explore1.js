@@ -46,8 +46,9 @@ const Explore1 = ({ history }) => {
   const languageIndex = groupedByCountryKeys[selectedLanguageIndex];
   const selectedTopics =
     groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
-
   const topic = selectedTopics[selectedIndex];
+  console.log(selectedTopics, selectedTopics.length, selectedIndex);
+  console.log(topic);
 
   return (
     <Swipe
@@ -74,7 +75,7 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedLanguageIndex(
-                selectedLanguageIndex < groupedByCountryKeys.length
+                selectedLanguageIndex < groupedByCountryKeys.length - 1
                   ? selectedLanguageIndex + 1
                   : 0
               )
@@ -97,7 +98,7 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedYearIndex(
-                selectedYearIndex < years.length ? selectedYearIndex + 1 : 0
+                selectedYearIndex < years.length - 1 ? selectedYearIndex + 1 : 0
               )
             }
           >
@@ -119,7 +120,9 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedIndex(
-                selectedIndex < selectedTopics.length ? selectedIndex + 1 : 0
+                selectedIndex < selectedTopics.length - 1
+                  ? selectedIndex + 1
+                  : 0
               )
             }
           >
