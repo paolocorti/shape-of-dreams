@@ -62,7 +62,9 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedLanguageIndex(
-                selectedLanguageIndex > 0 ? selectedLanguageIndex - 1 : 0
+                selectedLanguageIndex > 0
+                  ? selectedLanguageIndex - 1
+                  : groupedByCountryKeys.length - 1
               )
             }
           >
@@ -74,7 +76,7 @@ const Explore1 = ({ history }) => {
               setSelectedLanguageIndex(
                 selectedLanguageIndex < groupedByCountryKeys.length
                   ? selectedLanguageIndex + 1
-                  : groupedByCountryKeys.length
+                  : 0
               )
             }
           >
@@ -85,7 +87,7 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedYearIndex(
-                selectedYearIndex > 0 ? selectedYearIndex - 1 : 0
+                selectedYearIndex > 0 ? selectedYearIndex - 1 : years.length - 1
               )
             }
           >
@@ -95,9 +97,7 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedYearIndex(
-                selectedYearIndex < years.length
-                  ? selectedYearIndex + 1
-                  : years.length
+                selectedYearIndex < years.length ? selectedYearIndex + 1 : 0
               )
             }
           >
@@ -107,7 +107,11 @@ const Explore1 = ({ history }) => {
         <div className='w-100 flex justify-around pa2'>
           <button
             onClick={() =>
-              setSelectedIndex(selectedIndex > 0 ? selectedIndex - 1 : 0)
+              setSelectedIndex(
+                selectedIndex > 0
+                  ? selectedIndex - 1
+                  : selectedTopics.length - 1
+              )
             }
           >
             PREV
@@ -115,9 +119,7 @@ const Explore1 = ({ history }) => {
           <button
             onClick={() =>
               setSelectedIndex(
-                selectedIndex < topics.length
-                  ? selectedIndex + 1
-                  : topics.length
+                selectedIndex < selectedTopics.length ? selectedIndex + 1 : 0
               )
             }
           >

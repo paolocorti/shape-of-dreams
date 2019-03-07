@@ -17,7 +17,7 @@ const getNumberOfPetals = n => {
 };
 
 const Petals = ({ name, language, year, value }) => {
-  const svgWidth = (window.innerWidth / 100) * 80;
+  const svgWidth = 200;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Petals = ({ name, language, year, value }) => {
   }, [value]);
 
   return (
-    <div>
+    <div className='flex w-100 justify-center flex-column'>
       <svg
         className='viz'
         x='0px'
