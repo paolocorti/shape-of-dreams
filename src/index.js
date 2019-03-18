@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import 'tachyons';
 import './index.css';
 import Landing from './Landing';
@@ -20,7 +20,7 @@ import * as serviceWorker from './serviceWorker';
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className='w-100 h-100'>
           <Switch>
             <Route exact path='/' component={Landing} />
@@ -36,7 +36,7 @@ class App extends React.Component {
             <Route exact path={'/explore5'} component={Explore5} />
           </Switch>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
