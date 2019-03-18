@@ -1,5 +1,6 @@
 import React from 'react';
 import Swipe from 'react-easy-swipe';
+import BluePetals from './BluePetals';
 
 const Explore2 = ({ history }) => {
   const onSwipeRight = () => {
@@ -19,9 +20,12 @@ const Explore2 = ({ history }) => {
       onSwipeRight={onSwipeRight}
       onSwipeLeft={onSwipeLeft}
       style={{ height: '100%' }}
+      className='explore2'
     >
-      <div className='w-100 flex flex-column pa4'>
+      <div className='w-100 flex flex-column pa1'>
         <div className='pa4 tc'>Explore2</div>
+
+        <BluePetals />
       </div>
 
       <div
