@@ -23,14 +23,14 @@ $first-row-delay-time: 0s;
   #bluepetal-#{$i} {
     transform: rotate($rotation-angle);
     transform-origin: 12px 18px;
-    animation: rotationPositive#{$i}
+    animation: bluePetalRotation#{$i}
       $rotation-time
       $first-row-delay-time
       forwards;
     transition-timing-function: $rotation-ease;
   }
 
-  @keyframes rotationPositive#{$i} {
+  @keyframes bluePetalRotation#{$i} {
     0% {
       transform: rotate($start-rotation);
     }
