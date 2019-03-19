@@ -17,7 +17,7 @@ const getNumberOfPetals = n => {
 };
 
 const Petals = ({ name, language, year, value }) => {
-  const svgWidth = 200;
+  const svgWidth = window.innerWidth * 0.7;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {
@@ -26,7 +26,10 @@ const Petals = ({ name, language, year, value }) => {
   }, [value]);
 
   return (
-    <div className='flex w-100 justify-center flex-column'>
+    <div
+      className='flex w-100 justify-center flex-column mt5'
+      style={{ flex: 1 }}
+    >
       <svg
         className='viz'
         x='0px'
@@ -34,7 +37,7 @@ const Petals = ({ name, language, year, value }) => {
         viewBox='0 0 300 300'
         width={svgWidth}
         height={svgWidth}
-        style={{ border: '1px solid rgba(0,0,0,0.2)', margin: 'auto' }}
+        style={{ border: '0px solid rgba(0,0,0,0.2)', margin: 'auto' }}
       >
         <defs>
           <linearGradient
@@ -74,7 +77,8 @@ const Petals = ({ name, language, year, value }) => {
           )}
         </g>
       </svg>
-      <div className='w-100 tc'>{`${name} - ${value} - ${language} - ${year}`}</div>
+      <div className='w-100 tc'>{name}</div>
+      <div className='w-100 tc mt2'>{value}</div>
     </div>
   );
 };

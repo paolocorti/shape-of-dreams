@@ -1,0 +1,19 @@
+.langEl {
+  font-weight: 500;
+  padding: 10px;
+}
+
+.langEl.selected {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.yearEl {
+  font-weight: 500;
+  padding: 10px;
+}
+
+.yearEl.selected {
+  border-radius: 20px;
+  border: 1px solid black;
+}

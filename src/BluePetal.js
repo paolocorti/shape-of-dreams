@@ -5,8 +5,11 @@ const BluePetal = ({ id, value }) => {
   return (
     <g className='bluepetal'>
       <g id={`bluepetal-${id}`}>
-        <line class='line' x1='274.9' y1='25.7' x2='0' y2='25.7' />
-        <g transform={`scale(${value / 100} ${value / 100})`}>
+        {/* <line class='line' x1='274.9' y1='25.7' x2='0' y2='25.7' /> */}
+        <g
+          transform={`rotate(${16.36 * id}) scale(${value / 100} ${value /
+            100}) `}
+        >
           <path
             className='st0'
             d='M0.4,20.9c-5.7,3.5,61.4,32.2,131.8,30.5c70.4-1.4,128.1-30.1,130.3-36.4c3.5-10-19.2-6.1-19.2-6.1l0,0

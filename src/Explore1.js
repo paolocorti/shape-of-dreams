@@ -4,6 +4,8 @@ import { groupBy } from 'lodash';
 import Petals from './Petals';
 import topics from './data/topics.json';
 import './Explore.scss';
+import LanguageSelector from './LanguageSelector';
+import YearsSelector from './YearsSelector';
 
 const Explore1 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -11,11 +13,15 @@ const Explore1 = ({ history }) => {
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
 
   const onSwipeRight = () => {
-    history.push(`/explore2`);
+    setSelectedIndex(
+      selectedIndex < selectedTopics.length - 1 ? selectedIndex + 1 : 0
+    );
   };
 
   const onSwipeLeft = () => {
-    history.push(`/explore5`);
+    setSelectedIndex(
+      selectedIndex > 0 ? selectedIndex - 1 : selectedTopics.length - 1
+    );
   };
 
   const goToChapter1 = () => {
@@ -51,99 +57,36 @@ const Explore1 = ({ history }) => {
   console.log(topic);
 
   return (
-    <Swipe
-      onSwipeLeft={onSwipeLeft}
-      onSwipeRight={onSwipeRight}
-      style={{ height: '100%' }}
-      className='explore1'
-    >
-      <div className='w-100 flex flex-column pa4'>
-        <div className='pa4 tc'>Explore1</div>
-        <div className='w-100 flex justify-around pa2'>
-          <button
-            onClick={() =>
-              setSelectedLanguageIndex(
-                selectedLanguageIndex > 0
-                  ? selectedLanguageIndex - 1
-                  : groupedByCountryKeys.length - 1
-              )
-            }
-          >
-            PREV
-          </button>
-          <div>{groupedByCountryKeys[selectedLanguageIndex]} </div>
-          <button
-            onClick={() =>
-              setSelectedLanguageIndex(
-                selectedLanguageIndex < groupedByCountryKeys.length - 1
-                  ? selectedLanguageIndex + 1
-                  : 0
-              )
-            }
-          >
-            NEXT
-          </button>
-        </div>
-        <div className='w-100 flex justify-around pa2'>
-          <button
-            onClick={() =>
-              setSelectedYearIndex(
-                selectedYearIndex > 0 ? selectedYearIndex - 1 : years.length - 1
-              )
-            }
-          >
-            PREV
-          </button>
-          <div>{years[selectedYearIndex]} </div>
-          <button
-            onClick={() =>
-              setSelectedYearIndex(
-                selectedYearIndex < years.length - 1 ? selectedYearIndex + 1 : 0
-              )
-            }
-          >
-            NEXT
-          </button>
-        </div>
-        <div className='w-100 flex justify-around pa2'>
-          <button
-            onClick={() =>
-              setSelectedIndex(
-                selectedIndex > 0
-                  ? selectedIndex - 1
-                  : selectedTopics.length - 1
-              )
-            }
-          >
-            PREV
-          </button>
-          <button
-            onClick={() =>
-              setSelectedIndex(
-                selectedIndex < selectedTopics.length - 1
-                  ? selectedIndex + 1
-                  : 0
-              )
-            }
-          >
-            NEXT
-          </button>
-        </div>
-        <Petals
-          value={topic.value}
-          name={topic.subject}
-          language={topic.language}
-          year={topic.year}
+    <div className='explore1 h-100'>
+      <div className='w-100 flex flex-column justify-center pa2'>
+        <LanguageSelector
+          languages={groupedByCountryKeys}
+          onSelect={setSelectedLanguageIndex}
+          selected={selectedLanguageIndex}
         />
-      </div>
+        <YearsSelector
+          years={years}
+          onSelect={setSelectedYearIndex}
+          selected={selectedYearIndex}
+        />
 
-      <div
-        className='w-100 flex justify-center items-center'
-        onClick={() => goToChapter1()}
-      >
-        <div className=''>READ CHAPTER 1</div>
+        <Swipe onSwipeLeft={onSwipeLeft} onSwipeRight={onSwipeRight}>
+          <Petals
+            value={topic.value}
+            name={topic.subject}
+            language={topic.language}
+            year={topic.year}
+          />
+        </Swipe>
+        <div
+          className='w-100 flex justify-center items-center pa4'
+          onClick={() => goToChapter1()}
+          style={{ flex: 1 }}
+        >
+          <div className=''>READ CHAPTER 1</div>
+        </div>
       </div>
-    </Swipe>
+    </div>
   );
 };
 
