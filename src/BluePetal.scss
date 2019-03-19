@@ -5,6 +5,14 @@
   fill: #607cbd;
 }
 
+.line {
+  fill: none;
+  stroke: #617cbb;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 0.6, 3;
+}
+
 $rotation-base-angle: 16.96deg;
 $start-rotation: $rotation-base-angle * 11;
 $rotation-time: 2s;
