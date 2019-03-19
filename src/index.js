@@ -29,7 +29,7 @@ class App extends React.Component {
             <Route exact path={'/chapter3'} component={Chapter3} />
             <Route exact path={'/chapter4'} component={Chapter4} />
             <Route exact path={'/chapter5'} component={Chapter5} />
-            <Route exact path={'/explore'} component={Explore1} />
+            <Route exact path={'/explore1'} component={Explore1} />
             <Route exact path={'/explore2'} component={Explore2} />
             <Route exact path={'/explore3'} component={Explore3} />
             <Route exact path={'/explore4'} component={Explore4} />

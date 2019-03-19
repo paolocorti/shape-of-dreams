@@ -1,28 +1,13 @@
 import React, { useEffect } from 'react';
 import BluePetal from './BluePetal';
 
-const getNumberOfPetals = n => {
-  if (n < 50) {
-    return 1;
-  } else if (n >= 50 && n < 100) {
-    return 2;
-  } else if (n >= 100 && n < 3000) {
-    return Math.floor(n / 100) + 2;
-  } else if (n >= 3000 && n < 5000) {
-    return 33;
-  } else if (n >= 5000) {
-    return 33;
-  }
-};
-
-const BluePetals = ({ name, language, year, value }) => {
+const BluePetals = ({ categories }) => {
   const svgWidth = 400;
-  let nOfPetals = getNumberOfPetals(value);
 
-  useEffect(() => {
-    nOfPetals = getNumberOfPetals(value);
-    console.log('nOfPetals', nOfPetals);
-  }, [value]);
+  // useEffect(() => {
+  //   nOfPetals = getNumberOfPetals(value);
+  //   console.log('nOfPetals', nOfPetals);
+  // }, [value]);
 
   return (
     <div className='flex w-100 justify-center flex-column'>
@@ -39,24 +24,26 @@ const BluePetals = ({ name, language, year, value }) => {
           <linearGradient
             id='blue_petal_gradient_1'
             gradientUnits='userSpaceOnUse'
-            x1='835.6201'
-            y1='476.9558'
-            x2='950.4109'
-            y2='278.1323'
+            x1='929.0724'
+            y1='567.9146'
+            x2='1043.8632'
+            y2='369.0911'
             gradientTransform='matrix(2.263869e-02 0.9997 0.9997 -2.263869e-02 -265.4176 -866.1351)'
           >
-            <stop offset='0' style={{ stopColor: '#E9E8DF' }} />
-            <stop offset='0.167' style={{ stopColor: '#DBE9DF' }} />
-            <stop offset='0.4789' style={{ stopColor: '#B7E2E8' }} />
-            <stop offset='1' style={{ stopColor: '#8A94C8' }} />
+            x1="929.0724" y1="567.9146" x2="1043.8632" y2="369.0911"
+            <stop offset='0' style={{ stopColor: '#E8E8DF' }} />
+            <stop offset='0.167' style={{ stopColor: '#DAE8DF' }} />
+            <stop offset='0.4789' style={{ stopColor: '#B6E2E7' }} />
+            <stop offset='1' style={{ stopColor: '#8993C7' }} />
           </linearGradient>
+
           <linearGradient
             id='blue_petal_gradient_2'
             gradientUnits='userSpaceOnUse'
-            x1='0.4457'
-            y1='23.7461'
-            x2='262.7527'
-            y2='17.8063'
+            x1='2.002'
+            y1='23.5385'
+            x2='263.2779'
+            y2='17.622'
           >
             <stop offset='0' style={{ stopColor: '#4A68AF' }} />
             <stop
@@ -65,9 +52,9 @@ const BluePetals = ({ name, language, year, value }) => {
             />
           </linearGradient>
         </defs>
-        <g transform={`translate(240, 100)`}>
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((n, i) => {
-            return <BluePetal key={i} id={n} />;
+        <g transform={`translate(240, 140)`}>
+          {categories.map((category, i) => {
+            return <BluePetal key={i} id={i} value={category.value} />;
           })}
         </g>
       </svg>

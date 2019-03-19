@@ -1,0 +1,290 @@
+[
+  {
+    "category": "01.animals / insects",
+    "year": 2016,
+    "language": "EN",
+    "value": 100
+  },
+  {
+    "category": "02.body parts",
+    "year": 2016,
+    "language": "EN",
+    "value": 20
+  },
+  {
+    "category": "03.flying, falling, running",
+    "year": 2016,
+    "language": "EN",
+    "value": 45
+  },
+  {
+    "category": "04.food / beverage",
+    "year": 2016,
+    "language": "EN",
+    "value": 36
+  },
+  {
+    "category": "05.money / jewels",
+    "year": 2016,
+    "language": "EN",
+    "value": 12
+  },
+  {
+    "category": "06.nature",
+    "year": 2016,
+    "language": "EN",
+    "value": 9
+  },
+  {
+    "category": "07.people and relationships",
+    "year": 2016,
+    "language": "EN",
+    "value": 80
+  },
+  {
+    "category": "08.pregnancy and babies",
+    "year": 2016,
+    "language": "EN",
+    "value": 99
+  },
+  {
+    "category": "09.super natural",
+    "year": 2016,
+    "language": "EN",
+    "value": 1
+  },
+  {
+    "category": "10.travelling / transportations",
+    "year": 2016,
+    "language": "EN",
+    "value": 10
+  },
+  {
+    "category": "11.weather events",
+    "year": 2016,
+    "language": "EN",
+    "value": 30
+  },
+  {
+    "category": "12.other",
+    "year": 2016,
+    "language": "EN",
+    "value": 76
+  },
+  {
+    "category": "01.animals / insects",
+    "year": 2016,
+    "language": "ES",
+    "value": 90
+  },
+  {
+    "category": "02.body parts",
+    "year": 2016,
+    "language": "ES",
+    "value": 90
+  },
+  {
+    "category": "03.flying, falling, running",
+    "year": 2016,
+    "language": "ES",
+    "value": 11
+  },
+  {
+    "category": "04.food / beverage",
+    "year": 2016,
+    "language": "ES",
+    "value": 100
+  },
+  {
+    "category": "05.money / jewels",
+    "year": 2016,
+    "language": "ES",
+    "value": 40
+  },
+  {
+    "category": "06.nature",
+    "year": 2016,
+    "language": "ES",
+    "value": 43
+  },
+  {
+    "category": "07.people and relationships",
+    "year": 2016,
+    "language": "ES",
+    "value": 2
+  },
+  {
+    "category": "08.pregnancy and babies",
+    "year": 2016,
+    "language": "ES",
+    "value": 43
+  },
+  {
+    "category": "09.super natural",
+    "year": 2016,
+    "language": "ES",
+    "value": 65
+  },
+  {
+    "category": "10.travelling / transportations",
+    "year": 2016,
+    "language": "ES",
+    "value": 12
+  },
+  {
+    "category": "11.weather events",
+    "year": 2016,
+    "language": "ES",
+    "value": 30
+  },
+  {
+    "category": "12.other",
+    "year": 2016,
+    "language": "ES",
+    "value": 76
+  },
+  {
+    "category": "01.animals / insects",
+    "year": 2018,
+    "language": "EN",
+    "value": 60
+  },
+  {
+    "category": "02.body parts",
+    "year": 2018,
+    "language": "EN",
+    "value": 100
+  },
+  {
+    "category": "03.flying, falling, running",
+    "year": 2018,
+    "language": "EN",
+    "value": 30
+  },
+  {
+    "category": "04.food / beverage",
+    "year": 2018,
+    "language": "EN",
+    "value": 3
+  },
+  {
+    "category": "05.money / jewels",
+    "year": 2018,
+    "language": "EN",
+    "value": 54
+  },
+  {
+    "category": "06.nature",
+    "year": 2018,
+    "language": "EN",
+    "value": 21
+  },
+  {
+    "category": "07.people and relationships",
+    "year": 2018,
+    "language": "EN",
+    "value": 89
+  },
+  {
+    "category": "08.pregnancy and babies",
+    "year": 2018,
+    "language": "EN",
+    "value": 10
+  },
+  {
+    "category": "09.super natural",
+    "year": 2018,
+    "language": "EN",
+    "value": 14
+  },
+  {
+    "category": "10.travelling / transportations",
+    "year": 2018,
+    "language": "EN",
+    "value": 12
+  },
+  {
+    "category": "11.weather events",
+    "year": 2018,
+    "language": "EN",
+    "value": 23
+  },
+  {
+    "category": "12.other",
+    "year": 2018,
+    "language": "EN",
+    "value": 3
+  },
+  {
+    "category": "01.animals / insects",
+    "year": 2018,
+    "language": "ES",
+    "value": 80
+  },
+  {
+    "category": "02.body parts",
+    "year": 2018,
+    "language": "ES",
+    "value": 16
+  },
+  {
+    "category": "03.flying, falling, running",
+    "year": 2018,
+    "language": "ES",
+    "value": 33
+  },
+  {
+    "category": "04.food / beverage",
+    "year": 2018,
+    "language": "ES",
+    "value": 5
+  },
+  {
+    "category": "05.money / jewels",
+    "year": 2018,
+    "language": "ES",
+    "value": 80
+  },
+  {
+    "category": "06.nature",
+    "year": 2018,
+    "language": "ES",
+    "value": 100
+  },
+  {
+    "category": "07.people and relationships",
+    "year": 2018,
+    "language": "ES",
+    "value": 21
+  },
+  {
+    "category": "08.pregnancy and babies",
+    "year": 2018,
+    "language": "ES",
+    "value": 56
+  },
+  {
+    "category": "09.super natural",
+    "year": 2018,
+    "language": "ES",
+    "value": 23
+  },
+  {
+    "category": "10.travelling / transportations",
+    "year": 2018,
+    "language": "ES",
+    "value": 43
+  },
+  {
+    "category": "11.weather events",
+    "year": 2018,
+    "language": "ES",
+    "value": 76
+  },
+  {
+    "category": "12.other",
+    "year": 2018,
+    "language": "ES",
+    "value": 40
+  }
+]
