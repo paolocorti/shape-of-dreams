@@ -24,32 +24,16 @@ const BluePetals = ({ categories }) => {
           <linearGradient
             id='blue_petal_gradient_1'
             gradientUnits='userSpaceOnUse'
-            x1='929.0724'
-            y1='567.9146'
-            x2='1043.8632'
-            y2='369.0911'
-            gradientTransform='matrix(2.263869e-02 0.9997 0.9997 -2.263869e-02 -265.4176 -866.1351)'
+            x1='894.2933'
+            y1='571.4385'
+            x2='1009.0841'
+            y2='372.6149'
+            gradientTransform='matrix(2.263869e-02 0.9997 0.9997 -2.263869e-02 -361.1819 -922.6556)'
           >
-            x1="929.0724" y1="567.9146" x2="1043.8632" y2="369.0911"
             <stop offset='0' style={{ stopColor: '#E8E8DF' }} />
             <stop offset='0.167' style={{ stopColor: '#DAE8DF' }} />
             <stop offset='0.4789' style={{ stopColor: '#B6E2E7' }} />
             <stop offset='1' style={{ stopColor: '#8993C7' }} />
-          </linearGradient>
-
-          <linearGradient
-            id='blue_petal_gradient_2'
-            gradientUnits='userSpaceOnUse'
-            x1='2.002'
-            y1='23.5385'
-            x2='263.2779'
-            y2='17.622'
-          >
-            <stop offset='0' style={{ stopColor: '#4A68AF' }} />
-            <stop
-              offset='1'
-              style={{ stopColor: '#4A68AF', stopOpacity: 0.2 }}
-            />
           </linearGradient>
         </defs>
         <g transform={`translate(240, 140)`}>
