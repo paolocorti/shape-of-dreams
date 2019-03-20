@@ -7,7 +7,7 @@ import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 
-const Explore1 = ({ history }) => {
+const Explore2 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
@@ -114,4 +114,4 @@ const Explore1 = ({ history }) => {
   );
 };
 
-export default Explore1;
+export default Explore2;

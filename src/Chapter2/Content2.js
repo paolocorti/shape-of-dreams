@@ -1,7 +1,7 @@
 import React from 'react';
 import story1 from './cap1-story.png';
 
-const Content1 = ({}) => {
+const Content2 = ({}) => {
   return (
     <div className='w-100 flex flex-column'>
       <h2 className='pa4 tc'>The shapes of our dreams</h2>
@@ -75,4 +75,4 @@ const Content1 = ({}) => {
   );
 };
 
-export default Content1;
+export default Content2;
