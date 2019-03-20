@@ -8,6 +8,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
       {languages.map((value, index) => {
         return (
           <div
+            key={index}
             className={`langEl ${selected === index ? 'selected' : ''}`}
             onClick={() => onSelect(index)}
           >

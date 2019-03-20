@@ -24,6 +24,16 @@ const Explore1 = ({ history }) => {
     );
   };
 
+  const onSelectLanguage = index => {
+    setSelectedIndex(0);
+    setSelectedLanguageIndex(index);
+  };
+
+  const onSelectYear = index => {
+    setSelectedIndex(0);
+    setSelectedYearIndex(index);
+  };
+
   const goToChapter1 = () => {
     history.push(`/chapter1`);
   };
@@ -50,10 +60,16 @@ const Explore1 = ({ history }) => {
   });
 
   const languageIndex = groupedByCountryKeys[selectedLanguageIndex];
-  const selectedTopics =
-    groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
-  const topic = selectedTopics[selectedIndex];
-  console.log(selectedTopics, selectedTopics.length, selectedIndex);
+
+  const selectedTopicsByLanguage =
+    groupedByYearAndCountry[selectedLanguageIndex] || [];
+
+  const selectedTopics = selectedTopicsByLanguage.filter(v => {
+    return v[0].year === years[selectedYearIndex];
+  });
+
+  const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
+
   console.log(topic);
 
   return (
@@ -61,23 +77,32 @@ const Explore1 = ({ history }) => {
       <div className='w-100 flex flex-column justify-center pa2'>
         <LanguageSelector
           languages={groupedByCountryKeys}
-          onSelect={setSelectedLanguageIndex}
+          onSelect={onSelectLanguage}
           selected={selectedLanguageIndex}
         />
         <YearsSelector
           years={years}
-          onSelect={setSelectedYearIndex}
+          onSelect={onSelectYear}
           selected={selectedYearIndex}
         />
+        {topic.value ? (
+          <Swipe onSwipeLeft={onSwipeLeft} onSwipeRight={onSwipeRight}>
+            <Petals
+              value={topic.value}
+              name={topic.subject}
+              language={topic.language}
+              year={topic.year}
+            />
+          </Swipe>
+        ) : (
+          <div
+            className='w-100 flex justify-center items-center pa4'
+            style={{ flex: 1, height: '400px' }}
+          >
+            NO DATA AVAILABLE
+          </div>
+        )}
 
-        <Swipe onSwipeLeft={onSwipeLeft} onSwipeRight={onSwipeRight}>
-          <Petals
-            value={topic.value}
-            name={topic.subject}
-            language={topic.language}
-            year={topic.year}
-          />
-        </Swipe>
         <div
           className='w-100 flex justify-center items-center pa4'
           onClick={() => goToChapter1()}

@@ -11,6 +11,7 @@ const YearSelector = ({ years, selected, onSelect }) => {
       {years.map((value, index) => {
         return (
           <div
+            key={index}
             className={`yearEl ${selected === index ? 'selected' : ''}`}
             onClick={() => onSelect(index)}
           >

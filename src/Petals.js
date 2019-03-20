@@ -25,6 +25,8 @@ const Petals = ({ name, language, year, value }) => {
     console.log('nOfPetals', nOfPetals);
   }, [value]);
 
+  console.log(nOfPetals);
+
   return (
     <div
       className='flex w-100 justify-center flex-column mt5'
