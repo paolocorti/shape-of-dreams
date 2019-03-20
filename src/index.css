@@ -37,6 +37,7 @@ h6,
   border-radius: 20px;
   top: 50%;
   right: 10px;
+  z-index: 99;
 }
 
 .left-tap {
@@ -47,4 +48,5 @@ h6,
   border-radius: 20px;
   top: 50%;
   left: 10px;
+  z-index: 99;
 }

@@ -9,11 +9,11 @@ const Chapter3 = ({ history }) => {
   const onSwipeMove = (position, event) => {
     console.log(`Moved ${position.x} pixels horizontally`);
 
-    if (position.x && position.x > 100) {
+    if (position.x && position.x > 400) {
       history.push(`/chapter2`);
     }
 
-    if (position.x && position.x < -100) {
+    if (position.x && position.x < -400) {
       history.push(`/chapter4`);
     }
   };

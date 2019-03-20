@@ -390,25 +390,28 @@ $third-row-delay-time: $third-row-fall-time - 0.2s;
   transition-timing-function: $fall-ease;
 }
 
-.petal.show {
-  animation: movement 1s forwards;
-}
+@for $i from 0 through 33 {
+  $randomNumber: random(1);
+  $randomRotation: random(6) + deg;
 
-.petal.hide {
-}
+  .petal-#{$i}.show {
+    animation: movement-#{$i} forwards;
+    animation-duration: $randomNumber + s;
+  }
 
-@keyframes movement {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-4deg);
-  }
-  75% {
-    transform: rotate(4deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  @keyframes movement-#{$i} {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-$randomRotation);
+    }
+    75% {
+      transform: rotate($randomRotation);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 }
 
