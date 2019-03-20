@@ -83,24 +83,23 @@ const Explore1 = ({ history }) => {
           onSelect={onSelectYear}
           selected={selectedYearIndex}
         />
-        <Swipe onSwipeLeft={onSwipeLeft} onSwipeRight={onSwipeRight}>
-          {topic.value ? (
-            <Petals
-              value={topic.value}
-              name={topic.subject}
-              language={topic.language}
-              year={topic.year}
-              index={selectedIndex}
-            />
-          ) : (
-            <div
-              className='w-100 flex justify-center items-center pa4'
-              style={{ flex: 1, height: '400px' }}
-            >
-              NO DATA AVAILABLE
-            </div>
-          )}
-        </Swipe>
+        <div> {'<'}</div>
+        {topic.value ? (
+          <Petals
+            value={topic.value}
+            name={topic.subject}
+            language={topic.language}
+            year={topic.year}
+            index={selectedIndex}
+          />
+        ) : (
+          <div
+            className='w-100 flex justify-center items-center pa4'
+            style={{ flex: 1, height: '400px' }}
+          >
+            NO DATA AVAILABLE
+          </div>
+        )}
         <div
           className='w-100 flex justify-center items-center pa4'
           onClick={() => goToChapter1()}
