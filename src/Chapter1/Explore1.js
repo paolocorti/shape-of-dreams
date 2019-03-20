@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Swipe from 'react-easy-swipe';
 import { groupBy } from 'lodash';
-import Petals from './Petals';
-import topics from './data/topics.json';
-import './Explore.scss';
-import LanguageSelector from './LanguageSelector';
-import YearsSelector from './YearsSelector';
+import Petals from '../Petals';
+import topics from '../data/topics.json';
+import '../Explore.scss';
+import LanguageSelector from '../components/LanguageSelector';
+import YearsSelector from '../components/YearsSelector';
 
 const Explore1 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
