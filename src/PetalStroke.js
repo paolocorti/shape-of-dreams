@@ -9,7 +9,7 @@ const PetalStroke = ({ id, index }) => {
     setElVisibility(false);
     setTimeout(() => {
       setElVisibility(true);
-    }, 10);
+    }, 100);
   }, [index]);
 
   return (

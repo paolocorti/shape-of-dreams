@@ -26,7 +26,7 @@ const Petals = ({ name, language, year, value, index }) => {
 
   return (
     <div
-      className='flex w-100 justify-center flex-column mt5'
+      className='flex w-100 justify-center flex-column mt4'
       style={{ flex: 1 }}
     >
       <svg
