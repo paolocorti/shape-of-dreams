@@ -8,7 +8,6 @@ import Chapter1 from './Chapter1';
 import Chapter2 from './Chapter2';
 import Chapter3 from './Chapter3';
 import Chapter4 from './Chapter4';
-import Chapter5 from './Chapter5';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -23,7 +22,6 @@ class App extends React.Component {
             <Route exact path={'/chapter2'} component={Chapter2} />
             <Route exact path={'/chapter3'} component={Chapter3} />
             <Route exact path={'/chapter4'} component={Chapter4} />
-            <Route exact path={'/chapter5'} component={Chapter5} />
           </Switch>
         </div>
       </HashRouter>

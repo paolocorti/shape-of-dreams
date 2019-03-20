@@ -72,7 +72,7 @@ const Explore1 = ({ history }) => {
 
   return (
     <div className='explore1'>
-      <div className='w-100 flex flex-column justify-center pa2 relative'>
+      <div className='w-100 flex flex-column justify-center pa2'>
         <LanguageSelector
           languages={groupedByCountryKeys}
           onSelect={onSelectLanguage}
@@ -83,8 +83,7 @@ const Explore1 = ({ history }) => {
           onSelect={onSelectYear}
           selected={selectedYearIndex}
         />
-        <div className='left-tap' onClick={() => onSwipeLeft()} />
-
+        <div> {'<'}</div>
         {topic.value ? (
           <Petals
             value={topic.value}
@@ -101,7 +100,6 @@ const Explore1 = ({ history }) => {
             NO DATA AVAILABLE
           </div>
         )}
-        <div className='right-tap' onClick={() => onSwipeRight()} />
         <div
           className='w-100 flex justify-center items-center pa4'
           onClick={() => goToChapter1()}

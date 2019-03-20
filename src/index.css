@@ -28,3 +28,23 @@ h6,
 .title {
   font-family: 'Cormorant Garamond', serif;
 }
+
+.right-tap {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #d28b88;
+  border-radius: 20px;
+  top: 50%;
+  right: 10px;
+}
+
+.left-tap {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #d28b88;
+  border-radius: 20px;
+  top: 50%;
+  left: 10px;
+}
