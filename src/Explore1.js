@@ -13,15 +13,15 @@ const Explore1 = ({ history }) => {
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
 
   const onSwipeRight = () => {
-    setSelectedIndex(
-      selectedIndex < selectedTopics.length - 1 ? selectedIndex + 1 : 0
-    );
+    const newIndex =
+      selectedIndex < selectedTopics[0].length - 1 ? selectedIndex + 1 : 0;
+    setSelectedIndex(newIndex);
   };
 
   const onSwipeLeft = () => {
-    setSelectedIndex(
-      selectedIndex > 0 ? selectedIndex - 1 : selectedTopics.length - 1
-    );
+    const newIndex =
+      selectedIndex > 0 ? selectedIndex - 1 : selectedTopics[0].length - 1;
+    setSelectedIndex(newIndex);
   };
 
   const onSelectLanguage = index => {
@@ -70,10 +70,8 @@ const Explore1 = ({ history }) => {
 
   const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
 
-  console.log(topic);
-
   return (
-    <div className='explore1 h-100'>
+    <div className='explore1'>
       <div className='w-100 flex flex-column justify-center pa2'>
         <LanguageSelector
           languages={groupedByCountryKeys}
@@ -85,24 +83,24 @@ const Explore1 = ({ history }) => {
           onSelect={onSelectYear}
           selected={selectedYearIndex}
         />
-        {topic.value ? (
-          <Swipe onSwipeLeft={onSwipeLeft} onSwipeRight={onSwipeRight}>
+        <Swipe onSwipeLeft={onSwipeLeft} onSwipeRight={onSwipeRight}>
+          {topic.value ? (
             <Petals
               value={topic.value}
               name={topic.subject}
               language={topic.language}
               year={topic.year}
+              index={selectedIndex}
             />
-          </Swipe>
-        ) : (
-          <div
-            className='w-100 flex justify-center items-center pa4'
-            style={{ flex: 1, height: '400px' }}
-          >
-            NO DATA AVAILABLE
-          </div>
-        )}
-
+          ) : (
+            <div
+              className='w-100 flex justify-center items-center pa4'
+              style={{ flex: 1, height: '400px' }}
+            >
+              NO DATA AVAILABLE
+            </div>
+          )}
+        </Swipe>
         <div
           className='w-100 flex justify-center items-center pa4'
           onClick={() => goToChapter1()}

@@ -17,8 +17,8 @@ $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 $start-rotation: 81.6deg;
 $rotation-angle: 13.6deg;
-$rotation-time: 2s;
-$rotation-ease: ease-out;
+$rotation-time: 1s;
+$rotation-ease: linear;
 
 $first-row-delay-time: $first-row-fall-time - 0.2s;
 $second-row-delay-time: $second-row-fall-time - 0.2s;
@@ -390,21 +390,25 @@ $third-row-delay-time: $third-row-fall-time - 0.2s;
   transition-timing-function: $fall-ease;
 }
 
+.petal.show {
+  animation: movement 1s forwards;
+}
+
+.petal.hide {
+}
+
 @keyframes movement {
   0% {
-    transform: translate(0px, 0px);
+    transform: rotate(0deg);
   }
   25% {
-    transform: translate(6px, 0px);
-  }
-  50% {
-    transform: translate(6px, 6px);
+    transform: rotate(-4deg);
   }
   75% {
-    transform: translate(0px, 6px);
+    transform: rotate(4deg);
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: rotate(0deg);
   }
 }
 

@@ -16,16 +16,13 @@ const getNumberOfPetals = n => {
   }
 };
 
-const Petals = ({ name, language, year, value }) => {
+const Petals = ({ name, language, year, value, index }) => {
   const svgWidth = window.innerWidth * 0.7;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {
     nOfPetals = getNumberOfPetals(value);
-    console.log('nOfPetals', nOfPetals);
   }, [value]);
-
-  console.log(nOfPetals);
 
   return (
     <div
@@ -61,6 +58,7 @@ const Petals = ({ name, language, year, value }) => {
               id={3}
               petals={nOfPetals > 20 && nOfPetals < 33 ? nOfPetals - 20 : 13}
               offset={20}
+              index={`${index}-${language}-${year}`}
             />
           )}
           {nOfPetals > 9 && (
@@ -68,6 +66,7 @@ const Petals = ({ name, language, year, value }) => {
               id={2}
               petals={nOfPetals > 9 && nOfPetals < 20 ? nOfPetals - 9 : 11}
               offset={9}
+              index={`${index}-${language}-${year}`}
             />
           )}
           {nOfPetals > 0 && (
@@ -75,6 +74,7 @@ const Petals = ({ name, language, year, value }) => {
               id={1}
               petals={nOfPetals > 9 ? 9 : nOfPetals}
               offset={0}
+              index={`${index}-${language}-${year}`}
             />
           )}
         </g>

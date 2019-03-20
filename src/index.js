@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter>
-        <div className='w-100 h-100'>
+        <div className='w-100'>
           <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path={'/chapter1'} component={Chapter1} />
