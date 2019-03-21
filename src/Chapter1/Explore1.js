@@ -39,7 +39,7 @@ const Explore1 = ({ history }) => {
   };
 
   const groupedByCountry = groupBy(topics, 'language');
-  const groupedByCountryValues = Object.values(groupedByCountry);
+  const groupedByCountryValues = values(groupedByCountry);
   const groupedByCountryKeys = Object.keys(groupedByCountry);
   const years = [
     2008,
