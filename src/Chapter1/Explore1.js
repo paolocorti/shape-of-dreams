@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Swipe from 'react-easy-swipe';
-import { groupBy } from 'lodash';
+import { values, groupBy } from 'lodash';
 import Petals from '../Petals';
 import topics from '../data/topics.json';
 import '../Explore.scss';
@@ -55,8 +55,8 @@ const Explore1 = ({ history }) => {
     2018
   ];
 
-  const groupedByYearAndCountry = groupedByCountryValues.map(values => {
-    return Object.values(groupBy(values, 'year'));
+  const groupedByYearAndCountry = groupedByCountryValues.map(val => {
+    return values(groupBy(val, 'year'));
   });
 
   const languageIndex = groupedByCountryKeys[selectedLanguageIndex];

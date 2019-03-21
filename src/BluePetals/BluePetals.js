@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import BluePetal from './BluePetal';
 
 const BluePetals = ({ categories }) => {
-  const svgWidth = 400;
+  const svgWidth = window.innerWidth * 0.9;
 
   // useEffect(() => {
   //   nOfPetals = getNumberOfPetals(value);
@@ -18,7 +18,7 @@ const BluePetals = ({ categories }) => {
         viewBox='0 0 500 500'
         width={svgWidth}
         height={svgWidth}
-        style={{ border: '1px solid rgba(0,0,0,0.2)', margin: 'auto' }}
+        style={{ border: '0px solid rgba(0,0,0,0.2)', margin: 'auto' }}
       >
         <defs>
           <linearGradient
