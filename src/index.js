@@ -17,7 +17,7 @@ const supportsHistory = 'pushState' in window.history;
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter forceRefresh={!supportsHistory}>
+      <HashRouter forceRefresh={!supportsHistory}>
         <div className='w-100'>
           {/* <Switch>
             <Route exact path='/' component={Landing} />
@@ -76,7 +76,7 @@ class App extends React.Component {
             }}
           />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
