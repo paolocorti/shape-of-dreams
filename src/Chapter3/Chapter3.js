@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Swipe from 'react-easy-swipe';
+import Page from '../components/Page';
 import NavigationFooter from '../components/NavigationFooter';
 import Landing3 from './Landing3';
 
@@ -21,13 +22,15 @@ const Chapter3 = ({ history }) => {
   console.log(selectedView);
 
   return (
-    <Swipe onSwipeMove={onSwipeMove} className='chapter3'>
-      <Landing3 />
-      <NavigationFooter
-        setSelectedView={setSelectedView}
-        selectedView={selectedView}
-      />
-    </Swipe>
+    <Page>
+      <Swipe onSwipeMove={onSwipeMove} className='chapter3'>
+        <Landing3 />
+        <NavigationFooter
+          setSelectedView={setSelectedView}
+          selectedView={selectedView}
+        />
+      </Swipe>
+    </Page>
   );
 };
 
