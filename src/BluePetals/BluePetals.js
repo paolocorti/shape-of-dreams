@@ -1,13 +1,18 @@
-import React, { useEffect } from 'react';
-import BluePetal from './BluePetal';
+import React from 'react';
+import BluePetal10 from './BluePetal10';
+import BluePetal20 from './BluePetal20';
+import BluePetal30 from './BluePetal30';
+import BluePetal40 from './BluePetal40';
+import BluePetal50 from './BluePetal50';
+import BluePetal60 from './BluePetal60';
+import BluePetal70 from './BluePetal70';
+import BluePetal80 from './BluePetal80';
+import BluePetal90 from './BluePetal90';
+import BluePetal100 from './BluePetal100';
+import './BluePetal.scss';
 
 const BluePetals = ({ categories }) => {
   const svgWidth = window.innerWidth * 0.9;
-
-  // useEffect(() => {
-  //   nOfPetals = getNumberOfPetals(value);
-  //   console.log('nOfPetals', nOfPetals);
-  // }, [value]);
 
   return (
     <div className='flex w-100 justify-center flex-column'>
@@ -15,7 +20,7 @@ const BluePetals = ({ categories }) => {
         className='viz'
         x='0px'
         y='0px'
-        viewBox='0 0 500 500'
+        viewBox='0 0 450 450'
         width={svgWidth}
         height={svgWidth}
         style={{ border: '0px solid rgba(0,0,0,0.2)', margin: 'auto' }}
@@ -36,9 +41,31 @@ const BluePetals = ({ categories }) => {
             <stop offset='1' style={{ stopColor: '#8993C7' }} />
           </linearGradient>
         </defs>
-        <g transform={`translate(240, 140)`}>
+        <g transform={`translate(220, 80)`} id='blupetals'>
           {categories.map((category, i) => {
-            return <BluePetal key={i} id={i} value={category.value} />;
+            if (category.value < 11) {
+              return <BluePetal10 id={i} key={i} />;
+            } else if (category.value >= 11 && category.value <= 20) {
+              console.log('here 20');
+
+              return <BluePetal20 id={i} key={i} />;
+            } else if (category.value >= 21 && category.value <= 30) {
+              return <BluePetal30 id={i} key={i} />;
+            } else if (category.value >= 31 && category.value <= 40) {
+              return <BluePetal40 id={i} key={i} />;
+            } else if (category.value >= 41 && category.value <= 50) {
+              return <BluePetal50 id={i} key={i} />;
+            } else if (category.value >= 51 && category.value <= 60) {
+              return <BluePetal60 id={i} key={i} />;
+            } else if (category.value >= 61 && category.value <= 70) {
+              return <BluePetal70 id={i} key={i} />;
+            } else if (category.value >= 71 && category.value <= 80) {
+              return <BluePetal80 id={i} key={i} />;
+            } else if (category.value >= 81 && category.value <= 90) {
+              return <BluePetal90 id={i} key={i} />;
+            } else if (category.value >= 91 && category.value <= 100) {
+              return <BluePetal100 id={i} key={i} />;
+            }
           })}
         </g>
       </svg>

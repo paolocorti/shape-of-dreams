@@ -6,8 +6,6 @@ import './Petal.scss';
 const PetalRow = ({ id, petals, translate, offset, index }) => {
   const petalsArray = [...Array(petals).keys()].reverse();
 
-  console.log(index);
-
   return (
     <g
       className={`petal-row-${id}`}

@@ -4,7 +4,7 @@ import landing1 from './landing_1.svg';
 
 const Content1 = ({}) => {
   return (
-    <div className='w-100 flex flex-column view content1'>
+    <div className='w-100 view content1'>
       <h2 className='tc fw6 f4 mb0'>Chapter 1</h2>
       <div className='tc fw6 f4'>&#183;</div>
       <h1 className='tc fw7 mt0'>The Shapes of our Dreams</h1>

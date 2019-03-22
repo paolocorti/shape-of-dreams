@@ -5,7 +5,6 @@ const PetalStroke = ({ id, index }) => {
   const [elVisibility, setElVisibility] = useState(false);
 
   useEffect(() => {
-    console.log('here');
     setElVisibility(false);
     setTimeout(() => {
       setElVisibility(true);

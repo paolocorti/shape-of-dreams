@@ -1,7 +1,7 @@
-.st0 {
+#blupetals .st0 {
   fill: url(#blue_petal_gradient_1);
 }
-.st1 {
+#blupetals .st1 {
   fill: #607cbd;
 }
 
@@ -24,7 +24,7 @@ $first-row-delay-time: 0s;
 
   #bluepetal-#{$i} {
     transform: rotate($rotation-angle);
-    transform-origin: 1% 2%;
+    transform-origin: 0 7px;
     animation: bluePetalRotation#{$i}
       $rotation-time
       $first-row-delay-time
