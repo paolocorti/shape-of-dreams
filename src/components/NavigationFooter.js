@@ -10,7 +10,7 @@ const NavigationFooter = ({ selectedView, setSelectedView }) => {
       className='w-100 flex justify-center fixed bottom-0 bg-white'
       style={{ flex: 1, height: '50px' }}
     >
-      <div
+      {/* <div
         className='w-30 flex justify-center items-center pa3'
         onClick={() => context.setSelectedView('landing')}
       >
@@ -19,7 +19,7 @@ const NavigationFooter = ({ selectedView, setSelectedView }) => {
           alt='Landing icon'
           width={35}
         />
-      </div>
+      </div> */}
       <div
         className='w-30 flex justify-center items-center pa3'
         onClick={() => context.setSelectedView('content')}

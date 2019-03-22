@@ -51,7 +51,7 @@ class App extends React.Component {
 
   resetSelectedView = () => {
     this.setState({
-      selectedView: 'landing'
+      selectedView: 'content'
     });
   };
 

@@ -12,7 +12,7 @@ const Chapter1 = ({ history }) => {
 
   return (
     <Page chapter='chapter1'>
-      <TransitionGroup>
+      {/* <TransitionGroup>
         <CSSTransition
           key={context.selectedView}
           classNames='view'
@@ -20,14 +20,13 @@ const Chapter1 = ({ history }) => {
             enter: 5000,
             exit: 5000
           }}
-        >
-          <React.Fragment>
-            {context.selectedView === 'landing' && <Landing1 />}
-            {context.selectedView === 'explore' && <Explore1 />}
-            {context.selectedView === 'content' && <Content1 />}
-          </React.Fragment>
-        </CSSTransition>
-      </TransitionGroup>
+        > */}
+      <React.Fragment>
+        {context.selectedView === 'content' && <Content1 />}
+        {context.selectedView === 'explore' && <Explore1 />}
+      </React.Fragment>
+      {/* </CSSTransition>
+      </TransitionGroup> */}
     </Page>
   );
 };

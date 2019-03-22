@@ -28,7 +28,7 @@ body,
 /* Page */
 
 .page {
-  height: 100vh;
+  height: calc(100vh - 100px);
   /* padding: calc(15% + 1.5em) 5% 5%; */
   overflow-y: auto;
   top: 0px;
