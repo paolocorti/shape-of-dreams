@@ -7,6 +7,7 @@ import NavigationFooter from '../components/NavigationFooter';
 import Landing1 from './Landing1';
 import Explore1 from './Explore1';
 import Content1 from './Content1';
+import Header from '../components/Header';
 
 const Chapter1 = ({ history }) => {
   const [selectedView, setSelectedView] = useState('landing');
@@ -33,12 +34,9 @@ const Chapter1 = ({ history }) => {
   };
 
   return (
-    <Page>
-      <Swipe
-        onSwipeMove={onSwipeMove}
-        onSwipeEnd={onSwipeEnd}
-        className='chapter1'
-      >
+    <Page chapter='chapter1'>
+      <Header />
+      <Swipe onSwipeMove={onSwipeMove} onSwipeEnd={onSwipeEnd}>
         <TransitionGroup>
           <CSSTransition
             key={selectedView}

@@ -1,4 +1,5 @@
 .chapter1 {
+  background-image: linear-gradient(#e1eaef, #e4f3ec);
 }
 
 .chapter2 {
@@ -13,15 +14,39 @@
   background-image: linear-gradient(#e1eaef, #e4f3ec);
 }
 
+.landing {
+  background-image: linear-gradient(#e1eaef, #e4f3ec);
+  height: 100vh;
+}
+
+.landing-header {
+  height: 30%;
+}
+
+.landing-content {
+  height: 50%;
+
+  & .title {
+    font-size: calc(48px + (70 - 48) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  & .subtitle {
+    font-size: calc(32px + (56 - 32) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+.landing-footer {
+  height: 20%;
+}
+
 .landing1,
 .explore1 {
-  min-height: 100vh;
 }
 
 .landing1,
 .explore1,
 .content1 {
-  background-image: linear-gradient(#e1eaef, #e4f3ec);
+  position: relative;
 }
 
 .explore2 {

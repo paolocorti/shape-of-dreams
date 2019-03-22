@@ -5,7 +5,7 @@ const NavigationFooter = ({ selectedView, setSelectedView }) => {
   return (
     <div
       className='w-100 flex justify-center fixed bottom-0 bg-white'
-      style={{ flex: 1 }}
+      style={{ flex: 1, height: '50px' }}
     >
       <div
         className='w-30 flex justify-center items-center pa3'

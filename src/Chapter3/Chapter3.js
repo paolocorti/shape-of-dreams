@@ -4,6 +4,7 @@ import Page from '../components/Page';
 import { AppContext } from '../appContext';
 import NavigationFooter from '../components/NavigationFooter';
 import Landing3 from './Landing3';
+import Header from '../components/Header';
 
 const Chapter3 = ({ history }) => {
   const [selectedView, setSelectedView] = useState('landing');
@@ -30,12 +31,9 @@ const Chapter3 = ({ history }) => {
   };
 
   return (
-    <Page>
-      <Swipe
-        onSwipeMove={onSwipeMove}
-        onSwipeEnd={onSwipeEnd}
-        className='chapter3'
-      >
+    <Page chapter='chapter3'>
+      <Header />
+      <Swipe onSwipeMove={onSwipeMove} onSwipeEnd={onSwipeEnd}>
         <Landing3 />
         <NavigationFooter
           setSelectedView={setSelectedView}
