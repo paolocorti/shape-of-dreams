@@ -4,20 +4,30 @@ import { Link } from 'react-router-dom';
 const NavigationFooter = ({ selectedView, setSelectedView }) => {
   return (
     <div
-      className='w-100 flex justify-between fixed bottom-0 bg-white'
+      className='w-100 flex justify-center fixed bottom-0 bg-white'
       style={{ flex: 1 }}
     >
       <div
-        className='w-50 flex justify-center items-center pa3'
-        onClick={() => setSelectedView('content')}
+        className='w-30 flex justify-center items-center pa3'
+        onClick={() => setSelectedView('landing')}
       >
-        Read the story
+        <img
+          src={'/images/chapter-landing.svg'}
+          alt='Landing icon'
+          width={35}
+        />
       </div>
       <div
-        className='w-50 flex justify-center items-center pa3 cursor-pointer'
+        className='w-30 flex justify-center items-center pa3'
+        onClick={() => setSelectedView('content')}
+      >
+        <img src={'/images/read.svg'} alt='Read icon' width={35} />
+      </div>
+      <div
+        className='w-30 flex justify-center items-center pa3 cursor-pointer'
         onClick={() => setSelectedView('explore')}
       >
-        Explore the dreams
+        <img src={'/images/explore.svg'} alt='Explore icon' width={35} />
       </div>
     </div>
   );

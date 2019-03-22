@@ -3,7 +3,7 @@ import story1 from './cap1-story.png';
 
 const Content1 = ({}) => {
   return (
-    <div className='w-100 flex flex-column'>
+    <div className='w-100 flex flex-column view content1'>
       <h2 className='pa4 tc'>The shapes of our dreams</h2>
       <div className='w-100 bg-white pa4'>
         <p>
@@ -24,8 +24,8 @@ const Content1 = ({}) => {
         </p>
       </div>
 
-      <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+      <div className='w-100 tc'>
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
         <p>
@@ -46,8 +46,8 @@ const Content1 = ({}) => {
         </p>
       </div>
 
-      <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+      <div className='w-100 tc'>
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
         <p>
@@ -68,8 +68,8 @@ const Content1 = ({}) => {
         </p>
       </div>
 
-      <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+      <div className='w-100 tc'>
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
     </div>
   );

@@ -79,7 +79,7 @@ const Petals = ({ name, language, year, value, index }) => {
           )}
         </g>
       </svg>
-      <div className='w-100 tc'>{name}</div>
+      <div className='w-100 tc f2'>{name}</div>
       <div className='w-100 tc mt2'>{value}</div>
     </div>
   );

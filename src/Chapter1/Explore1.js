@@ -6,6 +6,7 @@ import topics from '../data/topics.json';
 import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
+import noData from './no-data.svg';
 
 const Explore1 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -71,7 +72,7 @@ const Explore1 = ({ history }) => {
   const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
 
   return (
-    <div className='explore1'>
+    <div className='explore1 view'>
       <div className='w-100 flex flex-column justify-center pa2 relative'>
         <LanguageSelector
           languages={groupedByCountryKeys}
@@ -83,7 +84,9 @@ const Explore1 = ({ history }) => {
           onSelect={onSelectYear}
           selected={selectedYearIndex}
         />
-        <div className='left-tap' onClick={() => onSwipeLeft()} />
+        <div className='left-tap' onClick={() => onSwipeLeft()}>
+          <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+        </div>
 
         {topic.value ? (
           <Petals
@@ -98,16 +101,11 @@ const Explore1 = ({ history }) => {
             className='w-100 flex justify-center items-center pa4'
             style={{ flex: 1, height: '400px' }}
           >
-            NO DATA AVAILABLE
+            <img src={noData} width={80} alt='No data available' />
           </div>
         )}
-        <div className='right-tap' onClick={() => onSwipeRight()} />
-        <div
-          className='w-100 flex justify-center items-center pa4'
-          onClick={() => goToChapter1()}
-          style={{ flex: 1 }}
-        >
-          <div className=''>READ CHAPTER 1</div>
+        <div className='right-tap' onClick={() => onSwipeRight()}>
+          <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
         </div>
       </div>
     </div>

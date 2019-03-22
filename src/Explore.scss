@@ -1,5 +1,4 @@
 .chapter1 {
-  background-image: linear-gradient(#e1eaef, #e4f3ec);
 }
 
 .chapter2 {
@@ -14,12 +13,15 @@
   background-image: linear-gradient(#e1eaef, #e4f3ec);
 }
 
-.landing1 {
+.landing1,
+.explore1 {
   min-height: 100vh;
 }
 
-.explore1 {
-  height: 100vh;
+.landing1,
+.explore1,
+.content1 {
+  background-image: linear-gradient(#e1eaef, #e4f3ec);
 }
 
 .explore2 {
