@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import SwipeableRoutes from 'react-swipeable-routes';
 import { AppContext } from './appContext';
 import 'tachyons';
 import './index.css';
@@ -10,7 +11,8 @@ import Chapter1 from './Chapter1';
 import Chapter2 from './Chapter2';
 import Chapter3 from './Chapter3';
 import Chapter4 from './Chapter4';
-
+import Header from './components/Header';
+import NavigationFooter from './components/NavigationFooter';
 import * as serviceWorker from './serviceWorker';
 
 const supportsHistory = 'pushState' in window.history;
@@ -20,8 +22,12 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      previousPath: '/',
-      setPreviousPath: this.setPreviousPath
+      previousPath: null,
+      actualPath: null,
+      selectedView: 'landing',
+      setPreviousPath: this.setPreviousPath,
+      setActualPath: this.setActualPath,
+      setSelectedView: this.setSelectedView
     };
   }
 
@@ -31,12 +37,45 @@ class App extends React.Component {
     });
   };
 
+  setActualPath = path => {
+    this.setState({
+      actualPath: path
+    });
+  };
+
+  setSelectedView = view => {
+    this.setState({
+      selectedView: view
+    });
+  };
+
+  resetSelectedView = () => {
+    this.setState({
+      selectedView: 'landing'
+    });
+  };
+
   render() {
     return (
       <HashRouter forceRefresh={!supportsHistory}>
         <AppContext.Provider value={this.state}>
           <div className='w-100'>
-            <Route
+            <Route exact path='/' component={Landing} />
+
+            <Header />
+
+            <SwipeableRoutes
+              containerStyle={{ height: '100%' }}
+              onChangeIndex={this.resetSelectedView}
+            >
+              <Route exact path={'/chapter1'} component={Chapter1} />
+              <Route exact path={'/chapter2'} component={Chapter2} />
+              <Route exact path={'/chapter3'} component={Chapter3} />
+              <Route exact path={'/chapter4'} component={Chapter4} />
+            </SwipeableRoutes>
+
+            <NavigationFooter />
+            {/* <Route
               render={({ location }) => {
                 const { pathname } = location;
                 return (
@@ -45,8 +84,8 @@ class App extends React.Component {
                       key={pathname}
                       classNames='page'
                       timeout={{
-                        enter: 25000,
-                        exit: 25000
+                        enter: 2000,
+                        exit: 2000
                       }}
                     >
                       <Route
@@ -81,7 +120,7 @@ class App extends React.Component {
                   </TransitionGroup>
                 );
               }}
-            />
+            /> */}
           </div>
         </AppContext.Provider>
       </HashRouter>

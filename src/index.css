@@ -22,7 +22,7 @@ body,
 
 * {
   font-family: 'Cormorant Garamond', serif;
-  outline: 1px solid gold;
+  /* outline: 1px solid gold; */
 }
 
 /* Page */
@@ -31,15 +31,14 @@ body,
   height: 100vh;
   /* padding: calc(15% + 1.5em) 5% 5%; */
   overflow-y: auto;
-  position: fixed;
   top: 0px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
   transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 
-.page-enter {
-  transform: translate(100%, 0);
+/* .page-enter {
+  transform: translate(-100%, 0);
 }
 
 .page-enter-active {
@@ -52,7 +51,7 @@ body,
 }
 
 .page--prev.page-enter {
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
 }
 
 .page--prev.page-enter-active {
@@ -65,9 +64,9 @@ body,
 
 .page-exit .page__inner {
   opacity: 1;
-  /* transform: scale(0.9); */
+  transform: scale(0.9);
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
+} */
 
 .right-tap {
   position: absolute;
@@ -99,7 +98,7 @@ body,
 }
 
 .view-enter {
-  transform: translate(0, -100%);
+  transform: translate(-100%, 0);
 }
 
 .view-enter-active {
@@ -108,5 +107,37 @@ body,
 
 .view-exit {
   box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.5) inset;
-  transform: translate(0, 100%);
+  transform: translate(100%, 0);
+}
+
+.page-enter {
+  transform: translate(100%, 0);
+}
+
+.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page-exit {
+  box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.5) inset;
+  transform: translate(-100%, 0);
+}
+
+.page-right.page-enter {
+  transform: translate(-100%, 0);
+}
+
+.page-right.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page-right.page-exit {
+  box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.5) inset;
+  transform: translate(100%, 0);
+}
+
+.page-exit .page__inner {
+  opacity: 1;
+  transform: scale(0.9);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }

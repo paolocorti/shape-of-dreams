@@ -25,7 +25,7 @@ const Content2 = ({}) => {
       </div>
 
       <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
         <p>
@@ -47,7 +47,7 @@ const Content2 = ({}) => {
       </div>
 
       <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
         <p>
@@ -69,7 +69,7 @@ const Content2 = ({}) => {
       </div>
 
       <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
     </div>
   );
