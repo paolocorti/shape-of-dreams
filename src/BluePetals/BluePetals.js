@@ -20,7 +20,7 @@ const BluePetals = ({ categories }) => {
         className='viz'
         x='0px'
         y='0px'
-        viewBox='0 0 450 450'
+        viewBox='0 0 500 500'
         width={svgWidth}
         height={svgWidth}
         style={{ border: '0px solid rgba(0,0,0,0.2)', margin: 'auto' }}
@@ -41,13 +41,11 @@ const BluePetals = ({ categories }) => {
             <stop offset='1' style={{ stopColor: '#8993C7' }} />
           </linearGradient>
         </defs>
-        <g transform={`translate(220, 80)`} id='blupetals'>
+        <g transform={`translate(220, 150)`} id='blupetals'>
           {categories.map((category, i) => {
             if (category.value < 11) {
               return <BluePetal10 id={i} key={i} />;
             } else if (category.value >= 11 && category.value <= 20) {
-              console.log('here 20');
-
               return <BluePetal20 id={i} key={i} />;
             } else if (category.value >= 21 && category.value <= 30) {
               return <BluePetal30 id={i} key={i} />;
@@ -67,6 +65,7 @@ const BluePetals = ({ categories }) => {
               return <BluePetal100 id={i} key={i} />;
             }
           })}
+          <circle r={10} fill={'#607dbd'} cx={13} cy={10} />
         </g>
       </svg>
     </div>
