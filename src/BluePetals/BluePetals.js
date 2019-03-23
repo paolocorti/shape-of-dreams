@@ -10,6 +10,7 @@ import BluePetal80 from './BluePetal80';
 import BluePetal90 from './BluePetal90';
 import BluePetal100 from './BluePetal100';
 import './BluePetal.scss';
+import Grid from './Grid';
 
 const BluePetals = ({ categories }) => {
   const svgWidth = window.innerWidth * 0.9;
@@ -20,10 +21,10 @@ const BluePetals = ({ categories }) => {
         className='viz'
         x='0px'
         y='0px'
-        viewBox='0 0 500 500'
+        viewBox='0 0 600 600'
         width={svgWidth}
         height={svgWidth}
-        style={{ border: '0px solid rgba(0,0,0,0.2)', margin: 'auto' }}
+        style={{ border: '0px solid rgba(0,0,0,1)', margin: 'auto' }}
       >
         <defs>
           <linearGradient
@@ -41,7 +42,8 @@ const BluePetals = ({ categories }) => {
             <stop offset='1' style={{ stopColor: '#8993C7' }} />
           </linearGradient>
         </defs>
-        <g transform={`translate(220, 150)`} id='blupetals'>
+        <Grid />
+        <g transform={`translate(300, 280)`} id='blupetals'>
           {categories.map((category, i) => {
             if (category.value < 11) {
               return <BluePetal10 id={i} key={i} />;
@@ -65,7 +67,7 @@ const BluePetals = ({ categories }) => {
               return <BluePetal100 id={i} key={i} />;
             }
           })}
-          <circle r={10} fill={'#607dbd'} cx={13} cy={10} />
+          <circle r={5} fill={'#607dbd'} cx={1} cy={20} />
         </g>
       </svg>
     </div>

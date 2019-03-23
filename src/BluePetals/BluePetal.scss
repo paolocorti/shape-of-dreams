@@ -5,6 +5,29 @@
   fill: #607cbd;
 }
 
+.grid0 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.grid1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1.995, 3.9901;
+}
+.grid2 {
+  fill: #13120d;
+}
+.grid3 {
+  font-family: 'Raleway', sans-serif;
+}
+.grid4 {
+  font-size: 13px;
+}
+
 .line {
   fill: none;
   stroke: #617cbb;
@@ -13,20 +36,21 @@
   stroke-dasharray: 0.6, 3;
 }
 
-$rotation-base-angle: 22deg;
+$rotation-base-angle: 30deg;
 // $start-rotation: $rotation-base-angle * 11;
-$start-rotation: -20deg;
+$start-rotation: -90deg;
 $rotation-time: 2s;
 $rotation-ease: ease-out;
 $first-row-delay-time: 0s;
 
 @for $i from 0 through 11 {
-  $rotation-angle: ($rotation-base-angle * $i) - 20deg;
+  $rotation-angle: ($rotation-base-angle * $i) - 90deg;
 
   #bluepetal-#{$i} {
     transform: rotate($rotation-angle);
     transform-box: border-box;
-    transform-origin: 1% 2%;
+    transform-origin: 0px 20px;
+    // outline: 1px solid black;
     animation: bluePetalRotation#{$i}
       $rotation-time
       $first-row-delay-time
@@ -39,7 +63,7 @@ $first-row-delay-time: 0s;
       transform: rotate($start-rotation);
     }
     100% {
-      transform: rotate(-20deg + ($rotation-base-angle * $i));
+      transform: rotate(-90deg + ($rotation-base-angle * $i));
     }
   }
 }

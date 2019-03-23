@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { AppContext } from '../appContext';
-import Landing4 from './Landing4';
+import Content4 from './Content4';
 import Page from '../components/Page';
 
 const Chapter4 = ({ history }) => {
@@ -8,7 +8,7 @@ const Chapter4 = ({ history }) => {
 
   return (
     <Page chapter='chapter4'>
-      <Landing4 />
+      <Content4 />
     </Page>
   );
 };

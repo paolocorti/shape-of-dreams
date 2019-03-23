@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../appContext';
 
-const NavigationFooter = ({ selectedView, setSelectedView }) => {
+const NavigationFooter = ({}) => {
   const context = useContext(AppContext);
 
   return (
@@ -24,13 +24,29 @@ const NavigationFooter = ({ selectedView, setSelectedView }) => {
         className='w-30 flex justify-center items-center pa3'
         onClick={() => context.setSelectedView('content')}
       >
-        <img src={'/images/read.svg'} alt='Read icon' width={35} />
+        <img
+          src={
+            context.selectedView === 'content'
+              ? '/images/read-on.svg'
+              : '/images/read.svg'
+          }
+          alt='Read icon'
+          width={35}
+        />
       </div>
       <div
         className='w-30 flex justify-center items-center pa3 cursor-pointer'
         onClick={() => context.setSelectedView('explore')}
       >
-        <img src={'/images/explore.svg'} alt='Explore icon' width={35} />
+        <img
+          src={
+            context.selectedView === 'explore'
+              ? '/images/explore-on.svg'
+              : '/images/explore.svg'
+          }
+          alt='Explore icon'
+          width={35}
+        />
       </div>
     </div>
   );

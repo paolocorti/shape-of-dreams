@@ -28,10 +28,10 @@ body,
 /* Page */
 
 .page {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   /* padding: calc(15% + 1.5em) 5% 5%; */
   overflow-y: auto;
-  top: 0px;
+  padding-top: 50px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
   transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;

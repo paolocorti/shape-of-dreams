@@ -4,7 +4,16 @@ import story1 from './cap1-story.png';
 const Content1 = ({}) => {
   return (
     <div className='w-100 flex flex-column'>
-      <h2 className='pa4 tc'>The shapes of our dreams</h2>
+      <h2 className='tc fw6 f4'>Chapter 4</h2>
+      <h1 className='tc fw7'>The Dreams that Connect Us</h1>
+      <div className='ph5 f4 tc'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis dolor,
+        sodales sed dapibus gravida, semper ut nunc.
+      </div>
+
+      <div className='ph5 f4 tc mt4'>Connections among </div>
+      <div className='ph5 f4 tc'>the languages in 2018</div>
+      <div className='w-100 tc mt4' />
       <div className='w-100 bg-white pa4'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
