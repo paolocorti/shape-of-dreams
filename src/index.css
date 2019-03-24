@@ -19,7 +19,7 @@ body {
 /* Page */
 
 .page {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   /* padding: calc(15% + 1.5em) 5% 5%; */
   overflow-y: auto;
   padding-top: 50px;
