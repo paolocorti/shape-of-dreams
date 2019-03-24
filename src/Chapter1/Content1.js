@@ -1,7 +1,7 @@
 import React from 'react';
 import story1 from './cap1-story.png';
 import landing1 from './landing_1.svg';
-import legend1 from './cap1-landing-key.svg';
+import legend1 from './cap1-landing-key.png';
 
 const Content1 = ({}) => {
   return (
@@ -9,16 +9,18 @@ const Content1 = ({}) => {
       <h2 className='tc fw6 f4 mb0'>Chapter 1</h2>
       <div className='tc fw6 f4'>&#183;</div>
       <h1 className='tc fw7 mt0'>The Shapes of our Dreams</h1>
-      <div className='ph5 tc f4'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis dolor,
-        sodales sed dapibus gravida, semper ut nunc.
+      <div className='ph4 tc f4'>
+        What are the most recurring dreams in our analysis? We have explored the
+        topic studying the Google searches for the meaning of dreams in 7
+        different languages from 2008 to 2018. There are certain subjects that
+        consistently appeared at least one in year in all the languages.
+      </div>
+      <div className='w-100 tc mt4'>
+        <img src={legend1} width='100%' alt='chapter 1 legend' />
       </div>
 
       <div className='w-100 tc mt4'>
         <img src={landing1} width='90%' alt='chapter 1 icon' />
-      </div>
-      <div className='w-100 tc mt4'>
-        <img src={legend1} width='100%' alt='chapter 1 legend' />
       </div>
       <div className='w-100 bg-white pa4'>
         <p>

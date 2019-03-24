@@ -25,10 +25,9 @@ const Petals = ({ name, language, year, value, index }) => {
   }, [value]);
 
   return (
-    <div
-      className='flex w-100 justify-center flex-column mt4'
-      style={{ flex: 1 }}
-    >
+    <React.Fragment>
+      <div className='w-100 tc f2'>{name}</div>
+      <div className='w-100 tc mt2 raleway'>{value}</div>
       <svg
         className='viz'
         x='0px'
@@ -36,7 +35,11 @@ const Petals = ({ name, language, year, value, index }) => {
         viewBox='0 0 300 300'
         width={svgWidth}
         height={svgWidth}
-        style={{ border: '0px solid rgba(0,0,0,0.2)', margin: 'auto' }}
+        style={{
+          border: '0px solid rgba(0,0,0,0.2)',
+          margin: 'auto',
+          marginTop: '30px'
+        }}
       >
         <defs>
           <linearGradient
@@ -79,9 +82,7 @@ const Petals = ({ name, language, year, value, index }) => {
           )}
         </g>
       </svg>
-      <div className='w-100 tc f2'>{name}</div>
-      <div className='w-100 tc mt2'>{value}</div>
-    </div>
+    </React.Fragment>
   );
 };
 

@@ -93,7 +93,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 271.5091 28.3058)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           ANIMALS
         </text>
@@ -101,7 +101,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 275.5589 581.1749)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           PEOPLE
         </text>
@@ -109,7 +109,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 435.822 64.7198)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           BODY
         </text>
@@ -117,30 +117,30 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 123.0387 64.7198)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           OTHER
         </text>
       </g>
       <g>
         <text transform='matrix(1 0 0 1 535.2802 164.1783)'>
-          <tspan x='0' y='0' className='grid2 grid3 grid4'>
+          <tspan x='0' y='0' className='grid2 raleway grid4'>
             FLYING
           </tspan>
-          <tspan x='0' y='15.6' className='grid2 grid3 grid4'>
+          <tspan x='0' y='15.6' className='grid2 raleway grid4'>
             AND
           </tspan>
-          <tspan x='0' y='31.2' className='grid2 grid3 grid4'>
+          <tspan x='0' y='31.2' className='grid2 raleway grid4'>
             FALLING
           </tspan>
         </text>
       </g>
       <g>
         <text transform='matrix(1 0 0 1 2.9561 164.6822)'>
-          <tspan x='0' y='0' className='grid2 grid3 grid4'>
+          <tspan x='0' y='0' className='grid2 raleway grid4'>
             WEATHER
           </tspan>
-          <tspan x='13.5' y='15.6' className='grid2 grid3 grid4'>
+          <tspan x='13.5' y='15.6' className='grid2 raleway grid4'>
             EVENTS
           </tspan>
         </text>
@@ -148,7 +148,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(6.123234e-17 -1 1 6.123234e-17 582.5656 318.0333)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           FOOD
         </text>
@@ -156,7 +156,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(6.123234e-17 -1 1 6.123234e-17 27.8072 328.1144)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           TRAVELS
         </text>
@@ -164,17 +164,17 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 535.2797 443.4586)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           MONEY
         </text>
       </g>
       <g>
         <text transform='matrix(1 0 0 1 20.9586 443.4586)'>
-          <tspan x='0' y='0' className='grid2 grid3 grid4'>
+          <tspan x='0' y='0' className='grid2 raleway grid4'>
             SUPER-
           </tspan>
-          <tspan x='-13.5' y='15.6' className='grid2 grid3 grid4'>
+          <tspan x='-13.5' y='15.6' className='grid2 raleway grid4'>
             NATURAL
           </tspan>
         </text>
@@ -182,7 +182,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 436.8304 547.215)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           NATURE
         </text>
@@ -190,7 +190,7 @@ const Grid = ({}) => {
       <g>
         <text
           transform='matrix(1 0 0 1 86.2179 547.215)'
-          className='grid2 grid3 grid4'
+          className='grid2 raleway grid4'
         >
           PREGNANCY
         </text>

@@ -15,9 +15,9 @@ const Content2 = ({}) => {
 
       <div className='ph5 tc mt4 f4'>Categories of subjects</div>
       <div className='ph5 tc f4'>in all the languages (2008-2018)</div>
-      <div className='w-100 tc mt4'>
+      {/* <div className='w-100 tc mt4'>
         <img src={landing2} width='90%' alt='chapter 2 icon' />
-      </div>
+      </div> */}
       <div className='w-100 tc mt4'>
         <img src={legend2} width='90%' alt='chapter 2 legend' />
       </div>

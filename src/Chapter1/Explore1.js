@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Swipe from 'react-easy-swipe';
 import { values, groupBy } from 'lodash';
 import Petals from '../Petals';
 import topics from '../data/topics.json';
@@ -13,13 +12,13 @@ const Explore1 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
 
-  const onSwipeRight = () => {
+  const onTapRight = () => {
     const newIndex =
       selectedIndex < selectedTopics[0].length - 1 ? selectedIndex + 1 : 0;
     setSelectedIndex(newIndex);
   };
 
-  const onSwipeLeft = () => {
+  const onTapLeft = () => {
     const newIndex =
       selectedIndex > 0 ? selectedIndex - 1 : selectedTopics[0].length - 1;
     setSelectedIndex(newIndex);
@@ -72,40 +71,46 @@ const Explore1 = ({ history }) => {
   const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
 
   return (
-    <div className='explore1 view'>
+    <div className='explore1'>
       <div className='w-100 flex flex-column justify-center pa2 relative'>
-        <LanguageSelector
-          languages={groupedByCountryKeys}
-          onSelect={onSelectLanguage}
-          selected={selectedLanguageIndex}
-        />
-        <YearsSelector
-          years={years}
-          onSelect={onSelectYear}
-          selected={selectedYearIndex}
-        />
-        <div className='left-tap' onClick={() => onSwipeLeft()}>
-          <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-        </div>
-
-        {topic.value ? (
-          <Petals
-            value={topic.value}
-            name={topic.subject}
-            language={topic.language}
-            year={topic.year}
-            index={selectedIndex}
+        <div className='w-100' style={{ height: '30%' }}>
+          <LanguageSelector
+            languages={groupedByCountryKeys}
+            onSelect={onSelectLanguage}
+            selected={selectedLanguageIndex}
           />
-        ) : (
-          <div
-            className='w-100 flex justify-center items-center pa4'
-            style={{ flex: 1, height: '400px' }}
-          >
-            <img src={noData} width={80} alt='No data available' />
+          <YearsSelector
+            years={years}
+            onSelect={onSelectYear}
+            selected={selectedYearIndex}
+          />
+        </div>
+        <div
+          className='relative flex flex-column justify-center'
+          style={{ flex: 1, height: '70%' }}
+        >
+          {topic.value ? (
+            <Petals
+              value={topic.value}
+              name={topic.subject}
+              language={topic.language}
+              year={topic.year}
+              index={selectedIndex}
+            />
+          ) : (
+            <div
+              className='w-100 flex justify-center items-center pa4'
+              style={{ flex: 1, height: '400px' }}
+            >
+              <img src={noData} width={80} alt='No data available' />
+            </div>
+          )}
+          <div className='left-tap' onClick={() => onTapLeft()}>
+            <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
           </div>
-        )}
-        <div className='right-tap' onClick={() => onSwipeRight()}>
-          <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+          <div className='right-tap' onClick={() => onTapRight()}>
+            <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+          </div>
         </div>
       </div>
     </div>
