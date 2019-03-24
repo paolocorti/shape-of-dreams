@@ -6,5 +6,6 @@ export const AppContext = React.createContext({
   selectedView: 'landing',
   setPreviousPath: () => {},
   setActualPath: () => {},
-  setSelectedView: () => {}
+  setSelectedView: () => {},
+  resetSelectedView: () => {}
 });

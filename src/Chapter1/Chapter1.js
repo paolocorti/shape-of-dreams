@@ -1,9 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
-import Swipe from 'react-easy-swipe';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { AppContext } from '../appContext';
 import Page from '../components/Page';
-import Landing1 from './Landing1';
 import Explore1 from './Explore1';
 import Content1 from './Content1';
 
