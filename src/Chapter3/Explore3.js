@@ -4,7 +4,6 @@ import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import Trends from '../Trends';
-import GaussianChart from '../GaussianChart';
 
 const Explore3 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -66,7 +65,7 @@ const Explore3 = ({ history }) => {
           style={{ flex: 1, flexShrink: 0, height: '70%' }}
         >
           <Trends data={interestOverTime} name={'Dreaming about Tornadoes'} />
-          <GaussianChart data={interestOverTime} />
+          {/* <GaussianChart data={interestOverTime} /> */}
         </div>
       </div>
     </div>

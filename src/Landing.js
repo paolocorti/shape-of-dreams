@@ -35,7 +35,7 @@ const Landing = ({ history, scrollTo }) => {
             dreams
           </div>
         </div>
-        <div className='landing-footer w-100 tc pa4' onClick={goToChapter1}>
+        <div className='landing-footer w-100 tc' onClick={goToChapter1}>
           <div>
             <img src={'images/down-arrow.svg'} width={35} />
           </div>
