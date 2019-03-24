@@ -1,7 +1,6 @@
 import React from 'react';
 import story1 from './cap1-story.png';
-import landing1 from './landing_1.svg';
-import legend1 from './cap1-landing-key.png';
+import landing3 from './landing_3.svg';
 
 const Content3 = ({}) => {
   return (
@@ -13,12 +12,8 @@ const Content3 = ({}) => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor in- cididunt ut labore
       </div>
-      <div className='w-100 tc mt4'>
-        <img src={legend1} width='100%' alt='chapter 1 legend' />
-      </div>
-
-      <div className='w-100 tc mt4'>
-        <img src={landing1} width='90%' alt='chapter 1 icon' />
+      <div className='w-100 tc mv4'>
+        <img src={landing3} width='90%' alt='chapter 3 icon' />
       </div>
       <div className='w-100 bg-white pa4'>
         <p className='lh-copy'>
