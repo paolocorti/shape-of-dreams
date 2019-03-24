@@ -95,7 +95,7 @@ const Routes = ({ location }) => {
         }}
       /> */}
 
-      {/* {pathname !== '/' && <NavigationFooter />} */}
+      {pathname !== '/' && <NavigationFooter />}
     </div>
   );
 };
