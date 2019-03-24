@@ -25,7 +25,7 @@ const Routes = ({ location }) => {
 
       {pathname !== '/' && (
         <SwipeableRoutes
-          containerStyle={{ height: '100vh' }}
+          containerStyle={{ height: 'calc(100vh - 50px)' }}
           onChangeIndex={context.resetSelectedView}
         >
           <Route exact path={'/chapter1'} component={Chapter1} />
