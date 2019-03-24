@@ -23,7 +23,7 @@ const Content1 = ({}) => {
         <img src={landing1} width='90%' alt='chapter 1 icon' />
       </div>
       <div className='w-100 bg-white pa4'>
-        <p>
+        <p className='lh-copy'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
           dolor, sodales sed dapibus gravida, semper ut nunc. Etiam dignissim
           purus sed enim malesuada pulvinar. Lorem ipsum dolor sit amet,
@@ -45,7 +45,7 @@ const Content1 = ({}) => {
         <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
-        <p>
+        <p className='lh-copy'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
           dolor, sodales sed dapibus gravida, semper ut nunc. Etiam dignissim
           purus sed enim malesuada pulvinar. Lorem ipsum dolor sit amet,
@@ -67,7 +67,7 @@ const Content1 = ({}) => {
         <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
-        <p>
+        <p className='lh-copy'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
           dolor, sodales sed dapibus gravida, semper ut nunc. Etiam dignissim
           purus sed enim malesuada pulvinar. Lorem ipsum dolor sit amet,

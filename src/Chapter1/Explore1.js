@@ -73,7 +73,10 @@ const Explore1 = ({ history }) => {
   return (
     <div className='explore1'>
       <div className='w-100 flex flex-column justify-center pa2 relative'>
-        <div className='w-100' style={{ height: '30%' }}>
+        <div
+          className='w-100'
+          style={{ flex: 1, flexShrink: 0, height: '30%' }}
+        >
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -87,7 +90,7 @@ const Explore1 = ({ history }) => {
         </div>
         <div
           className='relative flex flex-column justify-center'
-          style={{ flex: 1, height: '70%' }}
+          style={{ flex: 1, flexShrink: 0, height: '70%' }}
         >
           {topic.value ? (
             <Petals

@@ -1,12 +1,27 @@
 import React from 'react';
 import story1 from './cap1-story.png';
+import landing1 from './landing_1.svg';
+import legend1 from './cap1-landing-key.png';
 
-const Content1 = ({}) => {
+const Content3 = ({}) => {
   return (
-    <div className='w-100 flex flex-column'>
-      <h2 className='pa4 tc'>The shapes of our dreams</h2>
+    <div className='w-100'>
+      <h2 className='tc fw6 f4 mb0'>Chapter 3</h2>
+      <div className='tc fw6 f4'>&#183;</div>
+      <h1 className='tc fw7 mt0'>A Time for Dreams</h1>
+      <div className='ph4 tc f4'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor in- cididunt ut labore
+      </div>
+      <div className='w-100 tc mt4'>
+        <img src={legend1} width='100%' alt='chapter 1 legend' />
+      </div>
+
+      <div className='w-100 tc mt4'>
+        <img src={landing1} width='90%' alt='chapter 1 icon' />
+      </div>
       <div className='w-100 bg-white pa4'>
-        <p>
+        <p className='lh-copy'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
           dolor, sodales sed dapibus gravida, semper ut nunc. Etiam dignissim
           purus sed enim malesuada pulvinar. Lorem ipsum dolor sit amet,
@@ -24,11 +39,11 @@ const Content1 = ({}) => {
         </p>
       </div>
 
-      <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+      <div className='w-100 tc'>
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
-        <p>
+        <p className='lh-copy'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
           dolor, sodales sed dapibus gravida, semper ut nunc. Etiam dignissim
           purus sed enim malesuada pulvinar. Lorem ipsum dolor sit amet,
@@ -46,11 +61,11 @@ const Content1 = ({}) => {
         </p>
       </div>
 
-      <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+      <div className='w-100 tc'>
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
       <div className='w-100 bg-white pa4'>
-        <p>
+        <p className='lh-copy'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis
           dolor, sodales sed dapibus gravida, semper ut nunc. Etiam dignissim
           purus sed enim malesuada pulvinar. Lorem ipsum dolor sit amet,
@@ -68,11 +83,11 @@ const Content1 = ({}) => {
         </p>
       </div>
 
-      <div className='w-100 tc mt2'>
-        <img src={story1} width='90%' alt='chapter 1 story' />
+      <div className='w-100 tc'>
+        <img src={story1} width='100%' alt='chapter 1 story' />
       </div>
     </div>
   );
 };
 
-export default Content1;
+export default Content3;
