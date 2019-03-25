@@ -26,7 +26,7 @@ const Petals = ({ name, language, year, value, index }) => {
 
   return (
     <React.Fragment>
-      <div className='w-100 tc f2'>{name}</div>
+      <div className='w-100 tc f2 ph3'>{name}</div>
       <div className='w-100 tc mt2 raleway'>{value}</div>
       <svg
         className='viz'

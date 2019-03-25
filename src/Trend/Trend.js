@@ -3,7 +3,7 @@ import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
 
-const Trends = ({ data, name }) => {
+const Trend = ({ data, name }) => {
   const svgWidth = window.innerWidth * 0.8;
   const svgHeight = window.innerWidth * 0.4;
   const startDate = moment('2008-01-01');
@@ -61,10 +61,10 @@ const Trends = ({ data, name }) => {
                   x2={scaleX(date)}
                   y2={svgHeight - scaleY(value)}
                   stroke={'#af5a4d'}
-                  strokeWidth={1}
+                  strokeWidth={0.4}
                 />
                 <circle
-                  r={5}
+                  r={4}
                   cx={scaleX(date)}
                   cy={svgHeight - scaleY(value)}
                   fill='url(#trendGradient)'
@@ -78,4 +78,4 @@ const Trends = ({ data, name }) => {
   );
 };
 
-export default Trends;
+export default Trend;
