@@ -16,6 +16,14 @@ const Header = ({}) => {
         width={30}
         onClick={() => context.toggleMenu()}
       />
+      <img
+        src={'/images/legend.svg'}
+        className='absolute'
+        style={{ right: '.5rem' }}
+        alt='Legend icon'
+        width={30}
+        onClick={() => context.toggleMenu()}
+      />
     </div>
   );
 };

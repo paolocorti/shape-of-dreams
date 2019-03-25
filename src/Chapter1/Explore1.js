@@ -102,12 +102,16 @@ const Explore1 = ({ history }) => {
               <img src={noData} width={80} alt='No data available' />
             </div>
           )}
-          <div className='left-tap' onClick={() => onTapLeft()}>
-            <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-          </div>
-          <div className='right-tap' onClick={() => onTapRight()}>
-            <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-          </div>
+          {selectedTopics.length > 0 && (
+            <div className='left-tap' onClick={() => onTapLeft()}>
+              <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+            </div>
+          )}
+          {selectedTopics.length > 0 && (
+            <div className='right-tap' onClick={() => onTapRight()}>
+              <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+            </div>
+          )}
         </div>
       </div>
     </div>
