@@ -1,20 +1,49 @@
 .langEl {
   font-weight: 500;
-  padding: 10px;
+  padding: 6px;
+  font-size: 14px;
 }
 
 .langEl.selected {
-  border-radius: 20px;
+  border-radius: 30px;
   border: 2px solid black;
 }
 
 .yearEl {
-  font-weight: 500;
-  padding: 10px;
-  width: 60px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.yearTouchArea {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 0;
+  left: -50%;
+  top: -50%;
 }
 
 .yearEl.selected {
-  border-radius: 20px;
-  border: 2px solid black;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.yearLine {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+}
+
+.yearVal {
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
 }

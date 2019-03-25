@@ -33,18 +33,20 @@ const Explore2 = ({ history }) => {
 
   return (
     <div className='explore2'>
-      <div className='w-100 flex flex-column justify-center pa2 relative'>
-        <LanguageSelector
-          languages={groupedByCountryKeys}
-          onSelect={onSelectLanguage}
-          selected={selectedLanguageIndex}
-        />
-        <YearsSelector
-          years={years}
-          onSelect={onSelectYear}
-          selected={selectedYearIndex}
-        />
-        <div className='w-100 flex flex-column mt4'>
+      <div className='w-100 h-100 pa2 relative'>
+        <div className='w-100 pa3' style={{ height: '30% ' }}>
+          <LanguageSelector
+            languages={groupedByCountryKeys}
+            onSelect={onSelectLanguage}
+            selected={selectedLanguageIndex}
+          />
+          <YearsSelector
+            years={years}
+            onSelect={onSelectYear}
+            selected={selectedYearIndex}
+          />
+        </div>
+        <div className='w-100 flex flex-column mt4' style={{ height: '70% ' }}>
           <BluePetals categories={selectedCategories} />
         </div>
       </div>

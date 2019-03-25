@@ -24,7 +24,7 @@
 }
 
 .landing-content {
-  height: 55%;
+  height: 45%;
 
   & .title {
     font-size: calc(38px + (70 - 38) * ((100vw - 300px) / (1600 - 300)));
@@ -36,7 +36,7 @@
 }
 
 .landing-footer {
-  height: 10%;
+  height: 20%;
 }
 
 .landing1,

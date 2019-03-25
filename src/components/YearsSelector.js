@@ -4,10 +4,8 @@ import './Selector.scss';
 
 const YearSelector = ({ years, selected, onSelect }) => {
   return (
-    <div
-      className='w-100 flex justify-around pa2 flex-wrap'
-      style={{ flex: 1 }}
-    >
+    <div className='w-100 flex flex-wrap justify-between items-center flex-wrap relative mt4'>
+      <div className='yearLine' />
       {years.map((value, index) => {
         return (
           <div
@@ -15,7 +13,10 @@ const YearSelector = ({ years, selected, onSelect }) => {
             className={`yearEl ${selected === index ? 'selected' : ''}`}
             onClick={() => onSelect(index)}
           >
-            {value}
+            <div className='yearTouchArea' />
+            {selected === index && (
+              <div className='yearVal raleway'>{value}</div>
+            )}
           </div>
         );
       })}

@@ -14,7 +14,7 @@ const Landing = ({ history, scrollTo }) => {
     scrollTo({ id: 'scroll', y: scrollHeight, smooth: true });
     setTimeout(() => {
       history.push(`/chapter1`);
-    }, 700);
+    }, 600);
   };
 
   return (
