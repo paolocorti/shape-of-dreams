@@ -73,7 +73,7 @@ const Explore1 = ({ history }) => {
   return (
     <div className='explore1'>
       <div className='w-100 h-100 pa2 relative'>
-        <div className='w-100 pa3' style={{ height: '30% ' }}>
+        <div className='w-100 pa3' style={{ height: '25% ' }}>
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -85,7 +85,7 @@ const Explore1 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 relative tc' style={{ height: '70% ' }}>
+        <div className='w-100 relative tc' style={{ height: '75% ' }}>
           {topic.value ? (
             <Petals
               value={topic.value}

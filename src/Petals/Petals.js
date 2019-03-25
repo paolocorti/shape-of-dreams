@@ -27,9 +27,9 @@ const Petals = ({ name, language, year, value, index }) => {
   return (
     <React.Fragment>
       <div className='w-100 tc f2 ph3'>{name}</div>
-      <div className='w-100 tc mt2 raleway'>{value}</div>
+      <div className='w-100 tc mt1 raleway'>{value}</div>
       <svg
-        className='viz'
+        className='viz mt2'
         x='0px'
         y='0px'
         viewBox='0 0 300 300'
@@ -37,8 +37,7 @@ const Petals = ({ name, language, year, value, index }) => {
         height={svgWidth}
         style={{
           border: '0px solid rgba(0,0,0,0.2)',
-          margin: 'auto',
-          marginTop: '30px'
+          margin: 'auto'
         }}
       >
         <defs>
