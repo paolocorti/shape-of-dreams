@@ -6,8 +6,8 @@ import legend2 from './cap2-landing.svg';
 const Content2 = ({}) => {
   return (
     <div className='w-100'>
-      <h2 className='tc fw6 f4 mb0'>Chapter 2</h2>
-      <div className='tc fw6 f4'>&#183;</div>
+      {/* <h2 className='tc fw6 f4 mb0'>Chapter 2</h2>
+      <div className='tc fw6 f4'>&#183;</div> */}
       <h1 className='tc fw7 mt0'>The Worlds We Dream of</h1>
       <div className='ph5 tc f4'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis dolor,

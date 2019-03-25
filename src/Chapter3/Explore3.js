@@ -34,7 +34,7 @@ const Explore3 = ({ history }) => {
           style={{ flex: 1, flexShrink: 0, height: '70%' }}
         >
           <Trend data={interestOverTime} name={'Dreaming about Tornadoes'} />
-          <GaussianTrend data={yearData} dataKey={'macro_1'} />
+          {/* <GaussianTrend data={yearData} dataKey={'macro_1'} /> */}
         </div>
       </div>
     </div>

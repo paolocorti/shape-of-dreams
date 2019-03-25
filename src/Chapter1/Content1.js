@@ -6,8 +6,8 @@ import legend1 from './cap1-landing-key.png';
 const Content1 = ({}) => {
   return (
     <div className='w-100'>
-      <h2 className='tc fw6 f4 mb0'>Chapter 1</h2>
-      <div className='tc fw6 f4'>&#183;</div>
+      {/* <h2 className='tc fw6 f4 mb0'>Chapter 1</h2>
+      <div className='tc fw6 f4'>&#183;</div> */}
       <h1 className='tc fw7 mt0'>The Shapes of our Dreams</h1>
       <div className='ph4 tc f4'>
         What are the most recurring dreams in our analysis? We have explored the

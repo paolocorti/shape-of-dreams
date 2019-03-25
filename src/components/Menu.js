@@ -17,19 +17,29 @@ const Menu = ({ history }) => {
       style={{ zIndex: 99 }}
     >
       <div className='w-100 flex justify-center items-center pa4'>
-        <div onClick={() => goTo('/')}>HOME</div>
+        <div className='raleway' onClick={() => goTo('/')}>
+          HOME
+        </div>
       </div>
       <div className='w-100 flex justify-center items-center pa4'>
-        <div onClick={() => goTo('/chapter1')}>CHAPTER 1</div>
+        <div className='raleway' onClick={() => goTo('/chapter1')}>
+          CHAPTER 1
+        </div>
       </div>
       <div className='w-100 flex justify-center items-center pa4'>
-        <div onClick={() => goTo('/chapter2')}>CHAPTER 2</div>
+        <div className='raleway' onClick={() => goTo('/chapter2')}>
+          CHAPTER 2
+        </div>
       </div>
       <div className='w-100 flex justify-center items-center pa4'>
-        <div onClick={() => goTo('/chapter3')}>CHAPTER 3</div>
+        <div className='raleway' onClick={() => goTo('/chapter3')}>
+          CHAPTER 3
+        </div>
       </div>
       <div className='w-100 flex justify-center items-center pa4'>
-        <div onClick={() => goTo('/chapter4')}>CHAPTER 4</div>
+        <div className='raleway' onClick={() => goTo('/chapter4')}>
+          CHAPTER 4
+        </div>
       </div>
     </div>
   );

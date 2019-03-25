@@ -5,8 +5,8 @@ import landing3 from './landing_3.svg';
 const Content3 = ({}) => {
   return (
     <div className='w-100'>
-      <h2 className='tc fw6 f4 mb0'>Chapter 3</h2>
-      <div className='tc fw6 f4'>&#183;</div>
+      {/* <h2 className='tc fw6 f4 mb0'>Chapter 3</h2>
+      <div className='tc fw6 f4'>&#183;</div> */}
       <h1 className='tc fw7 mt0'>A Time for Dreams</h1>
       <div className='ph4 tc f4'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

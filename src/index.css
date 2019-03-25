@@ -141,5 +141,5 @@ body {
 
 .menu.open {
   transition: 1s all;
-  height: 100vh;
+  height: 100%;
 }

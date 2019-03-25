@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
+import { Animate } from 'react-move';
+import { easeQuadOut } from 'd3-ease';
 
 const Trend = ({ data, name }) => {
-  const svgWidth = window.innerWidth * 0.8;
+  const svgWidth = window.innerWidth * 0.9;
   const svgHeight = window.innerWidth * 0.4;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
@@ -55,20 +57,51 @@ const Trend = ({ data, name }) => {
 
             return (
               <g key={i}>
-                <line
-                  x1={scaleX(date)}
-                  y1={svgHeight}
-                  x2={scaleX(date)}
-                  y2={svgHeight - scaleY(value)}
-                  stroke={'#af5a4d'}
-                  strokeWidth={0.4}
-                />
-                <circle
-                  r={4}
-                  cx={scaleX(date)}
-                  cy={svgHeight - scaleY(value)}
-                  fill='url(#trendGradient)'
-                />
+                <Animate
+                  start={() => ({
+                    y2: svgHeight
+                  })}
+                  enter={() => ({
+                    y2: [svgHeight - scaleY(value)],
+                    timing: { duration: 800, ease: easeQuadOut }
+                  })}
+                >
+                  {state => {
+                    const { y2 } = state;
+                    return (
+                      <line
+                        id={`line-${i}`}
+                        x1={scaleX(date)}
+                        y1={svgHeight}
+                        x2={scaleX(date)}
+                        y2={y2}
+                        stroke={'#af5a4d'}
+                        strokeWidth={0.4}
+                      />
+                    );
+                  }}
+                </Animate>
+                <Animate
+                  start={() => ({
+                    cy: svgHeight
+                  })}
+                  enter={() => ({
+                    cy: [svgHeight - scaleY(value)],
+                    timing: { duration: 800, ease: easeQuadOut }
+                  })}
+                >
+                  {state => {
+                    const { cy } = state;
+                    return (
+                      <circle
+                        r={4}
+                        cx={scaleX(date)}
+                        cy={cy}
+                        fill='url(#trendGradient)'
+                      />
+                    );
+                  }}
+                </Animate>
               </g>
             );
           })}
