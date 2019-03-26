@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Swipe from 'react-easy-swipe';
 import { groupBy, values } from 'lodash';
 import BluePetals from '../BluePetals';
 import categories from '../data/categories.json';

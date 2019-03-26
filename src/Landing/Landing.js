@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import landing1 from './Chapter1/landing_1.svg';
-import NavigationFooter from './components/NavigationFooter';
-import Content1 from './Chapter1/Content1';
+import landing from './petals-landing.svg';
+import NavigationFooter from '../components/NavigationFooter';
+import Content1 from '../Chapter1/Content1';
 import { ScrollToHOC, ScrollArea } from 'react-scroll-to';
 
 const Landing = ({ history, scrollTo }) => {
@@ -24,7 +24,7 @@ const Landing = ({ history, scrollTo }) => {
     >
       <div className={`w-100 landing`} style={{ paddingTop: '50px' }}>
         <div className='landing-header w-100 tc pa4'>
-          <img src={landing1} height='100%' alt='chapter 1 icon' />
+          <img src={landing} height='100%' alt='chapter 1 icon' />
         </div>
         <div className='landing-content w-100'>
           <h1 className='tc fw7 mt0 title'>

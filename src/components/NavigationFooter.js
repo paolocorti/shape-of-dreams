@@ -31,7 +31,7 @@ const NavigationFooter = ({}) => {
               : '/images/read.svg'
           }
           alt='Read icon'
-          width={35}
+          width={30}
         />
       </div>
       <div
@@ -45,7 +45,7 @@ const NavigationFooter = ({}) => {
               : '/images/explore.svg'
           }
           alt='Explore icon'
-          width={35}
+          width={30}
         />
       </div>
     </div>

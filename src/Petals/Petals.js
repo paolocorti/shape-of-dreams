@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Swipe from 'react-easy-swipe';
 import PetalRow from './PetalRow';
 
 const getNumberOfPetals = n => {
@@ -26,8 +25,8 @@ const Petals = ({ name, language, year, value, index }) => {
 
   return (
     <React.Fragment>
-      <div className='w-100 tc f2 ph3'>{name}</div>
-      <div className='w-100 tc mt1 raleway'>{value}</div>
+      <div className='ph3 topic'>{name}</div>
+      <div className='mt1 raleway value'>{value}</div>
       <svg
         className='viz mt2'
         x='0px'

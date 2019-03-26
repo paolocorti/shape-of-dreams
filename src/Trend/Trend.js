@@ -7,7 +7,7 @@ import { easeQuadOut } from 'd3-ease';
 
 const Trend = ({ data, name }) => {
   const svgWidth = window.innerWidth * 0.9;
-  const svgHeight = window.innerWidth * 0.4;
+  const svgHeight = window.innerWidth * 0.5;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
 

@@ -16,8 +16,6 @@ const Routes = ({ location }) => {
   const { pathname } = location;
   const context = useContext(AppContext);
 
-  console.log(pathname);
-
   return (
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`}>
       <Header />
