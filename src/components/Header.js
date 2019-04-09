@@ -13,7 +13,7 @@ const Header = ({ location }) => {
       className='w-100 fixed flex justify-between pv3 ph4'
       style={{ flex: 1 }}
       style={{
-        height: '50px',
+        height: '30px',
         zIndex: 99,
         backgroundColor: context.selectedView === 'content' ? 'white' : ''
       }}
