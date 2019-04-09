@@ -1,32 +1,37 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
+import './Header.scss';
 
-const Header = ({}) => {
+const Header = ({ location }) => {
+  const { pathname } = location;
   const context = useContext(AppContext);
+
+  console.log(pathname);
   return (
     <div
-      className='w-100 tc pa2 fixed'
+      className='w-100 fixed flex justify-between pv3 ph4'
       style={{ flex: 1 }}
-      style={{ height: '50px', zIndex: 999 }}
+      style={{
+        height: '50px',
+        zIndex: 99,
+        backgroundColor: context.selectedView === 'content' ? 'white' : ''
+      }}
     >
-      <img
-        src={context.menuOpen ? '/images/menu-white.svg' : '/images/menu.svg'}
-        alt='Menu icon'
-        width={30}
-        onClick={() => context.toggleMenu()}
+      <div
+        className={`header-el ${pathname === '/chapter1' ? 'selected' : ''}`}
       />
-      {!context.menuOpen && (
-        <img
-          src={'/images/legend.svg'}
-          className='absolute'
-          style={{ right: '.5rem' }}
-          alt='Legend icon'
-          width={30}
-        />
-      )}
+      <div
+        className={`header-el ${pathname === '/chapter2' ? 'selected' : ''}`}
+      />
+      <div
+        className={`header-el ${pathname === '/chapter3' ? 'selected' : ''}`}
+      />
+      <div
+        className={`header-el ${pathname === '/chapter4' ? 'selected' : ''}`}
+      />
     </div>
   );
 };
 
-export default Header;
+export default withRouter(Header);

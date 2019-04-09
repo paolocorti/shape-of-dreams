@@ -134,12 +134,14 @@ body {
 }
 
 .menu {
-  transition: 0.3s all;
-  height: 0;
+  transition: 0.5s all;
+  height: 100%;
+  transform: translate(0, 100%);
   overflow: hidden;
 }
 
 .menu.open {
-  transition: 1s all;
+  transition: 0.5s all;
   height: 100%;
+  transform: translate(0, 0);
 }

@@ -1,0 +1,11 @@
+.header-el {
+  width: 24%;
+  height: 1px;
+  background-color: #999999;
+  transition: 1s all;
+}
+
+.header-el.selected {
+  background-color: #43449a;
+  transition: 1s all;
+}

@@ -1,15 +1,13 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../appContext';
+import './Footer.scss';
 
 const NavigationFooter = ({}) => {
   const context = useContext(AppContext);
 
   return (
-    <div
-      className='w-100 flex justify-center fixed bottom-0 bg-white'
-      style={{ flex: 1, height: '50px' }}
-    >
+    <div className='footer' style={{ flex: 1, height: '50px' }}>
       {/* <div
         className='w-30 flex justify-center items-center pa3'
         onClick={() => context.setSelectedView('landing')}
@@ -20,33 +18,34 @@ const NavigationFooter = ({}) => {
           width={35}
         />
       </div> */}
-      <div
-        className='w-30 flex justify-center items-center pa3'
-        onClick={() => context.setSelectedView('content')}
-      >
+      <div className='w-10 flex justify-center items-center h-100'>
         <img
-          src={
-            context.selectedView === 'content'
-              ? '/images/read-on.svg'
-              : '/images/read.svg'
-          }
-          alt='Read icon'
-          width={30}
+          src={context.menuOpen ? '/images/menu-white.svg' : '/images/menu.svg'}
+          alt='Menu icon'
+          width={20}
+          onClick={() => context.toggleMenu()}
         />
       </div>
       <div
-        className='w-30 flex justify-center items-center pa3 cursor-pointer'
+        className='w-40 flex justify-center items-center cursor-pointer footer-el h-100'
+        onClick={() => context.setSelectedView('content')}
+      >
+        <div className={context.selectedView === 'content' ? 'active' : '/'}>
+          READ THE STORY
+        </div>
+      </div>
+      <div
+        className='w-40 flex justify-center items-center cursor-pointer footer-el h-100'
         onClick={() => context.setSelectedView('explore')}
       >
-        <img
-          src={
-            context.selectedView === 'explore'
-              ? '/images/explore-on.svg'
-              : '/images/explore.svg'
-          }
-          alt='Explore icon'
-          width={30}
-        />
+        <div className={context.selectedView === 'explore' ? 'active' : '/'}>
+          DREAMS EXPLORER
+        </div>
+      </div>
+      <div className='w-10 flex justify-center items-center h-100'>
+        {!context.menuOpen && (
+          <img src={'/images/legend.svg'} alt='Legend icon' width={24} />
+        )}
       </div>
     </div>
   );

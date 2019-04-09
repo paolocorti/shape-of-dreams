@@ -3,14 +3,12 @@ import story1 from './cap1-story.png';
 
 const Content1 = ({}) => {
   return (
-    <div className='w-100 flex flex-column'>
-      {/* <h2 className='tc fw6 f4'>Chapter 4</h2> */}
-      <h1 className='tc fw7 mt0'>
-        The Dreams that<br /> Connect Us
-      </h1>
-      <div className='ph5 f4 tc'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In felis dolor,
-        sodales sed dapibus gravida, semper ut nunc.
+    <div className='w-100 bg-white'>
+      <h2 className='tl fw6 f4 mv0 ph4'>Chapter 4</h2>
+      <h1 className='tl fw7 mt0 ph4'>The Dreams that Connect Us</h1>
+      <div className='ph4 tj f4'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor in- cididunt ut labore
       </div>
 
       <div className='ph5 f4 tc mt4'>Connections among </div>

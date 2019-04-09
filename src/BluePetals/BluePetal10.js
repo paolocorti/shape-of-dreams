@@ -2,7 +2,7 @@ import React from 'react';
 
 const BluePetal10 = ({ id, value }) => {
   return (
-    <g className='bluepetal bluepetal10'>
+    <g className={`bluepetal blupetal-${id}`}>
       <g id={`bluepetal-${id}`}>
         <path
           className='st0'

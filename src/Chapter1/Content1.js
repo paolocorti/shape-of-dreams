@@ -5,11 +5,10 @@ import legend1 from './cap1-landing-key.png';
 
 const Content1 = ({}) => {
   return (
-    <div className='w-100'>
-      {/* <h2 className='tc fw6 f4 mb0'>Chapter 1</h2>
-      <div className='tc fw6 f4'>&#183;</div> */}
-      <h1 className='tc fw7 mt0'>The Shapes of our Dreams</h1>
-      <div className='ph4 tc f4'>
+    <div className='w-100 bg-white'>
+      <h2 className='tl fw6 f4 mv0 ph4'>Chapter 1</h2>
+      <h1 className='tl fw7 mt0 ph4'>The Shapes of our Dreams</h1>
+      <div className='tj f4 ph4'>
         What are the most recurring dreams in our analysis? We have explored the
         topic studying the Google searches for the meaning of dreams in 7
         different languages from 2008 to 2018. There are certain subjects that

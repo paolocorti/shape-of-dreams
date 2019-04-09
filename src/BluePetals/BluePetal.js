@@ -2,8 +2,9 @@ import React from 'react';
 import './BluePetal.scss';
 
 const BluePetal = ({ id, value }) => {
+  console.log(id);
   return (
-    <g className='bluepetal'>
+    <g className={`bluepetal blupetal-${id}`}>
       <g id={`bluepetal-${id}`}>
         {/* <line class='line' x1='274.9' y1='25.7' x2='0' y2='25.7' /> */}
         <g transform={`scale(${value / 100} ${value / 100}) `}>

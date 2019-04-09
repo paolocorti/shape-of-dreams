@@ -1,0 +1,23 @@
+.footer-el > div {
+  color: #43449a;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-el > div.active {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: white;
+  box-shadow: 10px 12px 12px 8px #cecece;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
