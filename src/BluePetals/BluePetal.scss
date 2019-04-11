@@ -1,5 +1,8 @@
 #blupetals .st0 {
   fill: url(#blue_petal_gradient_1);
+  stroke: #6ea4a8;
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
 }
 #blupetals .st1 {
   fill: #607cbd;
@@ -71,6 +74,7 @@ $first-row-delay-time: 0s;
 
   .blupetal-#{$i} {
     animation: scaleAnimation 0.8s $delay forwards;
+    will-change: transform;
   }
 }
 

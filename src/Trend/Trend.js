@@ -4,9 +4,16 @@ import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
 import { Animate } from 'react-move';
 import { easeQuadOut } from 'd3-ease';
+import { LinePath } from '@vx/shape';
+import { curveMonotoneX } from '@vx/curve';
+
+const x = d => {
+  return moment(d.formattedAxisTime);
+};
+const y = d => d.value;
 
 const Trend = ({ data, name }) => {
-  const svgWidth = window.innerWidth * 0.9;
+  const svgWidth = window.innerWidth * 0.8;
   const svgHeight = window.innerWidth * 0.5;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
@@ -21,8 +28,12 @@ const Trend = ({ data, name }) => {
     .domain([0, max])
     .range([10, svgHeight - 10]);
 
+  const scaleY2 = scaleLinear()
+    .domain([max, 0])
+    .range([10, svgHeight - 10]);
+
   return (
-    <React.Fragment>
+    <div className='mt4'>
       <div className='w-100 tc f3'>{name}</div>
       <svg
         className='viz'
@@ -81,33 +92,39 @@ const Trend = ({ data, name }) => {
                     );
                   }}
                 </Animate>
-                <Animate
-                  start={() => ({
-                    cy: svgHeight
-                  })}
-                  enter={() => ({
-                    cy: [svgHeight - scaleY(value)],
-                    timing: { duration: 800, ease: easeQuadOut }
-                  })}
-                >
-                  {state => {
-                    const { cy } = state;
-                    return (
-                      <circle
-                        r={4}
-                        cx={scaleX(date)}
-                        cy={cy}
-                        fill='url(#trendGradient)'
-                      />
-                    );
-                  }}
-                </Animate>
               </g>
             );
           })}
         </g>
+        <g transform={`translate(0, 0)`}>
+          <Animate
+            start={() => ({
+              strokeDashoffset: 4000
+            })}
+            enter={() => ({
+              strokeDashoffset: 0,
+              timing: { duration: 800, ease: easeQuadOut }
+            })}
+          >
+            {state => {
+              const { strokeDashoffset } = state;
+              return (
+                <LinePath
+                  data={data}
+                  x={d => scaleX(x(d))}
+                  y={d => scaleY2(y(d))}
+                  stroke={'#973e34'}
+                  strokeWidth={1}
+                  strokeDasharray={4000}
+                  strokeDashoffset={strokeDashoffset}
+                  curve={curveMonotoneX}
+                />
+              );
+            }}
+          </Animate>
+        </g>
       </svg>
-    </React.Fragment>
+    </div>
   );
 };
 
