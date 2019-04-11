@@ -34,6 +34,11 @@ const Explore2 = ({ history }) => {
     <div className='explore2'>
       <div className='w-100 h-100 pa2 relative'>
         <div className='w-100 pa3' style={{ height: '30% ' }}>
+          <h2 className='tl fw6 f5 mv0'>Chapter 2</h2>
+          <h1 className='tl fw7 mv0 f3'>The Worlds We Dream of</h1>
+          <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
+            SELECT THE LANGUAGE AND THE YEAR TO EXPLORE THE CATEGORIES OF DREAMS
+          </div>
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -45,7 +50,7 @@ const Explore2 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 flex flex-column mt4' style={{ height: '70% ' }}>
+        <div className='w-100 flex flex-column mt4' style={{ height: '60% ' }}>
           <BluePetals categories={selectedCategories} />
         </div>
       </div>
