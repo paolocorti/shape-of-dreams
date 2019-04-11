@@ -6,6 +6,7 @@ import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import noData from './no-data.svg';
+import { years } from '../constants';
 
 const Explore1 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -41,19 +42,6 @@ const Explore1 = ({ history }) => {
   const groupedByCountry = groupBy(topics, 'language');
   const groupedByCountryValues = values(groupedByCountry);
   const groupedByCountryKeys = Object.keys(groupedByCountry);
-  const years = [
-    2008,
-    2009,
-    2010,
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018
-  ];
 
   const groupedByYearAndCountry = groupedByCountryValues.map(val => {
     return values(groupBy(val, 'year'));

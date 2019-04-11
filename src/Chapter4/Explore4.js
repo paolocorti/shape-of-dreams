@@ -4,21 +4,14 @@ import categories from '../data/categories.json';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import Network from '../Network';
+import { years } from '../constants';
 
-const Explore1 = ({ history }) => {
+const Explore4 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
 
-  const onSelectLanguage = index => {
-    setSelectedLanguageIndex(index);
-  };
-
   const onSelectYear = index => {
     setSelectedYearIndex(index);
-  };
-
-  const goToChapter2 = () => {
-    history.push(`/chapter2`);
   };
 
   const groupedByCountry = values(groupBy(categories, 'language'));
@@ -26,31 +19,25 @@ const Explore1 = ({ history }) => {
   const groupedByYearAndCountry = groupedByCountry.map(val => {
     return values(groupBy(val, 'year'));
   });
-  const years = [2016, 2018];
   const selectedCategories =
     groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
 
   return (
     <div className='explore4'>
-      <div className='w-100 h-100 pa2 relative'>
-        <div className='w-100 pa3' style={{ height: '30% ' }}>
+      <div className='w-100 h-100 relative'>
+        <div className='w-100 ph4' style={{ height: '25% ' }}>
           <h2 className='tl fw6 f5 mv0'>Chapter 4</h2>
           <h1 className='tl fw7 mv0 f3'>The Dreams that Connect Us</h1>
           <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-            SELECT THE LANGUAGE AND THE YEAR TO EXPLORE THE CATEGORIES OF DREAMS
+            SELECT THE YEAR TO EXPLORE THE CATEGORIES OF DREAMS
           </div>
-          <LanguageSelector
-            languages={groupedByCountryKeys}
-            onSelect={onSelectLanguage}
-            selected={selectedLanguageIndex}
-          />
           <YearsSelector
             years={years}
             onSelect={onSelectYear}
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 flex flex-column mt4' style={{ height: '70% ' }}>
+        <div className='w-100 flex flex-column mt0' style={{ height: '75% ' }}>
           <Network />
         </div>
       </div>
@@ -58,4 +45,4 @@ const Explore1 = ({ history }) => {
   );
 };
 
-export default Explore1;
+export default Explore4;
