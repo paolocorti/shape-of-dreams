@@ -19,14 +19,14 @@ const NetworkPetals = ({ selected, setSelected }) => {
         onClick={() => setSelected('AR')}
       />
       <image
-        style={{ overflow: 'visible', opacity: selected === 'AR' ? 0.2 : 1 }}
+        style={{ overflow: 'visible', opacity: 1 }}
         width='155'
         height='156'
         xlinkHref={petal2}
         transform='matrix(1 0 0 1 367 60)'
       />
       <image
-        style={{ overflow: 'visible', opacity: selected === 'AR' ? 0.2 : 1 }}
+        style={{ overflow: 'visible', opacity: 1 }}
         width='123'
         height='123'
         xlinkHref={petal3}

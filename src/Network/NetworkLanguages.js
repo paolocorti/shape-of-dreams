@@ -16,7 +16,7 @@ const NetworkLanguages = ({ selected }) => {
         cx='444.6'
         cy='137.9'
         r='20.9'
-        style={{ opacity: selected === 'AR' ? 0.2 : 1 }}
+        style={{ opacity: 1 }}
       />
       <text
         transform='matrix(1 0 0 1 284.2588 665.983)'
@@ -44,7 +44,7 @@ const NetworkLanguages = ({ selected }) => {
         cx='154.7'
         cy='311.6'
         r='20.9'
-        style={{ opacity: selected === 'AR' ? 0.2 : 1 }}
+        style={{ opacity: 1 }}
       />
       <circle
         className='language0'
@@ -56,14 +56,14 @@ const NetworkLanguages = ({ selected }) => {
       <text
         transform='matrix(1 0 0 1 139.293 318.7681)'
         className='language1 language2 language3 language4'
-        style={{ opacity: selected === 'AR' ? 0.2 : 1 }}
+        style={{ opacity: 1 }}
       >
         FR
       </text>
       <text
         transform='matrix(1 0 0 1 428.29 147.0162)'
         className='language1 language2 language3 language4'
-        style={{ opacity: selected === 'AR' ? 0.2 : 1 }}
+        style={{ opacity: 1 }}
       >
         EN
       </text>
