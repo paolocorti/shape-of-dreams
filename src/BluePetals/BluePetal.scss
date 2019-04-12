@@ -9,9 +9,8 @@
 }
 
 .grid0 {
-  fill: none;
+  fill: #ededed;
   stroke: #ffffff;
-  stroke-width: 2;
   stroke-miterlimit: 10;
 }
 .grid1 {
@@ -19,14 +18,22 @@
   stroke: #ffffff;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke-dasharray: 1.995, 3.9901;
 }
 .grid2 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1.995, 3.9901;
+}
+.grid3 {
   fill: #13120d;
 }
-
 .grid4 {
-  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+}
+.grid5 {
+  font-size: 15px;
 }
 
 .line {
