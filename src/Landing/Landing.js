@@ -3,6 +3,7 @@ import landing from './petals-landing.svg';
 import NavigationFooter from '../components/NavigationFooter';
 import Content1 from '../Chapter1/Content1';
 import { ScrollToHOC, ScrollArea } from 'react-scroll-to';
+import Header from '../components/Header';
 
 const Landing = ({ history, scrollTo }) => {
   const [canScroll, setCanScroll] = useState(false);
@@ -11,11 +12,13 @@ const Landing = ({ history, scrollTo }) => {
   const goToChapter1 = () => {
     console.log('here');
     setCanScroll(true);
-    scrollTo({ id: 'scroll', y: scrollHeight, smooth: true });
+    scrollTo({ id: 'scroll', y: scrollHeight + 49, smooth: true });
     setTimeout(() => {
       history.push(`/chapter1`);
     }, 600);
   };
+
+  const pathname = '/chapter1';
 
   return (
     <ScrollArea
@@ -41,6 +44,36 @@ const Landing = ({ history, scrollTo }) => {
           </div>
         </div>
         <div style={{ paddingTop: '50px' }}>
+          <div
+            className='w-100 flex justify-between pv3 ph4'
+            style={{ flex: 1 }}
+            style={{
+              height: '30px',
+              zIndex: 99,
+              backgroundColor: 'white'
+            }}
+          >
+            <div
+              className={`header-el ${
+                pathname === '/chapter1' ? 'selected' : ''
+              }`}
+            />
+            <div
+              className={`header-el ${
+                pathname === '/chapter2' ? 'selected' : ''
+              }`}
+            />
+            <div
+              className={`header-el ${
+                pathname === '/chapter3' ? 'selected' : ''
+              }`}
+            />
+            <div
+              className={`header-el ${
+                pathname === '/chapter4' ? 'selected' : ''
+              }`}
+            />
+          </div>
           <Content1 />
         </div>
       </div>
