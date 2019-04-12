@@ -33,8 +33,8 @@ const Explore3 = ({ history }) => {
     <div className='explore3'>
       <div className='w-100 flex flex-column justify-center relative'>
         <div className='w-100 ph4' style={{ height: '40% ' }}>
-          <h2 className='tl fw6 f5 mv0'>Chapter 4</h2>
-          <h1 className='tl fw7 mv0 f3'>The Dreams that Connect Us</h1>
+          <h2 className='tl fw6 f5 mv0'>Chapter 3</h2>
+          <h1 className='tl fw7 mv0 f3'>A Time for Dreams</h1>
           <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
             SELECT THE YEAR TO EXPLORE THE CATEGORIES OF DREAMS
           </div>
@@ -43,11 +43,11 @@ const Explore3 = ({ history }) => {
             onSelect={onSelectLanguage}
             selected={selectedLanguageIndex}
           /> */}
-          <YearsSelector
+          {/* <YearsSelector
             years={years}
             onSelect={onSelectYear}
             selected={selectedYearIndex}
-          />
+          /> */}
         </div>
         <div
           className='relative flex flex-column items-center'
