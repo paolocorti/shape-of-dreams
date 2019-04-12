@@ -23,6 +23,34 @@ const Routes = ({ location }) => {
       <Route exact path='/' component={Landing} />
 
       {pathname !== '/' && (
+        <img
+          src={'/images/swipe-left.svg'}
+          style={{
+            position: 'absolute',
+            left: '5px',
+            zIndex: 99,
+            top: '50%',
+            marginTop: '-100px'
+          }}
+          height={200}
+        />
+      )}
+
+      {pathname !== '/' && (
+        <img
+          src={'/images/swipe-right.svg'}
+          style={{
+            position: 'absolute',
+            right: '5px',
+            zIndex: 99,
+            top: '50%',
+            marginTop: '-100px'
+          }}
+          height={200}
+        />
+      )}
+
+      {pathname !== '/' && (
         <SwipeableRoutes
           containerStyle={{
             height:

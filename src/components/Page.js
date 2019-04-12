@@ -1,8 +1,6 @@
-import React, { useState, useContext, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
 import classNames from 'classnames';
 import { withRouter } from 'react-router-dom';
-import Header from '../components/Header';
 import { AppContext } from '../appContext';
 
 const Page = ({ chapter, children, location: { state } }) => {
