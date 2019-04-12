@@ -4,6 +4,7 @@ import BluePetals from '../BluePetals';
 import categories from '../data/categories.json';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
+import { years } from '../constants';
 
 const Explore2 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -20,8 +21,6 @@ const Explore2 = ({ history }) => {
   const goToChapter2 = () => {
     history.push(`/chapter2`);
   };
-
-  const years = [2016, 2018];
 
   const groupedByCountry = values(groupBy(categories, 'language'));
   const groupedByCountryKeys = Object.keys(groupBy(categories, 'language'));
