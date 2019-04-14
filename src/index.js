@@ -22,7 +22,9 @@ class App extends React.Component {
       setSelectedView: this.setSelectedView,
       resetSelectedView: this.resetSelectedView,
       menuOpen: false,
-      toggleMenu: this.toggleMenu
+      toggleMenu: this.toggleMenu,
+      legendOpen: false,
+      toggleLegend: this.toggleLegend
     };
   }
 
@@ -53,6 +55,12 @@ class App extends React.Component {
   toggleMenu = () => {
     this.setState({
       menuOpen: !this.state.menuOpen
+    });
+  };
+
+  toggleLegend = () => {
+    this.setState({
+      legendOpen: !this.state.legendOpen
     });
   };
 

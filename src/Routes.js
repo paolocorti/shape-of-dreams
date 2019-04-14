@@ -11,6 +11,7 @@ import Header from './components/Header';
 import NavigationFooter from './components/NavigationFooter';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Menu from './components/Menu';
+import Legend from './components/Legend';
 
 const Routes = ({ location }) => {
   const { pathname } = location;
@@ -20,6 +21,7 @@ const Routes = ({ location }) => {
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`}>
       {pathname !== '/' && <Header />}
       <Menu />
+      <Legend />
       <Route exact path='/' component={Landing} />
 
       {pathname !== '/' && (

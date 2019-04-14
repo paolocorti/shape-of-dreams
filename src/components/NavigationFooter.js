@@ -43,9 +43,12 @@ const NavigationFooter = ({}) => {
         </div>
       </div>
       <div className='w-10 flex justify-center items-center h-100'>
-        {!context.menuOpen && (
-          <img src={'/images/legend.svg'} alt='Legend icon' width={24} />
-        )}
+        <img
+          src='/images/legend.svg'
+          alt='Legend icon'
+          width={24}
+          onClick={() => context.toggleLegend()}
+        />
       </div>
     </div>
   );

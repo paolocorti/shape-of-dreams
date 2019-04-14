@@ -128,7 +128,6 @@ const Trend = ({ data, name }) => {
                   strokeWidth={1}
                   strokeDasharray={4000}
                   strokeDashoffset={strokeDashoffset}
-                  curve={curveMonotoneX}
                 />
               );
             }}

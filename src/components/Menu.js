@@ -18,7 +18,6 @@ const Menu = ({ history }) => {
     <div
       className={`menu w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${context.menuOpen &&
         'open'}`}
-      style={{ zIndex: 100, backgroundColor: '#43449a' }}
     >
       <div className='w-100 flex items-center ph4' onClick={() => goTo('/')}>
         <div className='white tl' style={{ fontSize: '34px' }}>

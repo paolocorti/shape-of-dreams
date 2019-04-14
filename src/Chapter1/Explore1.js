@@ -63,9 +63,9 @@ const Explore1 = ({ history }) => {
       <div className='w-100 h-100 relative'>
         <div className='w-100 ph4' style={{ height: '40% ' }}>
           <h2 className='tl fw6 f5 mv0'>Chapter 1</h2>
-          <h1 className='tl fw7 mv0 f3'>The Shapes of our Dreams</h1>
+          <h1 className='tl fw7 mv0 f3'>What does it mean to dream about...</h1>
           <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-            SELECT THE LANGUAGE AND THE YEAR TO EXPLORE THE CATEGORIES OF DREAMS
+          SELECT THE LANGUAGE AND THE YEAR TAP ON THE CIRCLES TO GO THROUGH THE DREAMS
           </div>
           <LanguageSelector
             languages={groupedByCountryKeys}
@@ -78,7 +78,7 @@ const Explore1 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 relative tc' style={{ height: '60% ' }}>
+        <div className='w-100 relative tc pt4' style={{ height: '60% ' }}>
           {topic.value ? (
             <Petals
               value={topic.value}
