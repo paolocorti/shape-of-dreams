@@ -16,7 +16,7 @@ const getNumberOfPetals = n => {
 };
 
 const Petals = ({ name, language, year, value, index }) => {
-  const svgWidth = window.innerWidth * 0.6;
+  const svgWidth = window.innerWidth * 0.45;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {

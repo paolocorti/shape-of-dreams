@@ -31,12 +31,14 @@ const Explore3 = ({ history }) => {
 
   return (
     <div className='explore3'>
-      <div className='w-100 flex flex-column justify-center relative'>
-        <div className='w-100 ph4' style={{ height: '40% ' }}>
+      <div className='w-100 h-100 flex flex-column justify-center relative'>
+        <div className='w-100 ph4' style={{ height: '250px' }}>
           <h4 className='tl fw6 mv0'>Chapter 3</h4>
-          <h1 className='tl fw7 mv0 f3'>Looking for dreams’ subjects over time</h1>
+          <h1 className='tl fw7 mv0 f3'>
+            Looking for dreams’ subjects over time
+          </h1>
           <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-          SELECT THE DREAMS’ SUBJECTS TO EXPLORE THE INTEREST OVER TIME
+            SELECT THE DREAMS’ SUBJECTS TO EXPLORE THE INTEREST OVER TIME
           </div>
           {/* <LanguageSelector
             languages={groupedByCountryKeys}
@@ -51,7 +53,7 @@ const Explore3 = ({ history }) => {
         </div>
         <div
           className='relative flex flex-column items-center'
-          style={{ height: '60%' }}
+          style={{ height: 'calc(100% - 250px)' }}
         >
           <Trend data={interestOverTime} name={'Dreaming about Tornadoes'} />
           {/* <GaussianTrend data={yearData} dataKey={'macro_1'} /> */}

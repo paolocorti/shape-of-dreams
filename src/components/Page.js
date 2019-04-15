@@ -2,12 +2,15 @@ import React, { useContext } from 'react';
 import classNames from 'classnames';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
+import { isIOS } from 'react-device-detect';
 
 const Page = ({ chapter, children, location: { state } }) => {
   const context = useContext(AppContext);
 
   const actualPath = context.actualPath;
   const previousPath = context.previousPath;
+
+  console.log(isIOS);
 
   const cx = classNames({
     page: true,
@@ -22,7 +25,7 @@ const Page = ({ chapter, children, location: { state } }) => {
   });
   return (
     <section className={cx}>
-      <div className='page__inner'>{children}</div>
+      <div className={`page__inner ${isIOS && 'fullheight'}`}>{children}</div>
     </section>
   );
 };

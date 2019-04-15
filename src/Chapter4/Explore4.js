@@ -25,11 +25,12 @@ const Explore4 = ({ history }) => {
   return (
     <div className='explore4'>
       <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '25% ' }}>
+        <div className='w-100 ph4' style={{ height: '150px' }}>
           <h4 className='tl fw6 mv0'>Chapter 4</h4>
           <h1 className='tl fw7 mv0 f3'>Networks of dreams</h1>
           <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-          SELECT THE YEAR TO EXPLORE THE NETWORKS, TAP ON THE LANGUAGES TO SEE THE CONNECTING DREAMS
+            SELECT THE YEAR TO EXPLORE THE NETWORKS, TAP ON THE LANGUAGES TO SEE
+            THE CONNECTING DREAMS
           </div>
           <YearsSelector
             years={years}
@@ -37,7 +38,10 @@ const Explore4 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 flex flex-column mt0' style={{ height: '75% ' }}>
+        <div
+          className='w-100 flex flex-column mt0'
+          style={{ height: 'calc(100% - 150px)' }}
+        >
           <Network />
         </div>
       </div>
