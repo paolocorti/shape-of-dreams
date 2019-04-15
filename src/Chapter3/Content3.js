@@ -34,7 +34,7 @@ const Content3 = ({}) => {
 Tap on START EXPLORING to analyze the interest over time for a set of subjects.
         </p>
       </div>
-      <div className='w-100 tc'>
+      <div className='w-100 tc pb4'>
         <div className='flex flex-column ph4'>
           <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>START EXPLORING</div>
           <img src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />

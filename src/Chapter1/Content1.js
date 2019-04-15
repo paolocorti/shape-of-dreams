@@ -59,9 +59,9 @@ Their average rising value is lower than the top ones, but they consistently app
         </p>
       </div>
 
-      <div className='w-100 tc'>
+      <div className='w-100 tc pb4'>
         <div className='flex flex-column ph4'>
-          <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>START EXPLORing</div>
+          <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>START EXPLORING</div>
           <img src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
         </div>
       </div>

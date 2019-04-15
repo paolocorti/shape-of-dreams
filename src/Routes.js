@@ -29,12 +29,12 @@ const Routes = ({ location }) => {
           src={'/images/swipe-left.svg'}
           style={{
             position: 'absolute',
-            left: '5px',
+            left: '10px',
             zIndex: 99,
             top: '50%',
-            marginTop: '-100px'
+            marginTop: '-80px'
           }}
-          height={200}
+          height={160}
         />
       )}
 
@@ -43,12 +43,12 @@ const Routes = ({ location }) => {
           src={'/images/swipe-right.svg'}
           style={{
             position: 'absolute',
-            right: '5px',
+            right: '10px',
             zIndex: 99,
             top: '50%',
-            marginTop: '-100px'
+            marginTop: '-80px'
           }}
-          height={200}
+          height={160}
         />
       )}
 
