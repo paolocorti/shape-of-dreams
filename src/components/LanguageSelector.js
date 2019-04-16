@@ -17,7 +17,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
       })}
       <div
         className='langEl-selected'
-        style={{ left: `calc(${selected * 12.5}%)` }}
+        style={{ left: `calc(${selected * 12.5}% + 1px)` }}
       />
     </div>
   );

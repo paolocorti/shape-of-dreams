@@ -61,14 +61,11 @@ const Explore1 = ({ history }) => {
   return (
     <div className='explore1'>
       <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '250px' }}>
-          <h2 className='tl fw6 f5 mv0'>Chapter 1</h2>
-          <h1 className='tl fw7 mv0 f3'>What does it mean to dream about...</h1>
-          <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-            Select a language and a year. The number of petals is equal to the
-            increase in search interest for a dream in comparison to the
-            previous year. The dreams shown are the ones that increased the most
-          </div>
+        <div className='w-100 ph4' style={{ height: '175px' }}>
+          {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
+          <h1 className='tl fw7 mv0' style={{ fontSize: '21px' }}>
+            What does it mean to dream about...
+          </h1>
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -82,7 +79,7 @@ const Explore1 = ({ history }) => {
         </div>
         <div
           className='w-100 relative tc pt4'
-          style={{ height: 'calc(100% - 250px)' }}
+          style={{ height: 'calc(100% - 175px)' }}
         >
           {topic.value ? (
             <Petals
@@ -110,6 +107,12 @@ const Explore1 = ({ history }) => {
               <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
             </div>
           )}
+
+          <div className='tj raleway mt3 ph4' style={{ fontSize: '14px' }}>
+            Select a language and a year. The number of petals is equal to the
+            increase in search interest for a dream in comparison to the
+            previous year. The dreams shown are the ones that increased the most
+          </div>
         </div>
       </div>
     </div>

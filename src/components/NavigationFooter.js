@@ -7,7 +7,7 @@ const NavigationFooter = ({}) => {
   const context = useContext(AppContext);
 
   return (
-    <div className='footer' style={{ flex: 1, height: '50px' }}>
+    <div className='footer ph4' style={{ flex: 1, height: '50px' }}>
       {/* <div
         className='w-30 flex justify-center items-center pa3'
         onClick={() => context.setSelectedView('landing')}

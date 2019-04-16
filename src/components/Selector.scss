@@ -26,10 +26,10 @@
 }
 
 .yearCircle {
-  width: 10px;
-  height: 8px;
+  width: 12px;
+  height: 9px;
   background-color: #43449a;
-  border-radius: 10px;
+  border-radius: 100%;
   position: relative;
 }
 
@@ -45,14 +45,14 @@
 }
 
 .yearEl-selected {
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  border: 2px solid #43449a;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid #43449a;
   background-color: transparent;
   position: absolute;
   transition: 0.5s all;
-  top: -11px;
+  top: -8px;
 }
 
 .yearLine {

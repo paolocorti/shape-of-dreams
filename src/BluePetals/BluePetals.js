@@ -13,7 +13,7 @@ import './BluePetal.scss';
 import Grid from './Grid';
 
 const BluePetals = ({ categories }) => {
-  const svgWidth = window.innerWidth * 0.9;
+  const svgWidth = window.innerWidth * 0.8;
 
   return (
     <div className='flex w-100 justify-center flex-column'>
