@@ -11,11 +11,11 @@ const Landing = ({ history, scrollTo }) => {
 
   const goToChapter1 = () => {
     console.log('here');
-    setCanScroll(true);
-    scrollTo({ id: 'scroll', y: scrollHeight + 49, smooth: true });
+    // setCanScroll(true);
+    // scrollTo({ id: 'scroll', y: scrollHeight + 49, smooth: true });
     setTimeout(() => {
       history.push(`/chapter1`);
-    }, 600);
+    }, 1000);
   };
 
   const pathname = '/chapter1';
@@ -43,7 +43,7 @@ const Landing = ({ history, scrollTo }) => {
             <img src={'images/down-arrow.svg'} width={35} />
           </div>
         </div>
-        <div style={{ paddingTop: '50px' }}>
+        {/* <div style={{ paddingTop: '50px' }}>
           <div
             className='w-100 flex justify-between pv3 ph4'
             style={{ flex: 1 }}
@@ -75,7 +75,7 @@ const Landing = ({ history, scrollTo }) => {
             />
           </div>
           <Content1 />
-        </div>
+        </div> */}
       </div>
     </ScrollArea>
   );

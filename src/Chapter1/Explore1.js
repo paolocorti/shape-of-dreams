@@ -63,7 +63,7 @@ const Explore1 = ({ history }) => {
       <div className='w-100 h-100 relative'>
         <div className='w-100 ph4' style={{ height: '175px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
-          <h1 className='tl fw7 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tl fw5 mv0' style={{ fontSize: '21px' }}>
             What does it mean to dream about...
           </h1>
           <LanguageSelector
@@ -81,33 +81,34 @@ const Explore1 = ({ history }) => {
           className='w-100 relative tc pt4'
           style={{ height: 'calc(100% - 175px)' }}
         >
-          {topic.value ? (
-            <Petals
-              value={topic.value}
-              name={topic.subject}
-              language={topic.language}
-              year={topic.year}
-              index={selectedIndex}
-            />
-          ) : (
-            <div
-              className='w-100 flex justify-center items-center pa4'
-              style={{ flex: 1, height: '400px' }}
-            >
-              <img src={noData} width={80} alt='No data available' />
-            </div>
-          )}
-          {selectedTopics.length > 0 && (
-            <div className='left-tap' onClick={() => onTapLeft()}>
-              <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-            </div>
-          )}
-          {selectedTopics.length > 0 && (
-            <div className='right-tap' onClick={() => onTapRight()}>
-              <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-            </div>
-          )}
-
+          <div>
+            {topic.value ? (
+              <Petals
+                value={topic.value}
+                name={topic.subject}
+                language={topic.language}
+                year={topic.year}
+                index={selectedIndex}
+              />
+            ) : (
+              <div
+                className='w-100 flex justify-center items-center pa4'
+                style={{ flex: 1, height: '400px' }}
+              >
+                <img src={noData} width={80} alt='No data available' />
+              </div>
+            )}
+            {selectedTopics.length > 0 && (
+              <div className='left-tap' onClick={() => onTapLeft()}>
+                <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+              </div>
+            )}
+            {selectedTopics.length > 0 && (
+              <div className='right-tap' onClick={() => onTapRight()}>
+                <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+              </div>
+            )}
+          </div>
           <div className='tj raleway mt3 ph4' style={{ fontSize: '14px' }}>
             Select a language and a year. The number of petals is equal to the
             increase in search interest for a dream in comparison to the

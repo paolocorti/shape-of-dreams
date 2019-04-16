@@ -16,7 +16,7 @@ const getNumberOfPetals = n => {
 };
 
 const Petals = ({ name, language, year, value, index }) => {
-  const svgWidth = window.innerWidth * 0.5;
+  const svgWidth = window.innerWidth * 0.55;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Petals = ({ name, language, year, value, index }) => {
 
   return (
     <React.Fragment>
-      <div className='ph3 topic' style={{ fontSize: '21px' }}>
+      <div className='ph3 topic' style={{ fontSize: '22px' }}>
         {name}
       </div>
       {/* <div className='mt1 raleway value'>{value}</div> */}
