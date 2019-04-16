@@ -7,11 +7,11 @@ import Header from '../components/Header';
 
 const Landing = ({ history, scrollTo }) => {
   const [canScroll, setCanScroll] = useState(false);
+  const [blur, setBlur] = useState(false);
   const scrollHeight = window.innerHeight;
 
   const goToChapter1 = () => {
-    console.log('here');
-    // setCanScroll(true);
+    setBlur(true);
     // scrollTo({ id: 'scroll', y: scrollHeight + 49, smooth: true });
     setTimeout(() => {
       history.push(`/chapter1`);
@@ -27,9 +27,14 @@ const Landing = ({ history, scrollTo }) => {
     >
       <div className={`w-100 landing`} style={{ paddingTop: '50px' }}>
         <div className='landing-header w-100 tc pa4'>
-          <img src={landing} height='100%' alt='chapter 1 icon' />
+          <img
+            src={landing}
+            height='100%'
+            alt='chapter 1 icon'
+            className={`${blur ? 'blur' : ''}`}
+          />
         </div>
-        <div className='landing-content w-100'>
+        <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
           <h1 className='tc fw7 mt0 title'>
             THE <br /> MEANING <br /> OF DREAMS
           </h1>
