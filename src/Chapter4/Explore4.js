@@ -25,24 +25,36 @@ const Explore4 = ({ history }) => {
   return (
     <div className='explore4'>
       <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '150px' }}>
-          <h4 className='tl fw6 mv0'>Chapter 4</h4>
-          <h1 className='tl fw7 mv0 f3'>Networks of dreams</h1>
-          <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-            SELECT THE YEAR TO EXPLORE THE NETWORKS, TAP ON THE LANGUAGES TO SEE
-            THE CONNECTING DREAMS
-          </div>
+        <div className='w-100 ph4' style={{ height: '125px' }}>
+          {/* <h4 className='tl fw6 mv0'>Chapter 4</h4> */}
+          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
+            Networks of dreams{' '}
+          </h1>
           <YearsSelector
             years={years}
             onSelect={onSelectYear}
             selected={selectedYearIndex}
           />
         </div>
+
         <div
-          className='w-100 flex flex-column mt0'
-          style={{ height: 'calc(100% - 150px)' }}
+          className='w-100 flex flex-column relative'
+          style={{ height: 'calc(100% - 125px)' }}
         >
-          <Network />
+          <div
+            className='flex flex-column justify-center items-center'
+            style={{ height: '80%' }}
+          >
+            <Network />
+          </div>
+          <div
+            className='tj raleway mt3 ph4'
+            style={{ fontSize: '2vh', height: '20%' }}
+          >
+            Select a language and a year. The number of petals is equal to the
+            increase in search interest for a dream in comparison to the
+            previous year. The dreams shown are the ones that increased the most
+          </div>
         </div>
       </div>
     </div>

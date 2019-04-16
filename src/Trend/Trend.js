@@ -16,7 +16,7 @@ const x = d => {
 const y = d => d.value;
 
 const Trend = ({ data, name }) => {
-  const svgWidth = window.innerWidth * 0.9;
+  const svgWidth = window.innerWidth * 0.8;
   const svgHeight = window.innerWidth * 0.6;
   const trendHeight = svgHeight - 20;
   const startDate = moment('2008-01-01');

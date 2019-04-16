@@ -6,8 +6,8 @@ import NetworkPetals from './NetworkPetals';
 
 const Network = ({}) => {
   const [selected, setSelected] = useState('');
-  const svgWidth = window.innerWidth;
-  const svgHeight = svgWidth * 1.33;
+  const svgHeight = window.innerHeight * 0.6;
+  const svgWidth = svgHeight / 1.33;
 
   const selectedCallback = language => {
     const selection = language === selected ? '' : language;

@@ -63,7 +63,7 @@ const Explore1 = ({ history }) => {
       <div className='w-100 h-100 relative'>
         <div className='w-100 ph4' style={{ height: '175px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
-          <h1 className='tl fw5 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             What does it mean to dream about...
           </h1>
           <LanguageSelector
@@ -77,11 +77,11 @@ const Explore1 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div
-          className='w-100 relative tc pt4'
-          style={{ height: 'calc(100% - 175px)' }}
-        >
-          <div>
+        <div className='w-100 tc pt4' style={{ height: 'calc(100% - 175px)' }}>
+          <div
+            className='flex flex-column relative justify-center items-center'
+            style={{ height: '70%' }}
+          >
             {topic.value ? (
               <Petals
                 value={topic.value}
@@ -109,7 +109,10 @@ const Explore1 = ({ history }) => {
               </div>
             )}
           </div>
-          <div className='tj raleway mt3 ph4' style={{ fontSize: '14px' }}>
+          <div
+            className='tj raleway mt3 ph4'
+            style={{ fontSize: '2vh', height: '30%' }}
+          >
             Select a language and a year. The number of petals is equal to the
             increase in search interest for a dream in comparison to the
             previous year. The dreams shown are the ones that increased the most

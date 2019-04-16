@@ -32,14 +32,11 @@ const Explore3 = ({ history }) => {
   return (
     <div className='explore3'>
       <div className='w-100 h-100 flex flex-column justify-center relative'>
-        <div className='w-100 ph4' style={{ height: '250px' }}>
-          <h4 className='tl fw6 mv0'>Chapter 3</h4>
-          <h1 className='tl fw7 mv0 f3'>
+        <div className='w-100 ph4' style={{ height: '175px' }}>
+          {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
+          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             Looking for dreams’ subjects over time
           </h1>
-          <div className='tj raleway mt3' style={{ fontSize: '14px' }}>
-            SELECT THE DREAMS’ SUBJECTS TO EXPLORE THE INTEREST OVER TIME
-          </div>
           {/* <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -52,11 +49,23 @@ const Explore3 = ({ history }) => {
           /> */}
         </div>
         <div
-          className='relative flex flex-column items-center'
-          style={{ height: 'calc(100% - 250px)' }}
+          className='w-100 flex flex-column relative tc'
+          style={{ height: 'calc(100% - 175px)' }}
         >
-          <Trend data={interestOverTime} name={'Dreaming about Tornadoes'} />
-          {/* <GaussianTrend data={yearData} dataKey={'macro_1'} /> */}
+          <div
+            className='flex flex-column justify-center items-center'
+            style={{ height: '70%' }}
+          >
+            <Trend data={interestOverTime} name={'Dreaming about Tornadoes'} />
+          </div>
+          <div
+            className='tj raleway mt3 ph4'
+            style={{ fontSize: '2vh', height: '30%' }}
+          >
+            Select a language and a year. The number of petals is equal to the
+            increase in search interest for a dream in comparison to the
+            previous year. The dreams shown are the ones that increased the most
+          </div>
         </div>
       </div>
     </div>
