@@ -33,7 +33,7 @@ const Explore2 = ({ history }) => {
   return (
     <div className='explore2'>
       <div className='w-100 h-100 pa2 relative'>
-        <div className='w-100 ph4' style={{ height: '175px' }}>
+        <div className='w-100 ph4' style={{ height: '135px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams subjects grouped by category
@@ -51,7 +51,7 @@ const Explore2 = ({ history }) => {
         </div>
         <div
           className='w-100 flex flex-column relative tc'
-          style={{ height: 'calc(100% - 175px)' }}
+          style={{ height: 'calc(100% - 135px)' }}
         >
           <div
             className='flex flex-column justify-center items-center'

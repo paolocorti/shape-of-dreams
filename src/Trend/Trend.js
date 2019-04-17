@@ -11,7 +11,7 @@ import { Group } from '@vx/group';
 import './Trend.scss';
 
 const x = d => {
-  return moment(d.formattedAxisTime);
+  return moment(d.time);
 };
 const y = d => d.value;
 
@@ -46,7 +46,6 @@ const Trend = ({ data, name }) => {
 
   return (
     <div className='mt4'>
-      <div className='w-100 tc f3'>{name}</div>
       <svg
         className='viz'
         x='0px'
@@ -74,22 +73,30 @@ const Trend = ({ data, name }) => {
         </defs>
         <g transform={`translate(15, -20)`}>
           {parsedData.map((d, i) => {
-            const date = moment(d.formattedAxisTime);
+            const date = moment(d.time);
             const value = d.value;
+
+            const startAnimation = trendHeight;
+            const endAnimation = trendHeight - scaleY(value);
 
             return (
               <g key={i}>
                 <Animate
                   start={() => ({
-                    y2: trendHeight
+                    y2: startAnimation
                   })}
                   enter={() => ({
+                    y2: [trendHeight - scaleY(value)],
+                    timing: { duration: 800, ease: easeQuadOut }
+                  })}
+                  update={() => ({
                     y2: [trendHeight - scaleY(value)],
                     timing: { duration: 800, ease: easeQuadOut }
                   })}
                 >
                   {state => {
                     const { y2 } = state;
+                    console.log(state);
                     return (
                       <line
                         id={`line-${i}`}

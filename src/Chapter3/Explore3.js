@@ -8,14 +8,16 @@ import Trend from '../Trend';
 import categories from '../data/categories.json';
 import GaussianTrend from '../GaussianTrend';
 import { years } from '../constants';
+import TopicSelector from '../components/TopicSelector.js';
 
 const Explore3 = ({ history }) => {
-  const yearData = interestOverTime.filter(d =>
-    d.formattedTime.includes('2018')
-  );
+  // const yearData = interestOverTime.filter(d =>
+  //   d.formattedTime.includes('2018')
+  // );
 
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const onSelectYear = index => {
     setSelectedYearIndex(index);
@@ -29,6 +31,8 @@ const Explore3 = ({ history }) => {
   const selectedCategories =
     groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
 
+  const topics = interestOverTime.map(v => v[0].topic);
+
   return (
     <div className='explore3'>
       <div className='w-100 h-100 flex flex-column justify-center relative'>
@@ -37,16 +41,7 @@ const Explore3 = ({ history }) => {
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             Looking for dreams’ subjects over time
           </h1>
-          {/* <LanguageSelector
-            languages={groupedByCountryKeys}
-            onSelect={onSelectLanguage}
-            selected={selectedLanguageIndex}
-          /> */}
-          {/* <YearsSelector
-            years={years}
-            onSelect={onSelectYear}
-            selected={selectedYearIndex}
-          /> */}
+          <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
         </div>
         <div
           className='w-100 flex flex-column relative tc'
@@ -56,7 +51,7 @@ const Explore3 = ({ history }) => {
             className='flex flex-column justify-center items-center'
             style={{ height: '70%' }}
           >
-            <Trend data={interestOverTime} name={'Dreaming about Tornadoes'} />
+            <Trend data={interestOverTime[selectedIndex]} />
           </div>
           <div
             className='tj raleway mt3 ph4'

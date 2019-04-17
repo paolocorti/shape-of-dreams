@@ -25,7 +25,7 @@ const Explore4 = ({ history }) => {
   return (
     <div className='explore4'>
       <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '125px' }}>
+        <div className='w-100 ph4' style={{ height: '80px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 4</h4> */}
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             Networks of dreams{' '}
@@ -39,7 +39,7 @@ const Explore4 = ({ history }) => {
 
         <div
           className='w-100 flex flex-column relative'
-          style={{ height: 'calc(100% - 125px)' }}
+          style={{ height: 'calc(100% - 80px)' }}
         >
           <div
             className='flex flex-column justify-center items-center'

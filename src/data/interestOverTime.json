@@ -1,1201 +1,2048 @@
 [
-  {
-    "time": 1199145600,
-    "formattedTime": "Jan 2008",
-    "formattedAxisTime": "Jan 1, 2008",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1201824000,
-    "formattedTime": "Feb 2008",
-    "formattedAxisTime": "Feb 1, 2008",
-    "value": 47,
-    "hasData": true,
-    "formattedValue": "47",
-    "axisNote": ""
-  },
-  {
-    "time": 1204329600,
-    "formattedTime": "Mar 2008",
-    "formattedAxisTime": "Mar 1, 2008",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1207008000,
-    "formattedTime": "Apr 2008",
-    "formattedAxisTime": "Apr 1, 2008",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1209600000,
-    "formattedTime": "May 2008",
-    "formattedAxisTime": "May 1, 2008",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1212278400,
-    "formattedTime": "Jun 2008",
-    "formattedAxisTime": "Jun 1, 2008",
-    "value": 66,
-    "hasData": true,
-    "formattedValue": "66",
-    "axisNote": ""
-  },
-  {
-    "time": 1214870400,
-    "formattedTime": "Jul 2008",
-    "formattedAxisTime": "Jul 1, 2008",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1217548800,
-    "formattedTime": "Aug 2008",
-    "formattedAxisTime": "Aug 1, 2008",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1220227200,
-    "formattedTime": "Sep 2008",
-    "formattedAxisTime": "Sep 1, 2008",
-    "value": 79,
-    "hasData": true,
-    "formattedValue": "79",
-    "axisNote": ""
-  },
-  {
-    "time": 1222819200,
-    "formattedTime": "Oct 2008",
-    "formattedAxisTime": "Oct 1, 2008",
-    "value": 36,
-    "hasData": true,
-    "formattedValue": "36",
-    "axisNote": ""
-  },
-  {
-    "time": 1225497600,
-    "formattedTime": "Nov 2008",
-    "formattedAxisTime": "Nov 1, 2008",
-    "value": 38,
-    "hasData": true,
-    "formattedValue": "38",
-    "axisNote": ""
-  },
-  {
-    "time": 1228089600,
-    "formattedTime": "Dec 2008",
-    "formattedAxisTime": "Dec 1, 2008",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1230768000,
-    "formattedTime": "Jan 2009",
-    "formattedAxisTime": "Jan 1, 2009",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1233446400,
-    "formattedTime": "Feb 2009",
-    "formattedAxisTime": "Feb 1, 2009",
-    "value": 73,
-    "hasData": true,
-    "formattedValue": "73",
-    "axisNote": ""
-  },
-  {
-    "time": 1235865600,
-    "formattedTime": "Mar 2009",
-    "formattedAxisTime": "Mar 1, 2009",
-    "value": 64,
-    "hasData": true,
-    "formattedValue": "64",
-    "axisNote": ""
-  },
-  {
-    "time": 1238544000,
-    "formattedTime": "Apr 2009",
-    "formattedAxisTime": "Apr 1, 2009",
-    "value": 34,
-    "hasData": true,
-    "formattedValue": "34",
-    "axisNote": ""
-  },
-  {
-    "time": 1241136000,
-    "formattedTime": "May 2009",
-    "formattedAxisTime": "May 1, 2009",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1243814400,
-    "formattedTime": "Jun 2009",
-    "formattedAxisTime": "Jun 1, 2009",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1246406400,
-    "formattedTime": "Jul 2009",
-    "formattedAxisTime": "Jul 1, 2009",
-    "value": 31,
-    "hasData": true,
-    "formattedValue": "31",
-    "axisNote": ""
-  },
-  {
-    "time": 1249084800,
-    "formattedTime": "Aug 2009",
-    "formattedAxisTime": "Aug 1, 2009",
-    "value": 31,
-    "hasData": true,
-    "formattedValue": "31",
-    "axisNote": ""
-  },
-  {
-    "time": 1251763200,
-    "formattedTime": "Sep 2009",
-    "formattedAxisTime": "Sep 1, 2009",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1254355200,
-    "formattedTime": "Oct 2009",
-    "formattedAxisTime": "Oct 1, 2009",
-    "value": 70,
-    "hasData": true,
-    "formattedValue": "70",
-    "axisNote": ""
-  },
-  {
-    "time": 1257033600,
-    "formattedTime": "Nov 2009",
-    "formattedAxisTime": "Nov 1, 2009",
-    "value": 28,
-    "hasData": true,
-    "formattedValue": "28",
-    "axisNote": ""
-  },
-  {
-    "time": 1259625600,
-    "formattedTime": "Dec 2009",
-    "formattedAxisTime": "Dec 1, 2009",
-    "value": 28,
-    "hasData": true,
-    "formattedValue": "28",
-    "axisNote": ""
-  },
-  {
-    "time": 1262304000,
-    "formattedTime": "Jan 2010",
-    "formattedAxisTime": "Jan 1, 2010",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1264982400,
-    "formattedTime": "Feb 2010",
-    "formattedAxisTime": "Feb 1, 2010",
-    "value": 27,
-    "hasData": true,
-    "formattedValue": "27",
-    "axisNote": ""
-  },
-  {
-    "time": 1267401600,
-    "formattedTime": "Mar 2010",
-    "formattedAxisTime": "Mar 1, 2010",
-    "value": 36,
-    "hasData": true,
-    "formattedValue": "36",
-    "axisNote": ""
-  },
-  {
-    "time": 1270080000,
-    "formattedTime": "Apr 2010",
-    "formattedAxisTime": "Apr 1, 2010",
-    "value": 38,
-    "hasData": true,
-    "formattedValue": "38",
-    "axisNote": ""
-  },
-  {
-    "time": 1272672000,
-    "formattedTime": "May 2010",
-    "formattedAxisTime": "May 1, 2010",
-    "value": 38,
-    "hasData": true,
-    "formattedValue": "38",
-    "axisNote": ""
-  },
-  {
-    "time": 1275350400,
-    "formattedTime": "Jun 2010",
-    "formattedAxisTime": "Jun 1, 2010",
-    "value": 52,
-    "hasData": true,
-    "formattedValue": "52",
-    "axisNote": ""
-  },
-  {
-    "time": 1277942400,
-    "formattedTime": "Jul 2010",
-    "formattedAxisTime": "Jul 1, 2010",
-    "value": 36,
-    "hasData": true,
-    "formattedValue": "36",
-    "axisNote": ""
-  },
-  {
-    "time": 1280620800,
-    "formattedTime": "Aug 2010",
-    "formattedAxisTime": "Aug 1, 2010",
-    "value": 23,
-    "hasData": true,
-    "formattedValue": "23",
-    "axisNote": ""
-  },
-  {
-    "time": 1283299200,
-    "formattedTime": "Sep 2010",
-    "formattedAxisTime": "Sep 1, 2010",
-    "value": 68,
-    "hasData": true,
-    "formattedValue": "68",
-    "axisNote": ""
-  },
-  {
-    "time": 1285891200,
-    "formattedTime": "Oct 2010",
-    "formattedAxisTime": "Oct 1, 2010",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1288569600,
-    "formattedTime": "Nov 2010",
-    "formattedAxisTime": "Nov 1, 2010",
-    "value": 42,
-    "hasData": true,
-    "formattedValue": "42",
-    "axisNote": ""
-  },
-  {
-    "time": 1291161600,
-    "formattedTime": "Dec 2010",
-    "formattedAxisTime": "Dec 1, 2010",
-    "value": 42,
-    "hasData": true,
-    "formattedValue": "42",
-    "axisNote": ""
-  },
-  {
-    "time": 1293840000,
-    "formattedTime": "Jan 2011",
-    "formattedAxisTime": "Jan 1, 2011",
-    "value": 19,
-    "hasData": true,
-    "formattedValue": "19",
-    "axisNote": ""
-  },
-  {
-    "time": 1296518400,
-    "formattedTime": "Feb 2011",
-    "formattedAxisTime": "Feb 1, 2011",
-    "value": 0,
-    "hasData": false,
-    "formattedValue": "0",
-    "axisNote": ""
-  },
-  {
-    "time": 1298937600,
-    "formattedTime": "Mar 2011",
-    "formattedAxisTime": "Mar 1, 2011",
-    "value": 27,
-    "hasData": true,
-    "formattedValue": "27",
-    "axisNote": ""
-  },
-  {
-    "time": 1301616000,
-    "formattedTime": "Apr 2011",
-    "formattedAxisTime": "Apr 1, 2011",
-    "value": 39,
-    "hasData": true,
-    "formattedValue": "39",
-    "axisNote": ""
-  },
-  {
-    "time": 1304208000,
-    "formattedTime": "May 2011",
-    "formattedAxisTime": "May 1, 2011",
-    "value": 18,
-    "hasData": true,
-    "formattedValue": "18",
-    "axisNote": ""
-  },
-  {
-    "time": 1306886400,
-    "formattedTime": "Jun 2011",
-    "formattedAxisTime": "Jun 1, 2011",
-    "value": 56,
-    "hasData": true,
-    "formattedValue": "56",
-    "axisNote": ""
-  },
-  {
-    "time": 1309478400,
-    "formattedTime": "Jul 2011",
-    "formattedAxisTime": "Jul 1, 2011",
-    "value": 46,
-    "hasData": true,
-    "formattedValue": "46",
-    "axisNote": ""
-  },
-  {
-    "time": 1312156800,
-    "formattedTime": "Aug 2011",
-    "formattedAxisTime": "Aug 1, 2011",
-    "value": 18,
-    "hasData": true,
-    "formattedValue": "18",
-    "axisNote": ""
-  },
-  {
-    "time": 1314835200,
-    "formattedTime": "Sep 2011",
-    "formattedAxisTime": "Sep 1, 2011",
-    "value": 42,
-    "hasData": true,
-    "formattedValue": "42",
-    "axisNote": ""
-  },
-  {
-    "time": 1317427200,
-    "formattedTime": "Oct 2011",
-    "formattedAxisTime": "Oct 1, 2011",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1320105600,
-    "formattedTime": "Nov 2011",
-    "formattedAxisTime": "Nov 1, 2011",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1322697600,
-    "formattedTime": "Dec 2011",
-    "formattedAxisTime": "Dec 1, 2011",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1325376000,
-    "formattedTime": "Jan 2012",
-    "formattedAxisTime": "Jan 1, 2012",
-    "value": 52,
-    "hasData": true,
-    "formattedValue": "52",
-    "axisNote": ""
-  },
-  {
-    "time": 1328054400,
-    "formattedTime": "Feb 2012",
-    "formattedAxisTime": "Feb 1, 2012",
-    "value": 31,
-    "hasData": true,
-    "formattedValue": "31",
-    "axisNote": ""
-  },
-  {
-    "time": 1330560000,
-    "formattedTime": "Mar 2012",
-    "formattedAxisTime": "Mar 1, 2012",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1333238400,
-    "formattedTime": "Apr 2012",
-    "formattedAxisTime": "Apr 1, 2012",
-    "value": 53,
-    "hasData": true,
-    "formattedValue": "53",
-    "axisNote": ""
-  },
-  {
-    "time": 1335830400,
-    "formattedTime": "May 2012",
-    "formattedAxisTime": "May 1, 2012",
-    "value": 100,
-    "hasData": true,
-    "formattedValue": "100",
-    "axisNote": ""
-  },
-  {
-    "time": 1338508800,
-    "formattedTime": "Jun 2012",
-    "formattedAxisTime": "Jun 1, 2012",
-    "value": 29,
-    "hasData": true,
-    "formattedValue": "29",
-    "axisNote": ""
-  },
-  {
-    "time": 1341100800,
-    "formattedTime": "Jul 2012",
-    "formattedAxisTime": "Jul 1, 2012",
-    "value": 79,
-    "hasData": true,
-    "formattedValue": "79",
-    "axisNote": ""
-  },
-  {
-    "time": 1343779200,
-    "formattedTime": "Aug 2012",
-    "formattedAxisTime": "Aug 1, 2012",
-    "value": 49,
-    "hasData": true,
-    "formattedValue": "49",
-    "axisNote": ""
-  },
-  {
-    "time": 1346457600,
-    "formattedTime": "Sep 2012",
-    "formattedAxisTime": "Sep 1, 2012",
-    "value": 57,
-    "hasData": true,
-    "formattedValue": "57",
-    "axisNote": ""
-  },
-  {
-    "time": 1349049600,
-    "formattedTime": "Oct 2012",
-    "formattedAxisTime": "Oct 1, 2012",
-    "value": 57,
-    "hasData": true,
-    "formattedValue": "57",
-    "axisNote": ""
-  },
-  {
-    "time": 1351728000,
-    "formattedTime": "Nov 2012",
-    "formattedAxisTime": "Nov 1, 2012",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1354320000,
-    "formattedTime": "Dec 2012",
-    "formattedAxisTime": "Dec 1, 2012",
-    "value": 65,
-    "hasData": true,
-    "formattedValue": "65",
-    "axisNote": ""
-  },
-  {
-    "time": 1356998400,
-    "formattedTime": "Jan 2013",
-    "formattedAxisTime": "Jan 1, 2013",
-    "value": 41,
-    "hasData": true,
-    "formattedValue": "41",
-    "axisNote": ""
-  },
-  {
-    "time": 1359676800,
-    "formattedTime": "Feb 2013",
-    "formattedAxisTime": "Feb 1, 2013",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1362096000,
-    "formattedTime": "Mar 2013",
-    "formattedAxisTime": "Mar 1, 2013",
-    "value": 35,
-    "hasData": true,
-    "formattedValue": "35",
-    "axisNote": ""
-  },
-  {
-    "time": 1364774400,
-    "formattedTime": "Apr 2013",
-    "formattedAxisTime": "Apr 1, 2013",
-    "value": 23,
-    "hasData": true,
-    "formattedValue": "23",
-    "axisNote": ""
-  },
-  {
-    "time": 1367366400,
-    "formattedTime": "May 2013",
-    "formattedAxisTime": "May 1, 2013",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1370044800,
-    "formattedTime": "Jun 2013",
-    "formattedAxisTime": "Jun 1, 2013",
-    "value": 53,
-    "hasData": true,
-    "formattedValue": "53",
-    "axisNote": ""
-  },
-  {
-    "time": 1372636800,
-    "formattedTime": "Jul 2013",
-    "formattedAxisTime": "Jul 1, 2013",
-    "value": 58,
-    "hasData": true,
-    "formattedValue": "58",
-    "axisNote": ""
-  },
-  {
-    "time": 1375315200,
-    "formattedTime": "Aug 2013",
-    "formattedAxisTime": "Aug 1, 2013",
-    "value": 75,
-    "hasData": true,
-    "formattedValue": "75",
-    "axisNote": ""
-  },
-  {
-    "time": 1377993600,
-    "formattedTime": "Sep 2013",
-    "formattedAxisTime": "Sep 1, 2013",
-    "value": 62,
-    "hasData": true,
-    "formattedValue": "62",
-    "axisNote": ""
-  },
-  {
-    "time": 1380585600,
-    "formattedTime": "Oct 2013",
-    "formattedAxisTime": "Oct 1, 2013",
-    "value": 48,
-    "hasData": true,
-    "formattedValue": "48",
-    "axisNote": ""
-  },
-  {
-    "time": 1383264000,
-    "formattedTime": "Nov 2013",
-    "formattedAxisTime": "Nov 1, 2013",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1385856000,
-    "formattedTime": "Dec 2013",
-    "formattedAxisTime": "Dec 1, 2013",
-    "value": 70,
-    "hasData": true,
-    "formattedValue": "70",
-    "axisNote": ""
-  },
-  {
-    "time": 1388534400,
-    "formattedTime": "Jan 2014",
-    "formattedAxisTime": "Jan 1, 2014",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1391212800,
-    "formattedTime": "Feb 2014",
-    "formattedAxisTime": "Feb 1, 2014",
-    "value": 55,
-    "hasData": true,
-    "formattedValue": "55",
-    "axisNote": ""
-  },
-  {
-    "time": 1393632000,
-    "formattedTime": "Mar 2014",
-    "formattedAxisTime": "Mar 1, 2014",
-    "value": 30,
-    "hasData": true,
-    "formattedValue": "30",
-    "axisNote": ""
-  },
-  {
-    "time": 1396310400,
-    "formattedTime": "Apr 2014",
-    "formattedAxisTime": "Apr 1, 2014",
-    "value": 15,
-    "hasData": true,
-    "formattedValue": "15",
-    "axisNote": ""
-  },
-  {
-    "time": 1398902400,
-    "formattedTime": "May 2014",
-    "formattedAxisTime": "May 1, 2014",
-    "value": 78,
-    "hasData": true,
-    "formattedValue": "78",
-    "axisNote": ""
-  },
-  {
-    "time": 1401580800,
-    "formattedTime": "Jun 2014",
-    "formattedAxisTime": "Jun 1, 2014",
-    "value": 70,
-    "hasData": true,
-    "formattedValue": "70",
-    "axisNote": ""
-  },
-  {
-    "time": 1404172800,
-    "formattedTime": "Jul 2014",
-    "formattedAxisTime": "Jul 1, 2014",
-    "value": 50,
-    "hasData": true,
-    "formattedValue": "50",
-    "axisNote": ""
-  },
-  {
-    "time": 1406851200,
-    "formattedTime": "Aug 2014",
-    "formattedAxisTime": "Aug 1, 2014",
-    "value": 67,
-    "hasData": true,
-    "formattedValue": "67",
-    "axisNote": ""
-  },
-  {
-    "time": 1409529600,
-    "formattedTime": "Sep 2014",
-    "formattedAxisTime": "Sep 1, 2014",
-    "value": 16,
-    "hasData": true,
-    "formattedValue": "16",
-    "axisNote": ""
-  },
-  {
-    "time": 1412121600,
-    "formattedTime": "Oct 2014",
-    "formattedAxisTime": "Oct 1, 2014",
-    "value": 36,
-    "hasData": true,
-    "formattedValue": "36",
-    "axisNote": ""
-  },
-  {
-    "time": 1414800000,
-    "formattedTime": "Nov 2014",
-    "formattedAxisTime": "Nov 1, 2014",
-    "value": 21,
-    "hasData": true,
-    "formattedValue": "21",
-    "axisNote": ""
-  },
-  {
-    "time": 1417392000,
-    "formattedTime": "Dec 2014",
-    "formattedAxisTime": "Dec 1, 2014",
-    "value": 47,
-    "hasData": true,
-    "formattedValue": "47",
-    "axisNote": ""
-  },
-  {
-    "time": 1420070400,
-    "formattedTime": "Jan 2015",
-    "formattedAxisTime": "Jan 1, 2015",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1422748800,
-    "formattedTime": "Feb 2015",
-    "formattedAxisTime": "Feb 1, 2015",
-    "value": 37,
-    "hasData": true,
-    "formattedValue": "37",
-    "axisNote": ""
-  },
-  {
-    "time": 1425168000,
-    "formattedTime": "Mar 2015",
-    "formattedAxisTime": "Mar 1, 2015",
-    "value": 43,
-    "hasData": true,
-    "formattedValue": "43",
-    "axisNote": ""
-  },
-  {
-    "time": 1427846400,
-    "formattedTime": "Apr 2015",
-    "formattedAxisTime": "Apr 1, 2015",
-    "value": 49,
-    "hasData": true,
-    "formattedValue": "49",
-    "axisNote": ""
-  },
-  {
-    "time": 1430438400,
-    "formattedTime": "May 2015",
-    "formattedAxisTime": "May 1, 2015",
-    "value": 38,
-    "hasData": true,
-    "formattedValue": "38",
-    "axisNote": ""
-  },
-  {
-    "time": 1433116800,
-    "formattedTime": "Jun 2015",
-    "formattedAxisTime": "Jun 1, 2015",
-    "value": 48,
-    "hasData": true,
-    "formattedValue": "48",
-    "axisNote": ""
-  },
-  {
-    "time": 1435708800,
-    "formattedTime": "Jul 2015",
-    "formattedAxisTime": "Jul 1, 2015",
-    "value": 33,
-    "hasData": true,
-    "formattedValue": "33",
-    "axisNote": ""
-  },
-  {
-    "time": 1438387200,
-    "formattedTime": "Aug 2015",
-    "formattedAxisTime": "Aug 1, 2015",
-    "value": 33,
-    "hasData": true,
-    "formattedValue": "33",
-    "axisNote": ""
-  },
-  {
-    "time": 1441065600,
-    "formattedTime": "Sep 2015",
-    "formattedAxisTime": "Sep 1, 2015",
-    "value": 28,
-    "hasData": true,
-    "formattedValue": "28",
-    "axisNote": ""
-  },
-  {
-    "time": 1443657600,
-    "formattedTime": "Oct 2015",
-    "formattedAxisTime": "Oct 1, 2015",
-    "value": 39,
-    "hasData": true,
-    "formattedValue": "39",
-    "axisNote": ""
-  },
-  {
-    "time": 1446336000,
-    "formattedTime": "Nov 2015",
-    "formattedAxisTime": "Nov 1, 2015",
-    "value": 27,
-    "hasData": true,
-    "formattedValue": "27",
-    "axisNote": ""
-  },
-  {
-    "time": 1448928000,
-    "formattedTime": "Dec 2015",
-    "formattedAxisTime": "Dec 1, 2015",
-    "value": 50,
-    "hasData": true,
-    "formattedValue": "50",
-    "axisNote": ""
-  },
-  {
-    "time": 1451606400,
-    "formattedTime": "Jan 2016",
-    "formattedAxisTime": "Jan 1, 2016",
-    "value": 28,
-    "hasData": true,
-    "formattedValue": "28",
-    "axisNote": {
-      "text": "An improvement to our data collection system was applied from 1/1/16."
+  [
+    {
+      "time": "2008-01",
+      "value": 9,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-02",
+      "value": 8,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-03",
+      "value": 5,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-04",
+      "value": 14,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-05",
+      "value": 9,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-06",
+      "value": 16,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-07",
+      "value": 7,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-08",
+      "value": 7,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-09",
+      "value": 11,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-10",
+      "value": 16,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-11",
+      "value": 11,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2008-12",
+      "value": 14,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-01",
+      "value": 16,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-02",
+      "value": 13,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-03",
+      "value": 17,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-04",
+      "value": 12,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-05",
+      "value": 12,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-06",
+      "value": 12,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-07",
+      "value": 13,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-08",
+      "value": 13,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-09",
+      "value": 12,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-10",
+      "value": 15,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-11",
+      "value": 14,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2009-12",
+      "value": 19,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-01",
+      "value": 21,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-02",
+      "value": 16,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-03",
+      "value": 17,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-04",
+      "value": 19,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-05",
+      "value": 14,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-06",
+      "value": 15,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-07",
+      "value": 21,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-08",
+      "value": 28,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-09",
+      "value": 23,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-10",
+      "value": 24,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-11",
+      "value": 19,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2010-12",
+      "value": 28,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-01",
+      "value": 28,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-02",
+      "value": 28,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-03",
+      "value": 38,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-04",
+      "value": 34,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-05",
+      "value": 24,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-06",
+      "value": 36,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-07",
+      "value": 33,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-08",
+      "value": 33,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-09",
+      "value": 49,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-10",
+      "value": 42,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-11",
+      "value": 38,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2011-12",
+      "value": 35,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-01",
+      "value": 37,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-02",
+      "value": 41,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-03",
+      "value": 32,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-04",
+      "value": 36,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-05",
+      "value": 42,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-06",
+      "value": 55,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-07",
+      "value": 46,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-08",
+      "value": 54,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-09",
+      "value": 61,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-10",
+      "value": 49,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-11",
+      "value": 33,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2012-12",
+      "value": 43,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-01",
+      "value": 49,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-02",
+      "value": 47,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-03",
+      "value": 42,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-04",
+      "value": 49,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-05",
+      "value": 57,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-06",
+      "value": 58,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-07",
+      "value": 47,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-08",
+      "value": 51,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-09",
+      "value": 50,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-10",
+      "value": 59,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-11",
+      "value": 44,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2013-12",
+      "value": 43,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-01",
+      "value": 51,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-02",
+      "value": 51,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-03",
+      "value": 59,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-04",
+      "value": 52,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-05",
+      "value": 66,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-06",
+      "value": 56,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-07",
+      "value": 64,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-08",
+      "value": 67,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-09",
+      "value": 58,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-10",
+      "value": 52,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-11",
+      "value": 57,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2014-12",
+      "value": 51,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-01",
+      "value": 55,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-02",
+      "value": 47,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-03",
+      "value": 52,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-04",
+      "value": 51,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-05",
+      "value": 63,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-06",
+      "value": 66,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-07",
+      "value": 66,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-08",
+      "value": 60,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-09",
+      "value": 72,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-10",
+      "value": 67,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-11",
+      "value": 58,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2015-12",
+      "value": 62,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-01",
+      "value": 62,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-02",
+      "value": 58,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-03",
+      "value": 67,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-04",
+      "value": 65,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-05",
+      "value": 70,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-06",
+      "value": 78,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-07",
+      "value": 68,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-08",
+      "value": 73,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-09",
+      "value": 64,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-10",
+      "value": 54,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-11",
+      "value": 65,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2016-12",
+      "value": 58,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-01",
+      "value": 69,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-02",
+      "value": 67,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-03",
+      "value": 73,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-04",
+      "value": 68,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-05",
+      "value": 69,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-06",
+      "value": 67,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-07",
+      "value": 82,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-08",
+      "value": 80,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-09",
+      "value": 80,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-10",
+      "value": 81,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-11",
+      "value": 79,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2017-12",
+      "value": 63,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-01",
+      "value": 79,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-02",
+      "value": 72,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-03",
+      "value": 73,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-04",
+      "value": 86,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-05",
+      "value": 76,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-06",
+      "value": 73,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-07",
+      "value": 84,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-08",
+      "value": 90,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-09",
+      "value": 10,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-10",
+      "value": 87,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-11",
+      "value": 79,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2018-12",
+      "value": 87,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2019-01",
+      "value": 84,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2019-02",
+      "value": 94,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2019-03",
+      "value": 84,
+      "topic": "dream about snake"
+    },
+    {
+      "time": "2019-04",
+      "value": 81,
+      "topic": "dream about snake"
     }
-  },
-  {
-    "time": 1454284800,
-    "formattedTime": "Feb 2016",
-    "formattedAxisTime": "Feb 1, 2016",
-    "value": 14,
-    "hasData": true,
-    "formattedValue": "14",
-    "axisNote": ""
-  },
-  {
-    "time": 1456790400,
-    "formattedTime": "Mar 2016",
-    "formattedAxisTime": "Mar 1, 2016",
-    "value": 27,
-    "hasData": true,
-    "formattedValue": "27",
-    "axisNote": ""
-  },
-  {
-    "time": 1459468800,
-    "formattedTime": "Apr 2016",
-    "formattedAxisTime": "Apr 1, 2016",
-    "value": 42,
-    "hasData": true,
-    "formattedValue": "42",
-    "axisNote": ""
-  },
-  {
-    "time": 1462060800,
-    "formattedTime": "May 2016",
-    "formattedAxisTime": "May 1, 2016",
-    "value": 50,
-    "hasData": true,
-    "formattedValue": "50",
-    "axisNote": ""
-  },
-  {
-    "time": 1464739200,
-    "formattedTime": "Jun 2016",
-    "formattedAxisTime": "Jun 1, 2016",
-    "value": 48,
-    "hasData": true,
-    "formattedValue": "48",
-    "axisNote": ""
-  },
-  {
-    "time": 1467331200,
-    "formattedTime": "Jul 2016",
-    "formattedAxisTime": "Jul 1, 2016",
-    "value": 39,
-    "hasData": true,
-    "formattedValue": "39",
-    "axisNote": ""
-  },
-  {
-    "time": 1470009600,
-    "formattedTime": "Aug 2016",
-    "formattedAxisTime": "Aug 1, 2016",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1472688000,
-    "formattedTime": "Sep 2016",
-    "formattedAxisTime": "Sep 1, 2016",
-    "value": 34,
-    "hasData": true,
-    "formattedValue": "34",
-    "axisNote": ""
-  },
-  {
-    "time": 1475280000,
-    "formattedTime": "Oct 2016",
-    "formattedAxisTime": "Oct 1, 2016",
-    "value": 33,
-    "hasData": true,
-    "formattedValue": "33",
-    "axisNote": ""
-  },
-  {
-    "time": 1477958400,
-    "formattedTime": "Nov 2016",
-    "formattedAxisTime": "Nov 1, 2016",
-    "value": 9,
-    "hasData": true,
-    "formattedValue": "9",
-    "axisNote": ""
-  },
-  {
-    "time": 1480550400,
-    "formattedTime": "Dec 2016",
-    "formattedAxisTime": "Dec 1, 2016",
-    "value": 18,
-    "hasData": true,
-    "formattedValue": "18",
-    "axisNote": ""
-  },
-  {
-    "time": 1483228800,
-    "formattedTime": "Jan 2017",
-    "formattedAxisTime": "Jan 1, 2017",
-    "value": 48,
-    "hasData": true,
-    "formattedValue": "48",
-    "axisNote": ""
-  },
-  {
-    "time": 1485907200,
-    "formattedTime": "Feb 2017",
-    "formattedAxisTime": "Feb 1, 2017",
-    "value": 41,
-    "hasData": true,
-    "formattedValue": "41",
-    "axisNote": ""
-  },
-  {
-    "time": 1488326400,
-    "formattedTime": "Mar 2017",
-    "formattedAxisTime": "Mar 1, 2017",
-    "value": 41,
-    "hasData": true,
-    "formattedValue": "41",
-    "axisNote": ""
-  },
-  {
-    "time": 1491004800,
-    "formattedTime": "Apr 2017",
-    "formattedAxisTime": "Apr 1, 2017",
-    "value": 13,
-    "hasData": true,
-    "formattedValue": "13",
-    "axisNote": ""
-  },
-  {
-    "time": 1493596800,
-    "formattedTime": "May 2017",
-    "formattedAxisTime": "May 1, 2017",
-    "value": 31,
-    "hasData": true,
-    "formattedValue": "31",
-    "axisNote": ""
-  },
-  {
-    "time": 1496275200,
-    "formattedTime": "Jun 2017",
-    "formattedAxisTime": "Jun 1, 2017",
-    "value": 32,
-    "hasData": true,
-    "formattedValue": "32",
-    "axisNote": ""
-  },
-  {
-    "time": 1498867200,
-    "formattedTime": "Jul 2017",
-    "formattedAxisTime": "Jul 1, 2017",
-    "value": 46,
-    "hasData": true,
-    "formattedValue": "46",
-    "axisNote": ""
-  },
-  {
-    "time": 1501545600,
-    "formattedTime": "Aug 2017",
-    "formattedAxisTime": "Aug 1, 2017",
-    "value": 22,
-    "hasData": true,
-    "formattedValue": "22",
-    "axisNote": ""
-  },
-  {
-    "time": 1504224000,
-    "formattedTime": "Sep 2017",
-    "formattedAxisTime": "Sep 1, 2017",
-    "value": 22,
-    "hasData": true,
-    "formattedValue": "22",
-    "axisNote": ""
-  },
-  {
-    "time": 1506816000,
-    "formattedTime": "Oct 2017",
-    "formattedAxisTime": "Oct 1, 2017",
-    "value": 17,
-    "hasData": true,
-    "formattedValue": "17",
-    "axisNote": ""
-  },
-  {
-    "time": 1509494400,
-    "formattedTime": "Nov 2017",
-    "formattedAxisTime": "Nov 1, 2017",
-    "value": 21,
-    "hasData": true,
-    "formattedValue": "21",
-    "axisNote": ""
-  },
-  {
-    "time": 1512086400,
-    "formattedTime": "Dec 2017",
-    "formattedAxisTime": "Dec 1, 2017",
-    "value": 21,
-    "hasData": true,
-    "formattedValue": "21",
-    "axisNote": ""
-  },
-  {
-    "time": 1514764800,
-    "formattedTime": "Jan 2018",
-    "formattedAxisTime": "Jan 1, 2018",
-    "value": 20,
-    "hasData": true,
-    "formattedValue": "20",
-    "axisNote": ""
-  },
-  {
-    "time": 1517443200,
-    "formattedTime": "Feb 2018",
-    "formattedAxisTime": "Feb 1, 2018",
-    "value": 26,
-    "hasData": true,
-    "formattedValue": "26",
-    "axisNote": ""
-  },
-  {
-    "time": 1519862400,
-    "formattedTime": "Mar 2018",
-    "formattedAxisTime": "Mar 1, 2018",
-    "value": 63,
-    "hasData": true,
-    "formattedValue": "63",
-    "axisNote": ""
-  },
-  {
-    "time": 1522540800,
-    "formattedTime": "Apr 2018",
-    "formattedAxisTime": "Apr 1, 2018",
-    "value": 41,
-    "hasData": true,
-    "formattedValue": "41",
-    "axisNote": ""
-  },
-  {
-    "time": 1525132800,
-    "formattedTime": "May 2018",
-    "formattedAxisTime": "May 1, 2018",
-    "value": 36,
-    "hasData": true,
-    "formattedValue": "36",
-    "axisNote": ""
-  },
-  {
-    "time": 1527811200,
-    "formattedTime": "Jun 2018",
-    "formattedAxisTime": "Jun 1, 2018",
-    "value": 49,
-    "hasData": true,
-    "formattedValue": "49",
-    "axisNote": ""
-  },
-  {
-    "time": 1530403200,
-    "formattedTime": "Jul 2018",
-    "formattedAxisTime": "Jul 1, 2018",
-    "value": 56,
-    "hasData": true,
-    "formattedValue": "56",
-    "axisNote": ""
-  },
-  {
-    "time": 1533081600,
-    "formattedTime": "Aug 2018",
-    "formattedAxisTime": "Aug 1, 2018",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1535760000,
-    "formattedTime": "Sep 2018",
-    "formattedAxisTime": "Sep 1, 2018",
-    "value": 20,
-    "hasData": true,
-    "formattedValue": "20",
-    "axisNote": ""
-  },
-  {
-    "time": 1538352000,
-    "formattedTime": "Oct 2018",
-    "formattedAxisTime": "Oct 1, 2018",
-    "value": 16,
-    "hasData": true,
-    "formattedValue": "16",
-    "axisNote": ""
-  },
-  {
-    "time": 1541030400,
-    "formattedTime": "Nov 2018",
-    "formattedAxisTime": "Nov 1, 2018",
-    "value": 40,
-    "hasData": true,
-    "formattedValue": "40",
-    "axisNote": ""
-  },
-  {
-    "time": 1543622400,
-    "formattedTime": "Dec 2018",
-    "formattedAxisTime": "Dec 1, 2018",
-    "value": 20,
-    "hasData": true,
-    "formattedValue": "20",
-    "axisNote": ""
-  },
-  {
-    "time": 1546300800,
-    "formattedTime": "Jan 2019",
-    "formattedAxisTime": "Jan 1, 2019",
-    "value": 12,
-    "hasData": true,
-    "formattedValue": "12",
-    "axisNote": ""
-  }
+  ],
+  [
+    {
+      "time": "2008-01",
+      "value": 9,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-02",
+      "value": 9,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-03",
+      "value": 0,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-04",
+      "value": 8,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-05",
+      "value": 16,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-06",
+      "value": 0,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-07",
+      "value": 8,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-08",
+      "value": 24,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-09",
+      "value": 22,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-10",
+      "value": 10,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-11",
+      "value": 18,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2008-12",
+      "value": 7,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-01",
+      "value": 10,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-02",
+      "value": 17,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-03",
+      "value": 9,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-04",
+      "value": 13,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-05",
+      "value": 21,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-06",
+      "value": 18,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-07",
+      "value": 18,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-08",
+      "value": 24,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-09",
+      "value": 17,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-10",
+      "value": 31,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-11",
+      "value": 11,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2009-12",
+      "value": 23,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-01",
+      "value": 27,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-02",
+      "value": 18,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-03",
+      "value": 25,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-04",
+      "value": 24,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-05",
+      "value": 40,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-06",
+      "value": 12,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-07",
+      "value": 34,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-08",
+      "value": 22,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-09",
+      "value": 46,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-10",
+      "value": 30,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-11",
+      "value": 60,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2010-12",
+      "value": 40,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-01",
+      "value": 38,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-02",
+      "value": 44,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-03",
+      "value": 25,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-04",
+      "value": 35,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-05",
+      "value": 38,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-06",
+      "value": 53,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-07",
+      "value": 45,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-08",
+      "value": 55,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-09",
+      "value": 43,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-10",
+      "value": 52,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-11",
+      "value": 79,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2011-12",
+      "value": 86,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-01",
+      "value": 100,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-02",
+      "value": 59,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-03",
+      "value": 57,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-04",
+      "value": 56,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-05",
+      "value": 68,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-06",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-07",
+      "value": 69,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-08",
+      "value": 49,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-09",
+      "value": 59,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-10",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-11",
+      "value": 57,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2012-12",
+      "value": 55,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-01",
+      "value": 65,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-02",
+      "value": 49,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-03",
+      "value": 68,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-04",
+      "value": 65,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-05",
+      "value": 49,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-06",
+      "value": 52,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-07",
+      "value": 90,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-08",
+      "value": 62,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-09",
+      "value": 46,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-10",
+      "value": 58,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-11",
+      "value": 45,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2013-12",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-01",
+      "value": 54,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-02",
+      "value": 53,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-03",
+      "value": 64,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-04",
+      "value": 43,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-05",
+      "value": 37,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-06",
+      "value": 37,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-07",
+      "value": 61,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-08",
+      "value": 45,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-09",
+      "value": 49,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-10",
+      "value": 38,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-11",
+      "value": 40,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2014-12",
+      "value": 42,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-01",
+      "value": 50,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-02",
+      "value": 50,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-03",
+      "value": 52,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-04",
+      "value": 57,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-05",
+      "value": 35,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-06",
+      "value": 48,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-07",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-08",
+      "value": 40,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-09",
+      "value": 43,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-10",
+      "value": 35,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-11",
+      "value": 44,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2015-12",
+      "value": 38,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-01",
+      "value": 49,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-02",
+      "value": 37,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-03",
+      "value": 44,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-04",
+      "value": 45,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-05",
+      "value": 41,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-06",
+      "value": 50,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-07",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-08",
+      "value": 38,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-09",
+      "value": 55,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-10",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-11",
+      "value": 34,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2016-12",
+      "value": 45,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-01",
+      "value": 55,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-02",
+      "value": 75,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-03",
+      "value": 50,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-04",
+      "value": 57,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-05",
+      "value": 55,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-06",
+      "value": 46,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-07",
+      "value": 62,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-08",
+      "value": 42,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-09",
+      "value": 53,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-10",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-11",
+      "value": 59,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2017-12",
+      "value": 45,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-01",
+      "value": 73,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-02",
+      "value": 57,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-03",
+      "value": 51,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-04",
+      "value": 63,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-05",
+      "value": 50,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-06",
+      "value": 53,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-07",
+      "value": 69,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-08",
+      "value": 65,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-09",
+      "value": 70,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-10",
+      "value": 69,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-11",
+      "value": 81,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2018-12",
+      "value": 62,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2019-01",
+      "value": 63,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2019-02",
+      "value": 57,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2019-03",
+      "value": 61,
+      "topic": "dream about an ex"
+    },
+    {
+      "time": "2019-04",
+      "value": 84,
+      "topic": "dream about an ex"
+    }
+  ],
+  [
+    {
+      "time": "2008-01",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-02",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-03",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-04",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-05",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-06",
+      "value": 32,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-07",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-08",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-09",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-10",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-11",
+      "value": 18,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2008-12",
+      "value": 17,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-01",
+      "value": 29,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-02",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-03",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-04",
+      "value": 16,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-05",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-06",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-07",
+      "value": 18,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-08",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-09",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-10",
+      "value": 32,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-11",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2009-12",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-01",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-02",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-03",
+      "value": 32,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-04",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-05",
+      "value": 14,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-06",
+      "value": 15,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-07",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-08",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-09",
+      "value": 16,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-10",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-11",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2010-12",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-01",
+      "value": 16,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-02",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-03",
+      "value": 100,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-04",
+      "value": 29,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-05",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-06",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-07",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-08",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-09",
+      "value": 31,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-10",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-11",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2011-12",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-01",
+      "value": 28,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-02",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-03",
+      "value": 30,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-04",
+      "value": 29,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-05",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-06",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-07",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-08",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-09",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-10",
+      "value": 30,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-11",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2012-12",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-01",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-02",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-03",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-04",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-05",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-06",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-07",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-08",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-09",
+      "value": 17,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-10",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-11",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2013-12",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-01",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-02",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-03",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-04",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-05",
+      "value": 16,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-06",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-07",
+      "value": 17,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-08",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-09",
+      "value": 16,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-10",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-11",
+      "value": 18,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2014-12",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-01",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-02",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-03",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-04",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-05",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-06",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-07",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-08",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-09",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-10",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-11",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2015-12",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-01",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-02",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-03",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-04",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-05",
+      "value": 18,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-06",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-07",
+      "value": 18,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-08",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-09",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-10",
+      "value": 17,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-11",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2016-12",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-01",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-02",
+      "value": 28,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-03",
+      "value": 21,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-04",
+      "value": 19,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-05",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-06",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-07",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-08",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-09",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-10",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-11",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2017-12",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-01",
+      "value": 30,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-02",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-03",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-04",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-05",
+      "value": 25,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-06",
+      "value": 23,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-07",
+      "value": 20,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-08",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-09",
+      "value": 26,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-10",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-11",
+      "value": 22,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2018-12",
+      "value": 34,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2019-01",
+      "value": 34,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2019-02",
+      "value": 27,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2019-03",
+      "value": 24,
+      "topic": "tsunami dream"
+    },
+    {
+      "time": "2019-04",
+      "value": 21,
+      "topic": "tsunami dream"
+    }
+  ]
 ]

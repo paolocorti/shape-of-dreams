@@ -61,7 +61,7 @@ const Explore1 = ({ history }) => {
   return (
     <div className='explore1'>
       <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '175px' }}>
+        <div className='w-100 ph4' style={{ height: '135px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             What does it mean to dream about...
@@ -77,7 +77,7 @@ const Explore1 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 tc pt4' style={{ height: 'calc(100% - 175px)' }}>
+        <div className='w-100 tc pt4' style={{ height: 'calc(100% - 135px)' }}>
           <div
             className='flex flex-column relative justify-center items-center'
             style={{ height: '70%' }}
