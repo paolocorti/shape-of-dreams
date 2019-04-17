@@ -37,15 +37,15 @@ const Trend = ({ data, name }) => {
     .range([0, trendHeight]);
 
   const parsedData = data.filter((d, i) => {
-    if (i % 2 !== 0) {
+    if (i % 6 === 0) {
       return d;
     }
   });
 
-  console.log(parsedData);
+  console.log(max);
 
   return (
-    <div className='mt4'>
+    <div className='mt3'>
       <svg
         className='viz'
         x='0px'
@@ -71,13 +71,12 @@ const Trend = ({ data, name }) => {
             <stop offset='100%' stopColor='#db8685' stopOpacity='1' />
           </linearGradient>
         </defs>
-        <g transform={`translate(15, -20)`}>
+        <g transform={`translate(15, 0)`}>
           {parsedData.map((d, i) => {
             const date = moment(d.time);
             const value = d.value;
 
             const startAnimation = trendHeight;
-            const endAnimation = trendHeight - scaleY(value);
 
             return (
               <g key={i}>
@@ -96,7 +95,6 @@ const Trend = ({ data, name }) => {
                 >
                   {state => {
                     const { y2 } = state;
-                    console.log(state);
                     return (
                       <line
                         id={`line-${i}`}
@@ -114,33 +112,37 @@ const Trend = ({ data, name }) => {
             );
           })}
         </g>
-        <g transform={`translate(15, -20)`}>
+        <g transform={`translate(15, 0)`}>
           <Animate
             start={() => ({
-              strokeDashoffset: 4000
+              j: 4000
             })}
             enter={() => ({
-              strokeDashoffset: 0,
+              j: [0],
+              timing: { duration: 800, delay: 800, ease: easeQuadOut }
+            })}
+            update={() => ({
+              j: [0],
               timing: { duration: 800, ease: easeQuadOut }
             })}
           >
             {state => {
-              const { strokeDashoffset } = state;
+              const { j } = state;
               return (
                 <LinePath
-                  data={parsedData}
+                  data={data}
                   x={d => scaleX(x(d))}
                   y={d => scaleY2(y(d))}
                   stroke={'#973e34'}
                   strokeWidth={1}
                   strokeDasharray={4000}
-                  strokeDashoffset={strokeDashoffset}
+                  strokeDashoffset={j}
                 />
               );
             }}
           </Animate>
         </g>
-        <g transform={`translate(15, -20)`}>
+        <g transform={`translate(15, 0)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}
