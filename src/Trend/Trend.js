@@ -37,7 +37,7 @@ const Trend = ({ data, name }) => {
     .range([0, trendHeight]);
 
   const parsedData = data.filter((d, i) => {
-    if (i % 6 === 0) {
+    if (i % 12 === 0) {
       return d;
     }
   });

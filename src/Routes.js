@@ -24,7 +24,7 @@ const Routes = ({ location }) => {
       <Legend />
       <Route exact path='/' component={Landing} />
 
-      {pathname !== '/' && (
+      {/* {pathname !== '/' && (
         <img
           src={'/images/swipe-left.svg'}
           style={{
@@ -36,9 +36,9 @@ const Routes = ({ location }) => {
           }}
           height={160}
         />
-      )}
+      )} */}
 
-      {pathname !== '/' && (
+      {/* {pathname !== '/' && (
         <img
           src={'/images/swipe-right.svg'}
           style={{
@@ -50,7 +50,7 @@ const Routes = ({ location }) => {
           }}
           height={160}
         />
-      )}
+      )} */}
 
       {pathname !== '/' && (
         <SwipeableRoutes

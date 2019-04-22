@@ -16,6 +16,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.sourcesanspro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Page */
 
 .page {
@@ -164,7 +168,7 @@ h4 {
   transition: 0.5s all;
   height: 100%;
   overflow: hidden;
-  background-color: #43449a;
+  background-color: rgba(67, 68, 154, 0.9);
   transform: translate(0, 100%);
   z-index: -1;
   animation: slideOut 0.5s 0s forwards;
@@ -244,4 +248,20 @@ h4 {
   -o-filter: blur(10px);
   -ms-filter: blur(10px);
   transition: 1s filter;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -5,10 +5,12 @@ import categories from '../data/categories.json';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import { years } from '../constants';
+import { languages } from '../constants';
 
 const Explore2 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
+  const [selectedPetal, setSelectedPetal] = useState(null);
 
   const onSelectLanguage = index => {
     setSelectedLanguageIndex(index);
@@ -30,6 +32,11 @@ const Explore2 = ({ history }) => {
   const selectedCategories =
     groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
 
+  const setSelectedPetalWrapper = index => {
+    const newSelectedPetal = selectedPetal === index ? null : index;
+    setSelectedPetal(newSelectedPetal);
+  };
+
   return (
     <div className='explore2'>
       <div className='w-100 h-100 pa2 relative'>
@@ -50,22 +57,44 @@ const Explore2 = ({ history }) => {
           />
         </div>
         <div
-          className='w-100 flex flex-column relative tc'
+          className='w-100 flex flex-column relative tc pt3'
           style={{ height: 'calc(100% - 135px)' }}
         >
           <div
             className='flex flex-column justify-center items-center'
             style={{ height: '70%' }}
           >
-            <BluePetals categories={selectedCategories} />
+            <BluePetals
+              categories={selectedCategories}
+              year={years[selectedYearIndex]}
+              language={languages[selectedLanguageIndex]}
+              setSelectedPetal={setSelectedPetalWrapper}
+              selectedPetal={selectedPetal}
+            />
           </div>
           <div
-            className='tj raleway mt3 ph4'
-            style={{ fontSize: '2vh', height: '30%' }}
+            className='flex flex-column relative justify-center items-center ph4'
+            style={{ height: '30%' }}
           >
-            Select a language and a year. The number of petals is equal to the
-            increase in search interest for a dream in comparison to the
-            previous year. The dreams shown are the ones that increased the most
+            <div
+              className='tj sourcesanspro mt2'
+              style={{ fontSize: '11px', lineHeight: '12px', height: '30%' }}
+            >
+              SELECT A LANGUAGE AND A YEAR. THE NUMBER OF PETALS IS EQUAL TO THE
+              INCREASE IN SEARCH INTEREST FOR A DREAM IN COMPARISON TO THE
+              PREVIOUS YEAR. THE DREAMS SHOWN ARE THE ONES THAT INCREASED THE
+              MOST.
+            </div>
+            <div
+              className='raleway mt3 fw7'
+              style={{
+                fontSize: '18px',
+                color: '#43449a',
+                letterSpacing: '1px'
+              }}
+            >
+              HOW TO READ IT
+            </div>
           </div>
         </div>
       </div>

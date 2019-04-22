@@ -4,7 +4,7 @@ import './Selector.scss';
 
 const YearSelector = ({ years, selected, onSelect }) => {
   return (
-    <div className='w-100 flex justify-center mt3'>
+    <div className='w-100 flex justify-center' style={{ marginTop: '15px' }}>
       <div className='flex relative' style={{ width: '330px' }}>
         {years.map((value, index) => {
           return (
@@ -31,7 +31,7 @@ const YearSelector = ({ years, selected, onSelect }) => {
         })}
         <div
           className='yearEl-selected'
-          style={{ left: `${selected * 30 + 2}px` }}
+          style={{ left: `${selected * 30 + 4}px` }}
         />
       </div>
     </div>

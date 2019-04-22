@@ -8,14 +8,13 @@
 }
 
 .langEl-selected {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  border: 1px solid #43449a;
-  background-color: transparent;
+  width: 20px;
+  height: 5px;
+  background-color: #43449a;
   position: absolute;
   transition: 0.5s all;
-  top: -12px;
+  top: 18px;
+  margin-left: 10px;
 }
 
 .yearEl {
@@ -45,14 +44,14 @@
 }
 
 .yearEl-selected {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
   border: 1px solid #43449a;
   background-color: transparent;
   position: absolute;
   transition: 0.5s all;
-  top: -8px;
+  top: -6px;
 }
 
 .yearLine {
@@ -72,6 +71,8 @@
   width: 260px;
   border: 2px solid #43449a;
   margin: auto;
+  border-radius: 15px;
+  background-color: rgba($color: #fff, $alpha: 0.3);
 }
 
 .topicSelectorEl {
@@ -86,6 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 900;
 }
 
 .react-swipeable-view-container {

@@ -15,6 +15,17 @@ const getNumberOfPetals = n => {
   }
 };
 
+const languageLabel = {
+  EN: 'English',
+  AR: 'Arabic',
+  ES: 'Spanish',
+  FR: 'French',
+  PO: 'Portuguese',
+  RU: 'Russian',
+  JP: 'Japanese',
+  IN: 'Indu'
+};
+
 const Petals = ({ name, language, year, value, index }) => {
   const svgWidth = window.innerWidth * 0.55;
   let nOfPetals = getNumberOfPetals(value);
@@ -28,7 +39,9 @@ const Petals = ({ name, language, year, value, index }) => {
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
         {name}
       </div>
-      {/* <div className='mt1 raleway value'>{value}</div> */}
+      <div className='mt1 value' style={{ fontSize: '16px', opacity: 0.6 }}>
+        {languageLabel[language]} - {year}
+      </div>
       <svg
         className='viz mt2'
         x='0px'
