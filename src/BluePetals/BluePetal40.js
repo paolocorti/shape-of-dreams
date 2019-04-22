@@ -1,8 +1,13 @@
 import React from 'react';
 
-const BluePetal40 = ({ id, value }) => {
+const BluePetal40 = ({ id, value, selectedPetal }) => {
   return (
-    <g className={`bluepetal blupetal-${id}`}>
+    <g
+      className={`bluepetal blupetal-${id}`}
+      style={{
+        opacity: selectedPetal !== null ? (selectedPetal === id ? 1 : 0.5) : 1
+      }}
+    >
       <g id={`bluepetal-${id}`}>
         <path
           className='st0'

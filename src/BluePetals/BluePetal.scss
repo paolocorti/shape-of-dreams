@@ -8,6 +8,10 @@
   fill: #607cbd;
 }
 
+.bluepetal {
+  transition: 0.2s opacity;
+}
+
 .grid0 {
   fill: #ededed;
   stroke: #ffffff;
@@ -27,13 +31,13 @@
   stroke-dasharray: 1.995, 3.9901;
 }
 .grid3 {
-  fill: #231F20;
+  fill: #3f4696;
 }
+
 .grid4 {
-  font-family: 'Raleway', sans-serif;
-}
-.grid5 {
-  font-size: 24px;
+  fill: none;
+  stroke: #3f4696;
+  stroke-miterlimit: 10;
 }
 
 .line {
