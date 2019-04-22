@@ -77,13 +77,11 @@ const Explore2 = ({ history }) => {
             style={{ height: '30%' }}
           >
             <div
-              className='tj sourcesanspro mt2'
+              className='tc sourcesanspro mt2'
               style={{ fontSize: '11px', lineHeight: '12px', height: '30%' }}
             >
-              SELECT A LANGUAGE AND A YEAR. THE NUMBER OF PETALS IS EQUAL TO THE
-              INCREASE IN SEARCH INTEREST FOR A DREAM IN COMPARISON TO THE
-              PREVIOUS YEAR. THE DREAMS SHOWN ARE THE ONES THAT INCREASED THE
-              MOST.
+              SELECT A LANGUAGE AND A YEAR. SIZE OF THE PETALS = NUMBER OF
+              DREAMS IN THE CATEGORY
             </div>
             <div
               className='raleway mt3 fw7'

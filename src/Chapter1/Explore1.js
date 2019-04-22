@@ -131,7 +131,7 @@ const Explore1 = ({ history }) => {
             style={{ height: '30%' }}
           >
             <div
-              className='tj sourcesanspro mt2'
+              className='tc sourcesanspro mt2'
               style={{ fontSize: '11px', lineHeight: '12px', height: '30%' }}
             >
               SELECT A LANGUAGE, A YEAR AND TAP ON THE ARROWS TO SEE THE DREAMS

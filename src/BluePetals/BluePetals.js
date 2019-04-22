@@ -45,7 +45,7 @@ const BluePetals = ({
   selectedPetal,
   setSelectedPetal
 }) => {
-  const svgWidth = window.innerWidth * 0.8;
+  const svgWidth = window.innerWidth * 0.6;
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
