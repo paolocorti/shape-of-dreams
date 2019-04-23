@@ -8,7 +8,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
       className='w-100 flex justify-center items-center relative'
       style={{ marginTop: '10px', height: '40px' }}
     >
-      <div className='flex relative' style={{ width: '320px' }}>
+      <div className='flex relative' style={{ width: '280px' }}>
         {languages.map((value, index) => {
           return (
             <div
@@ -22,7 +22,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
         })}
         <div
           className='langEl-selected'
-          style={{ left: `${selected * 40}px` }}
+          style={{ left: `${selected * 35 - 2}px` }}
         />
       </div>
     </div>

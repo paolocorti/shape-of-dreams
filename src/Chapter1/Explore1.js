@@ -79,7 +79,7 @@ const Explore1 = ({ history }) => {
         />
         <div className='w-100 ph4' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
-          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams' subjects by category
           </h1>
           <LanguageSelector
@@ -126,7 +126,7 @@ const Explore1 = ({ history }) => {
             )}
           </div>
           <div
-            className='flex flex-column relative justify-center items-center ph4'
+            className='flex flex-column relative justify-start items-center ph4 mt2'
             style={{ height: '35%' }}
           >
             <div

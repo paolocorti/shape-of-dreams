@@ -12,7 +12,7 @@ const styles = {
 
 const TopicSelector = ({ topics, onSwipe }) => {
   return (
-    <div className='topicSelector relative mt4'>
+    <div className='topicSelector relative mt3'>
       <div
         className='flex relative justify-center items-center w-100 h-100'
         style={{ borderRadius: '15px' }}

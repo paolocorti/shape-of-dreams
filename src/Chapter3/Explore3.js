@@ -18,6 +18,15 @@ const Explore3 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [note, setNote] = useState(null);
+
+  const toggleNote = text => {
+    if (note) {
+      setNote(null);
+    } else {
+      setNote(text);
+    }
+  };
 
   const onSelectYear = index => {
     setSelectedYearIndex(index);
@@ -51,10 +60,14 @@ const Explore3 = ({ history }) => {
             className='flex flex-column justify-center items-center'
             style={{ height: '70%' }}
           >
-            <Trend data={interestOverTime[selectedIndex]} />
+            <Trend
+              data={interestOverTime[selectedIndex]}
+              toggleNote={setNote}
+              noteActive={note}
+            />
           </div>
           <div
-            className='flex flex-column relative justify-center items-center ph4'
+            className='flex flex-column relative justify-start items-center ph4 mt2'
             style={{ height: '30%' }}
           >
             <div

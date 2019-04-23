@@ -15,10 +15,10 @@ const x = d => {
 };
 const y = d => d.value;
 
-const Trend = ({ data, name }) => {
-  const svgWidth = window.innerWidth * 0.8;
-  const svgHeight = window.innerWidth * 0.6;
-  const trendHeight = svgHeight - 20;
+const Trend = ({ data, name, toggleNote, noteActive }) => {
+  const svgWidth = window.innerWidth * 0.9;
+  const svgHeight = window.innerWidth * 0.7;
+  const trendHeight = svgHeight - 30;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
 
@@ -46,6 +46,18 @@ const Trend = ({ data, name }) => {
 
   return (
     <div className='mt3'>
+      {noteActive && (
+        <div className='noteBox ph4'>
+          <div className='noteBox-close' onClick={() => toggleNote('')}>
+            <img
+              src={'/images/close-white.svg'}
+              alt='Close menu icon'
+              width={20}
+            />
+          </div>
+          {noteActive}
+        </div>
+      )}
       <svg
         className='viz'
         x='0px'
@@ -70,7 +82,7 @@ const Trend = ({ data, name }) => {
             <stop offset='100%' stopColor='#c27b76' stopOpacity='1' />
           </linearGradient>
         </defs>
-        <g transform={`translate(20, 0)`}>
+        <g transform={`translate(20, 10)`}>
           {parsedData.map((d, i) => {
             const date = moment(d.time);
             const value = d.value;
@@ -111,7 +123,7 @@ const Trend = ({ data, name }) => {
             );
           })}
         </g>
-        <g transform={`translate(20, 0)`}>
+        <g transform={`translate(20, 10)`}>
           <Animate
             start={() => ({
               j: 4000
@@ -142,7 +154,7 @@ const Trend = ({ data, name }) => {
           </Animate>
         </g>
         {
-          <g transform={`translate(15, 0)`}>
+          <g transform={`translate(20, 15)`}>
             {data.map((d, i) => {
               const date = moment(d.time);
               const value = d.value;
@@ -151,14 +163,29 @@ const Trend = ({ data, name }) => {
 
               if (d.peak) {
                 return (
-                  <g key={i}>
+                  <g key={i} onClick={() => toggleNote(d.note)}>
                     <circle
                       id={`circle-${i}`}
-                      cx={scaleX(date) + 3}
+                      cx={scaleX(date)}
                       cy={trendHeight - scaleY(value)}
                       fill={'#43449a'}
-                      r={6}
+                      r={4}
                     />
+                    <circle
+                      id={`circle-${i}`}
+                      cx={scaleX(date)}
+                      cy={trendHeight - scaleY(value)}
+                      stroke={'#43449a'}
+                      fill={'transparent'}
+                      r={10}
+                    />
+                    <text
+                      dx={90}
+                      dy={trendHeight - scaleY(value) + 2}
+                      textAnchor={'start'}
+                    >
+                      {date.format('MMMM YYYY')}
+                    </text>
                   </g>
                 );
               }
@@ -166,7 +193,7 @@ const Trend = ({ data, name }) => {
           </g>
         }
 
-        <g transform={`translate(21, 0)`}>
+        <g transform={`translate(21, 10)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}

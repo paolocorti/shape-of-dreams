@@ -10,7 +10,7 @@ const Header = ({ location }) => {
   console.log(pathname);
   return (
     <div
-      className='w-100 fixed flex justify-between pv3 ph4'
+      className='w-100 fixed flex justify-between items-center ph4'
       style={{ flex: 1 }}
       style={{
         height: '30px',

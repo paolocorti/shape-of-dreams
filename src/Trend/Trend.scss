@@ -1,3 +1,24 @@
 .vx-axis-tick > text {
-  font-family: 'Raleway';
+  font-family: Raleway;
+}
+
+.noteBox {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 150;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #43449a;
+  font-size: 21px;
+}
+
+.noteBox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

@@ -17,6 +17,8 @@ const Routes = ({ location }) => {
   const { pathname } = location;
   const context = useContext(AppContext);
 
+  console.log(context);
+
   return (
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`}>
       {pathname !== '/' && <Header />}
