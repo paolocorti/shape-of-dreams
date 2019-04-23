@@ -1557,7 +1557,9 @@
     {
       "time": "2011-03",
       "value": 100,
-      "topic": "tsunami dream"
+      "topic": "tsunami dream",
+      "peak": true,
+      "note": "On March 11, 2011 an earthquake and a tsunami occured in Japan"
     },
     {
       "time": "2011-04",

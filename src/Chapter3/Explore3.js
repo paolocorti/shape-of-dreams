@@ -38,8 +38,8 @@ const Explore3 = ({ history }) => {
       <div className='w-100 h-100 flex flex-column justify-center relative'>
         <div className='w-100 ph4' style={{ height: '125px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
-          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
-            Looking for dreams’ subjects over time
+          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
+            Dreams’ subjects over time
           </h1>
           <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
         </div>
@@ -54,12 +54,25 @@ const Explore3 = ({ history }) => {
             <Trend data={interestOverTime[selectedIndex]} />
           </div>
           <div
-            className='tj raleway mt3 ph4'
-            style={{ fontSize: '2vh', height: '30%' }}
+            className='flex flex-column relative justify-center items-center ph4'
+            style={{ height: '30%' }}
           >
-            Select a language and a year. The number of petals is equal to the
-            increase in search interest for a dream in comparison to the
-            previous year. The dreams shown are the ones that increased the most
+            <div
+              className='tc sourcesanspro mt2'
+              style={{ fontSize: '11px', lineHeight: '12px' }}
+            >
+              SCROLL UP AND DOWN IN THE BOX TO CHANGE THE DREAM
+            </div>
+            <div
+              className='raleway mt3 fw7'
+              style={{
+                fontSize: '14px',
+                color: '#43449a',
+                letterSpacing: '1px'
+              }}
+            >
+              HOW TO READ IT
+            </div>
           </div>
         </div>
       </div>

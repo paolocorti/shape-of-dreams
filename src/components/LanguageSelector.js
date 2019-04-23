@@ -5,8 +5,8 @@ import './Selector.scss';
 const LanguageSelector = ({ languages, selected, onSelect }) => {
   return (
     <div
-      className='w-100 flex justify-center items-center relative mt3'
-      style={{ height: '40px' }}
+      className='w-100 flex justify-center items-center relative'
+      style={{ marginTop: '10px', height: '40px' }}
     >
       <div className='flex relative' style={{ width: '320px' }}>
         {languages.map((value, index) => {

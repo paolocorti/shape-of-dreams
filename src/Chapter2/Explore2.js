@@ -40,10 +40,10 @@ const Explore2 = ({ history }) => {
   return (
     <div className='explore2'>
       <div className='w-100 h-100 pa2 relative'>
-        <div className='w-100 ph4' style={{ height: '135px' }}>
+        <div className='w-100 ph4' style={{ height: '125px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
-          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
-            Dreams subjects grouped by category
+          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
+            Dreams subjects by category
           </h1>
           <LanguageSelector
             languages={groupedByCountryKeys}
@@ -57,8 +57,8 @@ const Explore2 = ({ history }) => {
           />
         </div>
         <div
-          className='w-100 flex flex-column relative tc pt3'
-          style={{ height: 'calc(100% - 135px)' }}
+          className='w-100 flex flex-column relative tc'
+          style={{ height: 'calc(100% - 125px)' }}
         >
           <div
             className='flex flex-column justify-center items-center'
@@ -78,15 +78,16 @@ const Explore2 = ({ history }) => {
           >
             <div
               className='tc sourcesanspro mt2'
-              style={{ fontSize: '11px', lineHeight: '12px', height: '30%' }}
+              style={{ fontSize: '11px', lineHeight: '12px' }}
             >
-              SELECT A LANGUAGE AND A YEAR. SIZE OF THE PETALS = NUMBER OF
-              DREAMS IN THE CATEGORY
+              SELECT A LANGUAGE AND A YEAR. TAP ON THE CIRCLE TO SWITCH ON AND
+              OFF THE CATEGORY. SIZE OF THE PETALS = NUMBER OF DREAMS IN THE
+              CATEGORY
             </div>
             <div
               className='raleway mt3 fw7'
               style={{
-                fontSize: '18px',
+                fontSize: '14px',
                 color: '#43449a',
                 letterSpacing: '1px'
               }}

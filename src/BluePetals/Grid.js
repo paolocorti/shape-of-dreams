@@ -115,110 +115,78 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         </g>
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='300'
-          cy='25.4'
-          r='10.3'
-          onClick={() => setSelectedPetal(0)}
-        />
+        <circle className='grid3 pulse' cx='300' cy='25.4' r='10.3' />
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='437.3'
-          cy='62.2'
-          r='10.3'
-          onClick={() => setSelectedPetal(1)}
-        />
+        <circle className='grid3 pulse' cx='437.3' cy='62.2' r='10.3' />
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='537.8'
-          cy='162.7'
-          r='10.3'
-          onClick={() => setSelectedPetal(2)}
-        />
+        <circle className='grid3 pulse' cx='537.8' cy='162.7' r='10.3' />
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='574.6'
-          cy='300'
-          r='10.3'
-          onClick={() => setSelectedPetal(3)}
-        />
+        <circle className='grid3 pulse' cx='574.6' cy='300' r='10.3' />
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='537.8'
-          cy='437.3'
-          r='10.3'
-          onClick={() => setSelectedPetal(4)}
-        />
+        <circle className='grid3 pulse' cx='537.8' cy='437.3' r='10.3' />
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='437.3'
-          cy='537.8'
-          r='10.3'
-          onClick={() => setSelectedPetal(5)}
-        />
+        <circle className='grid3 pulse' cx='437.3' cy='537.8' r='10.3' />
       </g>
       <g>
-        <circle
-          className='grid3'
-          cx='300'
-          cy='574.6'
-          r='10.3'
-          onClick={() => setSelectedPetal(6)}
-        />
+        <circle className='grid3 pulse' cx='300' cy='574.6' r='10.3' />
       </g>
       <g>
+        <circle className='grid3 pulse' cx='162.7' cy='537.8' r='10.3' />
         <circle
-          className='grid3'
+          className=''
           cx='162.7'
           cy='537.8'
-          r='10.3'
+          r='20'
+          fill='transparent'
           onClick={() => setSelectedPetal(7)}
         />
       </g>
       <g>
+        <circle className='grid3 pulse' cx='62.1' cy='437.3' r='10.3' />
         <circle
-          className='grid3'
+          className=''
           cx='62.1'
           cy='437.3'
-          r='10.3'
+          r='20'
+          fill='transparent'
           onClick={() => setSelectedPetal(8)}
         />
       </g>
       <g>
+        <circle className='grid3 pulse' cx='25.4' cy='300' r='10.3' />
         <circle
-          className='grid3'
+          className=''
           cx='25.4'
           cy='300'
-          r='10.3'
+          r='20'
+          fill='transparent'
           onClick={() => setSelectedPetal(9)}
         />
       </g>
       <g>
+        <circle className='grid3 pulse' cx='62.2' cy='162.7' r='10.3' />
         <circle
-          className='grid3'
+          className=''
           cx='62.2'
           cy='162.7'
-          r='10.3'
+          r='20'
+          fill='transparent'
           onClick={() => setSelectedPetal(10)}
         />
       </g>
       <g>
+        <circle className='grid3 pulse' cx='162.7' cy='62.1' r='10.3' />
         <circle
-          className='grid3'
+          className=''
           cx='162.7'
           cy='62.1'
-          r='10.3'
+          r='20'
+          fill='transparent'
           onClick={() => setSelectedPetal(11)}
         />
       </g>

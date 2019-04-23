@@ -45,15 +45,15 @@ const BluePetals = ({
   selectedPetal,
   setSelectedPetal
 }) => {
-  const svgWidth = window.innerWidth * 0.6;
+  const svgWidth = window.innerWidth * 0.8;
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
         {selectedPetal === null
-          ? 'Tap on the circles for the categories'
+          ? 'All the categories'
           : categoriesLabels[selectedPetal]}
       </div>
-      <div className='mt1 value' style={{ fontSize: '16px', opacity: 0.6 }}>
+      <div className='mt0 value' style={{ fontSize: '16px', opacity: 0.6 }}>
         {languageLabel[language]} - {year}
       </div>
       <svg
@@ -63,7 +63,11 @@ const BluePetals = ({
         viewBox='0 0 600 600'
         width={svgWidth}
         height={svgWidth}
-        style={{ border: '0px solid rgba(0,0,0,1)', margin: 'auto' }}
+        style={{
+          border: '0px solid rgba(0,0,0,1)',
+          margin: 'auto',
+          marginTop: '15px'
+        }}
       >
         <defs>
           <linearGradient

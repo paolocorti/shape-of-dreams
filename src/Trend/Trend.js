@@ -24,7 +24,7 @@ const Trend = ({ data, name }) => {
 
   const scaleX = scaleTime()
     .domain([startDate, endDate])
-    .range([0, svgWidth - 30]);
+    .range([0, svgWidth - 40]);
 
   const max = extent(data, d => d.value)[1];
 
@@ -64,14 +64,13 @@ const Trend = ({ data, name }) => {
             y1='0%'
             x2='100%'
             y2='100%'
-            gradientUnits='objectBoundingBox'
+            gradientUnits='userSpaceOnUse'
           >
-            <stop offset='0%' stopColor='#ecf0f2' stopOpacity='1' />
-            <stop offset='50%' stopColor='#f1d7d1' stopOpacity='1' />
-            <stop offset='100%' stopColor='#db8685' stopOpacity='1' />
+            <stop offset='0%' stopColor='#e3c3c1' stopOpacity='1' />
+            <stop offset='100%' stopColor='#c27b76' stopOpacity='1' />
           </linearGradient>
         </defs>
-        <g transform={`translate(15, 0)`}>
+        <g transform={`translate(20, 0)`}>
           {parsedData.map((d, i) => {
             const date = moment(d.time);
             const value = d.value;
@@ -112,7 +111,7 @@ const Trend = ({ data, name }) => {
             );
           })}
         </g>
-        <g transform={`translate(15, 0)`}>
+        <g transform={`translate(20, 0)`}>
           <Animate
             start={() => ({
               j: 4000
@@ -133,8 +132,8 @@ const Trend = ({ data, name }) => {
                   data={data}
                   x={d => scaleX(x(d))}
                   y={d => scaleY2(y(d))}
-                  stroke={'#973e34'}
-                  strokeWidth={1}
+                  stroke={'url(#trendGradient)'}
+                  strokeWidth={2}
                   strokeDasharray={4000}
                   strokeDashoffset={j}
                 />
@@ -142,7 +141,32 @@ const Trend = ({ data, name }) => {
             }}
           </Animate>
         </g>
-        <g transform={`translate(15, 0)`}>
+        {
+          <g transform={`translate(15, 0)`}>
+            {data.map((d, i) => {
+              const date = moment(d.time);
+              const value = d.value;
+
+              const startAnimation = trendHeight;
+
+              if (d.peak) {
+                return (
+                  <g key={i}>
+                    <circle
+                      id={`circle-${i}`}
+                      cx={scaleX(date) + 3}
+                      cy={trendHeight - scaleY(value)}
+                      fill={'#43449a'}
+                      r={6}
+                    />
+                  </g>
+                );
+              }
+            })}
+          </g>
+        }
+
+        <g transform={`translate(21, 0)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}

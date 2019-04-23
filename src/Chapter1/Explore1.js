@@ -67,21 +67,20 @@ const Explore1 = ({ history }) => {
   return (
     <div className='explore1'>
       <div className='w-100 h-100 relative'>
-        {howToRead && (
-          <div
-            className='w-100 h-100 fixed'
-            style={{
-              zIndex: 200,
-              backgroundImage: `url(${howtoread1})`,
-              backgroundSize: 'cover',
-              top: 0
-            }}
-          />
-        )}
-        <div className='w-100 ph4' style={{ height: '135px' }}>
+        <div
+          className='w-100 fixed'
+          style={{
+            zIndex: howToRead ? 200 : -1,
+            backgroundImage: `url(${howtoread1})`,
+            backgroundSize: 'cover',
+            top: howToRead ? 0 : '-100%',
+            height: '100vh'
+          }}
+        />
+        <div className='w-100 ph4' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
-            What does it mean to dream about...
+            Dreams' subjects by category
           </h1>
           <LanguageSelector
             languages={groupedByCountryKeys}
@@ -94,10 +93,10 @@ const Explore1 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 tc pt4' style={{ height: 'calc(100% - 135px)' }}>
+        <div className='w-100 tc pt1' style={{ height: 'calc(100% - 125px)' }}>
           <div
-            className='flex flex-column relative justify-center items-center'
-            style={{ height: '70%' }}
+            className='flex flex-column relative justify-center'
+            style={{ height: '65%' }}
           >
             {topic.value ? (
               <Petals
@@ -116,7 +115,7 @@ const Explore1 = ({ history }) => {
               </div>
             )}
             {selectedTopics.length > 0 && selectedIndex > 0 && (
-              <div className='left-tap' onClick={() => onTapLeft()}>
+              <div className='left-tap pulse' onClick={() => onTapLeft()}>
                 <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
               </div>
             )}
@@ -128,20 +127,20 @@ const Explore1 = ({ history }) => {
           </div>
           <div
             className='flex flex-column relative justify-center items-center ph4'
-            style={{ height: '30%' }}
+            style={{ height: '35%' }}
           >
             <div
-              className='tc sourcesanspro mt2'
-              style={{ fontSize: '11px', lineHeight: '12px', height: '30%' }}
+              className='tc sourcesanspro'
+              style={{ fontSize: '11px', lineHeight: '12px' }}
             >
-              SELECT A LANGUAGE, A YEAR AND TAP ON THE ARROWS TO SEE THE DREAMS
-              FREQUENTLY SEARCHED. NUMBER OF PETALS = INCREASE IN SEARCH
-              INTEREST FOR A DREAM IN COMPARISON TO THE PREVIOUS YEAR.
+              SELECT A LANGUAGE, A YEAR AND TAP ON THE ARROWS. NUMBER OF PETALS
+              = INCREASE IN SEARCH INTEREST FOR A DREAM IN COMPARISON TO THE
+              PREVIOUS YEAR.
             </div>
             <div
               className='raleway mt3 fw7 cursor-pointer'
               style={{
-                fontSize: '18px',
+                fontSize: '14px',
                 color: '#43449a',
                 letterSpacing: '1px'
               }}

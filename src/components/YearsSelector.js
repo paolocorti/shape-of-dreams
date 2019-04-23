@@ -4,7 +4,7 @@ import './Selector.scss';
 
 const YearSelector = ({ years, selected, onSelect }) => {
   return (
-    <div className='w-100 flex justify-center' style={{ marginTop: '15px' }}>
+    <div className='w-100 flex justify-center' style={{ marginTop: '10px' }}>
       <div className='flex relative' style={{ width: '330px' }}>
         {years.map((value, index) => {
           return (

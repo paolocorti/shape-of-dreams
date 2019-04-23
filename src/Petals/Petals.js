@@ -39,11 +39,11 @@ const Petals = ({ name, language, year, value, index }) => {
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
         {name}
       </div>
-      <div className='mt1 value' style={{ fontSize: '16px', opacity: 0.6 }}>
+      <div className='mt0 value' style={{ fontSize: '16px', opacity: 0.6 }}>
         {languageLabel[language]} - {year}
       </div>
       <svg
-        className='viz mt2'
+        className='viz mt0'
         x='0px'
         y='0px'
         viewBox='0 0 300 300'
@@ -51,7 +51,7 @@ const Petals = ({ name, language, year, value, index }) => {
         height={svgWidth}
         style={{
           border: '0px solid rgba(0,0,0,0.2)',
-          margin: 'auto'
+          margin: '0 auto'
         }}
       >
         <defs>

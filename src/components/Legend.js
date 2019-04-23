@@ -18,8 +18,9 @@ const Legend = ({ history, location }) => {
 
   return (
     <div
-      className={`legend w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${context.legendOpen &&
-        'open'}`}
+      className={`legend w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${
+        context.legendOpen ? 'open' : ''
+      }`}
       onClick={closeLegend}
     >
       <img

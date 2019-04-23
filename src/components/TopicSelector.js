@@ -13,7 +13,10 @@ const styles = {
 const TopicSelector = ({ topics, onSwipe }) => {
   return (
     <div className='topicSelector relative mt4'>
-      <div className='flex relative justify-center items-center w-100 h-100'>
+      <div
+        className='flex relative justify-center items-center w-100 h-100'
+        style={{ borderRadius: '15px' }}
+      >
         <SwipeableViews
           containerStyle={styles.slideContainer}
           axis='y'
@@ -22,7 +25,11 @@ const TopicSelector = ({ topics, onSwipe }) => {
         >
           {topics.map((topic, index) => {
             return (
-              <div className='topicSelectorEl' key={index}>
+              <div
+                className='topicSelectorEl'
+                key={index}
+                style={{ borderRadius: '15px' }}
+              >
                 {topic}
               </div>
             );

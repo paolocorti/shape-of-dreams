@@ -152,8 +152,9 @@ h4 {
   overflow: hidden;
   background-color: #43449a;
   transform: translate(0, 100%);
-  z-index: -1;
+  z-index: -100;
   animation: slideOut 0.5s 0s forwards;
+  pointer-events: none;
 }
 
 .menu.open {
@@ -162,6 +163,7 @@ h4 {
   z-index: 100;
   transform: translate(0, 100%);
   animation: slideIn 0.5s 0s forwards;
+  pointer-events: auto;
 }
 
 .legend {
@@ -170,16 +172,17 @@ h4 {
   overflow: hidden;
   background-color: rgba(67, 68, 154, 0.9);
   transform: translate(0, 100%);
-  z-index: -1;
+  z-index: -10;
   animation: slideOut 0.5s 0s forwards;
+  pointer-events: none;
 }
 
 .legend.open {
   transition: 0.5s all;
-  height: 100%;
   z-index: 100;
   transform: translate(0, 100%);
   animation: slideIn 0.5s 0s forwards;
+  pointer-events: auto;
 }
 
 @keyframes slideIn {

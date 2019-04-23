@@ -21,7 +21,11 @@ const Routes = ({ location }) => {
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`}>
       {pathname !== '/' && <Header />}
       <Menu />
-      <Legend />
+
+      {context.menuOpen && <Menu />}
+
+      {context.legendOpen && <Legend />}
+
       <Route exact path='/' component={Landing} />
 
       {/* {pathname !== '/' && (
