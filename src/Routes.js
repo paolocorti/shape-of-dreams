@@ -22,7 +22,6 @@ const Routes = ({ location }) => {
   return (
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`}>
       {pathname !== '/' && <Header />}
-      <Menu />
 
       {context.menuOpen && <Menu />}
 

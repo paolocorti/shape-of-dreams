@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import landing from './petals-landing.svg';
+import sky from './landing_sky.png';
 import NavigationFooter from '../components/NavigationFooter';
 import Content1 from '../Chapter1/Content1';
 import { ScrollToHOC, ScrollArea } from 'react-scroll-to';
@@ -23,32 +24,37 @@ const Landing = ({ history, scrollTo }) => {
   return (
     <ScrollArea
       id='scroll'
-      className={`w-100 ${canScroll ? 'overflow-auto' : 'overflow-hidden'}`}
+      className={`w-100 h-100 overflow-hidden`}
+      style={{
+        position: 'absolute',
+        backgroundImage: `url(${sky})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
-      <div className={`w-100 landing`} style={{ paddingTop: '50px' }}>
-        <div className='landing-header w-100 tc pa4'>
-          <img
-            src={landing}
-            height='100%'
-            alt='chapter 1 icon'
-            className={`${blur ? 'blur' : ''}`}
-          />
+      <div className='landing-header w-100 tc pa4'>
+        <img
+          src={landing}
+          height='100%'
+          alt='chapter 1 icon'
+          className={`${blur ? 'blur' : ''}`}
+        />
+      </div>
+      <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
+        <h1 className='tc fw7 mt0 title'>
+          THE <br /> MEANING <br /> OF DREAMS
+        </h1>
+        <div className='ph4 tc subtitle'>
+          A visual exploration on Google searches for the interpretation of
+          dreams
         </div>
-        <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
-          <h1 className='tc fw7 mt0 title'>
-            THE <br /> MEANING <br /> OF DREAMS
-          </h1>
-          <div className='ph4 tc subtitle'>
-            A visual exploration on Google searches for the interpretation of
-            dreams
-          </div>
+      </div>
+      <div className='landing-footer w-100 tc' onClick={goToChapter1}>
+        <div>
+          <img src={'images/down-arrow.svg'} width={35} />
         </div>
-        <div className='landing-footer w-100 tc' onClick={goToChapter1}>
-          <div>
-            <img src={'images/down-arrow.svg'} width={35} />
-          </div>
-        </div>
-        {/* <div style={{ paddingTop: '50px' }}>
+      </div>
+      {/* <div style={{ paddingTop: '50px' }}>
           <div
             className='w-100 flex justify-between pv3 ph4'
             style={{ flex: 1 }}
@@ -81,7 +87,6 @@ const Landing = ({ history, scrollTo }) => {
           </div>
           <Content1 />
         </div> */}
-      </div>
     </ScrollArea>
   );
 };

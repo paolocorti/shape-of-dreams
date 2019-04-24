@@ -74,9 +74,14 @@ const Explore1 = ({ history }) => {
             backgroundImage: `url(${howtoread1})`,
             backgroundSize: 'cover',
             top: howToRead ? 0 : '-100%',
-            height: '100vh'
+            height: '100vh',
+            display: howToRead ? 'block' : 'none'
           }}
-        />
+        >
+          <div className='read-close' onClick={() => toggleHowToRead()}>
+            <img src={'/images/close.svg'} alt='Close menu icon' width={20} />
+          </div>
+        </div>
         <div className='w-100 ph4' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
@@ -130,12 +135,12 @@ const Explore1 = ({ history }) => {
             style={{ height: '35%' }}
           >
             <div
-              className='tc sourcesanspro'
-              style={{ fontSize: '11px', lineHeight: '12px' }}
+              className='tc raleway'
+              style={{ fontSize: '11px', lineHeight: '13px' }}
             >
-              SELECT A LANGUAGE, A YEAR AND TAP ON THE ARROWS. NUMBER OF PETALS
-              = INCREASE IN SEARCH INTEREST FOR A DREAM IN COMPARISON TO THE
-              PREVIOUS YEAR.
+              Select a language, a year and tap on the arrows. number of petals
+              = increase in search interest for a dream in comparison to the
+              previous year.
             </div>
             <div
               className='raleway mt3 fw7 cursor-pointer'
