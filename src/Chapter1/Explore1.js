@@ -69,7 +69,7 @@ const Explore1 = ({ history }) => {
   return (
     <div className='explore1'>
       <div className='w-100 h-100 relative'>
-        {/* <div
+        <div
           className='w-100 fixed'
           style={{
             zIndex: howToRead ? 200 : -1,
@@ -83,7 +83,7 @@ const Explore1 = ({ history }) => {
           <div className='read-close' onClick={() => toggleHowToRead()}>
             <img src={'/images/close.svg'} alt='Close menu icon' width={20} />
           </div>
-        </div> */}
+        </div>
         <div className='w-100 ph4' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
