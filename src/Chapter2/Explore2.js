@@ -77,12 +77,12 @@ const Explore2 = ({ history }) => {
             style={{ height: '30%' }}
           >
             <div
-              className='tc sourcesanspro mt2'
-              style={{ fontSize: '11px', lineHeight: '12px' }}
+              className='tc raleway mt2'
+              style={{ fontSize: '11px', lineHeight: '13px' }}
             >
-              SELECT A LANGUAGE AND A YEAR. TAP ON THE CIRCLE TO SWITCH ON AND
-              OFF THE CATEGORY. SIZE OF THE PETALS = NUMBER OF DREAMS IN THE
-              CATEGORY
+              Select a language and a year. tap on the circle to switch on and
+              off the category. size of the petals = number of dreams in the
+              category
             </div>
             <div
               className='raleway mt3 fw7'

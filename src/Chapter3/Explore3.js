@@ -71,10 +71,10 @@ const Explore3 = ({ history }) => {
             style={{ height: '30%' }}
           >
             <div
-              className='tc sourcesanspro mt2'
-              style={{ fontSize: '11px', lineHeight: '12px' }}
+              className='tc raleway mt2'
+              style={{ fontSize: '11px', lineHeight: '13px' }}
             >
-              SCROLL UP AND DOWN IN THE BOX TO CHANGE THE DREAM
+              Scroll up and down in the box to change the dream
             </div>
             <div
               className='raleway mt3 fw7'
