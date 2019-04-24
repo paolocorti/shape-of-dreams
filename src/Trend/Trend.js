@@ -180,7 +180,7 @@ const Trend = ({ data, name, toggleNote, noteActive }) => {
                       r={10}
                     />
                     <text
-                      dx={90}
+                      dx={100}
                       dy={trendHeight - scaleY(value) + 2}
                       textAnchor={'start'}
                     >

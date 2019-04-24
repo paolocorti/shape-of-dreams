@@ -32,6 +32,11 @@ body {
   transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 
+.flex {
+  display: flex;
+  flex: 0;
+}
+
 /* .page-enter {
   transform: translate(-100%, 0);
 }
