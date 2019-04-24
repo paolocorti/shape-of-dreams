@@ -100,7 +100,10 @@ const Explore1 = ({ history }) => {
             selected={selectedYearIndex}
           />
         </div>
-        <div className='w-100 tc pt1' style={{ height: 'calc(100% - 125px)' }}>
+        <div
+          className='w-100 tc pt1 ios-fix'
+          style={{ height: 'calc(100% - 125px)' }}
+        >
           <div
             className='flex flex-column relative justify-center'
             style={{ height: '65%' }}
