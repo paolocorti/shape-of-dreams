@@ -45,7 +45,10 @@ const Explore3 = ({ history }) => {
   return (
     <div className='explore3'>
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
-        <div className='w-100 ph4' style={{ height: '125px' }}>
+        <div
+          className='w-100 ph4 flex flex-column justify-center items-center'
+          style={{ height: '125px' }}
+        >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams’ subjects over time
@@ -53,7 +56,7 @@ const Explore3 = ({ history }) => {
           <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
         </div>
         <div
-          className='w-100 flex flex-column relative tc'
+          className='w-100 flex flex-column relative tc ios-fix'
           style={{ height: 'calc(100% - 125px)' }}
         >
           <div

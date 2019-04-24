@@ -57,7 +57,7 @@ const Explore2 = ({ history }) => {
           />
         </div>
         <div
-          className='w-100 flex flex-column relative tc'
+          className='w-100 flex flex-column relative tc ios-fix'
           style={{ height: 'calc(100% - 120px)' }}
         >
           <div
