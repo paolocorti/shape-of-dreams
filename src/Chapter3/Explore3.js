@@ -46,7 +46,7 @@ const Explore3 = ({ history }) => {
     <div className='explore3'>
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
-          className='w-100 ph4 flex flex-column justify-center items-center'
+          className='w-100 ph4 flex flex-column justify-center items-center ios-fix'
           style={{ height: '125px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}

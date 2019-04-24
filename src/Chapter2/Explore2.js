@@ -40,7 +40,7 @@ const Explore2 = ({ history }) => {
   return (
     <div className='explore2'>
       <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '120px' }}>
+        <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams subjects by category
