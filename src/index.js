@@ -65,7 +65,6 @@ class App extends React.Component {
   };
 
   render() {
-    console.log(this.props);
     return (
       <HashRouter forceRefresh={!supportsHistory}>
         <AppContext.Provider value={this.state}>

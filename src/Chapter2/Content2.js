@@ -5,11 +5,12 @@ import legend2 from './cap2-landing.svg';
 import content1 from './cap2-1.jpg'
 import content2 from './cap2-2.jpg'
 import { AppContext } from '../appContext';
+import { isMobile } from 'react-device-detect';
 
-const Content2 = ({}) => {
+const Content2 = ({ history }) => {
   const context = useContext(AppContext);
   return (
-    <div className='w-100 bg-white'>
+    <div className='w-100 bg-white read'>
       <h4 className='tl fw6 mv0 ph4'>Chapter 2</h4>
       <h1 className='tl fw7 mt0 ph4'>The Worlds We Dream of</h1>
       <div className='tj ph4 f4'>
@@ -40,6 +41,14 @@ Tap on START EXPLORING to dig into the data!
           <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>START EXPLORING</div>
           <img src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
         </div>
+        {
+          !isMobile && (
+            <div className='flex flex-column ph4'>
+              <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>READ CHAPTER 3</div>
+              <img src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter3`)} />
+            </div>
+          )
+        }
       </div>
     </div>
   );

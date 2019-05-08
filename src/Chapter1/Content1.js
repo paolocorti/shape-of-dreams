@@ -8,12 +8,13 @@ import content3 from './cap1-3.jpg'
 import content4 from './cap1-4.jpg'
 import content5 from './cap1-5.jpg'
 import { AppContext } from '../appContext';
+import {isMobile} from 'react-device-detect';
 
-const Content1 = ({}) => {
+const Content1 = ({ history }) => {
   const context = useContext(AppContext);
 
   return (
-    <div className='w-100 bg-white'>
+    <div className='w-100 bg-white read'>
       <h4 className='tl fw6 mv0 ph4'>Chapter 1</h4>
       <h1 className='tl fw7 mt0 ph4'>The Shapes of our Dreams</h1>
       <div className='tj f4 ph4'>
@@ -64,6 +65,14 @@ Their average rising value is lower than the top ones, but they consistently app
           <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>START EXPLORING</div>
           <img src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
         </div>
+        {
+          !isMobile && (
+            <div className='flex flex-column ph4'>
+              <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>READ CHAPTER 2</div>
+              <img src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter2`)} />
+            </div>
+          )
+        }
       </div>
     </div>
   );

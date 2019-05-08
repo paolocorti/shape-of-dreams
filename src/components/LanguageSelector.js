@@ -1,6 +1,17 @@
 import React from 'react';
-
+import {isMobile} from 'react-device-detect';
 import './Selector.scss';
+
+const extendedLanguage = {
+  'EN': 'ENGLISH',
+  'AR': 'ARABIC',
+  'ES': 'SPANISH',
+  'FR': 'FRENCH',
+  'PO': 'PORTUGUESE',
+  'RU': 'RUSSIAN',
+  'JP': 'JAPANESE',
+  'IN': 'INDONESIAN'
+}
 
 const LanguageSelector = ({ languages, selected, onSelect }) => {
   return (
@@ -8,7 +19,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
       className='w-100 flex justify-center items-center relative'
       style={{ marginTop: '10px', height: '40px' }}
     >
-      <div className='flex relative' style={{ width: '280px' }}>
+      <div className='flex relative' style={{ width: isMobile ? '280px' : '800px', margin: isMobile ? 'inherit' : '0 auto' }}>
         {languages.map((value, index) => {
           return (
             <div
@@ -16,13 +27,13 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
               className={`langEl`}
               onClick={() => onSelect(index)}
             >
-              {value}
+              {isMobile ? value: extendedLanguage[value]}
             </div>
           );
         })}
         <div
           className='langEl-selected'
-          style={{ left: `${selected * 35 - 2}px` }}
+          style={{ left: `${selected * (isMobile ? 35 : 100) - 2}px` }}
         />
       </div>
     </div>

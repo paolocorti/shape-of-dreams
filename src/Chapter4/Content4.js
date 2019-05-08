@@ -1,12 +1,13 @@
 import React, {useContext} from 'react';
 import content1 from './cap4-1.jpg'
 import { AppContext } from '../appContext';
+import { isMobile } from 'react-device-detect';
 
-const Content4 = ({}) => {
+const Content4 = ({ history }) => {
   const context = useContext(AppContext);
 
   return (
-    <div className='w-100 bg-white'>
+    <div className='w-100 bg-white read'>
       <h4 className='tl fw6 mv0 ph4'>Chapter 4</h4>
       <h1 className='tl fw7 mt0 ph4'>Dreams that Connect Us</h1>
       <div className='ph4 tj f4'>
@@ -27,6 +28,14 @@ const Content4 = ({}) => {
           <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>START EXPLORING</div>
           <img src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
         </div>
+        {
+          !isMobile && (
+            <div className='flex flex-column ph4'>
+              <div className='raleway fw7 tl' style={{ fontSize: '16px', color: '#43449a', letterSpacing: '1px'}}>BACK TO CHAPTER 3</div>
+              <img src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter3`)} />
+            </div>
+          )
+        }
       </div>
     </div>
   );

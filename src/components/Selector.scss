@@ -5,6 +5,7 @@
   font-family: 'Raleway', sans-serif;
   width: 40px;
   text-align: center;
+  cursor: pointer;
 }
 
 .langEl-selected {
@@ -15,6 +16,15 @@
   transition: 0.5s all;
   top: 18px;
   margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .langEl {
+    width: 100px;
+  }
+  .langEl-selected {
+    width: 80px;
+  }
 }
 
 .yearEl {

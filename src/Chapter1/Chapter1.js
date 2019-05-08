@@ -4,12 +4,13 @@ import { AppContext } from '../appContext';
 import Page from '../components/Page';
 import Explore1 from './Explore1';
 import Content1 from './Content1';
+import {isMobile} from 'react-device-detect';
 
-const Chapter1 = ({ history }) => {
+const Chapter1 = ({ history, activeIndex, pageIndex }) => {
   const context = useContext(AppContext);
 
   return (
-    <Page chapter='chapter1'>
+    <Page chapter='chapter1' activeIndex={activeIndex} pageIndex={pageIndex}>
       {/* <TransitionGroup>
         <CSSTransition
           key={context.selectedView}
@@ -20,7 +21,7 @@ const Chapter1 = ({ history }) => {
           }}
         > */}
       <React.Fragment>
-        {context.selectedView === 'content' && <Content1 />}
+        {context.selectedView === 'content' && <Content1 history={history} />}
         {context.selectedView === 'explore' && <Explore1 />}
       </React.Fragment>
       {/* </CSSTransition>

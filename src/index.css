@@ -6,6 +6,20 @@ body {
   background-image: linear-gradient(#e1eaef, #e4f3ec);
 }
 
+html, body, #root {
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: white;
+  }
+  body, #root {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+
 * {
   font-family: 'Cormorant Garamond', serif;
   box-sizing: border-box;
@@ -30,6 +44,19 @@ body {
   width: 100%;
   -webkit-overflow-scrolling: touch;
   transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .read {
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 75px;
+  }
+
+  .page {
+    height: 100vh;
+    padding-top: 50px;
+  }
 }
 
 .flex {
@@ -75,6 +102,21 @@ h1 {
 h4 {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 54px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 22px;
+  }
 }
 
 .right-tap {

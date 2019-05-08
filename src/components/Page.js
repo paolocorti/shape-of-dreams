@@ -1,16 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import classNames from 'classnames';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
-import { isIOS } from 'react-device-detect';
+import { isIOS, isMobile } from 'react-device-detect';
 
-const Page = ({ chapter, children, location: { state } }) => {
+const Page = ({ activeIndex, pageIndex,  chapter, children, location: { state } }) => {
   const context = useContext(AppContext);
+  const [activePage, setActivePage] = useState(false)
+  useEffect(() => {
+    const active = activeIndex === pageIndex
+    setActivePage(active)
+  }, [activeIndex])
 
   const actualPath = context.actualPath;
   const previousPath = context.previousPath;
-
-  console.log(isIOS);
 
   const cx = classNames({
     page: true,
@@ -23,8 +26,17 @@ const Page = ({ chapter, children, location: { state } }) => {
     chapter4: chapter === 'chapter4',
     chapter5: chapter === 'chapter5'
   });
+
+  console.log(activeIndex, pageIndex)
+
+  const calculatedTop = activeIndex === pageIndex ? 0 : (activeIndex < pageIndex ? '100%' : '-100%')
+
   return (
-    <section className={cx}>
+    <section className={cx} style={{ 
+      position: !isMobile ? (activeIndex === pageIndex ? 'relative' : 'absolute' ) : 'auto',
+      top: !isMobile ? calculatedTop : 'auto',
+      transition: '1s top'
+    }}>
       <div className={`page__inner ${isIOS && 'fullheight'}`}>{children}</div>
     </section>
   );

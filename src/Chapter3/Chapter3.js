@@ -4,13 +4,13 @@ import { AppContext } from '../appContext';
 import Content3 from './Content3';
 import Explore3 from './Explore3';
 
-const Chapter3 = ({ history }) => {
+const Chapter3 = ({ history, activeIndex, pageIndex }) => {
   const context = useContext(AppContext);
 
   return (
-    <Page chapter='chapter3'>
+    <Page chapter='chapter3' activeIndex={activeIndex} pageIndex={pageIndex}>
       {context.selectedView === 'explore' && <Explore3 />}
-      {context.selectedView === 'content' && <Content3 />}
+      {context.selectedView === 'content' && <Content3 history={history} />}
     </Page>
   );
 };
