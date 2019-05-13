@@ -66,6 +66,8 @@ const Explore1 = ({ history }) => {
   console.log(selectedTopics);
 
   const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
+  const topic1 = (selectedTopics[0] && selectedTopics[0][selectedIndex + 1]) || {};
+  const topic2 = (selectedTopics[0] && selectedTopics[0][selectedIndex + 2]) || {};
 
   return (
     <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
@@ -120,37 +122,121 @@ const Explore1 = ({ history }) => {
               />
             )
           }
-          <div
-            className='flex flex-column relative justify-center'
-            style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
-          >
-            {topic.value ? (
-              <Petals
-                value={topic.value}
-                name={topic.subject}
-                language={topic.language}
-                year={topic.year}
-                index={selectedIndex}
-              />
+          {
+            isMobile ? (
+              <div
+                className='flex flex-column relative justify-center'
+                style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+              >
+                {topic.value ? (
+                  <Petals
+                    value={topic.value}
+                    name={topic.subject}
+                    language={topic.language}
+                    year={topic.year}
+                    index={selectedIndex}
+                  />
+                ) : (
+                  <div
+                    className='w-100 flex justify-center items-center pa4'
+                    style={{ flex: 1, height: '400px' }}
+                  >
+                    <img src={noData} width={80} alt='No data available' />
+                  </div>
+                )}
+                {selectedTopics.length > 0 && selectedIndex > 0 && (
+                  <div className='left-tap pulse' onClick={() => onTapLeft()}>
+                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  </div>
+                )}
+                {selectedTopics.length > 0 && (
+                  <div className='right-tap pulse' onClick={() => onTapRight()}>
+                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  </div>
+                )}
+              </div>
             ) : (
               <div
-                className='w-100 flex justify-center items-center pa4'
-                style={{ flex: 1, height: '400px' }}
+                className='flex relative justify-center items-center'
+                style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
               >
-                <img src={noData} width={80} alt='No data available' />
+                <div
+                  className='flex flex-column relative justify-center'
+                  style={{ height: '65%', width: '33%', margin: isMobile ? '' : '0 auto' }}
+                >
+                  {topic.value ? (
+                    <Petals
+                      value={topic.value}
+                      name={topic.subject}
+                      language={topic.language}
+                      year={topic.year}
+                      index={selectedIndex}
+                    />
+                  ) : (
+                    <div
+                      className='w-100 flex justify-center items-center pa4'
+                      style={{ flex: 1, height: '400px' }}
+                    >
+                      <img src={noData} width={80} alt='No data available' />
+                    </div>
+                  )}
+                </div>
+                <div
+                  className='flex flex-column relative justify-center'
+                  style={{ height: '65%', width: '33%', margin: isMobile ? '' : '0 auto' }}
+                >
+                  {topic1.value ? (
+                    <Petals
+                      value={topic1.value}
+                      name={topic1.subject}
+                      language={topic1.language}
+                      year={topic1.year}
+                      index={selectedIndex + 1}
+                    />
+                  ) : (
+                    <div
+                      className='w-100 flex justify-center items-center pa4'
+                      style={{ flex: 1, height: '400px' }}
+                    >
+                      <img src={noData} width={80} alt='No data available' />
+                    </div>
+                  )}
+                </div>
+                <div
+                  className='flex flex-column relative justify-center'
+                  style={{ height: '65%', width: '33%', margin: isMobile ? '' : '0 auto' }}
+                >
+                  {topic2.value ? (
+                    <Petals
+                      value={topic2.value}
+                      name={topic2.subject}
+                      language={topic2.language}
+                      year={topic2.year}
+                      index={selectedIndex + 2}
+                    />
+                  ) : (
+                    <div
+                      className='w-100 flex justify-center items-center pa4'
+                      style={{ flex: 1, height: '400px' }}
+                    >
+                      <img src={noData} width={80} alt='No data available' />
+                    </div>
+                  )}
+                </div>
+                {selectedTopics.length > 0 && selectedIndex > 0 && (
+                  <div className='left-tap pulse' onClick={() => onTapLeft()}>
+                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  </div>
+                )}
+                {selectedTopics.length > 0 && (
+                  <div className='right-tap pulse' onClick={() => onTapRight()}>
+                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  </div>
+                )}
               </div>
-            )}
-            {selectedTopics.length > 0 && selectedIndex > 0 && (
-              <div className='left-tap pulse' onClick={() => onTapLeft()}>
-                <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-              </div>
-            )}
-            {selectedTopics.length > 0 && (
-              <div className='right-tap pulse' onClick={() => onTapRight()}>
-                <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
-              </div>
-            )}
-          </div>
+            )
+          }
+ 
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
             style={{ height: '35%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}

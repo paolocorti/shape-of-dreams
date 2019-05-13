@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import PetalRow from './PetalRow';
+import { isMobile } from 'react-device-detect';
 
 const getNumberOfPetals = n => {
   if (n < 50) {
@@ -27,7 +28,7 @@ const languageLabel = {
 };
 
 const Petals = ({ name, language, year, value, index }) => {
-  const svgWidth = window.innerWidth * 0.55;
+  const svgWidth = isMobile ? window.innerWidth * 0.55 : 250;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {
