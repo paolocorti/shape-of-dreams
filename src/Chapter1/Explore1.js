@@ -26,9 +26,21 @@ const Explore1 = ({ history }) => {
     setSelectedIndex(newIndex);
   };
 
+  const onTapRightDesktop = () => {
+    const newIndex =
+      selectedIndex < selectedTopics[0].length - 4 ? selectedIndex + 4 : 0;
+    setSelectedIndex(newIndex);
+  };
+
   const onTapLeft = () => {
     const newIndex =
       selectedIndex > 0 ? selectedIndex - 1 : selectedTopics[0].length - 1;
+    setSelectedIndex(newIndex);
+  };
+
+  const onTapLeftDesktop = () => {
+    const newIndex =
+      selectedIndex > 0 ? selectedIndex - 4 : selectedTopics[0].length - 4;
     setSelectedIndex(newIndex);
   };
 
@@ -65,9 +77,25 @@ const Explore1 = ({ history }) => {
 
   console.log(selectedTopics);
 
-  const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
-  const topic1 = (selectedTopics[0] && selectedTopics[0][selectedIndex + 1]) || {};
-  const topic2 = (selectedTopics[0] && selectedTopics[0][selectedIndex + 2]) || {};
+  let topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
+  let topic1, topic2, topic3;
+  if (selectedIndex + 1 < selectedTopics[0].length - 1) {
+    topic1 = selectedTopics[0][selectedIndex + 1];
+  } else {
+    topic1 = selectedTopics[0][0];
+  }
+
+  if (selectedIndex + 2 < selectedTopics[0].length - 1) {
+    topic2 = selectedTopics[0][selectedIndex + 2];
+  } else {
+    topic2 = selectedTopics[0][0];
+  }
+
+  if (selectedIndex + 3 < selectedTopics[0].length - 1) {
+    topic3 = selectedTopics[0][selectedIndex + 3];
+  } else {
+    topic3 = selectedTopics[0][0];
+  }
 
   return (
     <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
@@ -162,7 +190,7 @@ const Explore1 = ({ history }) => {
               >
                 <div
                   className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '33%', margin: isMobile ? '' : '0 auto' }}
+                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                 >
                   {topic.value ? (
                     <Petals
@@ -183,7 +211,7 @@ const Explore1 = ({ history }) => {
                 </div>
                 <div
                   className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '33%', margin: isMobile ? '' : '0 auto' }}
+                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                 >
                   {topic1.value ? (
                     <Petals
@@ -204,7 +232,7 @@ const Explore1 = ({ history }) => {
                 </div>
                 <div
                   className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '33%', margin: isMobile ? '' : '0 auto' }}
+                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                 >
                   {topic2.value ? (
                     <Petals
@@ -223,12 +251,33 @@ const Explore1 = ({ history }) => {
                     </div>
                   )}
                 </div>
-                {selectedTopics.length > 0 && selectedIndex > 0 && (
+                <div
+                  className='flex flex-column relative justify-center'
+                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                >
+                  {topic3.value ? (
+                    <Petals
+                      value={topic3.value}
+                      name={topic3.subject}
+                      language={topic3.language}
+                      year={topic3.year}
+                      index={selectedIndex + 3}
+                    />
+                  ) : (
+                    <div
+                      className='w-100 flex justify-center items-center pa4'
+                      style={{ flex: 1, height: '400px' }}
+                    >
+                      <img src={noData} width={80} alt='No data available' />
+                    </div>
+                  )}
+                </div>
+                {selectedTopics[0].length > 0 && selectedIndex > 0 && (
                   <div className='left-tap pulse' onClick={() => onTapLeft()}>
                     <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
                   </div>
                 )}
-                {selectedTopics.length > 0 && (
+                {selectedTopics[0].length > 3 && (
                   <div className='right-tap pulse' onClick={() => onTapRight()}>
                     <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
                   </div>
@@ -245,9 +294,15 @@ const Explore1 = ({ history }) => {
               className='tc raleway'
               style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
-              Select a language, a year and tap on the arrows. number of petals
-              = increase in search interest for a dream in comparison to the
-              previous year.
+              {
+                isMobile ? 
+                (
+                  'Select a language, a year and tap on the arrows. number of petals = increase in search interest for a dream in comparison to the previous year.'
+                ) : (
+                  'Select a language, a year and click on the arrows. Number of petals corresponds to increase in search interest for a dream In comparison to the previous year.'
+                )
+              }
+              
             </div>
             <div
               className='raleway mt3 fw7 cursor-pointer'

@@ -24,11 +24,11 @@ const languageLabel = {
   PO: 'Portuguese',
   RU: 'Russian',
   JP: 'Japanese',
-  IN: 'Indu'
+  IN: 'Indonesian'
 };
 
 const Petals = ({ name, language, year, value, index }) => {
-  const svgWidth = isMobile ? window.innerWidth * 0.55 : 250;
+  const svgWidth = isMobile ? window.innerWidth * 0.55 : 220;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {

@@ -128,12 +128,6 @@ h4 {
   z-index: 99;
 }
 
-@media only screen and (min-width: 768px) {
-  .right-tap {
-    right: 0px;
-  }
-}
-
 .left-tap {
   position: absolute;
   width: 20px;
@@ -141,6 +135,16 @@ h4 {
   top: 50%;
   left: 40px;
   z-index: 99;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-tap {
+    right: -40px;
+  }
+
+  .left-tap {
+    left: -40px;
+  }
 }
 
 .view {
