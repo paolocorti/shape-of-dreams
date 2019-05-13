@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { isMobile } from 'react-device-detect';
 import './Selector.scss';
 
 const YearSelector = ({ years, selected, onSelect }) => {
   return (
-    <div className='w-100 flex justify-center' style={{ marginTop: '10px' }}>
-      <div className='flex relative' style={{ width: '275px' }}>
+    <div className='yearsSelectorContainer' style={{ marginTop: '10px' }}>
+      <div className='yearsSelectorContainerWrapper'>
         {years.map((value, index) => {
           return (
             <div
@@ -31,7 +31,7 @@ const YearSelector = ({ years, selected, onSelect }) => {
         })}
         <div
           className='yearEl-selected'
-          style={{ left: `${selected * 25 + 2}px` }}
+          style={{ left: isMobile ? `${selected * 25 + 2}px` : '2px', top: isMobile ? 0 : `${selected * 25 + 2}px` }}
         />
       </div>
     </div>

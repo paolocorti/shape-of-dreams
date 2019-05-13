@@ -18,7 +18,7 @@ const NavigationFooter = ({}) => {
           width={35}
         />
       </div> */}
-      <div className='w-10 flex justify-center items-center h-100'>
+      <div className='w-10 flex justify-center items-center h-100 pointer'>
         <img
           src={context.menuOpen ? '/images/menu-white.svg' : '/images/menu.svg'}
           alt='Menu icon'
@@ -27,7 +27,7 @@ const NavigationFooter = ({}) => {
         />
       </div>
       <div
-        className='w-40 flex justify-center items-center cursor-pointer footer-el h-100'
+        className='w-40 flex justify-center items-center pointer footer-el h-100'
         onClick={() => context.setSelectedView('content')}
       >
         <div className={context.selectedView === 'content' ? 'active' : '/'}>
@@ -35,7 +35,7 @@ const NavigationFooter = ({}) => {
         </div>
       </div>
       <div
-        className='w-40 flex justify-center items-center cursor-pointer footer-el h-100'
+        className='w-40 flex justify-center items-center pointer footer-el h-100'
         onClick={() => context.setSelectedView('explore')}
       >
         <div className={context.selectedView === 'explore' ? 'active' : '/'}>

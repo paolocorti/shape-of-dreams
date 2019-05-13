@@ -27,8 +27,21 @@
   }
 }
 
+.yearsSelectorContainer {
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+}
+
+.yearsSelectorContainerWrapper {
+  width: 275px;
+  position: relative;
+  display: flex;
+}
+
 .yearEl {
   width: 25px;
+  height: 25px;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -75,6 +88,48 @@
   top: 18px;
   font-size: 13px;
   left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .yearsSelectorContainer {
+    position: absolute;
+    right: 70px;
+    height: 300px;
+    width: 60px;
+    top: 0;
+    z-index: 99;
+  }
+
+  .yearsSelectorContainerWrapper {
+    width: 60px;
+    flex-direction: column;
+  }
+
+  .yearEl {
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .yearLine {
+    height: 50.1%;
+    width: 1px;
+    background-color: #43449a;
+  }
+
+  .yearTouchArea {
+    top: 0;
+  }
+
+  .yearCircle {
+    width: 9px;
+    height: 12px;
+    border-radius: 12px;
+  }
+
+  .yearVal {
+    top: 4px;
+    left: 30px;
+  }
 }
 
 .topicSelector {

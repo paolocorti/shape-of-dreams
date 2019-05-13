@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import './Header.scss';
+import { isMobile } from 'react-device-detect';
 
 const Header = ({ location }) => {
   const { pathname } = location;
@@ -10,13 +11,9 @@ const Header = ({ location }) => {
   console.log(pathname);
   return (
     <div
-      className='w-100 fixed flex justify-between items-center ph4'
-      style={{ flex: 1 }}
-      style={{
-        height: '30px',
-        zIndex: 99,
-        backgroundColor: context.selectedView === 'content' ? 'white' : ''
-      }}
+      id='header'
+      className='ph4'
+      style={{ flex: 1, backgroundColor: isMobile ? (context.selectedView === 'content' ? 'white' : '') : '' }}
     >
       <div
         className={`header-el ${pathname === '/chapter1' ? 'selected' : ''}`}

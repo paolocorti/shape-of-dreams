@@ -22,7 +22,7 @@ const Routes = ({ location }) => {
 
   return (
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobile ? 'auto' : '100%', overflow: isMobile ? 'auto' : 'hidden'}}>
-      {/* {pathname !== '/' && <Header />} */}
+      {pathname !== '/' && <Header />}
 
       {context.menuOpen && <Menu />}
 

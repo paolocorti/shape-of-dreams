@@ -8,6 +8,7 @@ import YearsSelector from '../components/YearsSelector';
 import noData from './no-data.svg';
 import { years } from '../constants';
 import howtoread1 from './how-to-read-1.png';
+import { isMobile } from 'react-device-detect';
 
 const Explore1 = ({ history }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -67,7 +68,7 @@ const Explore1 = ({ history }) => {
   const topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
 
   return (
-    <div className='explore1'>
+    <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
       <div className='w-100 h-100 relative'>
         <div
           className='w-100 fixed'
@@ -94,19 +95,34 @@ const Explore1 = ({ history }) => {
             onSelect={onSelectLanguage}
             selected={selectedLanguageIndex}
           />
-          <YearsSelector
-            years={years}
-            onSelect={onSelectYear}
-            selected={selectedYearIndex}
-          />
+          {
+            isMobile &&
+            (
+              <YearsSelector
+                years={years}
+                onSelect={onSelectYear}
+                selected={selectedYearIndex}
+              />
+            )
+          }
         </div>
         <div
           className='w-100 tc pt1 ios-fix'
           style={{ height: 'calc(100% - 125px)' }}
         >
+          {
+            !isMobile &&
+            (
+              <YearsSelector
+                years={years}
+                onSelect={onSelectYear}
+                selected={selectedYearIndex}
+              />
+            )
+          }
           <div
             className='flex flex-column relative justify-center'
-            style={{ height: '65%' }}
+            style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
             {topic.value ? (
               <Petals
@@ -137,11 +153,11 @@ const Explore1 = ({ history }) => {
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '35%' }}
+            style={{ height: '35%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
             <div
               className='tc raleway'
-              style={{ fontSize: '11px', lineHeight: '13px' }}
+              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
               Select a language, a year and tap on the arrows. number of petals
               = increase in search interest for a dream in comparison to the
