@@ -10,7 +10,6 @@ const extendedLanguage = {
   'PO': 'PORTUGUESE',
   'RU': 'RUSSIAN',
   'JP': 'JAPANESE',
-  'IN': 'INDONESIAN'
 }
 
 const LanguageSelector = ({ languages, selected, onSelect }) => {
@@ -19,7 +18,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
       className='w-100 flex justify-center items-center relative'
       style={{ marginTop: '10px', height: '40px' }}
     >
-      <div className='flex relative' style={{ width: isMobile ? '280px' : '800px', margin: isMobile ? 'inherit' : '0 auto' }}>
+      <div className='flex relative' style={{ width: isMobile ? '280px' : '700px', margin: isMobile ? 'inherit' : '0 auto' }}>
         {languages.map((value, index) => {
           return (
             <div

@@ -4458,12 +4458,6 @@
     "value": 50
   },
   {
-    "subject": "marriage",
-    "language": "IN",
-    "year": 2013,
-    "value": 50
-  },
-  {
     "subject": "vomiting",
     "language": "JP",
     "year": 2013,
@@ -5722,24 +5716,6 @@
     "language": "FR",
     "year": 2014,
     "value": 60
-  },
-  {
-    "subject": "being bitten by a snake",
-    "language": "IN",
-    "year": 2014,
-    "value": 19800
-  },
-  {
-    "subject": "snake",
-    "language": "IN",
-    "year": 2014,
-    "value": 80
-  },
-  {
-    "subject": "marriage",
-    "language": "IN",
-    "year": 2014,
-    "value": 40
   },
   {
     "subject": "someone you like",
@@ -7008,54 +6984,6 @@
     "value": 60
   },
   {
-    "subject": "cheating girlfriend",
-    "language": "IN",
-    "year": 2015,
-    "value": 400
-  },
-  {
-    "subject": "meeting an ex",
-    "language": "IN",
-    "year": 2015,
-    "value": 130
-  },
-  {
-    "subject": "meeting a former girlfriend",
-    "language": "IN",
-    "year": 2015,
-    "value": 110
-  },
-  {
-    "subject": "haircut",
-    "language": "IN",
-    "year": 2015,
-    "value": 90
-  },
-  {
-    "subject": "bathing",
-    "language": "IN",
-    "year": 2015,
-    "value": 80
-  },
-  {
-    "subject": "being bitten by a snake",
-    "language": "IN",
-    "year": 2015,
-    "value": 70
-  },
-  {
-    "subject": "ex boyfriend",
-    "language": "IN",
-    "year": 2015,
-    "value": 60
-  },
-  {
-    "subject": "pregnancy",
-    "language": "IN",
-    "year": 2015,
-    "value": 50
-  },
-  {
     "subject": "scary dream",
     "language": "JP",
     "year": 2015,
@@ -8250,60 +8178,6 @@
     "value": 40
   },
   {
-    "subject": "being bitten by a dog",
-    "language": "IN",
-    "year": 2016,
-    "value": 4750
-  },
-  {
-    "subject": "getting married",
-    "language": "IN",
-    "year": 2016,
-    "value": 250
-  },
-  {
-    "subject": "having a child",
-    "language": "IN",
-    "year": 2016,
-    "value": 160
-  },
-  {
-    "subject": "tsunami",
-    "language": "IN",
-    "year": 2016,
-    "value": 160
-  },
-  {
-    "subject": "the doomsday",
-    "language": "IN",
-    "year": 2016,
-    "value": 80
-  },
-  {
-    "subject": "marriage",
-    "language": "IN",
-    "year": 2016,
-    "value": 70
-  },
-  {
-    "subject": "snake",
-    "language": "IN",
-    "year": 2016,
-    "value": 60
-  },
-  {
-    "subject": "tooth falling",
-    "language": "IN",
-    "year": 2016,
-    "value": 50
-  },
-  {
-    "subject": "an ex",
-    "language": "IN",
-    "year": 2016,
-    "value": 40
-  },
-  {
     "subject": "someone",
     "language": "JP",
     "year": 2016,
@@ -9490,30 +9364,6 @@
     "language": "FR",
     "year": 2017,
     "value": 50
-  },
-  {
-    "subject": "meeting a former girlfriend",
-    "language": "IN",
-    "year": 2017,
-    "value": 130
-  },
-  {
-    "subject": "pregnancy",
-    "language": "IN",
-    "year": 2017,
-    "value": 60
-  },
-  {
-    "subject": "marrying a girlfriend",
-    "language": "IN",
-    "year": 2017,
-    "value": 50
-  },
-  {
-    "subject": "the doomsday",
-    "language": "IN",
-    "year": 2017,
-    "value": 40
   },
   {
     "subject": "monkey",
@@ -10808,42 +10658,6 @@
   {
     "subject": "snake",
     "language": "FR",
-    "year": 2018,
-    "value": 40
-  },
-  {
-    "subject": "teeth falling",
-    "language": "IN",
-    "year": 2018,
-    "value": 100
-  },
-  {
-    "subject": "meeting a former girlfriend",
-    "language": "IN",
-    "year": 2018,
-    "value": 80
-  },
-  {
-    "subject": "being chased by a snake",
-    "language": "IN",
-    "year": 2018,
-    "value": 70
-  },
-  {
-    "subject": "haircut",
-    "language": "IN",
-    "year": 2018,
-    "value": 60
-  },
-  {
-    "subject": "meeting an ex",
-    "language": "IN",
-    "year": 2018,
-    "value": 60
-  },
-  {
-    "subject": "snake",
-    "language": "IN",
     "year": 2018,
     "value": 40
   },

@@ -31,7 +31,7 @@ const YearSelector = ({ years, selected, onSelect }) => {
         })}
         <div
           className='yearEl-selected'
-          style={{ left: isMobile ? `${selected * 25 + 2}px` : '2px', top: isMobile ? 0 : `${selected * 25 + 2}px` }}
+          style={{ left: isMobile ? `${selected * 25 + 2}px` : '2px', top: isMobile ? '2px' : `${selected * 25 + 2}px` }}
         />
       </div>
     </div>

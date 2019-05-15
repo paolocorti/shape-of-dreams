@@ -76,25 +76,44 @@ const Explore1 = ({ history }) => {
   });
 
 
-  let topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
-  let topic1, topic2, topic3;
-  if (selectedIndex + 1 < selectedTopics[0].length - 1) {
-    topic1 = selectedTopics[0][selectedIndex + 1];
-  } else {
-    topic1 = selectedTopics[0][0];
+  let selectedIndex1, selectedIndex2, selectedIndex3;
+
+  if (selectedIndex <= selectedTopics[0].length - 4) {
+    selectedIndex1 = selectedIndex + 1
+    selectedIndex2 = selectedIndex + 2
+    selectedIndex3 = selectedIndex + 3
+  } else if (selectedIndex === selectedTopics[0].length - 3) {
+    selectedIndex1 = selectedIndex + 1
+    selectedIndex2 = selectedIndex + 2
+    selectedIndex3 = 0
+  } else if (selectedIndex === selectedTopics[0].length - 2) {
+    selectedIndex1 = selectedIndex + 1
+    selectedIndex2 = 0
+    selectedIndex3 = 1
+  } else if (selectedIndex === selectedTopics[0].length - 1) {
+    selectedIndex1 = 0
+    selectedIndex2 = 1
+    selectedIndex3 = 2
   }
 
-  if (selectedIndex + 2 < selectedTopics[0].length - 1) {
-    topic2 = selectedTopics[0][selectedIndex + 2];
-  } else {
-    topic2 = selectedTopics[0][0];
-  }
+  console.log(selectedTopics[0].length)
+  console.log(selectedIndex, selectedIndex1, selectedIndex2, selectedIndex3)
 
-  if (selectedIndex + 3 < selectedTopics[0].length - 1) {
-    topic3 = selectedTopics[0][selectedIndex + 3];
-  } else {
-    topic3 = selectedTopics[0][0];
+  let topic, topic1, topic2, topic3;
+
+  if (selectedTopics[0].length > 0) {
+    topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
   }
+  if (selectedTopics[0].length > 1) {
+    topic1 = (selectedTopics[0] && selectedTopics[0][selectedIndex1]) || {}; 
+  }
+  if (selectedTopics[0].length > 2) {
+    topic2 = (selectedTopics[0] && selectedTopics[0][selectedIndex2]) || {};
+  }
+  if (selectedTopics[0].length > 3) {
+    topic3 = (selectedTopics[0] && selectedTopics[0][selectedIndex3]) || {}; 
+  }
+ 
 
   return (
     <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
@@ -212,7 +231,7 @@ const Explore1 = ({ history }) => {
                   className='flex flex-column relative justify-center'
                   style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                 >
-                  {topic1.value ? (
+                  {topic1 && topic1.value ? (
                     <Petals
                       value={topic1.value}
                       name={topic1.subject}
@@ -233,7 +252,7 @@ const Explore1 = ({ history }) => {
                   className='flex flex-column relative justify-center'
                   style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                 >
-                  {topic2.value ? (
+                  {topic2 && topic2.value ? (
                     <Petals
                       value={topic2.value}
                       name={topic2.subject}
@@ -254,7 +273,7 @@ const Explore1 = ({ history }) => {
                   className='flex flex-column relative justify-center'
                   style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                 >
-                  {topic3.value ? (
+                  {topic3 && topic3.value ? (
                     <Petals
                       value={topic3.value}
                       name={topic3.subject}
