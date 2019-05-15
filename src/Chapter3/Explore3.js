@@ -9,6 +9,7 @@ import categories from '../data/categories.json';
 import GaussianTrend from '../GaussianTrend';
 import { years } from '../constants';
 import TopicSelector from '../components/TopicSelector.js';
+import { isMobile } from 'react-device-detect';
 
 const Explore3 = ({ history }) => {
   // const yearData = interestOverTime.filter(d =>
@@ -43,7 +44,7 @@ const Explore3 = ({ history }) => {
   const topics = interestOverTime.map(v => v[0].topic);
 
   return (
-    <div className='explore3'>
+    <div className='explore3' style={{ paddingTop: isMobile ? 0 : 60 }}>
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
           className='w-100 ph4 flex flex-column justify-center items-center ios-fix'
@@ -61,7 +62,7 @@ const Explore3 = ({ history }) => {
         >
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%' }}
+            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
             <Trend
               data={interestOverTime[selectedIndex]}
@@ -71,11 +72,11 @@ const Explore3 = ({ history }) => {
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '30%' }}
+            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
           >
             <div
               className='tc raleway mt2'
-              style={{ fontSize: '11px', lineHeight: '13px' }}
+              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
               Scroll up and down in the box to change the dream
             </div>

@@ -8,6 +8,7 @@ import { LinePath } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
+import { isMobile } from 'react-device-detect';
 import './Trend.scss';
 
 const x = d => {
@@ -16,8 +17,8 @@ const x = d => {
 const y = d => d.value;
 
 const Trend = ({ data, name, toggleNote, noteActive }) => {
-  const svgWidth = window.innerWidth * 0.9;
-  const svgHeight = window.innerWidth * 0.7;
+  const svgWidth = isMobile ? window.innerWidth * 0.9 : 800;
+  const svgHeight = isMobile ? window.innerWidth * 0.7 : 500;
   const trendHeight = svgHeight - 30;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');

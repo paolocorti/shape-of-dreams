@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 import BluePetal10 from './BluePetal10';
 import BluePetal20 from './BluePetal20';
 import BluePetal30 from './BluePetal30';
@@ -45,7 +46,7 @@ const BluePetals = ({
   selectedPetal,
   setSelectedPetal
 }) => {
-  const svgWidth = window.innerWidth * 0.8;
+  const svgWidth = isMobile ? window.innerWidth * 0.8 : 500;
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>

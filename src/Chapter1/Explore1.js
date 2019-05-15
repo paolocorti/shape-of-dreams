@@ -75,7 +75,6 @@ const Explore1 = ({ history }) => {
     return v[0].year === years[selectedYearIndex];
   });
 
-  console.log(selectedTopics);
 
   let topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
   let topic1, topic2, topic3;

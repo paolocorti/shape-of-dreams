@@ -6,6 +6,7 @@ import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import { years } from '../constants';
 import { languages } from '../constants';
+import { isMobile } from 'react-device-detect';
 
 const Explore2 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -38,7 +39,7 @@ const Explore2 = ({ history }) => {
   };
 
   return (
-    <div className='explore2'>
+    <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
       <div className='w-100 h-100 relative'>
         <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
@@ -50,19 +51,34 @@ const Explore2 = ({ history }) => {
             onSelect={onSelectLanguage}
             selected={selectedLanguageIndex}
           />
-          <YearsSelector
-            years={years}
-            onSelect={onSelectYear}
-            selected={selectedYearIndex}
-          />
+          {
+            isMobile &&
+            (
+              <YearsSelector
+                years={years}
+                onSelect={onSelectYear}
+                selected={selectedYearIndex}
+              />
+            )
+          }
         </div>
         <div
           className='w-100 flex flex-column relative tc ios-fix'
           style={{ height: 'calc(100% - 120px)' }}
         >
+          {
+            !isMobile &&
+            (
+              <YearsSelector
+                years={years}
+                onSelect={onSelectYear}
+                selected={selectedYearIndex}
+              />
+            )
+          }
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%' }}
+            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
             <BluePetals
               categories={selectedCategories}
@@ -74,11 +90,11 @@ const Explore2 = ({ history }) => {
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '30%' }}
+            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto'}}
           >
             <div
               className='tc raleway mt2'
-              style={{ fontSize: '11px', lineHeight: '13px' }}
+              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
               Select a language and a year. tap on the circle to switch on and
               off the category. size of the petals = number of dreams in the
