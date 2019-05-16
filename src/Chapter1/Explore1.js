@@ -96,24 +96,21 @@ const Explore1 = ({ history }) => {
     selectedIndex3 = 2
   }
 
-  console.log(selectedTopics[0].length)
-  console.log(selectedIndex, selectedIndex1, selectedIndex2, selectedIndex3)
-
   let topic, topic1, topic2, topic3;
 
   if (selectedTopics[0].length > 0) {
     topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
   }
   if (selectedTopics[0].length > 1) {
-    topic1 = (selectedTopics[0] && selectedTopics[0][selectedIndex1]) || {}; 
+    topic1 = (selectedTopics[0] && selectedTopics[0][selectedIndex1]) || {};
   }
   if (selectedTopics[0].length > 2) {
     topic2 = (selectedTopics[0] && selectedTopics[0][selectedIndex2]) || {};
   }
   if (selectedTopics[0].length > 3) {
-    topic3 = (selectedTopics[0] && selectedTopics[0][selectedIndex3]) || {}; 
+    topic3 = (selectedTopics[0] && selectedTopics[0][selectedIndex3]) || {};
   }
- 
+
 
   return (
     <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
@@ -183,13 +180,13 @@ const Explore1 = ({ history }) => {
                     index={selectedIndex}
                   />
                 ) : (
-                  <div
-                    className='w-100 flex justify-center items-center pa4'
-                    style={{ flex: 1, height: '400px' }}
-                  >
-                    <img src={noData} width={80} alt='No data available' />
-                  </div>
-                )}
+                    <div
+                      className='w-100 flex justify-center items-center pa4'
+                      style={{ flex: 1, height: '400px' }}
+                    >
+                      <img src={noData} width={80} alt='No data available' />
+                    </div>
+                  )}
                 {selectedTopics.length > 0 && selectedIndex > 0 && (
                   <div className='left-tap pulse' onClick={() => onTapLeft()}>
                     <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
@@ -202,108 +199,108 @@ const Explore1 = ({ history }) => {
                 )}
               </div>
             ) : (
-              <div
-                className='flex relative justify-center items-center'
-                style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
-              >
                 <div
-                  className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                  className='flex relative justify-center items-center'
+                  style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
                 >
-                  {topic.value ? (
-                    <Petals
-                      value={topic.value}
-                      name={topic.subject}
-                      language={topic.language}
-                      year={topic.year}
-                      index={selectedIndex}
-                    />
-                  ) : (
-                    <div
-                      className='w-100 flex justify-center items-center pa4'
-                      style={{ flex: 1, height: '400px' }}
-                    >
-                      <img src={noData} width={80} alt='No data available' />
-                    </div>
-                  )}
-                </div>
-                <div
-                  className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
-                >
-                  {topic1 && topic1.value ? (
-                    <Petals
-                      value={topic1.value}
-                      name={topic1.subject}
-                      language={topic1.language}
-                      year={topic1.year}
-                      index={selectedIndex + 1}
-                    />
-                  ) : (
-                    <div
-                      className='w-100 flex justify-center items-center pa4'
-                      style={{ flex: 1, height: '400px' }}
-                    >
-                      <img src={noData} width={80} alt='No data available' />
-                    </div>
-                  )}
-                </div>
-                <div
-                  className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
-                >
-                  {topic2 && topic2.value ? (
-                    <Petals
-                      value={topic2.value}
-                      name={topic2.subject}
-                      language={topic2.language}
-                      year={topic2.year}
-                      index={selectedIndex + 2}
-                    />
-                  ) : (
-                    <div
-                      className='w-100 flex justify-center items-center pa4'
-                      style={{ flex: 1, height: '400px' }}
-                    >
-                      <img src={noData} width={80} alt='No data available' />
-                    </div>
-                  )}
-                </div>
-                <div
-                  className='flex flex-column relative justify-center'
-                  style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
-                >
-                  {topic3 && topic3.value ? (
-                    <Petals
-                      value={topic3.value}
-                      name={topic3.subject}
-                      language={topic3.language}
-                      year={topic3.year}
-                      index={selectedIndex + 3}
-                    />
-                  ) : (
-                    <div
-                      className='w-100 flex justify-center items-center pa4'
-                      style={{ flex: 1, height: '400px' }}
-                    >
-                      <img src={noData} width={80} alt='No data available' />
-                    </div>
-                  )}
-                </div>
-                {selectedTopics[0].length > 0 && selectedIndex > 0 && (
-                  <div className='left-tap pulse' onClick={() => onTapLeft()}>
-                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  <div
+                    className='flex flex-column relative justify-center'
+                    style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                  >
+                    {topic.value ? (
+                      <Petals
+                        value={topic.value}
+                        name={topic.subject}
+                        language={topic.language}
+                        year={topic.year}
+                        index={selectedIndex}
+                      />
+                    ) : (
+                        <div
+                          className='w-100 flex justify-center items-center pa4'
+                          style={{ flex: 1, height: '400px' }}
+                        >
+                          <img src={noData} width={80} alt='No data available' />
+                        </div>
+                      )}
                   </div>
-                )}
-                {selectedTopics[0].length > 3 && (
-                  <div className='right-tap pulse' onClick={() => onTapRight()}>
-                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  <div
+                    className='flex flex-column relative justify-center'
+                    style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                  >
+                    {topic1 && topic1.value ? (
+                      <Petals
+                        value={topic1.value}
+                        name={topic1.subject}
+                        language={topic1.language}
+                        year={topic1.year}
+                        index={selectedIndex + 1}
+                      />
+                    ) : (
+                        <div
+                          className='w-100 flex justify-center items-center pa4'
+                          style={{ flex: 1, height: '400px' }}
+                        >
+                          <img src={noData} width={80} alt='No data available' />
+                        </div>
+                      )}
                   </div>
-                )}
-              </div>
-            )
+                  <div
+                    className='flex flex-column relative justify-center'
+                    style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                  >
+                    {topic2 && topic2.value ? (
+                      <Petals
+                        value={topic2.value}
+                        name={topic2.subject}
+                        language={topic2.language}
+                        year={topic2.year}
+                        index={selectedIndex + 2}
+                      />
+                    ) : (
+                        <div
+                          className='w-100 flex justify-center items-center pa4'
+                          style={{ flex: 1, height: '400px' }}
+                        >
+                          <img src={noData} width={80} alt='No data available' />
+                        </div>
+                      )}
+                  </div>
+                  <div
+                    className='flex flex-column relative justify-center'
+                    style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                  >
+                    {topic3 && topic3.value ? (
+                      <Petals
+                        value={topic3.value}
+                        name={topic3.subject}
+                        language={topic3.language}
+                        year={topic3.year}
+                        index={selectedIndex + 3}
+                      />
+                    ) : (
+                        <div
+                          className='w-100 flex justify-center items-center pa4'
+                          style={{ flex: 1, height: '400px' }}
+                        >
+                          <img src={noData} width={80} alt='No data available' />
+                        </div>
+                      )}
+                  </div>
+                  {selectedTopics[0].length > 0 && selectedIndex > 0 && (
+                    <div className='left-tap pulse pointer' onClick={() => onTapLeft()}>
+                      <img src={'/images/arrow-left.svg'} alt='Tap icon' width={35} />
+                    </div>
+                  )}
+                  {selectedTopics[0].length > 3 && (
+                    <div className='right-tap pulse pointer' onClick={() => onTapRight()}>
+                      <img src={'/images/arrow-right.svg'} alt='Tap icon' width={35} />
+                    </div>
+                  )}
+                </div>
+              )
           }
- 
+
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
             style={{ height: '35%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
@@ -313,14 +310,14 @@ const Explore1 = ({ history }) => {
               style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
               {
-                isMobile ? 
-                (
-                  'Select a language, a year and tap on the arrows. number of petals = increase in search interest for a dream in comparison to the previous year.'
-                ) : (
-                  'Select a language, a year and click on the arrows. Number of petals corresponds to increase in search interest for a dream In comparison to the previous year.'
-                )
+                isMobile ?
+                  (
+                    'Select a language, a year and tap on the arrows. number of petals = increase in search interest for a dream in comparison to the previous year.'
+                  ) : (
+                    'Select a language, a year and click on the arrows. Number of petals corresponds to increase in search interest for a dream In comparison to the previous year.'
+                  )
               }
-              
+
             </div>
             <div
               className='raleway mt3 fw7 cursor-pointer'

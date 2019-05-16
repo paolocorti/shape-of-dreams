@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import './Footer.scss';
+import { isMobile } from 'react-device-detect';
 
-const NavigationFooter = ({}) => {
+const NavigationFooter = ({ }) => {
   const context = useContext(AppContext);
 
   return (
@@ -18,38 +19,41 @@ const NavigationFooter = ({}) => {
           width={35}
         />
       </div> */}
-      <div className='w-10 flex justify-center items-center h-100 pointer'>
-        <img
-          src={context.menuOpen ? '/images/menu-white.svg' : '/images/menu.svg'}
-          alt='Menu icon'
-          width={20}
-          onClick={() => context.toggleMenu()}
-        />
-      </div>
-      <div
-        className='w-40 flex justify-center items-center pointer footer-el h-100'
-        onClick={() => context.setSelectedView('content')}
-      >
-        <div className={context.selectedView === 'content' ? 'active' : '/'}>
-          READ
+      <div className="flex w-100" style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}>
+        <div className='w-10 flex justify-center items-center h-100 pointer'>
+          <img
+            src={context.menuOpen ? '/images/menu-white.svg' : '/images/menu.svg'}
+            alt='Menu icon'
+            width={20}
+            onClick={() => context.toggleMenu()}
+          />
+        </div>
+        <div
+          className='w-40 flex justify-center items-center pointer footer-el h-100'
+          onClick={() => context.setSelectedView('content')}
+        >
+          <div className={context.selectedView === 'content' ? 'active' : '/'}>
+            READ
+        </div>
+        </div>
+        <div
+          className='w-40 flex justify-center items-center pointer footer-el h-100'
+          onClick={() => context.setSelectedView('explore')}
+        >
+          <div className={context.selectedView === 'explore' ? 'active' : '/'}>
+            EXPLORE
+        </div>
+        </div>
+        <div className='w-10 flex justify-center items-center h-100'>
+          <img
+            src='/images/legend.svg'
+            alt='Legend icon'
+            width={24}
+            onClick={() => context.toggleLegend()}
+          />
         </div>
       </div>
-      <div
-        className='w-40 flex justify-center items-center pointer footer-el h-100'
-        onClick={() => context.setSelectedView('explore')}
-      >
-        <div className={context.selectedView === 'explore' ? 'active' : '/'}>
-          EXPLORE
-        </div>
-      </div>
-      <div className='w-10 flex justify-center items-center h-100'>
-        <img
-          src='/images/legend.svg'
-          alt='Legend icon'
-          width={24}
-          onClick={() => context.toggleLegend()}
-        />
-      </div>
+
     </div>
   );
 };

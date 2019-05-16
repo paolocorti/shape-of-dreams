@@ -21,7 +21,6 @@ const languageLabel = {
   PO: 'Portuguese',
   RU: 'Russian',
   JP: 'Japanese',
-  IN: 'Indu'
 };
 
 const categoriesLabels = [

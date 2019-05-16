@@ -4,7 +4,14 @@ import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import { isIOS, isMobile } from 'react-device-detect';
 
-const Page = ({ activeIndex, pageIndex,  chapter, children, location: { state } }) => {
+const gradients = {
+  chapter1: 'linear-gradient(#e1eaef, #e4f3ec)',
+  chapter2: 'linear-gradient(#e5f2ef, #d0d7eb)',
+  chapter3: 'linear-gradient(#efe2e1, #ebf5f5)',
+  chapter4: 'linear-gradient(#e6f1eb, #dde6ed)'
+}
+
+const Page = ({ activeIndex, pageIndex, chapter, children, location: { state } }) => {
   const context = useContext(AppContext);
   const [activePage, setActivePage] = useState(false)
   useEffect(() => {
@@ -27,18 +34,17 @@ const Page = ({ activeIndex, pageIndex,  chapter, children, location: { state } 
     chapter5: chapter === 'chapter5'
   });
 
-  console.log(activeIndex, pageIndex)
-
   const calculatedTop = activeIndex === pageIndex ? 0 : (activeIndex < pageIndex ? '100%' : '-100%')
 
   return (
-    <section className={cx} style={{ 
-      position: !isMobile ? (activeIndex === pageIndex ? 'relative' : 'absolute' ) : 'auto',
+    <section className={cx} style={{
+      position: !isMobile ? (activeIndex === pageIndex ? 'relative' : 'absolute') : 'auto',
       top: !isMobile ? calculatedTop : 'auto',
-      transition: '1s top'
+      transition: '1s top',
+      background: context.selectedView === 'content' ? 'white' : gradients[chapter]
     }}>
       <div className={`page__inner ${isIOS && 'fullheight'}`}>{children}</div>
-    </section>
+    </section >
   );
 };
 
