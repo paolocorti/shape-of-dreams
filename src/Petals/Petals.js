@@ -27,7 +27,7 @@ const languageLabel = {
   IN: 'Indonesian'
 };
 
-const Petals = ({ name, language, year, value, index }) => {
+const Petals = ({ name, language, year, value, index, nodata = false }) => {
   const svgWidth = isMobile ? window.innerWidth * 0.55 : 220;
   let nOfPetals = getNumberOfPetals(value);
 
@@ -68,6 +68,12 @@ const Petals = ({ name, language, year, value, index }) => {
             <stop offset='61%' stopColor='rgb(237,207,201)' stopOpacity='1' />
             <stop offset='100%' stopColor='rgb(230,235,237)' stopOpacity='1' />
           </linearGradient>
+          <linearGradient id="petalEmptyGradient" gradientUnits="userSpaceOnUse" x1="-94.208" y1="-27.5181" x2="-94.1295" y2="-133.0575" gradientTransform="matrix(0.9986 -5.221873e-02 5.221873e-02 0.9986 143.1495 152.7173)">
+            <stop offset="0" stopColor="#EDECED"/>
+            <stop offset="9.470155e-02" stopColor="#E4E7E8"/>
+            <stop offset="0.3898" stopColor="#CADADA"/>
+            <stop offset="1" stopColor="#7C8F8C"/>
+          </linearGradient>
         </defs>
         <g transform={`translate(105, 20)`}>
           {nOfPetals > 20 && (
@@ -76,6 +82,7 @@ const Petals = ({ name, language, year, value, index }) => {
               petals={nOfPetals > 20 && nOfPetals < 33 ? nOfPetals - 20 : 13}
               offset={20}
               index={`${index}-${language}-${year}`}
+              nodata={nodata}
             />
           )}
           {nOfPetals > 9 && (
@@ -84,6 +91,7 @@ const Petals = ({ name, language, year, value, index }) => {
               petals={nOfPetals > 9 && nOfPetals < 20 ? nOfPetals - 9 : 11}
               offset={9}
               index={`${index}-${language}-${year}`}
+              nodata={nodata}
             />
           )}
           {nOfPetals > 0 && (
@@ -92,6 +100,7 @@ const Petals = ({ name, language, year, value, index }) => {
               petals={nOfPetals > 9 ? 9 : nOfPetals}
               offset={0}
               index={`${index}-${language}-${year}`}
+              nodata={nodata}
             />
           )}
         </g>
