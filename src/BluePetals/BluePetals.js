@@ -95,7 +95,7 @@ const BluePetals = ({
         <g transform={`translate(300, 280)`} id='blupetals'>
           {categories.map((category, i) => {
             const value = dimensionScale(category.value)
-            if (value < 11) {
+            if (value > 0 && value < 11) {
               return (
                 <BluePetal10 id={i} key={i} selectedPetal={selectedPetal} />
               );
