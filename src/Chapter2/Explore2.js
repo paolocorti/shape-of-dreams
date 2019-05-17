@@ -7,6 +7,7 @@ import YearsSelector from '../components/YearsSelector';
 import { years } from '../constants';
 import { languages } from '../constants';
 import { isMobile } from 'react-device-detect';
+import { scaleLinear } from 'd3-scale';
 
 const Explore2 = ({ history }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -30,13 +31,49 @@ const Explore2 = ({ history }) => {
   const groupedByYearAndCountry = groupedByCountry.map(val => {
     return values(groupBy(val, 'year'));
   });
-  const selectedCategories =
-    groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
+
+  
+  
+  // const selectedCategories = groupedByYearAndCountry.filter(v => {
+  //   const valueByYearArray = v.filter(el => {
+  //     return el[0].year === years[selectedYearIndex]
+  //   })
+  //   const valueByYear = valueByYearArray[0] || []
+
+  //   if (valueByYear.length > 0) {
+  //     if (valueByYear[0].language === languages[selectedLanguageIndex]) {
+  //       console.log('here')
+  //       return valueByYear
+         
+  //     }
+  //   } else {
+  //     return []
+  //   }
+    
+  // }); 
+  
+  const valueByYearArray = groupedByYearAndCountry.map(v => {
+    return v.filter(el => {
+      if (el[0].year === years[selectedYearIndex]) {
+        return el
+      }
+    })
+  })
+
+  const valueByCountry = valueByYearArray.filter(v => {
+    if (v[0]) {
+      if (v[0][0].language === languages[selectedLanguageIndex]) {
+        return v[0]
+      }
+    }
+  })
 
   const setSelectedPetalWrapper = index => {
     const newSelectedPetal = selectedPetal === index ? null : index;
     setSelectedPetal(newSelectedPetal);
   };
+
+  const selectedCategories = valueByCountry[0] ?  valueByCountry[0][0] : []
 
   return (
     <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
@@ -80,13 +117,17 @@ const Explore2 = ({ history }) => {
             className='flex flex-column justify-center items-center'
             style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
-            <BluePetals
-              categories={selectedCategories}
-              year={years[selectedYearIndex]}
-              language={languages[selectedLanguageIndex]}
-              setSelectedPetal={setSelectedPetalWrapper}
-              selectedPetal={selectedPetal}
-            />
+            {
+              selectedCategories && (
+                <BluePetals
+                  categories={selectedCategories}
+                  year={years[selectedYearIndex]}
+                  language={languages[selectedLanguageIndex]}
+                  setSelectedPetal={setSelectedPetalWrapper}
+                  selectedPetal={selectedPetal}
+                />
+              )
+            }
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'

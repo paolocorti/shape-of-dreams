@@ -12,6 +12,7 @@ import BluePetal90 from './BluePetal90';
 import BluePetal100 from './BluePetal100';
 import './BluePetal.scss';
 import Grid from './Grid';
+import { scaleLinear } from 'd3-scale';
 
 const languageLabel = {
   EN: 'English',
@@ -24,17 +25,17 @@ const languageLabel = {
 };
 
 const categoriesLabels = [
-  'Animals',
-  'Body',
-  'Flying and falling',
+  'Animals and insects',
+  'Human Body',
+  'Family and Relationships',
+  'Falling and Flying',
+  'Emotions',
   'Food',
-  'Money',
-  'Nature',
-  'People',
-  'Pregnancy',
-  'Supernatural',
-  'Travels',
+  'Natural Elements',
   'Weather events',
+  'Traveling and Transportations',
+  'Money',
+  'Supernatural',
   'Other'
 ];
 
@@ -46,6 +47,8 @@ const BluePetals = ({
   setSelectedPetal
 }) => {
   const svgWidth = isMobile ? window.innerWidth * 0.8 : 500;
+  const dimensionScale = scaleLinear().domain([0, 24]).range([0,100])
+
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
@@ -91,43 +94,44 @@ const BluePetals = ({
         />
         <g transform={`translate(300, 280)`} id='blupetals'>
           {categories.map((category, i) => {
-            if (category.value < 11) {
+            const value = dimensionScale(category.value)
+            if (value < 11) {
               return (
                 <BluePetal10 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 11 && category.value <= 20) {
+            } else if (value >= 11 && value <= 20) {
               return (
                 <BluePetal20 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 21 && category.value <= 30) {
+            } else if (value >= 21 && value <= 30) {
               return (
                 <BluePetal30 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 31 && category.value <= 40) {
+            } else if (value >= 31 && value <= 40) {
               return (
                 <BluePetal40 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 41 && category.value <= 50) {
+            } else if (value >= 41 && value <= 50) {
               return (
                 <BluePetal50 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 51 && category.value <= 60) {
+            } else if (value >= 51 && value <= 60) {
               return (
                 <BluePetal60 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 61 && category.value <= 70) {
+            } else if (value >= 61 && value <= 70) {
               return (
                 <BluePetal70 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 71 && category.value <= 80) {
+            } else if (value >= 71 && value <= 80) {
               return (
                 <BluePetal80 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 81 && category.value <= 90) {
+            } else if (value >= 81 && value <= 90) {
               return (
                 <BluePetal90 id={i} key={i} selectedPetal={selectedPetal} />
               );
-            } else if (category.value >= 91 && category.value <= 100) {
+            } else if (value >= 91 && value <= 100) {
               return (
                 <BluePetal100 id={i} key={i} selectedPetal={selectedPetal} />
               );
