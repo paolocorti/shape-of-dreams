@@ -1,12 +1,6 @@
-#blupetals .st0 {
-  fill: url(#blue_petal_gradient_1);
-  stroke: #6ea4a8;
-  stroke-width: 0.3;
-  stroke-miterlimit: 10;
-}
-#blupetals .st1 {
-  fill: #607cbd;
-}
+
+#blupetals .cls-1{ stroke:#6ea4a8;stroke-miterlimit:10;stroke-width:0.3px; }
+#blupetals .cls-2{fill:#607cbd;}
 
 .bluepetal {
   transition: 0.2s opacity;
@@ -63,10 +57,10 @@ $first-row-delay-time: 0s;
     transform-box: border-box;
     transform-origin: 0px 22px;
     // outline: 1px solid black;
-    // animation: bluePetalRotation#{$i}
-    //   $rotation-time
-    //   $first-row-delay-time
-    //   forwards;
+    animation: bluePetalRotation#{$i}
+      $rotation-time
+      $first-row-delay-time
+      forwards;
     transition-timing-function: $rotation-ease;
   }
 
@@ -84,16 +78,18 @@ $first-row-delay-time: 0s;
   $delay: $i * 0.05s;
 
   .blupetal-#{$i} {
-    animation: scaleAnimation 0.8s $delay forwards;
-    will-change: transform;
+    // animation: scaleAnimation 0.8s $delay forwards;
+    // will-change: transform;
   }
 }
 
 @keyframes scaleAnimation {
   0% {
     transform: scale(0);
+    opacity: 0;
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
