@@ -115,7 +115,7 @@ const Explore2 = ({ history }) => {
           }
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '20px 0' : '0 auto' }}
           >
             {
               selectedCategories && (

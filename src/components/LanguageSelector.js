@@ -32,7 +32,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
         })}
         <div
           className='langEl-selected'
-          style={{ left: `${selected * (isMobile ? 35 : 100) - 2}px` }}
+          style={{ left: `${selected * (isMobile ? 40 : 100) - 2}px` }}
         />
       </div>
     </div>
