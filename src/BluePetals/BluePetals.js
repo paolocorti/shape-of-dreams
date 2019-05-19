@@ -52,7 +52,7 @@ const BluePetals = ({
   selectedPetal,
   setSelectedPetal
 }) => {
-  const svgWidth = isMobile ? window.innerWidth * 0.8 : 500;
+  const svgWidth = isMobile ? window.innerHeight * 0.4 : 500;
   const dimensionScale = scaleLinear().domain([0, 24]).range([0,100])
 
   return (

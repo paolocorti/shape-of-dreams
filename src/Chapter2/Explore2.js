@@ -100,8 +100,8 @@ const Explore2 = ({ history }) => {
           }
         </div>
         <div
-          className='w-100 flex flex-column relative tc ios-fix'
-          style={{ height: 'calc(100% - 120px)' }}
+          className='flex flex-column relative tc ios-fix'
+          style={{ height: 'calc(100% - 120px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '0' : '0 auto' }}
         >
           {
             !isMobile &&
@@ -115,7 +115,7 @@ const Explore2 = ({ history }) => {
           }
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '20px 0' : '0 auto' }}
+            style={{ height: '70%', margin: isMobile ? '20px 0' : '0 auto' }}
           >
             {
               selectedCategories && (
