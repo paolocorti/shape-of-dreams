@@ -158,7 +158,7 @@ const Explore1 = ({ history }) => {
         </div>
         <div
           className='w-100 tc pt1 ios-fix'
-          style={{ height: 'calc(100% - 125px)' }}
+          style={{ height: 'calc(100% - 125px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
         >
           {
             !isMobile &&
@@ -213,7 +213,7 @@ const Explore1 = ({ history }) => {
             ) : (
                 <div
                   className='flex relative justify-center items-center'
-                  style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+                  style={{ height: '65%', margin: isMobile ? '' : '0 auto' }}
                 >
                   {topic && topic.value && (
                     <div
