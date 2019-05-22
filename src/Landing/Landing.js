@@ -1,30 +1,28 @@
 import React, { useState } from 'react';
+import './Landing.scss';
 import landing from './petals-landing.svg';
-import sky from './landing_sky.png';
-import NavigationFooter from '../components/NavigationFooter';
-import Content1 from '../Chapter1/Content1';
-import { ScrollToHOC, ScrollArea } from 'react-scroll-to';
-import Header from '../components/Header';
+import sky from './landing_sky_desktop.png';
 
-const Landing = ({ history, scrollTo }) => {
-  const [canScroll, setCanScroll] = useState(false);
+const Landing = ({ history }) => {
   const [blur, setBlur] = useState(false);
-  const scrollHeight = window.innerHeight;
+  const [scroll, setScroll] = useState(false);
 
   const goToChapter1 = () => {
-    setBlur(true);
-    // scrollTo({ id: 'scroll', y: scrollHeight + 49, smooth: true });
+    setScroll(true);
+    setTimeout(() => {
+      setBlur(true);
+    }, 500);
     setTimeout(() => {
       history.push(`/chapter1`);
-    }, 1000);
+    }, 1500);
   };
 
   const pathname = '/chapter1';
 
   return (
-    <ScrollArea
+    <div
       id='scroll'
-      className={`w-100 h-100 overflow-hidden`}
+      className={`w-100 h-100 overflow-hidden ${scroll ? 'scrolling' : 'not-scrolling'}`}
       style={{
         position: 'absolute',
         backgroundImage: `url(${sky})`,
@@ -32,63 +30,29 @@ const Landing = ({ history, scrollTo }) => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className='landing-header w-100 tc pa4'>
+      <div className='landing-header w-100 tc pa4 pt5' style={{ margin: '0 auto', maxWidth: '75%' }}>
         <img
           src={landing}
           height='100%'
           alt='chapter 1 icon'
+          width={220}
           className={`${blur ? 'blur' : ''}`}
         />
       </div>
-      <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
+      <div className={`landing-content w-100 ${blur ? 'blur' : ''}`} style={{ margin: '0 auto', maxWidth: '75%', color: 'white' }}>
         <h1 className='tc fw7 mt0 title'>
-          THE <br /> MEANING <br /> OF DREAMS
+          THE MEANING <br /> OF DREAMS
         </h1>
         <div className='ph4 tc subtitle'>
           A visual exploration on Google searches for the interpretation of
           dreams
         </div>
       </div>
-      <div className='landing-footer w-100 tc' onClick={goToChapter1}>
-        <div>
-          <img src={'images/down-arrow.svg'} width={35} />
-        </div>
+      <div className='landing-footer w-100 tc'>
+        <img className='pointer absolute pulse' onClick={goToChapter1} src={'images/down-arrow-white.svg'} width={35} style={{ top: '0px' }}/>
       </div>
-      {/* <div style={{ paddingTop: '50px' }}>
-          <div
-            className='w-100 flex justify-between pv3 ph4'
-            style={{ flex: 1 }}
-            style={{
-              height: '30px',
-              zIndex: 99,
-              backgroundColor: 'white'
-            }}
-          >
-            <div
-              className={`header-el ${
-                pathname === '/chapter1' ? 'selected' : ''
-              }`}
-            />
-            <div
-              className={`header-el ${
-                pathname === '/chapter2' ? 'selected' : ''
-              }`}
-            />
-            <div
-              className={`header-el ${
-                pathname === '/chapter3' ? 'selected' : ''
-              }`}
-            />
-            <div
-              className={`header-el ${
-                pathname === '/chapter4' ? 'selected' : ''
-              }`}
-            />
-          </div>
-          <Content1 />
-        </div> */}
-    </ScrollArea>
+    </div>
   );
 };
 
-export default ScrollToHOC(Landing);
+export default Landing;
