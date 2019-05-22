@@ -18,31 +18,6 @@
 //   background-color: white;
 // }
 
-.landing {
-  background-image: linear-gradient(#e1eaef, #e4f3ec);
-  height: 100vh;
-}
-
-.landing-header {
-  height: 35%;
-}
-
-.landing-content {
-  height: 45%;
-
-  & .title {
-    font-size: calc(38px + (70 - 38) * ((100vw - 300px) / (1600 - 300)));
-  }
-
-  & .subtitle {
-    font-size: calc(28px + (56 - 28) * ((100vw - 300px) / (1600 - 300)));
-  }
-}
-
-.landing-footer {
-  height: 20%;
-}
-
 .landing1,
 .explore1,
 .explore2,

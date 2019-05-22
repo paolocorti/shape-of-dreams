@@ -77,8 +77,8 @@ const Explore2 = ({ history }) => {
 
   return (
     <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
-      <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
+      <div className='w-100 h-100 relative' style={{ height: isMobile ? '100%' : '2000px' }}>
+        <div className='w-100 ph4 ios-fix' style={{ height: '120px', position: isMobile ? 'relative' : 'fixed' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams subjects by category
@@ -100,8 +100,8 @@ const Explore2 = ({ history }) => {
           }
         </div>
         <div
-          className='flex flex-column relative tc ios-fix'
-          style={{ height: 'calc(100% - 120px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '0' : '0 auto' }}
+          className='flex flex-column tc ios-fix'
+          style={{ height: 'calc(100% - 120px)', position: isMobile ? 'relative' : 'fixed', width: isMobile ? '100%' : '75%', left: isMobile ? 'auto' : '12.5%', top: isMobile ? 'auto' : '200px', margin: isMobile ? '0' : '0 auto' }}
         >
           {
             !isMobile &&
