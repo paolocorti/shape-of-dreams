@@ -33,7 +33,7 @@ const NavigationFooter = ({ }) => {
           onClick={() => context.setSelectedView('content')}
         >
           <div className={context.selectedView === 'content' ? 'active' : '/'}>
-            READ
+            {isMobile ? 'READ' : 'READ THE STORY' }
         </div>
         </div>
         <div
@@ -41,7 +41,7 @@ const NavigationFooter = ({ }) => {
           onClick={() => context.setSelectedView('explore')}
         >
           <div className={context.selectedView === 'explore' ? 'active' : '/'}>
-            EXPLORE
+            {isMobile ? 'EXPLORE' : 'DREAMS EXPLORER' }
         </div>
         </div>
         <div className='w-10 flex justify-center items-center h-100'>
