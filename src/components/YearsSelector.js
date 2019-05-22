@@ -4,7 +4,7 @@ import './Selector.scss';
 
 const YearSelector = ({ years, selected, onSelect }) => {
   return (
-    <div className='yearsSelectorContainer' style={{ marginTop: isMobile ? '10px' : '-200px' }}>
+    <div className='yearsSelectorContainer' style={{ marginTop: isMobile ? '10px' : '-250px' }}>
       <div className='yearsSelectorContainerWrapper'>
         {years.map((value, index) => {
           return (
@@ -31,7 +31,7 @@ const YearSelector = ({ years, selected, onSelect }) => {
         })}
         <div
           className='yearEl-selected'
-          style={{ left: isMobile ? `${selected * 25 + 2}px` : '2px', top: isMobile ? '2px' : `${selected * 25 + 2}px` }}
+          style={{ left: isMobile ? `${selected * 25 + 2}px` : '2px', top: isMobile ? '2px' : `${selected * 35 + 7}px` }}
         />
       </div>
     </div>
