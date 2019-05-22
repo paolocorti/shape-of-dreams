@@ -55,7 +55,7 @@ $first-row-delay-time: 0s;
   #bluepetal-#{$i} {
     transform: rotate($rotation-angle);
     transform-box: border-box;
-    transform-origin: 0px 22px;
+    transform-origin: 0px 24px;
     // outline: 1px solid black;
     animation: bluePetalRotation#{$i}
       $rotation-time

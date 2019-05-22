@@ -169,7 +169,7 @@ const BluePetals = ({
               );
             }
           })}
-          <circle r={5} fill={'#607dbd'} cx={1} cy={20} />
+          <circle r={6} fill={'#607dbd'} cx={1} cy={21} />
         </g>
       </svg>
     </div>
