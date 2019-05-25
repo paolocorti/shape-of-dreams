@@ -91,19 +91,34 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .yearsSelectorScrollContainer {
+    position: absolute;
+    right: 0px;
+    height: 80%;
+    width: 120px;
+    top: 10%;
+    z-index: 99;
+    outline: 1px gold;
+    overflow: scroll;
+  }
+
   .yearsSelectorContainer {
     position: absolute;
-    right: -130px;
-    height: 400px;
-    width: 60px;
-    top: 50%;
-    margin-top: -200px;
+    right: 0px;
+    height: 1200px;
+    width: 120px;
+    top: 0;
     z-index: 99;
+    outline: 1px gold;
+    overflow: scroll;
   }
 
   .yearsSelectorContainerWrapper {
-    width: 60px;
+    width: 25px;
     flex-direction: column;
+    position: fixed;
+    top: 50%;
+    margin-top: -170px;
   }
 
   .yearEl {

@@ -16,7 +16,7 @@ class App extends React.Component {
     this.state = {
       previousPath: null,
       actualPath: null,
-      selectedView: 'content',
+      selectedView: 'read',
       setPreviousPath: this.setPreviousPath,
       setActualPath: this.setActualPath,
       setSelectedView: this.setSelectedView,

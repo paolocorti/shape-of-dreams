@@ -10,7 +10,7 @@ const Chapter3 = ({ history, activeIndex, pageIndex }) => {
   return (
     <Page chapter='chapter3' activeIndex={activeIndex} pageIndex={pageIndex}>
       {context.selectedView === 'explore' && <Explore3 />}
-      {context.selectedView === 'content' && <Content3 history={history} />}
+      {context.selectedView === 'read' && <Content3 history={history} activeIndex={activeIndex} />}
     </Page>
   );
 };

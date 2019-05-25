@@ -1,11 +1,21 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import './Footer.scss';
 import { isMobile } from 'react-device-detect';
 
-const NavigationFooter = ({ }) => {
+const NavigationFooter = ({ history }) => {
   const context = useContext(AppContext);
+
+  const changeSection = (section) => {
+    if (isMobile) {
+      context.setSelectedView(section)
+    } else {
+      history.push({
+        search: "?" + new URLSearchParams({ section: section }).toString()
+      })
+    }
+  }
 
   return (
     <div className='footer ph4' style={{ flex: 1, height: '50px' }}>
@@ -30,19 +40,19 @@ const NavigationFooter = ({ }) => {
         </div>
         <div
           className='w-40 flex justify-center items-center pointer footer-el h-100'
-          onClick={() => context.setSelectedView('content')}
+          onClick={() => changeSection('read')}
         >
-          <div className={context.selectedView === 'content' ? 'active' : '/'}>
-            {isMobile ? 'READ' : 'READ THE STORY' }
-        </div>
+          <div className={context.selectedView === 'read' ? 'active' : '/'}>
+            {isMobile ? 'READ' : 'READ THE STORY'}
+          </div>
         </div>
         <div
           className='w-40 flex justify-center items-center pointer footer-el h-100'
-          onClick={() => context.setSelectedView('explore')}
+          onClick={() => changeSection('explore')}
         >
           <div className={context.selectedView === 'explore' ? 'active' : '/'}>
-            {isMobile ? 'EXPLORE' : 'DREAMS EXPLORER' }
-        </div>
+            {isMobile ? 'EXPLORE' : 'DREAMS EXPLORER'}
+          </div>
         </div>
         <div className='w-10 flex justify-center items-center h-100'>
           <img
@@ -58,4 +68,4 @@ const NavigationFooter = ({ }) => {
   );
 };
 
-export default NavigationFooter;
+export default withRouter(NavigationFooter);

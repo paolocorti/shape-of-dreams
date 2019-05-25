@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import { isIOS } from 'react-device-detect';
@@ -10,11 +10,16 @@ import SwipeableViews from 'react-swipeable-views';
 
 const Container = ({ location, history }) => {
   const [activeIndex, setActiveIndex] = useState(1)
+  const context = useContext(AppContext);
+
+  console.log(location, history)
 
   useEffect(() => {
     console.log('here')
     const index = Number(location.pathname.replace('/chapter', ''))
     setActiveIndex(index)
+    const section = (location.search.replace('?section=', ''))
+    context.setSelectedView(section === 'read' ? 'read' : 'explore')
   }, [location])
 
   return (

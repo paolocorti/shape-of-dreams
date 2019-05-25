@@ -41,7 +41,7 @@ const Page = ({ activeIndex, pageIndex, chapter, children, location: { state } }
       position: !isMobile ? (activeIndex === pageIndex ? 'relative' : 'absolute') : 'auto',
       top: !isMobile ? calculatedTop : 'auto',
       transition: '1s top',
-      background: context.selectedView === 'content' ? 'white' : gradients[chapter]
+      background: context.selectedView === 'read' ? 'white' : gradients[chapter]
     }}>
       <div className={`page__inner ${isIOS && 'fullheight'}`}>{children}</div>
     </section >

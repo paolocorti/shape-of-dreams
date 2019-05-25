@@ -5,12 +5,13 @@ import topics from '../data/topics.json';
 import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
+import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import noData from './petal-no-data.svg';
 import { years } from '../constants';
 import howtoread1 from './how-to-read-1.png';
 import { isMobile } from 'react-device-detect';
 
-const Explore1 = ({ history }) => {
+const Explore1 = ({ history, activeIndex }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
@@ -78,10 +79,6 @@ const Explore1 = ({ history }) => {
   let selectedIndex1, selectedIndex2, selectedIndex3;
   let topic, topic1, topic2, topic3;
 
-
-  console.log(selectedTopics)
-
-
   if (selectedTopics.length > 0) {
 
     if (selectedIndex <= selectedTopics[0].length - 4) {
@@ -101,8 +98,8 @@ const Explore1 = ({ history }) => {
       selectedIndex2 = 1
       selectedIndex3 = 2
     }
-  
-    
+
+
     if (selectedTopics[0].length > 0) {
       topic = (selectedTopics[0] && selectedTopics[0][selectedIndex]) || {};
     }
@@ -119,6 +116,16 @@ const Explore1 = ({ history }) => {
 
   return (
     <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
+      {
+        !isMobile && (activeIndex === 1) &&
+        (
+          <YearsSelector
+            years={years}
+            onSelect={onSelectYear}
+            selected={selectedYearIndex}
+          />
+        )
+      }
       <div className='w-100 h-100 relative'>
         <div
           className='w-100 fixed'
@@ -148,7 +155,7 @@ const Explore1 = ({ history }) => {
           {
             isMobile &&
             (
-              <YearsSelector
+              <YearsSelectorMobile
                 years={years}
                 onSelect={onSelectYear}
                 selected={selectedYearIndex}
@@ -160,16 +167,6 @@ const Explore1 = ({ history }) => {
           className='w-100 tc pt1 ios-fix'
           style={{ height: 'calc(100% - 125px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
         >
-          {
-            !isMobile &&
-            (
-              <YearsSelector
-                years={years}
-                onSelect={onSelectYear}
-                selected={selectedYearIndex}
-              />
-            )
-          }
           {
             isMobile ? (
               <div
@@ -190,13 +187,13 @@ const Explore1 = ({ history }) => {
                       style={{ flex: 1, height: '65%' }}
                     >
                       <Petals
-                          value={700}
-                          name={'No Data'}
-                          language={groupedByCountryKeys[selectedLanguageIndex]}
-                          year={years[selectedYearIndex]}
-                          index={0}
-                          nodata={true}
-                        />
+                        value={700}
+                        name={'No Data'}
+                        language={groupedByCountryKeys[selectedLanguageIndex]}
+                        year={years[selectedYearIndex]}
+                        index={0}
+                        nodata={true}
+                      />
                     </div>
                   )}
                 {selectedTopics.length > 0 && selectedIndex > 0 && (
@@ -220,13 +217,13 @@ const Explore1 = ({ history }) => {
                       className='flex flex-column relative justify-center'
                       style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                     >
-                        <Petals
-                          value={topic.value}
-                          name={topic.subject}
-                          language={topic.language}
-                          year={topic.year}
-                          index={selectedIndex}
-                        />
+                      <Petals
+                        value={topic.value}
+                        name={topic.subject}
+                        language={topic.language}
+                        year={topic.year}
+                        index={selectedIndex}
+                      />
                     </div>
                   )}
                   {topic1 && topic1.value && (
@@ -234,13 +231,13 @@ const Explore1 = ({ history }) => {
                       className='flex flex-column relative justify-center'
                       style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                     >
-                        <Petals
-                          value={topic1.value}
-                          name={topic1.subject}
-                          language={topic1.language}
-                          year={topic1.year}
-                          index={selectedIndex + 1}
-                        />
+                      <Petals
+                        value={topic1.value}
+                        name={topic1.subject}
+                        language={topic1.language}
+                        year={topic1.year}
+                        index={selectedIndex + 1}
+                      />
                     </div>
                   )}
                   {topic2 && topic2.value && (
@@ -248,13 +245,13 @@ const Explore1 = ({ history }) => {
                       className='flex flex-column relative justify-center'
                       style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
                     >
-                        <Petals
-                          value={topic2.value}
-                          name={topic2.subject}
-                          language={topic2.language}
-                          year={topic2.year}
-                          index={selectedIndex + 2}
-                        />
+                      <Petals
+                        value={topic2.value}
+                        name={topic2.subject}
+                        language={topic2.language}
+                        year={topic2.year}
+                        index={selectedIndex + 2}
+                      />
                     </div>
                   )}
                   {topic3 && topic3.value && (

@@ -62,7 +62,7 @@ const Routes = ({ location }) => {
         <SwipeableRoutes
           containerStyle={{
             height:
-              context.selectedView === 'content' ? 'calc(100vh - 50px)' : '100%'
+              context.selectedView === 'read' ? 'calc(100vh - 50px)' : '100%'
           }}
           onChangeIndex={context.resetSelectedView}
         >

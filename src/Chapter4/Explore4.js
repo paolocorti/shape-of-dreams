@@ -30,11 +30,11 @@ const Explore4 = ({ history }) => {
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
             Networks of dreams{' '}
           </h1>
-          <YearsSelector
+          {/* <YearsSelector
             years={years}
             onSelect={onSelectYear}
             selected={selectedYearIndex}
-          />
+          /> */}
         </div>
 
         <div

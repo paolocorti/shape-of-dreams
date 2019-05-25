@@ -4,12 +4,13 @@ import BluePetals from '../BluePetals';
 import categories from '../data/categories.json';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
+import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import { years } from '../constants';
 import { languages } from '../constants';
 import { isMobile } from 'react-device-detect';
 import { scaleLinear } from 'd3-scale';
 
-const Explore2 = ({ history }) => {
+const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
   const [selectedPetal, setSelectedPetal] = useState(null);
@@ -32,8 +33,8 @@ const Explore2 = ({ history }) => {
     return values(groupBy(val, 'year'));
   });
 
-  
-  
+
+
   // const selectedCategories = groupedByYearAndCountry.filter(v => {
   //   const valueByYearArray = v.filter(el => {
   //     return el[0].year === years[selectedYearIndex]
@@ -44,14 +45,14 @@ const Explore2 = ({ history }) => {
   //     if (valueByYear[0].language === languages[selectedLanguageIndex]) {
   //       console.log('here')
   //       return valueByYear
-         
+
   //     }
   //   } else {
   //     return []
   //   }
-    
+
   // }); 
-  
+
   const valueByYearArray = groupedByYearAndCountry.map(v => {
     return v.filter(el => {
       if (el[0].year === years[selectedYearIndex]) {
@@ -73,12 +74,22 @@ const Explore2 = ({ history }) => {
     setSelectedPetal(newSelectedPetal);
   };
 
-  const selectedCategories = valueByCountry[0] ?  valueByCountry[0][0] : []
+  const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : []
 
   return (
     <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
-      <div className='w-100 h-100 relative' style={{ height: isMobile ? '100%' : '2000px' }}>
-        <div className='w-100 ph4 ios-fix' style={{ height: '120px', position: isMobile ? 'relative' : 'fixed' }}>
+      {
+        !isMobile && (activeIndex === 2) &&
+        (
+          <YearsSelector
+            years={years}
+            onSelect={onSelectYear}
+            selected={selectedYearIndex}
+          />
+        )
+      }
+      <div className='w-100 h-100 relative'>
+        <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams subjects by category
@@ -91,7 +102,7 @@ const Explore2 = ({ history }) => {
           {
             isMobile &&
             (
-              <YearsSelector
+              <YearsSelectorMobile
                 years={years}
                 onSelect={onSelectYear}
                 selected={selectedYearIndex}
@@ -100,19 +111,9 @@ const Explore2 = ({ history }) => {
           }
         </div>
         <div
-          className='flex flex-column tc ios-fix'
-          style={{ height: 'calc(100% - 120px)', position: isMobile ? 'relative' : 'fixed', width: isMobile ? '100%' : '75%', left: isMobile ? 'auto' : '12.5%', top: isMobile ? 'auto' : '200px', margin: isMobile ? '0' : '0 auto' }}
+          className='flex flex-column relative tc ios-fix'
+          style={{ height: 'calc(100% - 120px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '0' : '0 auto' }}
         >
-          {
-            !isMobile &&
-            (
-              <YearsSelector
-                years={years}
-                onSelect={onSelectYear}
-                selected={selectedYearIndex}
-              />
-            )
-          }
           <div
             className='flex flex-column justify-center items-center'
             style={{ height: '70%', margin: isMobile ? '20px 0' : '0 auto' }}
@@ -131,7 +132,7 @@ const Explore2 = ({ history }) => {
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto'}}
+            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
           >
             <div
               className='tc raleway mt2'
