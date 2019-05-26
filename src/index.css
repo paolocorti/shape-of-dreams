@@ -125,7 +125,7 @@ h4 {
   height: 20px;
   top: 50%;
   right: 40px;
-  z-index: 99;
+  z-index: 999;
 }
 
 .left-tap {
@@ -134,16 +134,16 @@ h4 {
   height: 20px;
   top: 50%;
   left: 40px;
-  z-index: 99;
+  z-index: 999;
 }
 
 @media only screen and (min-width: 768px) {
   .right-tap {
-    right: -40px;
+    right: 0px;
   }
 
   .left-tap {
-    left: -40px;
+    left: 0px;
   }
 }
 
