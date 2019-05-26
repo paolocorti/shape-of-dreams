@@ -1,6 +1,7 @@
 import React from 'react';
-import {isMobile} from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 import './Selector.scss';
+import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 const extendedLanguage = {
   'EN': 'ENGLISH',
@@ -18,17 +19,31 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
       className='w-100 flex justify-center items-center relative'
       style={{ marginTop: '10px', height: '40px' }}
     >
+      <KeyboardEventHandler
+        handleKeys={['all']}
+        onKeyEvent={(key, e) => {
+          if (key === 'left') {
+            const index = selected > 0 ? selected - 1 : 0
+            onSelect(index)
+          } else if (key === 'right') {
+            const index = selected < 6 ? selected + 1 : 6
+            onSelect(index)
+          }
+        }}
+      ></KeyboardEventHandler>
       <div className='flex relative' style={{ width: isMobile ? '280px' : '700px', margin: isMobile ? 'inherit' : '0 auto' }}>
         {languages.map((value, index) => {
-          return (
-            <div
-              key={index}
-              className={`langEl`}
-              onClick={() => onSelect(index)}
-            >
-              {isMobile ? value: extendedLanguage[value]}
-            </div>
-          );
+          if (value) {
+            return (
+              <div
+                key={index}
+                className={`langEl`}
+                onClick={() => onSelect(index)}
+              >
+                {isMobile ? value : extendedLanguage[value]}
+              </div>
+            );
+          }
         })}
         <div
           className='langEl-selected'

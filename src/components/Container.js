@@ -12,10 +12,7 @@ const Container = ({ location, history }) => {
   const [activeIndex, setActiveIndex] = useState(1)
   const context = useContext(AppContext);
 
-  console.log(location, history)
-
   useEffect(() => {
-    console.log('here')
     const index = Number(location.pathname.replace('/chapter', ''))
     setActiveIndex(index)
     const section = (location.search.replace('?section=', ''))
@@ -23,7 +20,7 @@ const Container = ({ location, history }) => {
   }, [location])
 
   return (
-    <div style={{ height: '100%', overflow: 'hidden'}}>
+    <div style={{ height: '100%', overflow: 'hidden' }}>
       <Chapter1 history={history} pageIndex={1} activeIndex={activeIndex}></Chapter1>
       <Chapter2 history={history} pageIndex={2} activeIndex={activeIndex}></Chapter2>
       <Chapter3 history={history} pageIndex={3} activeIndex={activeIndex}></Chapter3>

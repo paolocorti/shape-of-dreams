@@ -22,7 +22,7 @@ const Chapter1 = ({ history, activeIndex, pageIndex }) => {
         > */}
       <React.Fragment>
         {context.selectedView === 'read' && <Content1 history={history} />}
-        {context.selectedView === 'explore' && <Explore1 activeIndex={activeIndex} />}
+        {context.selectedView === 'explore' && <Explore1 activeIndex={activeIndex} history={history} />}
       </React.Fragment>
       {/* </CSSTransition>
       </TransitionGroup> */}

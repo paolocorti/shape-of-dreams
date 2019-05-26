@@ -13,7 +13,7 @@ const Landing = ({ history }) => {
       setBlur(true);
     }, 500);
     setTimeout(() => {
-      history.push(`/chapter1`);
+      history.push(`/chapter1?section=read`);
     }, 1500);
   };
 
@@ -49,7 +49,7 @@ const Landing = ({ history }) => {
         </div>
       </div>
       <div className='landing-footer w-100 tc'>
-        <img className='pointer absolute pulse' onClick={goToChapter1} src={'images/down-arrow-white.svg'} width={35} style={{ top: '0px' }}/>
+        <img className='pointer absolute pulse' onClick={goToChapter1} src={'images/down-arrow-white.svg'} width={35} style={{ top: '0px' }} />
       </div>
     </div>
   );

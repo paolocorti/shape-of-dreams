@@ -6,12 +6,12 @@ import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import Trend from '../Trend';
 import categories from '../data/categories.json';
-import GaussianTrend from '../GaussianTrend';
 import { years } from '../constants';
 import TopicSelector from '../components/TopicSelector.js';
 import { isMobile } from 'react-device-detect';
+import NavigationBar from '../components/NavigationBar';
 
-const Explore3 = ({ history }) => {
+const Explore3 = ({ history, activeIndex }) => {
   // const yearData = interestOverTime.filter(d =>
   //   d.formattedTime.includes('2018')
   // );
@@ -45,6 +45,11 @@ const Explore3 = ({ history }) => {
 
   return (
     <div className='explore3' style={{ paddingTop: isMobile ? 0 : 60 }}>
+      {
+        !isMobile && (
+          <NavigationBar history={history} activeIndex={activeIndex} />
+        )
+      }
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
           className='w-100 ph4 flex flex-column justify-center items-center ios-fix'

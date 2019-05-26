@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
+import { isMobile } from 'react-device-detect';
 import categories from '../data/categories.json';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import Network from '../Network';
 import { years } from '../constants';
+import NavigationBar from '../components/NavigationBar';
 
-const Explore4 = ({ history }) => {
+const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
 
@@ -24,6 +26,11 @@ const Explore4 = ({ history }) => {
 
   return (
     <div className='explore4'>
+      {
+        !isMobile && (
+          <NavigationBar history={history} activeIndex={activeIndex} />
+        )
+      }
       <div className='w-100 h-100 relative'>
         <div className='w-100 ph4' style={{ height: '80px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 4</h4> */}

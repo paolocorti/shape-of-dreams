@@ -12,10 +12,40 @@
     "value": 200
   },
   {
-    "subject": "your teeth falling out",
+    "subject": "water",
     "language": "EN",
     "year": 2008,
-    "value": 200
+    "value": 140
+  },
+  {
+    "subject": "fire",
+    "language": "EN",
+    "year": 2008,
+    "value": 120
+  },
+  {
+    "subject": "spiders",
+    "language": "EN",
+    "year": 2008,
+    "value": 60
+  },
+  {
+    "subject": "an ex",
+    "language": "EN",
+    "year": 2008,
+    "value": 50
+  },
+  {
+    "subject": "being pregnant",
+    "language": "EN",
+    "year": 2008,
+    "value": 50
+  },
+  {
+    "subject": "someone",
+    "language": "EN",
+    "year": 2008,
+    "value": 40
   },
   {
     "subject": "cockroaches",
@@ -36,13 +66,7 @@
     "value": 29550
   },
   {
-    "subject": "children",
-    "language": "ES",
-    "year": 2008,
-    "value": 14750
-  },
-  {
-    "subject": "vipers",
+    "subject": "snakes",
     "language": "ES",
     "year": 2008,
     "value": 11050
@@ -60,12 +84,6 @@
     "value": 170
   },
   {
-    "subject": "snakes",
-    "language": "ES",
-    "year": 2008,
-    "value": 150
-  },
-  {
     "subject": "water",
     "language": "ES",
     "year": 2008,
@@ -76,12 +94,6 @@
     "language": "ES",
     "year": 2008,
     "value": 110
-  },
-  {
-    "subject": "rats",
-    "language": "ES",
-    "year": 2008,
-    "value": 100
   },
   {
     "subject": "lions",
@@ -100,12 +112,6 @@
     "language": "ES",
     "year": 2008,
     "value": 70
-  },
-  {
-    "subject": "lice",
-    "language": "ES",
-    "year": 2008,
-    "value": 60
   },
   {
     "subject": "cats",
@@ -198,13 +204,13 @@
     "value": 91000
   },
   {
-    "subject": "being pregnant",
+    "subject": "flying",
     "language": "EN",
     "year": 2009,
     "value": 61400
   },
   {
-    "subject": "flying",
+    "subject": "being pregnant",
     "language": "EN",
     "year": 2009,
     "value": 49550
@@ -228,22 +234,10 @@
     "value": 12900
   },
   {
-    "subject": "someone",
-    "language": "EN",
-    "year": 2009,
-    "value": 1350
-  },
-  {
     "subject": "falling",
     "language": "EN",
     "year": 2009,
     "value": 200
-  },
-  {
-    "subject": "teeth",
-    "language": "EN",
-    "year": 2009,
-    "value": 170
   },
   {
     "subject": "tornado",
@@ -252,16 +246,22 @@
     "value": 160
   },
   {
-    "subject": "your ex boyfriend",
+    "subject": "money",
     "language": "EN",
     "year": 2009,
-    "value": 130
+    "value": 140
   },
   {
-    "subject": "my ex",
+    "subject": "worms",
     "language": "EN",
     "year": 2009,
     "value": 70
+  },
+  {
+    "subject": "cats",
+    "language": "EN",
+    "year": 2009,
+    "value": 50
   },
   {
     "subject": "someone",
@@ -366,25 +366,19 @@
     "value": 4600
   },
   {
-    "subject": "vipers",
+    "subject": "snakes",
     "language": "ES",
     "year": 2009,
     "value": 700
   },
   {
-    "subject": "marriage",
+    "subject": "wedding",
     "language": "ES",
     "year": 2009,
     "value": 600
   },
   {
     "subject": "rain",
-    "language": "ES",
-    "year": 2009,
-    "value": 500
-  },
-  {
-    "subject": "sex",
     "language": "ES",
     "year": 2009,
     "value": 500
@@ -408,22 +402,10 @@
     "value": 350
   },
   {
-    "subject": "rats",
-    "language": "ES",
-    "year": 2009,
-    "value": 300
-  },
-  {
     "subject": "your ex boyfriend",
     "language": "ES",
     "year": 2009,
     "value": 300
-  },
-  {
-    "subject": "snakes",
-    "language": "ES",
-    "year": 2009,
-    "value": 250
   },
   {
     "subject": "toads",
@@ -438,43 +420,13 @@
     "value": 200
   },
   {
-    "subject": "wedding",
-    "language": "ES",
-    "year": 2009,
-    "value": 200
-  },
-  {
     "subject": "fire",
     "language": "ES",
     "year": 2009,
     "value": 160
   },
   {
-    "subject": "newborn baby",
-    "language": "ES",
-    "year": 2009,
-    "value": 140
-  },
-  {
-    "subject": "a baby",
-    "language": "ES",
-    "year": 2009,
-    "value": 120
-  },
-  {
     "subject": "money",
-    "language": "ES",
-    "year": 2009,
-    "value": 100
-  },
-  {
-    "subject": "teeth",
-    "language": "ES",
-    "year": 2009,
-    "value": 100
-  },
-  {
-    "subject": "tooth falling",
     "language": "ES",
     "year": 2009,
     "value": 100
@@ -486,13 +438,7 @@
     "value": 90
   },
   {
-    "subject": "theft",
-    "language": "ES",
-    "year": 2009,
-    "value": 80
-  },
-  {
-    "subject": "teeth",
+    "subject": "losing teeth",
     "language": "FR",
     "year": 2009,
     "value": 400
@@ -502,12 +448,6 @@
     "language": "FR",
     "year": 2009,
     "value": 200
-  },
-  {
-    "subject": "losing teeth",
-    "language": "FR",
-    "year": 2009,
-    "value": 160
   },
   {
     "subject": "your ex",
@@ -594,7 +534,7 @@
     "value": 200
   },
   {
-    "subject": "tooth",
+    "subject": "teeth",
     "language": "PO",
     "year": 2009,
     "value": 170
@@ -612,18 +552,6 @@
     "value": 150
   },
   {
-    "subject": "mouse",
-    "language": "PO",
-    "year": 2009,
-    "value": 130
-  },
-  {
-    "subject": "treachery",
-    "language": "PO",
-    "year": 2009,
-    "value": 130
-  },
-  {
     "subject": "home",
     "language": "PO",
     "year": 2009,
@@ -636,22 +564,10 @@
     "value": 100
   },
   {
-    "subject": "betrayal",
-    "language": "PO",
-    "year": 2009,
-    "value": 70
-  },
-  {
     "subject": "frog",
     "language": "PO",
     "year": 2009,
     "value": 70
-  },
-  {
-    "subject": "teeth",
-    "language": "PO",
-    "year": 2009,
-    "value": 60
   },
   {
     "subject": "alligator",
@@ -684,34 +600,16 @@
     "value": 77900
   },
   {
-    "subject": "being pregnant",
-    "language": "EN",
-    "year": 2010,
-    "value": 71200
-  },
-  {
-    "subject": "someone",
-    "language": "EN",
-    "year": 2010,
-    "value": 44650
-  },
-  {
     "subject": "flying",
     "language": "EN",
     "year": 2010,
     "value": 35700
   },
   {
-    "subject": "your teeth falling out",
+    "subject": "losing teeth",
     "language": "EN",
     "year": 2010,
     "value": 30250
-  },
-  {
-    "subject": "snakes",
-    "language": "EN",
-    "year": 2010,
-    "value": 22650
   },
   {
     "subject": "zombies",
@@ -720,16 +618,22 @@
     "value": 22650
   },
   {
+    "subject": "snakes",
+    "language": "EN",
+    "year": 2010,
+    "value": 22640
+  },
+  {
+    "subject": "your ex",
+    "language": "EN",
+    "year": 2010,
+    "value": 22640
+  },
+  {
     "subject": "cheating",
     "language": "EN",
     "year": 2010,
     "value": 19450
-  },
-  {
-    "subject": "losing teeth",
-    "language": "EN",
-    "year": 2010,
-    "value": 18850
   },
   {
     "subject": "rats",
@@ -747,7 +651,13 @@
     "subject": "spiders",
     "language": "EN",
     "year": 2010,
-    "value": 8400
+    "value": 12950
+  },
+  {
+    "subject": "someone constantly",
+    "language": "EN",
+    "year": 2010,
+    "value": 7300
   },
   {
     "subject": "fish",
@@ -768,7 +678,7 @@
     "value": 250
   },
   {
-    "subject": "end of the world",
+    "subject": "the end of the world",
     "language": "EN",
     "year": 2010,
     "value": 200
@@ -786,19 +696,25 @@
     "value": 180
   },
   {
-    "subject": "your ex",
+    "subject": "skarks",
     "language": "EN",
     "year": 2010,
-    "value": 150
+    "value": 130
   },
   {
-    "subject": "a spider",
+    "subject": "teeth falling out",
     "language": "EN",
     "year": 2010,
-    "value": 50
+    "value": 130
   },
   {
-    "subject": "fish",
+    "subject": "fire",
+    "language": "EN",
+    "year": 2010,
+    "value": 110
+  },
+  {
+    "subject": "fishes",
     "language": "ES",
     "year": 2010,
     "value": 45900
@@ -838,12 +754,6 @@
     "language": "ES",
     "year": 2010,
     "value": 16500
-  },
-  {
-    "subject": "a tiger",
-    "language": "ES",
-    "year": 2010,
-    "value": 15450
   },
   {
     "subject": "a mouse",
@@ -900,12 +810,6 @@
     "value": 9250
   },
   {
-    "subject": "babies",
-    "language": "ES",
-    "year": 2010,
-    "value": 9000
-  },
-  {
     "subject": "bats",
     "language": "ES",
     "year": 2010,
@@ -930,16 +834,10 @@
     "value": 6150
   },
   {
-    "subject": "earthworms",
+    "subject": "worms",
     "language": "ES",
     "year": 2010,
     "value": 6150
-  },
-  {
-    "subject": "gray rats",
-    "language": "ES",
-    "year": 2010,
-    "value": 6000
   },
   {
     "subject": "black cats",
@@ -972,12 +870,6 @@
     "value": 300
   },
   {
-    "subject": "toads",
-    "language": "ES",
-    "year": 2010,
-    "value": 300
-  },
-  {
     "subject": "crocodiles",
     "language": "ES",
     "year": 2010,
@@ -996,28 +888,10 @@
     "value": 200
   },
   {
-    "subject": "the dead",
+    "subject": "someone who passed away",
     "language": "ES",
     "year": 2010,
     "value": 200
-  },
-  {
-    "subject": "the quiniela",
-    "language": "ES",
-    "year": 2010,
-    "value": 200
-  },
-  {
-    "subject": "marriage",
-    "language": "ES",
-    "year": 2010,
-    "value": 190
-  },
-  {
-    "subject": "pregnancy",
-    "language": "ES",
-    "year": 2010,
-    "value": 170
   },
   {
     "subject": "the sea",
@@ -1032,19 +906,7 @@
     "value": 110
   },
   {
-    "subject": "dogs",
-    "language": "ES",
-    "year": 2010,
-    "value": 110
-  },
-  {
     "subject": "horses",
-    "language": "ES",
-    "year": 2010,
-    "value": 90
-  },
-  {
-    "subject": "worms",
     "language": "ES",
     "year": 2010,
     "value": 90
@@ -1056,19 +918,13 @@
     "value": 80
   },
   {
-    "subject": "newborn baby",
-    "language": "ES",
-    "year": 2010,
-    "value": 80
-  },
-  {
     "subject": "someone",
     "language": "ES",
     "year": 2010,
     "value": 50
   },
   {
-    "subject": "snake",
+    "subject": "snakes",
     "language": "FR",
     "year": 2010,
     "value": 41500
@@ -1128,25 +984,13 @@
     "value": 40
   },
   {
-    "subject": "pregnancy",
-    "language": "FR",
-    "year": 2010,
-    "value": 40
-  },
-  {
-    "subject": "teeth",
-    "language": "FR",
-    "year": 2010,
-    "value": 40
-  },
-  {
     "subject": "the end of the world",
     "language": "FR",
     "year": 2010,
     "value": 40
   },
   {
-    "subject": "snake",
+    "subject": "snakes",
     "language": "JP",
     "year": 2010,
     "value": 63600
@@ -1206,7 +1050,7 @@
     "value": 13200
   },
   {
-    "subject": "people who had died",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2010,
     "value": 13000
@@ -1278,12 +1122,6 @@
     "value": 250
   },
   {
-    "subject": "fighting",
-    "language": "PO",
-    "year": 2010,
-    "value": 250
-  },
-  {
     "subject": "spider",
     "language": "PO",
     "year": 2010,
@@ -1314,25 +1152,7 @@
     "value": 160
   },
   {
-    "subject": "baby",
-    "language": "PO",
-    "year": 2010,
-    "value": 150
-  },
-  {
     "subject": "cemetery",
-    "language": "PO",
-    "year": 2010,
-    "value": 140
-  },
-  {
-    "subject": "frog",
-    "language": "PO",
-    "year": 2010,
-    "value": 140
-  },
-  {
-    "subject": "teeth",
     "language": "PO",
     "year": 2010,
     "value": 140
@@ -1360,12 +1180,6 @@
     "language": "PO",
     "year": 2010,
     "value": 130
-  },
-  {
-    "subject": "cat",
-    "language": "PO",
-    "year": 2010,
-    "value": 120
   },
   {
     "subject": "meat",
@@ -1402,24 +1216,6 @@
     "language": "PO",
     "year": 2010,
     "value": 100
-  },
-  {
-    "subject": "treason",
-    "language": "PO",
-    "year": 2010,
-    "value": 100
-  },
-  {
-    "subject": "a spider",
-    "language": "PO",
-    "year": 2010,
-    "value": 90
-  },
-  {
-    "subject": "mice",
-    "language": "PO",
-    "year": 2010,
-    "value": 70
   },
   {
     "subject": "pig",
@@ -1476,7 +1272,7 @@
     "value": 16000
   },
   {
-    "subject": "rat",
+    "subject": "mouse",
     "language": "RU",
     "year": 2010,
     "value": 15900
@@ -1554,22 +1350,16 @@
     "value": 14800
   },
   {
-    "subject": "babies",
-    "language": "EN",
-    "year": 2011,
-    "value": 14200
-  },
-  {
     "subject": "sharks",
     "language": "EN",
     "year": 2011,
     "value": 12900
   },
   {
-    "subject": "losing teeth",
+    "subject": "my ex",
     "language": "EN",
     "year": 2011,
-    "value": 12500
+    "value": 11350
   },
   {
     "subject": "your boyfriend cheating on you",
@@ -1584,7 +1374,13 @@
     "value": 6200
   },
   {
-    "subject": "deceased person",
+    "subject": "snakes",
+    "language": "EN",
+    "year": 2011,
+    "value": 4500
+  },
+  {
+    "subject": "someone who passed away",
     "language": "EN",
     "year": 2011,
     "value": 4300
@@ -1608,28 +1404,28 @@
     "value": 400
   },
   {
+    "subject": "monkeys",
+    "language": "EN",
+    "year": 2011,
+    "value": 300
+  },
+  {
     "subject": "someone",
     "language": "EN",
     "year": 2011,
     "value": 300
   },
   {
+    "subject": "bears",
+    "language": "EN",
+    "year": 2011,
+    "value": 250
+  },
+  {
     "subject": "money",
     "language": "EN",
     "year": 2011,
     "value": 250
-  },
-  {
-    "subject": "snakes",
-    "language": "EN",
-    "year": 2011,
-    "value": 250
-  },
-  {
-    "subject": "an ex",
-    "language": "EN",
-    "year": 2011,
-    "value": 200
   },
   {
     "subject": "falling",
@@ -1656,10 +1452,34 @@
     "value": 180
   },
   {
+    "subject": "fighting",
+    "language": "EN",
+    "year": 2011,
+    "value": 160
+  },
+  {
+    "subject": "bugs",
+    "language": "EN",
+    "year": 2011,
+    "value": 150
+  },
+  {
     "subject": "crocodile",
     "language": "EN",
     "year": 2011,
     "value": 150
+  },
+  {
+    "subject": "zombies",
+    "language": "EN",
+    "year": 2011,
+    "value": 150
+  },
+  {
+    "subject": "someone constantly",
+    "language": "EN",
+    "year": 2011,
+    "value": 130
   },
   {
     "subject": "tattoo",
@@ -1692,24 +1512,6 @@
     "value": 80
   },
   {
-    "subject": "pregnancy",
-    "language": "EN",
-    "year": 2011,
-    "value": 80
-  },
-  {
-    "subject": "snake bite",
-    "language": "EN",
-    "year": 2011,
-    "value": 80
-  },
-  {
-    "subject": "cheating",
-    "language": "EN",
-    "year": 2011,
-    "value": 70
-  },
-  {
     "subject": "fire",
     "language": "EN",
     "year": 2011,
@@ -1740,13 +1542,13 @@
     "value": 10500
   },
   {
-    "subject": "your hair is cut",
+    "subject": "tsunami",
     "language": "ES",
     "year": 2011,
     "value": 8750
   },
   {
-    "subject": "tsunami",
+    "subject": "your hair is cut",
     "language": "ES",
     "year": 2011,
     "value": 8650
@@ -1770,19 +1572,13 @@
     "value": 3400
   },
   {
-    "subject": "your boyfriend is cheating you",
-    "language": "ES",
-    "year": 2011,
-    "value": 3400
-  },
-  {
     "subject": "demons",
     "language": "ES",
     "year": 2011,
     "value": 550
   },
   {
-    "subject": "tarantulas",
+    "subject": "spiders",
     "language": "ES",
     "year": 2011,
     "value": 500
@@ -1848,12 +1644,6 @@
     "value": 200
   },
   {
-    "subject": "rats",
-    "language": "ES",
-    "year": 2011,
-    "value": 200
-  },
-  {
     "subject": "fleas",
     "language": "ES",
     "year": 2011,
@@ -1873,12 +1663,6 @@
   },
   {
     "subject": "hair",
-    "language": "ES",
-    "year": 2011,
-    "value": 150
-  },
-  {
-    "subject": "spiders",
     "language": "ES",
     "year": 2011,
     "value": 150
@@ -1950,7 +1734,7 @@
     "value": 5350
   },
   {
-    "subject": "fish",
+    "subject": "fishes",
     "language": "FR",
     "year": 2011,
     "value": 200
@@ -2034,7 +1818,7 @@
     "value": 65000
   },
   {
-    "subject": "butterfly ?",
+    "subject": "butterfly",
     "language": "JP",
     "year": 2011,
     "value": 21650
@@ -2082,19 +1866,7 @@
     "value": 450
   },
   {
-    "subject": "green snake",
-    "language": "PO",
-    "year": 2011,
-    "value": 350
-  },
-  {
     "subject": "stairs",
-    "language": "PO",
-    "year": 2011,
-    "value": 350
-  },
-  {
-    "subject": "tooth",
     "language": "PO",
     "year": 2011,
     "value": 350
@@ -2142,12 +1914,6 @@
     "value": 200
   },
   {
-    "subject": "frogs",
-    "language": "PO",
-    "year": 2011,
-    "value": 200
-  },
-  {
     "subject": "horse",
     "language": "PO",
     "year": 2011,
@@ -2167,12 +1933,6 @@
   },
   {
     "subject": "ant",
-    "language": "PO",
-    "year": 2011,
-    "value": 190
-  },
-  {
-    "subject": "cell phone",
     "language": "PO",
     "year": 2011,
     "value": 190
@@ -2232,12 +1992,6 @@
     "value": 140
   },
   {
-    "subject": "black snake",
-    "language": "PO",
-    "year": 2011,
-    "value": 120
-  },
-  {
     "subject": "elephant",
     "language": "PO",
     "year": 2011,
@@ -2256,7 +2010,7 @@
     "value": 110
   },
   {
-    "subject": "treachery",
+    "subject": "cheating",
     "language": "PO",
     "year": 2011,
     "value": 100
@@ -2418,7 +2172,7 @@
     "value": 40
   },
   {
-    "subject": "fish",
+    "subject": "fishes",
     "language": "EN",
     "year": 2012,
     "value": 15250
@@ -2442,6 +2196,12 @@
     "value": 11950
   },
   {
+    "subject": "rabbits",
+    "language": "EN",
+    "year": 2012,
+    "value": 9900
+  },
+  {
     "subject": "lions",
     "language": "EN",
     "year": 2012,
@@ -2458,12 +2218,6 @@
     "language": "EN",
     "year": 2012,
     "value": 4700
-  },
-  {
-    "subject": "teeth falling out",
-    "language": "EN",
-    "year": 2012,
-    "value": 3950
   },
   {
     "subject": "owls",
@@ -2496,7 +2250,7 @@
     "value": 600
   },
   {
-    "subject": "end of the world",
+    "subject": "the end of the world",
     "language": "EN",
     "year": 2012,
     "value": 550
@@ -2520,22 +2274,10 @@
     "value": 450
   },
   {
-    "subject": "my crush",
-    "language": "EN",
-    "year": 2012,
-    "value": 400
-  },
-  {
     "subject": "your ex",
     "language": "EN",
     "year": 2012,
     "value": 400
-  },
-  {
-    "subject": "having a baby",
-    "language": "EN",
-    "year": 2012,
-    "value": 350
   },
   {
     "subject": "the same person every night",
@@ -2550,13 +2292,19 @@
     "value": 300
   },
   {
-    "subject": "dead person",
+    "subject": "frogs",
     "language": "EN",
     "year": 2012,
     "value": 300
   },
   {
-    "subject": "frogs",
+    "subject": "someone who passed away",
+    "language": "EN",
+    "year": 2012,
+    "value": 300
+  },
+  {
+    "subject": "whales",
     "language": "EN",
     "year": 2012,
     "value": 300
@@ -2592,10 +2340,16 @@
     "value": 190
   },
   {
-    "subject": "having a baby girl",
+    "subject": "someone constantly",
     "language": "EN",
     "year": 2012,
-    "value": 160
+    "value": 180
+  },
+  {
+    "subject": "food",
+    "language": "EN",
+    "year": 2012,
+    "value": 170
   },
   {
     "subject": "train",
@@ -2610,7 +2364,67 @@
     "value": 150
   },
   {
+    "subject": "my ex boyfriend",
+    "language": "EN",
+    "year": 2012,
+    "value": 150
+  },
+  {
+    "subject": "someone",
+    "language": "EN",
+    "year": 2012,
+    "value": 150
+  },
+  {
+    "subject": "another man",
+    "language": "EN",
+    "year": 2012,
+    "value": 130
+  },
+  {
+    "subject": "cheating",
+    "language": "EN",
+    "year": 2012,
+    "value": 130
+  },
+  {
+    "subject": "swimming",
+    "language": "EN",
+    "year": 2012,
+    "value": 130
+  },
+  {
+    "subject": "water",
+    "language": "EN",
+    "year": 2012,
+    "value": 130
+  },
+  {
+    "subject": "bears",
+    "language": "EN",
+    "year": 2012,
+    "value": 120
+  },
+  {
+    "subject": "shoes",
+    "language": "EN",
+    "year": 2012,
+    "value": 120
+  },
+  {
     "subject": "boat",
+    "language": "EN",
+    "year": 2012,
+    "value": 110
+  },
+  {
+    "subject": "him",
+    "language": "EN",
+    "year": 2012,
+    "value": 110
+  },
+  {
+    "subject": "scorpions",
     "language": "EN",
     "year": 2012,
     "value": 110
@@ -2623,12 +2437,6 @@
   },
   {
     "subject": "elephant",
-    "language": "EN",
-    "year": 2012,
-    "value": 100
-  },
-  {
-    "subject": "money",
     "language": "EN",
     "year": 2012,
     "value": 100
@@ -2650,12 +2458,6 @@
     "language": "EN",
     "year": 2012,
     "value": 70
-  },
-  {
-    "subject": "water",
-    "language": "EN",
-    "year": 2012,
-    "value": 50
   },
   {
     "subject": "your boyfriend",
@@ -2688,7 +2490,7 @@
     "value": 550
   },
   {
-    "subject": "viper",
+    "subject": "snakes",
     "language": "ES",
     "year": 2012,
     "value": 450
@@ -2730,7 +2532,7 @@
     "value": 250
   },
   {
-    "subject": "a person",
+    "subject": "someone",
     "language": "ES",
     "year": 2012,
     "value": 200
@@ -2740,12 +2542,6 @@
     "language": "ES",
     "year": 2012,
     "value": 200
-  },
-  {
-    "subject": "a baby",
-    "language": "ES",
-    "year": 2012,
-    "value": 190
   },
   {
     "subject": "worms",
@@ -2778,13 +2574,13 @@
     "value": 160
   },
   {
-    "subject": "a dead person",
+    "subject": "egg",
     "language": "ES",
     "year": 2012,
     "value": 150
   },
   {
-    "subject": "egg",
+    "subject": "someone who passed away",
     "language": "ES",
     "year": 2012,
     "value": 150
@@ -2802,22 +2598,10 @@
     "value": 140
   },
   {
-    "subject": "dead people",
-    "language": "ES",
-    "year": 2012,
-    "value": 140
-  },
-  {
     "subject": "snow",
     "language": "ES",
     "year": 2012,
     "value": 140
-  },
-  {
-    "subject": "ex boyfriend",
-    "language": "ES",
-    "year": 2012,
-    "value": 130
   },
   {
     "subject": "falling hair",
@@ -2827,12 +2611,6 @@
   },
   {
     "subject": "lions",
-    "language": "ES",
-    "year": 2012,
-    "value": 130
-  },
-  {
-    "subject": "snakes",
     "language": "ES",
     "year": 2012,
     "value": 130
@@ -2934,7 +2712,7 @@
     "value": 90
   },
   {
-    "subject": "a person who has already died",
+    "subject": "someone who passed away",
     "language": "ES",
     "year": 2012,
     "value": 90
@@ -2958,19 +2736,7 @@
     "value": 90
   },
   {
-    "subject": "a viper",
-    "language": "ES",
-    "year": 2012,
-    "value": 80
-  },
-  {
     "subject": "airplanes",
-    "language": "ES",
-    "year": 2012,
-    "value": 80
-  },
-  {
-    "subject": "pregnant woman",
     "language": "ES",
     "year": 2012,
     "value": 80
@@ -2986,12 +2752,6 @@
     "language": "ES",
     "year": 2012,
     "value": 60
-  },
-  {
-    "subject": "your ex boyfriend",
-    "language": "ES",
-    "year": 2012,
-    "value": 40
   },
   {
     "subject": "shark",
@@ -3066,12 +2826,6 @@
     "value": 250
   },
   {
-    "subject": "drowing",
-    "language": "FR",
-    "year": 2012,
-    "value": 200
-  },
-  {
     "subject": "wolf",
     "language": "FR",
     "year": 2012,
@@ -3102,7 +2856,7 @@
     "value": 71150
   },
   {
-    "subject": "bad dream",
+    "subject": "scary dream",
     "language": "JP",
     "year": 2012,
     "value": 38500
@@ -3114,13 +2868,13 @@
     "value": 19050
   },
   {
-    "subject": "monkey",
+    "subject": "earthquake",
     "language": "JP",
     "year": 2012,
     "value": 350
   },
   {
-    "subject": "earthquake",
+    "subject": "monkey",
     "language": "JP",
     "year": 2012,
     "value": 250
@@ -3148,12 +2902,6 @@
     "language": "JP",
     "year": 2012,
     "value": 120
-  },
-  {
-    "subject": "scary dream",
-    "language": "JP",
-    "year": 2012,
-    "value": 90
   },
   {
     "subject": "tsunami",
@@ -3186,13 +2934,13 @@
     "value": 19250
   },
   {
-    "subject": "dead person",
+    "subject": "crying",
     "language": "PO",
     "year": 2012,
     "value": 19150
   },
   {
-    "subject": "crying",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2012,
     "value": 16150
@@ -3210,7 +2958,7 @@
     "value": 13200
   },
   {
-    "subject": "a dead person",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2012,
     "value": 12900
@@ -3324,18 +3072,6 @@
     "value": 300
   },
   {
-    "subject": "dead people",
-    "language": "PO",
-    "year": 2012,
-    "value": 300
-  },
-  {
-    "subject": "mice",
-    "language": "PO",
-    "year": 2012,
-    "value": 300
-  },
-  {
     "subject": "watermelon",
     "language": "PO",
     "year": 2012,
@@ -3348,22 +3084,16 @@
     "value": 250
   },
   {
+    "subject": "being pregnant",
+    "language": "PO",
+    "year": 2012,
+    "value": 250
+  },
+  {
     "subject": "chicken",
     "language": "PO",
     "year": 2012,
     "value": 250
-  },
-  {
-    "subject": "pregnancy",
-    "language": "PO",
-    "year": 2012,
-    "value": 250
-  },
-  {
-    "subject": "green snake",
-    "language": "PO",
-    "year": 2012,
-    "value": 200
   },
   {
     "subject": "treachery",
@@ -3378,7 +3108,7 @@
     "value": 180
   },
   {
-    "subject": "coins",
+    "subject": "money",
     "language": "PO",
     "year": 2012,
     "value": 170
@@ -3396,34 +3126,16 @@
     "value": 160
   },
   {
-    "subject": "ex girlfriend",
-    "language": "PO",
-    "year": 2012,
-    "value": 150
-  },
-  {
     "subject": "falling tooth",
     "language": "PO",
     "year": 2012,
     "value": 150
   },
   {
-    "subject": "being pregnant",
-    "language": "PO",
-    "year": 2012,
-    "value": 140
-  },
-  {
     "subject": "nails",
     "language": "PO",
     "year": 2012,
     "value": 140
-  },
-  {
-    "subject": "a pregnant woman",
-    "language": "PO",
-    "year": 2012,
-    "value": 130
   },
   {
     "subject": "cemetery",
@@ -3480,28 +3192,10 @@
     "value": 100
   },
   {
-    "subject": "ex boyfriend",
-    "language": "PO",
-    "year": 2012,
-    "value": 100
-  },
-  {
-    "subject": "hair",
-    "language": "PO",
-    "year": 2012,
-    "value": 100
-  },
-  {
     "subject": "bees",
     "language": "PO",
     "year": 2012,
     "value": 90
-  },
-  {
-    "subject": "money",
-    "language": "PO",
-    "year": 2012,
-    "value": 80
   },
   {
     "subject": "travelling",
@@ -3516,19 +3210,13 @@
     "value": 70
   },
   {
-    "subject": "a person",
-    "language": "PO",
-    "year": 2012,
-    "value": 60
-  },
-  {
     "subject": "boyfriend",
     "language": "PO",
     "year": 2012,
     "value": 60
   },
   {
-    "subject": "mouse",
+    "subject": "someone",
     "language": "PO",
     "year": 2012,
     "value": 60
@@ -3636,12 +3324,6 @@
     "value": 5100
   },
   {
-    "subject": "having a baby",
-    "language": "RU",
-    "year": 2012,
-    "value": 5100
-  },
-  {
     "subject": "milk",
     "language": "RU",
     "year": 2012,
@@ -3688,6 +3370,12 @@
     "language": "RU",
     "year": 2012,
     "value": 400
+  },
+  {
+    "subject": "",
+    "language": "",
+    "year": 2012,
+    "value": ""
   },
   {
     "subject": "dog",
@@ -3792,25 +3480,19 @@
     "value": 350
   },
   {
-    "subject": "a snake biting you",
-    "language": "EN",
-    "year": 2013,
-    "value": 300
-  },
-  {
     "subject": "crying",
     "language": "EN",
     "year": 2013,
     "value": 250
   },
   {
-    "subject": "deceased people",
+    "subject": "flying",
     "language": "EN",
     "year": 2013,
     "value": 250
   },
   {
-    "subject": "flying",
+    "subject": "someone who passed away",
     "language": "EN",
     "year": 2013,
     "value": 250
@@ -3852,16 +3534,28 @@
     "value": 170
   },
   {
+    "subject": "owls",
+    "language": "EN",
+    "year": 2013,
+    "value": 160
+  },
+  {
     "subject": "spiders",
     "language": "EN",
     "year": 2013,
     "value": 160
   },
   {
-    "subject": "alligator",
+    "subject": "kissing someone",
     "language": "EN",
     "year": 2013,
     "value": 150
+  },
+  {
+    "subject": "a bear",
+    "language": "EN",
+    "year": 2013,
+    "value": 140
   },
   {
     "subject": "cats",
@@ -3870,7 +3564,7 @@
     "value": 140
   },
   {
-    "subject": "having a baby",
+    "subject": "someone constantly",
     "language": "EN",
     "year": 2013,
     "value": 120
@@ -3894,6 +3588,12 @@
     "value": 100
   },
   {
+    "subject": "your ex",
+    "language": "EN",
+    "year": 2013,
+    "value": 100
+  },
+  {
     "subject": "being chased",
     "language": "EN",
     "year": 2013,
@@ -3910,6 +3610,18 @@
     "language": "EN",
     "year": 2013,
     "value": 80
+  },
+  {
+    "subject": "snow",
+    "language": "EN",
+    "year": 2013,
+    "value": 80
+  },
+  {
+    "subject": "bees",
+    "language": "EN",
+    "year": 2013,
+    "value": 70
   },
   {
     "subject": "money",
@@ -3936,31 +3648,19 @@
     "value": 70
   },
   {
-    "subject": "you had a baby",
-    "language": "EN",
-    "year": 2013,
-    "value": 70
-  },
-  {
     "subject": "fire",
     "language": "EN",
     "year": 2013,
     "value": 60
   },
   {
-    "subject": "bad dreams",
+    "subject": "baby",
     "language": "EN",
     "year": 2013,
     "value": 50
   },
   {
     "subject": "crow",
-    "language": "EN",
-    "year": 2013,
-    "value": 50
-  },
-  {
-    "subject": "kitten",
     "language": "EN",
     "year": 2013,
     "value": 50
@@ -3978,7 +3678,7 @@
     "value": 40150
   },
   {
-    "subject": "viper",
+    "subject": "snakes",
     "language": "ES",
     "year": 2013,
     "value": 8000
@@ -4008,7 +3708,7 @@
     "value": 1700
   },
   {
-    "subject": "lice on my head",
+    "subject": "lice",
     "language": "ES",
     "year": 2013,
     "value": 1700
@@ -4044,13 +3744,13 @@
     "value": 250
   },
   {
-    "subject": "big spiders",
+    "subject": "scorpions",
     "language": "ES",
     "year": 2013,
     "value": 200
   },
   {
-    "subject": "scorpions",
+    "subject": "spiders",
     "language": "ES",
     "year": 2013,
     "value": 200
@@ -4075,12 +3775,6 @@
   },
   {
     "subject": "grapes",
-    "language": "ES",
-    "year": 2013,
-    "value": 170
-  },
-  {
-    "subject": "infidelity",
     "language": "ES",
     "year": 2013,
     "value": 170
@@ -4140,19 +3834,7 @@
     "value": 90
   },
   {
-    "subject": "a dead person",
-    "language": "ES",
-    "year": 2013,
-    "value": 80
-  },
-  {
     "subject": "a newbown baby",
-    "language": "ES",
-    "year": 2013,
-    "value": 80
-  },
-  {
-    "subject": "clear water",
     "language": "ES",
     "year": 2013,
     "value": 80
@@ -4170,7 +3852,7 @@
     "value": 80
   },
   {
-    "subject": "spiders",
+    "subject": "someone who passed away",
     "language": "ES",
     "year": 2013,
     "value": 80
@@ -4224,12 +3906,6 @@
     "value": 60
   },
   {
-    "subject": "tooth falling",
-    "language": "ES",
-    "year": 2013,
-    "value": 60
-  },
-  {
     "subject": "white flowers",
     "language": "ES",
     "year": 2013,
@@ -4266,19 +3942,7 @@
     "value": 50
   },
   {
-    "subject": "head lice",
-    "language": "ES",
-    "year": 2013,
-    "value": 50
-  },
-  {
-    "subject": "snake",
-    "language": "ES",
-    "year": 2013,
-    "value": 50
-  },
-  {
-    "subject": "teeth",
+    "subject": "lice",
     "language": "ES",
     "year": 2013,
     "value": 50
@@ -4294,12 +3958,6 @@
     "language": "ES",
     "year": 2013,
     "value": 50
-  },
-  {
-    "subject": "a lot of water",
-    "language": "ES",
-    "year": 2013,
-    "value": 40
   },
   {
     "subject": "an exorcism",
@@ -4482,7 +4140,7 @@
     "value": 7900
   },
   {
-    "subject": "butterfly ?",
+    "subject": "butterfly",
     "language": "JP",
     "year": 2013,
     "value": 200
@@ -4578,7 +4236,7 @@
     "value": 9350
   },
   {
-    "subject": "earthworms",
+    "subject": "worms",
     "language": "PO",
     "year": 2013,
     "value": 8750
@@ -4620,12 +4278,6 @@
     "value": 350
   },
   {
-    "subject": "spider",
-    "language": "PO",
-    "year": 2013,
-    "value": 300
-  },
-  {
     "subject": "yellow snake",
     "language": "PO",
     "year": 2013,
@@ -4656,12 +4308,6 @@
     "value": 200
   },
   {
-    "subject": "tooth",
-    "language": "PO",
-    "year": 2013,
-    "value": 200
-  },
-  {
     "subject": "change",
     "language": "PO",
     "year": 2013,
@@ -4674,7 +4320,7 @@
     "value": 180
   },
   {
-    "subject": "many snakes",
+    "subject": "snakes",
     "language": "PO",
     "year": 2013,
     "value": 180
@@ -4702,12 +4348,6 @@
     "language": "PO",
     "year": 2013,
     "value": 160
-  },
-  {
-    "subject": "broken tooth",
-    "language": "PO",
-    "year": 2013,
-    "value": 140
   },
   {
     "subject": "flowers",
@@ -4812,12 +4452,6 @@
     "value": 80
   },
   {
-    "subject": "dead people",
-    "language": "PO",
-    "year": 2013,
-    "value": 80
-  },
-  {
     "subject": "elevator",
     "language": "PO",
     "year": 2013,
@@ -4843,6 +4477,12 @@
   },
   {
     "subject": "ring",
+    "language": "PO",
+    "year": 2013,
+    "value": 80
+  },
+  {
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2013,
     "value": 80
@@ -4938,12 +4578,6 @@
     "value": 13200
   },
   {
-    "subject": "pregnant friend",
-    "language": "RU",
-    "year": 2013,
-    "value": 12950
-  },
-  {
     "subject": "a baby",
     "language": "RU",
     "year": 2013,
@@ -5010,22 +4644,10 @@
     "value": 200
   },
   {
-    "subject": "deceased",
-    "language": "RU",
-    "year": 2013,
-    "value": 190
-  },
-  {
     "subject": "graveyard",
     "language": "RU",
     "year": 2013,
     "value": 170
-  },
-  {
-    "subject": "sex",
-    "language": "RU",
-    "year": 2013,
-    "value": 160
   },
   {
     "subject": "hair cutting",
@@ -5118,7 +4740,13 @@
     "value": 3650
   },
   {
-    "subject": "dead person",
+    "subject": "another man",
+    "language": "EN",
+    "year": 2014,
+    "value": 500
+  },
+  {
+    "subject": "rain",
     "language": "EN",
     "year": 2014,
     "value": 300
@@ -5130,16 +4758,28 @@
     "value": 250
   },
   {
+    "subject": "ants",
+    "language": "EN",
+    "year": 2014,
+    "value": 200
+  },
+  {
+    "subject": "finding money",
+    "language": "EN",
+    "year": 2014,
+    "value": 190
+  },
+  {
     "subject": "you see yourself",
     "language": "EN",
     "year": 2014,
     "value": 180
   },
   {
-    "subject": "ants",
+    "subject": "someone who passed away",
     "language": "EN",
     "year": 2014,
-    "value": 170
+    "value": 150
   },
   {
     "subject": "your crush kissing you",
@@ -5148,13 +4788,25 @@
     "value": 150
   },
   {
-    "subject": "a snake biting you",
+    "subject": "snakes",
     "language": "EN",
     "year": 2014,
     "value": 140
   },
   {
     "subject": "bugs",
+    "language": "EN",
+    "year": 2014,
+    "value": 130
+  },
+  {
+    "subject": "fighting",
+    "language": "EN",
+    "year": 2014,
+    "value": 130
+  },
+  {
+    "subject": "trains",
     "language": "EN",
     "year": 2014,
     "value": 130
@@ -5172,13 +4824,13 @@
     "value": 120
   },
   {
-    "subject": "fire",
+    "subject": "elephants",
     "language": "EN",
     "year": 2014,
-    "value": 90
+    "value": 110
   },
   {
-    "subject": "snakes",
+    "subject": "fire",
     "language": "EN",
     "year": 2014,
     "value": 90
@@ -5190,16 +4842,22 @@
     "value": 80
   },
   {
-    "subject": "having a baby",
+    "subject": "war",
     "language": "EN",
     "year": 2014,
     "value": 80
   },
   {
-    "subject": "drowning",
+    "subject": "whales",
     "language": "EN",
     "year": 2014,
-    "value": 70
+    "value": 80
+  },
+  {
+    "subject": "wolves",
+    "language": "EN",
+    "year": 2014,
+    "value": 80
   },
   {
     "subject": "my ex",
@@ -5221,6 +4879,12 @@
   },
   {
     "subject": "wedding",
+    "language": "EN",
+    "year": 2014,
+    "value": 70
+  },
+  {
+    "subject": "work",
     "language": "EN",
     "year": 2014,
     "value": 70
@@ -5250,12 +4914,6 @@
     "value": 50
   },
   {
-    "subject": "rain",
-    "language": "EN",
-    "year": 2014,
-    "value": 40
-  },
-  {
     "subject": "to be chased",
     "language": "EN",
     "year": 2014,
@@ -5280,16 +4938,16 @@
     "value": 350
   },
   {
-    "subject": "a lot of money",
+    "subject": "mermaids",
     "language": "ES",
     "year": 2014,
     "value": 250
   },
   {
-    "subject": "mermaids",
+    "subject": "a lot of money",
     "language": "ES",
     "year": 2014,
-    "value": 250
+    "value": 240
   },
   {
     "subject": "snakes",
@@ -5310,7 +4968,7 @@
     "value": 160
   },
   {
-    "subject": "head lice",
+    "subject": "lice",
     "language": "ES",
     "year": 2014,
     "value": 150
@@ -5334,22 +4992,16 @@
     "value": 130
   },
   {
-    "subject": "tornadoes",
-    "language": "ES",
-    "year": 2014,
-    "value": 130
-  },
-  {
     "subject": "wedding dress",
     "language": "ES",
     "year": 2014,
     "value": 130
   },
   {
-    "subject": "lice",
+    "subject": "a baby",
     "language": "ES",
     "year": 2014,
-    "value": 110
+    "value": 100
   },
   {
     "subject": "bulls",
@@ -5359,18 +5011,6 @@
   },
   {
     "subject": "eggs",
-    "language": "ES",
-    "year": 2014,
-    "value": 100
-  },
-  {
-    "subject": "newborn baby",
-    "language": "ES",
-    "year": 2014,
-    "value": 100
-  },
-  {
-    "subject": "vipers",
     "language": "ES",
     "year": 2014,
     "value": 100
@@ -5394,12 +5034,6 @@
     "value": 90
   },
   {
-    "subject": "a baby",
-    "language": "ES",
-    "year": 2014,
-    "value": 80
-  },
-  {
     "subject": "bills",
     "language": "ES",
     "year": 2014,
@@ -5419,12 +5053,6 @@
   },
   {
     "subject": "a lion",
-    "language": "ES",
-    "year": 2014,
-    "value": 70
-  },
-  {
-    "subject": "baby in arms",
     "language": "ES",
     "year": 2014,
     "value": 70
@@ -5455,12 +5083,6 @@
   },
   {
     "subject": "lions",
-    "language": "ES",
-    "year": 2014,
-    "value": 70
-  },
-  {
-    "subject": "your ex girlfriend",
     "language": "ES",
     "year": 2014,
     "value": 70
@@ -5575,12 +5197,6 @@
   },
   {
     "subject": "fire",
-    "language": "ES",
-    "year": 2014,
-    "value": 40
-  },
-  {
-    "subject": "meat",
     "language": "ES",
     "year": 2014,
     "value": 40
@@ -5724,12 +5340,6 @@
     "value": 5000
   },
   {
-    "subject": "toilet",
-    "language": "JP",
-    "year": 2014,
-    "value": 110
-  },
-  {
     "subject": "bad dream",
     "language": "JP",
     "year": 2014,
@@ -5749,6 +5359,12 @@
   },
   {
     "subject": "falling teeth",
+    "language": "JP",
+    "year": 2014,
+    "value": 40
+  },
+  {
+    "subject": "toilet",
     "language": "JP",
     "year": 2014,
     "value": 40
@@ -5802,7 +5418,7 @@
     "value": 350
   },
   {
-    "subject": "many snakes",
+    "subject": "snakes",
     "language": "PO",
     "year": 2014,
     "value": 350
@@ -6060,31 +5676,13 @@
     "value": 120
   },
   {
-    "subject": "betrayal of boyfriend",
-    "language": "PO",
-    "year": 2014,
-    "value": 110
-  },
-  {
     "subject": "cemetery",
     "language": "PO",
     "year": 2014,
     "value": 110
   },
   {
-    "subject": "egg",
-    "language": "PO",
-    "year": 2014,
-    "value": 110
-  },
-  {
     "subject": "money",
-    "language": "PO",
-    "year": 2014,
-    "value": 110
-  },
-  {
-    "subject": "snake",
     "language": "PO",
     "year": 2014,
     "value": 110
@@ -6102,13 +5700,13 @@
     "value": 100
   },
   {
-    "subject": "a dead person",
+    "subject": "elevator",
     "language": "PO",
     "year": 2014,
     "value": 90
   },
   {
-    "subject": "elevator",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2014,
     "value": 90
@@ -6126,12 +5724,6 @@
     "value": 32250
   },
   {
-    "subject": "raw meat",
-    "language": "RU",
-    "year": 2014,
-    "value": 20200
-  },
-  {
     "subject": "pregnancy",
     "language": "RU",
     "year": 2014,
@@ -6142,6 +5734,12 @@
     "language": "RU",
     "year": 2014,
     "value": 11950
+  },
+  {
+    "subject": "raw meat",
+    "language": "RU",
+    "year": 2014,
+    "value": 11940
   },
   {
     "subject": "rooster",
@@ -6196,12 +5794,6 @@
     "language": "RU",
     "year": 2014,
     "value": 250
-  },
-  {
-    "subject": "deceased",
-    "language": "RU",
-    "year": 2014,
-    "value": 200
   },
   {
     "subject": "bear",
@@ -6324,7 +5916,7 @@
     "value": 50
   },
   {
-    "subject": "you are pregnant",
+    "subject": "being pregnant",
     "language": "EN",
     "year": 2015,
     "value": 8950
@@ -6348,19 +5940,13 @@
     "value": 450
   },
   {
-    "subject": "having a baby",
-    "language": "EN",
-    "year": 2015,
-    "value": 300
-  },
-  {
-    "subject": "deceased people",
+    "subject": "snakes",
     "language": "EN",
     "year": 2015,
     "value": 250
   },
   {
-    "subject": "snakes",
+    "subject": "someone who passed away",
     "language": "EN",
     "year": 2015,
     "value": 250
@@ -6391,6 +5977,12 @@
   },
   {
     "subject": "earthquake",
+    "language": "EN",
+    "year": 2015,
+    "value": 140
+  },
+  {
+    "subject": "trains",
     "language": "EN",
     "year": 2015,
     "value": 140
@@ -6456,7 +6048,7 @@
     "value": 90
   },
   {
-    "subject": "drowning",
+    "subject": "kittens",
     "language": "EN",
     "year": 2015,
     "value": 80
@@ -6466,6 +6058,12 @@
     "language": "EN",
     "year": 2015,
     "value": 80
+  },
+  {
+    "subject": "breastfeeding",
+    "language": "EN",
+    "year": 2015,
+    "value": 70
   },
   {
     "subject": "falling",
@@ -6498,7 +6096,19 @@
     "value": 70
   },
   {
-    "subject": "marriage",
+    "subject": "getting married",
+    "language": "EN",
+    "year": 2015,
+    "value": 60
+  },
+  {
+    "subject": "hair falling out",
+    "language": "EN",
+    "year": 2015,
+    "value": 60
+  },
+  {
+    "subject": "lizards",
     "language": "EN",
     "year": 2015,
     "value": 60
@@ -6510,19 +6120,13 @@
     "value": 60
   },
   {
+    "subject": "cheating",
+    "language": "EN",
+    "year": 2015,
+    "value": 50
+  },
+  {
     "subject": "flying",
-    "language": "EN",
-    "year": 2015,
-    "value": 50
-  },
-  {
-    "subject": "getting married",
-    "language": "EN",
-    "year": 2015,
-    "value": 50
-  },
-  {
-    "subject": "someone you like",
     "language": "EN",
     "year": 2015,
     "value": 50
@@ -6532,6 +6136,12 @@
     "language": "EN",
     "year": 2015,
     "value": 50
+  },
+  {
+    "subject": "being late",
+    "language": "EN",
+    "year": 2015,
+    "value": 40
   },
   {
     "subject": "fish",
@@ -6564,7 +6174,7 @@
     "value": 180
   },
   {
-    "subject": "big spiders",
+    "subject": "spiders",
     "language": "ES",
     "year": 2015,
     "value": 160
@@ -6588,12 +6198,6 @@
     "value": 120
   },
   {
-    "subject": "spiders",
-    "language": "ES",
-    "year": 2015,
-    "value": 110
-  },
-  {
     "subject": "white worms",
     "language": "ES",
     "year": 2015,
@@ -6604,18 +6208,6 @@
     "language": "ES",
     "year": 2015,
     "value": 100
-  },
-  {
-    "subject": "newborn baby",
-    "language": "ES",
-    "year": 2015,
-    "value": 100
-  },
-  {
-    "subject": "a lot of money",
-    "language": "ES",
-    "year": 2015,
-    "value": 90
   },
   {
     "subject": "airplanes",
@@ -6642,16 +6234,16 @@
     "value": 90
   },
   {
-    "subject": "snow",
+    "subject": "money",
     "language": "ES",
     "year": 2015,
     "value": 90
   },
   {
-    "subject": "a tiger",
+    "subject": "snow",
     "language": "ES",
     "year": 2015,
-    "value": 80
+    "value": 90
   },
   {
     "subject": "monkeys",
@@ -6660,7 +6252,7 @@
     "value": 80
   },
   {
-    "subject": "tooth falling",
+    "subject": "tigers",
     "language": "ES",
     "year": 2015,
     "value": 80
@@ -6670,18 +6262,6 @@
     "language": "ES",
     "year": 2015,
     "value": 80
-  },
-  {
-    "subject": "a dead person",
-    "language": "ES",
-    "year": 2015,
-    "value": 70
-  },
-  {
-    "subject": "being pregnant",
-    "language": "ES",
-    "year": 2015,
-    "value": 70
   },
   {
     "subject": "crabs",
@@ -6708,6 +6288,12 @@
     "value": 70
   },
   {
+    "subject": "someone who passed away",
+    "language": "ES",
+    "year": 2015,
+    "value": 70
+  },
+  {
     "subject": "the guy you like",
     "language": "ES",
     "year": 2015,
@@ -6720,31 +6306,13 @@
     "value": 70
   },
   {
-    "subject": "tigers",
-    "language": "ES",
-    "year": 2015,
-    "value": 70
-  },
-  {
     "subject": "whales",
     "language": "ES",
     "year": 2015,
     "value": 70
   },
   {
-    "subject": "a baby",
-    "language": "ES",
-    "year": 2015,
-    "value": 60
-  },
-  {
     "subject": "birds",
-    "language": "ES",
-    "year": 2015,
-    "value": 60
-  },
-  {
-    "subject": "ex boyfriend",
     "language": "ES",
     "year": 2015,
     "value": 60
@@ -6763,18 +6331,6 @@
   },
   {
     "subject": "a rat",
-    "language": "ES",
-    "year": 2015,
-    "value": 50
-  },
-  {
-    "subject": "a spider",
-    "language": "ES",
-    "year": 2015,
-    "value": 50
-  },
-  {
-    "subject": "coins",
     "language": "ES",
     "year": 2015,
     "value": 50
@@ -6817,12 +6373,6 @@
   },
   {
     "subject": "iguanas",
-    "language": "ES",
-    "year": 2015,
-    "value": 40
-  },
-  {
-    "subject": "money",
     "language": "ES",
     "year": 2015,
     "value": 40
@@ -6882,7 +6432,7 @@
     "value": 140
   },
   {
-    "subject": "black cat",
+    "subject": "cat",
     "language": "FR",
     "year": 2015,
     "value": 110
@@ -6960,12 +6510,6 @@
     "value": 60
   },
   {
-    "subject": "cat",
-    "language": "FR",
-    "year": 2015,
-    "value": 60
-  },
-  {
     "subject": "dog",
     "language": "FR",
     "year": 2015,
@@ -7014,7 +6558,7 @@
     "value": 6300
   },
   {
-    "subject": "deceased father",
+    "subject": "passed away father",
     "language": "JP",
     "year": 2015,
     "value": 6250
@@ -7086,7 +6630,7 @@
     "value": 50
   },
   {
-    "subject": "a dead person",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2015,
     "value": 10200
@@ -7158,12 +6702,6 @@
     "value": 250
   },
   {
-    "subject": "mouse",
-    "language": "PO",
-    "year": 2015,
-    "value": 250
-  },
-  {
     "subject": "shoes",
     "language": "PO",
     "year": 2015,
@@ -7171,12 +6709,6 @@
   },
   {
     "subject": "tsunami",
-    "language": "PO",
-    "year": 2015,
-    "value": 250
-  },
-  {
-    "subject": "white mouse",
     "language": "PO",
     "year": 2015,
     "value": 250
@@ -7242,12 +6774,6 @@
     "value": 130
   },
   {
-    "subject": "end of dating",
-    "language": "PO",
-    "year": 2015,
-    "value": 130
-  },
-  {
     "subject": "fish",
     "language": "PO",
     "year": 2015,
@@ -7282,12 +6808,6 @@
     "language": "PO",
     "year": 2015,
     "value": 110
-  },
-  {
-    "subject": "a baby",
-    "language": "PO",
-    "year": 2015,
-    "value": 90
   },
   {
     "subject": "ants",
@@ -7339,12 +6859,6 @@
   },
   {
     "subject": "a clock",
-    "language": "PO",
-    "year": 2015,
-    "value": 80
-  },
-  {
-    "subject": "frogs",
     "language": "PO",
     "year": 2015,
     "value": 80
@@ -7440,12 +6954,6 @@
     "value": 15650
   },
   {
-    "subject": "bath ?",
-    "language": "RU",
-    "year": 2015,
-    "value": 13400
-  },
-  {
     "subject": "pig",
     "language": "RU",
     "year": 2015,
@@ -7492,6 +7000,12 @@
     "language": "RU",
     "year": 2015,
     "value": 5350
+  },
+  {
+    "subject": "bath",
+    "language": "RU",
+    "year": 2015,
+    "value": 1340
   },
   {
     "subject": "fishing",
@@ -7554,7 +7068,7 @@
     "value": 60
   },
   {
-    "subject": "treason",
+    "subject": "infidelity",
     "language": "RU",
     "year": 2015,
     "value": 50
@@ -7608,12 +7122,6 @@
     "value": 6300
   },
   {
-    "subject": "your partner cheating",
-    "language": "EN",
-    "year": 2016,
-    "value": 4500
-  },
-  {
     "subject": "your crush",
     "language": "EN",
     "year": 2016,
@@ -7662,7 +7170,7 @@
     "value": 170
   },
   {
-    "subject": "your ex girlfriend",
+    "subject": "breastfeeding",
     "language": "EN",
     "year": 2016,
     "value": 150
@@ -7674,7 +7182,7 @@
     "value": 140
   },
   {
-    "subject": "a dead person",
+    "subject": "someone who passed away",
     "language": "EN",
     "year": 2016,
     "value": 120
@@ -7698,10 +7206,34 @@
     "value": 110
   },
   {
+    "subject": "being lost",
+    "language": "EN",
+    "year": 2016,
+    "value": 90
+  },
+  {
+    "subject": "losing a tooth",
+    "language": "EN",
+    "year": 2016,
+    "value": 90
+  },
+  {
     "subject": "brown horse",
     "language": "EN",
     "year": 2016,
     "value": 80
+  },
+  {
+    "subject": "kissing someone",
+    "language": "EN",
+    "year": 2016,
+    "value": 80
+  },
+  {
+    "subject": "being late",
+    "language": "EN",
+    "year": 2016,
+    "value": 70
   },
   {
     "subject": "cats",
@@ -7710,10 +7242,10 @@
     "value": 70
   },
   {
-    "subject": "my ex boyfriend",
+    "subject": "an ex",
     "language": "EN",
     "year": 2016,
-    "value": 70
+    "value": 60
   },
   {
     "subject": "bird",
@@ -7734,7 +7266,7 @@
     "value": 60
   },
   {
-    "subject": "kissing someone",
+    "subject": "missing a flight",
     "language": "EN",
     "year": 2016,
     "value": 60
@@ -7744,12 +7276,6 @@
     "language": "EN",
     "year": 2016,
     "value": 60
-  },
-  {
-    "subject": "an ex",
-    "language": "EN",
-    "year": 2016,
-    "value": 50
   },
   {
     "subject": "black bird",
@@ -7770,16 +7296,10 @@
     "value": 50
   },
   {
-    "subject": "someone cheating on you",
+    "subject": "bats",
     "language": "EN",
     "year": 2016,
-    "value": 50
-  },
-  {
-    "subject": "your ex",
-    "language": "EN",
-    "year": 2016,
-    "value": 50
+    "value": 40
   },
   {
     "subject": "bridge",
@@ -7824,12 +7344,6 @@
     "value": 150
   },
   {
-    "subject": "the quiniela",
-    "language": "ES",
-    "year": 2016,
-    "value": 140
-  },
-  {
     "subject": "butterflies",
     "language": "ES",
     "year": 2016,
@@ -7846,12 +7360,6 @@
     "language": "ES",
     "year": 2016,
     "value": 110
-  },
-  {
-    "subject": "a newbown baby",
-    "language": "ES",
-    "year": 2016,
-    "value": 80
   },
   {
     "subject": "animals",
@@ -7902,7 +7410,7 @@
     "value": 70
   },
   {
-    "subject": "someone who has already died",
+    "subject": "someone who passed away",
     "language": "ES",
     "year": 2016,
     "value": 70
@@ -7962,12 +7470,6 @@
     "value": 50
   },
   {
-    "subject": "big rats",
-    "language": "ES",
-    "year": 2016,
-    "value": 50
-  },
-  {
     "subject": "newborn baby",
     "language": "ES",
     "year": 2016,
@@ -7987,12 +7489,6 @@
   },
   {
     "subject": "tremor",
-    "language": "ES",
-    "year": 2016,
-    "value": 50
-  },
-  {
-    "subject": "vipers",
     "language": "ES",
     "year": 2016,
     "value": 50
@@ -8094,6 +7590,12 @@
     "value": 180
   },
   {
+    "subject": "being pregnant",
+    "language": "FR",
+    "year": 2016,
+    "value": 150
+  },
+  {
     "subject": "car",
     "language": "FR",
     "year": 2016,
@@ -8101,12 +7603,6 @@
   },
   {
     "subject": "cat",
-    "language": "FR",
-    "year": 2016,
-    "value": 150
-  },
-  {
-    "subject": "getting pregnant",
     "language": "FR",
     "year": 2016,
     "value": 150
@@ -8134,12 +7630,6 @@
     "language": "FR",
     "year": 2016,
     "value": 140
-  },
-  {
-    "subject": "breaking",
-    "language": "FR",
-    "year": 2016,
-    "value": 130
   },
   {
     "subject": "losing teeth",
@@ -8170,12 +7660,6 @@
     "language": "FR",
     "year": 2016,
     "value": 50
-  },
-  {
-    "subject": "being pregnant",
-    "language": "FR",
-    "year": 2016,
-    "value": 40
   },
   {
     "subject": "someone",
@@ -8242,12 +7726,6 @@
     "language": "PO",
     "year": 2016,
     "value": 650
-  },
-  {
-    "subject": "bean",
-    "language": "PO",
-    "year": 2016,
-    "value": 500
   },
   {
     "subject": "spider",
@@ -8328,7 +7806,7 @@
     "value": 150
   },
   {
-    "subject": "someone who has died",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2016,
     "value": 150
@@ -8388,12 +7866,6 @@
     "value": 100
   },
   {
-    "subject": "yellow snake",
-    "language": "PO",
-    "year": 2016,
-    "value": 100
-  },
-  {
     "subject": "black cat",
     "language": "PO",
     "year": 2016,
@@ -8436,18 +7908,6 @@
     "value": 80
   },
   {
-    "subject": "white snake",
-    "language": "PO",
-    "year": 2016,
-    "value": 80
-  },
-  {
-    "subject": "black snake",
-    "language": "PO",
-    "year": 2016,
-    "value": 70
-  },
-  {
     "subject": "fighting",
     "language": "PO",
     "year": 2016,
@@ -8472,6 +7932,12 @@
     "value": 70
   },
   {
+    "subject": "snake",
+    "language": "PO",
+    "year": 2016,
+    "value": 70
+  },
+  {
     "subject": "theft",
     "language": "PO",
     "year": 2016,
@@ -8491,18 +7957,6 @@
   },
   {
     "subject": "a scorpion",
-    "language": "PO",
-    "year": 2016,
-    "value": 60
-  },
-  {
-    "subject": "child",
-    "language": "PO",
-    "year": 2016,
-    "value": 60
-  },
-  {
-    "subject": "green snake",
     "language": "PO",
     "year": 2016,
     "value": 60
@@ -8562,18 +8016,6 @@
     "value": 5250
   },
   {
-    "subject": "having a boy",
-    "language": "RU",
-    "year": 2016,
-    "value": 450
-  },
-  {
-    "subject": "newborn",
-    "language": "RU",
-    "year": 2016,
-    "value": 450
-  },
-  {
     "subject": "dandruff",
     "language": "RU",
     "year": 2016,
@@ -8598,13 +8040,7 @@
     "value": 190
   },
   {
-    "subject": "pregnancy and childbirth",
-    "language": "RU",
-    "year": 2016,
-    "value": 180
-  },
-  {
-    "subject": "snake bite",
+    "subject": "snake",
     "language": "RU",
     "year": 2016,
     "value": 180
@@ -8682,12 +8118,6 @@
     "value": 12300
   },
   {
-    "subject": "teeth falling out",
-    "language": "EN",
-    "year": 2017,
-    "value": 11500
-  },
-  {
     "subject": "positive pregnancy test",
     "language": "EN",
     "year": 2017,
@@ -8718,18 +8148,6 @@
     "value": 400
   },
   {
-    "subject": "a snake biting you",
-    "language": "EN",
-    "year": 2017,
-    "value": 350
-  },
-  {
-    "subject": "your ex",
-    "language": "EN",
-    "year": 2017,
-    "value": 300
-  },
-  {
     "subject": "alligators",
     "language": "EN",
     "year": 2017,
@@ -8755,12 +8173,6 @@
   },
   {
     "subject": "ghosts",
-    "language": "EN",
-    "year": 2017,
-    "value": 200
-  },
-  {
-    "subject": "having a baby",
     "language": "EN",
     "year": 2017,
     "value": 200
@@ -8850,16 +8262,10 @@
     "value": 100
   },
   {
-    "subject": "an ex",
+    "subject": "bats",
     "language": "EN",
     "year": 2017,
-    "value": 90
-  },
-  {
-    "subject": "babies",
-    "language": "EN",
-    "year": 2017,
-    "value": 80
+    "value": 70
   },
   {
     "subject": "birthday",
@@ -8869,6 +8275,12 @@
   },
   {
     "subject": "black dog",
+    "language": "EN",
+    "year": 2017,
+    "value": 70
+  },
+  {
+    "subject": "cheating",
     "language": "EN",
     "year": 2017,
     "value": 70
@@ -8886,13 +8298,19 @@
     "value": 70
   },
   {
-    "subject": "cheating",
+    "subject": "cockroaches",
     "language": "EN",
     "year": 2017,
     "value": 60
   },
   {
     "subject": "dinosaur",
+    "language": "EN",
+    "year": 2017,
+    "value": 60
+  },
+  {
+    "subject": "having twins",
     "language": "EN",
     "year": 2017,
     "value": 60
@@ -8922,12 +8340,6 @@
     "value": 50
   },
   {
-    "subject": "known deads",
-    "language": "ES",
-    "year": 2017,
-    "value": 1500
-  },
-  {
     "subject": "bulls",
     "language": "ES",
     "year": 2017,
@@ -8940,13 +8352,7 @@
     "value": 500
   },
   {
-    "subject": "having sex",
-    "language": "ES",
-    "year": 2017,
-    "value": 250
-  },
-  {
-    "subject": "small cats",
+    "subject": "cats",
     "language": "ES",
     "year": 2017,
     "value": 250
@@ -8958,7 +8364,7 @@
     "value": 250
   },
   {
-    "subject": "black spiders",
+    "subject": "spiders",
     "language": "ES",
     "year": 2017,
     "value": 200
@@ -9006,12 +8412,6 @@
     "value": 150
   },
   {
-    "subject": "chicks",
-    "language": "ES",
-    "year": 2017,
-    "value": 150
-  },
-  {
     "subject": "demons",
     "language": "ES",
     "year": 2017,
@@ -9024,7 +8424,13 @@
     "value": 150
   },
   {
-    "subject": "a wedding",
+    "subject": "someone who passed away",
+    "language": "ES",
+    "year": 2017,
+    "value": 150
+  },
+  {
+    "subject": "wedding",
     "language": "ES",
     "year": 2017,
     "value": 140
@@ -9096,12 +8502,6 @@
     "value": 100
   },
   {
-    "subject": "big rats",
-    "language": "ES",
-    "year": 2017,
-    "value": 90
-  },
-  {
     "subject": "chickens",
     "language": "ES",
     "year": 2017,
@@ -9138,19 +8538,7 @@
     "value": 90
   },
   {
-    "subject": "spiders",
-    "language": "ES",
-    "year": 2017,
-    "value": 90
-  },
-  {
     "subject": "toad",
-    "language": "ES",
-    "year": 2017,
-    "value": 90
-  },
-  {
-    "subject": "wedding",
     "language": "ES",
     "year": 2017,
     "value": 90
@@ -9222,12 +8610,6 @@
     "value": 50
   },
   {
-    "subject": "a spider",
-    "language": "ES",
-    "year": 2017,
-    "value": 50
-  },
-  {
     "subject": "being persecuted",
     "language": "ES",
     "year": 2017,
@@ -9235,12 +8617,6 @@
   },
   {
     "subject": "having a baby",
-    "language": "ES",
-    "year": 2017,
-    "value": 50
-  },
-  {
-    "subject": "someone you like",
     "language": "ES",
     "year": 2017,
     "value": 50
@@ -9330,12 +8706,6 @@
     "value": 80
   },
   {
-    "subject": "tooth",
-    "language": "FR",
-    "year": 2017,
-    "value": 80
-  },
-  {
     "subject": "lice",
     "language": "FR",
     "year": 2017,
@@ -9354,25 +8724,13 @@
     "value": 70
   },
   {
-    "subject": "childbirth",
-    "language": "FR",
-    "year": 2017,
-    "value": 60
-  },
-  {
-    "subject": "drowing",
-    "language": "FR",
-    "year": 2017,
-    "value": 50
-  },
-  {
     "subject": "monkey",
     "language": "JP",
     "year": 2017,
     "value": 25300
   },
   {
-    "subject": "a scary dreams",
+    "subject": "a scary dream",
     "language": "JP",
     "year": 2017,
     "value": 5950
@@ -9414,12 +8772,6 @@
     "value": 90
   },
   {
-    "subject": "an ex",
-    "language": "JP",
-    "year": 2017,
-    "value": 60
-  },
-  {
     "subject": "dog",
     "language": "JP",
     "year": 2017,
@@ -9430,24 +8782,6 @@
     "language": "JP",
     "year": 2017,
     "value": 50
-  },
-  {
-    "subject": "scary dream",
-    "language": "JP",
-    "year": 2017,
-    "value": 40
-  },
-  {
-    "subject": "a pregnant woman",
-    "language": "PO",
-    "year": 2017,
-    "value": 350
-  },
-  {
-    "subject": "key",
-    "language": "PO",
-    "year": 2017,
-    "value": 300
   },
   {
     "subject": "pregnancy",
@@ -9510,12 +8844,6 @@
     "value": 130
   },
   {
-    "subject": "newborn baby",
-    "language": "PO",
-    "year": 2017,
-    "value": 130
-  },
-  {
     "subject": "vulture",
     "language": "PO",
     "year": 2017,
@@ -9570,19 +8898,7 @@
     "value": 110
   },
   {
-    "subject": "a dead person",
-    "language": "PO",
-    "year": 2017,
-    "value": 100
-  },
-  {
     "subject": "bear",
-    "language": "PO",
-    "year": 2017,
-    "value": 100
-  },
-  {
-    "subject": "big toad",
     "language": "PO",
     "year": 2017,
     "value": 100
@@ -9600,6 +8916,12 @@
     "value": 100
   },
   {
+    "subject": "someone who passed away",
+    "language": "PO",
+    "year": 2017,
+    "value": 100
+  },
+  {
     "subject": "alligator",
     "language": "PO",
     "year": 2017,
@@ -9607,12 +8929,6 @@
   },
   {
     "subject": "cemetery",
-    "language": "PO",
-    "year": 2017,
-    "value": 90
-  },
-  {
-    "subject": "dead people",
     "language": "PO",
     "year": 2017,
     "value": 90
@@ -9630,13 +8946,13 @@
     "value": 90
   },
   {
-    "subject": "many snakes",
+    "subject": "snakes",
     "language": "PO",
     "year": 2017,
     "value": 90
   },
   {
-    "subject": "snakes",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2017,
     "value": 90
@@ -9649,12 +8965,6 @@
   },
   {
     "subject": "flea",
-    "language": "PO",
-    "year": 2017,
-    "value": 80
-  },
-  {
-    "subject": "hair",
     "language": "PO",
     "year": 2017,
     "value": 80
@@ -9697,12 +9007,6 @@
   },
   {
     "subject": "motorcycle",
-    "language": "PO",
-    "year": 2017,
-    "value": 70
-  },
-  {
-    "subject": "people who had died",
     "language": "PO",
     "year": 2017,
     "value": 70
@@ -9763,12 +9067,6 @@
   },
   {
     "subject": "coins",
-    "language": "PO",
-    "year": 2017,
-    "value": 50
-  },
-  {
-    "subject": "coral snake",
     "language": "PO",
     "year": 2017,
     "value": 50
@@ -9840,18 +9138,6 @@
     "value": 350
   },
   {
-    "subject": "seeing yourself pregnant",
-    "language": "RU",
-    "year": 2017,
-    "value": 300
-  },
-  {
-    "subject": "tooth loss",
-    "language": "RU",
-    "year": 2017,
-    "value": 300
-  },
-  {
     "subject": "being pregnant",
     "language": "RU",
     "year": 2017,
@@ -9859,12 +9145,6 @@
   },
   {
     "subject": "flood",
-    "language": "RU",
-    "year": 2017,
-    "value": 250
-  },
-  {
-    "subject": "gypsy",
     "language": "RU",
     "year": 2017,
     "value": 250
@@ -9888,7 +9168,7 @@
     "value": 250
   },
   {
-    "subject": "cheating girl",
+    "subject": "cheating",
     "language": "RU",
     "year": 2017,
     "value": 200
@@ -9913,12 +9193,6 @@
   },
   {
     "subject": "money",
-    "language": "RU",
-    "year": 2017,
-    "value": 50
-  },
-  {
-    "subject": "sex",
     "language": "RU",
     "year": 2017,
     "value": 50
@@ -9996,22 +9270,16 @@
     "value": 7000
   },
   {
+    "subject": "ghosts",
+    "language": "EN",
+    "year": 2018,
+    "value": 5350
+  },
+  {
     "subject": "giving birth to a baby",
     "language": "EN",
     "year": 2018,
     "value": 2100
-  },
-  {
-    "subject": "being pregnant",
-    "language": "EN",
-    "year": 2018,
-    "value": 800
-  },
-  {
-    "subject": "babies",
-    "language": "EN",
-    "year": 2018,
-    "value": 250
   },
   {
     "subject": "spider",
@@ -10068,6 +9336,24 @@
     "value": 140
   },
   {
+    "subject": "fire",
+    "language": "EN",
+    "year": 2018,
+    "value": 130
+  },
+  {
+    "subject": "him",
+    "language": "EN",
+    "year": 2018,
+    "value": 130
+  },
+  {
+    "subject": "losing teeth",
+    "language": "EN",
+    "year": 2018,
+    "value": 130
+  },
+  {
     "subject": "zombie",
     "language": "EN",
     "year": 2018,
@@ -10080,19 +9366,13 @@
     "value": 120
   },
   {
-    "subject": "your boyfriend cheating on you",
-    "language": "EN",
-    "year": 2018,
-    "value": 120
-  },
-  {
     "subject": "bees",
     "language": "EN",
     "year": 2018,
     "value": 110
   },
   {
-    "subject": "dead person",
+    "subject": "someone who passed away",
     "language": "EN",
     "year": 2018,
     "value": 110
@@ -10110,7 +9390,13 @@
     "value": 100
   },
   {
-    "subject": "drowning",
+    "subject": "eggs",
+    "language": "EN",
+    "year": 2018,
+    "value": 100
+  },
+  {
+    "subject": "lice",
     "language": "EN",
     "year": 2018,
     "value": 100
@@ -10122,22 +9408,22 @@
     "value": 100
   },
   {
+    "subject": "teeth falling out",
+    "language": "EN",
+    "year": 2018,
+    "value": 100
+  },
+  {
     "subject": "someone",
     "language": "EN",
     "year": 2018,
     "value": 90
   },
   {
-    "subject": "snake biting you",
+    "subject": "roaches",
     "language": "EN",
     "year": 2018,
     "value": 80
-  },
-  {
-    "subject": "cheating",
-    "language": "EN",
-    "year": 2018,
-    "value": 70
   },
   {
     "subject": "dream within a dream",
@@ -10152,12 +9438,6 @@
     "value": 70
   },
   {
-    "subject": "your crush",
-    "language": "EN",
-    "year": 2018,
-    "value": 60
-  },
-  {
     "subject": "bad dreams",
     "language": "EN",
     "year": 2018,
@@ -10170,19 +9450,7 @@
     "value": 50
   },
   {
-    "subject": "fire",
-    "language": "EN",
-    "year": 2018,
-    "value": 50
-  },
-  {
     "subject": "lion",
-    "language": "EN",
-    "year": 2018,
-    "value": 50
-  },
-  {
-    "subject": "my ex boyfriend",
     "language": "EN",
     "year": 2018,
     "value": 50
@@ -10236,19 +9504,13 @@
     "value": 250
   },
   {
-    "subject": "for the quiniela",
+    "subject": "rats",
     "language": "ES",
     "year": 2018,
     "value": 250
   },
   {
     "subject": "thieves",
-    "language": "ES",
-    "year": 2018,
-    "value": 250
-  },
-  {
-    "subject": "white rats",
     "language": "ES",
     "year": 2018,
     "value": 250
@@ -10270,12 +9532,6 @@
     "language": "ES",
     "year": 2018,
     "value": 190
-  },
-  {
-    "subject": "rats",
-    "language": "ES",
-    "year": 2018,
-    "value": 180
   },
   {
     "subject": "crabs",
@@ -10308,28 +9564,10 @@
     "value": 150
   },
   {
-    "subject": "viper",
-    "language": "ES",
-    "year": 2018,
-    "value": 140
-  },
-  {
     "subject": "airplanes",
     "language": "ES",
     "year": 2018,
     "value": 130
-  },
-  {
-    "subject": "a big rat",
-    "language": "ES",
-    "year": 2018,
-    "value": 120
-  },
-  {
-    "subject": "a rat",
-    "language": "ES",
-    "year": 2018,
-    "value": 120
   },
   {
     "subject": "a wedding",
@@ -10338,16 +9576,10 @@
     "value": 120
   },
   {
-    "subject": "black cat",
+    "subject": "cats",
     "language": "ES",
     "year": 2018,
     "value": 120
-  },
-  {
-    "subject": "a black dog",
-    "language": "ES",
-    "year": 2018,
-    "value": 110
   },
   {
     "subject": "lizards",
@@ -10368,19 +9600,7 @@
     "value": 100
   },
   {
-    "subject": "cats",
-    "language": "ES",
-    "year": 2018,
-    "value": 90
-  },
-  {
     "subject": "ex boyfriend",
-    "language": "ES",
-    "year": 2018,
-    "value": 90
-  },
-  {
-    "subject": "having a baby",
     "language": "ES",
     "year": 2018,
     "value": 90
@@ -10410,19 +9630,13 @@
     "value": 80
   },
   {
-    "subject": "pregnancy",
+    "subject": "having a baby",
     "language": "ES",
     "year": 2018,
     "value": 80
   },
   {
     "subject": "tarantulas",
-    "language": "ES",
-    "year": 2018,
-    "value": 80
-  },
-  {
-    "subject": "tiger",
     "language": "ES",
     "year": 2018,
     "value": 80
@@ -10446,7 +9660,7 @@
     "value": 70
   },
   {
-    "subject": "a dead person",
+    "subject": "ants",
     "language": "ES",
     "year": 2018,
     "value": 60
@@ -10458,13 +9672,13 @@
     "value": 60
   },
   {
-    "subject": "black ants",
+    "subject": "erupting  volcano",
     "language": "ES",
     "year": 2018,
     "value": 60
   },
   {
-    "subject": "erupting  volcano",
+    "subject": "someone who passed away",
     "language": "ES",
     "year": 2018,
     "value": 60
@@ -10489,24 +9703,6 @@
   },
   {
     "subject": "ants",
-    "language": "ES",
-    "year": 2018,
-    "value": 40
-  },
-  {
-    "subject": "black snake",
-    "language": "ES",
-    "year": 2018,
-    "value": 40
-  },
-  {
-    "subject": "flies",
-    "language": "ES",
-    "year": 2018,
-    "value": 40
-  },
-  {
-    "subject": "small rats",
     "language": "ES",
     "year": 2018,
     "value": 40
@@ -10560,13 +9756,13 @@
     "value": 130
   },
   {
-    "subject": "black snake",
+    "subject": "bread",
     "language": "FR",
     "year": 2018,
     "value": 130
   },
   {
-    "subject": "bread",
+    "subject": "snake",
     "language": "FR",
     "year": 2018,
     "value": 130
@@ -10588,12 +9784,6 @@
     "language": "FR",
     "year": 2018,
     "value": 100
-  },
-  {
-    "subject": "hen",
-    "language": "FR",
-    "year": 2018,
-    "value": 90
   },
   {
     "subject": "bracelet",
@@ -10620,12 +9810,6 @@
     "value": 80
   },
   {
-    "subject": "drowing",
-    "language": "FR",
-    "year": 2018,
-    "value": 70
-  },
-  {
     "subject": "getting married",
     "language": "FR",
     "year": 2018,
@@ -10633,12 +9817,6 @@
   },
   {
     "subject": "lion",
-    "language": "FR",
-    "year": 2018,
-    "value": 70
-  },
-  {
-    "subject": "pregnant woman",
     "language": "FR",
     "year": 2018,
     "value": 70
@@ -10656,13 +9834,7 @@
     "value": 50
   },
   {
-    "subject": "snake",
-    "language": "FR",
-    "year": 2018,
-    "value": 40
-  },
-  {
-    "subject": "kissing a person of my same sex ?",
+    "subject": "kissing someone",
     "language": "JP",
     "year": 2018,
     "value": 10400
@@ -10734,16 +9906,16 @@
     "value": 700
   },
   {
-    "subject": "kidnapping",
-    "language": "PO",
-    "year": 2018,
-    "value": 650
-  },
-  {
     "subject": "broken tooth",
     "language": "PO",
     "year": 2018,
-    "value": 300
+    "value": 360
+  },
+  {
+    "subject": "werewolf",
+    "language": "PO",
+    "year": 2018,
+    "value": 350
   },
   {
     "subject": "shoes",
@@ -10756,18 +9928,6 @@
     "language": "PO",
     "year": 2018,
     "value": 300
-  },
-  {
-    "subject": "werewolf",
-    "language": "PO",
-    "year": 2018,
-    "value": 300
-  },
-  {
-    "subject": "a pregnant woman",
-    "language": "PO",
-    "year": 2018,
-    "value": 250
   },
   {
     "subject": "shark",
@@ -10836,7 +9996,7 @@
     "value": 130
   },
   {
-    "subject": "people who had died",
+    "subject": "someone who passed away",
     "language": "PO",
     "year": 2018,
     "value": 130
@@ -10998,12 +10158,6 @@
     "value": 80
   },
   {
-    "subject": "a lot of money",
-    "language": "PO",
-    "year": 2018,
-    "value": 70
-  },
-  {
     "subject": "goat",
     "language": "PO",
     "year": 2018,
@@ -11034,12 +10188,6 @@
     "value": 60
   },
   {
-    "subject": "falling tooth",
-    "language": "PO",
-    "year": 2018,
-    "value": 60
-  },
-  {
     "subject": "food",
     "language": "PO",
     "year": 2018,
@@ -11047,12 +10195,6 @@
   },
   {
     "subject": "lion",
-    "language": "PO",
-    "year": 2018,
-    "value": 60
-  },
-  {
-    "subject": "shoe",
     "language": "PO",
     "year": 2018,
     "value": 60
@@ -11112,7 +10254,7 @@
     "value": 5200
   },
   {
-    "subject": "going by train",
+    "subject": "travelling by train",
     "language": "RU",
     "year": 2018,
     "value": 2550

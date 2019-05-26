@@ -8,7 +8,7 @@ import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import { years } from '../constants';
 import { languages } from '../constants';
 import { isMobile } from 'react-device-detect';
-import { scaleLinear } from 'd3-scale';
+import NavigationBar from '../components/NavigationBar';
 
 const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -86,6 +86,11 @@ const Explore2 = ({ history, activeIndex }) => {
             onSelect={onSelectYear}
             selected={selectedYearIndex}
           />
+        )
+      }
+      {
+        !isMobile && (
+          <NavigationBar history={history} activeIndex={activeIndex} />
         )
       }
       <div className='w-100 h-100 relative'>

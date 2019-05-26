@@ -10,6 +10,7 @@ import noData from './petal-no-data.svg';
 import { years } from '../constants';
 import howtoread1 from './how-to-read-1.png';
 import { isMobile } from 'react-device-detect';
+import NavigationBar from '../components/NavigationBar';
 
 const Explore1 = ({ history, activeIndex }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -124,6 +125,11 @@ const Explore1 = ({ history, activeIndex }) => {
             onSelect={onSelectYear}
             selected={selectedYearIndex}
           />
+        )
+      }
+      {
+        !isMobile && (
+          <NavigationBar history={history} activeIndex={activeIndex} />
         )
       }
       <div className='w-100 h-100 relative'>

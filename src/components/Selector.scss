@@ -95,7 +95,7 @@
     position: absolute;
     right: 0px;
     height: 80%;
-    width: 120px;
+    width: 12.5%;
     top: 10%;
     z-index: 99;
     outline: 1px gold;
@@ -106,8 +106,8 @@
     position: absolute;
     right: 0px;
     height: 1200px;
-    width: 120px;
-    top: 0;
+    width: 100%;
+    top: -10%;
     z-index: 99;
     outline: 1px gold;
     overflow: scroll;
@@ -176,4 +176,24 @@
 .react-swipeable-view-container {
   width: 100%;
   height: 100%;
+}
+
+.navigationBarContainer {
+  position: absolute;
+  align-items: center;
+  left: 0px;
+  height: 80%;
+  width: 12.5%;
+  top: 10%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+
+.navigationBar {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }

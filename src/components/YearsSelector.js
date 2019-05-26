@@ -1,7 +1,7 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
 import './Selector.scss';
-import { render } from 'react-dom';
+import KeyboardEventHandler from 'react-keyboard-event-handler';
 
 class YearSelector extends React.Component {
 
@@ -24,6 +24,18 @@ class YearSelector extends React.Component {
     const { years, selected, onSelect } = this.props
     return (
       <div className="yearsSelectorScrollContainer" ref={this.paneDidMount}>
+        <KeyboardEventHandler
+          handleKeys={['all']}
+          onKeyEvent={(key, e) => {
+            if (key === 'up') {
+              const index = selected > 0 ? selected - 1 : 0
+              onSelect(index)
+            } else if (key === 'down') {
+              const index = selected < 10 ? selected + 1 : 10
+              onSelect(index)
+            }
+          }}
+        ></KeyboardEventHandler>
         <div className='yearsSelectorContainer' style={{ marginTop: isMobile ? '10px' : '0px' }}>
           <div className='yearsSelectorContainerWrapper'>
             {years.map((value, index) => {
