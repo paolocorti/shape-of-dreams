@@ -17,6 +17,25 @@
   font-size: 21px;
 }
 
+@media only screen and (min-width: 768px) {
+  .noteBox {
+    height: calc(100% - 50px);
+    position: fixed;
+    bottom: auto;
+    top: 50px;
+    right: 0;
+    left: auto;
+    width: 12.5%;
+    color: white;
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43449a;
+    font-size: 21px;
+  }
+}
+
 .noteBox-close {
   position: absolute;
   top: 10px;

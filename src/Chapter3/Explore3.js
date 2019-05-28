@@ -43,11 +43,38 @@ const Explore3 = ({ history, activeIndex }) => {
 
   const topics = interestOverTime.map(v => v[0].topic);
 
+  const upIndex = () => {
+    const newIndex = selectedIndex > 1 ? selectedIndex - 1 : 0
+    setSelectedIndex(newIndex)
+  }
+
+  const downIndex = () => {
+    console.log(topics.length - 1)
+    const newIndex = selectedIndex < topics.length - 1 ? selectedIndex + 1 : topics.length - 1
+    setSelectedIndex(newIndex)
+  }
+
+  console.log(interestOverTime)
+
   return (
     <div className='explore3' style={{ paddingTop: isMobile ? 0 : 60 }}>
       {
         !isMobile && (
           <NavigationBar history={history} activeIndex={activeIndex} />
+        )
+      }
+      {
+        !isMobile && note && (
+          <div className='noteBox ph4'>
+            <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
+              <img
+                src={'/images/close-white.svg'}
+                alt='Close menu icon'
+                width={20}
+              />
+            </div>
+            {note}
+          </div>
         )
       }
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
@@ -59,7 +86,19 @@ const Explore3 = ({ history, activeIndex }) => {
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Dreams’ subjects over time
           </h1>
-          <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
+          {
+            isMobile ?
+              (
+                <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
+
+              ) : (
+                <div style={{ width: '340px', display: 'flex', alignItems: 'center' }}>
+                  <img className='pointer mt3' onClick={upIndex} src={'/images/arrow-up.svg'} style={{ height: 40, opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }} />
+                  <TopicSelector topics={topics} onSwipe={setSelectedIndex} selectedIndex={selectedIndex} />
+                  <img className='pointer mt3' onClick={downIndex} src={'/images/arrow-down.svg'} style={{ height: 40, opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }} />
+                </div>
+              )
+          }
         </div>
         <div
           className='w-100 flex flex-column relative tc ios-fix'

@@ -18,7 +18,7 @@ const y = d => d.value;
 
 const Trend = ({ data, name, toggleNote, noteActive }) => {
   const svgWidth = isMobile ? window.innerWidth * 0.9 : 800;
-  const svgHeight = isMobile ? window.innerWidth * 0.7 : 500;
+  const svgHeight = isMobile ? window.innerWidth * 0.7 : 400;
   const trendHeight = svgHeight - 30;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
@@ -47,7 +47,7 @@ const Trend = ({ data, name, toggleNote, noteActive }) => {
 
   return (
     <div className='mt3'>
-      {noteActive && (
+      {isMobile && noteActive && (
         <div className='noteBox ph4'>
           <div className='noteBox-close' onClick={() => toggleNote('')}>
             <img
@@ -127,14 +127,19 @@ const Trend = ({ data, name, toggleNote, noteActive }) => {
         <g transform={`translate(20, 10)`}>
           <Animate
             start={() => ({
-              j: 4000
+              j: 5000
             })}
             enter={() => ({
               j: [0],
-              timing: { duration: 800, delay: 800, ease: easeQuadOut }
+              timing: { duration: 800, ease: easeQuadOut }
             })}
             update={() => ({
               j: [0],
+              timing: { duration: 800, ease: easeQuadOut }
+            })}
+
+            leave={() => ({
+              j: [5000],
               timing: { duration: 800, ease: easeQuadOut }
             })}
           >
@@ -147,8 +152,8 @@ const Trend = ({ data, name, toggleNote, noteActive }) => {
                   y={d => scaleY2(y(d))}
                   stroke={'url(#trendGradient)'}
                   strokeWidth={2}
-                  strokeDasharray={4000}
-                  strokeDashoffset={j}
+                // strokeDasharray={5000}
+                // strokeDashoffset={j}
                 />
               );
             }}
@@ -171,6 +176,7 @@ const Trend = ({ data, name, toggleNote, noteActive }) => {
                       cy={trendHeight - scaleY(value)}
                       fill={'#43449a'}
                       r={4}
+                      style={{ cursor: 'pointer' }}
                     />
                     <circle
                       id={`circle-${i}`}
@@ -179,6 +185,7 @@ const Trend = ({ data, name, toggleNote, noteActive }) => {
                       stroke={'#43449a'}
                       fill={'transparent'}
                       r={10}
+                      style={{ cursor: 'pointer' }}
                     />
                     <text
                       dx={100}
