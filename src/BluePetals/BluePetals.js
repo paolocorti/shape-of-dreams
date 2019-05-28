@@ -55,6 +55,8 @@ const BluePetals = ({
   const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.5;
   const dimensionScale = scaleLinear().domain([0, 24]).range([0, 100])
 
+  console.log(selectedPetal, categories)
+
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
@@ -101,74 +103,76 @@ const BluePetals = ({
           selectedPetal={selectedPetal}
         />
         <g transform={`translate(300, 280)`} id='blupetals'>
-          {categories.map((category, i) => {
-            const value = category.value
-            if (value === 1) {
-              return (
-                <BluePetal1 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 2) {
-              return (
-                <BluePetal2 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 3) {
-              return (
-                <BluePetal3 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 4) {
-              return (
-                <BluePetal4 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 5) {
-              return (
-                <BluePetal5 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 6) {
-              return (
-                <BluePetal6 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 7) {
-              return (
-                <BluePetal7 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 8) {
-              return (
-                <BluePetal8 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 9) {
-              return (
-                <BluePetal9 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 10) {
-              return (
-                <BluePetal10 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 11) {
-              return (
-                <BluePetal11 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 12) {
-              return (
-                <BluePetal12 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 13) {
-              return (
-                <BluePetal13 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 14) {
-              return (
-                <BluePetal14 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value === 15) {
-              return (
-                <BluePetal15 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            } else if (value > 15) {
-              return (
-                <BluePetal16 id={i} key={i} selectedPetal={selectedPetal} />
-              );
-            }
-          })}
+          {categories
+            .map((category, i) => {
+              const value = category.value
+              console.log(value)
+              if (value === 1) {
+                return (
+                  <BluePetal1 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 2) {
+                return (
+                  <BluePetal2 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 3) {
+                return (
+                  <BluePetal3 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 4) {
+                return (
+                  <BluePetal4 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 5) {
+                return (
+                  <BluePetal5 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 6) {
+                return (
+                  <BluePetal6 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 7) {
+                return (
+                  <BluePetal7 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 8) {
+                return (
+                  <BluePetal8 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 9) {
+                return (
+                  <BluePetal9 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 10) {
+                return (
+                  <BluePetal10 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 11) {
+                return (
+                  <BluePetal11 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 12) {
+                return (
+                  <BluePetal12 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 13) {
+                return (
+                  <BluePetal13 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 14) {
+                return (
+                  <BluePetal14 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value === 15) {
+                return (
+                  <BluePetal15 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              } else if (value > 15) {
+                return (
+                  <BluePetal16 id={i} key={i} selectedPetal={selectedPetal} />
+                );
+              }
+            })}
           <circle r={6} fill={'#607dbd'} cx={1} cy={21} />
         </g>
       </svg>

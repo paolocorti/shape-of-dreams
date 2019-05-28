@@ -126,7 +126,7 @@ const Explore2 = ({ history, activeIndex }) => {
             {
               selectedCategories && (
                 <BluePetals
-                  categories={selectedCategories}
+                  categories={selectedCategories.sort((a, b) => a.order - b.order)}
                   year={years[selectedYearIndex]}
                   language={languages[selectedLanguageIndex]}
                   setSelectedPetal={setSelectedPetalWrapper}
