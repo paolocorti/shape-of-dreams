@@ -16,7 +16,25 @@ const x = d => {
 };
 const y = d => d.value;
 
-const Trend = ({ data, name, toggleNote, noteActive }) => {
+const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote }) => {
+
+  useEffect(() => {
+    console.log(data)
+    let peak = false
+    let note = null
+    data.forEach((d) => {
+      if (d.peak) {
+        peak = true
+        note = d.note
+      }
+    })
+    if (peak) {
+      activateNote(note)
+    } else {
+      deactivateNote()
+    }
+  }, [data])
+
   const svgWidth = isMobile ? window.innerWidth * 0.9 : 800;
   const svgHeight = isMobile ? window.innerWidth * 0.7 : 400;
   const trendHeight = svgHeight - 30;

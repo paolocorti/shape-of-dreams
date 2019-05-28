@@ -29,6 +29,14 @@ const Explore3 = ({ history, activeIndex }) => {
     }
   };
 
+  const activateNote = text => {
+    setNote(text);
+  }
+
+  const deactivateNote = text => {
+    setNote(null);
+  }
+
   const onSelectYear = index => {
     setSelectedYearIndex(index);
   };
@@ -66,13 +74,13 @@ const Explore3 = ({ history, activeIndex }) => {
       {
         !isMobile && note && (
           <div className='noteBox ph4'>
-            <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
+            {/* <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
               <img
                 src={'/images/close-white.svg'}
                 alt='Close menu icon'
                 width={20}
               />
-            </div>
+            </div> */}
             {note}
           </div>
         )
@@ -112,6 +120,8 @@ const Explore3 = ({ history, activeIndex }) => {
               data={interestOverTime[selectedIndex]}
               toggleNote={setNote}
               noteActive={note}
+              activateNote={activateNote}
+              deactivateNote={deactivateNote}
             />
           </div>
           <div
