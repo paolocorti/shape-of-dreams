@@ -57,7 +57,6 @@ const Explore3 = ({ history, activeIndex }) => {
   }
 
   const downIndex = () => {
-    console.log(topics.length - 1)
     const newIndex = selectedIndex < topics.length - 1 ? selectedIndex + 1 : topics.length - 1
     setSelectedIndex(newIndex)
   }

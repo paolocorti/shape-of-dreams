@@ -19,15 +19,10 @@ const y = d => d.value;
 const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote }) => {
 
   useEffect(() => {
-    console.log(data)
-    let peak = false
-    let note = null
-    data.forEach((d) => {
-      if (d.peak) {
-        peak = true
-        note = d.note
-      }
-    })
+    let peak = data[0].hasPeak || false
+    let peakData = data.find(d => d.peak)
+    console.log(peakData)
+    const note = peakData ? peakData.note : null
     if (peak) {
       activateNote(note)
     } else {
