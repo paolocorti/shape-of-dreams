@@ -71,8 +71,8 @@ const Explore3 = ({ history, activeIndex }) => {
         )
       }
       {
-        !isMobile && note && (
-          <div className='noteBox ph4'>
+        !isMobile && (
+          <div className='noteBox ph4' style={{ right: note ? '0px' : '-12.5%', transition: '.5s right' }}>
             {/* <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
               <img
                 src={'/images/close-white.svg'}
