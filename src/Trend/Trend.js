@@ -201,9 +201,9 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                       style={{ cursor: 'pointer' }}
                     />
                     <text
-                      dx={100}
+                      dx={scaleX(date) - 20}
                       dy={trendHeight - scaleY(value) + 2}
-                      textAnchor={'start'}
+                      textAnchor={'end'}
                     >
                       {date.format('MMMM YYYY')}
                     </text>
