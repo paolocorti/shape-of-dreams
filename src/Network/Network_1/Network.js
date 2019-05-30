@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import NetworkLines from './NetworkLines';
 import NetworkLanguages from './NetworkLanguages';
 import NetworkTexts from './NetworkTexts';
-import NetworkPetals from './NetworkPetals';
+import NetworkCircles from './NetworkCircles';
+import { isMobile } from 'react-device-detect';
 
-const Network = ({}) => {
+const Network = ({ }) => {
   const [selected, setSelected] = useState('');
-  const svgHeight = window.innerHeight * 0.6;
-  const svgWidth = svgHeight / 1.33;
+  const svgHeight = isMobile ? window.innerHeight * 0.6 : 600;
+  const svgWidth = svgHeight;
 
   const selectedCallback = language => {
     const selection = language === selected ? '' : language;
@@ -22,13 +23,13 @@ const Network = ({}) => {
         className='viz'
         x='0px'
         y='0px'
-        viewBox='0 0 600 800'
+        viewBox='0 0 510.2 510.2'
         width={svgWidth}
         height={svgHeight}
         style={{ border: '0px solid rgba(0,0,0,1)', margin: 'auto' }}
       >
-        <NetworkPetals selected={selected} setSelected={selectedCallback} />
         <NetworkLines selected={selected} />
+        <NetworkCircles selected={selected} setSelected={selectedCallback} />
         <NetworkLanguages selected={selected} />
         <NetworkTexts selected={selected} />
       </svg>
