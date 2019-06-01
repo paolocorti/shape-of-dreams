@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Livello_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 125.4 155.4"
-	 style="enable-background:new 0 0 125.4 155.4;" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="155.4" width="125.4" x="617.8" y="-419"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g id="dna.psd">
-	
-		<image style="overflow:visible;" width="933" height="1156" id="dna" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA7EAAASJCAYAAAAOrZsXAAAACXBIWXMAAFJuAABSbgH4lzznAAAA
+<svg enable-background="new 0 0 125.4 155.4" viewBox="0 0 125.4 155.4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image height="1156" overflow="visible" transform="scale(.1344)" width="933" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA7EAAASJCAYAAAAOrZsXAAAACXBIWXMAAFJuAABSbgH4lzznAAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAACqMNJREFUeNrs3Qd0VNXaBuCd3jsp
 pBeSkEDoEEiA0FsAAQtIbyLYAJWrAgroFVQQC6LYUVBRr1LlRymhBQiQ0EkjkE4K6b3uf3/nGi8l
 mZaZkPI+a52VkJyZObPPmTDvfLswBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3080,7 +3057,4 @@ ZGVfGSNrBlqp6kqFVQKwPJfAaoZc3T49tE7Vv1/l6+tbrL8uZ6wrAAAgxAIAQdacrbhTnRBaVV9X
 3VqB9vo/1nX2r97XXQ+yEpJ3S0gtLS01gqyEV6nmmo8SoPUw+xMzKOubBFZmGAYAAAAAWA+2+ubq
 iP3k+/rmWb156AH2p3qo1fRHTQ+00fK16n1cbXlPAACA9oBKLAC0YoCt/XfXkRMnVYdU6WZc+5xU
 WwEAACEWANCsEFu7e3ElIRMAAKBp6F4GAK1ED6zGeFgJr+bfYLr5AgAAEGIBoK0HWdmMqixrsQIA
-ADTN/xNgAKBbINLfKbvJAAAAAElFTkSuQmCC" transform="matrix(0.1344 0 0 0.1344 0 0)">
-	</image>
-</g>
-</svg>
+ADTN/xNgAKBbINLfKbvJAAAAAElFTkSuQmCC"/></svg>

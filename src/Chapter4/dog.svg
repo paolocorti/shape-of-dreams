@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Livello_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 121 167.9"
-	 style="enable-background:new 0 0 121 167.9;" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="167.9" width="121" x="620.8" y="-425.5"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g id="dog.psd">
-	
-		<image style="overflow:visible;" width="900" height="1249" id="dog" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4wAAATqCAYAAAAdwO9rAAAACXBIWXMAAFJuAABSbgH4lzznAAAA
+<svg enable-background="new 0 0 121 167.9" viewBox="0 0 121 167.9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image height="1249" overflow="visible" transform="scale(.1344)" width="900" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4wAAATqCAYAAAAdwO9rAAAACXBIWXMAAFJuAABSbgH4lzznAAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAACwdlJREFUeNrsnQd4FNX6/4cUQu+9
 CEjvVXqvCgjSFWkCAoogHRQQuQKC9Xr1qlcRFbFXLGBBmgICoRMQQjEQkpCEhBY6zP98zs/hH5ft
 2U024f08zzxJtszOnDmzeb/nbYYhCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg
@@ -3193,7 +3170,4 @@ HuMayKRe8h4x1tLbt2/vC4fDjqUWGQWvC7WV0M5jx459W1paWidCKQVh5Dzt/as5hNJWIxAI5NuN
 CFJIR6quSjGdUCh0r7+//97ikplaLJZFt9udrampibhcrgjOXcCcZTQ5xObD759kxVFCCCGEEEJh
 JGRzfecWlwRTd/z48W8ggvUiiiJ/UjVVey9CuJxEIrFlcHBwC6Q0/7NIpfR83LFjh1QevXfy5Mlf
 ent7tdMZHkoIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEII2Wj+FmAAIbttzkhh/z0AAAAA
-SUVORK5CYII=" transform="matrix(0.1344 0 0 0.1344 0 0)">
-	</image>
-</g>
-</svg>
+SUVORK5CYII="/></svg>
