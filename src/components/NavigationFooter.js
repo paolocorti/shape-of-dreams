@@ -60,6 +60,7 @@ const NavigationFooter = ({ history }) => {
             alt='Legend icon'
             width={24}
             onClick={() => context.toggleLegend()}
+            className='pointer'
           />
         </div>
       </div>

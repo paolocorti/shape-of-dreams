@@ -4,7 +4,11 @@ import { isMobile } from 'react-device-detect';
 import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
-import Network from '../Network/Network_1';
+import Network1 from '../Network/Network_1';
+import Network2 from '../Network/Network_2';
+import Network3 from '../Network/Network_3';
+import Network4 from '../Network/Network_4';
+import Network5 from '../Network/Network_5';
 import { years } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 
@@ -101,7 +105,36 @@ const Explore4 = ({ history, activeIndex }) => {
             className='flex flex-column justify-center items-center'
             style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
-            <Network />
+            {
+              selectedYearIndex === 0 &&
+              (
+                <Network1 />
+              )
+            }
+            {
+              selectedYearIndex === 1 &&
+              (
+                <Network2 />
+              )
+            }
+            {
+              selectedYearIndex === 2 &&
+              (
+                <Network3 />
+              )
+            }
+            {
+              selectedYearIndex === 3 &&
+              (
+                <Network4 />
+              )
+            }
+            {
+              selectedYearIndex === 4 &&
+              (
+                <Network5 />
+              )
+            }
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'

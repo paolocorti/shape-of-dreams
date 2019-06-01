@@ -18,7 +18,7 @@ const Menu = ({ history }) => {
   return (
     <div
       className={`menu w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${
-        context.menuOpen ? 'open' : ''
+        context.menuOpen ? 'open' : 'close'
         }`}
     >
       <div className='w-100' style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}>
@@ -76,7 +76,7 @@ const Menu = ({ history }) => {
         </div>
         </div>
         {
-          isMobile && 
+          isMobile &&
           (
             <div
               className='w-100 flex items-center ph4'
@@ -90,7 +90,7 @@ const Menu = ({ history }) => {
           )
         }
         {
-          isMobile && 
+          isMobile &&
           (
             <div className='w-100 flex items-center ph4'>
               <div className='white tl' style={{ fontSize: isMobile ? '28px' : '48px' }}>
@@ -105,6 +105,7 @@ const Menu = ({ history }) => {
               src={'/images/close-white.svg'}
               alt='Close menu icon'
               width={30}
+              className='pointer'
             />
           </div>
         </div>

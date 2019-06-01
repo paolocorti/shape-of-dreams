@@ -212,14 +212,24 @@ h4 {
   z-index: -100;
   animation: slideMenuOut 0.5s 0s forwards;
   pointer-events: none;
+  opacity: 0;
 }
 
 .menu.open {
   transition: 0.5s all;
   height: 100%;
   z-index: 100;
-  transform: translate(0, 100%);
+  transform: translate(0%, 0%);
   animation: slideMenuIn 0.5s 0s forwards;
+  pointer-events: auto;
+}
+
+.menu.close {
+  transition: 0.5s all;
+  height: 100%;
+  z-index: 100;
+  transform: translate(-100%, 0%);
+  animation: slideMenuOut 0.5s 0s forwards;
   pointer-events: auto;
 }
 
@@ -229,9 +239,10 @@ h4 {
   overflow: hidden;
   background-color: rgba(67, 68, 154, 0.9);
   transform: translate(100%, 0%);
-  z-index: -10;
+  z-index: -100;
   animation: slideLegendOut 0.5s 0s forwards;
   pointer-events: none;
+  opacity: 0;
 }
 
 .legend.open {
@@ -242,11 +253,21 @@ h4 {
   pointer-events: auto;
 }
 
+.legend.close {
+  transition: 0.5s all;
+  z-index: 100;
+  transform: translate(100%, 0%);
+  animation: slideLegendOut 0.5s 0s forwards;
+  pointer-events: auto;
+}
+
 @keyframes slideMenuIn {
   0% {
+    opacity: 1;
     transform: translate(-100%, 0%);
   }
   100% {
+    opacity: 1;
     transform: translate(0, 0%);
   }
 }
@@ -268,9 +289,11 @@ h4 {
 
 @keyframes slideLegendIn {
   0% {
+    opacity: 1;
     transform: translate(100%, 0%);
   }
   100% {
+    opacity: 1;
     transform: translate(0%, 0%);
   }
 }

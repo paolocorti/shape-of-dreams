@@ -14,19 +14,19 @@ import NavigationFooter from './components/NavigationFooter';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Menu from './components/Menu';
 import Legend from './components/Legend';
-import {isMobile} from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 const Routes = ({ location }) => {
   const { pathname } = location;
   const context = useContext(AppContext);
 
   return (
-    <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobile ? 'auto' : '100%', overflow: isMobile ? 'auto' : 'hidden'}}>
+    <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobile ? 'auto' : '100%', overflow: isMobile ? 'auto' : 'hidden' }}>
       {pathname !== '/' && <Header />}
 
-      {context.menuOpen && <Menu />}
+      {pathname !== '/' && <Menu />}
 
-      {context.legendOpen && <Legend />}
+      {pathname !== '/' && <Legend />}
 
       <Route exact path='/' component={Landing} />
 

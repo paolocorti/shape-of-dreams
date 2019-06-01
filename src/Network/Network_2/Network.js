@@ -5,7 +5,7 @@ import NetworkTexts from './NetworkTexts';
 import NetworkCircles from './NetworkCircles';
 import { isMobile } from 'react-device-detect';
 
-const Network1 = ({ }) => {
+const Network2 = ({ }) => {
   const [selected, setSelected] = useState('');
   const svgHeight = isMobile ? window.innerHeight * 0.6 : 600;
   const svgWidth = svgHeight;
@@ -37,4 +37,4 @@ const Network1 = ({ }) => {
   );
 };
 
-export default Network1;
+export default Network2;
