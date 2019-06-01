@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Livello_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70.4 226.2"
-	 style="enable-background:new 0 0 70.4 226.2;" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="226.2" width="70.4" x="644.6" y="-454.3"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g id="garlic.psd_3_">
-	
-		<image style="overflow:visible;" width="474" height="1522" id="garlic" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeUAAAX5CAYAAABLawKRAAAACXBIWXMAAEqWAABKlgGbN+xHAAAA
+<svg enable-background="new 0 0 70.4 226.2" viewBox="0 0 70.4 226.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image height="1522" overflow="visible" transform="scale(.1486)" width="474" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeUAAAX5CAYAAABLawKRAAAACXBIWXMAAEqWAABKlgGbN+xHAAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAE+UdJREFUeNrsvQecZFd953tuvrdy
 6hynpydogjISshCMyJIwtsEDKzBGi5ex0UO2JCREsBkLGzCGB3i1lr3y2mbXH68XjQk2bzEmPPTW
 axYbgUEoTY4dK1fdHN85t6q6K9yqntbMSNU9/+98aqZDdUl96pzzO///+QeEAAAAAADoCygYAgAA
@@ -5741,7 +5718,4 @@ oK41AADglAFgukllCw9eHsw+kspk41iUaZZl3UgkfDoUCn0nEom+/8i2bbCHDAAAOGUAmG7OvfmL
 +P7T59dcSaWbLctmGYZxQ5p2MRoJ/5Om+d/BggwhawAAQJQBYLohHaBShdLv9qSHtmTyhYiPonwB
 v/9KIh79R82v/ujxHf8JqnUBAACiDAAzIsqZwm9/0HXxd7qvJOeT2tZYkC/HE4l/ltTAD3Z88Ulo
 MgEAwJwC9pSBOc3xS33Luq/0tlm2w0TCoQIW5J/LsvL9J598MgmjAwAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAHxS+A8BBgCZyuTrIvEy8AAAAABJRU5ErkJggg==" transform="matrix(0.1486 0 0 0.1486 0 0)">
-	</image>
-</g>
-</svg>
+AAAAAAAAAHxS+A8BBgCZyuTrIvEy8AAAAABJRU5ErkJggg=="/></svg>

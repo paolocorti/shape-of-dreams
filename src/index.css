@@ -379,3 +379,8 @@ h4 {
   perspective: 1000;
   -webkit-perspective: 1000;
 }
+
+.highlights {
+  font-weight: bold;
+  font-style: italic;
+}

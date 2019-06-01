@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Livello_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130.2 110.1"
-	 style="enable-background:new 0 0 130.2 110.1;" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="110.1" width="130.2" x="615.3" y="-396.6"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g id="cabbage.psd_2_">
-	
-		<image style="overflow:visible;" width="1089" height="921" id="cabbage" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABEcAAAOgCAYAAADfwBg6AAAACXBIWXMAAFyUAABclAH4bFn4AAAA
+<svg enable-background="new 0 0 130.2 110.1" viewBox="0 0 130.2 110.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image height="921" overflow="visible" transform="scale(.1196)" width="1089" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABEcAAAOgCAYAAADfwBg6AAAACXBIWXMAAFyUAABclAH4bFn4AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAJ9V1JREFUeNrs3QmUJHleH/bfPyLy
 vjPrvqtr+piZ7pmenoPl9sKzEFp5gbewvAdYPDCSMTykZQ1YaL2GeZJl4yfL+yTvLnpIBmSeZCG/
 BwYEssW1sOdsz9HTd9d9ZFVWZuV9Z0bE3/GPzMiMiMzs7h12dmd2v5+l6O6qzMjIq6b+3/r9fz8i
@@ -11472,7 +11449,4 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAADAbzj/TYABAHpnfk9aY3rMAAAAAElFTkSuQmCC" transform="matrix(0.1196 0 0 0.1196 0 0)">
-	</image>
-</g>
-</svg>
+AAAAAAAAAAAAAAAAAAAAAADAbzj/TYABAHpnfk9aY3rMAAAAAElFTkSuQmCC"/></svg>

@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Livello_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 206.1 109.5"
-	 style="enable-background:new 0 0 206.1 109.5;" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="109.5" width="206.1" x="577.3" y="-395.5"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g id="iguana.psd_2_">
-	
-		<image style="overflow:visible;" width="1359" height="722" id="iguana" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABU8AAALSCAYAAADtBCBwAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+<svg enable-background="new 0 0 206.1 109.5" viewBox="0 0 206.1 109.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image height="722" overflow="visible" transform="matrix(-.1516 0 0 .1516 206.0516 0)" width="1359" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABU8AAALSCAYAAADtBCBwAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAGBC5JREFUeNrsnXeAG9W59p+jMtJK
 K21vtnfdy7pXXDAuGEwzhBIHl0CckJCQCuFSEpIYUxICoV/SuV/6DcmlhB7AmI7Bxja44W7ver29
 F63azKcz0khTtVrbBGO/P5AlzZw5c8rIfzx+3vdlIAiCIAiCIAiCIAiCIAjiM8eqVavct9xz18YP
@@ -6940,7 +6917,4 @@ AAB2qVgs5vvZ+V/9++Ibb7pf/fs/fIqieOrt17dvgCzLMvi2LEmMEbFwtNd265rR5vVWiVEll8tJ
 Pr9PIMacEPHQ2NGqS3WbYVUfWXu8U6dOydFoVP35by+8+dff/7FtMZ3xSaLkTiYSQqgnolQrVZPv
 J4qiE2pG+qL2g0eP5KvVaoE/n0mnyVwqSYIoyCvHbGv3scGhQYsJzKq9ki0tGfTB1Wty7bjqre+t
 6ZpNtSbu6Yna/o5ANax6hvBNAAAAAAAAAAAAgIbGx8fd1wvZ9+aKiyy+VFi9oWcAYDf7vwADAFKr
-eabx+a9VAAAAAElFTkSuQmCC" transform="matrix(-0.1516 0 0 0.1516 206.0516 0)">
-	</image>
-</g>
-</svg>
+eabx+a9VAAAAAElFTkSuQmCC"/></svg>
