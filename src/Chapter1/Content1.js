@@ -5,6 +5,12 @@ import content3 from './cap1-03-desk.jpg'
 import content4 from './cap1-04-desk.jpg'
 import content5 from './cap1-05-desk.jpg'
 import content1a from './cap1_01a-desk.jpg'
+import mobileContent1 from './cap1-01-mob.jpg'
+import mobileContent2 from './cap1-02-mob.jpg'
+import mobileContent3 from './cap1-03-mob.jpg'
+import mobileContent4 from './cap1-04-mob.jpg'
+import mobileContent5 from './cap1-05-mob.jpg'
+import mobileContent1a from './cap1_01a-mob.jpg'
 import snake from './snake.svg'
 import teeth from './teeth.svg'
 import cabbage from './cabbage.svg'
@@ -34,7 +40,7 @@ const Content1 = ({ history, activeIndex }) => {
         <p className='lh-title'>How do we search for the meaning of our dreams on Google? We have explored the related queries to the question What does it mean to dream about in different languages to see what are the dreams’ subjects that the users look for the most. We discovered that we share some recurring dreams.</p>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={content1} width='100%' alt='chapter 1' />
+        <img src={isMobile ? mobileContent1 : content1} width='100%' alt='chapter 1' />
       </div>
       <div className='tj f4 ph5 mt5'>
         <p className='lh-title'>
@@ -43,7 +49,7 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={content1a} width='100%' alt='chapter 1' />
+        <img src={isMobile ? mobileContent1a : content1a} width='100%' alt='chapter 1' />
       </div>
       <div className='tj f4 ph5 mt5'>
         <p className='lh-title'>
@@ -55,14 +61,14 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3'>Dreaming about snakes</h2>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={content2} width='100%' alt='chapter 1' />
+        <img src={isMobile ? mobileContent2 : content2} width='100%' alt='chapter 1' />
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <img src={teeth} width={80} alt='Dreaming about falling teeths' />
         <h2 className='mv3'>Dreaming about falling teeths</h2>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={content3} width='100%' alt='chapter 1' />
+        <img src={isMobile ? mobileContent3 : content3} width='100%' alt='chapter 1' />
       </div>
       <div className='tj f4 ph5 mt5'>
         <p className='lh-title'>
@@ -81,7 +87,7 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3'>Unique subjects</h2>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={content4} width='100%' alt='chapter 1' />
+        <img src={isMobile ? mobileContent4 : content4} width='100%' alt='chapter 1' />
       </div>
 
       <div className='tj f4 ph5 mt5'>
@@ -98,7 +104,7 @@ const Content1 = ({ history, activeIndex }) => {
       </div>
 
       <div className='w-100 tc mt4'>
-        <img src={content5} width='100%' alt='chapter 1' />
+        <img src={isMobile ? mobileContent5 : content5} width='100%' alt='chapter 1' />
       </div>
       <div className='tj f4 ph5 mt5'>
         <p className='lh-title'>
