@@ -13,7 +13,7 @@ const NetworkCircles = ({ selected, setSelected }) => {
     <g id="circles">
       <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal1} transform="matrix(0.235 0 0 0.235 232.6282 111.0258)" onClick={() => setSelected('AR')} onMouseEnter={() => setSelected('AR')} onMouseLeave={() => setSelected('')}>
       </image>
-      <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal2} transform="matrix(0.235 0 0 0.235 288.0681 354.1458)" onClick={() => setSelected('JP')} onMouseEnter={() => setSelected('JP')} onMouseLeave={() => setSelected('')}>
+      <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal2} transform="matrix(0.235 0 0 0.235 288.0681 354.1458)">
       </image>
       <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal3} transform="matrix(0.235 0 0 0.235 176.9482 354.1458)" onClick={() => setSelected('PO')} onMouseEnter={() => setSelected('PO')} onMouseLeave={() => setSelected('')}>
       </image>

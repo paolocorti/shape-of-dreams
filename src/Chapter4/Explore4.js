@@ -165,7 +165,7 @@ const Explore4 = ({ history, activeIndex }) => {
               )
             } */}
 
-            <Network4 year={years[selectedYearIndex]} />
+            <Network5 year={years[selectedYearIndex]} />
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'

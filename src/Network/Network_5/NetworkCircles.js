@@ -11,7 +11,7 @@ import '../Network.scss';
 const NetworkCircles = ({ selected, setSelected }) => {
   return (
     <g id="circles">
-      <image style={{ cursor: 'pointer', opacity: 0.5, enableBackground: 'new' }} width="192" height="192" xlinkHref={petal1} transform="matrix(0.235 0 0 0.235 232.6282 111.0258)" >
+      <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal1} transform="matrix(0.235 0 0 0.235 232.6282 111.0258)" onClick={() => setSelected('AR')} onMouseEnter={() => setSelected('AR')} onMouseLeave={() => setSelected('')}>
       </image>
       <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal2} transform="matrix(0.235 0 0 0.235 288.0681 354.1458)" onClick={() => setSelected('JP')} onMouseEnter={() => setSelected('JP')} onMouseLeave={() => setSelected('')}>
       </image>
@@ -32,6 +32,7 @@ const NetworkCircles = ({ selected, setSelected }) => {
         <circle class="st3" cx="199.6" cy="376.8" r="22" style={{ opacity: selected === 'PO' ? 1 : 0 }} />
         <circle class="st3" cx="129.9" cy="290" r="22" style={{ opacity: selected === 'RU' ? 1 : 0 }} />
         <circle class="st3" cx="310.6" cy="376.8" r="22" style={{ opacity: selected === 'JP' ? 1 : 0 }} />
+        <circle class="st3" cx="255.1" cy="133.7" r="22" style={{ opacity: selected === 'AR' ? 1 : 0 }} />
       </g>
     </g >
   );

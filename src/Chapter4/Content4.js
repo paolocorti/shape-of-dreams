@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import content1 from './cap4-01-desk.jpg'
-import content2 from './cap4-02-desk.jpg'
-import content3 from './cap4-03-desk.jpg'
-import content4 from './cap4-04-desk.jpg'
+import content1 from './cap4-01-desk.png'
+import content2 from './cap4-02-desk.png'
+import content3 from './cap4-03-desk.png'
+import content4 from './cap4-04-desk.png'
 import mobileContent1 from './cap4-01-mob.jpg'
 import mobileContent2 from './cap4-02-mob.jpg'
 import mobileContent3 from './cap4-03-mob.jpg'
