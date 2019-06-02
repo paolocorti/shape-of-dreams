@@ -4,7 +4,7 @@ import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
 import { Animate } from 'react-move';
 import { easeQuadOut } from 'd3-ease';
-import { LinePath } from '@vx/shape';
+import { AreaClosed } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
@@ -14,7 +14,9 @@ import './Trend.scss';
 const x = d => {
   return moment(d.time);
 };
-const y = d => d.value;
+const y = d => {
+  return d.value
+};
 
 const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote }) => {
 
@@ -88,15 +90,18 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             id='trendGradient'
             x1='0%'
             y1='0%'
-            x2='100%'
+            x2='0%'
             y2='100%'
             gradientUnits='userSpaceOnUse'
           >
-            <stop offset='0%' stopColor='#e3c3c1' stopOpacity='1' />
-            <stop offset='100%' stopColor='#c27b76' stopOpacity='1' />
+            <stop offset='0%' stopColor='rgb(242,219,218)' stopOpacity='1' />
+            <stop offset='70%' stopColor='rgb(255,246,245)' stopOpacity={0.5} />
+            <stop offset='100%' stopColor='rgb(255,246,245)' stopOpacity={0} />
           </linearGradient>
+
+
         </defs>
-        <g transform={`translate(20, 10)`}>
+        <g transform={`translate(16, 10)`}>
           {parsedData.map((d, i) => {
             const date = moment(d.time);
             const value = d.value;
@@ -127,8 +132,8 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                         y1={trendHeight}
                         x2={scaleX(date)}
                         y2={y2}
-                        stroke={'#af5a4d'}
-                        strokeWidth={0.4}
+                        stroke={'#8d4538'}
+                        strokeWidth={0.5}
                       />
                     );
                   }}
@@ -137,7 +142,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             );
           })}
         </g>
-        <g transform={`translate(20, 10)`}>
+        <g transform={`translate(16, 10)`}>
           <Animate
             start={() => ({
               j: 5000
@@ -159,12 +164,16 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             {state => {
               const { j } = state;
               return (
-                <LinePath
+                <AreaClosed
                   data={data}
                   x={d => scaleX(x(d))}
                   y={d => scaleY2(y(d))}
-                  stroke={'url(#trendGradient)'}
-                  strokeWidth={2}
+                  y0={svgHeight - 30}
+                  yScale={scaleY2}
+                  stroke={'#b36762'}
+                  fill={'url(#trendGradient)'}
+                  strokeWidth={1}
+                  curve={curveMonotoneX}
                 // strokeDasharray={5000}
                 // strokeDashoffset={j}
                 />
@@ -173,7 +182,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
           </Animate>
         </g>
         {
-          <g transform={`translate(20, 15)`}>
+          <g transform={`translate(16, 15)`}>
             {data.map((d, i) => {
               const date = moment(d.time);
               const value = d.value;
