@@ -4,7 +4,7 @@ import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
 import { Animate } from 'react-move';
 import { easeQuadOut } from 'd3-ease';
-import { AreaClosed } from '@vx/shape';
+import { AreaClosed, LinePath } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
@@ -170,10 +170,46 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   y={d => scaleY2(y(d))}
                   y0={svgHeight - 30}
                   yScale={scaleY2}
-                  stroke={'#b36762'}
                   fill={'url(#trendGradient)'}
+                  strokeWidth={0}
+                  curve={curveMonotoneX}
+                // strokeDasharray={5000}
+                // strokeDashoffset={j}
+                />
+              );
+            }}
+          </Animate>
+        </g>
+        <g transform={`translate(16, 10)`}>
+          <Animate
+            start={() => ({
+              j: 5000
+            })}
+            enter={() => ({
+              j: [0],
+              timing: { duration: 800, ease: easeQuadOut }
+            })}
+            update={() => ({
+              j: [0],
+              timing: { duration: 800, ease: easeQuadOut }
+            })}
+
+            leave={() => ({
+              j: [5000],
+              timing: { duration: 800, ease: easeQuadOut }
+            })}
+          >
+            {state => {
+              const { j } = state;
+              return (
+                <LinePath
+                  data={data}
+                  x={d => scaleX(x(d))}
+                  y={d => scaleY2(y(d))}
+                  stroke={'#b36762'}
                   strokeWidth={1}
                   curve={curveMonotoneX}
+
                 // strokeDasharray={5000}
                 // strokeDashoffset={j}
                 />
