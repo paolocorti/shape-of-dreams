@@ -116,7 +116,7 @@ const Explore3 = ({ history, activeIndex }) => {
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
-            Dreams’ subjects over time
+            Dreams’ subjects: interest over time
           </h1>
           {
             isMobile ?
@@ -156,7 +156,7 @@ const Explore3 = ({ history, activeIndex }) => {
               className='tc raleway mt2'
               style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
-              Scroll up and down in the box to change the dream
+              Click on the arrows or use the keyboard arrows to change the dream.
             </div>
             <div
               className='raleway mt3 fw7 pointer'

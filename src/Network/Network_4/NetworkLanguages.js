@@ -4,7 +4,7 @@ import '../Network.scss';
 const NetworkLanguages = ({ selected }) => {
   return (
     <g id="languages">
-      <g class="st4">
+      <g >
         <text transform="matrix(1 0 0 1 245.2829 137.7695)" class="st5 st6 st7">AR</text>
       </g>
       <g>
@@ -13,7 +13,7 @@ const NetworkLanguages = ({ selected }) => {
       <g>
         <text transform="matrix(1 0 0 1 370.6091 294.1885)" class="st5 st6 st7">FR</text>
       </g>
-      <g>
+      <g class="st4">
         <text transform="matrix(1 0 0 1 301.9733 380.9941)" class="st5 st6 st7">JP</text>
       </g>
       <g>

@@ -172,9 +172,15 @@ const Explore2 = ({ history, activeIndex }) => {
               className='tc raleway mt2'
               style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
-              Select a language and a year. tap on the circle to switch on and
-              off the category. size of the petals = number of dreams in the
-              category
+
+              {
+                isMobile ?
+                  (
+                    'Select a language and a year. Tap on the circle to switch on and off the category. Size of the petals = number of dreams in the category'
+                  ) : (
+                    'Select a language and a year or use the keyboard arrows to navigate the visualization. Go over on the circles to switch on and off the category. The size of the petals represents the number of dreams in the category.'
+                  )
+              }
             </div>
             <div
               className='raleway mt3 fw7 pointer'

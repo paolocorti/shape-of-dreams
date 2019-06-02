@@ -159,7 +159,7 @@ const Explore1 = ({ history, activeIndex }) => {
         <div className='w-100 ph4 ios-fix' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
-            Dreams' subjects by category
+            What does it mean to dream about...
           </h1>
           <LanguageSelector
             languages={groupedByCountryKeys}
@@ -325,12 +325,11 @@ const Explore1 = ({ history, activeIndex }) => {
               {
                 isMobile ?
                   (
-                    'Select a language, a year and tap on the arrows. number of petals = increase in search interest for a dream in comparison to the previous year.'
+                    'Select a language, a year and tap on the arrows. Number of petals = increase in search interest for a dream in comparison to the previous year.'
                   ) : (
-                    'Select a language, a year and click on the arrows. Number of petals corresponds to increase in search interest for a dream In comparison to the previous year.'
+                    'Select a language and a year or use the keyboard arrows to navigate the visualization. Click on the arrows to explore the dreams. The number of petals corresponds to an increase in search interest for a dream in comparison to the previous year.'
                   )
               }
-
             </div>
             <div
               className='raleway mt3 fw7 pointer hover-underline'

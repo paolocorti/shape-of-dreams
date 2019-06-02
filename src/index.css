@@ -237,7 +237,7 @@ h4 {
   transition: 0.5s all;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(67, 68, 154, 0.9);
+  background-color: rgba(67, 68, 154, 0.95);
   transform: translate(100%, 0%);
   z-index: -100;
   animation: slideLegendOut 0.5s 0s forwards;
@@ -386,5 +386,5 @@ h4 {
 }
 
 .hover-underline {
-  
+
 }

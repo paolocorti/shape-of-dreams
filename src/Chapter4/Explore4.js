@@ -134,36 +134,38 @@ const Explore4 = ({ history, activeIndex }) => {
             className='flex flex-column justify-center items-center'
             style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
-            {
+            {/* {
               selectedYearIndex === 0 &&
               (
-                <Network1 />
+                <Network1 year={years[selectedYearIndex]} />
               )
             }
             {
               selectedYearIndex === 1 &&
               (
-                <Network2 />
+                <Network2 year={years[selectedYearIndex]} />
               )
             }
             {
               selectedYearIndex === 2 &&
               (
-                <Network3 />
+                <Network3 year={years[selectedYearIndex]} />
               )
             }
             {
               selectedYearIndex === 3 &&
               (
-                <Network4 />
+                <Network4 year={years[selectedYearIndex]} />
               )
             }
             {
               selectedYearIndex === 4 &&
               (
-                <Network5 />
+                <Network5 year={years[selectedYearIndex]} />
               )
-            }
+            } */}
+
+            <Network4 year={years[selectedYearIndex]} />
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
@@ -173,9 +175,7 @@ const Explore4 = ({ history, activeIndex }) => {
               className='tc raleway mt2'
               style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
             >
-              Select a language and a year. The number of petals is equal to the
-           increase in search interest for a dream in comparison to the
-           previous year. The dreams shown are the ones that increased the most
+              Select a language and a year. The lines connect the languages that share the same dreams. The subjects in common are written above/under the languages.
             </div>
             <div
               className='raleway mt3 fw7 pointer'

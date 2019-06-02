@@ -12,4 +12,4 @@ export const years = [
   2018
 ];
 
-export const languages = ['EN', 'ES', 'FR', 'PO', 'RU', 'JP', 'AR'];
+export const languages = ['EN', 'SP', 'FR', 'PO', 'RU', 'JP', 'AR'];

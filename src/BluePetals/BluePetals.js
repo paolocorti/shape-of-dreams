@@ -23,7 +23,7 @@ import { scaleLinear } from 'd3-scale';
 const languageLabel = {
   EN: 'English',
   AR: 'Arabic',
-  ES: 'Spanish',
+  SP: 'Spanish',
   FR: 'French',
   PO: 'Portuguese',
   RU: 'Russian',

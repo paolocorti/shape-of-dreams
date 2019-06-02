@@ -6,7 +6,7 @@ import KeyboardEventHandler from 'react-keyboard-event-handler';
 const extendedLanguage = {
   'EN': 'ENGLISH',
   'AR': 'ARABIC',
-  'ES': 'SPANISH',
+  'SP': 'SPANISH',
   'FR': 'FRENCH',
   'PO': 'PORTUGUESE',
   'RU': 'RUSSIAN',
