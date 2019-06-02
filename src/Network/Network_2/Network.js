@@ -15,8 +15,6 @@ const Network2 = ({ }) => {
     setSelected(selection);
   };
 
-  console.log('selected', selected);
-
   return (
     <div className='flex w-100 justify-center items-center flex-column'>
       <svg

@@ -6,6 +6,8 @@ import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import { years } from '../constants';
+import howtoread2 from './cap2-leg-desk.svg';
+import howtoreadMobile2 from './cap2-leg-mob.svg';
 import { languages } from '../constants';
 import { isMobile } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
@@ -14,9 +16,14 @@ const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
   const [selectedPetal, setSelectedPetal] = useState(null);
+  const [howToRead, setHowToRead] = useState(false);
 
   const onSelectLanguage = index => {
     setSelectedLanguageIndex(index);
+  };
+
+  const toggleHowToRead = () => {
+    setHowToRead(!howToRead);
   };
 
   const onSelectYear = index => {
@@ -94,6 +101,28 @@ const Explore2 = ({ history, activeIndex }) => {
         )
       }
       <div className='w-100 h-100 relative'>
+        <div
+          className='w-100 fixed'
+          style={{
+            zIndex: howToRead ? 200 : -1,
+            background: 'linear-gradient(#e5f2ef, #d0d7eb)',
+            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            height: 'calc(100vh - 50px)',
+            display: howToRead ? 'block' : 'none',
+          }}
+        >
+          <div style={{
+            backgroundImage: `url(${isMobile ? howtoreadMobile2 : howtoread2})`,
+            backgroundPosition: '50% 50%',
+            height: 'calc(100% - 40px)',
+            marginTop: '40px'
+          }}>
+          </div>
+
+          <div className='read-close' onClick={() => toggleHowToRead()}>
+            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={20} />
+          </div>
+        </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
@@ -148,12 +177,13 @@ const Explore2 = ({ history, activeIndex }) => {
               category
             </div>
             <div
-              className='raleway mt3 fw7'
+              className='raleway mt3 fw7 pointer'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
                 letterSpacing: '1px'
               }}
+              onClick={toggleHowToRead}
             >
               HOW TO READ IT
             </div>

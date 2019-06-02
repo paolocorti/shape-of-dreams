@@ -8,7 +8,8 @@ import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import noData from './petal-no-data.svg';
 import { years } from '../constants';
-import howtoread1 from './how-to-read-1.png';
+import howtoread1 from './cap1-leg-desk.svg';
+import howtoreadMobile1 from './cap1-leg-mob.svg';
 import { isMobile } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
@@ -137,15 +138,22 @@ const Explore1 = ({ history, activeIndex }) => {
           className='w-100 fixed'
           style={{
             zIndex: howToRead ? 200 : -1,
-            backgroundImage: `url(${howtoread1})`,
-            backgroundSize: 'cover',
-            top: howToRead ? 0 : '-100%',
-            height: '100vh',
-            display: howToRead ? 'block' : 'none'
+            background: 'linear-gradient(#e1eaef, #e4f3ec)',
+            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            height: 'calc(100vh - 50px)',
+            display: howToRead ? 'block' : 'none',
           }}
         >
+          <div style={{
+            backgroundImage: `url(${isMobile ? howtoreadMobile1 : howtoread1})`,
+            backgroundPosition: '50% 50%',
+            height: 'calc(100% - 40px)',
+            marginTop: '40px'
+          }}>
+          </div>
+
           <div className='read-close' onClick={() => toggleHowToRead()}>
-            <img src={'/images/close.svg'} alt='Close menu icon' width={20} />
+            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={20} />
           </div>
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '125px' }}>
@@ -325,7 +333,7 @@ const Explore1 = ({ history, activeIndex }) => {
 
             </div>
             <div
-              className='raleway mt3 fw7 cursor-pointer'
+              className='raleway mt3 fw7 pointer hover-underline'
               style={{
                 fontSize: '14px',
                 color: '#43449a',

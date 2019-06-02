@@ -8,7 +8,6 @@ const Header = ({ location }) => {
   const { pathname } = location;
   const context = useContext(AppContext);
 
-  console.log(pathname);
   return (
     <div
       id='header'

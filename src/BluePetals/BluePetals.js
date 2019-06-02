@@ -55,8 +55,6 @@ const BluePetals = ({
   const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.5;
   const dimensionScale = scaleLinear().domain([0, 24]).range([0, 100])
 
-  console.log(selectedPetal, categories)
-
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
@@ -106,7 +104,6 @@ const BluePetals = ({
           {categories
             .map((category, i) => {
               const value = category.value
-              console.log(value)
               if (value === 1) {
                 return (
                   <BluePetal1 id={i} key={i} selectedPetal={selectedPetal} />

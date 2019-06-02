@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
-import legend from './legend.svg';
+import legendMob from './how-to-mob.svg';
+import legend from './how-to-desk.svg';
+import { isMobile } from 'react-device-detect';
 
 const Legend = ({ history, location }) => {
   const context = useContext(AppContext);
@@ -24,7 +26,7 @@ const Legend = ({ history, location }) => {
       onClick={closeLegend}
     >
       <img
-        src={legend}
+        src={isMobile ? legendMob : legend}
         style={{ position: 'absolute', width: '100%', top: 0 }}
       />
 

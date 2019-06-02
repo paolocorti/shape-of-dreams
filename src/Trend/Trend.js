@@ -23,7 +23,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
   useEffect(() => {
     let peak = data[0].hasPeak || false
     let peakData = data.find(d => d.peak)
-    console.log(peakData)
     const note = peakData ? peakData.note : null
     if (peak) {
       activateNote(note)
@@ -57,8 +56,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
       return d;
     }
   });
-
-  console.log(max);
 
   return (
     <div className='mt3'>

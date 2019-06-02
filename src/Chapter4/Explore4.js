@@ -4,6 +4,8 @@ import { isMobile } from 'react-device-detect';
 import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
+import howtoread4 from './cap4-leg-desk.svg';
+import howtoreadMobile4 from './cap4-leg-mob.svg';
 import Network1 from '../Network/Network_1';
 import Network2 from '../Network/Network_2';
 import Network3 from '../Network/Network_3';
@@ -15,9 +17,14 @@ import NavigationBar from '../components/NavigationBar';
 const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
+  const [howToRead, setHowToRead] = useState(false);
 
   const onSelectYear = index => {
     setSelectedYearIndex(index);
+  };
+
+  const toggleHowToRead = () => {
+    setHowToRead(!howToRead);
   };
 
   const groupedByCountry = values(groupBy(categories, 'language'));
@@ -78,6 +85,28 @@ const Explore4 = ({ history, activeIndex }) => {
         </div>
       </div> */}
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
+        <div
+          className='w-100 fixed'
+          style={{
+            zIndex: howToRead ? 200 : -1,
+            background: 'linear-gradient(#e6f1eb, #dde6ed)',
+            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            height: 'calc(100vh - 50px)',
+            display: howToRead ? 'block' : 'none',
+          }}
+        >
+          <div style={{
+            backgroundImage: `url(${isMobile ? howtoreadMobile4 : howtoread4})`,
+            backgroundPosition: '50% 50%',
+            height: 'calc(100% - 40px)',
+            marginTop: '40px'
+          }}>
+          </div>
+
+          <div className='read-close' onClick={() => toggleHowToRead()}>
+            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={20} />
+          </div>
+        </div>
         <div
           className='w-100 ph4 flex flex-column justify-center items-center ios-fix'
           style={{ height: '125px' }}
@@ -149,12 +178,13 @@ const Explore4 = ({ history, activeIndex }) => {
            previous year. The dreams shown are the ones that increased the most
             </div>
             <div
-              className='raleway mt3 fw7'
+              className='raleway mt3 fw7 pointer'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
                 letterSpacing: '1px'
               }}
+              onClick={toggleHowToRead}
             >
               HOW TO READ IT
             </div>

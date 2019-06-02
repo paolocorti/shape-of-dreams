@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
 import interestOverTime from '../data/interestOverTime.json';
 import '../Explore.scss';
-import LanguageSelector from '../components/LanguageSelector';
-import YearsSelector from '../components/YearsSelector';
+import howtoread3 from './cap3-leg-desk.svg';
+import howtoreadMobile3 from './cap3-leg-mob.svg';
 import Trend from '../Trend';
 import categories from '../data/categories.json';
 import { years } from '../constants';
@@ -15,7 +15,7 @@ const Explore3 = ({ history, activeIndex }) => {
   // const yearData = interestOverTime.filter(d =>
   //   d.formattedTime.includes('2018')
   // );
-
+  const [howToRead, setHowToRead] = useState(false);
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -28,6 +28,11 @@ const Explore3 = ({ history, activeIndex }) => {
       setNote(text);
     }
   };
+
+  const toggleHowToRead = () => {
+    setHowToRead(!howToRead);
+  };
+
 
   const activateNote = text => {
     setNote(text);
@@ -61,8 +66,6 @@ const Explore3 = ({ history, activeIndex }) => {
     setSelectedIndex(newIndex)
   }
 
-  console.log(interestOverTime)
-
   return (
     <div className='explore3' style={{ paddingTop: isMobile ? 0 : 60 }}>
       {
@@ -71,7 +74,7 @@ const Explore3 = ({ history, activeIndex }) => {
         )
       }
       {
-        !isMobile && (
+        !isMobile && activeIndex === 3 && (
           <div className='noteBox ph4' style={{ right: note ? '0px' : '-12.5%', transition: '.5s right' }}>
             {/* <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
               <img
@@ -85,6 +88,28 @@ const Explore3 = ({ history, activeIndex }) => {
         )
       }
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
+        <div
+          className='w-100 fixed'
+          style={{
+            zIndex: howToRead ? 200 : -1,
+            background: 'linear-gradient(#efe2e1, #ebf5f5)',
+            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            height: 'calc(100vh - 50px)',
+            display: howToRead ? 'block' : 'none',
+          }}
+        >
+          <div style={{
+            backgroundImage: `url(${isMobile ? howtoreadMobile3 : howtoread3})`,
+            backgroundPosition: '50% 50%',
+            height: 'calc(100% - 40px)',
+            marginTop: '40px'
+          }}>
+          </div>
+
+          <div className='read-close' onClick={() => toggleHowToRead()}>
+            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={20} />
+          </div>
+        </div>
         <div
           className='w-100 ph4 flex flex-column justify-center items-center ios-fix'
           style={{ height: '125px' }}
@@ -134,12 +159,13 @@ const Explore3 = ({ history, activeIndex }) => {
               Scroll up and down in the box to change the dream
             </div>
             <div
-              className='raleway mt3 fw7'
+              className='raleway mt3 fw7 pointer'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
                 letterSpacing: '1px'
               }}
+              onClick={toggleHowToRead}
             >
               HOW TO READ IT
             </div>
