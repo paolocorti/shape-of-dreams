@@ -147,6 +147,7 @@ const Explore1 = ({ history, activeIndex }) => {
           <div style={{
             backgroundImage: `url(${isMobile ? howtoreadMobile1 : howtoread1})`,
             backgroundPosition: '50% 50%',
+            backgroundSize: 'cover',
             height: 'calc(100% - 40px)',
             marginTop: '40px'
           }}>
