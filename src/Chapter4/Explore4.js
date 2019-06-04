@@ -11,8 +11,11 @@ import Network2 from '../Network/Network_2';
 import Network3 from '../Network/Network_3';
 import Network4 from '../Network/Network_4';
 import Network5 from '../Network/Network_5';
+import Network6 from '../Network/Network_6/Network.js';
+import Network7 from '../Network/Network_7/Network.js';
 import { years } from '../constants';
 import NavigationBar from '../components/NavigationBar';
+
 
 const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -104,7 +107,7 @@ const Explore4 = ({ history, activeIndex }) => {
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
-            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={20} />
+            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={30} />
           </div>
         </div>
         <div
@@ -165,7 +168,7 @@ const Explore4 = ({ history, activeIndex }) => {
               )
             } */}
 
-            <Network5 year={years[selectedYearIndex]} />
+            <Network7 year={years[selectedYearIndex]} />
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'

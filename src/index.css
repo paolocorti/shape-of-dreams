@@ -388,3 +388,14 @@ h4 {
 .hover-underline {
 
 }
+
+.menu-selected:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #FFF;
+  width: 60%;
+  margin-left: 0px;
+  left: 0;
+  top: 100%;
+} 

@@ -16,7 +16,7 @@ const languageLabel = {
   IN: 'Indonesian'
 };
 
-const Network1 = ({ year }) => {
+const Network7 = ({ year }) => {
   const [selected, setSelected] = useState('');
   const svgHeight = isMobile ? window.innerHeight * 0.6 : 600;
   const svgWidth = svgHeight;
@@ -49,4 +49,4 @@ const Network1 = ({ year }) => {
   );
 };
 
-export default Network1;
+export default Network7;

@@ -25,8 +25,8 @@ const Legend = ({ history, location }) => {
         }`}
       onClick={closeLegend}
     >
-      <div className='read-close' onClick={closeLegend}>
-        <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={20} />
+      <div className='read-close pointer' onClick={closeLegend} style={{ right: '25px', top: '25px', left: 'auto', zIndex: 999 }}>
+        <img className='' src={'/images/close-white.svg'} alt='Close menu icon' width={30} />
       </div>
       <img
         src={isMobile ? legendMob : legend}

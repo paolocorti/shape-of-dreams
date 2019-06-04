@@ -28,7 +28,7 @@ const Network4 = ({ year }) => {
 
   return (
     <div className='flex w-100 justify-center items-center flex-column'>
-      <div className='mt0 value absolute' style={{ fontSize: '16px', opacity: 0.6, top: '20px' }}>
+      <div className='mt0 value absolute' style={{ fontSize: '16px', opacity: 0.6, top: '10px' }}>
         {selected ? languageLabel[selected] : 'All the languages'} - {year}
       </div>
       <svg

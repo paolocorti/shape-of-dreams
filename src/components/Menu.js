@@ -5,6 +5,7 @@ import { isMobile } from 'react-device-detect';
 
 const Menu = ({ history }) => {
   const context = useContext(AppContext);
+  const actualPath = history.location.pathname
 
   const goTo = path => {
     context.toggleMenu();
@@ -28,50 +29,50 @@ const Menu = ({ history }) => {
           </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4'
+          className='w-100 flex flex-column justify-center ph4 pointer'
           onClick={() => goTo('/chapter1')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div className='white tl' style={{ fontSize: isMobile ? '14px' : '28px' }}>
             CHAPTER 1
           </div>
-          <div className='white tl' style={{ fontSize: isMobile ? '28px' : '48px' }}>
+          <div className={`${actualPath === '/chapter1' ? 'menu-selected' : ''} white tl relative`} style={{ fontSize: isMobile ? '28px' : '48px' }}>
             The Shapes of our Dreams
           </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4'
+          className='w-100 flex flex-column justify-center ph4 pointer'
           onClick={() => goTo('/chapter2')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div className='white tl' style={{ fontSize: isMobile ? '14px' : '28px' }}>
             CHAPTER 2
-        </div>
-          <div className='white tl' style={{ fontSize: isMobile ? '28px' : '48px' }}>
+          </div>
+          <div className={`${actualPath === '/chapter2' ? 'menu-selected' : ''} white tl relative`} style={{ fontSize: isMobile ? '28px' : '48px' }}>
             The Worlds We Dream of
-        </div>
+          </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4'
+          className='w-100 flex flex-column justify-center ph4 pointer'
           onClick={() => goTo('/chapter3')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div className='white tl' style={{ fontSize: isMobile ? '14px' : '28px' }}>
             CHAPTER 3
         </div>
-          <div className='white tl' style={{ fontSize: isMobile ? '28px' : '48px' }}>
+          <div className={`${actualPath === '/chapter3' ? 'menu-selected' : ''} white tl relative`} style={{ fontSize: isMobile ? '28px' : '48px' }}>
             A Time for Dreams
         </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4'
+          className='w-100 flex flex-column justify-center ph4 pointer'
           onClick={() => goTo('/chapter4')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div className='white tl' style={{ fontSize: isMobile ? '14px' : '28px' }}>
             CHAPTER 4
         </div>
-          <div className='white tl' style={{ fontSize: isMobile ? '28px' : '48px' }}>
+          <div className={`${actualPath === '/chapter4' ? 'menu-selected' : ''} white tl relative`} style={{ fontSize: isMobile ? '28px' : '48px' }}>
             The Dreams that Connect Us
         </div>
         </div>
