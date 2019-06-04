@@ -23,6 +23,7 @@ html, body, #root {
 * {
   font-family: 'Cormorant Garamond', serif;
   box-sizing: border-box;
+  color: black;
   /* outline: 1px solid gold; */
 }
 

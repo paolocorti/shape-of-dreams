@@ -15,6 +15,8 @@ import Network6 from '../Network/Network_6/Network.js';
 import Network7 from '../Network/Network_7/Network.js';
 import { years } from '../constants';
 import NavigationBar from '../components/NavigationBar';
+import Network8 from '../Network/Network_8/Network.js';
+import Network9 from '../Network/Network_9/Network.js';
 
 
 const Explore4 = ({ history, activeIndex }) => {
@@ -169,7 +171,7 @@ const Explore4 = ({ history, activeIndex }) => {
               )
             } */}
 
-            <Network7 year={years[selectedYearIndex]} />
+            <Network9 year={years[selectedYearIndex]} />
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
