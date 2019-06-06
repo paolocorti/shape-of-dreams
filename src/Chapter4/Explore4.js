@@ -17,7 +17,8 @@ import { years } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 import Network8 from '../Network/Network_8/Network.js';
 import Network9 from '../Network/Network_9/Network.js';
-
+import Network10 from '../Network/Network_10/Network.js';
+import Network11 from '../Network/Network_11/Network.js';
 
 const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -42,21 +43,16 @@ const Explore4 = ({ history, activeIndex }) => {
 
   return (
     <div className='explore4'>
-      {
-        !isMobile && (
-          <NavigationBar history={history} activeIndex={activeIndex} />
-        )
-      }
-      {
-        !isMobile && (activeIndex === 4) &&
-        (
-          <YearsSelector
-            years={years}
-            onSelect={onSelectYear}
-            selected={selectedYearIndex}
-          />
-        )
-      }
+      {!isMobile && (
+        <NavigationBar history={history} activeIndex={activeIndex} />
+      )}
+      {!isMobile && activeIndex === 4 && (
+        <YearsSelector
+          years={years}
+          onSelect={onSelectYear}
+          selected={selectedYearIndex}
+        />
+      )}
       {/* <div className='w-100 h-100 relative'>
         <div className='w-100 ph4' style={{ height: '80px' }}>
           <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
@@ -97,20 +93,28 @@ const Explore4 = ({ history, activeIndex }) => {
             background: 'linear-gradient(#e6f1eb, #dde6ed)',
             top: howToRead ? (isMobile ? 0 : 50) : '-100%',
             height: 'calc(100vh - 50px)',
-            display: howToRead ? 'block' : 'none',
+            display: howToRead ? 'block' : 'none'
           }}
         >
-          <div style={{
-            backgroundImage: `url(${isMobile ? howtoreadMobile4 : howtoread4})`,
-            backgroundPosition: '50% 50%',
-            backgroundSize: 'cover',
-            height: 'calc(100% - 40px)',
-            marginTop: '40px'
-          }}>
-          </div>
+          <div
+            style={{
+              backgroundImage: `url(${
+                isMobile ? howtoreadMobile4 : howtoread4
+              })`,
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'cover',
+              height: 'calc(100% - 40px)',
+              marginTop: '40px'
+            }}
+          />
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
-            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={30} />
+            <img
+              className='pointer'
+              src={'/images/close.svg'}
+              alt='Close menu icon'
+              width={30}
+            />
           </div>
         </div>
         <div
@@ -121,16 +125,13 @@ const Explore4 = ({ history, activeIndex }) => {
           <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
             Networks of dreams
           </h1>
-          {
-            isMobile &&
-            (
-              <YearsSelectorMobile
-                years={years}
-                onSelect={onSelectYear}
-                selected={selectedYearIndex}
-              />
-            )
-          }
+          {isMobile && (
+            <YearsSelectorMobile
+              years={years}
+              onSelect={onSelectYear}
+              selected={selectedYearIndex}
+            />
+          )}
         </div>
         <div
           className='w-100 flex flex-column relative tc ios-fix'
@@ -138,50 +139,64 @@ const Explore4 = ({ history, activeIndex }) => {
         >
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+            style={{
+              height: '70%',
+              maxWidth: isMobile ? '100%' : '75%',
+              margin: isMobile ? '' : '0 auto'
+            }}
           >
-            {/* {
-              selectedYearIndex === 0 &&
-              (
-                <Network1 year={years[selectedYearIndex]} />
-              )
-            }
-            {
-              selectedYearIndex === 1 &&
-              (
-                <Network2 year={years[selectedYearIndex]} />
-              )
-            }
-            {
-              selectedYearIndex === 2 &&
-              (
-                <Network3 year={years[selectedYearIndex]} />
-              )
-            }
-            {
-              selectedYearIndex === 3 &&
-              (
-                <Network4 year={years[selectedYearIndex]} />
-              )
-            }
-            {
-              selectedYearIndex === 4 &&
-              (
-                <Network5 year={years[selectedYearIndex]} />
-              )
-            } */}
-
-            <Network9 year={years[selectedYearIndex]} />
+            {selectedYearIndex === 0 && (
+              <Network1 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 1 && (
+              <Network2 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 2 && (
+              <Network3 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 3 && (
+              <Network4 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 4 && (
+              <Network5 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 5 && (
+              <Network6 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 6 && (
+              <Network7 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 7 && (
+              <Network8 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 8 && (
+              <Network9 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 9 && (
+              <Network10 year={years[selectedYearIndex]} />
+            )}
+            {selectedYearIndex === 10 && (
+              <Network11 year={years[selectedYearIndex]} />
+            )}
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
+            style={{
+              height: '30%',
+              maxWidth: isMobile ? '100%' : '75%',
+              margin: isMobile ? '' : '45px auto'
+            }}
           >
             <div
               className='tc raleway mt2'
-              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
+              style={{
+                fontSize: isMobile ? '11px' : '16px',
+                lineHeight: isMobile ? '13px' : '20px'
+              }}
             >
-              Select a language and a year. The lines connect the languages that share the same dreams. The subjects in common are written above/under the languages.
+              Select a language and a year. The lines connect the languages that
+              share the same dreams. The subjects in common are written
+              above/under the languages.
             </div>
             <div
               className='raleway mt3 fw7 pointer'
