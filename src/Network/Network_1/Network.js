@@ -18,7 +18,7 @@ const languageLabel = {
 
 const Network1 = ({ year }) => {
   const [selected, setSelected] = useState('');
-  const svgHeight = isMobile ? window.innerHeight * 0.6 : 600;
+  const svgHeight = isMobile ? 500 : 600;
   const svgWidth = svgHeight;
 
   const selectedCallback = language => {
@@ -38,7 +38,11 @@ const Network1 = ({ year }) => {
         viewBox='0 0 510.2 510.2'
         width={svgWidth}
         height={svgHeight}
-        style={{ border: '0px solid rgba(0,0,0,1)', margin: 'auto' }}
+        style={{
+          border: '0px solid rgba(0,0,0,1)', margin: 'auto', position: isMobile ? 'absolute' : 'relative',
+          left: isMobile ? '50%' : 'auto',
+          marginLeft: isMobile ? '-250px' : 0,
+        }}
       >
         <NetworkLines selected={selected} />
         <NetworkCircles selected={selected} setSelected={selectedCallback} />

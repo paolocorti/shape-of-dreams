@@ -19,7 +19,7 @@ const getNumberOfPetals = n => {
 const languageLabel = {
   EN: 'English',
   AR: 'Arabic',
-  ES: 'Spanish',
+  SP: 'Spanish',
   FR: 'French',
   PO: 'Portuguese',
   RU: 'Russian',
@@ -37,7 +37,7 @@ const Petals = ({ name, language, year, value, index, nodata = false }) => {
 
   return (
     <React.Fragment>
-      <div className='ph3 topic' style={{ fontSize: '22px' }}>
+      <div className='ph3 topic' style={{ fontSize: '22px', transform: 'transition 1s all' }}>
         {name}
       </div>
       <div className='mt0 value' style={{ fontSize: '16px', opacity: 0.6 }}>
@@ -69,10 +69,10 @@ const Petals = ({ name, language, year, value, index, nodata = false }) => {
             <stop offset='100%' stopColor='rgb(230,235,237)' stopOpacity='1' />
           </linearGradient>
           <linearGradient id="petalEmptyGradient" gradientUnits="userSpaceOnUse" x1="-94.208" y1="-27.5181" x2="-94.1295" y2="-133.0575" gradientTransform="matrix(0.9986 -5.221873e-02 5.221873e-02 0.9986 143.1495 152.7173)">
-            <stop offset="0" stopColor="#EDECED"/>
-            <stop offset="9.470155e-02" stopColor="#E4E7E8"/>
-            <stop offset="0.3898" stopColor="#CADADA"/>
-            <stop offset="1" stopColor="#7C8F8C"/>
+            <stop offset="0" stopColor="#EDECED" />
+            <stop offset="9.470155e-02" stopColor="#E4E7E8" />
+            <stop offset="0.3898" stopColor="#CADADA" />
+            <stop offset="1" stopColor="#7C8F8C" />
           </linearGradient>
         </defs>
         <g transform={`translate(105, 20)`}>

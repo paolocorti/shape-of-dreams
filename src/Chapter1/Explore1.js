@@ -188,7 +188,7 @@ const Explore1 = ({ history, activeIndex }) => {
                 className='flex flex-column relative justify-center'
                 style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
               >
-                {topic.value ? (
+                {topic && topic.value ? (
                   <Petals
                     value={topic.value}
                     name={topic.subject}
