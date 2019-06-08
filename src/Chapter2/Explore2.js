@@ -187,7 +187,7 @@ const Explore2 = ({ history, activeIndex }) => {
               {
                 isMobile ?
                   (
-                    'Select a language and a year. Tap on the circle to switch on and off the category. Size of the petals = number of dreams in the category'
+                    'Select a language and a year. Tap on the circle to switch on and off the category. Size of the petals = n. of dreams in the category'
                   ) : (
                     'Select a language and a year or use the keyboard arrows to navigate the visualization. Go over on the circles to switch on and off the category. The size of the petals represents the number of dreams in the category.'
                   )

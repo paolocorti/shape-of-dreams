@@ -131,6 +131,8 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                         y2={y2}
                         stroke={'#8d4538'}
                         strokeWidth={0.5}
+                        strokeDasharray='4 2'
+
                       />
                     );
                   }}
@@ -205,10 +207,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   y={d => scaleY2(y(d))}
                   stroke={'#b36762'}
                   strokeWidth={1}
-                  curve={curveMonotoneX}
-
-                // strokeDasharray={5000}
-                // strokeDashoffset={j}
                 />
               );
             }}

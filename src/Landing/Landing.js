@@ -43,7 +43,7 @@ const Landing = ({ history }) => {
       </div> */}
       <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
         <h3 className='tc fw7 mt0 author'>
-          FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWSLAB
+          FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWS LAB
         </h3>
         <h1 className='tc fw7 mt2 title'>
           The Shape of Dreams
