@@ -20,7 +20,7 @@ const Menu = ({ history }) => {
     <div
       className={`menu w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${
         context.menuOpen ? 'open' : 'close'
-      }`}
+        }`}
     >
       <div
         className='w-100'
@@ -42,7 +42,7 @@ const Menu = ({ history }) => {
           </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4 pointer mv4 mv0-ns'
+          className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter1')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
@@ -54,15 +54,15 @@ const Menu = ({ history }) => {
           </div>
           <div
             className={`${
-              actualPath === '/chapter1' ? 'menu-selected' : ''
-            } white tl relative`}
+              actualPath === '/chapter1' ? 'active' : ''
+              } white tl relative link-white`}
             style={{ fontSize: isMobile ? '28px' : '48px' }}
           >
             The Shapes of our Dreams
           </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4 pointer mv4 mv0-ns'
+          className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter2')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
@@ -74,15 +74,15 @@ const Menu = ({ history }) => {
           </div>
           <div
             className={`${
-              actualPath === '/chapter2' ? 'menu-selected' : ''
-            } white tl relative`}
+              actualPath === '/chapter2' ? 'active' : ''
+              } white tl relative link-white`}
             style={{ fontSize: isMobile ? '28px' : '48px' }}
           >
             The Worlds We Dream of
           </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4 pointer mv4 mv0-ns'
+          className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter3')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
@@ -94,15 +94,15 @@ const Menu = ({ history }) => {
           </div>
           <div
             className={`${
-              actualPath === '/chapter3' ? 'menu-selected' : ''
-            } white tl relative`}
+              actualPath === '/chapter3' ? 'active' : ''
+              } white tl relative link-white`}
             style={{ fontSize: isMobile ? '28px' : '48px' }}
           >
             A Time for Dreams
           </div>
         </div>
         <div
-          className='w-100 flex flex-column justify-center ph4 pointer mv4 mv0-ns'
+          className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter4')}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
@@ -114,27 +114,26 @@ const Menu = ({ history }) => {
           </div>
           <div
             className={`${
-              actualPath === '/chapter4' ? 'menu-selected' : ''
-            } white tl relative`}
+              actualPath === '/chapter4' ? 'active' : ''
+              } white tl relative link-white`}
             style={{ fontSize: isMobile ? '28px' : '48px' }}
           >
             The Dreams that Connect Us
           </div>
         </div>
-        {isMobile && (
+
+        <div
+          className='flex items-center ph4 mv4 mv0-ns'
+          onClick={() => goTo('/about')}
+          style={{ marginBottom: isMobile ? 0 : '30px' }}
+        >
           <div
-            className='w-100 flex items-center ph4 mv4 mv0-ns'
-            onClick={() => goTo('/about')}
-            style={{ marginBottom: isMobile ? 0 : '30px' }}
+            className='white tl'
+            style={{ fontSize: isMobile ? '28px' : '48px' }}
           >
-            <div
-              className='white tl'
-              style={{ fontSize: isMobile ? '28px' : '48px' }}
-            >
-              About
+            About
             </div>
-          </div>
-        )}
+        </div>
         {isMobile && (
           <div className='w-100 flex items-center ph4 mv4 mv0-ns'>
             <div

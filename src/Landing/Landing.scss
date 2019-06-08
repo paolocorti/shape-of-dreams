@@ -42,7 +42,7 @@
   .landing-content {
     max-width: 75%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 12%;
   }
 }
 
@@ -87,14 +87,14 @@
 
 .not-scrolling {
   background-position: 0 0%;
-  transition: 1.5s background-position;
+  transition: 2s background-position;
   transform: translateZ(0);
   will-change: background-position;
 }
 
 .scrolling {
   background-position: 0 100%;
-  transition: 1.5s background-position;
+  transition: 2s background-position;
   transform: translateZ(0);
   will-change: background-position;
 }

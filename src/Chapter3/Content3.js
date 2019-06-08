@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import content0 from './cap3-00-desk.jpg'
 import content1 from './cap3-01-desk.jpg'
 import content2 from './cap3-02-desk.jpg'
@@ -10,13 +10,28 @@ import mobileContent3 from './cap3-03-mob.jpg'
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
-const Content3 = ({ history }) => {
+const Content3 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
+  const [reload, setReload] = useState(false)
+
+  useEffect(() => {
+    if (activeIndex === 3) {
+      setReload(true)
+      setTimeout(() => {
+        setReload(false)
+      }, 2000)
+    }
+
+    return () => {
+      console.log('cleanup')
+      //setReload(true)
+    }
+  }, [activeIndex])
 
   return (
     <div className='w-100 bg-white read'>
-      <h4 className='tl fw6 mv0 ph4'>Chapter 3</h4>
-      <h1 className='tl fw7 mt0 ph4'>A Time for Dreams</h1>
+      <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>Chapter 3</h4>
+      <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>A Time for Dreams</h1>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
           How does the interest for the meaning of certain dreams change over time? We explored the dreams topic also from this point of view, studying the trends throughout the years and we found different types of subjects.
@@ -56,9 +71,12 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         </p>
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3'>
+        <div className='flex flex-column items-center ph4 pv3 pb5'>
           <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>START EXPLORING</div>
-          <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          <div className='explore-icon'>
+            <div className='explore-icon-circle'></div>
+            <img className='explore-icon-base' src={'images/start-expl.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          </div>
         </div>
         {/* {
           isMobile && (

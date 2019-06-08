@@ -11,6 +11,7 @@ import howtoreadMobile2 from './cap2-leg-mob.svg';
 import { languages } from '../constants';
 import { isMobile } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
+import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
 
 const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -83,6 +84,8 @@ const Explore2 = ({ history, activeIndex }) => {
 
   const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : []
 
+  console.log(selectedCategories)
+
   return (
     <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
       {
@@ -126,7 +129,7 @@ const Explore2 = ({ history, activeIndex }) => {
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
-          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
             Dreams subjects by category
           </h1>
           <LanguageSelector
@@ -154,7 +157,7 @@ const Explore2 = ({ history, activeIndex }) => {
             style={{ height: '70%', margin: isMobile ? '20px 0' : '0 auto' }}
           >
             {
-              selectedCategories && (
+              selectedCategories.length ? (
                 <BluePetals
                   categories={selectedCategories.sort((a, b) => a.order - b.order)}
                   year={years[selectedYearIndex]}
@@ -162,7 +165,14 @@ const Explore2 = ({ history, activeIndex }) => {
                   setSelectedPetal={setSelectedPetalWrapper}
                   selectedPetal={selectedPetal}
                 />
-              )
+              ) : (
+                  <BluePetalsEmpty categories={selectedCategories.sort((a, b) => a.order - b.order)}
+                    year={years[selectedYearIndex]}
+                    language={languages[selectedLanguageIndex]}
+                    setSelectedPetal={setSelectedPetalWrapper}
+                    selectedPetal={selectedPetal}
+                  />
+                )
             }
           </div>
           <div
@@ -170,8 +180,8 @@ const Explore2 = ({ history, activeIndex }) => {
             style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
           >
             <div
-              className='tc raleway mt2'
-              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
+              className='tc raleway mt2 fw3'
+              style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
             >
 
               {
@@ -184,11 +194,11 @@ const Explore2 = ({ history, activeIndex }) => {
               }
             </div>
             <div
-              className='raleway mt3 fw7 pointer'
+              className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                letterSpacing: '1px'
+                //letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >

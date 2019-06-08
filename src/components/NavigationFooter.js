@@ -42,7 +42,7 @@ const NavigationFooter = ({ history }) => {
           className='w-40 flex justify-center items-center pointer footer-el h-100'
           onClick={() => changeSection('read')}
         >
-          <div className={context.selectedView === 'read' ? 'active' : '/'}>
+          <div className={`link ${context.selectedView === 'read' ? 'active' : '/'}`}>
             {isMobile ? 'READ' : 'READ THE STORY'}
           </div>
         </div>
@@ -50,7 +50,7 @@ const NavigationFooter = ({ history }) => {
           className='w-40 flex justify-center items-center pointer footer-el h-100'
           onClick={() => changeSection('explore')}
         >
-          <div className={context.selectedView === 'explore' ? 'active' : '/'}>
+          <div className={`link ${context.selectedView === 'explore' ? 'active' : '/'}`}>
             {isMobile ? 'EXPLORE' : 'DREAMS EXPLORER'}
           </div>
         </div>

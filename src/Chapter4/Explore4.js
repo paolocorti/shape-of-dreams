@@ -100,7 +100,7 @@ const Explore4 = ({ history, activeIndex }) => {
             style={{
               backgroundImage: `url(${
                 isMobile ? howtoreadMobile4 : howtoread4
-              })`,
+                })`,
               backgroundPosition: '50% 50%',
               backgroundSize: 'cover',
               height: 'calc(100% - 40px)',
@@ -122,7 +122,7 @@ const Explore4 = ({ history, activeIndex }) => {
           style={{ height: '125px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
-          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
             Networks of dreams
           </h1>
           {isMobile && (
@@ -188,9 +188,9 @@ const Explore4 = ({ history, activeIndex }) => {
             }}
           >
             <div
-              className='tc raleway mt2'
+              className='tc raleway mt2 fw3'
               style={{
-                fontSize: isMobile ? '11px' : '16px',
+                fontSize: isMobile ? '11px' : '15px',
                 lineHeight: isMobile ? '13px' : '20px'
               }}
             >
@@ -199,11 +199,11 @@ const Explore4 = ({ history, activeIndex }) => {
               above/under the languages.
             </div>
             <div
-              className='raleway mt3 fw7 pointer'
+              className='raleway mt3 fw7 link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                letterSpacing: '1px'
+                //letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >

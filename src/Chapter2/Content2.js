@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import content1 from './cap2-01-desk.jpg'
 import content2 from './cap2-02-desk.jpg'
 import content3 from './cap2-03-desk.jpg'
@@ -8,13 +8,27 @@ import mobileContent3 from './cap2-03-mob.jpg'
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
-const Content2 = ({ history }) => {
+const Content2 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
+  const [reload, setReload] = useState(false)
+
+  useEffect(() => {
+    if (activeIndex === 2) {
+      setReload(true)
+      setTimeout(() => {
+        setReload(false)
+      }, 2000)
+    }
+
+    return () => {
+      //setReload(true)
+    }
+  }, [activeIndex])
 
   return (
     <div className='w-100 bg-white read'>
-      <h4 className='tl fw6 mv0 ph4'>Chapter 2</h4>
-      <h1 className='tl fw7 mt0 ph4'>The Worlds We Dream of</h1>
+      <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>Chapter 2</h4>
+      <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>The Worlds We Dream of</h1>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
           What are the worlds we dream of the most according to Google searches? After exploring the subjects, we created some macro-categories of dreams to see what are the universes that populate our sleep and how they change according to the different languages over the years.
@@ -47,9 +61,12 @@ const Content2 = ({ history }) => {
         </p>
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3'>
+        <div className='flex flex-column items-center ph4 pv3 pb5'>
           <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>START EXPLORING</div>
-          <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          <div className='explore-icon'>
+            <div className='explore-icon-circle'></div>
+            <img className='explore-icon-base' src={'images/start-expl.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          </div>
         </div>
         {/* {
           isMobile && (

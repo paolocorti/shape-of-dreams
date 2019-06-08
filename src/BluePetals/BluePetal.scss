@@ -26,6 +26,7 @@
 }
 .grid3 {
   fill: #3f4696;
+  transition: .4s all;
 }
 
 .grid4 {
@@ -92,4 +93,14 @@ $first-row-delay-time: 0s;
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.blue_no_data_0{
+  fill:url(#blue_petal_empty);
+  stroke:#78A2A7;
+  stroke-width:0.3;
+  stroke-miterlimit:10;
+}
+.blue_no_data_1{
+  fill:#4D6673;
 }

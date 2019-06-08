@@ -159,7 +159,7 @@ const Explore1 = ({ history, activeIndex }) => {
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
-          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
             What does it mean to dream about...
           </h1>
           <LanguageSelector
@@ -225,12 +225,12 @@ const Explore1 = ({ history, activeIndex }) => {
             ) : (
                 <div
                   className='flex relative justify-center items-center'
-                  style={{ height: '65%', margin: isMobile ? '' : '0 auto' }}
+                  style={{ height: '65%', margin: '0 auto' }}
                 >
                   {topic && topic.value && (
                     <div
                       className='flex flex-column relative justify-center'
-                      style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                      style={{ height: '65%', width: '25%', margin: '0 auto' }}
                     >
                       <Petals
                         value={topic.value}
@@ -244,7 +244,7 @@ const Explore1 = ({ history, activeIndex }) => {
                   {topic1 && topic1.value && (
                     <div
                       className='flex flex-column relative justify-center'
-                      style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                      style={{ height: '65%', width: '25%', margin: '0 auto' }}
                     >
                       <Petals
                         value={topic1.value}
@@ -258,7 +258,7 @@ const Explore1 = ({ history, activeIndex }) => {
                   {topic2 && topic2.value && (
                     <div
                       className='flex flex-column relative justify-center'
-                      style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                      style={{ height: '65%', width: '25%', margin: '0 auto' }}
                     >
                       <Petals
                         value={topic2.value}
@@ -272,7 +272,7 @@ const Explore1 = ({ history, activeIndex }) => {
                   {topic3 && topic3.value && (
                     <div
                       className='flex flex-column relative justify-center'
-                      style={{ height: '65%', width: '25%', margin: isMobile ? '' : '0 auto' }}
+                      style={{ height: '65%', width: '25%', margin: '0 auto' }}
                     >
                       <Petals
                         value={topic3.value}
@@ -287,8 +287,8 @@ const Explore1 = ({ history, activeIndex }) => {
                     selectedTopics.length === 0 &&
                     (
                       <div
-                        className='w-100 flex flex-column justify-center items-center pa4'
-                        style={{ flex: 1, height: '65%' }}
+                        className='w-100 flex flex-column justify-center'
+                        style={{ flex: 1, height: '65%', width: '25%' }}
                       >
                         <Petals
                           value={700}
@@ -320,8 +320,8 @@ const Explore1 = ({ history, activeIndex }) => {
             style={{ height: '35%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
           >
             <div
-              className='tc raleway'
-              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
+              className='tc raleway fw3'
+              style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
             >
               {
                 isMobile ?
@@ -333,11 +333,11 @@ const Explore1 = ({ history, activeIndex }) => {
               }
             </div>
             <div
-              className='raleway mt3 fw7 pointer hover-underline'
+              className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                letterSpacing: '1px'
+                //letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >

@@ -30,33 +30,33 @@ const Routes = ({ location }) => {
 
       <Route exact path='/' component={Landing} />
 
-      {/* {pathname !== '/' && (
+      {pathname !== '/' && isMobile && (
         <img
           src={'/images/swipe-left.svg'}
           style={{
             position: 'absolute',
-            left: '10px',
+            left: '5px',
             zIndex: 99,
             top: '50%',
-            marginTop: '-80px'
+            marginTop: '-18px'
           }}
-          height={160}
+          height={36}
         />
-      )} */}
+      )}
 
-      {/* {pathname !== '/' && (
+      {pathname !== '/' && isMobile && (
         <img
           src={'/images/swipe-right.svg'}
           style={{
             position: 'absolute',
-            right: '10px',
+            right: '5px',
             zIndex: 99,
             top: '50%',
-            marginTop: '-80px'
+            marginTop: '-18px'
           }}
-          height={160}
+          height={36}
         />
-      )} */}
+      )}
 
       {pathname !== '/' && isMobile && (
         <SwipeableRoutes

@@ -65,37 +65,6 @@ html, body, #root {
   flex: 0 1 auto;
 }
 
-/* .page-enter {
-  transform: translate(-100%, 0);
-}
-
-.page-enter-active {
-  transform: translate(0, 0);
-}
-
-.page-exit {
-  box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.5) inset;
-  transform: translate(-100%, 0);
-}
-
-.page--prev.page-enter {
-  transform: translate(100%, 0);
-}
-
-.page--prev.page-enter-active {
-  transform: translate(0, 0);
-}
-
-.page--prev.page-exit {
-  transform: translate(100%, 0);
-}
-
-.page-exit .page__inner {
-  opacity: 1;
-  transform: scale(0.9);
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-} */
-
 h1 {
   font-size: 30px;
 }
@@ -400,3 +369,99 @@ h4 {
   left: 0;
   top: 100%;
 } 
+
+.transition-in {
+  transform: translate(100px, 0);
+  animation: transition-in 2s forwards;
+}
+
+@keyframes transition-in {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.link, .link-white {
+  position: relative;
+  cursor: pointer;
+}
+
+.active {
+  transition: 0.5s opacity;
+}
+
+.link:hover:after, .link.active:after {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.link-white:hover:after, .link-white.active:after {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.link:after, .active:after, .link-white:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #43449a;
+  width: 100%;
+  margin-left: 0px;
+  left: 0;
+  top: 20px;
+  opacity: 0;
+}
+
+.link-white:after {
+  background-color: #ffffff;
+  top: 60px;
+}
+
+.explore-icon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.explore-icon-base{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.explore-icon-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  animation: explore-anim 2s infinite;
+  border: 1px solid rgba(67,68,154, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+@keyframes explore-anim {
+  0% {
+    border-color: rgba(67,68,154, 1);
+    width: 35px;
+    height: 35px;
+  }
+  100% {
+    border-color: rgba(67,68,154, 0);
+    width: 70px;
+    height: 70px;
+  }
+}

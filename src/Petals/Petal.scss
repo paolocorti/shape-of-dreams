@@ -5,13 +5,18 @@
   transition: 1s all;
 }
 
-
 .value {
   width: 100%;
   text-align: center;
   font-size: 15px;
   opacity: 0.6;
 }
+
+.petal_no_data_0 {
+  fill:#384F5B;
+}
+  
+.petal_no_data_1{opacity:0.7;}
 
 .st0 {
   fill: #c97d75;

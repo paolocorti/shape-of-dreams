@@ -16,7 +16,7 @@ const Landing = ({ history }) => {
     }, 300);
     setTimeout(() => {
       history.push(`/chapter1?section=read`);
-    }, 1500);
+    }, 2000);
   };
 
   const pathname = '/chapter1';

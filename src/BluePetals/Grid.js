@@ -115,7 +115,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         </g>
       </g>
       <g>
-        <circle className='grid3 pulse' cx='300' cy='25.4' r='10.3' />
+        <circle className='grid4 pulse' cx='300' cy='25.4' r='15' />
+        <circle className='grid3' cx='300' cy='25.4' r={selectedPetal === 0 ? 8 : 4} />
         <circle
           className=''
           cx='300'
@@ -128,7 +129,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='437.3' cy='62.2' r='10.3' />
+        <circle className='grid4 pulse' cx='437.3' cy='62.2' r='15' />
+        <circle className='grid3' cx='437.3' cy='62.2' r={selectedPetal === 1 ? 8 : 4} />
         <circle
           className=''
           cx='437.3'
@@ -141,7 +143,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='537.8' cy='162.7' r='10.3' />
+        <circle className='grid4 pulse' cx='537.8' cy='162.7' r='15' />
+        <circle className='grid3' cx='537.8' cy='162.7' r={selectedPetal === 2 ? 8 : 4} />
         <circle
           className=''
           cx='537.8'
@@ -154,7 +157,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='574.6' cy='300' r='10.3' />
+        <circle className='grid4 pulse' cx='574.6' cy='300' r='15' />
+        <circle className='grid3' cx='574.6' cy='300' r={selectedPetal === 3 ? 8 : 4} />
         <circle
           className=''
           cx='574.6'
@@ -167,7 +171,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='537.8' cy='437.3' r='10.3' />
+        <circle className='grid4 pulse' cx='537.8' cy='437.3' r='15' />
+        <circle className='grid3' cx='537.8' cy='437.3' r={selectedPetal === 4 ? 8 : 4} />
         <circle
           className=''
           cx='537.8'
@@ -180,7 +185,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='437.3' cy='537.8' r='10.3' />
+        <circle className='grid4 pulse' cx='437.3' cy='537.8' r='15' />
+        <circle className='grid3' cx='437.3' cy='537.8' r={selectedPetal === 5 ? 8 : 4} />
         <circle
           className=''
           cx='437.3'
@@ -193,7 +199,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='300' cy='574.6' r='10.3' />
+        <circle className='grid4 pulse' cx='300' cy='574.6' r='15' />
+        <circle className='grid3' cx='300' cy='574.6' r={selectedPetal === 6 ? 8 : 4} />
         <circle
           className=''
           cx='300'
@@ -206,7 +213,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='162.7' cy='537.8' r='10.3' />
+        <circle className='grid4 pulse' cx='162.7' cy='537.8' r='15' />
+        <circle className='grid3' cx='162.7' cy='537.8' r={selectedPetal === 7 ? 8 : 4} />
         <circle
           className=''
           cx='162.7'
@@ -219,7 +227,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='62.1' cy='437.3' r='10.3' />
+        <circle className='grid4 pulse' cx='62.1' cy='437.3' r='15' />
+        <circle className='grid3' cx='62.1' cy='437.3' r={selectedPetal === 8 ? 8 : 4} />
         <circle
           className=''
           cx='62.1'
@@ -232,7 +241,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='25.4' cy='300' r='10.3' />
+        <circle className='grid4 pulse' cx='25.4' cy='300' r='15' />
+        <circle className='grid3' cx='25.4' cy='300' r={selectedPetal === 9 ? 8 : 4} />
         <circle
           className=''
           cx='25.4'
@@ -245,7 +255,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='62.2' cy='162.7' r='10.3' />
+        <circle className='grid4 pulse' cx='62.2' cy='162.7' r='15' />
+        <circle className='grid3' cx='62.2' cy='162.7' r={selectedPetal === 10 ? 8 : 4} />
         <circle
           className=''
           cx='62.2'
@@ -258,7 +269,8 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
         />
       </g>
       <g>
-        <circle className='grid3 pulse' cx='162.7' cy='62.1' r='10.3' />
+        <circle className='grid4 pulse' cx='162.7' cy='62.1' r='15' />
+        <circle className='grid3' cx='162.7' cy='62.1' r={selectedPetal === 11 ? 8 : 4} />
         <circle
           className=''
           cx='162.7'
@@ -270,116 +282,7 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           onMouseLeave={() => setSelectedPetal(11)}
         />
       </g>
-      <g id='on'>
-        <circle
-          className='grid4'
-          cx='300'
-          cy='25.4'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 0 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='437.3'
-          cy='62.2'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 1 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='537.8'
-          cy='162.7'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 2 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='574.6'
-          cy='300'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 3 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='537.8'
-          cy='437.3'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 4 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='437.3'
-          cy='537.8'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 5 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='300'
-          cy='574.6'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 6 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='162.7'
-          cy='537.8'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 7 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='62.1'
-          cy='437.3'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 8 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='25.4'
-          cy='300'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 9 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='62.2'
-          cy='162.7'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 10 ? 1 : 0
-          }}
-        />
-        <circle
-          className='grid4'
-          cx='162.7'
-          cy='62'
-          r='23.1'
-          style={{
-            opacity: selectedPetal === 11 ? 1 : 0
-          }}
-        />
-      </g>
+
     </g>
   );
 };

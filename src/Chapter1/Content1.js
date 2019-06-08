@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import content1 from './cap1-01-desk.jpg'
 import content2 from './cap1-02-desk.jpg'
 import content3 from './cap1-03-desk.jpg'
@@ -26,6 +26,21 @@ import NavigationBar from '../components/NavigationBar';
 
 const Content1 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
+  const [reload, setReload] = useState(true)
+
+  useEffect(() => {
+    if (activeIndex === 1) {
+      setReload(true)
+      setTimeout(() => {
+        setReload(false)
+      }, 2000)
+    }
+
+    return () => {
+      console.log('cleanup')
+      //setReload(true)
+    }
+  }, [activeIndex])
 
   return (
     <div className='w-100 bg-white read'>
@@ -34,8 +49,8 @@ const Content1 = ({ history, activeIndex }) => {
           <NavigationBar content={true} history={history} activeIndex={activeIndex} />
         )
       }
-      <h4 className='tl fw6 mv0 ph4'>Chapter 1</h4>
-      <h1 className='tl fw7 mt0 ph4'>The Shapes of our Dreams</h1>
+      <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>Chapter 1</h4>
+      <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>The Shapes of our Dreams</h1>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>How do we search for the meaning of our dreams on Google? We have explored the related queries to the question <span className='highlights'>What does it mean to dream about</span> in different languages to see what are the dreams’ subjects that the users look for the most. We discovered that we share some recurring dreams.</p>
       </div>
@@ -112,9 +127,12 @@ const Content1 = ({ history, activeIndex }) => {
       </div>
 
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3'>
+        <div className='flex flex-column items-center ph4 pv3 pb5'>
           <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>START EXPLORING</div>
-          <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          <div className='explore-icon'>
+            <div className='explore-icon-circle'></div>
+            <img className='explore-icon-base' src={'images/start-expl.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          </div>
         </div>
         {/* {
           isMobile && (

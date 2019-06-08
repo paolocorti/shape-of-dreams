@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import content1 from './cap4-01-desk.png'
 import content2 from './cap4-02-desk.png'
 import content3 from './cap4-03-desk.png'
@@ -15,13 +15,28 @@ import elephant from './elephant.svg'
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
-const Content4 = ({ history }) => {
+const Content4 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
+  const [reload, setReload] = useState(false)
+
+  useEffect(() => {
+    if (activeIndex === 4) {
+      setReload(true)
+      setTimeout(() => {
+        setReload(false)
+      }, 2000)
+    }
+
+    return () => {
+      console.log('cleanup')
+      //setReload(true)
+    }
+  }, [activeIndex])
 
   return (
     <div className='w-100 bg-white read'>
-      <h4 className='tl fw6 mv0 ph4'>Chapter 4</h4>
-      <h1 className='tl fw7 mt0 ph4'>Dreams that connect us</h1>
+      <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>Chapter 4</h4>
+      <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>Dreams that connect us</h1>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
           Another aspect we were interested in was exploring the networks of dreams: how do the dreams’s subjects – whose meaning people look for on Google – connect different languages? For this reason we visualized the dreams that connect us by year.
@@ -74,9 +89,12 @@ const Content4 = ({ history }) => {
         </p>
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3'>
+        <div className='flex flex-column items-center ph4 pv3 pb5'>
           <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>START EXPLORING</div>
-          <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          <div className='explore-icon'>
+            <div className='explore-icon-circle'></div>
+            <img className='explore-icon-base' src={'images/start-expl.svg'} width={35} onClick={() => context.setSelectedView('explore')} />
+          </div>
         </div>
         {/* {
           isMobile && (

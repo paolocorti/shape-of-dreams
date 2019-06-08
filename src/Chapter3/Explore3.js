@@ -116,7 +116,7 @@ const Explore3 = ({ history, activeIndex }) => {
           style={{ height: '125px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
-          <h1 className='tc fw5 mv0' style={{ fontSize: '21px' }}>
+          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
             Dreams’ subjects: interest over time
           </h1>
           {
@@ -154,17 +154,17 @@ const Explore3 = ({ history, activeIndex }) => {
             style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
           >
             <div
-              className='tc raleway mt2'
-              style={{ fontSize: isMobile ? '11px' : '16px', lineHeight: isMobile ? '13px' : '20px' }}
+              className='tc raleway mt2 fw3'
+              style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
             >
               Click on the arrows or use the keyboard arrows to change the dream.
             </div>
             <div
-              className='raleway mt3 fw7 pointer'
+              className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                letterSpacing: '1px'
+                //letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >
