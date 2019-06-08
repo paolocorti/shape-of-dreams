@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
 import interestOverTime from '../data/interestOverTime.json';
-import '../Explore.scss';
 import howtoread3 from './cap3-leg-desk.svg';
 import howtoreadMobile3 from './cap3-leg-mob.svg';
 import Trend from '../Trend';
 import categories from '../data/categories.json';
-import { years } from '../constants';
 import TopicSelector from '../components/TopicSelector.js';
 import { isMobile } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
 const Explore3 = ({ history, activeIndex }) => {
-  // const yearData = interestOverTime.filter(d =>
-  //   d.formattedTime.includes('2018')
-  // );
+
   const [howToRead, setHowToRead] = useState(false);
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
@@ -87,6 +83,18 @@ const Explore3 = ({ history, activeIndex }) => {
           </div>
         )
       }
+      {isMobile && note && (
+        <div className='noteBox ph4'>
+          <div className='noteBox-close' onClick={() => setNote('')}>
+            <img
+              src={'/images/close-white.svg'}
+              alt='Close menu icon'
+              width={20}
+            />
+          </div>
+          {note}
+        </div>
+      )}
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
           className='w-100 fixed'
@@ -122,13 +130,16 @@ const Explore3 = ({ history, activeIndex }) => {
           {
             isMobile ?
               (
-                <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
+                <div className='relative flex justify-center' style={{ width: '340px' }}>
+                  <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
+                  <img src={'/images/swipe-hand.svg'} style={{ height: 30, top: 26, right: -4, position: 'absolute' }} />
+                </div>
 
               ) : (
                 <div style={{ width: '340px', display: 'flex', alignItems: 'center' }}>
-                  <img className='pointer mt3' onClick={upIndex} src={'/images/arrow-up.svg'} style={{ height: 40, opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }} />
+                  <img className='pointer mt3' onClick={upIndex} src={'/images/arrow-up.svg'} style={{ height: 30, marginRight: '10px', opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }} />
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} selectedIndex={selectedIndex} />
-                  <img className='pointer mt3' onClick={downIndex} src={'/images/arrow-down.svg'} style={{ height: 40, opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }} />
+                  <img className='pointer mt3' onClick={downIndex} src={'/images/arrow-down.svg'} style={{ height: 30, marginLeft: '10px', opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }} />
                 </div>
               )
           }
@@ -157,7 +168,15 @@ const Explore3 = ({ history, activeIndex }) => {
               className='tc raleway mt2 fw3'
               style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
             >
-              Click on the arrows or use the keyboard arrows to change the dream.
+              {
+                isMobile ?
+                  (
+                    'Swipe over the box to change the dream.'
+                  ) : (
+                    'Click on the arrows or use the keyboard arrows to change the dream.'
+                  )
+              }
+
             </div>
             <div
               className='raleway mt3 fw7 pointer link'

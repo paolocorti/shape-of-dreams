@@ -59,18 +59,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
 
   return (
     <div className='mt3'>
-      {isMobile && noteActive && (
-        <div className='noteBox ph4'>
-          <div className='noteBox-close' onClick={() => toggleNote('')}>
-            <img
-              src={'/images/close-white.svg'}
-              alt='Close menu icon'
-              width={20}
-            />
-          </div>
-          {noteActive}
-        </div>
-      )}
       <svg
         className='viz'
         x='0px'
