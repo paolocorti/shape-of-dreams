@@ -4,38 +4,99 @@
   height: 100vh;
 }
 
-.landing-header {
-  height: 30%;
-}
 
 .landing-content {
-  height: 40%;
+  height: 70%;
+  margin-top: 15%;
+
+  & .author {
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Raleway';
+    color: white;
+  }
 
   & .title {
-    font-size: calc(38px + (70 - 38) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(38px + (76 - 38) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
   }
 
   & .subtitle {
-    font-size: calc(28px + (56 - 28) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+  }
+
+  & .call-to-action {
+    font-family: 'Raleway';
+    color: white;
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  & .lighter-weight {
+    font-weight: lighter;
+    margin: 0 5px;
+    color: white;
   }
 }
 
-.landing-content h1, .landing-content > div {
-  color: white;
+@media only screen and (min-width: 768px) {
+  .landing-content {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 15%;
+  }
 }
 
-.landing-footer {
-  height: 20%;
+
+.landing-icon-container {
+  width: 160px;
+  height: 160px;
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse-border 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse-border {
+  0% {
+    border-color: rgba(255,255,255,1);
+  }
+  50% {
+    border-color: rgba(255,255,255,0);
+  }
+  100% {
+    border-color: rgba(255,255,255,1);
+  }
+}
+
+.landing-icon {
+  transform: rotate(0deg); 
+  animation: rotation 240s infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .not-scrolling {
   background-position: 0 0%;
   transition: 1.5s background-position;
+  transform: translateZ(0);
+  will-change: background-position;
 }
 
 .scrolling {
   background-position: 0 100%;
   transition: 1.5s background-position;
+  transform: translateZ(0);
+  will-change: background-position;
 }
 
 $first-row-fall-time: 0.5s;

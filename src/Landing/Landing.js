@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Landing.scss';
-import landing from './petals-landing.svg';
-import sky from './landing_sky_desktop.png';
+import landingIcon from './landing-flower.svg';
+import sky from './landing_sky_desktop.jpg';
+import skyMobile from './landing_sky_mobile.jpg';
+import { isMobile } from 'react-device-detect';
 
 const Landing = ({ history }) => {
   const [blur, setBlur] = useState(false);
@@ -11,7 +13,7 @@ const Landing = ({ history }) => {
     setScroll(true);
     setTimeout(() => {
       setBlur(true);
-    }, 500);
+    }, 300);
     setTimeout(() => {
       history.push(`/chapter1?section=read`);
     }, 1500);
@@ -25,12 +27,12 @@ const Landing = ({ history }) => {
       className={`w-100 h-100 overflow-hidden ${scroll ? 'scrolling' : 'not-scrolling'}`}
       style={{
         position: 'absolute',
-        backgroundImage: `url(${sky})`,
+        backgroundImage: `url(${isMobile ? skyMobile : sky})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className='landing-header w-100 tc pa4 pt5' style={{ margin: '0 auto', maxWidth: '75%' }}>
+      {/* <div className='landing-header w-100 tc pa4 pt5' style={{ margin: '0 auto', maxWidth: '75%' }}>
         <img
           src={landing}
           height='100%'
@@ -38,19 +40,32 @@ const Landing = ({ history }) => {
           width={220}
           className={`${blur ? 'blur' : ''}`}
         />
-      </div>
-      <div className={`landing-content w-100 ${blur ? 'blur' : ''}`} style={{ margin: '0 auto', maxWidth: '75%', color: 'white' }}>
-        <h1 className='tc fw7 mt0 title'>
-          THE MEANING <br /> OF DREAMS
+      </div> */}
+      <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
+        <h3 className='tc fw7 mt0 author'>
+          FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWSLAB
+        </h3>
+        <h1 className='tc fw7 mt2 title'>
+          The Shape of Dreams
         </h1>
         <div className='ph4 tc subtitle'>
           A visual exploration on Google searches for the interpretation of
           dreams
         </div>
+        <div className='tc mv4 flex flex-column items-center'>
+          <div className='landing-icon-container' onClick={goToChapter1}>
+            <img
+              src={landingIcon}
+              height='100%'
+              alt='landing flower icon'
+              width={'60%'}
+              className={`${blur ? 'blur' : ''}`}
+            />
+          </div>
+          <div className='tc fw7 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
+        </div>
       </div>
-      <div className='landing-footer w-100 tc'>
-        <img className='pointer absolute pulse' onClick={goToChapter1} src={'images/down-arrow-white.svg'} width={35} style={{ top: '0px' }} />
-      </div>
+
     </div>
   );
 };
