@@ -247,7 +247,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             top={trendHeight - 10}
             left={0}
             scale={scaleX}
-            numTicks={4}
+            numTicks={isMobile ? 4 : 8}
             label='Time'
           >
             {axis => {

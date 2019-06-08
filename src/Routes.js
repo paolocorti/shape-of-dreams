@@ -38,9 +38,9 @@ const Routes = ({ location }) => {
             left: '5px',
             zIndex: 99,
             top: '50%',
-            marginTop: '-18px'
+            marginTop: '-11px'
           }}
-          height={36}
+          height={22}
         />
       )}
 
@@ -52,9 +52,9 @@ const Routes = ({ location }) => {
             right: '5px',
             zIndex: 99,
             top: '50%',
-            marginTop: '-18px'
+            marginTop: '-11px'
           }}
-          height={36}
+          height={22}
         />
       )}
 
