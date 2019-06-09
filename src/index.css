@@ -115,8 +115,8 @@ h4 {
 
 .right-tap {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   top: 50%;
   right: 40px;
   z-index: 999;
@@ -124,8 +124,8 @@ h4 {
 
 .left-tap {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   top: 50%;
   left: 40px;
   z-index: 999;
@@ -489,3 +489,38 @@ h4 {
     height: 70px;
   }
 }
+
+.icon-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  animation: icon-anim 2s infinite;
+  border: 1px solid rgba(67,68,154, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.icon-circle-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+@keyframes icon-anim {
+  0% {
+    border-color: rgba(67,68,154, 1);
+  }
+  100% {
+    border-color: rgba(67,68,154, 0);
+  }
+}
+

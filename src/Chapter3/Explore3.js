@@ -136,10 +136,16 @@ const Explore3 = ({ history, activeIndex }) => {
                 </div>
 
               ) : (
-                <div style={{ width: '340px', display: 'flex', alignItems: 'center' }}>
-                  <img className='pointer mt3' onClick={upIndex} src={'/images/arrow-up.svg'} style={{ height: 30, marginRight: '10px', opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }} />
+                <div style={{ width: '380px', display: 'flex', alignItems: 'center' }}>
+                  <div className='pointer relative mt3' onClick={upIndex} style={{ width: 35, height: 35, marginRight: '10px', opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }}>
+                    <div className='icon-circle'></div>
+                    <img className='icon-circle-arrow' src={'/images/arrow-up.svg'} alt='Tap icon' width={16} />
+                  </div>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} selectedIndex={selectedIndex} />
-                  <img className='pointer mt3' onClick={downIndex} src={'/images/arrow-down.svg'} style={{ height: 30, marginLeft: '10px', opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }} />
+                  <div className='pointer relative mt3' onClick={downIndex} style={{ width: 35, height: 35, marginLeft: '10px', opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }}>
+                    <div className='icon-circle'></div>
+                    <img className='icon-circle-arrow' src={'/images/arrow-down.svg'} alt='Tap icon' width={16} />
+                  </div>
                 </div>
               )
           }

@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
-import content1 from './cap4-01-desk.png'
-import content2 from './cap4-02-desk.png'
-import content3 from './cap4-03-desk.png'
-import content4 from './cap4-04-desk.png'
+import content1 from './cap4-01-desk.jpg'
+import content2 from './cap4-02-desk.jpg'
+import content3 from './cap4-03-desk.jpg'
+import content4 from './cap4-04-desk.jpg'
 import mobileContent1 from './cap4-01-mob.jpg'
 import mobileContent2 from './cap4-02-mob.jpg'
 import mobileContent3 from './cap4-03-mob.jpg'
@@ -89,7 +89,7 @@ const Content4 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3 pb5'>
+        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '45px' }}>
           <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>START EXPLORING</div>
           <div className='explore-icon'>
             <div className='explore-icon-circle'></div>

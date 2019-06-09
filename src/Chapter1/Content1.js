@@ -127,7 +127,7 @@ const Content1 = ({ history, activeIndex }) => {
       </div>
 
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3 pb5'>
+        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '45px' }}>
           <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>START EXPLORING</div>
           <div className='explore-icon'>
             <div className='explore-icon-circle'></div>

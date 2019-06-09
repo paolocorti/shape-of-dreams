@@ -212,13 +212,15 @@ const Explore1 = ({ history, activeIndex }) => {
                     </div>
                   )}
                 {selectedTopics.length > 0 && selectedIndex > 0 && (
-                  <div className='left-tap pulse' onClick={() => onTapLeft()}>
-                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  <div className='left-tap pointer' onClick={() => onTapLeft()}>
+                    <div className='icon-circle'></div>
+                    <img className='icon-circle-arrow' src={'/images/arrow-left.svg'} alt='Tap icon' width={12} />
                   </div>
                 )}
                 {selectedTopics.length > 0 && (
-                  <div className='right-tap pulse' onClick={() => onTapRight()}>
-                    <img src={'/images/tap.svg'} alt='Tap icon' width={35} />
+                  <div className='right-tap pointer' onClick={() => onTapRight()}>
+                    <div className='icon-circle'></div>
+                    <img className='icon-circle-arrow' src={'/images/arrow-right.svg'} alt='Tap icon' width={12} />
                   </div>
                 )}
               </div>
@@ -302,13 +304,15 @@ const Explore1 = ({ history, activeIndex }) => {
                     )
                   }
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 0 && selectedIndex > 0 && (
-                    <div className='left-tap pulse pointer' onClick={() => onTapLeft()}>
-                      <img src={'/images/arrow-left.svg'} alt='Tap icon' width={35} />
+                    <div className='left-tap pointer' onClick={() => onTapLeft()}>
+                      <div className='icon-circle'></div>
+                      <img className='icon-circle-arrow' src={'/images/arrow-left.svg'} alt='Tap icon' width={12} />
                     </div>
                   )}
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 3 && (
-                    <div className='right-tap pulse pointer' onClick={() => onTapRight()}>
-                      <img src={'/images/arrow-right.svg'} alt='Tap icon' width={35} />
+                    <div className='right-tap pointer' onClick={() => onTapRight()}>
+                      <div className='icon-circle'></div>
+                      <img className='icon-circle-arrow' src={'/images/arrow-right.svg'} alt='Tap icon' width={12} />
                     </div>
                   )}
                 </div>
