@@ -154,7 +154,7 @@ const Explore2 = ({ history, activeIndex }) => {
         >
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', margin: isMobile ? '20px 0' : '0 auto' }}
+            style={{ height: '70%', margin: isMobile ? '10px 0' : '0 auto' }}
           >
             {
               selectedCategories.length ? (
