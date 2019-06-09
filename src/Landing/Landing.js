@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Landing.scss';
+import Loader from '../components/Loader'
 import landingIcon from './landing-flower.svg';
 import sky from './landing_sky_desktop.jpg';
 import skyMobile from './landing_sky_mobile.jpg';
@@ -22,17 +23,18 @@ const Landing = ({ history }) => {
   const pathname = '/chapter1';
 
   return (
-    <div
-      id='scroll'
-      className={`w-100 h-100 overflow-hidden ${scroll ? 'scrolling' : 'not-scrolling'}`}
-      style={{
-        position: 'absolute',
-        backgroundImage: `url(${isMobile ? skyMobile : sky})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      {/* <div className='landing-header w-100 tc pa4 pt5' style={{ margin: '0 auto', maxWidth: '75%' }}>
+    <React.Suspense fallback={<Loader top={"0px"} />}>
+      <div
+        id='scroll'
+        className={`w-100 h-100 overflow-hidden ${scroll ? 'scrolling' : 'not-scrolling'}`}
+        style={{
+          position: 'absolute',
+          backgroundImage: `url(${isMobile ? skyMobile : sky})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* <div className='landing-header w-100 tc pa4 pt5' style={{ margin: '0 auto', maxWidth: '75%' }}>
         <img
           src={landing}
           height='100%'
@@ -41,32 +43,33 @@ const Landing = ({ history }) => {
           className={`${blur ? 'blur' : ''}`}
         />
       </div> */}
-      <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
-        <h3 className='tc fw7 mt0 author'>
-          FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWS LAB
+        <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
+          <h3 className='tc fw7 mt0 author'>
+            FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWS LAB
         </h3>
-        <h1 className='tc fw7 mt2 title'>
-          The Shape of Dreams
+          <h1 className='tc fw7 mt2 title'>
+            The Shape of Dreams
         </h1>
-        <div className='ph4 tc subtitle'>
-          A visual exploration on Google searches for the interpretation of
-          dreams
+          <div className='ph4 tc subtitle'>
+            A visual exploration on Google searches for the interpretation of
+            dreams
         </div>
-        <div className='tc mv4 flex flex-column items-center'>
-          <div className='landing-icon-container' onClick={goToChapter1}>
-            <img
-              src={landingIcon}
-              height='100%'
-              alt='landing flower icon'
-              width={'60%'}
-              className={`${blur ? 'blur' : ''}`}
-            />
+          <div className='tc mv4 flex flex-column items-center'>
+            <div className='landing-icon-container' onClick={goToChapter1}>
+              <img
+                src={landingIcon}
+                height='100%'
+                alt='landing flower icon'
+                width={'60%'}
+                className={`${blur ? 'blur' : ''}`}
+              />
+            </div>
+            <div className='tc fw7 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
           </div>
-          <div className='tc fw7 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
         </div>
-      </div>
 
-    </div>
+      </div>
+    </React.Suspense>
   );
 };
 
