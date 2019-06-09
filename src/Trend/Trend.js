@@ -31,8 +31,8 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
     }
   }, [data])
 
-  const svgWidth = isMobile ? window.innerWidth * 0.9 : 800;
-  const svgHeight = isMobile ? window.innerWidth * 0.7 : 400;
+  const svgWidth = isMobile ? window.innerWidth * 0.8 : 800;
+  const svgHeight = isMobile ? window.innerWidth * 0.6 : 400;
   const trendHeight = svgHeight - 30;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
@@ -195,6 +195,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   y={d => scaleY2(y(d))}
                   stroke={'#b36762'}
                   strokeWidth={1}
+                  curve={curveMonotoneX}
                 />
               );
             }}

@@ -22,18 +22,14 @@ const Legend = ({ history, location }) => {
     <div
       className={`legend w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${
         context.legendOpen ? 'open' : 'close'
-      }`}
+        }`}
       onClick={closeLegend}
     >
       <div
-        className='read-close pointer'
+        className='read-close-legend pointer'
         onClick={closeLegend}
         style={{
-          right: isMobile ? '50%' : '25px',
-          top: isMobile ? 'auto' : '25px',
-          bottom: isMobile ? '20px' : 'auto',
-          left: 'auto',
-          zIndex: 999
+          zIndex: 999,
         }}
       >
         <img

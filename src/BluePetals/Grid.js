@@ -121,11 +121,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='300'
           cy='25.4'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(0)}
           onMouseEnter={() => setSelectedPetal(0)}
-          onMouseLeave={() => setSelectedPetal(0)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -135,11 +135,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='437.3'
           cy='62.2'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(1)}
           onMouseEnter={() => setSelectedPetal(1)}
-          onMouseLeave={() => setSelectedPetal(1)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -149,11 +149,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='537.8'
           cy='162.7'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(2)}
           onMouseEnter={() => setSelectedPetal(2)}
-          onMouseLeave={() => setSelectedPetal(2)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -163,11 +163,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='574.6'
           cy='300'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(3)}
           onMouseEnter={() => setSelectedPetal(3)}
-          onMouseLeave={() => setSelectedPetal(3)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -177,11 +177,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='537.8'
           cy='437.3'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(4)}
           onMouseEnter={() => setSelectedPetal(4)}
-          onMouseLeave={() => setSelectedPetal(4)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -191,11 +191,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='437.3'
           cy='537.8'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(5)}
           onMouseEnter={() => setSelectedPetal(5)}
-          onMouseLeave={() => setSelectedPetal(5)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -205,11 +205,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='300'
           cy='574.6'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(6)}
           onMouseEnter={() => setSelectedPetal(6)}
-          onMouseLeave={() => setSelectedPetal(6)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -219,11 +219,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='162.7'
           cy='537.8'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(7)}
           onMouseEnter={() => setSelectedPetal(7)}
-          onMouseLeave={() => setSelectedPetal(7)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -233,11 +233,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='62.1'
           cy='437.3'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(8)}
           onMouseEnter={() => setSelectedPetal(8)}
-          onMouseLeave={() => setSelectedPetal(8)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -247,11 +247,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='25.4'
           cy='300'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(9)}
           onMouseEnter={() => setSelectedPetal(9)}
-          onMouseLeave={() => setSelectedPetal(9)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -261,11 +261,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='62.2'
           cy='162.7'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(10)}
           onMouseEnter={() => setSelectedPetal(10)}
-          onMouseLeave={() => setSelectedPetal(10)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -275,11 +275,11 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           className=''
           cx='162.7'
           cy='62.1'
-          r='20'
+          r='30'
           fill='transparent'
           onClick={() => setSelectedPetal(11)}
           onMouseEnter={() => setSelectedPetal(11)}
-          onMouseLeave={() => setSelectedPetal(11)}
+          onMouseLeave={() => setSelectedPetal(null)}
         />
       </g>
 

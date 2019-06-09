@@ -78,13 +78,16 @@ const Explore2 = ({ history, activeIndex }) => {
   })
 
   const setSelectedPetalWrapper = index => {
-    const newSelectedPetal = selectedPetal === index ? null : index;
+    let newSelectedPetal
+    if (index) {
+      newSelectedPetal = selectedPetal === index ? null : index;
+    } else {
+      newSelectedPetal = null;
+    }
     setSelectedPetal(newSelectedPetal);
   };
 
   const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : []
-
-  console.log(selectedCategories)
 
   return (
     <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
@@ -105,22 +108,19 @@ const Explore2 = ({ history, activeIndex }) => {
       }
       <div className='w-100 h-100 relative'>
         <div
-          className='w-100 fixed'
+          className='how-to-read'
           style={{
             zIndex: howToRead ? 200 : -1,
             background: 'linear-gradient(#e5f2ef, #d0d7eb)',
             top: howToRead ? (isMobile ? 0 : 50) : '-100%',
-            height: 'calc(100vh - 50px)',
             display: howToRead ? 'block' : 'none',
           }}
         >
-          <div style={{
-            backgroundImage: `url(${isMobile ? howtoreadMobile2 : howtoread2})`,
-            backgroundPosition: '50% 50%',
-            backgroundSize: 'cover',
-            height: 'calc(100% - 40px)',
-            marginTop: '40px'
-          }}>
+          <div
+            className='how-to-read-image'
+            style={{
+              backgroundImage: `url(${isMobile ? howtoreadMobile2 : howtoread2})`,
+            }}>
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
@@ -176,7 +176,7 @@ const Explore2 = ({ history, activeIndex }) => {
             }
           </div>
           <div
-            className='flex flex-column relative justify-start items-center ph4 mt2'
+            className='flex flex-column relative justify-start items-center ph4 mt0'
             style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
           >
             <div
@@ -187,7 +187,7 @@ const Explore2 = ({ history, activeIndex }) => {
               {
                 isMobile ?
                   (
-                    'Select a language and a year. Tap on the circle to switch on and off the category. Size of the petals = n. of dreams in the category'
+                    'Select a language and a year. Tap on the circles to select the category. Petal size = n. of dreams.'
                   ) : (
                     'Select a language and a year or use the keyboard arrows to navigate the visualization. Go over on the circles to switch on and off the category. The size of the petals represents the number of dreams in the category.'
                   )

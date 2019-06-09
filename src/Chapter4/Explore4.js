@@ -87,24 +87,20 @@ const Explore4 = ({ history, activeIndex }) => {
       </div> */}
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
-          className='w-100 fixed'
+          className='how-to-read'
           style={{
             zIndex: howToRead ? 200 : -1,
             background: 'linear-gradient(#e6f1eb, #dde6ed)',
             top: howToRead ? (isMobile ? 0 : 50) : '-100%',
-            height: 'calc(100vh - 50px)',
             display: howToRead ? 'block' : 'none'
           }}
         >
           <div
+            className='how-to-read-image'
             style={{
               backgroundImage: `url(${
                 isMobile ? howtoreadMobile4 : howtoread4
-                })`,
-              backgroundPosition: '50% 50%',
-              backgroundSize: 'cover',
-              height: 'calc(100% - 40px)',
-              marginTop: '40px'
+                })`
             }}
           />
 
@@ -119,7 +115,7 @@ const Explore4 = ({ history, activeIndex }) => {
         </div>
         <div
           className='w-100 ph4 flex flex-column justify-center items-center ios-fix'
-          style={{ height: '125px' }}
+          style={{ height: '100px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
           <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
@@ -134,8 +130,8 @@ const Explore4 = ({ history, activeIndex }) => {
           )}
         </div>
         <div
-          className='w-100 flex flex-column relative tc ios-fix'
-          style={{ height: 'calc(100% - 125px)' }}
+          className='w-100 mt3 flex flex-column relative tc ios-fix'
+          style={{ height: 'calc(100% - 100px)' }}
         >
           <div
             className='flex flex-column justify-center items-center'
@@ -194,9 +190,7 @@ const Explore4 = ({ history, activeIndex }) => {
                 lineHeight: isMobile ? '13px' : '20px'
               }}
             >
-              Select a language and a year. The lines connect the languages that
-              share the same dreams. The subjects in common are written
-              above/under the languages.
+              Select a language and a year. The lines connect the languages that share the same dreams.
             </div>
             <div
               className='raleway mt3 fw7 link'

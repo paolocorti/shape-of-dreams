@@ -97,22 +97,18 @@ const Explore3 = ({ history, activeIndex }) => {
       )}
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
-          className='w-100 fixed'
+          className='how-to-read'
           style={{
             zIndex: howToRead ? 200 : -1,
             background: 'linear-gradient(#efe2e1, #ebf5f5)',
             top: howToRead ? (isMobile ? 0 : 50) : '-100%',
-            height: 'calc(100vh - 50px)',
             display: howToRead ? 'block' : 'none',
           }}
         >
-          <div style={{
-            backgroundImage: `url(${isMobile ? howtoreadMobile3 : howtoread3})`,
-            backgroundPosition: '50% 50%',
-            backgroundSize: 'cover',
-            height: 'calc(100% - 40px)',
-            marginTop: '40px'
-          }}>
+          <div className='how-to-read-image'
+            style={{
+              backgroundImage: `url(${isMobile ? howtoreadMobile3 : howtoread3})`,
+            }}>
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>

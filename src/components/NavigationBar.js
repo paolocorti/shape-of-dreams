@@ -19,7 +19,7 @@ const NavigationBar = ({ history, activeIndex, content }) => {
   return (
     <div className='navigationBarContainer' style={{ position: content ? 'fixed' : 'absolute' }}>
       <div className='navigationBar'>
-        <img className='pointer' src={'/images/prev.svg'} onClick={prev} style={{ height: 45, opacity: activeIndex > 1 ? 1 : 0 }} />
+        <img className='pointer' src={'/images/prev.svg'} onClick={prev} style={{ height: 45, opacity: activeIndex > 1 ? 1 : 0, pointerEvents: activeIndex > 1 ? 'auto' : 'none' }} />
         {
           activeIndex === 1 &&
           (
@@ -44,7 +44,7 @@ const NavigationBar = ({ history, activeIndex, content }) => {
             <img className='pointer' src={'/images/change4.svg'} style={{ height: 40 }} />
           )
         }
-        <img className='pointer' src={'/images/next.svg'} onClick={next} style={{ height: 45, opacity: activeIndex < 4 ? 1 : 0 }} />
+        <img className='pointer' src={'/images/next.svg'} onClick={next} style={{ height: 45, opacity: activeIndex < 4 ? 1 : 0, pointerEvents: activeIndex < 4 ? 'auto' : 'none' }} />
       </div>
     </div>
 

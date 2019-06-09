@@ -64,7 +64,7 @@ const Landing = ({ history }) => {
                 className={`${blur ? 'blur' : ''}`}
               />
             </div>
-            <div className='tc fw7 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
+            <div className='tc fw3 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
           </div>
         </div>
 

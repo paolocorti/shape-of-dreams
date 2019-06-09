@@ -18,7 +18,7 @@ const languageLabel = {
 
 const Network1 = ({ year }) => {
   const [selected, setSelected] = useState('');
-  const svgHeight = isMobile ? window.innerHeight * 0.8 : 600;
+  const svgHeight = isMobile ? window.innerHeight * 0.6 : 600;
   const svgWidth = svgHeight;
 
   const selectedCallback = language => {
@@ -28,7 +28,7 @@ const Network1 = ({ year }) => {
 
   return (
     <div className='flex w-100 justify-center items-center flex-column'>
-      <div className='mt0 value absolute' style={{ fontSize: '16px', opacity: 0.6, top: '10px' }}>
+      <div className='mt0 value absolute' style={{ fontSize: '16px', opacity: 0.6, top: '-5px' }}>
         {selected ? languageLabel[selected] : 'All the languages'} - {year}
       </div>
       <svg

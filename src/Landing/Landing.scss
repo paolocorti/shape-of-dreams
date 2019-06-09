@@ -10,18 +10,18 @@
   margin-top: 15%;
 
   & .author {
-    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(13px + (26 - 13) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Raleway';
     color: white;
   }
 
   & .title {
-    font-size: calc(41px + (82 - 41) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1600 - 300)));
     color: white;
   }
 
   & .subtitle {
-    font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
     color: white;
   }
 
