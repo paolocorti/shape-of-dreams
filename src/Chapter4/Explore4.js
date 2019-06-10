@@ -184,7 +184,7 @@ const Explore4 = ({ history, activeIndex }) => {
             }}
           >
             <div
-              className='tc raleway mt2 fw3'
+              className='tc raleway fw3'
               style={{
                 fontSize: isMobile ? '11px' : '15px',
                 lineHeight: isMobile ? '13px' : '20px'

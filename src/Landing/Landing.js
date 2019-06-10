@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import './Landing.scss';
 import Loader from '../components/Loader'
 import landingIcon from './landing-flower.svg';
@@ -25,12 +25,13 @@ const Landing = ({ history }) => {
   const pathname = '/chapter1';
 
   return (
-    <React.Suspense fallback={<Loader top={"0px"} />}>
+    <Suspense fallback={<Loader top={"0px"} />}>
       <div
         id='scroll'
         className={`w-100 h-100 overflow-hidden ${scroll ? 'scrolling' : 'not-scrolling'}`}
         style={{
           position: 'absolute',
+          backgroundClip: '#2a2c60',
           backgroundImage: `url(${isMobile ? skyMobile : sky})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
@@ -71,7 +72,7 @@ const Landing = ({ history }) => {
         </div>
 
       </div>
-    </React.Suspense>
+    </Suspense>
   );
 };
 

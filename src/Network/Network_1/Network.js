@@ -18,7 +18,7 @@ const languageLabel = {
 
 const Network1 = ({ year }) => {
   const [selected, setSelected] = useState('');
-  const svgHeight = isMobile ? window.innerHeight * 0.6 : 600;
+  const svgHeight = isMobile ? window.innerHeight * 0.6 : window.innerHeight * 0.7;
   const svgWidth = svgHeight;
 
   const selectedCallback = language => {

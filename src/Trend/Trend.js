@@ -32,7 +32,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
   }, [data])
 
   const svgWidth = isMobile ? window.innerWidth * 0.8 : 800;
-  const svgHeight = isMobile ? window.innerWidth * 0.6 : 400;
+  const svgHeight = isMobile ? window.innerWidth * 0.6 : window.innerHeight * 0.5;
   const trendHeight = svgHeight - 30;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
