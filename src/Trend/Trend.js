@@ -243,7 +243,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
           </g>
         }
 
-        <g transform={`translate(21, 10)`}>
+        <g transform={`translate(21, 8)`}>
           <AxisBottom
             top={trendHeight - 10}
             left={0}

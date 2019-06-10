@@ -185,7 +185,7 @@ const Explore3 = ({ history, activeIndex }) => {
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                //letterSpacing: '1px'
+                letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >
@@ -196,7 +196,7 @@ const Explore3 = ({ history, activeIndex }) => {
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                //letterSpacing: '1px'
+                letterSpacing: '1px'
               }}
               onClick={() => history.push('/chapter4?section=read')}
             >

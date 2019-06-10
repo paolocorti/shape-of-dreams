@@ -197,7 +197,7 @@ const Explore4 = ({ history, activeIndex }) => {
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                //letterSpacing: '1px'
+                letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >
