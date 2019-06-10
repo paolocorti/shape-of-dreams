@@ -1,4 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import content1 from './cap2-01-desk.jpg'
 import content2 from './cap2-02-desk.jpg'
 import content3 from './cap2-03-desk.jpg'
@@ -35,7 +37,11 @@ const Content2 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent1 : content1} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 2 first paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent1 : content1}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -46,14 +52,22 @@ const Content2 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent2 : content2} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 2 second paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent2 : content2}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
           Also exploring the less prominent categories is interesting: we discovered that over the years the language with more <span className='highlights'>Emotions</span> related subjects is Japanese and we noticed a <span className='highlights'>Food</span> peak in Russian in 2012.        </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent3 : content3} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 2 third paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent3 : content3}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>

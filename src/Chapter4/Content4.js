@@ -1,4 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import content1 from './cap4-01-desk.jpg'
 import content2 from './cap4-02-desk.jpg'
 import content3 from './cap4-03-desk.jpg'
@@ -43,7 +45,11 @@ const Content4 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent1 : content1} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 4 first paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent1 : content1}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -52,14 +58,30 @@ const Content4 = ({ history, activeIndex }) => {
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-center'>
-          <img src={dna} height={120} alt='dna' />
-          <img src={dog} height={140} alt='dog' />
-          <img src={fish} height={110} alt='fish' />
+          <LazyLoadImage
+            alt={'dna'}
+            effect="blur"
+            src={dna}
+            height={120} />
+          <LazyLoadImage
+            alt={'dog'}
+            effect="blur"
+            src={dog}
+            height={140} />
+          <LazyLoadImage
+            alt={'fish'}
+            effect="blur"
+            src={fish}
+            height={110} />
         </div>
         {/* <h2 className='mv3'>Peaks over the year</h2> */}
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent2 : content2} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 4 second paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent2 : content2}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -67,7 +89,11 @@ const Content4 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent3 : content3} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 4 third paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent3 : content3}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -75,13 +101,25 @@ const Content4 = ({ history, activeIndex }) => {
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-center'>
-          <img src={toad} height={110} alt='toad' />
-          <img src={elephant} height={140} alt='elephant' />
+          <LazyLoadImage
+            alt={'toad'}
+            effect="blur"
+            src={toad}
+            height={110} />
+          <LazyLoadImage
+            alt={'elephant'}
+            effect="blur"
+            src={elephant}
+            height={140} />
         </div>
         {/* <h2 className='mv3'>Peaks over the year</h2> */}
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent4 : content4} width='100%' alt='chapter 2' />
+        <LazyLoadImage
+          alt={'Chapter 4 fourth paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent4 : content4}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>

@@ -1,4 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import content0 from './cap3-00-desk.jpg'
 import content1 from './cap3-01-desk.jpg'
 import content2 from './cap3-02-desk.jpg'
@@ -38,7 +40,11 @@ const Content3 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent0 : content0} width='100%' alt='chapter 3' />
+        <LazyLoadImage
+          alt={'Chapter 3 first paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent0 : content0}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -46,7 +52,11 @@ const Content3 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent1 : content1} width='100%' alt='chapter 3' />
+        <LazyLoadImage
+          alt={'Chapter 3 second paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent1 : content1}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -54,7 +64,11 @@ const Content3 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent2 : content2} width='100%' alt='chapter 3' />
+        <LazyLoadImage
+          alt={'Chapter 3 third paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent2 : content2}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -63,7 +77,11 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent3 : content3} width='100%' alt='chapter 3' />
+        <LazyLoadImage
+          alt={'Chapter 3 fourth paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent3 : content3}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
