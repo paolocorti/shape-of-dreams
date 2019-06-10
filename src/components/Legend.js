@@ -37,7 +37,7 @@ const Legend = ({ history, location }) => {
           className=''
           src={'/images/got-it.svg'}
           alt='Close menu icon'
-          width={isMobile ? 40 : 80}
+          width={isMobile ? 50 : 80}
         />
       </div>
       <img

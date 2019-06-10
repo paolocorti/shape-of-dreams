@@ -8,8 +8,8 @@ import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import noData from './petal-no-data.svg';
 import { years } from '../constants';
-import howtoread1 from './cap1-leg-desk.svg';
-import howtoreadMobile1 from './cap1-leg-mob.svg';
+import howtoread1 from './cap1-leg-desk.png';
+import howtoreadMobile1 from './cap1-leg-mob.png';
 import { isMobile, isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
@@ -137,7 +137,7 @@ const Explore1 = ({ history, activeIndex }) => {
         <div
           className='w-100 fixed'
           style={{
-            zIndex: howToRead ? 200 : -1,
+            zIndex: howToRead ? 1000 : -1,
             background: 'linear-gradient(#e1eaef, #e4f3ec)',
             top: howToRead ? (isMobile ? 0 : 50) : '-100%',
             height: 'calc(100vh - 50px)',
@@ -147,7 +147,7 @@ const Explore1 = ({ history, activeIndex }) => {
           <div style={{
             backgroundImage: `url(${isMobile ? howtoreadMobile1 : howtoread1})`,
             backgroundPosition: '50% 50%',
-            backgroundSize: 'contain',
+            backgroundSize: isMobile ? 'contain' : 'cover',
             backgroundRepeat: 'no-repeat',
             height: 'calc(100% - 40px)',
             marginTop: '30px',
