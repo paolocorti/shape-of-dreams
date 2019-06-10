@@ -51,7 +51,7 @@ const Landing = ({ history }) => {
             The Shape of Dreams
         </h1>
           <div className='ph4 tc subtitle'>
-            A visual exploration on Google searches for the interpretation of
+            A visual exploration of Google searches for the interpretation of
             dreams
         </div>
           <div className='tc mv4 flex flex-column items-center'>

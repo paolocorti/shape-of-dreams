@@ -6,7 +6,7 @@ import howtoreadMobile3 from './cap3-leg-mob.svg';
 import Trend from '../Trend';
 import categories from '../data/categories.json';
 import TopicSelector from '../components/TopicSelector.js';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
 const Explore3 = ({ history, activeIndex }) => {
@@ -116,7 +116,7 @@ const Explore3 = ({ history, activeIndex }) => {
           </div>
         </div>
         <div
-          className='w-100 ph4 flex flex-column justify-center items-center ios-fix'
+          className={`w-100 ph4 flex flex-column justify-center items-center ${isIOS ? 'ios-fix' : ''}`}
           style={{ height: '125px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isIOS } from 'react-device-detect';
 import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
@@ -130,7 +130,7 @@ const Explore4 = ({ history, activeIndex }) => {
           )}
         </div>
         <div
-          className='w-100 mt3 flex flex-column relative tc ios-fix'
+          className={`w-100 mt3 flex flex-column relative tc ${isIOS ? 'ios-fix' : ''}`}
           style={{ height: 'calc(100% - 100px)' }}
         >
           <div

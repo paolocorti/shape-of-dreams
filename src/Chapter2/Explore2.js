@@ -9,7 +9,7 @@ import { years } from '../constants';
 import howtoread2 from './cap2-leg-desk.svg';
 import howtoreadMobile2 from './cap2-leg-mob.svg';
 import { languages } from '../constants';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
 
@@ -149,7 +149,7 @@ const Explore2 = ({ history, activeIndex }) => {
           }
         </div>
         <div
-          className='flex flex-column relative tc ios-fix'
+          className={`flex flex-column relative tc ${isIOS ? 'ios-fix' : ''}`}
           style={{ height: 'calc(100% - 120px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '0' : '0 auto' }}
         >
           <div

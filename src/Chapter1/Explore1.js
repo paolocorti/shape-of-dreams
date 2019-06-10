@@ -10,7 +10,7 @@ import noData from './petal-no-data.svg';
 import { years } from '../constants';
 import howtoread1 from './cap1-leg-desk.svg';
 import howtoreadMobile1 from './cap1-leg-mob.svg';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
 const Explore1 = ({ history, activeIndex }) => {
@@ -182,7 +182,7 @@ const Explore1 = ({ history, activeIndex }) => {
           }
         </div>
         <div
-          className='w-100 tc pt1 ios-fix'
+          className={`w-100 tc pt1 ${isIOS ? 'ios-fix' : ''}`}
           style={{ height: 'calc(100% - 125px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
         >
           {
