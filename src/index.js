@@ -13,6 +13,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    const legendOpen = localStorage.getItem('legendSeen') ? false : true;
+
     this.state = {
       previousPath: null,
       actualPath: null,
@@ -23,7 +25,7 @@ class App extends React.Component {
       resetSelectedView: this.resetSelectedView,
       menuOpen: false,
       toggleMenu: this.toggleMenu,
-      legendOpen: false,
+      legendOpen: legendOpen,
       toggleLegend: this.toggleLegend
     };
   }

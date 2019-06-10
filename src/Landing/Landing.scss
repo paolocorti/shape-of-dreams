@@ -112,6 +112,7 @@
 $first-row-fall-time: 0.5s;
 $second-row-fall-time: 1s;
 $third-row-fall-time: 1.2s;
+$up-time: 1.5s;
 $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 .landing-header {
@@ -132,6 +133,12 @@ $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: gravity3 $third-row-fall-time forwards;
   transition-timing-function: $fall-ease;
 }
+
+.landing-content.up {
+  animation: gravity-up $up-time forwards;
+  transition-timing-function: $fall-ease;
+}
+
 
 @keyframes gravity1 {
   0% {
@@ -167,4 +174,21 @@ $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   100% {
     transform: translate(0px, 200px);
   }
+}
+
+
+@keyframes gravity-up {
+  0% {
+    transform: translate(0px, 65px);
+  }
+  100% {
+    transform: translate(0px, -300px);
+  }
+}
+
+
+.fadeOut {
+  opacity: 0;
+  transition: 1s opacity;
+  will-change: opacity;
 }

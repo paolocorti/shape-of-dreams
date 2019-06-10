@@ -15,6 +15,7 @@ const Legend = ({ history, location }) => {
   };
 
   const closeLegend = () => {
+    localStorage.setItem('legendSeen', true);
     context.toggleLegend();
   };
 
@@ -34,9 +35,9 @@ const Legend = ({ history, location }) => {
       >
         <img
           className=''
-          src={'/images/close-white.svg'}
+          src={'/images/got-it.svg'}
           alt='Close menu icon'
-          width={30}
+          width={80}
         />
       </div>
       <img

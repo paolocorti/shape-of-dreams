@@ -6,10 +6,10 @@ export const AppContext = React.createContext({
   selectedView: 'read',
   menuOpen: false,
   legendOpen: false,
-  toggleMenu: () => {},
-  toggleLegend: () => {},
-  setPreviousPath: () => {},
-  setActualPath: () => {},
-  setSelectedView: () => {},
-  resetSelectedView: () => {}
+  toggleMenu: () => { },
+  toggleLegend: () => { },
+  setPreviousPath: () => { },
+  setActualPath: () => { },
+  setSelectedView: () => { },
+  resetSelectedView: () => { }
 });

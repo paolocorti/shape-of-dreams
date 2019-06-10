@@ -65,9 +65,9 @@ html, body, #root {
 
 .read-close-legend {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
-  margin-left: -15px;
+  margin-left: -40px;
 }
 
 /* Page */
@@ -351,15 +351,6 @@ h4 {
   .fullheight {
     height: 480px;
   }
-}
-
-.blur {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  transition: 1s filter;
 }
 
 .pulse {

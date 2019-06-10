@@ -7,14 +7,16 @@ import skyMobile from './landing_sky_mobile.jpg';
 import { isMobile } from 'react-device-detect';
 
 const Landing = ({ history }) => {
-  const [blur, setBlur] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
+  const [up, setUp] = useState(false);
   const [scroll, setScroll] = useState(false);
 
   const goToChapter1 = () => {
     setScroll(true);
     setTimeout(() => {
-      setBlur(true);
-    }, 300);
+      setFadeOut(true);
+    }, 1000);
+    setUp(true);
     setTimeout(() => {
       history.push(`/chapter1?section=read`);
     }, 2000);
@@ -43,17 +45,17 @@ const Landing = ({ history }) => {
           className={`${blur ? 'blur' : ''}`}
         />
       </div> */}
-        <div className={`landing-content w-100 ${blur ? 'blur' : ''}`}>
+        <div className={`landing-content w-100 ${fadeOut ? 'fadeOut' : ''} ${up ? 'up' : ''}`}>
           <h3 className='tc fw7 mt0 author'>
             FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWS LAB
-        </h3>
+          </h3>
           <h1 className='tc fw7 mt2 title'>
             The Shape of Dreams
-        </h1>
+          </h1>
           <div className='ph4 tc subtitle'>
             A visual exploration of Google searches for the interpretation of
             dreams
-        </div>
+          </div>
           <div className='tc mv4 flex flex-column items-center'>
             <div className='landing-icon-container' onClick={goToChapter1}>
               <img
@@ -61,7 +63,7 @@ const Landing = ({ history }) => {
                 height='100%'
                 alt='landing flower icon'
                 width={'60%'}
-                className={`${blur ? 'blur' : ''}`}
+                className={`${fadeOut ? 'fadeOut' : ''}`}
               />
             </div>
             <div className='tc fw3 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
