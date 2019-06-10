@@ -18,7 +18,7 @@ const languageLabel = {
 
 const Network1 = ({ year }) => {
   const [selected, setSelected] = useState('');
-  const svgHeight = isMobile ? window.innerHeight * 0.6 : window.innerHeight * 0.7;
+  const svgHeight = isMobile ? window.innerHeight * 0.6 : window.innerHeight * 0.6;
   const svgWidth = svgHeight;
 
   const selectedCallback = language => {
@@ -35,7 +35,7 @@ const Network1 = ({ year }) => {
         className='viz'
         x='0px'
         y='0px'
-        viewBox='0 0 510.2 510.2'
+        viewBox='0 0 450 450'
         width={svgWidth}
         height={svgHeight}
         style={{ border: '0px solid rgba(0,0,0,1)' }}
