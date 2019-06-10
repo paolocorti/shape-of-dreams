@@ -93,7 +93,11 @@ const Content1 = ({ history, activeIndex }) => {
           width='100%' />
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
-        <img src={teeth} width={80} alt='Dreaming about falling teeths' />
+        <LazyLoadImage
+          alt={'teeth'}
+          effect="blur"
+          src={teeth}
+          height={80} />
         <h2 className='mv3'>Dreaming about falling teeth</h2>
       </div>
       <div className='w-100 tc mt4'>
@@ -112,11 +116,31 @@ const Content1 = ({ history, activeIndex }) => {
 
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-end flex-wrap'>
-          <img src={cabbage} height={100} alt='cabbage' />
-          <img src={camel} height={140} alt='camel' />
-          <img src={garlic} height={150} alt='garlic' />
-          <img src={iguana} height={100} alt='iguana' />
-          <img src={fox} height={140} alt='fox' />
+          <LazyLoadImage
+            alt={'cabbage'}
+            effect="blur"
+            src={cabbage}
+            height={100} />
+          <LazyLoadImage
+            alt={'camel'}
+            effect="blur"
+            src={camel}
+            height={140} />
+          <LazyLoadImage
+            alt={'garlic'}
+            effect="blur"
+            src={garlic}
+            height={150} />
+          <LazyLoadImage
+            alt={'iguana'}
+            effect="blur"
+            src={iguana}
+            height={100} />
+          <LazyLoadImage
+            alt={'fox'}
+            effect="blur"
+            src={fox}
+            height={140} />
         </div>
         <h2 className='mv3'>Unique subjects</h2>
       </div>
@@ -135,8 +159,16 @@ const Content1 = ({ history, activeIndex }) => {
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-end'>
-          <img src={earthquake} height={140} alt='earthquake' />
-          <img src={luggage} height={140} alt='luggage' />
+          <LazyLoadImage
+            alt={'earthquake'}
+            effect="blur"
+            src={earthquake}
+            height={140} />
+          <LazyLoadImage
+            alt={'luggage'}
+            effect="blur"
+            src={luggage}
+            height={140} />
         </div>
         <h2 className='mv3'>Peaks over the year</h2>
       </div>
