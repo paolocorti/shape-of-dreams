@@ -129,9 +129,6 @@ const Explore2 = ({ history, activeIndex }) => {
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
-          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
-            Dreams subjects by category
-          </h1>
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -147,6 +144,9 @@ const Explore2 = ({ history, activeIndex }) => {
               />
             )
           }
+          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+            Dreams subjects by category
+          </h1>
         </div>
         <div
           className={`flex flex-column relative tc ${isIOS ? 'ios-fix' : ''}`}
@@ -204,6 +204,17 @@ const Explore2 = ({ history, activeIndex }) => {
             >
               HOW TO READ IT
             </div>
+            {!isMobile && (<div
+              className='raleway mt3 fw7 pointer link'
+              style={{
+                fontSize: '14px',
+                color: '#43449a',
+                //letterSpacing: '1px'
+              }}
+              onClick={() => history.push('/chapter3?section=read')}
+            >
+              READ CHAPTER 3
+            </div>)}
           </div>
         </div>
       </div>

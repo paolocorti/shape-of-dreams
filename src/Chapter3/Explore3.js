@@ -120,15 +120,12 @@ const Explore3 = ({ history, activeIndex }) => {
           style={{ height: '125px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
-          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
-            Dreams’ subjects: interest over time
-          </h1>
           {
             isMobile ?
               (
                 <div className='relative flex justify-center' style={{ width: '340px' }}>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
-                  <img src={'/images/swipe-hand.svg'} style={{ height: 30, top: 26, right: -4, position: 'absolute' }} />
+                  <img src={'/images/swipe-hand.svg'} style={{ height: 25, top: 26, right: -4, position: 'absolute' }} />
                 </div>
 
               ) : (
@@ -145,6 +142,9 @@ const Explore3 = ({ history, activeIndex }) => {
                 </div>
               )
           }
+          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+            Dreams’ subjects: interest over time
+          </h1>
         </div>
         <div
           className='w-100 flex flex-column relative tc ios-fix'
@@ -191,6 +191,17 @@ const Explore3 = ({ history, activeIndex }) => {
             >
               HOW TO READ IT
             </div>
+            {!isMobile && (<div
+              className='raleway mt3 fw7 pointer link'
+              style={{
+                fontSize: '14px',
+                color: '#43449a',
+                //letterSpacing: '1px'
+              }}
+              onClick={() => history.push('/chapter4?section=read')}
+            >
+              READ CHAPTER 4
+            </div>)}
           </div>
         </div>
       </div>

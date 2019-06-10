@@ -117,7 +117,7 @@ const Explore1 = ({ history, activeIndex }) => {
   }
 
   return (
-    <div className='explore1' style={{ paddingTop: isMobile ? 0 : 60 }}>
+    <div className='explore1' style={{ paddingTop: isMobile ? 0 : 15 }}>
       {
         !isMobile && (activeIndex === 1) &&
         (
@@ -162,9 +162,7 @@ const Explore1 = ({ history, activeIndex }) => {
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '125px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
-          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
-            What does it mean to dream about...
-          </h1>
+
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}
@@ -180,6 +178,9 @@ const Explore1 = ({ history, activeIndex }) => {
               />
             )
           }
+          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+            Looking for dreams
+          </h1>
         </div>
         <div
           className={`w-100 tc pt1 ${isIOS ? 'ios-fix' : ''}`}
@@ -200,19 +201,14 @@ const Explore1 = ({ history, activeIndex }) => {
                     index={selectedIndex}
                   />
                 ) : (
-                    <div
-                      className='w-100 flex flex-column justify-center items-center pa4'
-                      style={{ flex: 1, height: '65%' }}
-                    >
-                      <Petals
-                        value={700}
-                        name={'No Data'}
-                        language={groupedByCountryKeys[selectedLanguageIndex]}
-                        year={years[selectedYearIndex]}
-                        index={0}
-                        nodata={true}
-                      />
-                    </div>
+                    <Petals
+                      value={700}
+                      name={'No Data'}
+                      language={groupedByCountryKeys[selectedLanguageIndex]}
+                      year={years[selectedYearIndex]}
+                      index={0}
+                      nodata={true}
+                    />
                   )}
                 {selectedTopics.length > 0 && selectedIndex > 0 && (
                   <div className='left-tap pointer' onClick={() => onTapLeft()}>
@@ -340,16 +336,27 @@ const Explore1 = ({ history, activeIndex }) => {
               }
             </div>
             <div
-              className='raleway mt3 fw7 pointer link'
+              className='raleway mt3 fw7 cursor-pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
-                //letterSpacing: '1px'
+                letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >
               HOW TO READ IT
             </div>
+            {!isMobile && (<div
+              className='raleway mt3 fw7 cursor-pointer link'
+              style={{
+                fontSize: '14px',
+                color: '#43449a',
+                letterSpacing: '1px'
+              }}
+              onClick={() => history.push('/chapter2?section=read')}
+            >
+              READ CHAPTER 2
+            </div>)}
           </div>
         </div>
       </div>

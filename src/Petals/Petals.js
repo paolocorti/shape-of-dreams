@@ -28,7 +28,7 @@ const languageLabel = {
 };
 
 const Petals = ({ name, language, year, value, index, nodata = false }) => {
-  const svgWidth = isMobile ? window.innerWidth * 0.55 : 220;
+  const svgWidth = isMobile ? window.innerHeight * 0.55 : 220;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {

@@ -118,9 +118,6 @@ const Explore4 = ({ history, activeIndex }) => {
           style={{ height: '100px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
-          <h1 className='tc fw7 mv0' style={{ fontSize: '21px' }}>
-            Networks of dreams
-          </h1>
           {isMobile && (
             <YearsSelectorMobile
               years={years}
@@ -128,6 +125,9 @@ const Explore4 = ({ history, activeIndex }) => {
               selected={selectedYearIndex}
             />
           )}
+          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+            Networks of dreams
+          </h1>
         </div>
         <div
           className={`w-100 mt3 flex flex-column relative tc ${isIOS ? 'ios-fix' : ''}`}

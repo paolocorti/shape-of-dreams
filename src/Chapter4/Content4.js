@@ -91,9 +91,9 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc pb4 flex items-center flex-column'>
         <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '30px' }}>
           <div className='raleway explore-text'>START EXPLORING</div>
-          <div className='explore-icon'>
+          <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base' src={'images/start-expl.svg'} width={25} onClick={() => context.setSelectedView('explore')} />
+            <img className='explore-icon-base' src={'images/start-expl.svg'} width={25} />
           </div>
         </div>
         {/* {

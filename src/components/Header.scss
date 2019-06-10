@@ -10,10 +10,11 @@
 
 @media only screen and (min-width: 768px) {
   #header {
-    position: absolute;
+    position: fixed;
     top: 60px;
-    max-width: 75%;
-    left: 12.5%;
+    width: 30px;
+    left: 10px;
+    height: 100%;
   }
 }
 

@@ -17,7 +17,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
   return (
     <div
       className='w-100 flex justify-center items-center relative'
-      style={{ marginTop: '10px', height: '40px' }}
+      style={{ marginTop: '10px', height: '30px' }}
     >
       <KeyboardEventHandler
         handleKeys={['all']}

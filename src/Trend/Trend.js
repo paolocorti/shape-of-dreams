@@ -194,7 +194,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   x={d => scaleX(x(d))}
                   y={d => scaleY2(y(d))}
                   stroke={'#b36762'}
-                  strokeWidth={1}
+                  strokeWidth={isMobile ? 0.5 : 1}
                   curve={curveMonotoneX}
                 />
               );
