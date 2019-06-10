@@ -1,4 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import content1 from './cap1-01-desk.jpg'
 import content2 from './cap1-02-desk.jpg'
 import content3 from './cap1-03-desk.jpg'
@@ -55,7 +57,11 @@ const Content1 = ({ history, activeIndex }) => {
         <p className='lh-copy'>How do we search for the meaning of our dreams on Google? We have explored the related queries to the question <span className='highlights'>What does it mean to dream about</span> in different languages to see what are the dreams’ subjects that the users look for the most. We discovered that we share some recurring dreams.</p>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={isMobile ? mobileContent1 : content1} width='100%' alt='chapter 1' />
+        <LazyLoadImage
+          alt={'Chapter 1 first paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent1 : content1}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -64,7 +70,11 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <img src={isMobile ? mobileContent1a : content1a} width='100%' alt='chapter 1' />
+        <LazyLoadImage
+          alt={'Chapter 1 second paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent1a : content1a}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -76,14 +86,23 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3'>Dreaming about snakes</h2>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={isMobile ? mobileContent2 : content2} width='100%' alt='chapter 1' />
+        <LazyLoadImage
+          alt={'Chapter 1 third paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent2 : content2}
+          width='100%' />
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <img src={teeth} width={80} alt='Dreaming about falling teeths' />
         <h2 className='mv3'>Dreaming about falling teeth</h2>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={isMobile ? mobileContent3 : content3} width='100%' alt='chapter 1' />
+        <LazyLoadImage
+          alt={'Chapter 1 fourth paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent3 : content3}
+          width='100%' />
+
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -102,7 +121,11 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3'>Unique subjects</h2>
       </div>
       <div className='w-100 tc mt4'>
-        <img src={isMobile ? mobileContent4 : content4} width='100%' alt='chapter 1' />
+        <LazyLoadImage
+          alt={'Chapter 1 fifth paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent4 : content4}
+          width='100%' />
       </div>
 
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -119,7 +142,11 @@ const Content1 = ({ history, activeIndex }) => {
       </div>
 
       <div className='w-100 tc mt4'>
-        <img src={isMobile ? mobileContent5 : content5} width='100%' alt='chapter 1' />
+        <LazyLoadImage
+          alt={'Chapter 1 sixth paragraph'}
+          effect="blur"
+          src={isMobile ? mobileContent5 : content5}
+          width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
