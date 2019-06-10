@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import legendMob from './how-to-mob.svg';
@@ -33,14 +35,18 @@ const Legend = ({ history, location }) => {
           zIndex: 999,
         }}
       >
-        <img
-          className=''
-          src={'/images/got-it.svg'}
+        <LazyLoadImage
           alt='Close menu icon'
-          width={isMobile ? 50 : 80}
-        />
+          src={'/images/got-it.svg'}
+          width={isMobile ? 50 : 80} />
       </div>
       <img
+        src={isMobile ? legendMob : legend}
+        style={{ position: 'absolute', width: '100%', top: 0 }}
+      />
+      <LazyLoadImage
+        alt='Legend'
+        effect='blur'
         src={isMobile ? legendMob : legend}
         style={{ position: 'absolute', width: '100%', top: 0 }}
       />
