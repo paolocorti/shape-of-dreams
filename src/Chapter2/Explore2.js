@@ -6,8 +6,9 @@ import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import { years } from '../constants';
-import howtoread2 from './cap2-leg-desk.svg';
-import howtoreadMobile2 from './cap2-leg-mob.svg';
+import howtoread2 from './cap2-leg-desk.png';
+import howtoreadMobile2 from './cap2-leg-mob.png';
+import close from '../components/images/close.svg';
 import { languages } from '../constants';
 import { isMobile, isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
@@ -78,19 +79,23 @@ const Explore2 = ({ history, activeIndex }) => {
   })
 
   const setSelectedPetalWrapper = index => {
+    console.log(index, selectedPetal)
     let newSelectedPetal
-    if (index) {
+    if (index !== null) {
       newSelectedPetal = selectedPetal === index ? null : index;
     } else {
       newSelectedPetal = null;
     }
+
+    console.log(newSelectedPetal)
+
     setSelectedPetal(newSelectedPetal);
   };
 
   const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : []
 
   return (
-    <div className='explore2' style={{ paddingTop: isMobile ? 0 : 60 }}>
+    <div className='explore2' style={{ paddingTop: isMobile ? 0 : 15 }}>
       {
         !isMobile && (activeIndex === 2) &&
         (
@@ -124,7 +129,7 @@ const Explore2 = ({ history, activeIndex }) => {
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
-            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={30} />
+            <img className='pointer' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>

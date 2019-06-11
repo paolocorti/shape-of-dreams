@@ -35,6 +35,10 @@ html, body, #root {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.cursor-pointer:active {
+  opacity: 0.75;
+}
+
 .landing1,
 .explore1,
 .explore2,
@@ -151,11 +155,11 @@ h4 {
 
 @media only screen and (min-width: 768px) {
   .right-tap {
-    right: 0px;
+    right: -10px;
   }
 
   .left-tap {
-    left: 0px;
+    left: -10px;
   }
 }
 
@@ -216,71 +220,59 @@ h4 {
 }
 
 .menu {
-  transition: 0.5s all;
   height: 100%;
   overflow: hidden;
   background-color: #43449a;
   transform: translate(-100%, 0%);
-  z-index: -100;
-  animation: slideMenuOut 0.5s 0s forwards;
   pointer-events: none;
-  opacity: 0;
+  transition: 0.5s transform;
 }
 
 .menu.open {
-  transition: 0.5s all;
-  height: 100%;
-  z-index: 100;
+  transition: 0.5s transform;
+  z-index: 1000;
   transform: translate(0%, 0%);
-  animation: slideMenuIn 0.5s 0s forwards;
   pointer-events: auto;
 }
 
 .menu.close {
-  transition: 0.5s all;
-  height: 100%;
-  z-index: 100;
+  transition: 0.5s transform;
+  z-index: 1000;
   transform: translate(-100%, 0%);
-  animation: slideMenuOut 0.5s 0s forwards;
   pointer-events: auto;
 }
 
 .legend {
-  transition: 0.5s all;
+  transition: 0.5s transform;
   height: 100%;
   overflow: hidden;
   background-color: rgba(67, 68, 154, 0.95);
   transform: translate(100%, 0%);
-  z-index: -100;
-  animation: slideLegendOut 0.5s 0s forwards;
   pointer-events: none;
-  opacity: 0;
 }
 
 .legend.open {
-  transition: 0.5s all;
-  z-index: 100;
-  transform: translate(100%, 0%);
-  animation: slideLegendIn 0.5s 0s forwards;
+  z-index: 1000;
+  transform: translate(0%, 0%);
   pointer-events: auto;
+  transition: 0.5s transform;
 }
 
 .legend.close {
-  transition: 0.5s all;
-  z-index: 100;
+  z-index: 1000;
+  transition: 0.5s transform;
   transform: translate(100%, 0%);
-  animation: slideLegendOut 0.5s 0s forwards;
   pointer-events: auto;
 }
 
 @keyframes slideMenuIn {
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: translate(-100%, 0%);
   }
   100% {
     opacity: 1;
-    transform: translate(0, 0%);
+    transform: translate(0%, 0%);
   }
 }
 
@@ -288,14 +280,17 @@ h4 {
   0% {
     transform: translate(0%, 0%);
     z-index: 100;
+    opacity: 1;
   }
   99% {
     transform: translate(-100%, 0%);
     z-index: 100;
+    opacity: 0;
   }
   100% {
     transform: translate(-100%, 0%);
     z-index: -1;
+    opacity: 0;
   }
 }
 
@@ -312,7 +307,7 @@ h4 {
 
 @keyframes slideLegendOut {
   0% {
-    transform: translate(0, 0%);
+    transform: translate(0%, 0%);
     z-index: 100;
   }
   99% {
@@ -388,10 +383,6 @@ h4 {
   font-style: italic;
 }
 
-.hover-underline {
-
-}
-
 .menu-selected:after {
   position: absolute;
   content: "";
@@ -452,7 +443,14 @@ h4 {
 
 .link-white:after {
   background-color: #ffffff;
-  top: 60px;
+  top: 36px;
+}
+
+@media only screen and (min-width: 768px) {
+  .link-white:after {
+    background-color: #ffffff;
+    top: 60px;
+  }
 }
 
 .explore-icon {
@@ -504,8 +502,8 @@ h4 {
 }
 
 .icon-circle {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   animation: icon-anim 2s infinite;
   border: 1px solid rgba(67,68,154, 1);

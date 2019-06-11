@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
+import legend from './images/legend.svg'
+import menu from './images/menu.svg';
 import './Footer.scss';
 import { isMobile } from 'react-device-detect';
 
@@ -32,7 +34,7 @@ const NavigationFooter = ({ history }) => {
       <div className="flex w-100" style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}>
         <div className='w-10 flex justify-center items-center h-100 pointer'>
           <img
-            src={context.menuOpen ? '/images/menu-white.svg' : '/images/menu.svg'}
+            src={menu}
             alt='Menu icon'
             width={20}
             onClick={() => context.toggleMenu()}
@@ -42,7 +44,7 @@ const NavigationFooter = ({ history }) => {
           className='w-40 flex justify-center items-center pointer footer-el h-100'
           onClick={() => changeSection('read')}
         >
-          <div className={`link ${context.selectedView === 'read' ? 'active' : '/'}`}>
+          <div className={`link cursor-pointer ${context.selectedView === 'read' ? 'active' : '/'}`}>
             {isMobile ? 'READ' : 'READ THE STORY'}
           </div>
         </div>
@@ -50,13 +52,13 @@ const NavigationFooter = ({ history }) => {
           className='w-40 flex justify-center items-center pointer footer-el h-100'
           onClick={() => changeSection('explore')}
         >
-          <div className={`link ${context.selectedView === 'explore' ? 'active' : '/'}`}>
+          <div className={`link cursor-pointer ${context.selectedView === 'explore' ? 'active' : '/'}`}>
             {isMobile ? 'EXPLORE' : 'DREAMS EXPLORER'}
           </div>
         </div>
         <div className='w-10 flex justify-center items-center h-100'>
           <img
-            src='/images/legend.svg'
+            src={legend}
             alt='Legend icon'
             width={24}
             onClick={() => context.toggleLegend()}

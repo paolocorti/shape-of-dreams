@@ -37,7 +37,7 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
             return (
               <div
                 key={index}
-                className={`langEl`}
+                className={`langEl cursor-pointer`}
                 onClick={() => onSelect(index)}
               >
                 {isMobile ? value : extendedLanguage[value]}

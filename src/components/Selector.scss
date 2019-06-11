@@ -99,7 +99,8 @@
     width: 12.5%;
     top: 10%;
     z-index: 99;
-    outline: 1px gold;
+    display: flex;
+    justify-content: center;
   }
 
   .yearsSelectorContainer {
@@ -108,7 +109,6 @@
     width: 100%;
     top: -10%;
     z-index: 99;
-    outline: 1px gold;
     overflow: scroll;
   }
 

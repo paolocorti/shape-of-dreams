@@ -1,27 +1,28 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content1 from './cap1-01-desk.jpg'
-import content2 from './cap1-02-desk.jpg'
-import content3 from './cap1-03-desk.jpg'
-import content4 from './cap1-04-desk.jpg'
-import content5 from './cap1-05-desk.jpg'
-import content1a from './cap1_01a-desk.jpg'
-import mobileContent1 from './cap1-01-mob.jpg'
-import mobileContent2 from './cap1-02-mob.jpg'
-import mobileContent3 from './cap1-03-mob.jpg'
-import mobileContent4 from './cap1-04-mob.jpg'
-import mobileContent5 from './cap1-05-mob.jpg'
-import mobileContent1a from './cap1_01a-mob.jpg'
-import snake from './snake.svg'
-import teeth from './teeth.svg'
-import cabbage from './cabbage.svg'
-import camel from './camel-animation.gif'
-import garlic from './garlic.svg'
-import iguana from './iguana.svg'
-import fox from './fox.svg'
-import earthquake from './earthquake.svg'
-import luggage from './luggage.svg'
+import content1 from './cap1-01-desk.jpg';
+import content2 from './cap1-02-desk.jpg';
+import content3 from './cap1-03-desk.jpg';
+import content4 from './cap1-04-desk.jpg';
+import content5 from './cap1-05-desk.jpg';
+import content1a from './cap1_01a-desk.jpg';
+import mobileContent1 from './cap1-01-mob.jpg';
+import mobileContent2 from './cap1-02-mob.jpg';
+import mobileContent3 from './cap1-03-mob.jpg';
+import mobileContent4 from './cap1-04-mob.jpg';
+import mobileContent5 from './cap1-05-mob.jpg';
+import mobileContent1a from './cap1_01a-mob.jpg';
+import snake from './snake.gif';
+import teeth from './tooth.gif';
+import cabbage from './cabbage.gif';
+import camel from './camel.gif';
+import garlic from './garlic.gif';
+import iguana from './iguana.gif';
+import fox from './fox.gif';
+import earthquake from './earthquake.svg';
+import luggage from './luggage.svg';
+import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
@@ -82,7 +83,11 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
-        <img src={snake} width={200} alt='Dreaming about snakes' />
+        <LazyLoadImage
+          alt={'Dreaming about snakes'}
+          effect="blur"
+          src={snake}
+          height={130} />
         <h2 className='mv3'>Dreaming about snakes</h2>
       </div>
       <div className='w-100 tc mt4'>
@@ -97,7 +102,7 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'teeth'}
           effect="blur"
           src={teeth}
-          height={80} />
+          height={160} />
         <h2 className='mv3'>Dreaming about falling teeth</h2>
       </div>
       <div className='w-100 tc mt4'>
@@ -190,7 +195,7 @@ const Content1 = ({ history, activeIndex }) => {
           <div className='raleway explore-text'>EXPLORE CHAPTER 1</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base' src={'images/start-expl.svg'} width={25} />
+            <img className='explore-icon-base' src={startExpl} width={25} />
           </div>
         </div>
         {/* {

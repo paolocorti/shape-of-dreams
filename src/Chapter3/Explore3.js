@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
 import interestOverTime from '../data/interestOverTime.json';
-import howtoread3 from './cap3-leg-desk.svg';
-import howtoreadMobile3 from './cap3-leg-mob.svg';
+import howtoread3 from './cap3-leg-desk.png';
+import howtoreadMobile3 from './cap3-leg-mob.png';
+import arrowUp from '../components/images/arrow-up.svg';
+import arrowDown from '../components/images/arrow-down.svg';
+import close from '../components/images/close.svg';
+import closeWhite from '../components/images/close-white.svg';
+import swipeHand from '../components/images/swipe-hand.svg';
 import Trend from '../Trend';
 import categories from '../data/categories.json';
 import TopicSelector from '../components/TopicSelector.js';
@@ -87,7 +92,7 @@ const Explore3 = ({ history, activeIndex }) => {
         <div className='noteBox ph4'>
           <div className='noteBox-close' onClick={() => setNote('')}>
             <img
-              src={'/images/close-white.svg'}
+              src={closeWhite}
               alt='Close menu icon'
               width={20}
             />
@@ -112,7 +117,7 @@ const Explore3 = ({ history, activeIndex }) => {
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
-            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={30} />
+            <img className='pointer' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
         <div
@@ -125,19 +130,19 @@ const Explore3 = ({ history, activeIndex }) => {
               (
                 <div className='relative flex justify-center' style={{ width: '340px' }}>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
-                  <img src={'/images/swipe-hand.svg'} style={{ height: 25, top: 26, right: -4, position: 'absolute' }} />
+                  <img src={swipeHand} style={{ height: 25, top: 26, right: -4, position: 'absolute' }} />
                 </div>
 
               ) : (
                 <div style={{ width: '380px', display: 'flex', alignItems: 'center' }}>
-                  <div className='pointer relative mt3' onClick={upIndex} style={{ width: 35, height: 35, marginRight: '10px', opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }}>
+                  <div className='pointer relative mt3' onClick={upIndex} style={{ width: 30, height: 30, marginRight: '10px', opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }}>
                     <div className='icon-circle'></div>
-                    <img className='icon-circle-arrow' src={'/images/arrow-up.svg'} alt='Tap icon' width={16} />
+                    <img className='icon-circle-arrow' src={arrowUp} alt='Tap icon' width={16} />
                   </div>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} selectedIndex={selectedIndex} />
-                  <div className='pointer relative mt3' onClick={downIndex} style={{ width: 35, height: 35, marginLeft: '10px', opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }}>
+                  <div className='pointer relative mt3' onClick={downIndex} style={{ width: 30, height: 30, marginLeft: '10px', opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }}>
                     <div className='icon-circle'></div>
-                    <img className='icon-circle-arrow' src={'/images/arrow-down.svg'} alt='Tap icon' width={16} />
+                    <img className='icon-circle-arrow' src={arrowDown} alt='Tap icon' width={16} />
                   </div>
                 </div>
               )

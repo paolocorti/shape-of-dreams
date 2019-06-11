@@ -1,4 +1,6 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
+import { noop } from 'lodash';
 import './BluePetal.scss';
 
 const Grid = ({ selectedPetal, setSelectedPetal }) => {
@@ -123,9 +125,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='25.4'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(0)}
-          onMouseEnter={() => setSelectedPetal(0)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(0) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(0)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -137,9 +139,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='62.2'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(1)}
-          onMouseEnter={() => setSelectedPetal(1)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(1) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(1)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -151,9 +153,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='162.7'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(2)}
-          onMouseEnter={() => setSelectedPetal(2)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(2) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(2)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -165,9 +167,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='300'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(3)}
-          onMouseEnter={() => setSelectedPetal(3)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(3) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(3)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -179,9 +181,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='437.3'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(4)}
-          onMouseEnter={() => setSelectedPetal(4)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(4) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(4)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -193,9 +195,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='537.8'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(5)}
-          onMouseEnter={() => setSelectedPetal(5)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(5) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(5)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -207,9 +209,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='574.6'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(6)}
-          onMouseEnter={() => setSelectedPetal(6)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(6) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(6)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -221,9 +223,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='537.8'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(7)}
-          onMouseEnter={() => setSelectedPetal(7)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(7) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(7)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -235,9 +237,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='437.3'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(8)}
-          onMouseEnter={() => setSelectedPetal(8)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(8) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(8)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -249,9 +251,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='300'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(9)}
-          onMouseEnter={() => setSelectedPetal(9)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(9) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(9)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -263,9 +265,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='162.7'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(10)}
-          onMouseEnter={() => setSelectedPetal(10)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(10) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(10)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
       <g>
@@ -277,9 +279,9 @@ const Grid = ({ selectedPetal, setSelectedPetal }) => {
           cy='62.1'
           r='30'
           fill='transparent'
-          onClick={() => setSelectedPetal(11)}
-          onMouseEnter={() => setSelectedPetal(11)}
-          onMouseLeave={() => setSelectedPetal(null)}
+          onClick={() => isMobile ? setSelectedPetal(11) : noop}
+          onMouseEnter={() => isMobile ? noop : setSelectedPetal(11)}
+          onMouseLeave={() => isMobile ? noop : setSelectedPetal(null)}
         />
       </g>
 

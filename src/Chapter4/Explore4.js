@@ -4,8 +4,9 @@ import { isMobile, isIOS } from 'react-device-detect';
 import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
-import howtoread4 from './cap4-leg-desk.svg';
-import howtoreadMobile4 from './cap4-leg-mob.svg';
+import howtoread4 from './cap4-leg-desk.png';
+import howtoreadMobile4 from './cap4-leg-mob.gif';
+import close from '../components/images/close.svg';
 import Network1 from '../Network/Network_1';
 import Network2 from '../Network/Network_2';
 import Network3 from '../Network/Network_3';
@@ -107,7 +108,7 @@ const Explore4 = ({ history, activeIndex }) => {
           <div className='read-close' onClick={() => toggleHowToRead()}>
             <img
               className='pointer'
-              src={'/images/close.svg'}
+              src={close}
               alt='Close menu icon'
               width={30}
             />

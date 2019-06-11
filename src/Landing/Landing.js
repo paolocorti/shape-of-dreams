@@ -2,8 +2,8 @@ import React, { useState, Suspense } from 'react';
 import './Landing.scss';
 import Loader from '../components/Loader'
 import landingIcon from './landing-flower.svg';
-import sky from './landing_sky_desktop.jpg';
-import skyMobile from './landing_sky_mobile.jpg';
+import sky from './landing-desktop.svg';
+import skyMobile from './landing-mobile.svg';
 import { isMobile } from 'react-device-detect';
 
 const Landing = ({ history }) => {

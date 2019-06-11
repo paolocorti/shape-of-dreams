@@ -11,7 +11,7 @@ const Header = ({ location }) => {
   return (
     <div
       id='header'
-      className='ph4'
+      className={isMobile ? 'ph4' : ''}
       style={{ flex: 1, backgroundColor: isMobile ? (context.selectedView === 'content' ? 'white' : '') : '' }}
     >
       <div

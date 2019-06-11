@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import legendMob from './how-to-mob.svg';
 import legend from './how-to-desk.svg';
+import gotIt from './images/got-it.svg'
 import { isMobile } from 'react-device-detect';
 
 const Legend = ({ history, location }) => {
@@ -37,7 +38,7 @@ const Legend = ({ history, location }) => {
       >
         <LazyLoadImage
           alt='Close menu icon'
-          src={'/images/got-it.svg'}
+          src={gotIt}
           width={isMobile ? 50 : 80} />
       </div>
       <img

@@ -8,16 +8,6 @@
   z-index: 99;
 }
 
-@media only screen and (min-width: 768px) {
-  #header {
-    position: fixed;
-    top: 60px;
-    width: 30px;
-    left: 10px;
-    height: 100%;
-  }
-}
-
 .header-el {
   width: 24%;
   height: 2px;
@@ -31,3 +21,24 @@
   transition: 1s all;
   opacity: 1;
 }
+
+@media only screen and (min-width: 768px) {
+  #header {
+    position: fixed;
+    top: 60px;
+    width: 20px;
+    left: 2px;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-el {
+    width: 2px;
+    height: 24%;
+    background-color: #999999;
+    transition: 1s all;
+    opacity: 0.3;
+  }
+}
+

@@ -6,7 +6,9 @@ import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
-import noData from './petal-no-data.svg';
+import close from '../components/images/close.svg';
+import arrowLeft from '../components/images/arrow-left.svg';
+import arrowRight from '../components/images/arrow-right.svg';
 import { years } from '../constants';
 import howtoread1 from './cap1-leg-desk.png';
 import howtoreadMobile1 from './cap1-leg-mob.png';
@@ -157,7 +159,7 @@ const Explore1 = ({ history, activeIndex }) => {
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
-            <img className='pointer' src={'/images/close.svg'} alt='Close menu icon' width={30} />
+            <img className='pointer' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: '125px' }}>
@@ -305,13 +307,13 @@ const Explore1 = ({ history, activeIndex }) => {
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 0 && selectedIndex > 0 && (
                     <div className='left-tap pointer' onClick={() => onTapLeft()}>
                       <div className='icon-circle'></div>
-                      <img className='icon-circle-arrow' src={'/images/arrow-left.svg'} alt='Tap icon' width={12} />
+                      <img className='icon-circle-arrow' src={arrowLeft} alt='Tap icon' width={10} />
                     </div>
                   )}
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 3 && (
                     <div className='right-tap pointer' onClick={() => onTapRight()}>
                       <div className='icon-circle'></div>
-                      <img className='icon-circle-arrow' src={'/images/arrow-right.svg'} alt='Tap icon' width={12} />
+                      <img className='icon-circle-arrow' src={arrowRight} alt='Tap icon' width={10} />
                     </div>
                   )}
                 </div>
