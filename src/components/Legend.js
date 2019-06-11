@@ -41,12 +41,7 @@ const Legend = ({ history, location }) => {
           width={isMobile ? 50 : 80} />
       </div>
       <img
-        src={isMobile ? legendMob : legend}
-        style={{ position: 'absolute', width: '100%', top: 0 }}
-      />
-      <LazyLoadImage
         alt='Legend'
-        effect='blur'
         src={isMobile ? legendMob : legend}
         style={{ position: 'absolute', width: '100%', top: 0 }}
       />
