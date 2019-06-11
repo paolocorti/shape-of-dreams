@@ -133,8 +133,8 @@ h4 {
 
 .right-tap {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   top: 50%;
   right: 15px;
   z-index: 999;
@@ -142,8 +142,8 @@ h4 {
 
 .left-tap {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   top: 50%;
   left: 15px;
   z-index: 999;
