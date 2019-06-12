@@ -2,7 +2,7 @@
   "name": "meaning-of-dreams",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paolocorti.github.io/meaning-of-dreams/",
+  "homepage": "https://the-shape-of-dreams.com/",
   "dependencies": {
     "@vx/axis": "^0.0.184",
     "@vx/curve": "^0.0.182",
