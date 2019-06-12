@@ -35,7 +35,7 @@ const Network1 = ({ year }) => {
         className='viz'
         x='0px'
         y='0px'
-        viewBox='0 0 450 450'
+        viewBox='0 0 440 440'
         width={svgWidth}
         height={svgHeight}
         style={{ border: '0px solid rgba(0,0,0,1)' }}
