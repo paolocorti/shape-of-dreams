@@ -10,7 +10,7 @@ import '../Network.scss';
 
 const NetworkCircles = ({ selected, setSelected }) => {
   return (
-    <g id='circles'>
+    <g id='circles' transform="translate(-42,-40)">
       <image
         style={{ cursor: 'pointer' }}
         width='192'

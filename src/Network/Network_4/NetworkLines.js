@@ -4,8 +4,7 @@ import '../Network.scss';
 const NetworkLines = ({ selected }) => {
 
   return (
-    <g id="lines">
-
+    <g id="lines" transform="translate(-42,-40)">
       <path class="network_4_0" d="M156.8,183.7c41.1,3,82.2,13.5,121.6,32.3c39.2,18.7,73.2,43.9,101.4,73.7" style={{ opacity: selected === '' ? 1 : (selected === 'FR' || selected === 'SP' ? 1 : 0) }}/>
       <path class="network_4_0" d="M201.2,373.2c8.2-19.7,12.7-41.3,12.7-64c0-4.9-0.2-9.7-0.6-14.5c-1.3-15.6-4.8-30.7-10.2-44.8c-9.8-25.9-25.9-48.8-46.5-66.7" style={{ opacity: selected === '' ? 1 : (selected === 'PO' || selected === 'SP' ? 1 : 0) }} />
       <path class="network_4_0" d="M201.3,372.9c13-23.6,31.5-43.7,53.8-58.6c12.9-8.6,27-15.5,42-20.3c16-5.1,33.1-7.9,50.8-7.9

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
+import closeWhite from '../components/images/close-white.svg';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
@@ -27,18 +28,18 @@ const Menu = ({ history }) => {
         style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}
       >
         <div
-          className='w-100 flex items-center ph4 mv4 mv0-ns'
+          className='w-100 flex items-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/')}
         >
           <div
             className='white tl'
             style={{
-              fontSize: '44px',
-              fontWeight: 'bold',
+              fontSize: isMobile ? '28px' : '48px',
               marginBottom: isMobile ? 0 : '30px'
             }}
+            onClick={() => goTo('/')}
           >
-            HOME
+            Home
           </div>
         </div>
         <div
@@ -56,7 +57,7 @@ const Menu = ({ history }) => {
             className={`${
               actualPath === '/chapter1' ? 'active' : ''
               } white tl relative link-white`}
-            style={{ fontSize: isMobile ? '28px' : '48px' }}
+            style={{ fontSize: isMobile ? '24px' : '48px' }}
           >
             The Shapes of our Dreams
           </div>
@@ -76,7 +77,7 @@ const Menu = ({ history }) => {
             className={`${
               actualPath === '/chapter2' ? 'active' : ''
               } white tl relative link-white`}
-            style={{ fontSize: isMobile ? '28px' : '48px' }}
+            style={{ fontSize: isMobile ? '24px' : '48px' }}
           >
             The Worlds We Dream of
           </div>
@@ -96,7 +97,7 @@ const Menu = ({ history }) => {
             className={`${
               actualPath === '/chapter3' ? 'active' : ''
               } white tl relative link-white`}
-            style={{ fontSize: isMobile ? '28px' : '48px' }}
+            style={{ fontSize: isMobile ? '24px' : '48px' }}
           >
             A Time for Dreams
           </div>
@@ -116,7 +117,7 @@ const Menu = ({ history }) => {
             className={`${
               actualPath === '/chapter4' ? 'active' : ''
               } white tl relative link-white`}
-            style={{ fontSize: isMobile ? '28px' : '48px' }}
+            style={{ fontSize: isMobile ? '24px' : '48px' }}
           >
             The Dreams that Connect Us
           </div>
@@ -129,7 +130,7 @@ const Menu = ({ history }) => {
         >
           <div
             className='white tl'
-            style={{ fontSize: isMobile ? '28px' : '48px' }}
+            style={{ fontSize: isMobile ? '24px' : '48px' }}
           >
             About
             </div>
@@ -138,7 +139,7 @@ const Menu = ({ history }) => {
           <div className='w-100 flex items-center ph4 mv4 mv0-ns'>
             <div
               className='white tl'
-              style={{ fontSize: isMobile ? '28px' : '48px' }}
+              style={{ fontSize: isMobile ? '24px' : '48px' }}
             >
               Share
             </div>
@@ -151,13 +152,13 @@ const Menu = ({ history }) => {
             style={{
               right: isMobile ? '50%' : '25px',
               top: isMobile ? 'auto' : '25px',
-              bottom: isMobile ? '20px' : 'auto',
+              bottom: isMobile ? '24px' : 'auto',
               left: 'auto',
               zIndex: 999
             }}
           >
             <img
-              src={'/images/close-white.svg'}
+              src={closeWhite}
               alt='Close menu icon'
               width={30}
               className='pointer'

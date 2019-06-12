@@ -3,7 +3,7 @@ import '../Network.scss';
 
 const NetworkTexts = ({ selected }) => {
   return (
-    <g id="subjects">            
+    <g id="subjects" transform="translate(-42,-40)">            
 
       <g id="ar" style={{ opacity: selected === 'AR' ? 1 : 0 }}>
 		<path d="M356,319c0.2,0,0.4,0,0.6,0.1c0.2,0,0.4,0.1,0.5,0.1s0.1-0.1,0.1-0.3v-1.7c0-0.4,0-0.7-0.1-0.8c-0.1-0.2-0.4-0.3-1-0.3

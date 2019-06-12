@@ -10,7 +10,7 @@ import '../Network.scss';
 
 const NetworkCircles = ({ selected, setSelected }) => {
   return (
-    <g id="circles">
+    <g id="circles" transform="translate(-42,-40)">
       <image style={{ cursor: 'pointer', opacity: 0.5, enableBackground: 'new' }} width="192" height="192" xlinkHref={petal1} transform="matrix(0.235 0 0 0.235 232.6282 111.0258)" >
       </image>
       <image style={{ cursor: 'pointer', enableBackground: 'new' }} width="192" height="192" xlinkHref={petal2} transform="matrix(0.235 0 0 0.235 288.0681 354.1458)" onClick={() => setSelected('JP')} onMouseEnter={() => setSelected('JP')} onMouseLeave={() => setSelected('')}>

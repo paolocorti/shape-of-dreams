@@ -3,7 +3,7 @@ import '../Network.scss';
 
 const NetworkLines = ({ selected }) => {
   return (
-    <g id='lines'>
+    <g id='lines' transform="translate(-42,-40)">
       <path
         class='network_10_0'
         d='M131.4,289.9c38.4-14.9,80.1-23.1,123.7-23.1c43.4,0,85,8.1,123.2,22.9'

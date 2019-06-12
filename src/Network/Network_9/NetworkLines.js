@@ -4,7 +4,7 @@ import '../Network.scss';
 const NetworkLines = ({ selected }) => {
 
   return (
-    <g id="lines">			
+    <g id="lines" transform="translate(-42,-40)">			
 			<path class="network_9_0" d="M311.4,373.2c-8.2-19.7-12.7-41.3-12.7-64c0-4.9,0.2-9.7,0.6-14.5c1.3-15.6,4.8-30.7,10.2-44.8
 			c9.8-25.9,25.9-48.8,46.5-66.7" style={{ opacity: selected === '' ? 1 : (selected === 'EN' || selected === 'JP' ? 1 : 0) }} />
 			<path class="network_9_0" d="M157,182.8c21.7,15.7,47.3,26.4,75.2,30.2c7.5,1,15.1,1.6,22.9,1.6c7.8,0,15.5-0.5,23-1.6

@@ -23,7 +23,7 @@ import Network11 from '../Network/Network_11/Network.js';
 
 const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
-  const [selectedYearIndex, setSelectedYearIndex] = useState(0);
+  const [selectedYearIndex, setSelectedYearIndex] = useState(5);
   const [howToRead, setHowToRead] = useState(false);
 
   const onSelectYear = index => {
@@ -177,7 +177,7 @@ const Explore4 = ({ history, activeIndex }) => {
             )}
           </div>
           <div
-            className='flex flex-column relative justify-start items-center ph4 mt2'
+            className='flex flex-column relative justify-center items-center ph4 mt2'
             style={{
               height: '30%',
               maxWidth: isMobile ? '100%' : '75%',
