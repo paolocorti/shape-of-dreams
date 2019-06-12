@@ -1,19 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content1 from './cap4-01-desk.jpg'
-import content2 from './cap4-02-desk.jpg'
-import content3 from './cap4-03-desk.jpg'
-import content4 from './cap4-04-desk.jpg'
-import mobileContent1 from './cap4-01-mob.jpg'
-import mobileContent2 from './cap4-02-mob.jpg'
-import mobileContent3 from './cap4-03-mob.jpg'
-import mobileContent4 from './cap4-04-mob.jpg'
-import dna from './dna.svg'
-import dog from './dog.svg'
-import fish from './fish.svg'
-import toad from './toad.svg'
-import elephant from './elephant.svg'
+import content1 from './cap4-01-desk.jpg';
+import content2 from './cap4-02-desk.jpg';
+import content3 from './cap4-03-desk.jpg';
+import content4 from './cap4-04-desk.jpg';
+import mobileContent1 from './cap4-01-mob.jpg';
+import mobileContent2 from './cap4-02-mob.jpg';
+import mobileContent3 from './cap4-03-mob.jpg';
+import mobileContent4 from './cap4-04-mob.jpg';
+import startExpl from '../components/images/start-expl.svg';
+import dna from './dna.svg';
+import dog from './dog.svg';
+import fish from './fish.svg';
+import toad from './toad.svg';
+import elephant from './elephant.svg';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
@@ -131,7 +132,7 @@ const Content4 = ({ history, activeIndex }) => {
           <div className='raleway explore-text'>START EXPLORING</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base' src={'images/start-expl.svg'} width={25} />
+            <img className='explore-icon-base' src={startExpl} width={25} />
           </div>
         </div>
         {/* {

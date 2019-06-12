@@ -1,14 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content0 from './cap3-00-desk.jpg'
-import content1 from './cap3-01-desk.jpg'
-import content2 from './cap3-02-desk.jpg'
-import content3 from './cap3-03-desk.jpg'
-import mobileContent0 from './cap3-00-mob.jpg'
-import mobileContent1 from './cap3-01-mob.jpg'
-import mobileContent2 from './cap3-02-mob.jpg'
-import mobileContent3 from './cap3-03-mob.jpg'
+import content0 from './cap3-00-desk.jpg';
+import content1 from './cap3-01-desk.jpg';
+import content2 from './cap3-02-desk.jpg';
+import content3 from './cap3-03-desk.jpg';
+import mobileContent0 from './cap3-00-mob.jpg';
+import mobileContent1 from './cap3-01-mob.jpg';
+import mobileContent2 from './cap3-02-mob.jpg';
+import mobileContent3 from './cap3-03-mob.jpg';
+import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
@@ -93,7 +94,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
           <div className='raleway explore-text'>START EXPLORING</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base' src={'images/start-expl.svg'} width={25} />
+            <img className='explore-icon-base' src={startExpl} width={25} />
           </div>
         </div>
         {/* {

@@ -194,7 +194,7 @@ const Explore4 = ({ history, activeIndex }) => {
               Select a language and a year. The lines connect the languages that share the same dreams.
             </div>
             <div
-              className='raleway mt3 fw7 link'
+              className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',

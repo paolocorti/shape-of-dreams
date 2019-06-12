@@ -136,26 +136,22 @@ const Explore1 = ({ history, activeIndex }) => {
         )
       }
       <div className='w-100 h-100 relative'>
+
         <div
-          className='w-100 fixed'
+          className='how-to-read'
           style={{
             zIndex: howToRead ? 1000 : -1,
             background: 'linear-gradient(#e1eaef, #e4f3ec)',
+
             top: howToRead ? (isMobile ? 0 : 50) : '-100%',
-            height: 'calc(100vh - 50px)',
             display: howToRead ? 'block' : 'none',
           }}
         >
-          <div style={{
-            backgroundImage: `url(${isMobile ? howtoreadMobile1 : howtoread1})`,
-            backgroundPosition: '50% 50%',
-            backgroundSize: isMobile ? 'contain' : 'cover',
-            backgroundRepeat: 'no-repeat',
-            height: 'calc(100% - 40px)',
-            marginTop: '30px',
-            marginLeft: '5%',
-            width: '90%',
-          }}>
+          <div
+            className='how-to-read-image'
+            style={{
+              backgroundImage: `url(${isMobile ? howtoreadMobile1 : howtoread1})`,
+            }}>
           </div>
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
@@ -338,7 +334,7 @@ const Explore1 = ({ history, activeIndex }) => {
               }
             </div>
             <div
-              className='raleway mt3 fw7 cursor-pointer link'
+              className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',
@@ -349,7 +345,7 @@ const Explore1 = ({ history, activeIndex }) => {
               HOW TO READ IT
             </div>
             {!isMobile && (<div
-              className='raleway mt3 fw7 cursor-pointer link'
+              className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',
                 color: '#43449a',

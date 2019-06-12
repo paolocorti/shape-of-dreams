@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content1 from './cap2-01-desk.jpg'
-import content2 from './cap2-02-desk.jpg'
-import content3 from './cap2-03-desk.jpg'
-import mobileContent1 from './cap2-01-mob.jpg'
-import mobileContent2 from './cap2-02-mob.jpg'
-import mobileContent3 from './cap2-03-mob.jpg'
+import content1 from './cap2-01-desk.jpg';
+import content2 from './cap2-02-desk.jpg';
+import content3 from './cap2-03-desk.jpg';
+import mobileContent1 from './cap2-01-mob.jpg';
+import mobileContent2 from './cap2-02-mob.jpg';
+import mobileContent3 from './cap2-03-mob.jpg';
+import startExpl from '../components/images/start-expl.svg';
+
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
@@ -79,7 +81,7 @@ const Content2 = ({ history, activeIndex }) => {
           <div className='raleway explore-text'>START EXPLORING</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base' src={'images/start-expl.svg'} width={25} />
+            <img className='explore-icon-base' src={startExpl} width={25} />
           </div>
         </div>
         {/* {
