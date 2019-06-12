@@ -48,7 +48,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 first paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -61,17 +61,17 @@ const Content4 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-center'>
           <LazyLoadImage
             alt={'dna'}
-            effect="blur"
+
             src={dna}
             height={120} />
           <LazyLoadImage
             alt={'dog'}
-            effect="blur"
+
             src={dog}
             height={140} />
           <LazyLoadImage
             alt={'fish'}
-            effect="blur"
+
             src={fish}
             height={110} />
         </div>
@@ -80,7 +80,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 second paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -92,7 +92,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 third paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent3 : content3}
           width='100%' />
       </div>
@@ -104,12 +104,12 @@ const Content4 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-center'>
           <LazyLoadImage
             alt={'toad'}
-            effect="blur"
+
             src={toad}
             height={110} />
           <LazyLoadImage
             alt={'elephant'}
-            effect="blur"
+
             src={elephant}
             height={140} />
         </div>
@@ -118,7 +118,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 fourth paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent4 : content4}
           width='100%' />
       </div>

@@ -43,7 +43,7 @@ const Content3 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 3 first paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent0 : content0}
           width='100%' />
       </div>
@@ -55,7 +55,7 @@ const Content3 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 3 second paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -67,7 +67,7 @@ const Content3 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 3 third paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -80,7 +80,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 3 fourth paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent3 : content3}
           width='100%' />
       </div>

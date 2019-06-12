@@ -41,7 +41,7 @@ const Content2 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 2 first paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -56,7 +56,7 @@ const Content2 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 2 second paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -67,7 +67,7 @@ const Content2 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 2 third paragraph'}
-          effect="blur"
+
           src={isMobile ? mobileContent3 : content3}
           width='100%' />
       </div>
