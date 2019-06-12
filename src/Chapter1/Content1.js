@@ -60,7 +60,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 first paragraph'}
-          effect="blur"
+          //effect="blur"
           src={isMobile ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -73,7 +73,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 1 second paragraph'}
-          effect="blur"
+          //effect="blur"
           src={isMobile ? mobileContent1a : content1a}
           width='100%' />
       </div>
@@ -85,7 +85,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <LazyLoadImage
           alt={'Dreaming about snakes'}
-          effect="blur"
+          //effect="blur"
           src={snake}
           height={130} />
         <h2 className='mv3'>Dreaming about snakes</h2>
@@ -93,14 +93,14 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 third paragraph'}
-          effect="blur"
+          //effect="blur"
           src={isMobile ? mobileContent2 : content2}
           width='100%' />
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <LazyLoadImage
           alt={'teeth'}
-          effect="blur"
+          //effect="blur"
           src={teeth}
           height={160} />
         <h2 className='mv3'>Dreaming about falling teeth</h2>
@@ -108,7 +108,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 fourth paragraph'}
-          effect="blur"
+          //effect="blur"
           src={isMobile ? mobileContent3 : content3}
           width='100%' />
 
@@ -123,27 +123,27 @@ const Content1 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-end flex-wrap'>
           <LazyLoadImage
             alt={'cabbage'}
-            effect="blur"
+            //effect="blur"
             src={cabbage}
             height={100} />
           <LazyLoadImage
             alt={'camel'}
-            effect="blur"
+            //effect="blur"
             src={camel}
             height={140} />
           <LazyLoadImage
             alt={'garlic'}
-            effect="blur"
+            //effect="blur"
             src={garlic}
             height={150} />
           <LazyLoadImage
             alt={'iguana'}
-            effect="blur"
+            //effect="blur"
             src={iguana}
             height={100} />
           <LazyLoadImage
             alt={'fox'}
-            effect="blur"
+            //effect="blur"
             src={fox}
             height={140} />
         </div>
@@ -152,7 +152,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 fifth paragraph'}
-          effect="blur"
+          //effect="blur"
           src={isMobile ? mobileContent4 : content4}
           width='100%' />
       </div>
@@ -166,12 +166,12 @@ const Content1 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-end'>
           <LazyLoadImage
             alt={'earthquake'}
-            effect="blur"
+            //effect="blur"
             src={earthquake}
             height={140} />
           <LazyLoadImage
             alt={'luggage'}
-            effect="blur"
+            //effect="blur"
             src={luggage}
             height={140} />
         </div>
@@ -181,7 +181,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 sixth paragraph'}
-          effect="blur"
+          //effect="blur"
           src={isMobile ? mobileContent5 : content5}
           width='100%' />
       </div>
