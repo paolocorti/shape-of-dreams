@@ -1,7 +1,7 @@
 {
-  "main.css": "/meaning-of-dreams/static/css/main.96d08b03.chunk.css",
-  "main.js": "/meaning-of-dreams/static/js/main.d594fa4b.chunk.js",
-  "main.js.map": "/meaning-of-dreams/static/js/main.d594fa4b.chunk.js.map",
+  "main.css": "/meaning-of-dreams/static/css/main.a99f2117.chunk.css",
+  "main.js": "/meaning-of-dreams/static/js/main.16ff32c3.chunk.js",
+  "main.js.map": "/meaning-of-dreams/static/js/main.16ff32c3.chunk.js.map",
   "static/css/1.fcfae495.chunk.css": "/meaning-of-dreams/static/css/1.fcfae495.chunk.css",
   "static/js/1.ba8e4bbf.chunk.js": "/meaning-of-dreams/static/js/1.ba8e4bbf.chunk.js",
   "static/js/1.ba8e4bbf.chunk.js.map": "/meaning-of-dreams/static/js/1.ba8e4bbf.chunk.js.map",
@@ -92,9 +92,9 @@
   "static/media/how-to-mob.svg": "/meaning-of-dreams/static/media/how-to-mob.5696126a.svg",
   "static/media/how-to-desk.svg": "/meaning-of-dreams/static/media/how-to-desk.df1cd0f3.svg",
   "static/media/got-it.svg": "/meaning-of-dreams/static/media/got-it.a87f63cc.svg",
+  "static/css/main.a99f2117.chunk.css.map": "/meaning-of-dreams/static/css/main.a99f2117.chunk.css.map",
   "static/css/1.fcfae495.chunk.css.map": "/meaning-of-dreams/static/css/1.fcfae495.chunk.css.map",
-  "static/css/main.96d08b03.chunk.css.map": "/meaning-of-dreams/static/css/main.96d08b03.chunk.css.map",
   "index.html": "/meaning-of-dreams/index.html",
-  "precache-manifest.e2ed9111ee387af9b0e055f3f9c0279a.js": "/meaning-of-dreams/precache-manifest.e2ed9111ee387af9b0e055f3f9c0279a.js",
+  "precache-manifest.ab657f409af6072a378d99385e4d0bbf.js": "/meaning-of-dreams/precache-manifest.ab657f409af6072a378d99385e4d0bbf.js",
   "service-worker.js": "/meaning-of-dreams/service-worker.js"
 }
