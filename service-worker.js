@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/meaning-of-dreams/precache-manifest.94389219c7ad1f7e37b7a35d8524d328.js"
+  "/meaning-of-dreams/precache-manifest.e2ed9111ee387af9b0e055f3f9c0279a.js"
 );
 
 workbox.clientsClaim();
