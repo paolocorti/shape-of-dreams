@@ -35,7 +35,7 @@ const Network6 = ({ year }) => {
         className='viz mt4'
         x='0px'
         y='0px'
-        viewBox='0 0 450 450'
+        viewBox='0 0 430 430'
         width={svgWidth}
         height={svgHeight}
       >
