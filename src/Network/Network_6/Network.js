@@ -32,7 +32,7 @@ const Network6 = ({ year }) => {
         {selected ? languageLabel[selected] : 'All the languages'} - {year}
       </div>
       <svg
-        className='viz mt4'
+        className='viz'
         x='0px'
         y='0px'
         viewBox='0 0 430 430'

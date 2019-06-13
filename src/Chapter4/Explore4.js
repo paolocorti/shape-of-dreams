@@ -177,7 +177,7 @@ const Explore4 = ({ history, activeIndex }) => {
             )}
           </div>
           <div
-            className='flex flex-column relative justify-center items-center ph4 mt2'
+            className='flex flex-column relative justify-start items-center ph4 mt2'
             style={{
               height: '20%',
               maxWidth: isMobile ? '100%' : '75%',
