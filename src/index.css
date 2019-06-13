@@ -69,15 +69,15 @@ html, body, #root {
 
 .read-close-legend {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   left: 50%;
-  margin-left: -25px;
+  margin-left: -70px;
 }
 
 @media only screen and (min-width: 768px) {
   .read-close-legend {
-    bottom: 50px;
-    margin-left: -40px;
+    bottom: 50%;
+    margin-left: -90px;
   }
 }
 

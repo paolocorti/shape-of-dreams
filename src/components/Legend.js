@@ -3,8 +3,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
-import legendMob from './how-to-mob.svg';
-import legend from './how-to-desk.svg';
+import legendMob from './how-to-mob.png';
+import legend from './how-to-desk.png';
 import gotIt from './images/got-it.svg'
 import { isMobile } from 'react-device-detect';
 
@@ -39,7 +39,7 @@ const Legend = ({ history, location }) => {
         <LazyLoadImage
           alt='Close menu icon'
           src={gotIt}
-          width={isMobile ? 50 : 80} />
+          width={isMobile ? 140 : 180} />
       </div>
       <img
         alt='Legend'
