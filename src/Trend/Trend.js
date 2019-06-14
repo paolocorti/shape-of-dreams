@@ -218,7 +218,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                       cy={trendHeight - scaleY(value)}
                       fill={'#43449a'}
                       r={4}
-                      style={{ cursor: 'pointer' }}
                     />
                     <circle
                       id={`circle-${i}`}
@@ -227,7 +226,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                       stroke={'#43449a'}
                       fill={'transparent'}
                       r={10}
-                      style={{ cursor: 'pointer' }}
                     />
                     <text
                       dx={scaleX(date) - 20}

@@ -137,7 +137,7 @@ const Explore4 = ({ history, activeIndex }) => {
           <div
             className='flex flex-column justify-center items-center'
             style={{
-              height: '80%',
+              height: '75%',
               maxWidth: isMobile ? '100%' : '75%',
               margin: isMobile ? '' : '0 auto'
             }}
@@ -179,7 +179,7 @@ const Explore4 = ({ history, activeIndex }) => {
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
             style={{
-              height: '20%',
+              height: '25%',
               maxWidth: isMobile ? '100%' : '75%',
               margin: isMobile ? '' : '45px auto'
             }}
