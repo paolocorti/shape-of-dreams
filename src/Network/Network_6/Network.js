@@ -38,7 +38,7 @@ const Network6 = ({ year }) => {
         viewBox='0 0 430 430'
         width={svgWidth}
         height={svgHeight}
-        style={{ maxWidth: isMobile ? '420px' : '520px' }}
+        style={{ maxWidth: isMobile ? '400px' : '520px' }}
       >
         <NetworkLines selected={selected} />
         <NetworkCircles selected={selected} setSelected={selectedCallback} />
