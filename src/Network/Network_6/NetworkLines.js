@@ -14,11 +14,11 @@ const NetworkLines = ({ selected }) => {
 			})}
 			enter={() => ({
 				dashoffset: [0],
-				timing: { duration: 800, ease: easeQuadOut, delay: 500 }
+				timing: { duration: 1000, ease: easeQuadOut, delay: 250 }
 			})}
 			update={() => ({
 				dashoffset: [0],
-				timing: { duration: 800, ease: easeQuadOut, delay: 500 }
+				timing: { duration: 1000, ease: easeQuadOut, delay: 250 }
 			})}
 
 			// leave={() => ({

@@ -20,11 +20,11 @@ const NetworkCircles = ({ selected, setSelected, setClicked }) => {
       })}
       enter={() => ({
         opacity: [1],
-        timing: { duration: 300, delay: 0 }
+        timing: { duration: 100, delay: 0 }
       })}
       update={() => ({
         opacity: [1],
-        timing: { duration: 300, delay: 0 }
+        timing: { duration: 100, delay: 0 }
       })}
 
     // leave={() => ({
