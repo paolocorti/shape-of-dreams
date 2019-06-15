@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
@@ -36,7 +35,7 @@ const Legend = ({ history, location }) => {
           zIndex: 999,
         }}
       >
-        <LazyLoadImage
+        <img
           alt='Close menu icon'
           src={gotIt}
           width={isMobile ? 140 : 180} />

@@ -62,8 +62,8 @@ html, body, #root {
 
 .read-close {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 35px;
+  right: 35px;
 }
 
 .read-close-legend {
