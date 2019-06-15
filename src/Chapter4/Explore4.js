@@ -192,7 +192,13 @@ const Explore4 = ({ history, activeIndex }) => {
                 lineHeight: isMobile ? '13px' : '20px'
               }}
             >
-              Select a language and a year. The lines connect the languages that share the same dreams.
+              {'Select a language and a year. The lines connect the languages that share the same dreams. '}
+              {
+                !isMobile &&
+                (
+                  'Go on mouse over or click on one language to read the dreams in common with the other ones'
+                )
+              }
             </div>
             <div
               className='raleway mt3 fw7 pointer link'

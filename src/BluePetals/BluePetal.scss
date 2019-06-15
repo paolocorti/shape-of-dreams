@@ -35,6 +35,12 @@
   stroke-miterlimit: 10;
 }
 
+@media only screen and (min-width: 768px) {
+  .grid5 {
+    cursor: pointer;
+  }
+}
+
 .line {
   fill: none;
   stroke: #617cbb;

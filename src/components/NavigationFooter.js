@@ -70,12 +70,19 @@ const NavigationFooter = ({ history }) => {
             onClick={() => context.toggleLegend()}
             className='pointer'
           />
-          <FacebookShareButton url={'the-shape-of-dreams.com'}>
-            <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
-          </FacebookShareButton>
-          <TwitterShareButton url={'the-shape-of-dreams.com'}>
-            <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
-          </TwitterShareButton>
+          {
+            !isMobile && (
+              <React.Fragment>
+                <FacebookShareButton url={'the-shape-of-dreams.com'}>
+                  <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+                </FacebookShareButton>
+                <TwitterShareButton url={'the-shape-of-dreams.com'}>
+                  <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+                </TwitterShareButton>
+              </React.Fragment>
+            )
+          }
+
         </div>
       </div>
 

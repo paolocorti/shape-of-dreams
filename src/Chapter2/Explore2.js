@@ -17,7 +17,7 @@ import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
 const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(0);
-  const [selectedPetal, setSelectedPetal] = useState(null);
+  //const [selectedPetal, setSelectedPetal] = useState(null);
   const [howToRead, setHowToRead] = useState(false);
 
   const onSelectLanguage = index => {
@@ -78,21 +78,22 @@ const Explore2 = ({ history, activeIndex }) => {
     }
   })
 
-  const setSelectedPetalWrapper = index => {
-    console.log(index, selectedPetal)
-    let newSelectedPetal
-    if (index !== null) {
-      newSelectedPetal = selectedPetal === index ? null : index;
-    } else {
-      newSelectedPetal = null;
-    }
+  const [hovered, setHovered] = useState(null);
+  const [clicked, setClicked] = useState(null);
 
-    console.log(newSelectedPetal)
-
-    setSelectedPetal(newSelectedPetal);
+  const selectedCallback = index => {
+    const selection = index === hovered ? '' : index;
+    setHovered(selection);
   };
 
-  const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : []
+  const selectedClickedCallback = index => {
+    const selection = index === clicked ? '' : index;
+    setClicked(selection);
+  }
+
+  const selectedPetal = clicked ? clicked : hovered;
+  const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : [];
+
 
   return (
     <div className='explore2' style={{ paddingTop: isMobile ? 0 : 15 }}>
@@ -168,14 +169,16 @@ const Explore2 = ({ history, activeIndex }) => {
                   categories={selectedCategories.sort((a, b) => a.order - b.order)}
                   year={years[selectedYearIndex]}
                   language={languages[selectedLanguageIndex]}
-                  setSelectedPetal={setSelectedPetalWrapper}
+                  setSelectedPetal={selectedCallback}
+                  setClickedPetal={selectedClickedCallback}
                   selectedPetal={selectedPetal}
                 />
               ) : (
                   <BluePetalsEmpty categories={selectedCategories.sort((a, b) => a.order - b.order)}
                     year={years[selectedYearIndex]}
                     language={languages[selectedLanguageIndex]}
-                    setSelectedPetal={setSelectedPetalWrapper}
+                    setSelectedPetal={selectedCallback}
+                    setClickedPetal={selectedClickedCallback}
                     selectedPetal={selectedPetal}
                   />
                 )

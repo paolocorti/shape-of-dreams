@@ -481,13 +481,15 @@ h4 {
 
 .link-white:after {
   background-color: #ffffff;
-  top: 36px;
+  top: 32px;
+  width: 20%;
 }
 
 @media only screen and (min-width: 768px) {
   .link-white:after {
     background-color: #ffffff;
     top: 60px;
+    width: 15%;
   }
 }
 

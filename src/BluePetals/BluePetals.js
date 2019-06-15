@@ -50,7 +50,8 @@ const BluePetals = ({
   language,
   year,
   selectedPetal,
-  setSelectedPetal
+  setSelectedPetal,
+  setClickedPetal,
 }) => {
   const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.4;
   const dimensionScale = scaleLinear().domain([0, 24]).range([0, 100])
@@ -97,6 +98,7 @@ const BluePetals = ({
           <linearGradient id="blue_petal_gradient_16" x1="-2242.41" y1="-5492.25" x2="-2127.76" y2="-5293.68" gradientTransform="matrix(0.02, 1, -1, 0.02, -5209.82, 2327.54)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e7e6de" /><stop offset="0.17" stop-color="#d9e7de" /><stop offset="0.48" stop-color="#abd7db" /><stop offset="1" stop-color="#8892c5" /></linearGradient>
         </defs>
         <Grid
+          setClickedPetal={setClickedPetal}
           setSelectedPetal={setSelectedPetal}
           selectedPetal={selectedPetal}
         />

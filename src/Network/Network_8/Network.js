@@ -33,6 +33,8 @@ const Network8 = ({ year }) => {
 
   const selected = clicked ? clicked : hovered;
 
+  console.log(selected)
+
   return (
     <div className='flex w-100 justify-center items-center flex-column'>
       <div className='mt0 value absolute' style={{ fontSize: '22px', opacity: 1, top: '-20px' }}>

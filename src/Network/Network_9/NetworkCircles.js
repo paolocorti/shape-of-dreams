@@ -31,19 +31,19 @@ const NetworkCircles = ({ selected, setSelected, setClicked }) => {
         const { opacity } = state;
         return (
           <g id="circles" transform="translate(-42,-40)">
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal1} transform="matrix(0.235 0 0 0.235 232.6282 111.0258)" onClick={() => setClicked('AR')} onMouseEnter={() => isMobile ? noop : ('AR')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal1} transform="matrix(0.235 0 0 0.235 232.6282 111.0258)" onClick={() => setClicked('AR')} onMouseEnter={() => isMobile ? noop : setSelected('AR')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal2} transform="matrix(0.235 0 0 0.235 288.0681 354.1458)" onClick={() => setClicked('JP')} onMouseEnter={() => isMobile ? noop : ('JP')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal2} transform="matrix(0.235 0 0 0.235 288.0681 354.1458)" onClick={() => setClicked('JP')} onMouseEnter={() => isMobile ? noop : setSelected('JP')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal3} transform="matrix(0.235 0 0 0.235 176.9482 354.1458)" onClick={() => setClicked('PO')} onMouseEnter={() => isMobile ? noop : ('PO')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal3} transform="matrix(0.235 0 0 0.235 176.9482 354.1458)" onClick={() => setClicked('PO')} onMouseEnter={() => isMobile ? noop : setSelected('PO')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="196" xlinkHref={petal4} transform="matrix(0.2332 0 0 0.2332 107.7625 267.0938)" onClick={() => setClicked('RU')} onMouseEnter={() => isMobile ? noop : ('RU')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="196" xlinkHref={petal4} transform="matrix(0.2332 0 0 0.2332 107.7625 267.0938)" onClick={() => setClicked('RU')} onMouseEnter={() => isMobile ? noop : setSelected('RU')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal5} transform="matrix(0.2344 0 0 0.2344 132.3681 159.2057)" onClick={() => setClicked('SP')} onMouseEnter={() => isMobile ? noop : ('SP')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal5} transform="matrix(0.2344 0 0 0.2344 132.3681 159.2057)" onClick={() => setClicked('SP')} onMouseEnter={() => isMobile ? noop : setSelected('SP')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal6} transform="matrix(0.2338 0 0 0.2338 332.7082 159.2658)" onClick={() => setClicked('EN')} onMouseEnter={() => isMobile ? noop : ('EN')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="192" xlinkHref={petal6} transform="matrix(0.2338 0 0 0.2338 332.7082 159.2658)" onClick={() => setClicked('EN')} onMouseEnter={() => isMobile ? noop : setSelected('EN')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image >
-            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="188" xlinkHref={petal7} transform="matrix(0.2368 0 0 0.2368 357.0125 267.6838)" onClick={() => setClicked('FR')} onMouseEnter={() => isMobile ? noop : ('FR')} onMouseLeave={() => isMobile ? noop : ('')}>
+            <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="188" xlinkHref={petal7} transform="matrix(0.2368 0 0 0.2368 357.0125 267.6838)" onClick={() => setClicked('FR')} onMouseEnter={() => isMobile ? noop : setSelected('FR')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
             <g>
               <circle class="st3" cx="155.2" cy="182.1" r="22" style={{ opacity: selected === 'SP' ? 1 : 0 }} />

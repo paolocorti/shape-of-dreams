@@ -210,13 +210,13 @@ const Explore1 = ({ history, activeIndex }) => {
                   )}
                 {selectedTopics.length > 0 && selectedIndex > 0 && (
                   <div className='left-tap pointer' onClick={() => onTapLeft()}>
-                    <div className='icon-circle'></div>
+                    {/* <div className='icon-circle'></div> */}
                     <img className='icon-circle-arrow' src={arrowLeft} alt='Tap icon' width={10} />
                   </div>
                 )}
                 {selectedTopics.length > 0 && (
                   <div className='right-tap pointer' onClick={() => onTapRight()}>
-                    <div className='icon-circle'></div>
+                    {/* <div className='icon-circle'></div> */}
                     <img className='icon-circle-arrow' src={arrowRight} alt='Tap icon' width={10} />
                   </div>
                 )}

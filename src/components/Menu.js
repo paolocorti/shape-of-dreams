@@ -34,16 +34,17 @@ const Menu = ({ history }) => {
         style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}
       >
         <div
-          className='w-100 flex items-center ph4 pointer mv4 mv0-ns'
+          className='flex items-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/')}
         >
           <div
-            className='white tl'
             style={{
               fontSize: isMobile ? '28px' : '48px',
               marginBottom: isMobile ? 0 : '30px'
             }}
-            onClick={() => goTo('/')}
+            className={`${
+              actualPath === '/' ? 'active' : ''
+              } w-100 white tl relative link-white`}
           >
             Home
           </div>
@@ -135,12 +136,18 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl'
-            style={{ fontSize: isMobile ? '24px' : '48px' }}
+            style={{
+              fontSize: isMobile ? '28px' : '48px',
+              marginBottom: isMobile ? 0 : '30px'
+            }}
+            className={`${
+              actualPath === '/' ? 'active' : ''
+              } w-100 white tl relative link-white`}
           >
             About
-            </div>
+          </div>
         </div>
+
         {isMobile && (
           <div className='w-100 flex items-center ph4 mv4 mv0-ns'>
             <div
@@ -148,13 +155,14 @@ const Menu = ({ history }) => {
               style={{ fontSize: isMobile ? '24px' : '48px' }}
             >
               Share
-
-              <FacebookShareButton url={'the-shape-of-dreams.com'}>
-                <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
-              </FacebookShareButton>
-              <TwitterShareButton url={'the-shape-of-dreams.com'}>
-                <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
-              </TwitterShareButton>
+            <div className='flex mt2'>
+                <FacebookShareButton url={'the-shape-of-dreams.com'}>
+                  <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+                </FacebookShareButton>
+                <TwitterShareButton url={'the-shape-of-dreams.com'}>
+                  <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+                </TwitterShareButton>
+              </div>
             </div>
           </div>
         )}
@@ -167,6 +175,7 @@ const Menu = ({ history }) => {
               top: isMobile ? 'auto' : '25px',
               bottom: isMobile ? '24px' : 'auto',
               left: 'auto',
+              marginRight: isMobile ? '-15px' : 'auto',
               zIndex: 999
             }}
           >

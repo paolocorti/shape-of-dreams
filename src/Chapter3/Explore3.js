@@ -137,12 +137,10 @@ const Explore3 = ({ history, activeIndex }) => {
               ) : (
                 <div style={{ width: '380px', display: 'flex', alignItems: 'center' }}>
                   <div className='pointer relative mt3' onClick={upIndex} style={{ width: 30, height: 30, marginRight: '10px', opacity: selectedIndex > 0 ? 1 : 0, pointerEvents: selectedIndex > 0 ? 1 : 0, cursor: selectedIndex > 0 ? 'pointer' : 'default' }}>
-                    <div className='icon-circle'></div>
                     <img className='icon-circle-arrow' src={arrowUp} alt='Tap icon' width={16} />
                   </div>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} selectedIndex={selectedIndex} />
                   <div className='pointer relative mt3' onClick={downIndex} style={{ width: 30, height: 30, marginLeft: '10px', opacity: selectedIndex < topics.length - 1 ? 1 : 0, pointerEvents: selectedIndex < topics.length - 1 ? 1 : 0, cursor: selectedIndex < topics.length - 1 ? 'pointer' : 'default' }}>
-                    <div className='icon-circle'></div>
                     <img className='icon-circle-arrow' src={arrowDown} alt='Tap icon' width={16} />
                   </div>
                 </div>
