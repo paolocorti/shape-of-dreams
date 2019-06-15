@@ -589,3 +589,10 @@ h4 {
   width: 90%;
   margin-left: 5%;
 }
+
+.SocialMediaShareButton--facebook {
+  border: 1px solid #43449a;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}

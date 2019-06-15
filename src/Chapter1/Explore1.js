@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { values, groupBy } from 'lodash';
 import Petals from '../Petals';
 import topics from '../data/topics.json';
-import '../Explore.scss';
 import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';

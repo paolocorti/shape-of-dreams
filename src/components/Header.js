@@ -4,6 +4,7 @@ import { AppContext } from '../appContext';
 import './Header.scss';
 import { isMobile } from 'react-device-detect';
 
+
 const Header = ({ location }) => {
   const { pathname } = location;
   const context = useContext(AppContext);

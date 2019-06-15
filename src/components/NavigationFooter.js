@@ -5,6 +5,12 @@ import legend from './images/legend.svg'
 import menu from './images/menu.svg';
 import './Footer.scss';
 import { isMobile } from 'react-device-detect';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon,
+} from 'react-share';
 
 const NavigationFooter = ({ history }) => {
   const context = useContext(AppContext);
@@ -64,6 +70,9 @@ const NavigationFooter = ({ history }) => {
             onClick={() => context.toggleLegend()}
             className='pointer'
           />
+          <FacebookShareButton url={'the-shape-of-dreams.com'}>
+            <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+          </FacebookShareButton>
         </div>
       </div>
 
