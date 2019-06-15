@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import PetalRow from './PetalRow';
 import { isMobile } from 'react-device-detect';
 
+
 const getNumberOfPetals = n => {
   if (n < 50) {
     return 1;
@@ -28,7 +29,7 @@ const languageLabel = {
 };
 
 const Petals = ({ name, language, year, value, index, nodata = false }) => {
-  const svgWidth = isMobile ? window.innerHeight * 0.45 : 220;
+  const svgWidth = isMobile ? window.innerHeight * 0.4 : 220;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {
@@ -52,7 +53,8 @@ const Petals = ({ name, language, year, value, index, nodata = false }) => {
         height={svgWidth}
         style={{
           border: '0px solid rgba(0,0,0,0.2)',
-          margin: '0 auto'
+          margin: '0 auto',
+          maxWidth: '420px',
         }}
       >
         <defs>

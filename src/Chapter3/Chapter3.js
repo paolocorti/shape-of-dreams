@@ -6,11 +6,12 @@ import Explore3 from './Explore3';
 
 const Chapter3 = ({ history, activeIndex, pageIndex }) => {
   const context = useContext(AppContext);
+  const index = activeIndex || context.selectedIndex;
 
   return (
-    <Page chapter='chapter3' activeIndex={activeIndex} pageIndex={pageIndex}>
-      {context.selectedView === 'explore' && <Explore3 history={history} activeIndex={activeIndex} />}
-      {context.selectedView === 'read' && <Content3 history={history} activeIndex={activeIndex} />}
+    <Page chapter='chapter3' activeIndex={index} pageIndex={pageIndex}>
+      {context.selectedView === 'explore' && <Explore3 history={history} activeIndex={index} />}
+      {context.selectedView === 'read' && <Content3 history={history} activeIndex={index} />}
     </Page>
   );
 };

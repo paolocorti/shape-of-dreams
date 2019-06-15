@@ -6,11 +6,12 @@ import Page from '../components/Page';
 
 const Chapter4 = ({ history, activeIndex, pageIndex }) => {
   const context = useContext(AppContext);
+  const index = activeIndex || context.selectedIndex;
 
   return (
-    <Page chapter='chapter4' activeIndex={activeIndex} pageIndex={pageIndex}>
-      {context.selectedView === 'explore' && <Explore4 history={history} activeIndex={activeIndex} />}
-      {context.selectedView === 'read' && <Content4 history={history} activeIndex={activeIndex} />}
+    <Page chapter='chapter4' activeIndex={index} pageIndex={pageIndex}>
+      {context.selectedView === 'explore' && <Explore4 history={history} activeIndex={index} />}
+      {context.selectedView === 'read' && <Content4 history={history} activeIndex={index} />}
     </Page>
   );
 };

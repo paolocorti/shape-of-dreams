@@ -26,6 +26,11 @@
 //   font-size: 22px;
 // }
 
+#circles image {
+  opacity: 0;
+  transition: .5s opacity;
+}
+
 .network_1_0 {
   fill: none;
   stroke: #404896;

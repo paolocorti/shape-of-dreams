@@ -19,6 +19,7 @@ class App extends React.Component {
       previousPath: null,
       actualPath: null,
       selectedView: 'read',
+      selectedIndex: 1,
       setPreviousPath: this.setPreviousPath,
       setActualPath: this.setActualPath,
       setSelectedView: this.setSelectedView,
@@ -48,10 +49,10 @@ class App extends React.Component {
     });
   };
 
-  resetSelectedView = () => {
-    // this.setState({
-    //   selectedView: 'content'
-    // });
+  resetSelectedView = (index) => {
+    this.setState({
+      selectedIndex: index + 1
+    });
   };
 
   toggleMenu = () => {

@@ -6,10 +6,12 @@ import Content2 from './Content2';
 
 const Chapter2 = ({ history, activeIndex, pageIndex }) => {
   const context = useContext(AppContext);
+  const index = activeIndex || context.selectedIndex;
+
   return (
-    <Page chapter='chapter2' activeIndex={activeIndex} pageIndex={pageIndex}>
-      {context.selectedView === 'explore' && <Explore2 history={history} activeIndex={activeIndex} />}
-      {context.selectedView === 'read' && <Content2 history={history} activeIndex={activeIndex} />}
+    <Page chapter='chapter2' activeIndex={index} pageIndex={pageIndex}>
+      {context.selectedView === 'explore' && <Explore2 history={history} activeIndex={index} />}
+      {context.selectedView === 'read' && <Content2 history={history} activeIndex={index} />}
     </Page>
   );
 };
