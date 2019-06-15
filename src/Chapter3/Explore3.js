@@ -113,6 +113,7 @@ const Explore3 = ({ history, activeIndex }) => {
           <div className='how-to-read-image'
             style={{
               backgroundImage: `url(${isMobile ? howtoreadMobile3 : howtoread3})`,
+              backgroundSize: isMobile ? 'contain' : 'cover',
             }}>
           </div>
 

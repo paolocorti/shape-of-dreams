@@ -101,7 +101,8 @@ const Explore4 = ({ history, activeIndex }) => {
             style={{
               backgroundImage: `url(${
                 isMobile ? howtoreadMobile4 : howtoread4
-                })`
+                })`,
+              backgroundSize: isMobile ? 'contain' : 'cover',
             }}
           />
 

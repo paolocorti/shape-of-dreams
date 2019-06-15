@@ -1,30 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Animate } from 'react-move';
 import { easeQuadOut } from 'd3-ease';
 import '../Network.scss';
-
-const dashArray = 250;
+import { dashArray, dashOffset, lineAnimDuration, lineAnimDelay } from '../network_constants';
 
 const NetworkLines = ({ selected }) => {
 
   return (
 		<Animate
 			start={() => ({
-				dashoffset: 250
+				dashoffset: dashOffset
 			})}
 			enter={() => ({
 				dashoffset: [0],
-				timing: { duration: 1000, ease: easeQuadOut, delay: 250 }
+				timing: { duration: lineAnimDuration, ease: easeQuadOut, delay: lineAnimDelay }
 			})}
 			update={() => ({
 				dashoffset: [0],
-				timing: { duration: 1000, ease: easeQuadOut, delay: 250 }
+				timing: { duration: lineAnimDuration, ease: easeQuadOut, delay: lineAnimDelay }
 			})}
-
-			// leave={() => ({
-			// 	j: [5000],
-			// 	timing: { duration: 800, ease: easeQuadOut }
-			// })}
 		>
 			{state => {
 				const { dashoffset } = state;

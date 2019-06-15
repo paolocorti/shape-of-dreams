@@ -10,6 +10,7 @@ import { Animate } from 'react-move';
 import { noop } from 'lodash';
 import { isMobile } from 'react-device-detect';
 import '../Network.scss';
+import { circleAnimDuration, circleAnimDelay } from '../network_constants';
 
 const NetworkCircles = ({ selected, setSelected, setClicked }) => {
 
@@ -20,17 +21,12 @@ const NetworkCircles = ({ selected, setSelected, setClicked }) => {
       })}
       enter={() => ({
         opacity: [1],
-        timing: { duration: 100, delay: 0 }
+        timing: { duration: circleAnimDuration, delay: circleAnimDelay }
       })}
       update={() => ({
         opacity: [1],
-        timing: { duration: 100, delay: 0 }
+        timing: { duration: circleAnimDuration, delay: circleAnimDelay }
       })}
-
-    // leave={() => ({
-    // 	j: [5000],
-    // 	timing: { duration: 800, ease: easeQuadOut }
-    // })}
     >
       {state => {
         const { opacity } = state;

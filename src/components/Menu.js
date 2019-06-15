@@ -3,6 +3,12 @@ import { withRouter } from 'react-router-dom';
 import closeWhite from '../components/images/close-white.svg';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon,
+} from 'react-share';
 
 const Menu = ({ history }) => {
   const context = useContext(AppContext);
@@ -142,6 +148,13 @@ const Menu = ({ history }) => {
               style={{ fontSize: isMobile ? '24px' : '48px' }}
             >
               Share
+
+              <FacebookShareButton url={'the-shape-of-dreams.com'}>
+                <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+              </FacebookShareButton>
+              <TwitterShareButton url={'the-shape-of-dreams.com'}>
+                <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
+              </TwitterShareButton>
             </div>
           </div>
         )}
