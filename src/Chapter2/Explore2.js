@@ -16,7 +16,7 @@ import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
 
 const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
-  const [selectedYearIndex, setSelectedYearIndex] = useState(0);
+  const [selectedYearIndex, setSelectedYearIndex] = useState(10);
   //const [selectedPetal, setSelectedPetal] = useState(null);
   const [howToRead, setHowToRead] = useState(false);
 
@@ -151,7 +151,7 @@ const Explore2 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
             Dreams subjects by category
           </h1>
         </div>

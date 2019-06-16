@@ -17,7 +17,7 @@ import NavigationBar from '../components/NavigationBar';
 const Explore1 = ({ history, activeIndex }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
-  const [selectedYearIndex, setSelectedYearIndex] = useState(0);
+  const [selectedYearIndex, setSelectedYearIndex] = useState(10);
   const [howToRead, setHowToRead] = useState(false);
 
   const toggleHowToRead = () => {
@@ -176,7 +176,7 @@ const Explore1 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
             Looking for dreams
           </h1>
         </div>

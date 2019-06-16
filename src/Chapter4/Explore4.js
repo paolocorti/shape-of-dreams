@@ -23,7 +23,7 @@ import Network11 from '../Network/Network_11/Network.js';
 
 const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
-  const [selectedYearIndex, setSelectedYearIndex] = useState(5);
+  const [selectedYearIndex, setSelectedYearIndex] = useState(10);
   const [howToRead, setHowToRead] = useState(false);
 
   const onSelectYear = index => {
@@ -127,7 +127,7 @@ const Explore4 = ({ history, activeIndex }) => {
               selected={selectedYearIndex}
             />
           )}
-          <h1 className='tc fw7 mt4' style={{ fontSize: '20px' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
             Networks of dreams
           </h1>
         </div>

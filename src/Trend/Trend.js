@@ -228,9 +228,9 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                       r={10}
                     />
                     <text
-                      dx={scaleX(date) - 20}
+                      dx={isMobile ? scaleX(date) + 20 : scaleX(date) - 20}
                       dy={trendHeight - scaleY(value) + 2}
-                      textAnchor={'end'}
+                      textAnchor={isMobile ? 'start' : 'end'}
                     >
                       {date.format('MMMM YYYY')}
                     </text>
