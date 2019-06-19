@@ -25,7 +25,7 @@ const NavigationBar = ({ history, activeIndex, content }) => {
   return (
     <div className='navigationBarContainer' style={{ position: content ? 'fixed' : 'absolute' }}>
       <div className='navigationBar'>
-        <img className='pointer' src={prev} onClick={setPrev} style={{ height: 45, opacity: activeIndex > 1 ? 1 : 0, pointerEvents: activeIndex > 1 ? 'auto' : 'none' }} />
+        <img className='pointer svg-hover' src={prev} onClick={setPrev} style={{ height: 45, opacity: activeIndex > 1 ? 1 : 0, pointerEvents: activeIndex > 1 ? 'auto' : 'none' }} />
         {
           activeIndex === 1 &&
           (
@@ -50,7 +50,7 @@ const NavigationBar = ({ history, activeIndex, content }) => {
             <img src={change4} style={{ height: 40 }} />
           )
         }
-        <img className='pointer' src={next} onClick={setNext} style={{ height: 45, opacity: activeIndex < 4 ? 1 : 0, pointerEvents: activeIndex < 4 ? 'auto' : 'none' }} />
+        <img className='pointer svg-hover' src={next} onClick={setNext} style={{ height: 45, opacity: activeIndex < 4 ? 1 : 0, pointerEvents: activeIndex < 4 ? 'auto' : 'none' }} />
       </div>
     </div>
 

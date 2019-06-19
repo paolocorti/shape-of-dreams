@@ -183,7 +183,7 @@ const Menu = ({ history }) => {
               src={closeWhite}
               alt='Close menu icon'
               width={30}
-              className='pointer'
+              className='pointer svg-hover'
             />
           </div>
         </div>

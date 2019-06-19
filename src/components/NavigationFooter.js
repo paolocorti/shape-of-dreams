@@ -44,6 +44,7 @@ const NavigationFooter = ({ history }) => {
             alt='Menu icon'
             width={20}
             onClick={() => context.toggleMenu()}
+            className='svg-hover'
           />
         </div>
         <div
@@ -73,10 +74,10 @@ const NavigationFooter = ({ history }) => {
           {
             !isMobile && (
               <React.Fragment>
-                <FacebookShareButton url={'the-shape-of-dreams.com'}>
+                <FacebookShareButton url={'the-shape-of-dreams.com'} className='svg-hover'>
                   <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
                 </FacebookShareButton>
-                <TwitterShareButton url={'the-shape-of-dreams.com'}>
+                <TwitterShareButton url={'the-shape-of-dreams.com'} className='svg-hover'>
                   <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
                 </TwitterShareButton>
               </React.Fragment>

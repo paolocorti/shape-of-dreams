@@ -81,7 +81,7 @@ const Content2 = ({ history, activeIndex }) => {
           <div className='raleway explore-text'>EXPLORE CHAPTER 2</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base' src={startExpl} width={25} />
+            <img className='explore-icon-base svg-hover' src={startExpl} width={25} />
           </div>
         </div>
         {/* {

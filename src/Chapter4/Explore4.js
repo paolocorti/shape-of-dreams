@@ -108,7 +108,7 @@ const Explore4 = ({ history, activeIndex }) => {
 
           <div className='read-close' onClick={() => toggleHowToRead()}>
             <img
-              className='pointer'
+              className='pointer svg-hover'
               src={close}
               alt='Close menu icon'
               width={30}
