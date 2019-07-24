@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.6e5873eb.chunk.css",
-  "main.js": "/static/js/main.7fc03305.chunk.js",
-  "main.js.map": "/static/js/main.7fc03305.chunk.js.map",
+  "main.css": "/static/css/main.c965d82a.chunk.css",
+  "main.js": "/static/js/main.880ee9ac.chunk.js",
+  "main.js.map": "/static/js/main.880ee9ac.chunk.js.map",
   "static/css/1.6875b2c6.chunk.css": "/static/css/1.6875b2c6.chunk.css",
   "static/js/1.43134c08.chunk.js": "/static/js/1.43134c08.chunk.js",
   "static/js/1.43134c08.chunk.js.map": "/static/js/1.43134c08.chunk.js.map",
@@ -87,14 +87,14 @@
   "static/media/elephant.svg": "/static/media/elephant.06ff3148.svg",
   "static/media/cap4-leg-desk.png": "/static/media/cap4-leg-desk.f63718a7.png",
   "static/media/cap4-leg-mob.gif": "/static/media/cap4-leg-mob.237cffa5.gif",
-  "static/media/legend.svg": "/static/media/legend.13bee44c.svg",
+  "static/media/legend.svg": "/static/media/legend.f27dce7d.svg",
   "static/media/menu.svg": "/static/media/menu.655d9163.svg",
   "static/media/how-to-mob.png": "/static/media/how-to-mob.8f439e30.png",
   "static/media/how-to-desk.png": "/static/media/how-to-desk.2e40652e.png",
   "static/media/got-it.svg": "/static/media/got-it.2c9ee980.svg",
-  "static/css/main.6e5873eb.chunk.css.map": "/static/css/main.6e5873eb.chunk.css.map",
   "static/css/1.6875b2c6.chunk.css.map": "/static/css/1.6875b2c6.chunk.css.map",
+  "static/css/main.c965d82a.chunk.css.map": "/static/css/main.c965d82a.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.d6a2908911376c09b6a98ed5b897820e.js": "/precache-manifest.d6a2908911376c09b6a98ed5b897820e.js",
+  "precache-manifest.cb2e0ad2efabd8d4fd3cb62131b4cc1e.js": "/precache-manifest.cb2e0ad2efabd8d4fd3cb62131b4cc1e.js",
   "service-worker.js": "/service-worker.js"
 }
