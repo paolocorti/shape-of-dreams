@@ -185,15 +185,15 @@ const Explore3 = ({ history, activeIndex }) => {
 
             </div>
             <div
-              className='raleway mt3 fw7 pointer link'
+              className='raleway mt3 fw7 pointer link2'
               style={{
                 fontSize: '14px',
-                color: '#43449a',
+                color: '#d88383',
                 letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >
-              HOW TO READ IT
+              LEGEND
             </div>
             {!isMobile && (<div
               className='raleway mt3 fw7 pointer link'

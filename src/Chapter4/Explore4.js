@@ -189,7 +189,8 @@ const Explore4 = ({ history, activeIndex }) => {
               className='tc raleway fw3'
               style={{
                 fontSize: isMobile ? '11px' : '15px',
-                lineHeight: isMobile ? '13px' : '20px'
+                lineHeight: isMobile ? '13px' : '20px',
+                maxWidth: isMobile ? '' : '600px',
               }}
             >
               {'Select a language and a year. The lines connect the languages that share the same dreams. '}
@@ -201,15 +202,15 @@ const Explore4 = ({ history, activeIndex }) => {
               }
             </div>
             <div
-              className='raleway mt3 fw7 pointer link'
+              className='raleway mt3 fw7 pointer link2'
               style={{
                 fontSize: '14px',
-                color: '#43449a',
+                color: '#d88383',
                 letterSpacing: '1px'
               }}
               onClick={toggleHowToRead}
             >
-              HOW TO READ IT
+              LEGEND
             </div>
           </div>
         </div>

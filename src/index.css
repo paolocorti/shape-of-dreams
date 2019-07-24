@@ -40,7 +40,7 @@ html, body, #root {
 }
 
 .svg-hover:hover {
-  opacity: 0.75 !important;
+  opacity: 0.5 !important;
   transition: .5s opacity;
 }
 
@@ -332,11 +332,11 @@ h4 {
 
 /* fix iOS bug not displaying 100vh correctly */
 /* iPad Pro */
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
+/* @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
 	.fullheight {
 		height: 1024px;
 	}
-}
+} */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
 	.fullheight {
 		height: 1366px;
@@ -344,11 +344,11 @@ h4 {
 }
 
 /* iPad */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	.fullheight {
 		height: 768px;
 	}
-}
+} */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	.fullheight {
 		height: 1024px;
@@ -357,11 +357,11 @@ h4 {
 
 
 /* iPhone 4 */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 	.fullheight {
 		height: 320px;
 	}
-}
+} */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 	.fullheight {
 		height: 480px;
@@ -369,11 +369,11 @@ h4 {
 }
 
 /* iPhone5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
 	.fullheight {
 		height: 320px;
 	}
-}
+} */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 	.fullheight {
 		height: 568px;
@@ -381,11 +381,11 @@ h4 {
 }
 
 /* iPhone 6/7 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
 	.fullheight {
 		height: 375px;
 	}
-}
+} */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 	.fullheight {
 		height: 667px;
@@ -393,11 +393,11 @@ h4 {
 }
 
 /* iPhone 6/7 plus */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
 	.fullheight {
 		height: 414px;
 	}
-}
+} */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 	.fullheight {
 		height: 736px;
@@ -487,7 +487,7 @@ h4 {
   }
 }
 
-.link, .link-white {
+.link, .link-white, .link2 {
   position: relative;
   cursor: pointer;
 }
@@ -496,7 +496,7 @@ h4 {
   transition: 0.5s opacity;
 }
 
-.link:hover:after, .link.active:after {
+.link:hover:after, .link.active:after, .link2:hover:after {
   opacity: 1;
   transition: 0.5s opacity;
 }
@@ -506,7 +506,7 @@ h4 {
   transition: 0.5s opacity;
 }
 
-.link:after, .active:after, .link-white:after {
+.link:after, .active:after, .link-white:after, .link2:after {
   position: absolute;
   content: "";
   height: 3px;
@@ -516,6 +516,10 @@ h4 {
   left: 0;
   top: 20px;
   opacity: 0;
+}
+
+.link2:after {
+  background-color: #d88383;
 }
 
 .link-white:after {

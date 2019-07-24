@@ -60,7 +60,7 @@ const NavigationFooter = ({ history }) => {
           onClick={() => changeSection('explore')}
         >
           <div className={`link cursor-pointer ${context.selectedView === 'explore' ? 'active' : '/'}`}>
-            {isMobile ? 'EXPLORE' : 'DREAMS EXPLORER'}
+            {isMobile ? 'EXPLORE' : 'EXPLORE THE DREAMS'}
           </div>
         </div>
         <div className='w-10 flex justify-center items-center h-100'>
@@ -77,7 +77,7 @@ const NavigationFooter = ({ history }) => {
                 <FacebookShareButton url={'the-shape-of-dreams.com'} className='svg-hover'>
                   <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
                 </FacebookShareButton>
-                <TwitterShareButton url={'the-shape-of-dreams.com'} className='svg-hover'>
+                <TwitterShareButton url={'http://the-shape-of-dreams.com'} title={'The Shape of Dreams'} className='svg-hover'>
                   <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
                 </TwitterShareButton>
               </React.Fragment>
