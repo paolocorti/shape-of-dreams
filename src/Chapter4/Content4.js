@@ -10,11 +10,8 @@ import mobileContent2 from './cap4-02-mob.jpg';
 import mobileContent3 from './cap4-03-mob.jpg';
 import mobileContent4 from './cap4-04-mob.jpg';
 import startExpl from '../components/images/start-expl.svg';
-import dna from './dna.svg';
-import dog from './dog.svg';
-import fish from './fish.svg';
-import toad from './toad.svg';
-import elephant from './elephant.svg';
+import collagedog from './collage-dog-small.gif';
+import collageelephant from './collage-elephant-small.gif';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
 
@@ -61,19 +58,8 @@ const Content4 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-center'>
           <LazyLoadImage
             alt={'dna'}
-
-            src={dna}
-            height={120} />
-          <LazyLoadImage
-            alt={'dog'}
-
-            src={dog}
-            height={140} />
-          <LazyLoadImage
-            alt={'fish'}
-
-            src={fish}
-            height={110} />
+            src={collagedog}
+            height={200} />
         </div>
         {/* <h2 className='mv3'>Peaks over the year</h2> */}
       </div>
@@ -103,15 +89,9 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-center'>
           <LazyLoadImage
-            alt={'toad'}
-
-            src={toad}
-            height={110} />
-          <LazyLoadImage
             alt={'elephant'}
-
-            src={elephant}
-            height={140} />
+            src={collageelephant}
+            height={200} />
         </div>
         {/* <h2 className='mv3'>Peaks over the year</h2> */}
       </div>

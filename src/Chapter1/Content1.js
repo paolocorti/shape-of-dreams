@@ -13,15 +13,11 @@ import mobileContent3 from './cap1-03-mob.jpg';
 import mobileContent4 from './cap1-04-mob.jpg';
 import mobileContent5 from './cap1-05-mob.jpg';
 import mobileContent1a from './cap1_01a-mob.jpg';
-import snake from './snake.gif';
+import snake from './snake-small.gif';
 import teeth from './tooth.gif';
-import cabbage from './cabbage.gif';
-import camel from './camel.gif';
-import garlic from './garlic.gif';
-import iguana from './iguana.gif';
-import fox from './fox.gif';
-import earthquake from './earthquake.svg';
-import luggage from './luggage.svg';
+import collagefox from './collage-fox-small.gif';
+import collagecamel from './collage-camel-small.gif';
+import luggage from './luggage-small.gif';
 import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
 import { isMobile } from 'react-device-detect';
@@ -114,6 +110,13 @@ const Content1 = ({ history, activeIndex }) => {
 
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
+        <div className='w-100 flex justify-center items-end flex-wrap'>
+          <LazyLoadImage
+            alt={'cabbage'}
+            //effect="blur"
+            src={collagecamel}
+            height={180} />
+        </div>
         <p className='lh-copy'>
           On the other hand, there are unique subjects that only appeared exploring specific languages: dreaming about <span className='highlights'>cabbage</span> only appeared in Russian, dreaming about <span className='highlights'>camels</span> in Arabic, dreaming about <span className='highlights'>garlic</span> in Portuguese, about <span className='highlights'>iguanas</span> in Spanish, and about <span className='highlights'>fox</span> in English.
         </p>
@@ -122,30 +125,11 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-end flex-wrap'>
           <LazyLoadImage
-            alt={'cabbage'}
-            //effect="blur"
-            src={cabbage}
-            height={100} />
-          <LazyLoadImage
             alt={'camel'}
             //effect="blur"
-            src={camel}
-            height={140} />
-          <LazyLoadImage
-            alt={'garlic'}
-            //effect="blur"
-            src={garlic}
-            height={150} />
-          <LazyLoadImage
-            alt={'iguana'}
-            //effect="blur"
-            src={iguana}
-            height={100} />
-          <LazyLoadImage
-            alt={'fox'}
-            //effect="blur"
-            src={fox}
-            height={140} />
+            src={collagefox}
+            height={180} />
+
         </div>
         <h2 className='mv3'>Unique subjects</h2>
       </div>
@@ -164,11 +148,6 @@ const Content1 = ({ history, activeIndex }) => {
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-end'>
-          <LazyLoadImage
-            alt={'earthquake'}
-            //effect="blur"
-            src={earthquake}
-            height={140} />
           <LazyLoadImage
             alt={'luggage'}
             //effect="blur"
