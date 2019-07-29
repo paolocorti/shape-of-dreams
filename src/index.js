@@ -27,7 +27,9 @@ class App extends React.Component {
       menuOpen: false,
       toggleMenu: this.toggleMenu,
       legendOpen: legendOpen,
-      toggleLegend: this.toggleLegend
+      toggleLegend: this.toggleLegend,
+      aboutOpen: false,
+      toggleAbout: this.toggleAbout,
     };
   }
 
@@ -64,6 +66,13 @@ class App extends React.Component {
   toggleLegend = () => {
     this.setState({
       legendOpen: !this.state.legendOpen
+    });
+  };
+
+  toggleAbout = () => {
+    console.log(this.state.aboutOpen)
+    this.setState({
+      aboutOpen: !this.state.aboutOpen
     });
   };
 

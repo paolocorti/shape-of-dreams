@@ -59,7 +59,7 @@ const Content4 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'dna'}
             src={collagedog}
-            height={200} />
+            height={170} />
         </div>
         {/* <h2 className='mv3'>Peaks over the year</h2> */}
       </div>
@@ -91,7 +91,7 @@ const Content4 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'elephant'}
             src={collageelephant}
-            height={200} />
+            height={170} />
         </div>
         {/* <h2 className='mv3'>Peaks over the year</h2> */}
       </div>

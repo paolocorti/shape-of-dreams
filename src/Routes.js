@@ -14,6 +14,7 @@ import NavigationFooter from './components/NavigationFooter';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Menu from './components/Menu';
 import Legend from './components/Legend';
+import About from './components/About';
 import { isMobile } from 'react-device-detect';
 
 const Routes = ({ location }) => {
@@ -27,6 +28,8 @@ const Routes = ({ location }) => {
       {pathname !== '/' && <Menu />}
 
       {pathname !== '/' && <Legend />}
+
+      {pathname !== '/' && <About />}
 
       <Route exact path='/' component={Landing} />
 

@@ -1,0 +1,42 @@
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: #2d2e7d;
+  color: white; 
+  padding: 120px 0px;
+  position: absolute;
+  z-index: 100;
+
+  &.open {
+    transition: 0.5s transform;
+    z-index: 1000;
+    transform: translate(0%, 0%);
+    pointer-events: auto;
+  }
+  
+  &.close {
+    transition: 0.5s transform;
+    z-index: 1000;
+    transform: translate(100%, 0%);
+    pointer-events: auto;
+  }
+
+  & .about-wrapper {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  & .close-about {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  // .close-about {
+  //   bottom: 50%;
+  //   margin-left: -90px;
+  //   margin-bottom: -30px;
+  // }
+}

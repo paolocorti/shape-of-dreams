@@ -132,7 +132,7 @@ const Menu = ({ history }) => {
 
         <div
           className='flex items-center ph4 mv4 mv0-ns'
-          onClick={() => goTo('/about')}
+          onClick={() => context.toggleAbout()}
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
