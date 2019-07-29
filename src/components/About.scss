@@ -33,10 +33,22 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  // .close-about {
-  //   bottom: 50%;
-  //   margin-left: -90px;
-  //   margin-bottom: -30px;
-  // }
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 0px;
+
+    & .about-wrapper {
+      padding: 30px 20px;
+      margin: auto;
+      overflow-y: scroll;
+      height: inherit;
+      max-width: 100%;
+    }
+
+    & .close-about {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
 }
