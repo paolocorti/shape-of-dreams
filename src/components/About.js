@@ -13,7 +13,7 @@ const About = ({ history }) => {
 
   return (
     <div
-      className={`about ${context.aboutOpen ? 'open' : 'close'} fixed `}
+      className={`about ${context.aboutOpen ? 'open' : 'close'} `}
     >
       <div className='about-wrapper'>
         <h3 className='tl fw7 mv0 white' style={{ fontSize: isMobile ? '32px' : '50px' }}>
