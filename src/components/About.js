@@ -23,7 +23,7 @@ const About = ({ history }) => {
           Concept, analysis, design and illustrations
           </div>
         <div className='tl fw7' style={{ fontSize: isMobile ? '22px' : '36px' }}>
-          <a className='white link-white' href="https://twitter.com/fedfragapane" target="_blank">Federica Fragapane</a>
+          <a className='white' href="https://twitter.com/fedfragapane" target="_blank">Federica Fragapane</a>
         </div>
         <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '36px' }}>
           Development
