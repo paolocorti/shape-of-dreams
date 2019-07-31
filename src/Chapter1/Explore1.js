@@ -158,7 +158,7 @@ const Explore1 = ({ history, activeIndex }) => {
             <img className='pointer svg-hover' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
-        <div className='w-100 ph4 ios-fix' style={{ height: '125px' }}>
+        <div className='w-100 ph4 ios-fix' style={{ height: isMobile ? '125px' : '100px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
 
           <LanguageSelector
@@ -176,13 +176,13 @@ const Explore1 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
+          <h1 className={`tc fw7 ${isMobile ? 'mt4' : 'mt5'}`} style={{ fontSize: isMobile ? '20px' : '23px' }}>
             Looking for dreams
           </h1>
         </div>
         <div
           className={`w-100 tc pt1 ${isIOS ? 'ios-fix' : ''}`}
-          style={{ height: 'calc(100% - 125px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+          style={{ height: isMobile ? 'calc(100% - 125px)' : 'calc(100% - 100px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
         >
           {
             isMobile ? (
@@ -303,13 +303,13 @@ const Explore1 = ({ history, activeIndex }) => {
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 0 && selectedIndex > 0 && (
                     <div className='left-tap pointer' onClick={() => onTapLeft()}>
                       {/* <div className='icon-circle'></div> */}
-                      <img className='icon-circle-arrow' src={arrowLeft} alt='Tap icon' width={10} />
+                      <img className='icon-circle-arrow' src={arrowLeft} alt='Tap icon' width={isMobile ? 10 : 15} />
                     </div>
                   )}
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 3 && (
                     <div className='right-tap pointer' onClick={() => onTapRight()}>
                       {/* <div className='icon-circle'></div> */}
-                      <img className='icon-circle-arrow' src={arrowRight} alt='Tap icon' width={10} />
+                      <img className='icon-circle-arrow' src={arrowRight} alt='Tap icon' width={isMobile ? 10 : 15} />
                     </div>
                   )}
                 </div>

@@ -16,30 +16,30 @@ const About = ({ history }) => {
       className={`about ${context.aboutOpen ? 'open' : 'close'} `}
     >
       <div className='about-wrapper'>
-        <h3 className='tl fw7 mv0 white' style={{ fontSize: isMobile ? '32px' : '50px' }}>
+        <h3 className='tl fw1 mv0 white' style={{ fontSize: isMobile ? '32px' : '48px' }}>
           Team
           </h3>
-        <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '36px' }}>
+        <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '28px' }}>
           Concept, analysis, design and illustrations
           </div>
-        <div className='tl fw7' style={{ fontSize: isMobile ? '22px' : '36px' }}>
+        <div className='tl fw7' style={{ fontSize: isMobile ? '22px' : '28px' }}>
           <a className='white' href="https://twitter.com/fedfragapane" target="_blank">Federica Fragapane</a>
         </div>
-        <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '36px' }}>
+        <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '28px' }}>
           Development
           </div>
-        <div className='tl fw7' style={{ fontSize: isMobile ? '22px' : '36px' }}>
+        <div className='tl fw7' style={{ fontSize: isMobile ? '22px' : '28px' }}>
           <a className='white' href="http://bowler-lab.com" target="_blank">Paolo Corti</a>
         </div>
-        <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '36px' }}>
+        <div className='tl mt3 white' style={{ fontSize: isMobile ? '22px' : '28px' }}>
           Google Trends
           </div>
-        <div className='tl fw7 white' style={{ fontSize: isMobile ? '22px' : '36px' }}>
+        <div className='tl fw7 white' style={{ fontSize: isMobile ? '22px' : '28px' }}>
           <a className='white' href="https://twitter.com/smfrogers" target="_blank">Simon Rogers</a>&nbsp;&&nbsp;
             <a className='white' href="https://twitter.com/albertocairo" target="_blank">Alberto Cairo</a>
         </div>
         <div className='tl mv4'>
-          <h3 className='tl fw7 mv0 white' style={{ fontSize: isMobile ? '32px' : '50px' }}>
+          <h3 className='tl fw1 mv0 white' style={{ fontSize: isMobile ? '32px' : '48px' }}>
             About
             </h3>
           <p className='white' style={{ fontSize: isMobile ? '18px' : '24px' }}>

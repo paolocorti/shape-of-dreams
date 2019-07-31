@@ -82,17 +82,19 @@ const Explore2 = ({ history, activeIndex }) => {
   const [clicked, setClicked] = useState(null);
 
   const selectedCallback = index => {
-    const selection = index === hovered ? '' : index;
+    const selection = index === hovered ? null : index;
     setHovered(selection);
   };
 
   const selectedClickedCallback = index => {
-    const selection = index === clicked ? '' : index;
+    const selection = index === clicked ? null : index;
     setClicked(selection);
   }
 
-  const selectedPetal = clicked ? clicked : hovered;
+  const selectedPetal = clicked !== null ? clicked : hovered;
   const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : [];
+
+  console.log(selectedPetal)
 
 
   return (

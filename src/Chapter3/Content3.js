@@ -65,6 +65,7 @@ const Content3 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
+        <h2 className='mv5'>Increasing interest</h2>
         <LazyLoadImage
           alt={'Chapter 3 third paragraph'}
 
@@ -78,6 +79,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         </p>
       </div>
       <div className='w-100 tc mt5'>
+        <h2 className='mv5'>Meaningful peaks</h2>
         <LazyLoadImage
           alt={'Chapter 3 fourth paragraph'}
 

@@ -61,7 +61,7 @@ const Content4 = ({ history, activeIndex }) => {
             src={collagedog}
             height={170} />
         </div>
-        {/* <h2 className='mv3'>Peaks over the year</h2> */}
+        <h2 className='mt3 mb0'>Connecting dreams</h2>
       </div>
       <div className='w-100 tc mt5'>
         <LazyLoadImage
@@ -76,6 +76,7 @@ const Content4 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
+        <h2 className='mv5'>Dreaming about crying</h2>
         <LazyLoadImage
           alt={'Chapter 4 third paragraph'}
 
@@ -93,7 +94,7 @@ const Content4 = ({ history, activeIndex }) => {
             src={collageelephant}
             height={170} />
         </div>
-        {/* <h2 className='mv3'>Peaks over the year</h2> */}
+        <h2 className='mt3 mb0'>Unique connections</h2>
       </div>
       <div className='w-100 tc mt5'>
         <LazyLoadImage

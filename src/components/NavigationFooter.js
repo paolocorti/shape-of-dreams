@@ -67,9 +67,9 @@ const NavigationFooter = ({ history }) => {
           <img
             src={legend}
             alt='Legend icon'
-            width={24}
+            width={26}
             onClick={() => context.toggleLegend()}
-            className='pointer'
+            className='pointer svg-hover'
           />
           {
             !isMobile && (

@@ -55,7 +55,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl raleway'
+            className='white tl'
             style={{ fontSize: isMobile ? '14px' : '22px' }}
           >
             CHAPTER 1
@@ -75,7 +75,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl raleway'
+            className='white tl'
             style={{ fontSize: isMobile ? '14px' : '22px' }}
           >
             CHAPTER 2
@@ -95,7 +95,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl raleway'
+            className='white tl'
             style={{ fontSize: isMobile ? '14px' : '22px' }}
           >
             CHAPTER 3
@@ -115,7 +115,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl raleway'
+            className='white tl'
             style={{ fontSize: isMobile ? '14px' : '22px' }}
           >
             CHAPTER 4

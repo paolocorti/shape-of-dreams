@@ -38,7 +38,12 @@ const Legend = ({ history, location }) => {
         <img
           alt='Close menu icon'
           src={gotIt}
-          width={isMobile ? 140 : 180} />
+          width={isMobile ? 140 : 180}
+          style={{
+            boxShadow: '3px 4px 12px 1px #65628e',
+            borderRadius: '14px'
+          }}
+        />
       </div>
       <img
         alt='Legend'

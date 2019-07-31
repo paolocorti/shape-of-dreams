@@ -5,7 +5,7 @@ const BluePetalEmpty = ({ id, value, selectedPetal }) => {
     <g
       className={`bluepetal blupetal-${id}`}
       style={{
-        opacity: selectedPetal !== null ? (selectedPetal === id ? 1 : 0.5) : 1,
+        opacity: selectedPetal !== null ? (selectedPetal === id ? 0.7 : 0.5) : 0.7,
       }}
     >
       <g id={`bluepetal-${id}`}>

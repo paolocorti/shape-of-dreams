@@ -37,7 +37,7 @@ const BluePetalsEmpty = ({
   selectedPetal,
   setSelectedPetal
 }) => {
-  const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.5;
+  const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.4;
   const dimensionScale = scaleLinear().domain([0, 24]).range([0, 100])
 
   return (

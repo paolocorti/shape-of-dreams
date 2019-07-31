@@ -84,7 +84,7 @@ const Content1 = ({ history, activeIndex }) => {
           //effect="blur"
           src={snake}
           height={130} />
-        <h2 className='mv3'>Dreaming about snakes</h2>
+        <h2 className='mv3 mb5'>Dreaming about snakes</h2>
       </div>
       <div className='w-100 tc mt4'>
         <LazyLoadImage
@@ -99,7 +99,7 @@ const Content1 = ({ history, activeIndex }) => {
           //effect="blur"
           src={teeth}
           height={160} />
-        <h2 className='mv3'>Dreaming about falling teeth</h2>
+        <h2 className='mv3 mb5'>Dreaming about falling teeth</h2>
       </div>
       <div className='w-100 tc mt4'>
         <LazyLoadImage
@@ -131,7 +131,7 @@ const Content1 = ({ history, activeIndex }) => {
             height={180} />
 
         </div>
-        <h2 className='mv3'>Unique subjects</h2>
+        <h2 className='mv3 mb5'>Unique subjects</h2>
       </div>
       <div className='w-100 tc mt4'>
         <LazyLoadImage
@@ -154,7 +154,7 @@ const Content1 = ({ history, activeIndex }) => {
             src={luggage}
             height={140} />
         </div>
-        <h2 className='mv3'>Peaks over the year</h2>
+        <h2 className='mv3 mb5'>Peaks over the year</h2>
       </div>
 
       <div className='w-100 tc mt4'>

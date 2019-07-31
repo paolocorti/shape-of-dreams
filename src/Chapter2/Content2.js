@@ -54,6 +54,7 @@ const Content2 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
+        <h2 className='mv5'>Animals, family and relationships</h2>
         <LazyLoadImage
           alt={'Chapter 2 second paragraph'}
 
@@ -62,9 +63,10 @@ const Content2 = ({ history, activeIndex }) => {
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          Also exploring the less prominent categories is interesting: we discovered that over the years the language with more <span className='highlights'>Emotions</span> related subjects is Japanese and we noticed a <span className='highlights'>Food</span> peak in Russian in 2012.        </p>
+          Also exploring the other categories is interesting: we discovered that over the years the language with more <span className='highlights'>Emotions</span> related subjects is Japanese and we noticed a <span className='highlights'>Food</span> peak in Russian in 2012.        </p>
       </div>
       <div className='w-100 tc mt5'>
+        <h2 className='mv5'>Dreaming about emotions and food</h2>
         <LazyLoadImage
           alt={'Chapter 2 third paragraph'}
 

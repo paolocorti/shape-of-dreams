@@ -103,6 +103,10 @@ html, body, #root {
   transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 
+.page h2 {
+  font-size: 29px;
+}
+
 @media only screen and (min-width: 768px) {
   .read {
     max-width: 75%;
@@ -232,7 +236,7 @@ h4 {
 .menu {
   height: 100%;
   overflow: hidden;
-  background-color: #43449a;
+  background-color: #2d2e7d;
   transform: translate(-100%, 0%);
   pointer-events: none;
   transition: 0.5s transform;
@@ -256,7 +260,7 @@ h4 {
   transition: 0.5s transform;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(67, 68, 154, 0.95);
+  background-color: #2d2e7d;
   transform: translate(100%, 0%);
   pointer-events: none;
 }

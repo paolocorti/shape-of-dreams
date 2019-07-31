@@ -50,9 +50,18 @@ const Landing = ({ history }) => {
           <h3 className='tc fw7 mt0 author'>
             FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWS LAB
           </h3>
-          <h1 className='tc fw7 mt2 title'>
-            The Shape of Dreams
-          </h1>
+          {
+            isMobile ?
+              (
+                <h1 className='tc fw7 mt2 title'>
+                  The Shape <br></br> of Dreams
+              </h1>
+              ) : (
+                <h1 className='tc fw7 mt2 title'>
+                  The Shape of Dreams
+              </h1>
+              )
+          }
           <div className='ph4 tc subtitle'>
             A visual exploration of Google searches for the interpretation of
             dreams
@@ -72,7 +81,7 @@ const Landing = ({ history }) => {
         </div>
 
       </div>
-    </Suspense>
+    </Suspense >
   );
 };
 
