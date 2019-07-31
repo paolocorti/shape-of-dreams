@@ -79,7 +79,6 @@ const Landing = ({ history }) => {
             <div className='tc fw3 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
           </div>
         </div>
-
       </div>
     </Suspense >
   );
