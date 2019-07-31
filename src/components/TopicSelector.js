@@ -13,7 +13,7 @@ const styles = {
 
 const TopicSelector = ({ topics, onSwipe, selectedIndex }) => {
   return (
-    <div className='topicSelector relative mt3'>
+    <div className='topicSelector relative mt3' style={{ width: isMobile ? '70%' : '100%' }}>
       <KeyboardEventHandler
         handleKeys={['all']}
         onKeyEvent={(key, e) => {
@@ -45,6 +45,7 @@ const TopicSelector = ({ topics, onSwipe, selectedIndex }) => {
                       className='topicSelectorEl'
                       key={index}
                       style={{ borderRadius: '15px' }}
+                      style={{ width: '70%' }}
                     >
                       {topic}
                     </div>

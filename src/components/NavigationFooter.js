@@ -37,7 +37,7 @@ const NavigationFooter = ({ history }) => {
           width={35}
         />
       </div> */}
-      <div className="flex w-100" style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}>
+      <div className="flex w-100 items-center" style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}>
         <div className='w-10 flex justify-center items-center h-100 pointer'>
           <img
             src={menu}

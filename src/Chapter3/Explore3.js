@@ -129,7 +129,7 @@ const Explore3 = ({ history, activeIndex }) => {
           {
             isMobile ?
               (
-                <div className='relative flex justify-center' style={{ width: '340px' }}>
+                <div className='relative flex justify-center' style={{ width: '100%' }}>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
                   <img src={swipeHand} style={{ height: 25, top: 26, right: -4, position: 'absolute' }} />
                 </div>
