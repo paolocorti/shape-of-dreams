@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.b5444b27.chunk.css",
-  "main.js": "/static/js/main.972b8adb.chunk.js",
-  "main.js.map": "/static/js/main.972b8adb.chunk.js.map",
+  "main.css": "/static/css/main.0969896e.chunk.css",
+  "main.js": "/static/js/main.4d54b099.chunk.js",
+  "main.js.map": "/static/js/main.4d54b099.chunk.js.map",
   "static/css/1.6e3bd095.chunk.css": "/static/css/1.6e3bd095.chunk.css",
   "static/js/1.76827bcf.chunk.js": "/static/js/1.76827bcf.chunk.js",
   "static/js/1.76827bcf.chunk.js.map": "/static/js/1.76827bcf.chunk.js.map",
@@ -63,8 +63,8 @@
   "static/media/cap3-01-mob.jpg": "/static/media/cap3-01-mob.77a03c9e.jpg",
   "static/media/cap3-02-mob.jpg": "/static/media/cap3-02-mob.e53fb58b.jpg",
   "static/media/cap3-03-mob.jpg": "/static/media/cap3-03-mob.b8635506.jpg",
-  "static/media/cap3-leg-desk.png": "/static/media/cap3-leg-desk.5374d00d.png",
-  "static/media/cap3-leg-mob.png": "/static/media/cap3-leg-mob.3d544629.png",
+  "static/media/cap3-leg-desk.png": "/static/media/cap3-leg-desk.15686bdf.png",
+  "static/media/cap3-leg-mob.png": "/static/media/cap3-leg-mob.ecfed8e0.png",
   "static/media/arrow-up.svg": "/static/media/arrow-up.59eb99e2.svg",
   "static/media/arrow-down.svg": "/static/media/arrow-down.b2d5fd8e.svg",
   "static/media/swipe-hand.svg": "/static/media/swipe-hand.b4c31be9.svg",
@@ -85,9 +85,9 @@
   "static/media/how-to-mob.png": "/static/media/how-to-mob.4ca644a0.png",
   "static/media/how-to-desk.png": "/static/media/how-to-desk.c94e6441.png",
   "static/media/got-it.svg": "/static/media/got-it.2c9ee980.svg",
-  "static/css/main.b5444b27.chunk.css.map": "/static/css/main.b5444b27.chunk.css.map",
+  "static/css/main.0969896e.chunk.css.map": "/static/css/main.0969896e.chunk.css.map",
   "static/css/1.6e3bd095.chunk.css.map": "/static/css/1.6e3bd095.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.2168a19dd3d1b412633b43f3b07f78bc.js": "/precache-manifest.2168a19dd3d1b412633b43f3b07f78bc.js",
+  "precache-manifest.0c9b6894c8685da409d25537dab9152a.js": "/precache-manifest.0c9b6894c8685da409d25537dab9152a.js",
   "service-worker.js": "/service-worker.js"
 }
