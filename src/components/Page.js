@@ -34,7 +34,9 @@ const Page = ({ activeIndex, pageIndex, chapter, children, location: { state } }
     chapter5: chapter === 'chapter5'
   });
 
-  const calculatedTop = activeIndex === pageIndex ? 0 : (activeIndex < pageIndex ? '100%' : '-100%')
+  const calculatedTop = activeIndex === pageIndex ? 0 : (activeIndex < pageIndex ? '100%' : '-100%');
+
+  console.log(isIOS)
 
   return (
     <section className={cx} style={{
