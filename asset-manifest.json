@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.6ea2da16.chunk.css",
-  "main.js": "/static/js/main.3cc55ac7.chunk.js",
-  "main.js.map": "/static/js/main.3cc55ac7.chunk.js.map",
+  "main.css": "/static/css/main.1e80b3aa.chunk.css",
+  "main.js": "/static/js/main.9053d6fe.chunk.js",
+  "main.js.map": "/static/js/main.9053d6fe.chunk.js.map",
   "static/css/1.6e3bd095.chunk.css": "/static/css/1.6e3bd095.chunk.css",
   "static/js/1.056cd02e.chunk.js": "/static/js/1.056cd02e.chunk.js",
   "static/js/1.056cd02e.chunk.js.map": "/static/js/1.056cd02e.chunk.js.map",
@@ -86,8 +86,8 @@
   "static/media/how-to-desk.png": "/static/media/how-to-desk.c94e6441.png",
   "static/media/got-it.svg": "/static/media/got-it.2c9ee980.svg",
   "static/css/1.6e3bd095.chunk.css.map": "/static/css/1.6e3bd095.chunk.css.map",
-  "static/css/main.6ea2da16.chunk.css.map": "/static/css/main.6ea2da16.chunk.css.map",
+  "static/css/main.1e80b3aa.chunk.css.map": "/static/css/main.1e80b3aa.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.46b3d1eb00868d561d363e70e43b6023.js": "/precache-manifest.46b3d1eb00868d561d363e70e43b6023.js",
+  "precache-manifest.e211ab2fd9846f3c276f9bda7434475c.js": "/precache-manifest.e211ab2fd9846f3c276f9bda7434475c.js",
   "service-worker.js": "/service-worker.js"
 }
