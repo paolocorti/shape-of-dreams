@@ -68,7 +68,7 @@ const Explore3 = ({ history, activeIndex }) => {
   }
 
   return (
-    <div className='explore3' style={{ paddingTop: isMobile ? 0 : 60 }}>
+    <div className='explore3' style={{ paddingTop: isMobile ? 0 : 20 }}>
       {
         !isMobile && (
           <NavigationBar history={history} activeIndex={activeIndex} />
