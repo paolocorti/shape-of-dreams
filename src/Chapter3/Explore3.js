@@ -125,7 +125,9 @@ const Explore3 = ({ history, activeIndex }) => {
           className={`w-100 ph4 flex flex-column justify-center items-center ${isIOS ? 'ios-fix' : ''}`}
           style={{ height: '125px' }}
         >
-          {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
+          <h1 className='tc fw7 mt3' style={{ fontSize: isMobile ? '20px' : '23px' }}>
+            Dreams meaning: interest over time
+          </h1>
           {
             isMobile ?
               (
@@ -146,9 +148,6 @@ const Explore3 = ({ history, activeIndex }) => {
                 </div>
               )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
-            Dreams’ subjects: interest over time
-          </h1>
         </div>
         <div
           className='w-100 flex flex-column relative tc ios-fix'

@@ -7,7 +7,7 @@ import './Selector.scss';
 const styles = {
   slideContainer: {
     height: 50,
-    width: 260
+    width: '100%'
   }
 };
 
@@ -45,7 +45,7 @@ const TopicSelector = ({ topics, onSwipe, selectedIndex }) => {
                       className='topicSelectorEl'
                       key={index}
                       style={{ borderRadius: '15px' }}
-                      style={{ width: '70%' }}
+                      style={{ width: '100%' }}
                     >
                       {topic}
                     </div>
