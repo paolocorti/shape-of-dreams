@@ -9,6 +9,7 @@ import {
   FacebookIcon,
   TwitterIcon,
 } from 'react-share';
+import './Menu.scss';
 
 const Menu = ({ history }) => {
   const context = useContext(AppContext);
@@ -55,8 +56,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl'
-            style={{ fontSize: isMobile ? '14px' : '22px' }}
+            className='white tl menu-title'
           >
             CHAPTER 1
           </div>
@@ -75,8 +75,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl'
-            style={{ fontSize: isMobile ? '14px' : '22px' }}
+            className='white tl menu-title'
           >
             CHAPTER 2
           </div>
@@ -95,8 +94,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl'
-            style={{ fontSize: isMobile ? '14px' : '22px' }}
+            className='white tl menu-title'
           >
             CHAPTER 3
           </div>
@@ -115,8 +113,7 @@ const Menu = ({ history }) => {
           style={{ marginBottom: isMobile ? 0 : '30px' }}
         >
           <div
-            className='white tl'
-            style={{ fontSize: isMobile ? '14px' : '22px' }}
+            className='white tl menu-title'
           >
             CHAPTER 4
           </div>

@@ -21,6 +21,7 @@ class YearSelector extends React.Component {
   };
 
   render() {
+    console.log('YearSelector')
     const { years, selected, onSelect } = this.props
     return (
       <div className="yearsSelectorScrollContainer" ref={this.paneDidMount}>
