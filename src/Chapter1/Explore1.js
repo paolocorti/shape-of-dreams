@@ -179,6 +179,7 @@ const Explore1 = ({ history, activeIndex }) => {
           <h1 className={`tc fw7 ${isMobile ? 'mt4' : 'mt5'}`} style={{ fontSize: isMobile ? '20px' : '23px' }}>
             Looking for dreams
           </h1>
+          <p>{isMobile ? 'isMobile' : 'notMobile'}</p>
         </div>
         <div
           className={`w-100 tc pt1 ${isIOS ? 'ios-fix' : ''}`}
