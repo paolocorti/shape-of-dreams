@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
@@ -18,8 +18,8 @@ const y = d => {
   return d.value
 };
 
-const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote }) => {
-
+const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote, id }) => {
+  const [show, setShow] = useState(0);
   useEffect(() => {
     let peak = data[0].hasPeak || false
     let peakData = data.find(d => d.peak)
@@ -30,6 +30,13 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
       deactivateNote()
     }
   }, [data])
+
+  useEffect(() => {
+    setShow(0)
+    setTimeout(() => {
+      setShow(1)
+    }, 1000)
+  }, [id])
 
   const svgWidth = isMobile ? window.innerWidth * 0.8 : window.innerWidth * 0.75;
   const svgHeight = isMobile ? window.innerWidth * 0.6 : window.innerHeight * 0.5;
@@ -120,7 +127,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                         stroke={'#8d4538'}
                         strokeWidth={0.5}
                         strokeDasharray='4 2'
-
                       />
                     );
                   }}
@@ -169,21 +175,21 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
         </g>
         <g transform={`translate(16, 10)`}>
           <Animate
+            show={show}
             start={() => ({
-              j: 5000
+              j: 9000
             })}
             enter={() => ({
               j: [0],
-              timing: { duration: 800, ease: easeQuadOut }
+              timing: { duration: 2000, delay: 0, ease: easeQuadOut }
             })}
             update={() => ({
               j: [0],
-              timing: { duration: 800, ease: easeQuadOut }
+              timing: { duration: 2000, ease: easeQuadOut }
             })}
-
             leave={() => ({
-              j: [5000],
-              timing: { duration: 800, ease: easeQuadOut }
+              j: [9000],
+              timing: { duration: 0, ease: easeQuadOut }
             })}
           >
             {state => {
@@ -196,6 +202,8 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   stroke={'#b36762'}
                   strokeWidth={isMobile ? 0.5 : 1}
                   curve={curveMonotoneX}
+                  strokeDasharray={9000}
+                  strokeDashoffset={j}
                 />
               );
             }}

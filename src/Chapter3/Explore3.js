@@ -163,6 +163,7 @@ const Explore3 = ({ history, activeIndex }) => {
               noteActive={note}
               activateNote={activateNote}
               deactivateNote={deactivateNote}
+              id={selectedIndex}
             />
           </div>
           <div

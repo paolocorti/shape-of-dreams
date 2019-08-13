@@ -55,6 +55,13 @@
   background-color: #43449a;
   border-radius: 100%;
   position: relative;
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.yearCircle:hover {
+  opacity: 0.5;
+  transition: 0.5s opacity;
 }
 
 .yearTouchArea {

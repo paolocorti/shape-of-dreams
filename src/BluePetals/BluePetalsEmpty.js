@@ -86,7 +86,7 @@ const BluePetalsEmpty = ({
           <BluePetalEmpty id={9} key={9} selectedPetal={selectedPetal} />
           <BluePetalEmpty id={10} key={10} selectedPetal={selectedPetal} />
           <BluePetalEmpty id={11} key={11} selectedPetal={selectedPetal} />
-          <circle r={6} fill={'#607dbd'} cx={1} cy={21} />
+          <circle r={6} fill={'#556c93'} cx={1} cy={21} />
         </g>
       </svg>
     </div>

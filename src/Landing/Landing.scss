@@ -28,7 +28,7 @@
   & .call-to-action {
     font-family: 'Raleway';
     color: white;
-    font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (1600 - 300)));
   }
 
   & .lighter-weight {
@@ -43,7 +43,7 @@
     height: 60%;
     max-width: 75%;
     position: absolute;
-    top: 0;
+    top: -50px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -182,7 +182,7 @@ $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translate(0px, 65px);
   }
   100% {
-    transform: translate(0px, -300px);
+    transform: translate(0px, -400px);
   }
 }
 

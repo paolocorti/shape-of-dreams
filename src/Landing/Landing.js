@@ -53,16 +53,16 @@ const Landing = ({ history }) => {
           {
             isMobile ?
               (
-                <h1 className='tc fw7 mt2 title'>
+                <h1 className='tc fw5 mt2 mb2 title'>
                   The Shape <br></br> of Dreams
               </h1>
               ) : (
-                <h1 className='tc fw7 mt2 title'>
+                <h1 className='tc fw5 mt2 mb2 title'>
                   The Shape of Dreams
               </h1>
               )
           }
-          <div className='ph4 tc subtitle'>
+          <div className='ph4 tc mt4 subtitle'>
             A visual exploration of Google searches for the interpretation of
             dreams
           </div>
@@ -76,7 +76,7 @@ const Landing = ({ history }) => {
                 className={`${fadeOut ? 'fadeOut' : ''}`}
               />
             </div>
-            <div className='tc fw3 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
+            <div className='tc fw5 mt4 call-to-action'>CLICK ON THE FLOWER TO START EXPLORING</div>
           </div>
         </div>
       </div>

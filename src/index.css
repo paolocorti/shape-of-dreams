@@ -491,7 +491,7 @@ h4 {
   }
 }
 
-.link, .link-white, .link2 {
+.link, .link-white, .link2, .link-lang {
   position: relative;
   cursor: pointer;
 }
@@ -500,7 +500,7 @@ h4 {
   transition: 0.5s opacity;
 }
 
-.link:hover:after, .link.active:after, .link2:hover:after {
+.link:hover:after, .link.active:after, .link2:hover:after, .link-lang:hover:after {
   opacity: 1;
   transition: 0.5s opacity;
 }
@@ -519,6 +519,18 @@ h4 {
   margin-left: 0px;
   left: 0;
   top: 20px;
+  opacity: 0;
+}
+
+.link-lang:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #43449a;
+  width: 58px;
+  margin-left: 0px;
+  left: 20px;
+  top: 18px;
   opacity: 0;
 }
 
@@ -611,6 +623,13 @@ h4 {
   right: 0;
   margin: auto;
   z-index: 1;
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.icon-circle-arrow:hover {
+  opacity: 0.5;
+  transition: 0.5s opacity;
 }
 
 @keyframes icon-anim {
