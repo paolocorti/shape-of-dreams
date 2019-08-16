@@ -1,10 +1,10 @@
 {
-  "main.css": "/static/css/main.337c2e15.chunk.css",
-  "main.js": "/static/js/main.f87abb65.chunk.js",
-  "main.js.map": "/static/js/main.f87abb65.chunk.js.map",
+  "main.css": "/static/css/main.3d49e476.chunk.css",
+  "main.js": "/static/js/main.7c46f557.chunk.js",
+  "main.js.map": "/static/js/main.7c46f557.chunk.js.map",
   "static/css/1.b79fb9e6.chunk.css": "/static/css/1.b79fb9e6.chunk.css",
-  "static/js/1.869ecf15.chunk.js": "/static/js/1.869ecf15.chunk.js",
-  "static/js/1.869ecf15.chunk.js.map": "/static/js/1.869ecf15.chunk.js.map",
+  "static/js/1.337f8078.chunk.js": "/static/js/1.337f8078.chunk.js",
+  "static/js/1.337f8078.chunk.js.map": "/static/js/1.337f8078.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/cap2-01-mob.jpg": "/static/media/cap2-01-mob.f234919d.jpg",
@@ -85,9 +85,9 @@
   "static/media/how-to-mob.png": "/static/media/how-to-mob.4ca644a0.png",
   "static/media/how-to-desk.png": "/static/media/how-to-desk.c94e6441.png",
   "static/media/got-it.svg": "/static/media/got-it.2c9ee980.svg",
+  "static/css/main.3d49e476.chunk.css.map": "/static/css/main.3d49e476.chunk.css.map",
   "static/css/1.b79fb9e6.chunk.css.map": "/static/css/1.b79fb9e6.chunk.css.map",
-  "static/css/main.337c2e15.chunk.css.map": "/static/css/main.337c2e15.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.76ef9a5a44098ca0fe113ebd07a6f525.js": "/precache-manifest.76ef9a5a44098ca0fe113ebd07a6f525.js",
+  "precache-manifest.5d4184f3d617d872e88feccb109cce7e.js": "/precache-manifest.5d4184f3d617d872e88feccb109cce7e.js",
   "service-worker.js": "/service-worker.js"
 }
