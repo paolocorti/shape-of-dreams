@@ -1,5 +1,6 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import './Selector.scss';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 
@@ -63,7 +64,7 @@ class YearSelector extends React.Component {
           })}
           <div
             className='yearEl-selected'
-            style={{ left: isMobile ? `${selected * 25 + 2}px` : '2px', top: isMobile ? '2px' : `${selected * 35 + 7}px` }}
+            style={{ left: isMobileWithTablet ? `${selected * 25 + 2}px` : '2px', top: isMobileWithTablet ? '2px' : `${selected * 35 + 7}px` }}
           />
         </div>
       </div>

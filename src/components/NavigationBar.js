@@ -1,5 +1,4 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
 import prev from './images/prev.svg';
 import next from './images/next.svg';
 import change1 from './images/change1.svg';

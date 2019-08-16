@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import './Header.scss';
 import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 
 
 const Header = ({ location }) => {
@@ -12,8 +13,8 @@ const Header = ({ location }) => {
   return (
     <div
       id='header'
-      className={isMobile ? 'ph4' : ''}
-      style={{ flex: 1, backgroundColor: isMobile ? (context.selectedView === 'content' ? 'white' : '') : '' }}
+      className={isMobileWithTablet ? 'ph4' : ''}
+      style={{ flex: 1, backgroundColor: isMobileWithTablet ? (context.selectedView === 'content' ? 'white' : '') : '' }}
     >
       <div
         className={`header-el ${pathname === '/chapter1' ? 'selected' : ''}`}

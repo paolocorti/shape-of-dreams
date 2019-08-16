@@ -11,6 +11,7 @@ import howtoreadMobile2 from './cap2-leg-mob.png';
 import close from '../components/images/close.svg';
 import { languages } from '../constants';
 import { isMobile, isIOS } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
 
@@ -98,9 +99,9 @@ const Explore2 = ({ history, activeIndex }) => {
 
 
   return (
-    <div className='explore2' style={{ paddingTop: isMobile ? 0 : 15 }}>
+    <div className='explore2' style={{ paddingTop: isMobileWithTablet ? 0 : 15 }}>
       {
-        !isMobile && (activeIndex === 2) &&
+        !isMobileWithTablet && (activeIndex === 2) &&
         (
           <YearsSelector
             years={years}
@@ -110,7 +111,7 @@ const Explore2 = ({ history, activeIndex }) => {
         )
       }
       {
-        !isMobile && (
+        !isMobileWithTablet && (
           <NavigationBar history={history} activeIndex={activeIndex} />
         )
       }
@@ -120,15 +121,15 @@ const Explore2 = ({ history, activeIndex }) => {
           style={{
             zIndex: howToRead ? 200 : -1,
             background: 'linear-gradient(#e5f2ef, #d0d7eb)',
-            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none',
           }}
         >
           <div
             className='how-to-read-image'
             style={{
-              backgroundImage: `url(${isMobile ? howtoreadMobile2 : howtoread2})`,
-              backgroundSize: isMobile ? 'contain' : 'cover',
+              backgroundImage: `url(${isMobileWithTablet ? howtoreadMobile2 : howtoread2})`,
+              backgroundSize: isMobileWithTablet ? 'contain' : 'cover',
             }}>
           </div>
 
@@ -144,7 +145,7 @@ const Explore2 = ({ history, activeIndex }) => {
             selected={selectedLanguageIndex}
           />
           {
-            isMobile &&
+            isMobileWithTablet &&
             (
               <YearsSelectorMobile
                 years={years}
@@ -153,17 +154,17 @@ const Explore2 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
             Dreams subjects by category
           </h1>
         </div>
         <div
           className={`flex flex-column relative tc ${isIOS ? 'ios-fix' : ''}`}
-          style={{ height: 'calc(100% - 120px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '0' : '0 auto' }}
+          style={{ height: 'calc(100% - 120px)', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '0' : '0 auto' }}
         >
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', margin: isMobile ? '10px 0' : '0 auto' }}
+            style={{ height: '70%', margin: isMobileWithTablet ? '10px 0' : '0 auto' }}
           >
             {
               selectedCategories.length ? (
@@ -188,15 +189,15 @@ const Explore2 = ({ history, activeIndex }) => {
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt0'
-            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
+            style={{ height: '30%', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '' : '45px auto' }}
           >
             <div
               className='tc raleway mt2 fw3'
-              style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
+              style={{ fontSize: isMobileWithTablet ? '11px' : '15px', lineHeight: isMobileWithTablet ? '13px' : '20px' }}
             >
 
               {
-                isMobile ?
+                isMobileWithTablet ?
                   (
                     'Select a language and a year. Tap on the circles to select the category. Petal size = n. of dreams.'
                   ) : (
@@ -215,7 +216,7 @@ const Explore2 = ({ history, activeIndex }) => {
             >
               LEGEND
             </div>
-            {!isMobile && (<div
+            {!isMobileWithTablet && (<div
               className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',

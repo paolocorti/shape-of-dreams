@@ -9,6 +9,8 @@ import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
 import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
+
 import './Trend.scss';
 
 const x = d => {
@@ -38,8 +40,8 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
     }, 1000)
   }, [id])
 
-  const svgWidth = isMobile ? window.innerWidth * 0.8 : window.innerWidth * 0.75;
-  const svgHeight = isMobile ? window.innerWidth * 0.6 : window.innerHeight * 0.5;
+  const svgWidth = isMobileWithTablet ? window.innerWidth * 0.8 : window.innerWidth * 0.75;
+  const svgHeight = isMobileWithTablet ? window.innerWidth * 0.6 : window.innerHeight * 0.5;
   const trendHeight = svgHeight - 30;
   const startDate = moment('2008-01-01');
   const endDate = moment('2018-12-01');
@@ -200,7 +202,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   x={d => scaleX(x(d))}
                   y={d => scaleY2(y(d))}
                   stroke={'#b36762'}
-                  strokeWidth={isMobile ? 0.5 : 1}
+                  strokeWidth={isMobileWithTablet ? 0.5 : 1}
                   curve={curveMonotoneX}
                   strokeDasharray={9000}
                   strokeDashoffset={j}
@@ -236,9 +238,9 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                       r={10}
                     />
                     <text
-                      dx={isMobile ? scaleX(date) + 20 : scaleX(date) - 20}
+                      dx={isMobileWithTablet ? scaleX(date) + 20 : scaleX(date) - 20}
                       dy={trendHeight - scaleY(value) + 2}
-                      textAnchor={isMobile ? 'start' : 'end'}
+                      textAnchor={isMobileWithTablet ? 'start' : 'end'}
                     >
                       {date.format('MMMM YYYY')}
                     </text>
@@ -254,7 +256,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             top={trendHeight - 10}
             left={0}
             scale={scaleX}
-            numTicks={isMobile ? 4 : 8}
+            numTicks={isMobileWithTablet ? 4 : 8}
             label='Time'
           >
             {axis => {

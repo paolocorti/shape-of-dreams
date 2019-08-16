@@ -8,10 +8,10 @@ import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import close from '../components/images/close.svg';
 import arrowLeft from '../components/images/arrow-left.svg';
 import arrowRight from '../components/images/arrow-right.svg';
-import { years } from '../constants';
+import { years, isMobileWithTablet } from '../constants';
 import howtoread1 from './cap1-leg-desk.png';
 import howtoreadMobile1 from './cap1-leg-mob.png';
-import { isMobile, isIOS } from 'react-device-detect';
+import { isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
 const Explore1 = ({ history, activeIndex }) => {
@@ -118,9 +118,9 @@ const Explore1 = ({ history, activeIndex }) => {
   }
 
   return (
-    <div className='explore1' style={{ paddingTop: isMobile ? 0 : 15 }}>
+    <div className='explore1' style={{ paddingTop: isMobileWithTablet ? 0 : 15 }}>
       {
-        !isMobile && (activeIndex === 1) &&
+        !isMobileWithTablet && (activeIndex === 1) &&
         (
           <YearsSelector
             years={years}
@@ -130,7 +130,7 @@ const Explore1 = ({ history, activeIndex }) => {
         )
       }
       {
-        !isMobile && (
+        !isMobileWithTablet && (
           <NavigationBar history={history} activeIndex={activeIndex} />
         )
       }
@@ -142,15 +142,15 @@ const Explore1 = ({ history, activeIndex }) => {
             zIndex: howToRead ? 1000 : -1,
             background: 'linear-gradient(#e1eaef, #e4f3ec)',
 
-            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none',
           }}
         >
           <div
             className='how-to-read-image'
             style={{
-              backgroundImage: `url(${isMobile ? howtoreadMobile1 : howtoread1})`,
-              backgroundSize: isMobile ? 'contain' : 'cover',
+              backgroundImage: `url(${isMobileWithTablet ? howtoreadMobile1 : howtoread1})`,
+              backgroundSize: isMobileWithTablet ? 'contain' : 'cover',
             }}>
           </div>
 
@@ -158,7 +158,7 @@ const Explore1 = ({ history, activeIndex }) => {
             <img className='pointer svg-hover' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
-        <div className='w-100 ph4 ios-fix' style={{ height: isMobile ? '125px' : '100px' }}>
+        <div className='w-100 ph4 ios-fix' style={{ height: isMobileWithTablet ? '125px' : '100px' }}>
           {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
 
           <LanguageSelector
@@ -167,7 +167,7 @@ const Explore1 = ({ history, activeIndex }) => {
             selected={selectedLanguageIndex}
           />
           {
-            isMobile &&
+            isMobileWithTablet &&
             (
               <YearsSelectorMobile
                 years={years}
@@ -176,19 +176,19 @@ const Explore1 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className={`tc fw7 ${isMobile ? 'mt4' : 'mt5'}`} style={{ fontSize: isMobile ? '20px' : '23px' }}>
+          <h1 className={`tc fw7 ${isMobileWithTablet ? 'mt4' : 'mt5'}`} style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
             Looking for dreams
           </h1>
         </div>
         <div
           className={`w-100 tc pt1 ${isIOS ? 'ios-fix' : ''}`}
-          style={{ height: isMobile ? 'calc(100% - 125px)' : 'calc(100% - 100px)', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+          style={{ height: isMobileWithTablet ? 'calc(100% - 125px)' : 'calc(100% - 100px)', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '' : '0 auto' }}
         >
           {
-            isMobile ? (
+            isMobileWithTablet ? (
               <div
                 className='flex flex-column relative justify-center'
-                style={{ height: '65%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+                style={{ height: '65%', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '' : '0 auto' }}
               >
                 {topic && topic.value ? (
                   <Petals
@@ -303,13 +303,13 @@ const Explore1 = ({ history, activeIndex }) => {
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 0 && selectedIndex > 0 && (
                     <div className='left-tap pointer' onClick={() => onTapLeft()}>
                       {/* <div className='icon-circle'></div> */}
-                      <img className='icon-circle-arrow' src={arrowLeft} alt='Tap icon' width={isMobile ? 10 : 15} />
+                      <img className='icon-circle-arrow' src={arrowLeft} alt='Tap icon' width={isMobileWithTablet ? 10 : 15} />
                     </div>
                   )}
                   {selectedTopics && selectedTopics[0] && selectedTopics[0].length > 3 && (
                     <div className='right-tap pointer' onClick={() => onTapRight()}>
                       {/* <div className='icon-circle'></div> */}
-                      <img className='icon-circle-arrow' src={arrowRight} alt='Tap icon' width={isMobile ? 10 : 15} />
+                      <img className='icon-circle-arrow' src={arrowRight} alt='Tap icon' width={isMobileWithTablet ? 10 : 15} />
                     </div>
                   )}
                 </div>
@@ -318,14 +318,14 @@ const Explore1 = ({ history, activeIndex }) => {
 
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '35%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+            style={{ height: '35%', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '' : '0 auto' }}
           >
             <div
               className='tc raleway fw3'
-              style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
+              style={{ fontSize: isMobileWithTablet ? '11px' : '15px', lineHeight: isMobileWithTablet ? '13px' : '20px' }}
             >
               {
-                isMobile ?
+                isMobileWithTablet ?
                   (
                     'Select a language, a year and tap on the arrows. Number of petals = increase in search interest for a dream in comparison to the previous year.'
                   ) : (
@@ -344,7 +344,7 @@ const Explore1 = ({ history, activeIndex }) => {
             >
               LEGEND
             </div>
-            {!isMobile && (<div
+            {!isMobileWithTablet && (<div
               className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',

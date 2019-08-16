@@ -20,7 +20,7 @@ import collagecamel from './collage-camel-small.gif';
 import luggage from './luggage-small.gif';
 import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
-import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 
 const Content1 = ({ history, activeIndex }) => {
@@ -44,7 +44,7 @@ const Content1 = ({ history, activeIndex }) => {
   return (
     <div className='w-100 bg-white read'>
       {
-        !isMobile && (
+        !isMobileWithTablet && (
           <NavigationBar content={true} history={history} activeIndex={activeIndex} />
         )
       }
@@ -57,7 +57,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 first paragraph'}
           //effect="blur"
-          src={isMobile ? mobileContent1 : content1}
+          src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -70,7 +70,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 second paragraph'}
           //effect="blur"
-          src={isMobile ? mobileContent1a : content1a}
+          src={isMobileWithTablet ? mobileContent1a : content1a}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -90,7 +90,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 third paragraph'}
           //effect="blur"
-          src={isMobile ? mobileContent2 : content2}
+          src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%' />
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
@@ -105,7 +105,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 fourth paragraph'}
           //effect="blur"
-          src={isMobile ? mobileContent3 : content3}
+          src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%' />
 
       </div>
@@ -137,7 +137,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 fifth paragraph'}
           //effect="blur"
-          src={isMobile ? mobileContent4 : content4}
+          src={isMobileWithTablet ? mobileContent4 : content4}
           width='100%' />
       </div>
 
@@ -161,7 +161,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 sixth paragraph'}
           //effect="blur"
-          src={isMobile ? mobileContent5 : content5}
+          src={isMobileWithTablet ? mobileContent5 : content5}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -178,7 +178,7 @@ const Content1 = ({ history, activeIndex }) => {
           </div>
         </div>
         {/* {
-          isMobile && (
+          isMobileWithTablet && (
             <div className='flex flex-column items-center ph4 pv3'>
               <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>READ CHAPTER 2</div>
               <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter2`)} />

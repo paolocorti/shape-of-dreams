@@ -12,6 +12,7 @@ import Trend from '../Trend';
 import categories from '../data/categories.json';
 import TopicSelector from '../components/TopicSelector.js';
 import { isMobile, isIOS } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 
 const Explore3 = ({ history, activeIndex }) => {
@@ -68,14 +69,14 @@ const Explore3 = ({ history, activeIndex }) => {
   }
 
   return (
-    <div className='explore3' style={{ paddingTop: isMobile ? 0 : 20 }}>
+    <div className='explore3' style={{ paddingTop: isMobileWithTablet ? 0 : 20 }}>
       {
-        !isMobile && (
+        !isMobileWithTablet && (
           <NavigationBar history={history} activeIndex={activeIndex} />
         )
       }
       {
-        !isMobile && activeIndex === 3 && (
+        !isMobileWithTablet && activeIndex === 3 && (
           <div className='noteBox ph4' style={{ right: note ? '0px' : '-12.5%', transition: '.5s right' }}>
             {/* <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
               <img
@@ -88,7 +89,7 @@ const Explore3 = ({ history, activeIndex }) => {
           </div>
         )
       }
-      {isMobile && note && (
+      {isMobileWithTablet && note && (
         <div className='noteBox ph4'>
           <div className='noteBox-close' onClick={() => setNote('')}>
             <img
@@ -106,14 +107,14 @@ const Explore3 = ({ history, activeIndex }) => {
           style={{
             zIndex: howToRead ? 200 : -1,
             background: 'linear-gradient(#efe2e1, #ebf5f5)',
-            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none',
           }}
         >
           <div className='how-to-read-image'
             style={{
-              backgroundImage: `url(${isMobile ? howtoreadMobile3 : howtoread3})`,
-              backgroundSize: isMobile ? 'contain' : 'cover',
+              backgroundImage: `url(${isMobileWithTablet ? howtoreadMobile3 : howtoread3})`,
+              backgroundSize: isMobileWithTablet ? 'contain' : 'cover',
             }}>
           </div>
 
@@ -125,11 +126,11 @@ const Explore3 = ({ history, activeIndex }) => {
           className={`w-100 ph4 flex flex-column justify-center items-center ${isIOS ? 'ios-fix' : ''}`}
           style={{ height: '125px' }}
         >
-          <h1 className='tc fw7 mt3' style={{ fontSize: isMobile ? '20px' : '23px' }}>
+          <h1 className='tc fw7 mt3' style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
             Dreams meaning: interest over time
           </h1>
           {
-            isMobile ?
+            isMobileWithTablet ?
               (
                 <div className='relative flex justify-center' style={{ width: '100%' }}>
                   <TopicSelector topics={topics} onSwipe={setSelectedIndex} />
@@ -155,7 +156,7 @@ const Explore3 = ({ history, activeIndex }) => {
         >
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '0 auto' }}
+            style={{ height: '70%', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '' : '0 auto' }}
           >
             <Trend
               data={interestOverTime[selectedIndex]}
@@ -168,14 +169,14 @@ const Explore3 = ({ history, activeIndex }) => {
           </div>
           <div
             className='flex flex-column relative justify-start items-center ph4 mt2'
-            style={{ height: '30%', maxWidth: isMobile ? '100%' : '75%', margin: isMobile ? '' : '45px auto' }}
+            style={{ height: '30%', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '' : '45px auto' }}
           >
             <div
               className='tc raleway mt2 fw3'
-              style={{ fontSize: isMobile ? '11px' : '15px', lineHeight: isMobile ? '13px' : '20px' }}
+              style={{ fontSize: isMobileWithTablet ? '11px' : '15px', lineHeight: isMobileWithTablet ? '13px' : '20px' }}
             >
               {
-                isMobile ?
+                isMobileWithTablet ?
                   (
                     'Swipe over the box to change the dream.'
                   ) : (
@@ -195,7 +196,7 @@ const Explore3 = ({ history, activeIndex }) => {
             >
               LEGEND
             </div>
-            {!isMobile && (<div
+            {!isMobileWithTablet && (<div
               className='raleway mt3 fw7 pointer link'
               style={{
                 fontSize: '14px',

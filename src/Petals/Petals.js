@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PetalRow from './PetalRow';
-import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 
 
 const getNumberOfPetals = n => {
@@ -29,7 +29,7 @@ const languageLabel = {
 };
 
 const Petals = ({ name, language, year, value, index, nodata = false }) => {
-  const svgWidth = isMobile ? window.innerHeight * 0.4 : 220;
+  const svgWidth = isMobileWithTablet ? window.innerHeight * 0.4 : 220;
   let nOfPetals = getNumberOfPetals(value);
 
   useEffect(() => {

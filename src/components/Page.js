@@ -2,7 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import classNames from 'classnames';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
-import { isIOS, isMobile } from 'react-device-detect';
+import { isIOS } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 
 const gradients = {
   chapter1: 'linear-gradient(#e1eaef, #e4f3ec)',
@@ -40,8 +41,8 @@ const Page = ({ activeIndex, pageIndex, chapter, children, location: { state } }
 
   return (
     <section className={cx} style={{
-      position: !isMobile ? (activeIndex === pageIndex ? 'relative' : 'absolute') : 'auto',
-      top: !isMobile ? calculatedTop : 'auto',
+      position: !isMobileWithTablet ? (activeIndex === pageIndex ? 'relative' : 'absolute') : 'auto',
+      top: !isMobileWithTablet ? calculatedTop : 'auto',
       transition: '1s top',
       background: context.selectedView === 'read' ? 'white' : gradients[chapter]
     }}>

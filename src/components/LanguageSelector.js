@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import './Selector.scss';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 
@@ -31,23 +31,23 @@ const LanguageSelector = ({ languages, selected, onSelect }) => {
           }
         }}
       ></KeyboardEventHandler>
-      <div className='flex relative' style={{ width: isMobile ? '280px' : '700px', margin: isMobile ? 'inherit' : '0 auto' }}>
+      <div className='flex relative' style={{ width: isMobileWithTablet ? '280px' : '700px', margin: isMobileWithTablet ? 'inherit' : '0 auto' }}>
         {languages.map((value, index) => {
           if (value) {
             return (
               <div
                 key={index}
-                className={`langEl cursor-pointer ${isMobile ? '' : 'link-lang'}`}
+                className={`langEl cursor-pointer ${isMobileWithTablet ? '' : 'link-lang'}`}
                 onClick={() => onSelect(index)}
               >
-                {isMobile ? value : extendedLanguage[value]}
+                {isMobileWithTablet ? value : extendedLanguage[value]}
               </div>
             );
           }
         })}
         <div
           className='langEl-selected'
-          style={{ left: `${selected * (isMobile ? 40 : 100) - 1}px` }}
+          style={{ left: `${selected * (isMobileWithTablet ? 40 : 100) - 1}px` }}
         />
       </div>
     </div>

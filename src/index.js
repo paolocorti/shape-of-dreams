@@ -70,7 +70,6 @@ class App extends React.Component {
   };
 
   toggleAbout = () => {
-    console.log(this.state.aboutOpen)
     this.setState({
       aboutOpen: !this.state.aboutOpen
     });

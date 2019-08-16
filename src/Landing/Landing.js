@@ -5,6 +5,7 @@ import landingIcon from './landing-flower.svg';
 import sky from './landing-desktop.svg';
 import skyMobile from './landing-mobile.svg';
 import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 
 const Landing = ({ history }) => {
   const [fadeOut, setFadeOut] = useState(false);
@@ -32,7 +33,7 @@ const Landing = ({ history }) => {
         style={{
           position: 'absolute',
           backgroundClip: '#2a2c60',
-          backgroundImage: `url(${isMobile ? skyMobile : sky})`,
+          backgroundImage: `url(${isMobileWithTablet ? skyMobile : sky})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
         }}
@@ -51,7 +52,7 @@ const Landing = ({ history }) => {
             FEDERICA FRAGAPANE <span className='lighter-weight'>for</span> GOOGLE NEWS LAB
           </h3>
           {
-            isMobile ?
+            isMobileWithTablet ?
               (
                 <h1 className='tc fw5 mt2 mb2 title'>
                   The Shape <br></br> of Dreams

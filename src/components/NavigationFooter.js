@@ -4,7 +4,7 @@ import { AppContext } from '../appContext';
 import legend from './images/legend.svg'
 import menu from './images/menu.svg';
 import './Footer.scss';
-import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -16,7 +16,7 @@ const NavigationFooter = ({ history }) => {
   const context = useContext(AppContext);
 
   const changeSection = (section) => {
-    if (isMobile) {
+    if (isMobileWithTablet) {
       context.setSelectedView(section)
     } else {
       history.push({
@@ -37,7 +37,7 @@ const NavigationFooter = ({ history }) => {
           width={35}
         />
       </div> */}
-      <div className="flex w-100 items-center" style={{ maxWidth: isMobile ? '100%' : '75%', margin: '0 auto' }}>
+      <div className="flex w-100 items-center" style={{ maxWidth: isMobileWithTablet ? '100%' : '75%', margin: '0 auto' }}>
         <div className='w-10 flex justify-center items-center h-100 pointer'>
           <img
             src={menu}
@@ -52,7 +52,7 @@ const NavigationFooter = ({ history }) => {
           onClick={() => changeSection('read')}
         >
           <div className={`link cursor-pointer ${context.selectedView === 'read' ? 'active' : '/'}`}>
-            {isMobile ? 'READ' : 'READ THE STORY'}
+            {isMobileWithTablet ? 'READ' : 'READ THE STORY'}
           </div>
         </div>
         <div
@@ -60,7 +60,7 @@ const NavigationFooter = ({ history }) => {
           onClick={() => changeSection('explore')}
         >
           <div className={`link cursor-pointer ${context.selectedView === 'explore' ? 'active' : '/'}`}>
-            {isMobile ? 'EXPLORE' : 'EXPLORE THE DREAMS'}
+            {isMobileWithTablet ? 'EXPLORE' : 'EXPLORE THE DREAMS'}
           </div>
         </div>
         <div className='w-10 flex justify-center items-center h-100'>
@@ -72,7 +72,7 @@ const NavigationFooter = ({ history }) => {
             className='pointer svg-hover'
           />
           {
-            !isMobile && (
+            !isMobileWithTablet && (
               <React.Fragment>
                 <FacebookShareButton url={'the-shape-of-dreams.com'} className='svg-hover'>
                   <FacebookIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />

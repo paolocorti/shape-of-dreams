@@ -5,7 +5,7 @@ import { AppContext } from '../appContext';
 import legendMob from './how-to-mob.png';
 import legend from './how-to-desk.png';
 import gotIt from './images/got-it.svg'
-import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 
 const Legend = ({ history, location }) => {
   const context = useContext(AppContext);
@@ -23,7 +23,7 @@ const Legend = ({ history, location }) => {
 
   return (
     <div
-      className={`legend w-100 flex flex-column justify-around fixed top-0 bottom-0 left-0 right-0 ${
+      className={`legend ${
         context.legendOpen ? 'open' : 'close'
         }`}
       onClick={closeLegend}
@@ -38,7 +38,7 @@ const Legend = ({ history, location }) => {
         <img
           alt='Close menu icon'
           src={gotIt}
-          width={isMobile ? 140 : 180}
+          width={isMobileWithTablet ? 140 : 180}
           style={{
             boxShadow: '3px 4px 12px 1px #65628e',
             borderRadius: '14px'
@@ -47,7 +47,7 @@ const Legend = ({ history, location }) => {
       </div>
       <img
         alt='Legend'
-        src={isMobile ? legendMob : legend}
+        src={isMobileWithTablet ? legendMob : legend}
         style={{ position: 'absolute', width: '100%', top: 0 }}
       />
 

@@ -15,14 +15,16 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Menu from './components/Menu';
 import Legend from './components/Legend';
 import About from './components/About';
-import { isMobile } from 'react-device-detect';
+//import { isMobileWithTablet } from 'react-device-detect';
+import { isMobileWithTablet } from './constants';
+
 
 const Routes = ({ location }) => {
   const { pathname } = location;
   const context = useContext(AppContext);
 
   return (
-    <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobile ? 'auto' : '100%', overflow: isMobile ? 'auto' : 'hidden' }}>
+    <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobileWithTablet ? 'auto' : '100%', overflow: isMobileWithTablet ? 'auto' : 'hidden' }}>
       {pathname !== '/' && <Header />}
 
       {pathname !== '/' && <Menu />}
@@ -33,7 +35,7 @@ const Routes = ({ location }) => {
 
       <Route exact path='/' component={Landing} />
 
-      {/* {pathname !== '/' && isMobile && (
+      {/* {pathname !== '/' && isMobileWithTablet && (
         <img
           src={'/images/swipe-left.svg'}
           style={{
@@ -47,7 +49,7 @@ const Routes = ({ location }) => {
         />
       )}
 
-      {pathname !== '/' && isMobile && (
+      {pathname !== '/' && isMobileWithTablet && (
         <img
           src={'/images/swipe-right.svg'}
           style={{
@@ -61,7 +63,7 @@ const Routes = ({ location }) => {
         />
       )} */}
 
-      {pathname !== '/' && isMobile && (
+      {pathname !== '/' && isMobileWithTablet && (
         <SwipeableRoutes
           containerStyle={{
             height:
@@ -76,7 +78,7 @@ const Routes = ({ location }) => {
         </SwipeableRoutes>
       )}
       {
-        !isMobile && (
+        !isMobileWithTablet && (
           <Switch>
             <Route exact path={'/chapter1'} component={Container} />
             <Route exact path={'/chapter2'} component={Container} />

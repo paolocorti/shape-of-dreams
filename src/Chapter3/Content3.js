@@ -11,7 +11,7 @@ import mobileContent2 from './cap3-02-mob.jpg';
 import mobileContent3 from './cap3-03-mob.jpg';
 import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
-import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 
 const Content3 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
@@ -44,7 +44,7 @@ const Content3 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 3 first paragraph'}
 
-          src={isMobile ? mobileContent0 : content0}
+          src={isMobileWithTablet ? mobileContent0 : content0}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -56,7 +56,7 @@ const Content3 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 3 second paragraph'}
 
-          src={isMobile ? mobileContent1 : content1}
+          src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -69,7 +69,7 @@ const Content3 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 3 third paragraph'}
 
-          src={isMobile ? mobileContent2 : content2}
+          src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -83,7 +83,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         <LazyLoadImage
           alt={'Chapter 3 fourth paragraph'}
 
-          src={isMobile ? mobileContent3 : content3}
+          src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%' />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -100,7 +100,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
           </div>
         </div>
         {/* {
-          isMobile && (
+          isMobileWithTablet && (
             <div className='flex flex-column items-center ph4 pv3'>
               <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>READ CHAPTER 2</div>
               <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter2`)} />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
 import { isMobile, isIOS } from 'react-device-detect';
+import { isMobileWithTablet } from '../constants';
 import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
@@ -44,10 +45,10 @@ const Explore4 = ({ history, activeIndex }) => {
 
   return (
     <div className='explore4'>
-      {!isMobile && (
+      {!isMobileWithTablet && (
         <NavigationBar history={history} activeIndex={activeIndex} />
       )}
-      {!isMobile && activeIndex === 4 && (
+      {!isMobileWithTablet && activeIndex === 4 && (
         <YearsSelector
           years={years}
           onSelect={onSelectYear}
@@ -92,7 +93,7 @@ const Explore4 = ({ history, activeIndex }) => {
           style={{
             zIndex: howToRead ? 200 : -1,
             background: 'linear-gradient(#e6f1eb, #dde6ed)',
-            top: howToRead ? (isMobile ? 0 : 50) : '-100%',
+            top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none'
           }}
         >
@@ -100,9 +101,9 @@ const Explore4 = ({ history, activeIndex }) => {
             className='how-to-read-image'
             style={{
               backgroundImage: `url(${
-                isMobile ? howtoreadMobile4 : howtoread4
+                isMobileWithTablet ? howtoreadMobile4 : howtoread4
                 })`,
-              backgroundSize: isMobile ? 'contain' : 'cover',
+              backgroundSize: isMobileWithTablet ? 'contain' : 'cover',
             }}
           />
 
@@ -120,14 +121,14 @@ const Explore4 = ({ history, activeIndex }) => {
           style={{ height: '100px' }}
         >
           {/* <h4 className='tl fw6 mv0'>Chapter 3</h4> */}
-          {isMobile && (
+          {isMobileWithTablet && (
             <YearsSelectorMobile
               years={years}
               onSelect={onSelectYear}
               selected={selectedYearIndex}
             />
           )}
-          <h1 className='tc fw7 mt4' style={{ fontSize: isMobile ? '20px' : '23px' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
             Networks of dreams
           </h1>
         </div>
@@ -139,8 +140,8 @@ const Explore4 = ({ history, activeIndex }) => {
             className='flex flex-column justify-center items-center'
             style={{
               height: '75%',
-              maxWidth: isMobile ? '100%' : '75%',
-              margin: isMobile ? '' : '0 auto'
+              maxWidth: isMobileWithTablet ? '100%' : '75%',
+              margin: isMobileWithTablet ? '' : '0 auto'
             }}
           >
             {selectedYearIndex === 0 && (
@@ -181,21 +182,21 @@ const Explore4 = ({ history, activeIndex }) => {
             className='flex flex-column relative justify-start items-center ph4 mt0'
             style={{
               height: '25%',
-              maxWidth: isMobile ? '100%' : '75%',
-              margin: isMobile ? '' : '45px auto'
+              maxWidth: isMobileWithTablet ? '100%' : '75%',
+              margin: isMobileWithTablet ? '' : '45px auto'
             }}
           >
             <div
               className='tc raleway fw3'
               style={{
-                fontSize: isMobile ? '11px' : '15px',
-                lineHeight: isMobile ? '13px' : '20px',
-                maxWidth: isMobile ? '' : '600px',
+                fontSize: isMobileWithTablet ? '11px' : '15px',
+                lineHeight: isMobileWithTablet ? '13px' : '20px',
+                maxWidth: isMobileWithTablet ? '' : '600px',
               }}
             >
               {'Select a language and a year. The lines connect the languages that share the same dreams. '}
               {
-                !isMobile &&
+                !isMobileWithTablet &&
                 (
                   'Go on mouse over or click on one language to read the dreams in common with the other ones'
                 )
