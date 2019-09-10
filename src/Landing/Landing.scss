@@ -1,9 +1,7 @@
-
 .landing {
   background-image: linear-gradient(#e1eaef, #e4f3ec);
   height: 100vh;
 }
-
 
 .landing-content {
   height: 70%;
@@ -51,11 +49,10 @@
   }
 }
 
-
 .landing-icon-container {
   width: 120px;
   height: 120px;
-  border: 2px solid rgba(255,255,255,1);
+  border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -71,24 +68,24 @@
 
 @keyframes pulse-border {
   0% {
-    border-color: rgba(255,255,255,1);
+    border-color: rgba(255, 255, 255, 1);
   }
   50% {
-    border-color: rgba(255,255,255,0);
+    border-color: rgba(255, 255, 255, 0);
   }
   100% {
-    border-color: rgba(255,255,255,1);
+    border-color: rgba(255, 255, 255, 1);
   }
 }
 
 .landing-icon {
-  transform: rotate(0deg); 
+  transform: rotate(0deg);
   animation: rotation 240s infinite;
 }
 
 @keyframes rotation {
   0% {
-    transform: rotate(0deg); 
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -112,33 +109,19 @@
 $first-row-fall-time: 0.5s;
 $second-row-fall-time: 1s;
 $third-row-fall-time: 1.2s;
-$up-time: 1.5s;
+$up-time: 2s;
 $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-.landing-header {
-  position: relative;
-  transform: translate(0px, -500px);
-  animation: gravity1 $first-row-fall-time forwards;
-  transition-timing-function: $fall-ease;
-}
-
 .landing-content {
-  transform: translate(0px, -500px);
-  animation: gravity2 $second-row-fall-time forwards;
-  transition-timing-function: $fall-ease;
-}
-
-.landing-footer {
-  transform: translate(0px, -500px);
-  animation: gravity3 $third-row-fall-time forwards;
-  transition-timing-function: $fall-ease;
+  // transform: translate(0px, -500px);
+  // animation: gravity2 $second-row-fall-time forwards;
+  // transition-timing-function: $fall-ease;
 }
 
 .landing-content.up {
   animation: gravity-up $up-time forwards;
   transition-timing-function: $fall-ease;
 }
-
 
 @keyframes gravity1 {
   0% {
@@ -154,13 +137,13 @@ $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 @keyframes gravity2 {
   0% {
-    transform: translate(0px, -500px);
+    transform: translate(0px, 0px);
   }
   98% {
-    transform: translate(0px, 65px);
+    transform: translate(0px, -100px);
   }
   100% {
-    transform: translate(0px, 65px);
+    transform: translate(1000px, -100px);
   }
 }
 
@@ -172,20 +155,18 @@ $fall-ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: translate(0px, 0px);
   }
   100% {
-    transform: translate(0px, 200px);
+    transform: translate(0px, 0px);
   }
 }
 
-
 @keyframes gravity-up {
   0% {
-    transform: translate(0px, 65px);
+    transform: translate(0px, 0px);
   }
   100% {
     transform: translate(0px, -400px);
   }
 }
-
 
 .fadeOut {
   opacity: 0;

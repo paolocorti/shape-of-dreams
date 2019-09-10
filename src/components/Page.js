@@ -7,18 +7,24 @@ import { isMobileWithTablet } from '../constants';
 
 const gradients = {
   chapter1: 'linear-gradient(#e1eaef, #e4f3ec)',
-  chapter2: 'linear-gradient(#e5f2ef, #d0d7eb)',
-  chapter3: 'linear-gradient(#efe2e1, #ebf5f5)',
-  chapter4: 'linear-gradient(#e6f1eb, #dde6ed)'
-}
+  chapter2: 'linear-gradient(#e5f2ef, #d3d7ed)',
+  chapter3: 'linear-gradient(#d3d7ed, #dbe8ec)',
+  chapter4: 'linear-gradient(#dbe8ec, #efe3df)'
+};
 
-const Page = ({ activeIndex, pageIndex, chapter, children, location: { state } }) => {
+const Page = ({
+  activeIndex,
+  pageIndex,
+  chapter,
+  children,
+  location: { state }
+}) => {
   const context = useContext(AppContext);
-  const [activePage, setActivePage] = useState(false)
+  const [activePage, setActivePage] = useState(false);
   useEffect(() => {
-    const active = activeIndex === pageIndex
-    setActivePage(active)
-  }, [activeIndex])
+    const active = activeIndex === pageIndex;
+    setActivePage(active);
+  }, [activeIndex]);
 
   const actualPath = context.actualPath;
   const previousPath = context.previousPath;
@@ -35,19 +41,28 @@ const Page = ({ activeIndex, pageIndex, chapter, children, location: { state } }
     chapter5: chapter === 'chapter5'
   });
 
-  const calculatedTop = activeIndex === pageIndex ? 0 : (activeIndex < pageIndex ? '100%' : '-100%');
+  const calculatedTop =
+    activeIndex === pageIndex ? 0 : activeIndex < pageIndex ? '100%' : '-100%';
 
-  console.log(isIOS)
+  console.log(isIOS);
 
   return (
-    <section className={cx} style={{
-      position: !isMobileWithTablet ? (activeIndex === pageIndex ? 'relative' : 'absolute') : 'auto',
-      top: !isMobileWithTablet ? calculatedTop : 'auto',
-      transition: '1s top',
-      background: context.selectedView === 'read' ? 'white' : gradients[chapter]
-    }}>
+    <section
+      className={cx}
+      style={{
+        position: !isMobileWithTablet
+          ? activeIndex === pageIndex
+            ? 'relative'
+            : 'absolute'
+          : 'auto',
+        top: !isMobileWithTablet ? calculatedTop : 'auto',
+        transition: '1s top',
+        background:
+          context.selectedView === 'read' ? 'white' : gradients[chapter]
+      }}
+    >
       <div className={`page__inner ${isIOS && 'fullheight'}`}>{children}</div>
-    </section >
+    </section>
   );
 };
 

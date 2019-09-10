@@ -25,45 +25,65 @@ import NavigationBar from '../components/NavigationBar';
 
 const Content1 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
-  const [reload, setReload] = useState(true)
+  const [reload, setReload] = useState(true);
 
   useEffect(() => {
     if (activeIndex === 1) {
-      setReload(true)
+      setReload(true);
       setTimeout(() => {
-        setReload(false)
-      }, 2000)
+        setReload(false);
+      }, 2000);
     }
 
     return () => {
-      console.log('cleanup')
+      console.log('cleanup');
       //setReload(true)
-    }
-  }, [activeIndex])
+    };
+  }, [activeIndex]);
 
   return (
     <div className='w-100 bg-white read'>
-      {
-        !isMobileWithTablet && (
-          <NavigationBar content={true} history={history} activeIndex={activeIndex} />
-        )
-      }
-      <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>Chapter 1</h4>
-      <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>The Shapes of our Dreams</h1>
+      {!isMobileWithTablet && (
+        <NavigationBar
+          content={true}
+          history={history}
+          activeIndex={activeIndex}
+        />
+      )}
+      <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>
+        Chapter 1
+      </h4>
+      <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>
+        The Shapes of our Dreams
+      </h1>
       <div className='tj f4 ph4 ph5-ns mt5'>
-        <p className='lh-copy'>How do we search for the meaning of our dreams on Google? We have explored the related queries to the question <span className='highlights'>What does it mean to dream about</span> in different languages to see what are the dreams’ subjects that the users look for the most. We discovered that we share some recurring dreams.</p>
+        <p className='lh-copy'>
+          How do we search for the meaning of our dreams on Google? We have
+          explored the related queries to the question{' '}
+          <span className='highlights'>What does it mean to dream about</span>{' '}
+          in different languages to see what are the dreams’ subjects that the
+          users look for the most. We discovered that we share some recurring
+          dreams.
+        </p>
       </div>
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 first paragraph'}
           //effect="blur"
           src={isMobileWithTablet ? mobileContent1 : content1}
-          width='100%' />
+          width='100%'
+        />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          We studied the results extracted translating questions such as <span className='highlights'>What does it mean to dream about..., Why do I dream about..., Meaning of dreaming...</span> in seven languages and we’ve explored the topic over the years, from 2008 to 2018.
-          We started from the top spoken languages and we selected the ones for which we have found enough data to explore the topic.
+          We studied the results extracted translating questions such as{' '}
+          <span className='highlights'>
+            What does it mean to dream about..., Why do I dream about...,
+            Meaning of dreaming...
+          </span>{' '}
+          in seven languages and we’ve explored the topic over the years, from
+          2008 to 2018. We started from the top spoken languages and we selected
+          the ones for which we have found enough data to explore the topic.
         </p>
       </div>
       <div className='w-100 tc mt5'>
@@ -71,11 +91,15 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'Chapter 1 second paragraph'}
           //effect="blur"
           src={isMobileWithTablet ? mobileContent1a : content1a}
-          width='100%' />
+          width='100%'
+        />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          There are some subjects whose meaning people consistently look for: dreaming about <span className='highlights'>snakes</span> and <span className='highlights'>falling teeth</span> for instance: they appeared in all the explored languages from 2008 to 2018.
+          There are some subjects whose meaning people consistently look for:
+          dreaming about <span className='highlights'>snakes</span> and{' '}
+          <span className='highlights'>falling teeth</span> for instance: they
+          appeared in all the explored languages from 2008 to 2018.
         </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
@@ -83,7 +107,8 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'Dreaming about snakes'}
           //effect="blur"
           src={snake}
-          height={130} />
+          height={130}
+        />
         <h2 className='mv3 mb5'>Dreaming about snakes</h2>
       </div>
       <div className='w-100 tc mt4'>
@@ -91,14 +116,16 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'Chapter 1 third paragraph'}
           //effect="blur"
           src={isMobileWithTablet ? mobileContent2 : content2}
-          width='100%' />
+          width='100%'
+        />
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <LazyLoadImage
           alt={'teeth'}
           //effect="blur"
           src={teeth}
-          height={160} />
+          height={160}
+        />
         <h2 className='mv3 mb5'>Dreaming about falling teeth</h2>
       </div>
       <div className='w-100 tc mt4'>
@@ -106,8 +133,8 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'Chapter 1 fourth paragraph'}
           //effect="blur"
           src={isMobileWithTablet ? mobileContent3 : content3}
-          width='100%' />
-
+          width='100%'
+        />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <div className='w-100 flex justify-center items-end flex-wrap'>
@@ -115,10 +142,17 @@ const Content1 = ({ history, activeIndex }) => {
             alt={'cabbage'}
             //effect="blur"
             src={collagecamel}
-            height={180} />
+            height={180}
+          />
         </div>
         <p className='lh-copy'>
-          On the other hand, there are unique subjects that only appeared exploring specific languages: dreaming about <span className='highlights'>cabbage</span> only appeared in Russian, dreaming about <span className='highlights'>camels</span> in Arabic, dreaming about <span className='highlights'>garlic</span> in Portuguese, about <span className='highlights'>iguanas</span> in Spanish, and about <span className='highlights'>fox</span> in English.
+          On the other hand, there are unique subjects that only appeared
+          exploring specific languages: dreaming about{' '}
+          <span className='highlights'>cabbage</span> only appeared in Russian,
+          dreaming about <span className='highlights'>camels</span> in Arabic,
+          dreaming about <span className='highlights'>garlic</span> in
+          Portuguese, about <span className='highlights'>iguanas</span> in
+          Spanish, and about <span className='highlights'>fox</span> in English.
         </p>
       </div>
 
@@ -128,8 +162,8 @@ const Content1 = ({ history, activeIndex }) => {
             alt={'camel'}
             //effect="blur"
             src={collagefox}
-            height={180} />
-
+            height={180}
+          />
         </div>
         <h2 className='mv3 mb5'>Unique subjects</h2>
       </div>
@@ -138,12 +172,18 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'Chapter 1 fifth paragraph'}
           //effect="blur"
           src={isMobileWithTablet ? mobileContent4 : content4}
-          width='100%' />
+          width='100%'
+        />
       </div>
 
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          And then we’ve found interesting data exploring subjects with peaks in the search interest over the years. In 2011 the related query with the highest value in Japanese was <span className='highlights'>earthquake</span>, in 2016 the one with the highest value in Arabic was <span className='highlights'>traveling</span>.
+          And then we’ve found interesting data exploring subjects with peaks in
+          the search interest over the years. In 2011 the related query with the
+          highest value in Japanese was{' '}
+          <span className='highlights'>earthquake</span>, in 2016 the one with
+          the highest value in Arabic was{' '}
+          <span className='highlights'>traveling</span>.
         </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
@@ -152,7 +192,8 @@ const Content1 = ({ history, activeIndex }) => {
             alt={'luggage'}
             //effect="blur"
             src={luggage}
-            height={140} />
+            height={140}
+          />
         </div>
         <h2 className='mv3 mb5'>Peaks over the year</h2>
       </div>
@@ -162,19 +203,32 @@ const Content1 = ({ history, activeIndex }) => {
           alt={'Chapter 1 sixth paragraph'}
           //effect="blur"
           src={isMobileWithTablet ? mobileContent5 : content5}
-          width='100%' />
+          width='100%'
+        />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          Are you curious to explore the dreams by year and language? We’ve designed a dream explorer!        </p>
+          Are you curious to explore the dreams by year and language? We’ve
+          designed a dream explorer!{' '}
+        </p>
       </div>
 
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '30px' }}>
+        <div
+          className='flex flex-column items-center ph4 pv3'
+          style={{ marginBottom: '30px' }}
+        >
           <div className='raleway explore-text'>EXPLORE CHAPTER 1</div>
-          <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
+          <div
+            className='explore-icon'
+            onClick={() => context.setSelectedView('explore')}
+          >
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base svg-hover' src={startExpl} width={25} />
+            <img
+              className='explore-icon-base svg-hover'
+              src={startExpl}
+              width={25}
+            />
           </div>
         </div>
         {/* {
