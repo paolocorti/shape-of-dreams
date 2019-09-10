@@ -58,7 +58,7 @@ const Page = ({
         top: !isMobileWithTablet ? calculatedTop : 'auto',
         transition: '1s top',
         background:
-          context.selectedView === 'read' ? 'white' : gradients[chapter]
+          context.selectedView === 'read' ? '#f2f2f2' : gradients[chapter]
       }}
     >
       <div className={`page__inner ${isIOS && 'fullheight'}`}>{children}</div>

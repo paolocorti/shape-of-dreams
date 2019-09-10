@@ -32,7 +32,7 @@ const Landing = ({ history }) => {
         id='scroll'
         className={`w-100 h-100 overflow-hidden ${
           scroll ? 'scrolling' : 'not-scrolling'
-        }`}
+          }`}
         style={{
           position: 'absolute',
           backgroundClip: '#2a2c60',
@@ -44,7 +44,7 @@ const Landing = ({ history }) => {
         <div
           className={`landing-content w-100 ${fadeOut ? 'fadeOut' : ''} ${
             up ? 'up' : ''
-          }`}
+            }`}
         >
           <motion.div
             animate={{ y: 0 }}
@@ -69,17 +69,17 @@ const Landing = ({ history }) => {
               </h1>
             </motion.div>
           ) : (
-            <motion.div
-              animate={{ y: 0 }}
-              transition={{
-                from: -600,
-                duration: 1.2,
-                type: 'tween'
-              }}
-            >
-              <h1 className='tc fw5 mt2 mb2 title'>The Shape of Dreams</h1>
-            </motion.div>
-          )}
+              <motion.div
+                animate={{ y: 0 }}
+                transition={{
+                  from: -600,
+                  duration: 1.2,
+                  type: 'tween'
+                }}
+              >
+                <h1 className='tc fw5 mt2 mb2 title'>The Shape of Dreams</h1>
+              </motion.div>
+            )}
           <motion.div
             animate={{ y: 0 }}
             transition={{ from: -700, duration: 1.3, type: 'tween' }}
@@ -122,7 +122,7 @@ const Landing = ({ history }) => {
           style={{ position: 'absolute', pointerEvents: 'none' }}
         >
           <motion.circle
-            r={2}
+            r={1.7}
             fill={'#ffffff'}
             cx={100}
             cy={100}
@@ -136,7 +136,7 @@ const Landing = ({ history }) => {
             }}
           />
           <motion.circle
-            r={2}
+            r={1.7}
             fill={'#ffffff'}
             cx={window.innerWidth - 200}
             cy={window.innerHeight - 350}
@@ -151,9 +151,9 @@ const Landing = ({ history }) => {
             }}
           />
           <motion.circle
-            r={2}
+            r={1.7}
             fill={'#ffffff'}
-            cx={340}
+            cx={440}
             cy={window.innerHeight - 800}
             opacity={0}
             animate={{ opacity: [0, 1, 0] }}
@@ -166,7 +166,7 @@ const Landing = ({ history }) => {
             }}
           />
           <motion.circle
-            r={2}
+            r={1.7}
             fill={'#ffffff'}
             cx={window.innerWidth - 400}
             cy={window.innerHeight - 750}
@@ -181,9 +181,9 @@ const Landing = ({ history }) => {
             }}
           />
           <motion.circle
-            r={2}
+            r={1.7}
             fill={'#ffffff'}
-            cx={200}
+            cx={310}
             cy={window.innerHeight - 350}
             opacity={0}
             animate={{ opacity: [0, 1, 0] }}
@@ -193,6 +193,51 @@ const Landing = ({ history }) => {
               ease: 'easeInOut',
               repeatDelay: 3,
               delay: 3
+            }}
+          />
+          <motion.circle
+            r={1.7}
+            fill={'#ffffff'}
+            cx={550}
+            cy={window.innerHeight - 150}
+            opacity={0}
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{
+              duration: 2.5,
+              loop: Infinity,
+              ease: 'easeInOut',
+              repeatDelay: 3,
+              delay: 2
+            }}
+          />
+          <motion.circle
+            r={1.7}
+            fill={'#ffffff'}
+            cx={750}
+            cy={window.innerHeight - 220}
+            opacity={0}
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{
+              duration: 2.5,
+              loop: Infinity,
+              ease: 'easeInOut',
+              repeatDelay: 2,
+              delay: 5
+            }}
+          />
+          <motion.circle
+            r={1.7}
+            fill={'#ffffff'}
+            cx={1050}
+            cy={window.innerHeight - 420}
+            opacity={0}
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{
+              duration: 3.5,
+              loop: Infinity,
+              ease: 'easeInOut',
+              repeatDelay: 2,
+              delay: 4
             }}
           />
         </svg>

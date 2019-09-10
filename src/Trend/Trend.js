@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
@@ -22,6 +22,7 @@ const y = d => {
 
 const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote, id }) => {
   const [show, setShow] = useState(0);
+  const [pathLength, setPathLength] = useState(4400);
   useEffect(() => {
     let peak = data[0].hasPeak || false
     let peakData = data.find(d => d.peak)
@@ -110,11 +111,11 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   })}
                   enter={() => ({
                     y2: [trendHeight - scaleY(value)],
-                    timing: { duration: 800, ease: easeQuadOut }
+                    timing: { duration: 1800, ease: easeQuadOut }
                   })}
                   update={() => ({
                     y2: [trendHeight - scaleY(value)],
-                    timing: { duration: 800, ease: easeQuadOut }
+                    timing: { duration: 1800, ease: easeQuadOut }
                   })}
                 >
                   {state => {
@@ -144,16 +145,16 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             })}
             enter={() => ({
               j: [0],
-              timing: { duration: 800, ease: easeQuadOut }
+              timing: { duration: 1800, ease: easeQuadOut }
             })}
             update={() => ({
               j: [0],
-              timing: { duration: 800, ease: easeQuadOut }
+              timing: { duration: 1800, ease: easeQuadOut }
             })}
 
             leave={() => ({
               j: [5000],
-              timing: { duration: 800, ease: easeQuadOut }
+              timing: { duration: 1800, ease: easeQuadOut }
             })}
           >
             {state => {
@@ -179,18 +180,18 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
           <Animate
             show={show}
             start={() => ({
-              j: 9000
+              j: pathLength
             })}
             enter={() => ({
               j: [0],
-              timing: { duration: 2000, delay: 0, ease: easeQuadOut }
+              timing: { duration: 1500, delay: 0, ease: easeQuadOut }
             })}
             update={() => ({
               j: [0],
-              timing: { duration: 2000, ease: easeQuadOut }
+              timing: { duration: 1500, ease: easeQuadOut }
             })}
             leave={() => ({
-              j: [9000],
+              j: [pathLength],
               timing: { duration: 0, ease: easeQuadOut }
             })}
           >
@@ -199,12 +200,17 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
               return (
                 <LinePath
                   data={data}
+                  innerRef={(node) => {
+                    if (node) {
+                      setPathLength(node.getTotalLength())
+                    }
+                  }}
                   x={d => scaleX(x(d))}
                   y={d => scaleY2(y(d))}
                   stroke={'#b36762'}
                   strokeWidth={isMobileWithTablet ? 0.5 : 1}
                   curve={curveMonotoneX}
-                  strokeDasharray={9000}
+                  strokeDasharray={pathLength}
                   strokeDashoffset={j}
                 />
               );

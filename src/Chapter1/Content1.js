@@ -42,7 +42,7 @@ const Content1 = ({ history, activeIndex }) => {
   }, [activeIndex]);
 
   return (
-    <div className='w-100 bg-white read'>
+    <div className='w-100 read'>
       {!isMobileWithTablet && (
         <NavigationBar
           content={true}
