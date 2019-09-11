@@ -64,7 +64,7 @@ const Landing = ({ history }) => {
                 type: 'tween'
               }}
             >
-              <h1 className='tc fw5 mt2 mb2 title'>
+              <h1 className='tc fw6 mt2 mb2 title'>
                 The Shape <br></br> of Dreams
               </h1>
             </motion.div>
@@ -77,7 +77,7 @@ const Landing = ({ history }) => {
                   type: 'tween'
                 }}
               >
-                <h1 className='tc fw5 mt2 mb2 title'>The Shape of Dreams</h1>
+                <h1 className='tc fw6 mt2 mb2 title'>The Shape of Dreams</h1>
               </motion.div>
             )}
           <motion.div

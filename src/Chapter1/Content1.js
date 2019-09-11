@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import content1 from './cap1-01-desk.jpg';
 import content2 from './cap1-02-desk.jpg';
@@ -22,6 +23,7 @@ import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
 import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
+import ParallaxImage from '../components/ParallaxImage';
 
 const Content1 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
@@ -67,12 +69,17 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt4'>
-        <LazyLoadImage
-          alt={'Chapter 1 first paragraph'}
-          //effect="blur"
-          src={isMobileWithTablet ? mobileContent1 : content1}
-          width='100%'
-        />
+        {/* <Parallax className="custom-class" offsetYMin={-100}
+          offsetYMax={100}>
+          <LazyLoadImage
+            alt={'Chapter 1 first paragraph'}
+            //effect="blur"
+            src={isMobileWithTablet ? mobileContent1 : content1}
+            width='100%'
+          /> 
+          <img src={isMobileWithTablet ? mobileContent1 : content1} />
+        </Parallax> */}
+        <ParallaxImage src={isMobileWithTablet ? mobileContent1 : content1} />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>

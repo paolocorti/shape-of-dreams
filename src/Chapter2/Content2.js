@@ -29,7 +29,7 @@ const Content2 = ({ history, activeIndex }) => {
   }, [activeIndex]);
 
   return (
-    <div className='w-100 bg-white read'>
+    <div className='w-100 read'>
       <h4 className={`tl fw6 mv0 ph4 ${reload ? 'transition-in' : ''}`}>
         Chapter 2
       </h4>
