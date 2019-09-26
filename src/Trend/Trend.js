@@ -20,7 +20,7 @@ const y = d => {
   return d.value
 };
 
-const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote, id }) => {
+const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote, id, activeIndex }) => {
   const [show, setShow] = useState(0);
   const [pathLength, setPathLength] = useState(4400);
   useEffect(() => {
@@ -40,6 +40,13 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
       setShow(1)
     }, 1000)
   }, [id])
+
+  useEffect(() => {
+    setShow(0)
+    setTimeout(() => {
+      setShow(1)
+    }, 1000)
+  }, [activeIndex])
 
   const svgWidth = isMobileWithTablet ? window.innerWidth * 0.8 : window.innerWidth * 0.75;
   const svgHeight = isMobileWithTablet ? window.innerWidth * 0.6 : window.innerHeight * 0.5;
@@ -106,16 +113,21 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             return (
               <g key={i}>
                 <Animate
+                  show={show}
                   start={() => ({
                     y2: startAnimation
                   })}
                   enter={() => ({
                     y2: [trendHeight - scaleY(value)],
-                    timing: { duration: 1800, ease: easeQuadOut }
+                    timing: { duration: 1000, ease: easeQuadOut, delay: 500 }
                   })}
                   update={() => ({
                     y2: [trendHeight - scaleY(value)],
-                    timing: { duration: 1800, ease: easeQuadOut }
+                    timing: { duration: 1000, ease: easeQuadOut, delay: 500 }
+                  })}
+                  leave={() => ({
+                    y2: [0],
+                    timing: { duration: 0 }
                   })}
                 >
                   {state => {
@@ -140,21 +152,22 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
         </g>
         <g transform={`translate(16, 10)`}>
           <Animate
+            show={show}
             start={() => ({
-              j: 5000
+              j: 0
             })}
             enter={() => ({
-              j: [0],
-              timing: { duration: 1800, ease: easeQuadOut }
+              j: [1],
+              timing: { duration: 1000, ease: easeQuadOut, delay: 500 }
             })}
             update={() => ({
-              j: [0],
-              timing: { duration: 1800, ease: easeQuadOut }
+              j: [1],
+              timing: { duration: 1000, ease: easeQuadOut, delay: 500 }
             })}
 
             leave={() => ({
-              j: [5000],
-              timing: { duration: 1800, ease: easeQuadOut }
+              j: [0],
+              timing: { duration: 0 }
             })}
           >
             {state => {
@@ -167,6 +180,7 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                   y0={svgHeight - 30}
                   yScale={scaleY2}
                   fill={'url(#trendGradient)'}
+                  fillOpacity={j}
                   strokeWidth={0}
                   curve={curveMonotoneX}
                 // strokeDasharray={5000}
@@ -184,11 +198,11 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
             })}
             enter={() => ({
               j: [0],
-              timing: { duration: 1500, delay: 0, ease: easeQuadOut }
+              timing: { duration: 1400, delay: 0, ease: easeQuadOut }
             })}
             update={() => ({
               j: [0],
-              timing: { duration: 1500, ease: easeQuadOut }
+              timing: { duration: 1400, ease: easeQuadOut }
             })}
             leave={() => ({
               j: [pathLength],

@@ -1,0 +1,17 @@
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+img {
+  max-width: 100%;
+  transform: translateY(0);
+}

@@ -165,6 +165,7 @@ const Explore3 = ({ history, activeIndex }) => {
               activateNote={activateNote}
               deactivateNote={deactivateNote}
               id={selectedIndex}
+              activeIndex={activeIndex === 3}
             />
           </div>
           <div
