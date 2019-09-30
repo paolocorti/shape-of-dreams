@@ -16,7 +16,7 @@ const languageLabel = {
   IN: 'Indonesian'
 };
 
-const Network1 = ({ year }) => {
+const Network1 = ({ year, show }) => {
   const [hovered, setHovered] = useState('');
   const [clicked, setClicked] = useState('');
   const svgWidth = isMobile ? window.innerHeight * 0.7 : window.innerHeight * 0.6;

@@ -16,7 +16,7 @@ const languageLabel = {
   IN: 'Indonesian'
 };
 
-const Network9 = ({ year }) => {
+const Network9 = ({ year, show }) => {
   const [hovered, setHovered] = useState('');
   const [clicked, setClicked] = useState('');
   const svgWidth = isMobile ? window.innerHeight * 0.7 : window.innerHeight * 0.6;
@@ -33,6 +33,8 @@ const Network9 = ({ year }) => {
 
   const selected = clicked ? clicked : hovered;
 
+  console.log('show', show)
+
   return (
     <div className='flex w-100 justify-center items-center flex-column'>
       <div className='mt0 value absolute' style={{ fontSize: '22px', opacity: 1, top: '-20px' }}>
@@ -47,7 +49,7 @@ const Network9 = ({ year }) => {
         height={svgHeight}
         style={{ maxWidth: isMobile ? '400px' : '520px' }}
       >
-        <NetworkLines selected={selected} />
+        <NetworkLines show={show} selected={selected} />
         <NetworkCircles selected={selected} setSelected={selectedCallback} setClicked={selectedClickedCallback} />
         <NetworkLanguages selected={selected} />
         <NetworkTexts selected={selected} />

@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import { AppContext } from './appContext';
 import Routes from './Routes';
 import 'tachyons';
 import './index.css';
 
 const supportsHistory = 'pushState' in window.history;
+
+ReactGA.initialize('UA-000000-01');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends React.Component {
   constructor(props) {

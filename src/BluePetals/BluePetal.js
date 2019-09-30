@@ -2,7 +2,6 @@ import React from 'react';
 import './BluePetal.scss';
 
 const BluePetal = ({ id, value }) => {
-  console.log(id);
   return (
     <g className={`bluepetal blupetal-${id}`}>
       <g id={`bluepetal-${id}`}>

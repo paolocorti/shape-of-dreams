@@ -5,6 +5,7 @@ import '../Network.scss';
 import { dashArray, dashOffset, lineAnimDuration, lineAnimDelay } from '../network_constants';
 
 const NetworkLines = ({ selected }) => {
+  
   return (
     <Animate
       start={() => ({

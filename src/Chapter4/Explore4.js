@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { groupBy, values } from 'lodash';
 import { isMobile, isIOS } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
@@ -26,6 +26,18 @@ const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(10);
   const [howToRead, setHowToRead] = useState(false);
+  const [show, setShow] = useState(false);
+
+  console.log('activeIndex', activeIndex)
+
+  useEffect(() => {
+    setShow(false)
+    setTimeout(() => {
+      if (activeIndex === 4) {
+        setShow(true)
+      }
+    }, 1000)
+  }, [activeIndex])
 
   const onSelectYear = index => {
     setSelectedYearIndex(index);
@@ -40,8 +52,6 @@ const Explore4 = ({ history, activeIndex }) => {
   const groupedByYearAndCountry = groupedByCountry.map(val => {
     return values(groupBy(val, 'year'));
   });
-  const selectedCategories =
-    groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
 
   return (
     <div className='explore4'>
@@ -143,7 +153,7 @@ const Explore4 = ({ history, activeIndex }) => {
               <Network10 year={years[selectedYearIndex]} />
             )}
             {selectedYearIndex === 10 && (
-              <Network11 year={years[selectedYearIndex]} />
+              <Network11 show={show} year={years[selectedYearIndex]} />
             )}
           </div>
           <div
