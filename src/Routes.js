@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Route, withRouter, Switch } from 'react-router-dom';
 import SwipeableRoutes from 'react-swipeable-routes';
-import { spring, AnimatedRoute } from 'react-router-transition';
 import { AppContext } from './appContext';
 import Landing from './Landing';
 import Chapter1 from './Chapter1';
@@ -11,11 +10,9 @@ import Chapter4 from './Chapter4';
 import Header from './components/Header';
 import Container from './components/Container';
 import NavigationFooter from './components/NavigationFooter';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Menu from './components/Menu';
 import Legend from './components/Legend';
 import About from './components/About';
-//import { isMobileWithTablet } from 'react-device-detect';
 import { isMobileWithTablet } from './constants';
 
 
@@ -26,43 +23,10 @@ const Routes = ({ location }) => {
   return (
     <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobileWithTablet ? 'auto' : '100%', overflow: isMobileWithTablet ? 'auto' : 'hidden' }}>
       {pathname !== '/' && <Header />}
-
       {pathname !== '/' && <Menu />}
-
       {pathname !== '/' && <Legend />}
-
       {pathname !== '/' && <About />}
-
       <Route exact path='/' component={Landing} />
-
-      {/* {pathname !== '/' && isMobileWithTablet && (
-        <img
-          src={'/images/swipe-left.svg'}
-          style={{
-            position: 'absolute',
-            left: '5px',
-            zIndex: 99,
-            top: '50%',
-            marginTop: '-11px'
-          }}
-          height={22}
-        />
-      )}
-
-      {pathname !== '/' && isMobileWithTablet && (
-        <img
-          src={'/images/swipe-right.svg'}
-          style={{
-            position: 'absolute',
-            right: '5px',
-            zIndex: 99,
-            top: '50%',
-            marginTop: '-11px'
-          }}
-          height={22}
-        />
-      )} */}
-
       {pathname !== '/' && isMobileWithTablet && (
         <SwipeableRoutes
           containerStyle={{

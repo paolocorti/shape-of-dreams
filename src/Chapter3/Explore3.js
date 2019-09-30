@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { groupBy, values } from 'lodash';
 import interestOverTime from '../data/interestOverTime.json';
-import howtoread3 from './cap3-leg-desk.png';
-import howtoreadMobile3 from './cap3-leg-mob.png';
+import howtoread3 from './images/cap3-leg-desk.png';
+import howtoreadMobile3 from './images/cap3-leg-mob.png';
 import arrowUp from '../components/images/arrow-up.svg';
 import arrowDown from '../components/images/arrow-down.svg';
 import close from '../components/images/close.svg';
@@ -11,7 +11,7 @@ import swipeHand from '../components/images/swipe-hand.svg';
 import Trend from '../Trend';
 import categories from '../data/categories.json';
 import TopicSelector from '../components/TopicSelector.js';
-import { isMobile, isIOS } from 'react-device-detect';
+import { isIOS } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 
@@ -78,13 +78,6 @@ const Explore3 = ({ history, activeIndex }) => {
       {
         !isMobileWithTablet && activeIndex === 3 && (
           <div className='noteBox ph4' style={{ right: note ? '0px' : '-12.5%', transition: '.5s right' }}>
-            {/* <div className='noteBox-close' style={{ cursor: 'pointer' }} onClick={() => toggleNote('')}>
-              <img
-                src={'/images/close-white.svg'}
-                alt='Close menu icon'
-                width={20}
-              />
-            </div> */}
             {note}
           </div>
         )
@@ -106,7 +99,7 @@ const Explore3 = ({ history, activeIndex }) => {
           className='how-to-read'
           style={{
             zIndex: howToRead ? 200 : -1,
-            background: 'linear-gradient(#efe2e1, #ebf5f5)',
+            background: 'linear-gradient(#d3d7ed, #dbe8ec)',
             top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none',
           }}
@@ -127,7 +120,7 @@ const Explore3 = ({ history, activeIndex }) => {
           style={{ height: '125px' }}
         >
           <h1 className='tc fw7 mt3' style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
-            Dreams meaning: interest over time
+            Dream meanings: interest over time
           </h1>
           {
             isMobileWithTablet ?

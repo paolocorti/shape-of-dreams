@@ -5,22 +5,22 @@ import { isMobileWithTablet } from '../constants';
 import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
-import howtoread4 from './cap4-leg-desk.png';
-import howtoreadMobile4 from './cap4-leg-mob.gif';
+import howtoread4 from './images/cap4-leg-desk.png';
+import howtoreadMobile4 from './images/cap4-leg-mob.gif';
 import close from '../components/images/close.svg';
 import Network1 from '../Network/Network_1';
 import Network2 from '../Network/Network_2';
 import Network3 from '../Network/Network_3';
 import Network4 from '../Network/Network_4';
 import Network5 from '../Network/Network_5';
-import Network6 from '../Network/Network_6/Network.js';
-import Network7 from '../Network/Network_7/Network.js';
-import { years } from '../constants';
+import Network6 from '../Network/Network_6';
+import Network7 from '../Network/Network_7';
 import NavigationBar from '../components/NavigationBar';
-import Network8 from '../Network/Network_8/Network.js';
-import Network9 from '../Network/Network_9/Network.js';
-import Network10 from '../Network/Network_10/Network.js';
-import Network11 from '../Network/Network_11/Network.js';
+import Network8 from '../Network/Network_8';
+import Network9 from '../Network/Network_9';
+import Network10 from '../Network/Network_10';
+import Network11 from '../Network/Network_11';
+import { years } from '../constants';
 
 const Explore4 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
@@ -55,44 +55,12 @@ const Explore4 = ({ history, activeIndex }) => {
           selected={selectedYearIndex}
         />
       )}
-      {/* <div className='w-100 h-100 relative'>
-        <div className='w-100 ph4' style={{ height: '80px' }}>
-          <h1 className='tl tc-ns fw5 mv0' style={{ fontSize: '21px' }}>
-            Networks of dreams{' '}
-          </h1>
-          <YearsSelector
-            years={years}
-            onSelect={onSelectYear}
-            selected={selectedYearIndex}
-          />
-        </div>
-
-        <div
-          className='w-100 flex flex-column relative'
-          style={{ height: 'calc(100% - 80px)' }}
-        >
-          <div
-            className='flex flex-column justify-center items-center'
-            style={{ height: '80%' }}
-          >
-            <Network />
-          </div>
-          <div
-            className='tj raleway mt3 ph4'
-            style={{ fontSize: '2vh', height: '20%' }}
-          >
-            Select a language and a year. The number of petals is equal to the
-            increase in search interest for a dream in comparison to the
-            previous year. The dreams shown are the ones that increased the most
-          </div>
-        </div>
-      </div> */}
       <div className='w-100 h-100 flex flex-column justify-center items-center relative'>
         <div
           className='how-to-read'
           style={{
             zIndex: howToRead ? 200 : -1,
-            background: 'linear-gradient(#e6f1eb, #dde6ed)',
+            background: 'linear-gradient(#dbe8ec, #efe3df)',
             top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none'
           }}

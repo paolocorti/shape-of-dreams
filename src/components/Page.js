@@ -44,8 +44,6 @@ const Page = ({
   const calculatedTop =
     activeIndex === pageIndex ? 0 : activeIndex < pageIndex ? '100%' : '-100%';
 
-  console.log(isIOS);
-
   return (
     <section
       className={cx}

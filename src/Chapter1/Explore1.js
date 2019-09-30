@@ -9,8 +9,8 @@ import close from '../components/images/close.svg';
 import arrowLeft from '../components/images/arrow-left.svg';
 import arrowRight from '../components/images/arrow-right.svg';
 import { years, isMobileWithTablet } from '../constants';
-import howtoread1 from './cap1-leg-desk.png';
-import howtoreadMobile1 from './cap1-leg-mob.png';
+import howtoread1 from './images/cap1-leg-desk.png';
+import howtoreadMobile1 from './images/cap1-leg-mob.png';
 import { isIOS } from 'react-device-detect';
 import NavigationBar from '../components/NavigationBar';
 
@@ -159,8 +159,6 @@ const Explore1 = ({ history, activeIndex }) => {
           </div>
         </div>
         <div className='w-100 ph4 ios-fix' style={{ height: isMobileWithTablet ? '125px' : '100px' }}>
-          {/* <h2 className='tl fw6 f5 mv0'>Chapter 1</h2> */}
-
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}

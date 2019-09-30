@@ -237,8 +237,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
               const date = moment(d.time);
               const value = d.value;
 
-              const startAnimation = trendHeight;
-
               if (d.peak) {
                 return (
                   <g key={i} onClick={() => toggleNote(d.note)}>
@@ -295,11 +293,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                         key={`vx-tick-${tick.value}-${i}`}
                         className={'vx-axis-tick'}
                       >
-                        {/* <Line
-                          from={tick.from}
-                          to={tick.to}
-                          stroke={tickColor}
-                        /> */}
                         <text
                           transform={`translate(${tickX}, ${tickY}) rotate(${tickRotate})`}
                           fontSize={tickLabelSize}
@@ -311,13 +304,6 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
                       </Group>
                     );
                   })}
-                  {/* <text
-                    textAnchor='middle'
-                    transform={`translate(${axisCenter}, 50)`}
-                    fontSize='8'
-                  >
-                    {axis.label}
-                  </text> */}
                 </g>
               );
             }}

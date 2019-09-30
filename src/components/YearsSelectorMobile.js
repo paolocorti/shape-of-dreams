@@ -2,7 +2,6 @@ import React from 'react';
 import './Selector.scss';
 
 const YearSelectorMobile = ({ years, selected, onSelect }) => {
-  console.log('here')
   return (
     <div className='yearsSelectorContainer' style={{ marginTop: '10px' }}>
       <div className='yearsSelectorContainerWrapper'>

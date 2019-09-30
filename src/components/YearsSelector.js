@@ -11,9 +11,7 @@ class YearSelector extends React.Component {
     if (node) {
       node.addEventListener('scroll', (e) => {
         const offset = node.scrollTop;
-        console.log(offset)
         const index = Math.floor(offset / 50);
-        console.log(index)
         if (index !== selected) {
           onSelect(index)
         }
@@ -22,7 +20,6 @@ class YearSelector extends React.Component {
   };
 
   render() {
-    console.log('YearSelector')
     const { years, selected, onSelect } = this.props
     return (
       <div className="yearsSelectorScrollContainer" ref={this.paneDidMount}>

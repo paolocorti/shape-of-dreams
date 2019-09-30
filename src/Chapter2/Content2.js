@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content1 from './cap2-01-desk.jpg';
-import content2 from './cap2-02-desk.jpg';
-import content3 from './cap2-03-desk.jpg';
-import mobileContent1 from './cap2-01-mob.jpg';
-import mobileContent2 from './cap2-02-mob.jpg';
-import mobileContent3 from './cap2-03-mob.jpg';
+import content1 from './images/cap2-01-desk.jpg';
+import content2 from './images/cap2-02-desk.jpg';
+import content3 from './images/cap2-03-desk.jpg';
+import mobileContent1 from './images/cap2-01-mob.jpg';
+import mobileContent2 from './images/cap2-02-mob.jpg';
+import mobileContent3 from './images/cap2-03-mob.jpg';
 import startExpl from '../components/images/start-expl.svg';
 
 import { AppContext } from '../appContext';
@@ -24,7 +24,6 @@ const Content2 = ({ history, activeIndex }) => {
       }, 2000);
     }
     return () => {
-      //setReload(true)
     };
   }, [activeIndex]);
 
@@ -53,7 +52,7 @@ const Content2 = ({ history, activeIndex }) => {
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          After having studied all the dreams’ subjects by language and year, we
+          After having studied all the dream subjects by language and year, we
           grouped them into 12 categories:{' '}
           <span className='highlights'>Animals and Insects</span> (where we
           grouped subjects such as snakes, spiders, dogs),{' '}
@@ -83,7 +82,7 @@ const Content2 = ({ history, activeIndex }) => {
           Looking at the overall results, the categories with usually the
           highest number of subjects is{' '}
           <span className='highlights'>Animals and Insects</span>: its value is
-          often the higher one by year, especially in English, Spanish and
+          often the highest one by year, especially in English, Spanish and
           Portuguese. It’s usually followed by{' '}
           <span className='highlights'>Family and relationships</span>.
         </p>
@@ -121,9 +120,9 @@ const Content2 = ({ history, activeIndex }) => {
       <div className='w-100 tc pb4 flex items-center flex-column'>
         <div
           className='flex flex-column items-center ph4 pv3'
-          style={{ marginBottom: '30px' }}
+          style={{ marginBottom: '50px' }}
         >
-          <div className='raleway explore-text'>EXPLORE CHAPTER 2</div>
+          <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 2</div>
           <div
             className='explore-icon'
             onClick={() => context.setSelectedView('explore')}
@@ -132,18 +131,10 @@ const Content2 = ({ history, activeIndex }) => {
             <img
               className='explore-icon-base svg-hover'
               src={startExpl}
-              width={25}
+              width={36}
             />
           </div>
         </div>
-        {/* {
-          isMobileWithTablet && (
-            <div className='flex flex-column items-center ph4 pv3'>
-              <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>READ CHAPTER 2</div>
-              <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter2`)} />
-            </div>
-          )
-        } */}
       </div>
     </div>
   );

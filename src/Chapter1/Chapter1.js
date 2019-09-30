@@ -1,9 +1,8 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../appContext';
 import Page from '../components/Page';
 import Explore1 from './Explore1';
 import Content1 from './Content1';
-import { isMobile } from 'react-device-detect';
 
 const Chapter1 = ({ history, activeIndex, pageIndex }) => {
   const context = useContext(AppContext);

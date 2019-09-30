@@ -1,17 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content1 from './cap4-01-desk.jpg';
-import content2 from './cap4-02-desk.jpg';
-import content3 from './cap4-03-desk.jpg';
-import content4 from './cap4-04-desk.jpg';
-import mobileContent1 from './cap4-01-mob.jpg';
-import mobileContent2 from './cap4-02-mob.jpg';
-import mobileContent3 from './cap4-03-mob.jpg';
-import mobileContent4 from './cap4-04-mob.jpg';
+import content1 from './images/cap4-01-desk.jpg';
+import content2 from './images/cap4-02-desk.jpg';
+import content3 from './images/cap4-03-desk.jpg';
+import content4 from './images/cap4-04-desk.jpg';
+import mobileContent1 from './images/cap4-01-mob.jpg';
+import mobileContent2 from './images/cap4-02-mob.jpg';
+import mobileContent3 from './images/cap4-03-mob.jpg';
+import mobileContent4 from './images/cap4-04-mob.jpg';
 import startExpl from '../components/images/start-expl.svg';
-import collagedog from './collage-dog-small.gif';
-import collageelephant from './collage-elephant-small.gif';
+import collagedog from './images/collage-dog-small.gif';
+import collageelephant from './images/collage-elephant-small.gif';
 import { AppContext } from '../appContext';
 import { isMobileWithTablet } from '../constants';
 
@@ -28,8 +28,6 @@ const Content4 = ({ history, activeIndex }) => {
     }
 
     return () => {
-      console.log('cleanup')
-      //setReload(true)
     }
   }, [activeIndex])
 
@@ -109,21 +107,13 @@ const Content4 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '30px' }}>
-          <div className='raleway explore-text'>EXPLORE CHAPTER 4</div>
+        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '50px' }}>
+          <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 4</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base svg-hover' src={startExpl} width={25} />
+            <img className='explore-icon-base svg-hover' src={startExpl} width={36} />
           </div>
         </div>
-        {/* {
-          isMobileWithTablet && (
-            <div className='flex flex-column items-center ph4 pv3'>
-              <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>READ CHAPTER 2</div>
-              <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter2`)} />
-            </div>
-          )
-        } */}
       </div>
     </div>
   );

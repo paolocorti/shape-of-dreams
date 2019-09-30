@@ -1,12 +1,12 @@
 import React, { useState, Suspense } from 'react';
 import './Landing.scss';
-import Loader from '../components/Loader';
-import landingIcon from './landing-flower.svg';
-import sky from './landing-desktop.svg';
-import skyMobile from './landing-mobile.svg';
 import { isMobile } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
 import { motion } from 'framer-motion';
+import Loader from '../components/Loader';
+import landingIcon from './images/landing-flower.svg';
+import sky from './images/landing-desktop.svg';
+import skyMobile from './images/landing-mobile.svg';
 
 const Landing = ({ history }) => {
   const [fadeOut, setFadeOut] = useState(false);

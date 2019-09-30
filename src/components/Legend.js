@@ -50,16 +50,6 @@ const Legend = ({ history, location }) => {
         src={isMobileWithTablet ? legendMob : legend}
         style={{ position: 'absolute', width: '100%', top: 0 }}
       />
-
-      {/* <div className='w-100 flex items-center ph4'>
-        <div className='white tl'>
-          <img
-            src={'/images/close-white.svg'}
-            alt='Close menu icon'
-            width={30}
-          />
-        </div>
-      </div> */}
     </div>
   );
 };

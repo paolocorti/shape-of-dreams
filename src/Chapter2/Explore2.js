@@ -6,11 +6,11 @@ import LanguageSelector from '../components/LanguageSelector';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import { years } from '../constants';
-import howtoread2 from './cap2-leg-desk.png';
-import howtoreadMobile2 from './cap2-leg-mob.png';
+import howtoread2 from './images/cap2-leg-desk.png';
+import howtoreadMobile2 from './images/cap2-leg-mob.png';
 import close from '../components/images/close.svg';
 import { languages } from '../constants';
-import { isMobile, isIOS } from 'react-device-detect';
+import { isIOS } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
 import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
@@ -18,7 +18,6 @@ import BluePetalsEmpty from '../BluePetals/BluePetalsEmpty';
 const Explore2 = ({ history, activeIndex }) => {
   const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(10);
-  //const [selectedPetal, setSelectedPetal] = useState(null);
   const [howToRead, setHowToRead] = useState(false);
 
   const onSelectLanguage = index => {
@@ -95,9 +94,6 @@ const Explore2 = ({ history, activeIndex }) => {
   const selectedPetal = clicked !== null ? clicked : hovered;
   const selectedCategories = valueByCountry[0] ? valueByCountry[0][0] : [];
 
-  console.log(selectedPetal)
-
-
   return (
     <div className='explore2' style={{ paddingTop: isMobileWithTablet ? 0 : 15 }}>
       {
@@ -120,7 +116,7 @@ const Explore2 = ({ history, activeIndex }) => {
           className='how-to-read'
           style={{
             zIndex: howToRead ? 200 : -1,
-            background: 'linear-gradient(#e5f2ef, #d0d7eb)',
+            background: 'linear-gradient(#e5f2ef, #d3d7ed)',
             top: howToRead ? (isMobileWithTablet ? 0 : 50) : '-100%',
             display: howToRead ? 'block' : 'none',
           }}
@@ -155,7 +151,7 @@ const Explore2 = ({ history, activeIndex }) => {
             )
           }
           <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
-            Dreams subjects by category
+            Dream subjects by category
           </h1>
         </div>
         <div

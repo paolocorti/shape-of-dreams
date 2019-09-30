@@ -1,14 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content0 from './cap3-00-desk.jpg';
-import content1 from './cap3-01-desk.jpg';
-import content2 from './cap3-02-desk.jpg';
-import content3 from './cap3-03-desk.jpg';
-import mobileContent0 from './cap3-00-mob.jpg';
-import mobileContent1 from './cap3-01-mob.jpg';
-import mobileContent2 from './cap3-02-mob.jpg';
-import mobileContent3 from './cap3-03-mob.jpg';
+import content0 from './images/cap3-00-desk.jpg';
+import content1 from './images/cap3-01-desk.jpg';
+import content2 from './images/cap3-02-desk.jpg';
+import content3 from './images/cap3-03-desk.jpg';
+import mobileContent0 from './images/cap3-00-mob.jpg';
+import mobileContent1 from './images/cap3-01-mob.jpg';
+import mobileContent2 from './images/cap3-02-mob.jpg';
+import mobileContent3 from './images/cap3-03-mob.jpg';
 import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
 import { isMobileWithTablet } from '../constants';
@@ -37,7 +37,7 @@ const Content3 = ({ history, activeIndex }) => {
       <h1 className={`tl fw7 mt0 ph4 ${reload ? 'transition-in' : ''}`}>A Time for Dreams</h1>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          How does the interest for the meaning of certain dreams change over time? We explored the dreams topic also from this point of view, studying the trends throughout the years and we found different types of subjects.
+          How does the interest for the meaning of certain dreams change over time? We also explored the dreams topic from this point of view, studying the trends throughout the years and we found different types of subjects.
         </p>
       </div>
       <div className='w-100 tc mt5'>
@@ -61,7 +61,7 @@ const Content3 = ({ history, activeIndex }) => {
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          We found subjects whose search interest has been characterize by an overall increase, such as dreaming about water or dreaming about escaping.
+          We found subjects whose search interest has been characterized by an overall increase, such as dreaming about water or dreaming about escaping.
         </p>
       </div>
       <div className='w-100 tc mt5'>
@@ -92,21 +92,13 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         </p>
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
-        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '30px' }}>
-          <div className='raleway explore-text'>EXPLORE CHAPTER 3</div>
+        <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '50px' }}>
+          <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 3</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base svg-hover' src={startExpl} width={25} />
+            <img className='explore-icon-base svg-hover' src={startExpl} width={36} />
           </div>
         </div>
-        {/* {
-          isMobileWithTablet && (
-            <div className='flex flex-column items-center ph4 pv3'>
-              <div className='raleway fw7 tl' style={{ fontSize: '22px', color: '#43449a', letterSpacing: '1px' }}>READ CHAPTER 2</div>
-              <img className='mt2' src={'images/down-arrow.svg'} width={35} onClick={() => history.push(`/chapter2`)} />
-            </div>
-          )
-        } */}
       </div>
     </div>
   );
