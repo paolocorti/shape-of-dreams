@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import content1 from './images/cap1-01-desk.jpg';
 import content2 from './images/cap1-02-desk.jpg';
 import content3 from './images/cap1-03-desk.jpg';
@@ -70,13 +71,19 @@ const Content1 = ({ history, activeIndex }) => {
           offsetYMax={100}>
           <LazyLoadImage
             alt={'Chapter 1 first paragraph'}
-            //effect="blur"
+            effect="opacity"
             src={isMobileWithTablet ? mobileContent1 : content1}
             width='100%'
           /> 
           <img src={isMobileWithTablet ? mobileContent1 : content1} />
-        </Parallax> */}
-        <ParallaxImage src={isMobileWithTablet ? mobileContent1 : content1} />
+        </Parallax> 
+        <ParallaxImage src={isMobileWithTablet ? mobileContent1 : content1} />*/}
+        <LazyLoadImage
+          alt={'Chapter 1 first paragraph'}
+          effect="opacity"
+          src={isMobileWithTablet ? mobileContent1 : content1}
+          width='100%'
+        />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -92,7 +99,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 1 second paragraph'}
-          //effect="blur"
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent1a : content1a}
           width='100%'
         />
@@ -108,7 +115,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <LazyLoadImage
           alt={'Dreaming about snakes'}
-          //effect="blur"
+          effect="opacity"
           src={snake}
           height={130}
         />
@@ -117,7 +124,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 third paragraph'}
-          //effect="blur"
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%'
         />
@@ -125,7 +132,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <LazyLoadImage
           alt={'teeth'}
-          //effect="blur"
+          effect="opacity"
           src={teeth}
           height={160}
         />
@@ -134,7 +141,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 fourth paragraph'}
-          //effect="blur"
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%'
         />
@@ -143,7 +150,7 @@ const Content1 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-end flex-wrap'>
           <LazyLoadImage
             alt={'cabbage'}
-            //effect="blur"
+            effect="opacity"
             src={collagecamel}
             height={180}
           />
@@ -163,7 +170,7 @@ const Content1 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-end flex-wrap'>
           <LazyLoadImage
             alt={'camel'}
-            //effect="blur"
+            effect="opacity"
             src={collagefox}
             height={180}
           />
@@ -173,7 +180,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 fifth paragraph'}
-          //effect="blur"
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent4 : content4}
           width='100%'
         />
@@ -193,7 +200,7 @@ const Content1 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-end'>
           <LazyLoadImage
             alt={'luggage'}
-            //effect="blur"
+            effect="opacity"
             src={luggage}
             height={140}
           />
@@ -204,7 +211,7 @@ const Content1 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt4'>
         <LazyLoadImage
           alt={'Chapter 1 sixth paragraph'}
-          //effect="blur"
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent5 : content5}
           width='100%'
         />

@@ -9,7 +9,6 @@ import { isMobileWithTablet } from '../constants';
 
 const Legend = ({ history, location }) => {
   const context = useContext(AppContext);
-  const { pathname } = location;
 
   const goTo = path => {
     context.toggleLegend();
