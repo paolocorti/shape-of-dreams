@@ -32,35 +32,11 @@ const Explore2 = ({ history, activeIndex }) => {
     setSelectedYearIndex(index);
   };
 
-  const goToChapter2 = () => {
-    history.push(`/chapter2`);
-  };
-
   const groupedByCountry = values(groupBy(categories, 'language'));
   const groupedByCountryKeys = Object.keys(groupBy(categories, 'language'));
   const groupedByYearAndCountry = groupedByCountry.map(val => {
     return values(groupBy(val, 'year'));
   });
-
-
-
-  // const selectedCategories = groupedByYearAndCountry.filter(v => {
-  //   const valueByYearArray = v.filter(el => {
-  //     return el[0].year === years[selectedYearIndex]
-  //   })
-  //   const valueByYear = valueByYearArray[0] || []
-
-  //   if (valueByYear.length > 0) {
-  //     if (valueByYear[0].language === languages[selectedLanguageIndex]) {
-  //       console.log('here')
-  //       return valueByYear
-
-  //     }
-  //   } else {
-  //     return []
-  //   }
-
-  // }); 
 
   const valueByYearArray = groupedByYearAndCountry.map(v => {
     return v.filter(el => {

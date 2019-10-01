@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import content0 from './images/cap3-00-desk.jpg';
 import content1 from './images/cap3-01-desk.jpg';
 import content2 from './images/cap3-02-desk.jpg';
@@ -43,7 +43,7 @@ const Content3 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 3 first paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent0 : content0}
           width='100%' />
       </div>
@@ -55,7 +55,7 @@ const Content3 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 3 second paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -68,7 +68,7 @@ const Content3 = ({ history, activeIndex }) => {
         <h2 className='mv5'>Increasing interest</h2>
         <LazyLoadImage
           alt={'Chapter 3 third paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -82,7 +82,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         <h2 className='mv5'>Meaningful peaks</h2>
         <LazyLoadImage
           alt={'Chapter 3 fourth paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%' />
       </div>
@@ -96,7 +96,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
           <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 3</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base svg-hover' src={startExpl} width={36} />
+            <img alt={'Explore chapter 3'} className='explore-icon-base svg-hover' src={startExpl} width={36} />
           </div>
         </div>
       </div>

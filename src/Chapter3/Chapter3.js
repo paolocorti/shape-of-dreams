@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Page from '../components/Page';
 import { AppContext } from '../appContext';
 import Content3 from './Content3';

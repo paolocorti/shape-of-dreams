@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Network.scss';
 
-const NetworkLanguages = ({ selected }) => {
+const NetworkLanguages = () => {
   return (
     <g id="languages" transform="translate(-42,-40)">
       <g class="st4">

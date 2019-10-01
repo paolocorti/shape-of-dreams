@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../appContext';
 import Content4 from './Content4';
 import Explore4 from './Explore4';

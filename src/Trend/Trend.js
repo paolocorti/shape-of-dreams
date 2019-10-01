@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import { scaleTime, scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
@@ -8,7 +8,6 @@ import { AreaClosed, LinePath } from '@vx/shape';
 import { curveMonotoneX } from '@vx/curve';
 import { AxisBottom } from '@vx/axis';
 import { Group } from '@vx/group';
-import { isMobile } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
 
 import './Trend.scss';
@@ -20,8 +19,8 @@ const y = d => {
   return d.value
 };
 
-const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNote, id, activeIndex }) => {
-  const [show, setShow] = useState(0);
+const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex }) => {
+  const [show, setShow] = useState(false);
   const [pathLength, setPathLength] = useState(4400);
   useEffect(() => {
     let peak = data[0].hasPeak || false
@@ -35,16 +34,16 @@ const Trend = ({ data, name, toggleNote, noteActive, activateNote, deactivateNot
   }, [data])
 
   useEffect(() => {
-    setShow(0)
+    setShow(false)
     setTimeout(() => {
-      setShow(1)
+      setShow(true)
     }, 1000)
   }, [id])
 
   useEffect(() => {
-    setShow(0)
+    setShow(false)
     setTimeout(() => {
-      setShow(1)
+      setShow(true)
     }, 1000)
   }, [activeIndex])
 

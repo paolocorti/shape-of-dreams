@@ -45,7 +45,6 @@ const TopicSelector = ({ topics, onSwipe, selectedIndex }) => {
                       className='topicSelectorEl'
                       key={index}
                       style={{ borderRadius: '15px' }}
-                      style={{ width: '100%' }}
                     >
                       {topic}
                     </div>
@@ -60,7 +59,6 @@ const TopicSelector = ({ topics, onSwipe, selectedIndex }) => {
                 >
                   {topics[selectedIndex]}
                 </div>
-
               </div>
             )
         }

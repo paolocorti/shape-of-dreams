@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import content1 from './images/cap4-01-desk.jpg';
 import content2 from './images/cap4-02-desk.jpg';
 import content3 from './images/cap4-03-desk.jpg';
@@ -43,7 +43,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 first paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -56,6 +56,7 @@ const Content4 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-center'>
           <LazyLoadImage
             alt={'dna'}
+            effect="opacity"
             src={collagedog}
             height={170} />
         </div>
@@ -64,7 +65,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 second paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -77,7 +78,7 @@ const Content4 = ({ history, activeIndex }) => {
         <h2 className='mv5'>Dreaming about crying</h2>
         <LazyLoadImage
           alt={'Chapter 4 third paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%' />
       </div>
@@ -89,6 +90,7 @@ const Content4 = ({ history, activeIndex }) => {
         <div className='w-100 flex justify-center items-center'>
           <LazyLoadImage
             alt={'elephant'}
+            effect="opacity"
             src={collageelephant}
             height={170} />
         </div>
@@ -97,7 +99,7 @@ const Content4 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 4 fourth paragraph'}
-
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent4 : content4}
           width='100%' />
       </div>
@@ -111,7 +113,7 @@ const Content4 = ({ history, activeIndex }) => {
           <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 4</div>
           <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
             <div className='explore-icon-circle'></div>
-            <img className='explore-icon-base svg-hover' src={startExpl} width={36} />
+            <img className='explore-icon-base svg-hover' alt={'Explore chapter 4'} src={startExpl} width={36} />
           </div>
         </div>
       </div>

@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
-import { isIOS } from 'react-device-detect';
 import Chapter1 from '../Chapter1';
 import Chapter2 from '../Chapter2';
 import Chapter3 from '../Chapter3';
 import Chapter4 from '../Chapter4';
-import SwipeableViews from 'react-swipeable-views';
 
 const Container = ({ location, history }) => {
   const [activeIndex, setActiveIndex] = useState(1)

@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';
 import './Header.scss';
-import { isMobile } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
 
 

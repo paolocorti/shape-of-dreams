@@ -46,6 +46,7 @@ const Content2 = ({ history, activeIndex }) => {
       <div className='w-100 tc mt5'>
         <LazyLoadImage
           alt={'Chapter 2 first paragraph'}
+          effect="opacity"
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%'
         />
@@ -91,6 +92,7 @@ const Content2 = ({ history, activeIndex }) => {
         <h2 className='mv5'>Animals, family and relationships</h2>
         <LazyLoadImage
           alt={'Chapter 2 second paragraph'}
+          effect='opacity'
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%'
         />
@@ -108,6 +110,7 @@ const Content2 = ({ history, activeIndex }) => {
         <h2 className='mv5'>Dreaming about emotions and food</h2>
         <LazyLoadImage
           alt={'Chapter 2 third paragraph'}
+          effect='opacity'
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%'
         />
@@ -129,6 +132,7 @@ const Content2 = ({ history, activeIndex }) => {
           >
             <div className='explore-icon-circle'></div>
             <img
+              alt={'Explore chapter 2'}
               className='explore-icon-base svg-hover'
               src={startExpl}
               width={36}

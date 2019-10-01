@@ -24,8 +24,6 @@ const Landing = ({ history }) => {
     }, 2000);
   };
 
-  const pathname = '/chapter1';
-
   return (
     <Suspense fallback={<Loader top={'0px'} />}>
       <div

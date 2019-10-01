@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-const Loader = ({ }) => {
+const Loader = () => {
   return (
     <div
       style={{ width: '100%', height: '100%', backgroundColor: '#43449a' }}

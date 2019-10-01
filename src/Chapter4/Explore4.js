@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { groupBy, values } from 'lodash';
-import { isMobile, isIOS } from 'react-device-detect';
+import { isIOS } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
-import categories from '../data/categories.json';
 import YearsSelector from '../components/YearsSelector';
 import YearsSelectorMobile from '../components/YearsSelectorMobile';
 import howtoread4 from './images/cap4-leg-desk.png';
@@ -23,7 +21,6 @@ import Network11 from '../Network/Network_11';
 import { years } from '../constants';
 
 const Explore4 = ({ history, activeIndex }) => {
-  const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(0);
   const [selectedYearIndex, setSelectedYearIndex] = useState(10);
   const [howToRead, setHowToRead] = useState(false);
   const [show, setShow] = useState(false);
@@ -46,12 +43,6 @@ const Explore4 = ({ history, activeIndex }) => {
   const toggleHowToRead = () => {
     setHowToRead(!howToRead);
   };
-
-  const groupedByCountry = values(groupBy(categories, 'language'));
-  const groupedByCountryKeys = Object.keys(groupBy(categories, 'language'));
-  const groupedByYearAndCountry = groupedByCountry.map(val => {
-    return values(groupBy(val, 'year'));
-  });
 
   return (
     <div className='explore4'>

@@ -10,11 +10,6 @@ import { isMobileWithTablet } from '../constants';
 const Legend = ({ history, location }) => {
   const context = useContext(AppContext);
 
-  const goTo = path => {
-    context.toggleLegend();
-    history.push(path);
-  };
-
   const closeLegend = () => {
     localStorage.setItem('legendSeen', true);
     context.toggleLegend();
