@@ -5,6 +5,7 @@ import { isMobileWithTablet } from '../constants';
 import { motion } from 'framer-motion';
 import Loader from '../components/Loader';
 import landingIcon from './images/landing-flower.svg';
+import logo from './images/logo.png';
 import sky from './images/landing-desktop.svg';
 import skyMobile from './images/landing-mobile.svg';
 
@@ -48,10 +49,13 @@ const Landing = ({ history }) => {
             animate={{ y: 0 }}
             transition={{ from: -500, duration: 1, type: 'tween' }}
           >
-            <h3 className='tc fw7 mt0 author landing-header'>
+            {/* <h3 className='tc fw7 mt0 author landing-header'>
               FEDERICA FRAGAPANE <span className='lighter-weight'>for</span>{' '}
               GOOGLE NEWS LAB
-            </h3>
+            </h3> */}
+            <div className='tc' style={{ width: isMobile ? '88%' : '50%', margin: 'auto' }}>
+              <img src={logo} width={'100%'} />
+            </div>
           </motion.div>
           {isMobileWithTablet ? (
             <motion.div

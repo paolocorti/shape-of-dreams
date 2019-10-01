@@ -31,14 +31,18 @@ const Content1 = ({ history, activeIndex }) => {
   const [reload, setReload] = useState(true);
 
   useEffect(() => {
+    let timer;
     if (activeIndex === 1) {
       setReload(true);
-      setTimeout(() => {
+      timer = setTimeout(() => {
         setReload(false);
       }, 2000);
     }
 
     return () => {
+      if (timer) {
+        clearTimeout(timer)
+      }
     };
   }, [activeIndex]);
 

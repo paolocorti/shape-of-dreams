@@ -9,7 +9,7 @@ import './index.css';
 
 const supportsHistory = 'pushState' in window.history;
 
-ReactGA.initialize('UA-000000-01');
+ReactGA.initialize('UA-108001532-2');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends React.Component {
