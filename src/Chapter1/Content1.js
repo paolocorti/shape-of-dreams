@@ -82,12 +82,13 @@ const Content1 = ({ history, activeIndex }) => {
           <img src={isMobileWithTablet ? mobileContent1 : content1} />
         </Parallax> 
         <ParallaxImage src={isMobileWithTablet ? mobileContent1 : content1} />*/}
-        <LazyLoadImage
+        {/* <LazyLoadImage
           alt={'Chapter 1 first paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%'
-        />
+        /> */}
+        <img src={isMobileWithTablet ? mobileContent1 : content1} />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
@@ -101,154 +102,159 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        <LazyLoadImage
+        {/* <LazyLoadImage
           alt={'Chapter 1 second paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent1a : content1a}
           width='100%'
-        />
+        /> */}
+        <img src={isMobileWithTablet ? mobileContent1a : content1a} />
       </div>
-      <div className='tj f4 ph4 ph5-ns mt5'>
-        <p className='lh-copy'>
-          There are some subjects whose meaning people consistently look for:
+    </div>
+    <div className='tj f4 ph4 ph5-ns mt5'>
+      <p className='lh-copy'>
+        There are some subjects whose meaning people consistently look for:
           dreaming about <span className='highlights'>snakes</span> and{' '}
-          <span className='highlights'>falling teeth</span> for instance. They
-          appeared in all the explored languages from 2008 to 2018.
+        <span className='highlights'>falling teeth</span> for instance. They
+        appeared in all the explored languages from 2008 to 2018.
         </p>
-      </div>
-      <div className='w-100 tc mt5 flex flex-column items-center'>
-        <LazyLoadImage
-          alt={'Dreaming about snakes'}
-          effect="opacity"
-          src={snake}
-          height={130}
-        />
-        <h2 className='mv3 mb5'>Dreaming about snakes</h2>
-      </div>
-      <div className='w-100 tc mt4'>
-        <LazyLoadImage
+    </div>
+    <div className='w-100 tc mt5 flex flex-column items-center'>
+      <LazyLoadImage
+        alt={'Dreaming about snakes'}
+        effect="opacity"
+        src={snake}
+        height={130}
+      />
+      <h2 className='mv3 mb5'>Dreaming about snakes</h2>
+    </div>
+    <div className='w-100 tc mt4'>
+      {/* <LazyLoadImage
           alt={'Chapter 1 third paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%'
-        />
-      </div>
-      <div className='w-100 tc mt5 flex flex-column items-center'>
-        <LazyLoadImage
-          alt={'teeth'}
-          effect="opacity"
-          src={teeth}
-          height={160}
-        />
-        <h2 className='mv3 mb5'>Dreaming about falling teeth</h2>
-      </div>
-      <div className='w-100 tc mt4'>
-        <LazyLoadImage
+        /> */}
+      <img src={isMobileWithTablet ? mobileContent2 : content2} />
+    </div>
+    <div className='w-100 tc mt5 flex flex-column items-center'>
+      <LazyLoadImage
+        alt={'teeth'}
+        effect="opacity"
+        src={teeth}
+        height={160}
+      />
+      <h2 className='mv3 mb5'>Dreaming about falling teeth</h2>
+    </div>
+    <div className='w-100 tc mt4'>
+      {/* <LazyLoadImage
           alt={'Chapter 1 fourth paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%'
+        /> */}
+      <img src={isMobileWithTablet ? mobileContent3 : content3} />
+    </div>
+    <div className='tj f4 ph4 ph5-ns mt5'>
+      <div className='w-100 flex justify-center items-end flex-wrap'>
+        <LazyLoadImage
+          alt={'cabbage'}
+          effect="opacity"
+          src={collagecamel}
+          height={180}
         />
       </div>
-      <div className='tj f4 ph4 ph5-ns mt5'>
-        <div className='w-100 flex justify-center items-end flex-wrap'>
-          <LazyLoadImage
-            alt={'cabbage'}
-            effect="opacity"
-            src={collagecamel}
-            height={180}
-          />
-        </div>
-        <p className='lh-copy'>
-          On the other hand, there are unique subjects that only appeared
+      <p className='lh-copy'>
+        On the other hand, there are unique subjects that only appeared
           exploring specific languages: dreaming about{' '}
-          <span className='highlights'>cabbage</span> only appeared in Russian,
+        <span className='highlights'>cabbage</span> only appeared in Russian,
           dreaming about <span className='highlights'>camels</span> in Arabic,
           dreaming about <span className='highlights'>garlic</span> in
           Portuguese, about <span className='highlights'>iguanas</span> in
           Spanish, and about <span className='highlights'>fox</span> in English.
         </p>
-      </div>
+    </div>
 
-      <div className='w-100 tc mt5 flex flex-column items-center'>
-        <div className='w-100 flex justify-center items-end flex-wrap'>
-          <LazyLoadImage
-            alt={'camel'}
-            effect="opacity"
-            src={collagefox}
-            height={180}
-          />
-        </div>
-        <h2 className='mv3 mb5'>Unique subjects</h2>
-      </div>
-      <div className='w-100 tc mt4'>
+    <div className='w-100 tc mt5 flex flex-column items-center'>
+      <div className='w-100 flex justify-center items-end flex-wrap'>
         <LazyLoadImage
-          alt={'Chapter 1 fifth paragraph'}
+          alt={'camel'}
           effect="opacity"
-          src={isMobileWithTablet ? mobileContent4 : content4}
-          width='100%'
+          src={collagefox}
+          height={180}
         />
       </div>
+      <h2 className='mv3 mb5'>Unique subjects</h2>
+    </div>
+    <div className='w-100 tc mt4'>
+      {/* <LazyLoadImage
+        alt={'Chapter 1 fifth paragraph'}
+        effect="opacity"
+        src={isMobileWithTablet ? mobileContent4 : content4}
+        width='100%'
+      /> */}
+      <img src={isMobileWithTablet ? mobileContent4 : content4} />
+    </div>
 
-      <div className='tj f4 ph4 ph5-ns mt5'>
-        <p className='lh-copy'>
-          And then we’ve found interesting data exploring subjects with peaks in
-          the search interest over the years. In 2011, the related query with the
+    <div className='tj f4 ph4 ph5-ns mt5'>
+      <p className='lh-copy'>
+        And then we’ve found interesting data exploring subjects with peaks in
+        the search interest over the years. In 2011, the related query with the
           highest value in Japanese was{' '}
-          <span className='highlights'>earthquake</span>, in 2016 the one with
+        <span className='highlights'>earthquake</span>, in 2016 the one with
           the highest value in Arabic was{' '}
-          <span className='highlights'>traveling</span>.
+        <span className='highlights'>traveling</span>.
         </p>
-      </div>
-      <div className='w-100 tc mt5 flex flex-column items-center'>
-        <div className='w-100 flex justify-center items-end'>
-          <LazyLoadImage
-            alt={'luggage'}
-            effect="opacity"
-            src={luggage}
-            height={140}
-          />
-        </div>
-        <h2 className='mv3 mb5'>Peaks over the year</h2>
-      </div>
-
-      <div className='w-100 tc mt4'>
+    </div>
+    <div className='w-100 tc mt5 flex flex-column items-center'>
+      <div className='w-100 flex justify-center items-end'>
         <LazyLoadImage
-          alt={'Chapter 1 sixth paragraph'}
+          alt={'luggage'}
           effect="opacity"
-          src={isMobileWithTablet ? mobileContent5 : content5}
-          width='100%'
+          src={luggage}
+          height={140}
         />
       </div>
-      <div className='tj f4 ph4 ph5-ns mt5'>
-        <p className='lh-copy'>
-          Are you curious to explore the dreams by year and language? We’ve
-          designed a dream explorer!{' '}
-        </p>
-      </div>
+      <h2 className='mv3 mb5'>Peaks over the year</h2>
+    </div>
 
-      <div className='w-100 tc pb4 flex items-center flex-column'>
+    <div className='w-100 tc mt4'>
+      <LazyLoadImage
+        alt={'Chapter 1 sixth paragraph'}
+        effect="opacity"
+        src={isMobileWithTablet ? mobileContent5 : content5}
+        width='100%'
+      />
+    </div>
+    <div className='tj f4 ph4 ph5-ns mt5'>
+      <p className='lh-copy'>
+        Are you curious to explore the dreams by year and language? We’ve
+          designed a dream explorer!{' '}
+      </p>
+    </div>
+
+    <div className='w-100 tc pb4 flex items-center flex-column'>
+      <div
+        className='flex flex-column items-center ph4 pv3'
+        style={{ marginBottom: '50px' }}
+      >
         <div
-          className='flex flex-column items-center ph4 pv3'
-          style={{ marginBottom: '50px' }}
+          className='raleway explore-text'
+          onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 1</div>
+        <div
+          className='explore-icon'
+          onClick={() => context.setSelectedView('explore')}
         >
-          <div
-            className='raleway explore-text'
-            onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 1</div>
-          <div
-            className='explore-icon'
-            onClick={() => context.setSelectedView('explore')}
-          >
-            <div className='explore-icon-circle'></div>
-            <img
-              className='explore-icon-base svg-hover'
-              src={startExpl}
-              width={36}
-            />
-          </div>
+          <div className='explore-icon-circle'></div>
+          <img
+            className='explore-icon-base svg-hover'
+            src={startExpl}
+            width={36}
+          />
         </div>
       </div>
     </div>
+    </div >
   );
 };
 
