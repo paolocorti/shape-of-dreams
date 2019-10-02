@@ -1,6 +1,6 @@
 # The Shape Of Dreams
 
-[<img src="http://the-shape-of-dreams.com/share-preview.jpg" alt="The Shape of Dreams" width="900">](https://the-shape-of-dreams.com)
+[<img src="http://the-shape-of-dreams.com/share-preview_1.jpg" alt="The Shape of Dreams" width="900">](https://the-shape-of-dreams.com)
 
 The project is based on React bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
