@@ -110,7 +110,7 @@ const NavigationFooter = ({ history }) => {
                   }}
                   style={{ marginLeft: '5px' }}
                 >
-                  <TwitterShareButton url={'http://the-shape-of-dreams.com'} title={'The Shape of Dreams'} className='svg-hover'>
+                  <TwitterShareButton url={'the-shape-of-dreams.com'} title={'The Shape of Dreams'} className='svg-hover'>
                     <TwitterIcon size={24} round={true} iconBgStyle={{ fill: '#ffffff', border: '2px solid #43449a' }} logoFillColor={'#43449a'} />
                   </TwitterShareButton>
                 </motion.div>
