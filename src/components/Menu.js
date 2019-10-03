@@ -39,13 +39,9 @@ const Menu = ({ history }) => {
           onClick={() => goTo('/')}
         >
           <div
-            style={{
-              fontSize: isMobileWithTablet ? '28px' : '48px',
-              marginBottom: isMobileWithTablet ? 0 : '30px'
-            }}
             className={`${
               actualPath === '/' ? 'active' : ''
-              } w-100 white tl relative link-white`}
+              } w-100 menu-link white tl relative link-white`}
           >
             Home
           </div>
@@ -53,7 +49,6 @@ const Menu = ({ history }) => {
         <div
           className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter1')}
-          style={{ marginBottom: isMobileWithTablet ? 0 : '30px' }}
         >
           <div
             className='white tl menu-title'
@@ -63,8 +58,7 @@ const Menu = ({ history }) => {
           <div
             className={`${
               actualPath === '/chapter1' ? 'active' : ''
-              } white tl relative link-white`}
-            style={{ fontSize: isMobileWithTablet ? '24px' : '48px' }}
+              } white tl relative menu-link link-white`}
           >
             The Shapes of our Dreams
           </div>
@@ -72,7 +66,6 @@ const Menu = ({ history }) => {
         <div
           className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter2')}
-          style={{ marginBottom: isMobileWithTablet ? 0 : '30px' }}
         >
           <div
             className='white tl menu-title'
@@ -82,8 +75,7 @@ const Menu = ({ history }) => {
           <div
             className={`${
               actualPath === '/chapter2' ? 'active' : ''
-              } white tl relative link-white`}
-            style={{ fontSize: isMobileWithTablet ? '24px' : '48px' }}
+              } white tl relative menu-link link-white`}
           >
             The Worlds We Dream of
           </div>
@@ -91,7 +83,6 @@ const Menu = ({ history }) => {
         <div
           className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter3')}
-          style={{ marginBottom: isMobileWithTablet ? 0 : '30px' }}
         >
           <div
             className='white tl menu-title'
@@ -101,8 +92,7 @@ const Menu = ({ history }) => {
           <div
             className={`${
               actualPath === '/chapter3' ? 'active' : ''
-              } white tl relative link-white`}
-            style={{ fontSize: isMobileWithTablet ? '24px' : '48px' }}
+              } white tl relative menu-link link-white`}
           >
             A Time for Dreams
           </div>
@@ -110,7 +100,6 @@ const Menu = ({ history }) => {
         <div
           className='flex flex-column justify-center ph4 pointer mv4 mv0-ns'
           onClick={() => goTo('/chapter4')}
-          style={{ marginBottom: isMobileWithTablet ? 0 : '30px' }}
         >
           <div
             className='white tl menu-title'
@@ -120,8 +109,7 @@ const Menu = ({ history }) => {
           <div
             className={`${
               actualPath === '/chapter4' ? 'active' : ''
-              } white tl relative link-white`}
-            style={{ fontSize: isMobileWithTablet ? '24px' : '48px' }}
+              } white tl relative menu-link link-white`}
           >
             The Dreams that Connect Us
           </div>
@@ -130,16 +118,11 @@ const Menu = ({ history }) => {
         <div
           className='flex items-center ph4 mv4 mv0-ns'
           onClick={() => context.toggleAbout()}
-          style={{ marginBottom: isMobileWithTablet ? 0 : '30px' }}
         >
           <div
-            style={{
-              fontSize: isMobileWithTablet ? '28px' : '48px',
-              marginBottom: isMobileWithTablet ? 0 : '30px'
-            }}
             className={`${
               actualPath === '/' ? 'active' : ''
-              } w-100 white tl relative link-white`}
+              } w-100 white tl relative menu-link link-white`}
           >
             About
           </div>
@@ -148,8 +131,7 @@ const Menu = ({ history }) => {
         {isMobileWithTablet && (
           <div className='w-100 flex items-center ph4 mv4 mv0-ns'>
             <div
-              className='white tl'
-              style={{ fontSize: isMobileWithTablet ? '24px' : '48px' }}
+              className='white tl menu-link'
             >
               Share
             <div className='flex mt2'>

@@ -2,12 +2,27 @@
   & .menu-title {
     font-size: 14px;
   }
+
+  & .menu-link {
+    font-size: 28px;
+  }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 767px) {
   .menu { 
     & .menu-title {
       font-size: 22px;
+    }
+
+    & .menu-link {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    & .link-white:after {
+      background-color: #ffffff;
+      top: 56px;
+      width: 20%;
     }
   }
 }

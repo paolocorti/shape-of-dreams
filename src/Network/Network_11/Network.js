@@ -4,6 +4,7 @@ import NetworkLanguages from './NetworkLanguages';
 import NetworkTexts from './NetworkTexts';
 import NetworkCircles from './NetworkCircles';
 import { isMobile } from 'react-device-detect';
+import { isMobileWithTablet } from '../../constants';
 
 const languageLabel = {
   EN: 'English',
@@ -16,10 +17,10 @@ const languageLabel = {
   IN: 'Indonesian'
 };
 
-const Network9 = ({ year, show }) => {
+const Network11 = ({ year, show }) => {
   const [hovered, setHovered] = useState('');
   const [clicked, setClicked] = useState('');
-  const svgWidth = isMobile ? window.innerHeight * 0.7 : window.innerHeight * 0.6;
+  const svgWidth = isMobile ? (isMobileWithTablet ? window.innerHeight : window.innerHeight * 0.7) : window.innerHeight * 0.6;
   const svgHeight = svgWidth;
   const selectedCallback = language => {
     const selection = language === hovered ? '' : language;
@@ -58,4 +59,4 @@ const Network9 = ({ year, show }) => {
   );
 };
 
-export default Network9;
+export default Network11;

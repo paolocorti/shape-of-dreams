@@ -33,6 +33,18 @@
     right: 25px;
     top: 25px;
   }
+
+  & .about-title {
+    font-size: 32px;
+  }
+
+  & .about-subtitle {
+    font-size: 22px;
+  }
+
+  & .about-paragraph {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -52,6 +64,19 @@
       position: absolute;
       top: 10px;
       right: 10px;
+    }
+
+    & .about-title {
+      font-size: 48px;
+    }
+
+    & .about-subtitle {
+      font-size: 28px;
+    }
+
+    & .about-paragraph {
+      font-size: 24px;
+      line-height: 30px;
     }
   }
 }
