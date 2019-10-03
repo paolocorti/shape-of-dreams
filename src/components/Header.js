@@ -12,7 +12,7 @@ const Header = ({ location }) => {
   return (
     <div
       id='header'
-      className={isMobileWithTablet ? 'ph4' : ''}
+      className={isMobileWithTablet ? 'isTablet ph4' : ''}
       style={{ flex: 1, backgroundColor: isMobileWithTablet ? (context.selectedView === 'content' ? 'white' : '') : '' }}
     >
       <div

@@ -11,7 +11,7 @@ html, body, #root {
   width: 100%;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   body {
     background: white;
   }
@@ -84,7 +84,7 @@ html, body, #root {
   margin-left: -70px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   .read-close-legend {
     bottom: 50%;
     margin-left: -90px;
@@ -108,7 +108,7 @@ html, body, #root {
   font-size: 29px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   .read {
     max-width: 75%;
     margin: 0 auto;
@@ -136,7 +136,7 @@ h4 {
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   h1 {
     font-size: 54px;
   }
@@ -168,7 +168,7 @@ h4 {
   z-index: 999;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   .right-tap {
     right: -10px;
   }
@@ -554,7 +554,7 @@ h4 {
   width: 20%;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 900px) {
   .link-white:after {
     background-color: #ffffff;
     top: 60px;

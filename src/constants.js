@@ -1,4 +1,5 @@
 import { isMobile, isTablet } from 'react-device-detect';
+import { withOrientationChange } from 'react-device-detect';
 
 export const years = [
   2008,
