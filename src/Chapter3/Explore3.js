@@ -107,7 +107,7 @@ const Explore3 = ({ history, activeIndex }) => {
           <div className='how-to-read-image'
             style={{
               backgroundImage: `url(${isMobileWithTablet ? howtoreadMobile3 : howtoread3})`,
-              backgroundSize: isMobileWithTablet ? 'contain' : 'cover',
+              backgroundSize: 'contain',
             }}>
           </div>
 

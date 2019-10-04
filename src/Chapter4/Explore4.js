@@ -72,7 +72,7 @@ const Explore4 = ({ history, activeIndex }) => {
               backgroundImage: `url(${
                 isMobileWithTablet ? howtoreadMobile4 : howtoread4
                 })`,
-              backgroundSize: isMobileWithTablet ? 'contain' : 'cover',
+              backgroundSize: 'contain',
             }}
           />
 
