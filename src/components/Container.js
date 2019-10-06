@@ -1,3 +1,6 @@
+import 'core-js/es/map';
+import 'core-js/es/set';
+
 import React, { useState, useEffect, useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../appContext';

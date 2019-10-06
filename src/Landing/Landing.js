@@ -1,3 +1,6 @@
+import 'core-js/es/map';
+import 'core-js/es/set';
+
 import React, { useState, Suspense } from 'react';
 import './Landing.scss';
 import { isMobile } from 'react-device-detect';

@@ -1,3 +1,6 @@
+import 'core-js/es/map';
+import 'core-js/es/set';
+
 import React, { useContext } from 'react';
 import { Route, withRouter, Switch } from 'react-router-dom';
 import SwipeableRoutes from 'react-swipeable-routes';
@@ -14,7 +17,6 @@ import Menu from './components/Menu';
 import Legend from './components/Legend';
 import About from './components/About';
 import { isMobileWithTablet } from './constants';
-import DeviceOrientation from 'react-screen-orientation'
 
 
 const Routes = ({ location }) => {
