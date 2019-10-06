@@ -109,7 +109,7 @@ const Explore2 = ({ history, activeIndex }) => {
             <img className='pointer svg-hover' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
-        <div className='w-100 ph4 ios-fix' style={{ height: '120px' }}>
+        <div className='w-100 ph4 ios-fix' style={{ height: '110px' }}>
           {/* <h4 className='tl fw6 mv0'>Chapter 2</h4> */}
           <LanguageSelector
             languages={groupedByCountryKeys}
@@ -126,17 +126,17 @@ const Explore2 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px', marginBottom: isMobileWithTablet ? '0' : 'inherit' }}>
             Dream subjects by category
           </h1>
         </div>
         <div
           className={`flex flex-column relative tc ${isIOS ? 'ios-fix' : ''}`}
-          style={{ height: 'calc(100% - 120px)', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '0' : '0 auto' }}
+          style={{ height: 'calc(100% - 110px)', maxWidth: isMobileWithTablet ? '100%' : '75%', margin: isMobileWithTablet ? '0' : '0 auto' }}
         >
           <div
             className='flex flex-column justify-center items-center'
-            style={{ height: '70%', margin: isMobileWithTablet ? '10px 0' : '0 auto' }}
+            style={{ height: '70%', margin: isMobileWithTablet ? '10px 0 0 0' : '0 auto' }}
           >
             {
               selectedCategories.length ? (
