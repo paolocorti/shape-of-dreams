@@ -55,7 +55,7 @@ const BluePetals = ({
   const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.4;
 
   return (
-    <div className='flex w-100 justify-center flex-column'>
+    <div className='flex w-100 h-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>
         {selectedPetal === null
           ? 'All the categories'

@@ -24,7 +24,7 @@ const Routes = ({ location }) => {
   const context = useContext(AppContext);
 
   return (
-    <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: isMobileWithTablet ? 'auto' : '100%', overflow: isMobileWithTablet ? 'auto' : 'hidden' }}>
+    <div className={`w-100 ${pathname === '/' ? 'h-100' : ''}`} style={{ height: '100%', overflow: isMobileWithTablet ? 'auto' : 'hidden' }}>
       {pathname !== '/' && <Header />}
       {pathname !== '/' && <Menu />}
       {pathname !== '/' && <Legend />}

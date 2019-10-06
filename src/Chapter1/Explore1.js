@@ -158,7 +158,7 @@ const Explore1 = ({ history, activeIndex }) => {
             <img className='pointer svg-hover' src={close} alt='Close menu icon' width={30} />
           </div>
         </div>
-        <div className='w-100 ph4 ios-fix' style={{ height: isMobileWithTablet ? '125px' : '100px' }}>
+        <div className='w-100 ph4 ios-fix' style={{ height: isMobileWithTablet ? '110px' : '100px' }}>
           <LanguageSelector
             languages={groupedByCountryKeys}
             onSelect={onSelectLanguage}

@@ -3,7 +3,7 @@ import NetworkLines from './NetworkLines';
 import NetworkLanguages from './NetworkLanguages';
 import NetworkTexts from './NetworkTexts';
 import NetworkCircles from './NetworkCircles';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isTablet } from 'react-device-detect';
 
 const languageLabel = {
   EN: 'English',
@@ -45,7 +45,7 @@ const Network4 = ({ year }) => {
         viewBox='0 0 430 430'
         width={svgWidth}
         height={svgHeight}
-        style={{ maxWidth: isMobile ? (window.innerHeight < 550 ? '280px' : '400px') : '520px' }}
+        style={{ maxWidth: isMobile ? (isTablet ? '500px' : (window.innerHeight < 550 ? '280px' : '400px')) : '520px' }}
       >
         <NetworkLines selected={selected} />
         <NetworkCircles selected={selected} setSelected={selectedCallback} setClicked={selectedClickedCallback} />
