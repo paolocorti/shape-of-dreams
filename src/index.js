@@ -1,7 +1,8 @@
+import 'core-js/es';
+import 'core-js/es';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'core-js/es/map';
-import 'core-js/es/set';
 import { HashRouter } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { AppContext } from './appContext';

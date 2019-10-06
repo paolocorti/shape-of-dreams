@@ -20,7 +20,7 @@ const languageLabel = {
 const Network11 = ({ year, show }) => {
   const [hovered, setHovered] = useState('');
   const [clicked, setClicked] = useState('');
-  const svgWidth = isMobile ? (isMobileWithTablet ? window.innerHeight : window.innerHeight * 0.7) : window.innerHeight * 0.6;
+  const svgWidth = isMobile ? window.innerHeight * 0.7 : window.innerHeight * 0.6;
   const svgHeight = svgWidth;
   const selectedCallback = language => {
     const selection = language === hovered ? '' : language;
@@ -48,7 +48,7 @@ const Network11 = ({ year, show }) => {
         viewBox='0 0 430 430'
         width={svgWidth}
         height={svgHeight}
-        style={{ maxWidth: isMobile ? '400px' : '520px' }}
+        style={{ maxWidth: isMobile ? (window.innerHeight < 550 ? '280px' : '400px') : '520px' }}
       >
         <NetworkLines show={show} selected={selected} />
         <NetworkCircles selected={selected} setSelected={selectedCallback} setClicked={selectedClickedCallback} />
