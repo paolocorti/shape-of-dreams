@@ -44,10 +44,6 @@ const Explore3 = ({ history, activeIndex }) => {
     setNote(null);
   }
 
-  const onSelectYear = index => {
-    setSelectedYearIndex(index);
-  };
-
   const groupedByCountry = values(groupBy(categories, 'language'));
   const groupedByCountryKeys = Object.keys(groupBy(categories, 'language'));
   const groupedByYearAndCountry = groupedByCountry.map(val => {

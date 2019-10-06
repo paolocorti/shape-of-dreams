@@ -126,7 +126,7 @@ const Explore2 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px', marginTop: isMobileWithTablet ? '15px' : 'inherit', marginBottom: isMobileWithTablet ? '0' : 'inherit' }}>
+          <h1 className='tc fw7 mt4' style={{ fontSize: isMobileWithTablet ? '20px' : '23px', marginTop: isMobileWithTablet ? '15px' : '2rem', marginBottom: isMobileWithTablet ? '0' : 'inherit' }}>
             Dream subjects by category
           </h1>
         </div>

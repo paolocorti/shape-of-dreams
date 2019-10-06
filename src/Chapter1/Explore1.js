@@ -174,7 +174,7 @@ const Explore1 = ({ history, activeIndex }) => {
               />
             )
           }
-          <h1 className={`tc fw7 ${isMobileWithTablet ? 'mt4' : 'mt5'}`} style={{ fontSize: isMobileWithTablet ? '20px' : '23px', marginTop: isMobileWithTablet ? '15px' : 'inherit', marginBottom: isMobileWithTablet ? '0' : 'inherit' }}>
+          <h1 className={`tc fw7 ${isMobileWithTablet ? 'mt4' : 'mt5'}`} style={{ fontSize: isMobileWithTablet ? '20px' : '23px', marginTop: isMobileWithTablet ? '15px' : '2rem', marginBottom: isMobileWithTablet ? '0' : 'inherit' }}>
             Looking for dreams
           </h1>
         </div>

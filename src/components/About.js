@@ -2,9 +2,8 @@ import React, { useContext } from 'react';
 import './About.scss';
 import { AppContext } from '../appContext';
 import closeWhite from './images/close-white.svg'
-import { isMobileWithTablet } from '../constants';
 
-const About = ({ history }) => {
+const About = () => {
   const context = useContext(AppContext);
 
   const closeLegend = () => {

@@ -3,7 +3,6 @@ import { isMobile } from 'react-device-detect';
 import BluePetalEmpty from './BluePetalEmpty';
 import './BluePetal.scss';
 import Grid from './Grid';
-import { scaleLinear } from 'd3-scale';
 
 const languageLabel = {
   EN: 'English',
@@ -15,21 +14,6 @@ const languageLabel = {
   JP: 'Japanese',
 };
 
-const categoriesLabels = [
-  'Animals and insects',
-  'Human Body',
-  'Family and Relationships',
-  'Falling and Flying',
-  'Emotions',
-  'Food',
-  'Natural Elements',
-  'Weather events',
-  'Traveling and Transportations',
-  'Money',
-  'Supernatural',
-  'Other'
-];
-
 const BluePetalsEmpty = ({
   categories,
   language,
@@ -38,8 +22,6 @@ const BluePetalsEmpty = ({
   setSelectedPetal
 }) => {
   const svgWidth = isMobile ? window.innerHeight * 0.4 : window.innerHeight * 0.4;
-  const dimensionScale = scaleLinear().domain([0, 24]).range([0, 100])
-
   return (
     <div className='flex w-100 justify-center flex-column'>
       <div className='ph3 topic' style={{ fontSize: '22px' }}>

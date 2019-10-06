@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import petal1 from '../1C70124E3B71B787.png';
 import petal2 from '../1C70124E3B71B785.png';
 import petal3 from '../1C70124E3B71B784.png';
