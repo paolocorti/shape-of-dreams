@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BluePetal1 = ({ id, value, selectedPetal }) => {
-  console.log('BluePetal1')
   return (
     <g
       className={`bluepetal blupetal-${id}`}

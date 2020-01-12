@@ -37,7 +37,7 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
     setShow(false)
     setTimeout(() => {
       setShow(true)
-    }, 1000)
+    }, 500)
   }, [id])
 
   useEffect(() => {
@@ -163,10 +163,9 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
               j: [1],
               timing: { duration: 1000, ease: easeQuadOut, delay: 500 }
             })}
-
             leave={() => ({
               j: [0],
-              timing: { duration: 0 }
+              timing: { duration: 0, ease: easeQuadOut }
             })}
           >
             {state => {
@@ -193,23 +192,27 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
           <Animate
             show={show}
             start={() => ({
-              j: pathLength
+              j: pathLength,
+              o: 0,
             })}
             enter={() => ({
               j: [0],
+              o: [1],
               timing: { duration: 1400, delay: 0, ease: easeQuadOut }
             })}
             update={() => ({
               j: [0],
+              o: [1],
               timing: { duration: 1400, ease: easeQuadOut }
             })}
             leave={() => ({
               j: [pathLength],
-              timing: { duration: 0, ease: easeQuadOut }
+              o: [0],
+              timing: { duration: 0 }
             })}
           >
             {state => {
-              const { j } = state;
+              const { j, o } = state;
               return (
                 <LinePath
                   data={data}
@@ -225,6 +228,7 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
                   curve={curveMonotoneX}
                   strokeDasharray={pathLength}
                   strokeDashoffset={j}
+                  opacity={o}
                 />
               );
             }}

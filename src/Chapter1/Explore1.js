@@ -30,21 +30,9 @@ const Explore1 = ({ history, activeIndex }) => {
     setSelectedIndex(newIndex);
   };
 
-  const onTapRightDesktop = () => {
-    const newIndex =
-      selectedIndex < selectedTopics[0].length - 4 ? selectedIndex + 4 : 0;
-    setSelectedIndex(newIndex);
-  };
-
   const onTapLeft = () => {
     const newIndex =
       selectedIndex > 0 ? selectedIndex - 1 : selectedTopics[0].length - 1;
-    setSelectedIndex(newIndex);
-  };
-
-  const onTapLeftDesktop = () => {
-    const newIndex =
-      selectedIndex > 0 ? selectedIndex - 4 : selectedTopics[0].length - 4;
     setSelectedIndex(newIndex);
   };
 
@@ -58,10 +46,6 @@ const Explore1 = ({ history, activeIndex }) => {
     setSelectedYearIndex(index);
   };
 
-  const goToChapter1 = () => {
-    history.push(`/chapter1`);
-  };
-
   const groupedByCountry = groupBy(topics, 'language');
   const groupedByCountryValues = values(groupedByCountry);
   const groupedByCountryKeys = Object.keys(groupedByCountry);
@@ -69,8 +53,6 @@ const Explore1 = ({ history, activeIndex }) => {
   const groupedByYearAndCountry = groupedByCountryValues.map(val => {
     return values(groupBy(val, 'year'));
   });
-
-  const languageIndex = groupedByCountryKeys[selectedLanguageIndex];
 
   const selectedTopicsByLanguage =
     groupedByYearAndCountry[selectedLanguageIndex] || [];

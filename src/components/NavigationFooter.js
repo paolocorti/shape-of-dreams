@@ -64,7 +64,7 @@ const NavigationFooter = ({ history }) => {
             {isMobileWithTablet ? 'EXPLORE' : 'EXPLORE THE DREAMS'}
           </div>
         </div>
-        <div className='w-10 flex justify-center items-center h-100'>
+        <div className='flex justify-center items-center h-100'>
           <motion.div
             whileHover={{
               rotateY: 30,
@@ -73,12 +73,12 @@ const NavigationFooter = ({ history }) => {
                 duration: 0.5
               },
             }}
-            style={{ marginTop: '4px' }}
+            style={{ marginTop: '4px', width: '26px' }}
           >
             <img
               src={legend}
               alt='Legend icon'
-              width={26}
+              style={{ width: '26px' }}
               onClick={() => context.toggleLegend()}
               className='pointer svg-hover'
             />

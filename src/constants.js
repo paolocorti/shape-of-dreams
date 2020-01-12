@@ -2,7 +2,6 @@ import { isMobile, isTablet } from 'react-device-detect';
 import { withOrientationChange } from 'react-device-detect';
 
 export const years = [
-  2008,
   2009,
   2010,
   2011,
@@ -12,7 +11,8 @@ export const years = [
   2015,
   2016,
   2017,
-  2018
+  2018,
+  2019
 ];
 
 export const languages = ['EN', 'SP', 'FR', 'PO', 'RU', 'JP', 'AR'];

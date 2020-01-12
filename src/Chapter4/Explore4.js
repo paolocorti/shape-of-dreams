@@ -18,6 +18,7 @@ import Network8 from '../Network/Network_8';
 import Network9 from '../Network/Network_9';
 import Network10 from '../Network/Network_10';
 import Network11 from '../Network/Network_11';
+import Network12 from '../Network/Network_12';
 import { years } from '../constants';
 
 const Explore4 = ({ history, activeIndex }) => {
@@ -114,37 +115,37 @@ const Explore4 = ({ history, activeIndex }) => {
             }}
           >
             {selectedYearIndex === 0 && (
-              <Network1 year={years[selectedYearIndex]} />
-            )}
-            {selectedYearIndex === 1 && (
               <Network2 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 2 && (
+            {selectedYearIndex === 1 && (
               <Network3 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 3 && (
+            {selectedYearIndex === 2 && (
               <Network4 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 4 && (
+            {selectedYearIndex === 3 && (
               <Network5 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 5 && (
+            {selectedYearIndex === 4 && (
               <Network6 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 6 && (
+            {selectedYearIndex === 5 && (
               <Network7 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 7 && (
+            {selectedYearIndex === 6 && (
               <Network8 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 8 && (
+            {selectedYearIndex === 7 && (
               <Network9 year={years[selectedYearIndex]} />
             )}
-            {selectedYearIndex === 9 && (
+            {selectedYearIndex === 8 && (
               <Network10 year={years[selectedYearIndex]} />
             )}
+            {selectedYearIndex === 9 && (
+              <Network11 year={years[selectedYearIndex]} />
+            )}
             {selectedYearIndex === 10 && (
-              <Network11 show={show} year={years[selectedYearIndex]} />
+              <Network12 show={show} year={years[selectedYearIndex]} />
             )}
           </div>
           <div

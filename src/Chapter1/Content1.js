@@ -97,7 +97,7 @@ const Content1 = ({ history, activeIndex }) => {
             What does it mean to dream about..., Why do I dream about...,
             Meaning of dreaming...
           </span>{' '}
-          in seven languages from 2008 to 2018. We started from the top spoken languages and we selected
+          in seven languages from 2009 to 2019. We started from the top spoken languages and we selected
           the ones for which we have found enough data to explore the topic.
         </p>
       </div>
@@ -115,7 +115,7 @@ const Content1 = ({ history, activeIndex }) => {
           There are some subjects whose meaning people consistently look for:
           dreaming about <span className='highlights'>snakes</span> and{' '}
           <span className='highlights'>falling teeth</span> for instance. They
-          appeared in all the explored languages from 2008 to 2018.
+          appeared in all the explored languages from 2009 to 2019.
         </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>

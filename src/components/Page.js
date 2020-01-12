@@ -23,7 +23,7 @@ const Page = ({
   const [activePage, setActivePage] = useState(false);
   useEffect(() => {
     const active = activeIndex === pageIndex;
-    setActivePage(active);
+    //setActivePage(active);
   }, [activeIndex]);
 
   const actualPath = context.actualPath;

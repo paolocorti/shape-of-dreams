@@ -5962,5 +5962,593 @@
     "category": "9. traveling and transportations",
     "order": 9,
     "value": 2
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "1. animals / insects",
+    "value": 1,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "10. money",
+    "value": 0,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "11. supernatural",
+    "value": 0,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "12. other",
+    "value": 0,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "2. human body",
+    "value": 0,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "3.family and relationships",
+    "value": 2,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "4. falling and flying",
+    "value": 0,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "5. emotions",
+    "value": 0,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "6. food",
+    "value": 1,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "7. natural elements",
+    "value": 0,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "8. weather events",
+    "value": 0,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "AR",
+    "category": "9. traveling and transportations",
+    "value": 1,
+    "order": 9
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "1. animals / insects",
+    "value": 7,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "10. money",
+    "value": 1,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "11. supernatural",
+    "value": 2,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "12. other",
+    "value": 1,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "2. human body",
+    "value": 2,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "3.family and relationships",
+    "value": 12,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "4. falling and flying",
+    "value": 2,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "5. emotions",
+    "value": 0,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "6. food",
+    "value": 0,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "7. natural elements",
+    "value": 2,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "8. weather events",
+    "value": 2,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "EN",
+    "category": "9. traveling and transportations",
+    "value": 0,
+    "order": 9
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "1. animals / insects",
+    "value": 17,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "10. money",
+    "value": 1,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "11. supernatural",
+    "value": 3,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "12. other",
+    "value": 4,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "2. human body",
+    "value": 2,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "3.family and relationships",
+    "value": 6,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "4. falling and flying",
+    "value": 1,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "5. emotions",
+    "value": 0,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "6. food",
+    "value": 1,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "7. natural elements",
+    "value": 2,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "8. weather events",
+    "value": 1,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "SP",
+    "category": "9. traveling and transportations",
+    "value": 1,
+    "order": 9
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "1. animals / insects",
+    "value": 2,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "10. money",
+    "value": 0,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "11. supernatural",
+    "value": 0,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "12. other",
+    "value": 0,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "2. human body",
+    "value": 2,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "3.family and relationships",
+    "value": 0,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "4. falling and flying",
+    "value": 0,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "5. emotions",
+    "value": 0,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "6. food",
+    "value": 0,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "7. natural elements",
+    "value": 1,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "8. weather events",
+    "value": 0,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "FR",
+    "category": "9. traveling and transportations",
+    "value": 0,
+    "order": 9
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "1. animals / insects",
+    "value": 1,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "10. money",
+    "value": 0,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "11. supernatural",
+    "value": 0,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "12. other",
+    "value": 1,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "2. human body",
+    "value": 1,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "3.family and relationships",
+    "value": 1,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "4. falling and flying",
+    "value": 0,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "5. emotions",
+    "value": 2,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "6. food",
+    "value": 0,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "7. natural elements",
+    "value": 1,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "8. weather events",
+    "value": 2,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "JP",
+    "category": "9. traveling and transportations",
+    "value": 0,
+    "order": 9
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "1. animals / insects",
+    "value": 24,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "10. money",
+    "value": 1,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "11. supernatural",
+    "value": 0,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "12. other",
+    "value": 2,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "2. human body",
+    "value": 1,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "3.family and relationships",
+    "value": 8,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "4. falling and flying",
+    "value": 0,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "5. emotions",
+    "value": 0,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "6. food",
+    "value": 6,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "7. natural elements",
+    "value": 7,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "8. weather events",
+    "value": 0,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "PO",
+    "category": "9. traveling and transportations",
+    "value": 1,
+    "order": 9
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "1. animals / insects",
+    "value": 3,
+    "order": 1
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "10. money",
+    "value": 0,
+    "order": 10
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "11. supernatural",
+    "value": 0,
+    "order": 11
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "12. other",
+    "value": 0,
+    "order": 12
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "2. human body",
+    "value": 1,
+    "order": 2
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "3.family and relationships",
+    "value": 4,
+    "order": 3
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "4. falling and flying",
+    "value": 0,
+    "order": 4
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "5. emotions",
+    "value": 0,
+    "order": 5
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "6. food",
+    "value": 3,
+    "order": 6
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "7. natural elements",
+    "value": 0,
+    "order": 7
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "8. weather events",
+    "value": 1,
+    "order": 8
+  },
+  {
+    "year": 2019,
+    "language": "RU",
+    "category": "9. traveling and transportations",
+    "value": 1,
+    "order": 9
   }
 ]

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { groupBy, values } from 'lodash';
 import interestOverTime from '../data/interestOverTime.json';
 import howtoread3 from './images/cap3-leg-desk.png';
 import howtoreadMobile3 from './images/cap3-leg-mob.png';
@@ -9,7 +8,6 @@ import close from '../components/images/close.svg';
 import closeWhite from '../components/images/close-white.svg';
 import swipeHand from '../components/images/swipe-hand.svg';
 import Trend from '../Trend';
-import categories from '../data/categories.json';
 import TopicSelector from '../components/TopicSelector.js';
 import { isIOS } from 'react-device-detect';
 import { isMobileWithTablet } from '../constants';
@@ -43,14 +41,6 @@ const Explore3 = ({ history, activeIndex }) => {
   const deactivateNote = text => {
     setNote(null);
   }
-
-  const groupedByCountry = values(groupBy(categories, 'language'));
-  const groupedByCountryKeys = Object.keys(groupBy(categories, 'language'));
-  const groupedByYearAndCountry = groupedByCountry.map(val => {
-    return values(groupBy(val, 'year'));
-  });
-  const selectedCategories =
-    groupedByYearAndCountry[selectedLanguageIndex][selectedYearIndex];
 
   const topics = interestOverTime.map(v => v[0].topic);
 
