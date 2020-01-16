@@ -3102,7 +3102,7 @@
     "value": 190
   },
   {
-    "subject": "jaguar",
+    "subject": "jPguar",
     "language": "PO",
     "year": 2012,
     "value": 180
@@ -10332,915 +10332,1731 @@
     "value": 40
   },
   {
-    "subject": "eggs",
-    "language": "AR",
-    "year": 2019,
-    "value": 350
-  },
-  {
-    "subject": "traveling",
-    "language": "AR",
-    "year": 2019,
-    "value": 120
-  },
-  {
-    "subject": "cockroaches",
-    "language": "AR",
-    "year": 2019,
-    "value": 100
-  },
-  {
-    "subject": "engagement",
-    "language": "AR",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "birth",
-    "language": "AR",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "falling teeth",
-    "language": "EN",
-    "year": 2019,
-    "value": 12550
-  },
-  {
     "subject": "being pregnant",
-    "language": "EN",
+    "value": 34250,
     "year": 2019,
-    "value": 11000
-  },
-  {
-    "subject": "my ex every night",
-    "language": "EN",
-    "year": 2019,
-    "value": 5900
-  },
-  {
-    "subject": "a snake biting you",
-    "language": "EN",
-    "year": 2019,
-    "value": 350
-  },
-  {
-    "subject": "hair",
-    "language": "EN",
-    "year": 2019,
-    "value": 350
-  },
-  {
-    "subject": "someone who passed away",
-    "language": "EN",
-    "year": 2019,
-    "value": 250
+    "language": "RU"
   },
   {
     "subject": "being chased",
-    "language": "EN",
+    "value": 27300,
     "year": 2019,
-    "value": 200
-  },
-  {
-    "subject": "your crush",
-    "language": "EN",
-    "year": 2019,
-    "value": 170
-  },
-  {
-    "subject": "a baby",
-    "language": "EN",
-    "year": 2019,
-    "value": 160
-  },
-  {
-    "subject": "snakes",
-    "language": "EN",
-    "year": 2019,
-    "value": 140
-  },
-  {
-    "subject": "bear",
-    "language": "EN",
-    "year": 2019,
-    "value": 130
-  },
-  {
-    "subject": "giving birth",
-    "language": "EN",
-    "year": 2019,
-    "value": 130
-  },
-  {
-    "subject": "kissing someone",
-    "language": "EN",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "tornadoes",
-    "language": "EN",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "someone cheating on you",
-    "language": "EN",
-    "year": 2019,
-    "value": 100
-  },
-  {
-    "subject": "getting married",
-    "language": "EN",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "spiders",
-    "language": "EN",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "the same person every night",
-    "language": "EN",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "cats",
-    "language": "EN",
-    "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "water",
-    "language": "EN",
-    "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "fire",
-    "language": "EN",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "someone",
-    "language": "EN",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "cheating",
-    "language": "EN",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "earthquake",
-    "language": "EN",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "flying",
-    "language": "EN",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "zombies",
-    "language": "EN",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "falling",
-    "language": "EN",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "fox",
-    "language": "EN",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "ghost",
-    "language": "EN",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "money",
-    "language": "EN",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "rats",
-    "language": "EN",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "water",
-    "language": "FR",
-    "year": 2019,
-    "value": 130
-  },
-  {
-    "subject": "cats",
-    "language": "FR",
-    "year": 2019,
-    "value": 120
-  },
-  {
-    "subject": "losing teeth",
-    "language": "FR",
-    "year": 2019,
-    "value": 120
-  },
-  {
-    "subject": "falling teeth",
-    "language": "FR",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "snakes",
-    "language": "FR",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "being chased",
-    "language": "JP",
-    "year": 2019,
-    "value": 27300
-  },
-  {
-    "subject": "falling teeth",
-    "language": "JP",
-    "year": 2019,
-    "value": 11200
-  },
-  {
-    "subject": "cockroaches",
-    "language": "JP",
-    "year": 2019,
-    "value": 7600
-  },
-  {
-    "subject": "my ex",
-    "language": "JP",
-    "year": 2019,
-    "value": 5050
-  },
-  {
-    "subject": "fire",
-    "language": "JP",
-    "year": 2019,
-    "value": 300
-  },
-  {
-    "subject": "earthquake",
-    "language": "JP",
-    "year": 2019,
-    "value": 200
+    "language": "JP"
   },
   {
     "subject": "tsunami",
-    "language": "JP",
+    "value": 14450,
     "year": 2019,
-    "value": 150
+    "language": "JP"
   },
   {
-    "subject": "bad dream",
-    "language": "JP",
+    "subject": "falling teeth",
+    "value": 12550,
     "year": 2019,
-    "value": 70
+    "language": "EN"
   },
   {
-    "subject": "scary dreams",
-    "language": "JP",
+    "subject": "falling teeth",
+    "value": 11200,
     "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "a baby",
-    "language": "PO",
-    "year": 2019,
-    "value": 5700
-  },
-  {
-    "subject": "coconut",
-    "language": "PO",
-    "year": 2019,
-    "value": 400
-  },
-  {
-    "subject": "lice",
-    "language": "PO",
-    "year": 2019,
-    "value": 250
-  },
-  {
-    "subject": "dirty water",
-    "language": "PO",
-    "year": 2019,
-    "value": 200
-  },
-  {
-    "subject": "money",
-    "language": "PO",
-    "year": 2019,
-    "value": 190
-  },
-  {
-    "subject": "gecko",
-    "language": "PO",
-    "year": 2019,
-    "value": 160
-  },
-  {
-    "subject": "rough sea",
-    "language": "PO",
-    "year": 2019,
-    "value": 160
-  },
-  {
-    "subject": "a wedding dress",
-    "language": "PO",
-    "year": 2019,
-    "value": 150
-  },
-  {
-    "subject": "honey",
-    "language": "PO",
-    "year": 2019,
-    "value": 130
-  },
-  {
-    "subject": "someone who passed away",
-    "language": "PO",
-    "year": 2019,
-    "value": 120
-  },
-  {
-    "subject": "a bus",
-    "language": "PO",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "clean water",
-    "language": "PO",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "someone you like",
-    "language": "PO",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "elephant",
-    "language": "PO",
-    "year": 2019,
-    "value": 100
-  },
-  {
-    "subject": "jaguar",
-    "language": "PO",
-    "year": 2019,
-    "value": 100
-  },
-  {
-    "subject": "a green frog",
-    "language": "PO",
-    "year": 2019,
-    "value": 90
-  },
-  {
-    "subject": "crabs",
-    "language": "PO",
-    "year": 2019,
-    "value": 90
-  },
-  {
-    "subject": "swimming",
-    "language": "PO",
-    "year": 2019,
-    "value": 90
-  },
-  {
-    "subject": "water",
-    "language": "PO",
-    "year": 2019,
-    "value": 90
-  },
-  {
-    "subject": "a coral snake",
-    "language": "PO",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "a white horse",
-    "language": "PO",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "a yellow snake",
-    "language": "PO",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "mud",
-    "language": "PO",
-    "year": 2019,
-    "value": 80
-  },
-  {
-    "subject": "a black bull",
-    "language": "PO",
-    "year": 2019,
-    "value": 70
+    "language": "JP"
   },
   {
     "subject": "being pregnant",
-    "language": "PO",
+    "value": 11000,
     "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "cockroaches",
-    "language": "PO",
-    "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "parrots",
-    "language": "PO",
-    "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "snakes",
-    "language": "PO",
-    "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "a broken egg",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "a lot of water",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "a mouse",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "bees",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "mouse",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "scorpion",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "watermelon",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "white cat",
-    "language": "PO",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "a bird",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "a gecko",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "betrayal",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "bread",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "breastfeeding",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "a dog",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "fire",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "garlic",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "horses",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "lion",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "police",
-    "language": "PO",
-    "year": 2019,
-    "value": 50
-  },
-  {
-    "subject": "bat",
-    "language": "PO",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "falling hair",
-    "language": "PO",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "pregnancy",
-    "language": "PO",
-    "year": 2019,
-    "value": 40
-  },
-  {
-    "subject": "being pregnant",
-    "language": "RU",
-    "year": 2019,
-    "value": 34250
+    "language": "EN"
   },
   {
     "subject": "partner cheating",
-    "language": "RU",
+    "value": 10000,
     "year": 2019,
-    "value": 10000
+    "language": "RU"
+  },
+  {
+    "subject": "broken teeth",
+    "value": 9800,
+    "year": 2019,
+    "language": "JP"
   },
   {
     "subject": "puppies",
-    "language": "RU",
+    "value": 8700,
     "year": 2019,
-    "value": 8700
-  },
-  {
-    "subject": "kittens",
-    "language": "RU",
-    "year": 2019,
-    "value": 8100
-  },
-  {
-    "subject": "fried fish",
-    "language": "RU",
-    "year": 2019,
-    "value": 7600
-  },
-  {
-    "subject": "a baby",
-    "language": "RU",
-    "year": 2019,
-    "value": 7350
-  },
-  {
-    "subject": "wedding",
-    "language": "RU",
-    "year": 2019,
-    "value": 5900
-  },
-  {
-    "subject": "squirrels",
-    "language": "RU",
-    "year": 2019,
-    "value": 3700
-  },
-  {
-    "subject": "picking mushrooms",
-    "language": "RU",
-    "year": 2019,
-    "value": 200
-  },
-  {
-    "subject": "falling teeth",
-    "language": "RU",
-    "year": 2019,
-    "value": 190
-  },
-  {
-    "subject": "raw meat",
-    "language": "RU",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "a car",
-    "language": "RU",
-    "year": 2019,
-    "value": 70
-  },
-  {
-    "subject": "snow",
-    "language": "RU",
-    "year": 2019,
-    "value": 60
-  },
-  {
-    "subject": "dinosaurs",
-    "language": "SP",
-    "year": 2019,
-    "value": 500
-  },
-  {
-    "subject": "lice",
-    "language": "SP",
-    "year": 2019,
-    "value": 200
-  },
-  {
-    "subject": "the end of the world",
-    "language": "SP",
-    "year": 2019,
-    "value": 200
-  },
-  {
-    "subject": "fish",
-    "language": "SP",
-    "year": 2019,
-    "value": 150
-  },
-  {
-    "subject": "lions",
-    "language": "SP",
-    "year": 2019,
-    "value": 150
-  },
-  {
-    "subject": "flying",
-    "language": "SP",
-    "year": 2019,
-    "value": 130
-  },
-  {
-    "subject": "scorpion",
-    "language": "SP",
-    "year": 2019,
-    "value": 130
-  },
-  {
-    "subject": "keys",
-    "language": "SP",
-    "year": 2019,
-    "value": 120
-  },
-  {
-    "subject": "scorpion",
-    "language": "SP",
-    "year": 2019,
-    "value": 120
-  },
-  {
-    "subject": "a baby",
-    "language": "SP",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "bulls",
-    "language": "SP",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "escape",
-    "language": "SP",
-    "year": 2019,
-    "value": 110
-  },
-  {
-    "subject": "goldfish",
-    "language": "SP",
-    "year": 2019,
-    "value": 110
+    "language": "RU"
   },
   {
     "subject": "being chased",
-    "language": "SP",
+    "value": 8650,
     "year": 2019,
-    "value": 100
+    "language": "EN"
   },
   {
-    "subject": "snakes",
-    "language": "SP",
+    "subject": "kittens",
+    "value": 8100,
     "year": 2019,
-    "value": 100
+    "language": "RU"
   },
   {
-    "subject": "someone you like",
-    "language": "SP",
+    "subject": "cockroaches",
+    "value": 7600,
     "year": 2019,
-    "value": 90
+    "language": "JP"
   },
   {
-    "subject": "demons",
-    "language": "SP",
+    "subject": "fried fish",
+    "value": 7600,
     "year": 2019,
-    "value": 80
+    "language": "RU"
   },
   {
-    "subject": "mice",
-    "language": "SP",
+    "subject": "a baby",
+    "value": 7350,
     "year": 2019,
-    "value": 80
+    "language": "RU"
   },
   {
-    "subject": "tiger",
-    "language": "SP",
+    "subject": "flood",
+    "value": 7150,
     "year": 2019,
-    "value": 80
+    "language": "JP"
   },
   {
-    "subject": "bread",
-    "language": "SP",
+    "subject": "my ex every night",
+    "value": 5900,
     "year": 2019,
-    "value": 70
+    "language": "EN"
   },
   {
-    "subject": "crabs",
-    "language": "SP",
+    "subject": "wedding",
+    "value": 5900,
     "year": 2019,
-    "value": 70
+    "language": "RU"
   },
   {
-    "subject": "someone who passed away",
-    "language": "SP",
+    "subject": "centipedes",
+    "value": 5100,
     "year": 2019,
-    "value": 70
+    "language": "SP"
   },
   {
-    "subject": "your ex boyfriend",
-    "language": "SP",
+    "subject": "my ex",
+    "value": 5050,
     "year": 2019,
-    "value": 70
+    "language": "JP"
   },
   {
-    "subject": "having a baby",
-    "language": "SP",
+    "subject": "a spider",
+    "value": 3950,
     "year": 2019,
-    "value": 60
+    "language": "RU"
   },
   {
-    "subject": "murky water",
-    "language": "SP",
+    "subject": "losing teeth",
+    "value": 3900,
     "year": 2019,
-    "value": 60
+    "language": "EN"
   },
   {
-    "subject": "spiders",
-    "language": "SP",
+    "subject": "someone close to you",
+    "value": 3850,
     "year": 2019,
-    "value": 60
+    "language": "EN"
   },
   {
-    "subject": "UFOs",
-    "language": "SP",
+    "subject": "a baby",
+    "value": 3750,
     "year": 2019,
-    "value": 60
+    "language": "FR"
   },
   {
-    "subject": "water",
-    "language": "SP",
+    "subject": "squirrels",
+    "value": 3700,
     "year": 2019,
-    "value": 60
+    "language": "RU"
   },
   {
-    "subject": "wolves",
-    "language": "SP",
+    "subject": "broken teeth",
+    "value": 2400,
     "year": 2019,
-    "value": 60
+    "language": "FR"
   },
   {
-    "subject": "your hair falls out",
-    "language": "SP",
+    "subject": "a baby",
+    "value": 2000,
     "year": 2019,
-    "value": 60
+    "language": "PO"
   },
   {
-    "subject": "your partner cheating on you",
-    "language": "SP",
+    "subject": "someone who has passed away",
+    "value": 650,
     "year": 2019,
-    "value": 60
+    "language": "EN"
   },
   {
-    "subject": "airplanes",
-    "language": "SP",
+    "subject": "your partner cheating",
+    "value": 550,
     "year": 2019,
-    "value": 50
+    "language": "EN"
   },
   {
-    "subject": "bees",
-    "language": "SP",
+    "subject": "dinosaurs",
+    "value": 500,
     "year": 2019,
-    "value": 50
+    "language": "SP"
   },
   {
-    "subject": "falling teeth",
-    "language": "SP",
+    "subject": "weird dreams",
+    "value": 500,
     "year": 2019,
-    "value": 50
+    "language": "JP"
+  },
+  {
+    "subject": "kissing someone",
+    "value": 400,
+    "year": 2019,
+    "language": "SP"
   },
   {
     "subject": "owls",
-    "language": "SP",
+    "value": 400,
     "year": 2019,
-    "value": 50
+    "language": "SP"
   },
   {
-    "subject": "sharks",
-    "language": "SP",
+    "subject": "cockroaches",
+    "value": 400,
     "year": 2019,
-    "value": 50
+    "language": "PO"
   },
   {
-    "subject": "tornadoes",
-    "language": "SP",
+    "subject": "coconut",
+    "value": 400,
     "year": 2019,
-    "value": 50
+    "language": "PO"
   },
   {
-    "subject": "witches",
-    "language": "SP",
+    "subject": "eggs",
+    "value": 350,
     "year": 2019,
-    "value": 50
+    "language": "AR"
+  },
+  {
+    "subject": "a snake biting you",
+    "value": 350,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "hair",
+    "value": 350,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "dogs",
+    "value": 300,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "having your car stolen",
+    "value": 300,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "fire",
+    "value": 300,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "big mice",
+    "value": 250,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "numbers",
+    "value": 250,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "lice",
+    "value": 250,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "scorpion",
+    "value": 250,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a snake",
+    "value": 200,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "lice",
+    "value": 200,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "the end of the world",
+    "value": 200,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "white mice",
+    "value": 200,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "earthquake",
+    "value": 200,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "crabs",
+    "value": 200,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "dirty water",
+    "value": 200,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "picking mushrooms",
+    "value": 200,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "pregnancy",
+    "value": 200,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "zombies",
+    "value": 190,
+    "year": 2019,
+    "language": "EN"
   },
   {
     "subject": "money",
-    "language": "SP",
+    "value": 190,
     "year": 2019,
-    "value": 40
+    "language": "PO"
+  },
+  {
+    "subject": "a broken phone",
+    "value": 190,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "breaking up",
+    "value": 190,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "falling teeth",
+    "value": 190,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "my boyfriend cheating",
+    "value": 180,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "tornadoes",
+    "value": 180,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "tooth falling",
+    "value": 180,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "fire",
+    "value": 180,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "your crush",
+    "value": 170,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "monkeys",
+    "value": 170,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "winning the lottery",
+    "value": 170,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "horses",
+    "value": 170,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "husband's betrayal",
+    "value": 170,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a baby",
+    "value": 160,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "tarantulas",
+    "value": 160,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "gecko",
+    "value": 160,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "rough sea",
+    "value": 160,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "waking up",
+    "value": 160,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "potatoes",
+    "value": 160,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "cheating partner",
+    "value": 150,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "fish",
+    "value": 150,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "lions",
+    "value": 150,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "rats",
+    "value": 150,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "a wedding dress",
+    "value": 150,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "eggs",
+    "value": 150,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "earthquake",
+    "value": 150,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "the person you like",
+    "value": 140,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "a river",
+    "value": 140,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "cheating",
+    "value": 140,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "the end of the world",
+    "value": 140,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "A bear",
+    "value": 130,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "giving birth",
+    "value": 130,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "flying",
+    "value": 130,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "scorpions",
+    "value": 130,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "green snake",
+    "value": 130,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "water",
+    "value": 130,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a toilet",
+    "value": 130,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "honey",
+    "value": 130,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "someone who has passed away",
+    "value": 130,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a monkey",
+    "value": 130,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "a rabbit",
+    "value": 130,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "nieve",
+    "value": 130,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "traveling",
+    "value": 120,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "fighting",
+    "value": 120,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "getting married",
+    "value": 120,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "falling",
+    "value": 120,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "keys",
+    "value": 120,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "cats",
+    "value": 120,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "losing teeth",
+    "value": 120,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a big fish",
+    "value": 120,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "breastfeeding",
+    "value": 120,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a snake",
+    "value": 120,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "terremoto",
+    "value": 120,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "fire",
+    "value": 110,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "jumping spiders",
+    "value": 110,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "kissing someone",
+    "value": 110,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "a baby",
+    "value": 110,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "bulls",
+    "value": 110,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "escape",
+    "value": 110,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "goldfish",
+    "value": 110,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "strangers",
+    "value": 110,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "snakes",
+    "value": 110,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a bus",
+    "value": 110,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a pregnant woman",
+    "value": 110,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "clean water",
+    "value": 110,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "larvae",
+    "value": 110,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "someone you like",
+    "value": 110,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a crocodile",
+    "value": 110,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "raw meat",
+    "value": 110,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "cockroaches",
+    "value": 100,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "prison",
+    "value": 100,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "my ex",
+    "value": 100,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "numbers",
+    "value": 100,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "partner cheating",
+    "value": 100,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "someone cheating on you",
+    "value": 100,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "being chased",
+    "value": 100,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "snakes",
+    "value": 100,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "someone who has passed away",
+    "value": 100,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "teeth falling out",
+    "value": 100,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "elephant",
+    "value": 100,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "jPguar",
+    "value": 100,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "roast beef",
+    "value": 100,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "fire",
+    "value": 90,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "water",
+    "value": 90,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "being pregnant",
+    "value": 90,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "bugs",
+    "value": 90,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "salt",
+    "value": 90,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "someone you like",
+    "value": 90,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "cheese",
+    "value": 90,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "perfume",
+    "value": 90,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a break up",
+    "value": 90,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "being bald",
+    "value": 90,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "a green frog",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a lot of money",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "being pregnant",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "cats",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "falling hair",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "fights",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "hair",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "swimming",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "water",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "worms",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "zombie",
+    "value": 90,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "having a baby",
+    "value": 80,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "spiders",
+    "value": 80,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "the same person every night",
+    "value": 80,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "bats",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "bed bugs",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "demons",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "kittens",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "mice",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "spiders",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "tiger",
+    "value": 80,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "a coral snake",
+    "value": 80,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a white horse",
+    "value": 80,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a yellow snake",
+    "value": 80,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "falling teeth",
+    "value": 80,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "mud",
+    "value": 80,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "ticks",
+    "value": 80,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "cats",
+    "value": 70,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "my crush",
+    "value": 70,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "someone",
+    "value": 70,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "bread",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "cats",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "crabs",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "vipers",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "wedding dress",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "worms",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "your crush",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "your ex boyfriend",
+    "value": 70,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "being robbed",
+    "value": 70,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "praying",
+    "value": 70,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "turtle",
+    "value": 70,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a nightmare",
+    "value": 70,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "bad dream",
+    "value": 70,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "a black bull",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a mouse",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a storm",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "black spider",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "buses",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "coral snake",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "dogs",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "parrots",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "police",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a snake",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "wedding dress",
+    "value": 70,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a car",
+    "value": 70,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "the cemetery",
+    "value": 70,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "engagement",
+    "value": 60,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "mouse",
+    "value": 60,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "an ex",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "cheating",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "falling",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "frogs",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "money",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "pipe",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "snow",
+    "value": 60,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "airplanes",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "an ex boyfriend",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "black ants",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "clear water",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "earthquake",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "fire",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "having a baby",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "insects",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "murky water",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "UFOs",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "water",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "wolves",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "your hair falls out",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "your partner cheating on you",
+    "value": 60,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "falling teeth",
+    "value": 60,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "rice",
+    "value": 60,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a broken egg",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a lot of water",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "bees",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "broken egg",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "fire",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "mouse",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "raw meat",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "tooth falling",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "watermelon",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "white cat",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "yellow snake",
+    "value": 60,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "snow",
+    "value": 60,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "fish",
+    "value": 50,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "earthquake",
+    "value": 50,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "an elevator",
+    "value": 50,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "flying",
+    "value": 50,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "octopus",
+    "value": 50,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "bees",
+    "value": 50,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "chickens",
+    "value": 50,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "falling teeth",
+    "value": 50,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "sharks",
+    "value": 50,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "tornadoes",
+    "value": 50,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "witches",
+    "value": 50,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "being bitten by a snake",
+    "value": 50,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "fighting",
+    "value": 50,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "scorpion",
+    "value": 50,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "turtle",
+    "value": 50,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "twins",
+    "value": 50,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "worms",
+    "value": 50,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "a bird",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a child",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a dog",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a gecko",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "betrayal",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "bread",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "cemetery",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "garlic",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "getting a haircut",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a lion",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "salt",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "wedding dress",
+    "value": 50,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "a cat",
+    "value": 50,
+    "year": 2019,
+    "language": "RU"
+  },
+  {
+    "subject": "birth",
+    "value": 40,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "cat",
+    "value": 40,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "spider",
+    "value": 40,
+    "year": 2019,
+    "language": "AR"
+  },
+  {
+    "subject": "dogs",
+    "value": 40,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "drowning",
+    "value": 40,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "fox",
+    "value": 40,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "ghost",
+    "value": 40,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "rats",
+    "value": 40,
+    "year": 2019,
+    "language": "EN"
+  },
+  {
+    "subject": "fake money",
+    "value": 40,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "money",
+    "value": 40,
+    "year": 2019,
+    "language": "SP"
+  },
+  {
+    "subject": "a baby",
+    "value": 40,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "ants",
+    "value": 40,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "rain",
+    "value": 40,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "shark",
+    "value": 40,
+    "year": 2019,
+    "language": "FR"
+  },
+  {
+    "subject": "scary dreams",
+    "value": 40,
+    "year": 2019,
+    "language": "JP"
+  },
+  {
+    "subject": "bat",
+    "value": 40,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "flying",
+    "value": 40,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "pregnancy",
+    "value": 40,
+    "year": 2019,
+    "language": "PO"
+  },
+  {
+    "subject": "mice",
+    "value": 40,
+    "year": 2019,
+    "language": "RU"
   }
 ]
