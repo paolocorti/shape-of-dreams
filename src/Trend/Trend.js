@@ -50,8 +50,8 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
   const svgWidth = isMobileWithTablet ? window.innerWidth * 0.8 : window.innerWidth * 0.75;
   const svgHeight = isMobileWithTablet ? window.innerWidth * 0.6 : window.innerHeight * 0.5;
   const trendHeight = svgHeight - 30;
-  const startDate = moment('2008-01-01');
-  const endDate = moment('2018-12-01');
+  const startDate = moment('2009-01-01');
+  const endDate = moment('2019-12-01');
 
   const scaleX = scaleTime()
     .domain([startDate, endDate])
@@ -153,7 +153,8 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
           <Animate
             show={show}
             start={() => ({
-              j: 0
+              j: 0,
+              timing: { duration: 300, ease: easeQuadOut }
             })}
             enter={() => ({
               j: [1],
@@ -165,7 +166,7 @@ const Trend = ({ data, toggleNote, activateNote, deactivateNote, id, activeIndex
             })}
             leave={() => ({
               j: [0],
-              timing: { duration: 0, ease: easeQuadOut }
+              timing: { duration: 0 }
             })}
           >
             {state => {
