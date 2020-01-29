@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import content1 from './images/cap2-01-desk.jpg';
-import content2 from './images/cap2-02-desk.jpg';
-import content3 from './images/cap2-03-desk.jpg';
-import mobileContent1 from './images/cap2-01-mob.jpg';
-import mobileContent2 from './images/cap2-02-mob.jpg';
-import mobileContent3 from './images/cap2-03-mob.jpg';
+import content1 from './images/cap2-01-desk.png';
+import content2 from './images/cap2-02-desk.png';
+import content3 from './images/cap2-03-desk.png';
+import mobileContent1 from './images/cap2-01-mob.png';
+import mobileContent2 from './images/cap2-02-mob.png';
+import mobileContent3 from './images/cap2-03-mob.png';
 import startExpl from '../components/images/start-expl.svg';
 
 import { AppContext } from '../appContext';

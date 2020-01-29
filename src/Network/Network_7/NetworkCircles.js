@@ -48,13 +48,13 @@ const NetworkCircles = ({ selected, setSelected, setClicked }) => {
             <image style={{ cursor: 'pointer', opacity: opacity }} width="192" height="188" xlinkHref={petal7} transform="matrix(0.2368 0 0 0.2368 357.0125 267.6838)" onClick={() => setClicked('FR')} onMouseEnter={() => isMobile ? noop : setSelected('FR')} onMouseLeave={() => isMobile ? noop : setSelected('')}>
             </image>
             <g>
-              <circle class="st3" cx="155.2" cy="182.1" r="22" style={{ opacity: selected === 'SP' ? 1 : 0 }} />
-              <circle class="st3" cx="355" cy="182.1" r="22" style={{ opacity: selected === 'EN' ? 1 : 0 }} />
-              <circle class="st3" cx="380.2" cy="290" r="22" style={{ opacity: selected === 'FR' ? 1 : 0 }} />
-              <circle class="st3" cx="199.6" cy="376.8" r="22" style={{ opacity: selected === 'PO' ? 1 : 0 }} />
-              <circle class="st3" cx="129.9" cy="290" r="22" style={{ opacity: selected === 'RU' ? 1 : 0 }} />
-              <circle class="st3" cx="310.6" cy="376.8" r="22" style={{ opacity: selected === 'JP' ? 1 : 0 }} />
-              <circle class="st3" cx="255.1" cy="133.7" r="22" style={{ opacity: selected === 'AR' ? 1 : 0 }} />
+              <circle className="st3" cx="155.2" cy="182.1" r="22" style={{ opacity: selected === 'SP' ? 1 : 0 }} />
+              <circle className="st3" cx="355" cy="182.1" r="22" style={{ opacity: selected === 'EN' ? 1 : 0 }} />
+              <circle className="st3" cx="380.2" cy="290" r="22" style={{ opacity: selected === 'FR' ? 1 : 0 }} />
+              <circle className="st3" cx="199.6" cy="376.8" r="22" style={{ opacity: selected === 'PO' ? 1 : 0 }} />
+              <circle className="st3" cx="129.9" cy="290" r="22" style={{ opacity: selected === 'RU' ? 1 : 0 }} />
+              <circle className="st3" cx="310.6" cy="376.8" r="22" style={{ opacity: selected === 'JP' ? 1 : 0 }} />
+              <circle className="st3" cx="255.1" cy="133.7" r="22" style={{ opacity: selected === 'AR' ? 1 : 0 }} />
             </g>
           </g >
         )
