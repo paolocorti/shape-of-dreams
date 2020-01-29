@@ -3102,7 +3102,7 @@
     "value": 190
   },
   {
-    "subject": "jPguar",
+    "subject": "jaguar",
     "language": "PO",
     "year": 2012,
     "value": 180
@@ -3552,7 +3552,7 @@
     "value": 150
   },
   {
-    "subject": "a bear",
+    "subject": "bear",
     "language": "EN",
     "year": 2013,
     "value": 140
@@ -8400,7 +8400,7 @@
     "value": 170
   },
   {
-    "subject": "a bear",
+    "subject": "bear",
     "language": "SP",
     "year": 2017,
     "value": 160
@@ -10836,7 +10836,7 @@
     "language": "RU"
   },
   {
-    "subject": "A bear",
+    "subject": "bear",
     "value": 130,
     "year": 2019,
     "language": "EN"
@@ -10902,7 +10902,7 @@
     "language": "RU"
   },
   {
-    "subject": "nieve",
+    "subject": "snow",
     "value": 130,
     "year": 2019,
     "language": "SP"
@@ -10968,7 +10968,7 @@
     "language": "RU"
   },
   {
-    "subject": "terremoto",
+    "subject": "earthquake",
     "value": 120,
     "year": 2019,
     "language": "SP"
@@ -11136,7 +11136,7 @@
     "language": "PO"
   },
   {
-    "subject": "jPguar",
+    "subject": "jaguar",
     "value": 100,
     "year": 2019,
     "language": "PO"
