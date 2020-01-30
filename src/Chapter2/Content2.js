@@ -80,10 +80,9 @@ const Content2 = ({ history, activeIndex }) => {
           <span className='highlights'>Other</span>.
         </p>
         <p className='lh-copy'>
-          Looking at the overall results, the categories with usually the
-          highest number of subjects is{' '}
-          <span className='highlights'>Animals and Insects</span>: its value is
-          often the highest one by year, especially in English, Spanish and
+          Looking at the overall results, the categories with the highest number of
+          of subjects are usually{' '}
+          <span className='highlights'>Animals and Insects</span>, especially for English, Spanish and
           Portuguese. It’s usually followed by{' '}
           <span className='highlights'>Family and relationships</span>.
         </p>

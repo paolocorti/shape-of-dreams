@@ -114,7 +114,7 @@ const Content1 = ({ history, activeIndex }) => {
         <p className='lh-copy'>
           There are some subjects whose meaning people consistently look for:
           dreaming about <span className='highlights'>snakes</span> and{' '}
-          <span className='highlights'>falling teeth</span> for instance. They
+          <span className='highlights'>falling or broken teeth</span> for instance. They
           appeared in all the explored languages from 2009 to 2019.
         </p>
       </div>
