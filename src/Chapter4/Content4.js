@@ -108,7 +108,7 @@ const Content4 = ({ history, activeIndex }) => {
             effect="opacity"
             threshold={150}
             src={collageelephant}
-            height={170} />
+            height={110} />
         </div>
         <h2 className='mt3 mb0'>Unique connections</h2>
       </div>
