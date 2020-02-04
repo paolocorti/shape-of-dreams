@@ -19,6 +19,16 @@ const Content4 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
   const [reload, setReload] = useState(false)
 
+  const changeSection = (section) => {
+    if (isMobileWithTablet) {
+      context.setSelectedView(section)
+    } else {
+      history.push({
+        search: "?" + new URLSearchParams({ section: section }).toString()
+      })
+    }
+  }
+
   useEffect(() => {
     if (activeIndex === 4) {
       setReload(true)
@@ -44,6 +54,7 @@ const Content4 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 4 first paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -57,6 +68,7 @@ const Content4 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'dna'}
             effect="opacity"
+            threshold={150}
             src={collagedog}
             height={170} />
         </div>
@@ -66,6 +78,7 @@ const Content4 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 4 second paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -79,6 +92,7 @@ const Content4 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 4 third paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%' />
       </div>
@@ -92,6 +106,7 @@ const Content4 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'elephant'}
             effect="opacity"
+            threshold={150}
             src={collageelephant}
             height={170} />
         </div>
@@ -101,6 +116,7 @@ const Content4 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 4 fourth paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent4 : content4}
           width='100%' />
       </div>
@@ -111,8 +127,8 @@ const Content4 = ({ history, activeIndex }) => {
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
         <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '50px' }}>
-          <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 4</div>
-          <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
+          <div className='raleway explore-text' onClick={() => changeSection('explore')}>EXPLORE CHAPTER 4</div>
+          <div className='explore-icon' onClick={() => changeSection('explore')}>
             <div className='explore-icon-circle'></div>
             <img className='explore-icon-base svg-hover' alt={'Explore chapter 4'} src={startExpl} width={36} />
           </div>

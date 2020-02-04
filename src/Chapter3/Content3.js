@@ -17,6 +17,16 @@ const Content3 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
   const [reload, setReload] = useState(false)
 
+  const changeSection = (section) => {
+    if (isMobileWithTablet) {
+      context.setSelectedView(section)
+    } else {
+      history.push({
+        search: "?" + new URLSearchParams({ section: section }).toString()
+      })
+    }
+  }
+
   useEffect(() => {
     if (activeIndex === 3) {
       setReload(true)
@@ -44,6 +54,7 @@ const Content3 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 3 first paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent0 : content0}
           width='100%' />
       </div>
@@ -56,6 +67,7 @@ const Content3 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 3 second paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%' />
       </div>
@@ -69,6 +81,7 @@ const Content3 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 3 third paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%' />
       </div>
@@ -83,6 +96,7 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
         <LazyLoadImage
           alt={'Chapter 3 fourth paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%' />
       </div>
@@ -93,8 +107,8 @@ And dreaming about tsunami had a peak in Google search interest on March 2011, c
       </div>
       <div className='w-100 tc pb4 flex items-center flex-column'>
         <div className='flex flex-column items-center ph4 pv3' style={{ marginBottom: '50px' }}>
-          <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 3</div>
-          <div className='explore-icon' onClick={() => context.setSelectedView('explore')}>
+          <div className='raleway explore-text' onClick={() => changeSection('explore')}>EXPLORE CHAPTER 3</div>
+          <div className='explore-icon' onClick={() => changeSection('explore')}>
             <div className='explore-icon-circle'></div>
             <img alt={'Explore chapter 3'} className='explore-icon-base svg-hover' src={startExpl} width={36} />
           </div>

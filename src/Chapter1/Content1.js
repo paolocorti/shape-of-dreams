@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import content1 from './images/cap1-01-desk.png';
 import content2 from './images/cap1-02-desk.png';
@@ -27,6 +26,16 @@ import NavigationBar from '../components/NavigationBar';
 const Content1 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
   const [reload, setReload] = useState(true);
+
+  const changeSection = (section) => {
+    if (isMobileWithTablet) {
+      context.setSelectedView(section)
+    } else {
+      history.push({
+        search: "?" + new URLSearchParams({ section: section }).toString()
+      })
+    }
+  }
 
   useEffect(() => {
     let timer;
@@ -86,6 +95,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 second paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent1a : content1a}
           width='100%'
         />
@@ -102,6 +112,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Dreaming about snakes'}
           effect="opacity"
+          threshold={150}
           src={snake}
           height={130}
         />
@@ -111,6 +122,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 third paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%'
         />
@@ -120,6 +132,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'teeth'}
           effect="opacity"
+          threshold={150}
           src={teeth}
           height={160}
         />
@@ -129,6 +142,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 fourth paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%'
         />
@@ -139,6 +153,7 @@ const Content1 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'cabbage'}
             effect="opacity"
+            threshold={150}
             src={collagecamel}
             height={180}
           />
@@ -159,6 +174,7 @@ const Content1 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'camel'}
             effect="opacity"
+            threshold={150}
             src={collagefox}
             height={180}
           />
@@ -169,6 +185,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 fifth paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent4 : content4}
           width='100%'
         />
@@ -188,6 +205,7 @@ const Content1 = ({ history, activeIndex }) => {
           <LazyLoadImage
             alt={'luggage'}
             effect="opacity"
+            threshold={150}
             src={luggage}
             height={140}
           />
@@ -199,6 +217,7 @@ const Content1 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 1 sixth paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent5 : content5}
           width='100%'
         />
@@ -217,10 +236,10 @@ const Content1 = ({ history, activeIndex }) => {
         >
           <div
             className='raleway explore-text'
-            onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 1</div>
+            onClick={() => changeSection('explore')}>EXPLORE CHAPTER 1</div>
           <div
             className='explore-icon'
-            onClick={() => context.setSelectedView('explore')}
+            onClick={() => changeSection('explore')}
           >
             <div className='explore-icon-circle'></div>
             <img

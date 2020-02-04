@@ -16,6 +16,16 @@ const Content2 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
   const [reload, setReload] = useState(false);
 
+  const changeSection = (section) => {
+    if (isMobileWithTablet) {
+      context.setSelectedView(section)
+    } else {
+      history.push({
+        search: "?" + new URLSearchParams({ section: section }).toString()
+      })
+    }
+  }
+
   useEffect(() => {
     if (activeIndex === 2) {
       setReload(true);
@@ -47,6 +57,7 @@ const Content2 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 2 first paragraph'}
           effect="opacity"
+          threshold={150}
           src={isMobileWithTablet ? mobileContent1 : content1}
           width='100%'
         />
@@ -92,6 +103,7 @@ const Content2 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 2 second paragraph'}
           effect='opacity'
+          threshold={150}
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%'
         />
@@ -110,6 +122,7 @@ const Content2 = ({ history, activeIndex }) => {
         <LazyLoadImage
           alt={'Chapter 2 third paragraph'}
           effect='opacity'
+          threshold={150}
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%'
         />
@@ -124,10 +137,10 @@ const Content2 = ({ history, activeIndex }) => {
           className='flex flex-column items-center ph4 pv3'
           style={{ marginBottom: '50px' }}
         >
-          <div className='raleway explore-text' onClick={() => context.setSelectedView('explore')}>EXPLORE CHAPTER 2</div>
+          <div className='raleway explore-text' onClick={() => changeSection('explore')}>EXPLORE CHAPTER 2</div>
           <div
             className='explore-icon'
-            onClick={() => context.setSelectedView('explore')}
+            onClick={() => changeSection('explore')}
           >
             <div className='explore-icon-circle'></div>
             <img
