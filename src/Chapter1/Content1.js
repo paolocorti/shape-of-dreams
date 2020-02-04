@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import content1 from './images/cap1-01-desk.png';
@@ -24,7 +23,6 @@ import startExpl from '../components/images/start-expl.svg';
 import { AppContext } from '../appContext';
 import { isMobileWithTablet } from '../constants';
 import NavigationBar from '../components/NavigationBar';
-import ParallaxImage from '../components/ParallaxImage';
 
 const Content1 = ({ history, activeIndex }) => {
   const context = useContext(AppContext);
@@ -71,23 +69,6 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt4'>
-        {/* <Parallax className="custom-class" offsetYMin={-100}
-          offsetYMax={100}>
-          <LazyLoadImage
-            alt={'Chapter 1 first paragraph'}
-            effect="opacity"
-            src={isMobileWithTablet ? mobileContent1 : content1}
-            width='100%'
-          /> 
-          <img src={isMobileWithTablet ? mobileContent1 : content1} />
-        </Parallax> 
-        <ParallaxImage src={isMobileWithTablet ? mobileContent1 : content1} />*/}
-        {/* <LazyLoadImage
-          alt={'Chapter 1 first paragraph'}
-          effect="opacity"
-          src={isMobileWithTablet ? mobileContent1 : content1}
-          width='100%'
-        /> */}
         <img src={isMobileWithTablet ? mobileContent1 : content1} />
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
@@ -102,20 +83,19 @@ const Content1 = ({ history, activeIndex }) => {
         </p>
       </div>
       <div className='w-100 tc mt5'>
-        {/* <LazyLoadImage
+        <LazyLoadImage
           alt={'Chapter 1 second paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent1a : content1a}
           width='100%'
-        /> */}
-        <img src={isMobileWithTablet ? mobileContent1a : content1a} />
+        />
+        {/* <img src={isMobileWithTablet ? mobileContent1a : content1a} /> */}
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          There are some subjects whose meaning people consistently look for:
+          There are some subjects whose meaning people consistently look for in different languages:
           dreaming about <span className='highlights'>snakes</span> and{' '}
-          <span className='highlights'>falling or broken teeth</span> for instance. They
-          appeared in all the explored languages from 2009 to 2019.
+          <span className='highlights'>falling or broken teeth</span> for instance.
         </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
@@ -128,13 +108,13 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3 mb5'>Dreaming about snakes</h2>
       </div>
       <div className='w-100 tc mt4'>
-        {/* <LazyLoadImage
+        <LazyLoadImage
           alt={'Chapter 1 third paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent2 : content2}
           width='100%'
-        /> */}
-        <img src={isMobileWithTablet ? mobileContent2 : content2} />
+        />
+        {/* <img src={isMobileWithTablet ? mobileContent2 : content2} /> */}
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <LazyLoadImage
@@ -146,13 +126,13 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3 mb5'>Dreaming about falling teeth</h2>
       </div>
       <div className='w-100 tc mt4'>
-        {/* <LazyLoadImage
+        <LazyLoadImage
           alt={'Chapter 1 fourth paragraph'}
           effect="opacity"
           src={isMobileWithTablet ? mobileContent3 : content3}
           width='100%'
-        /> */}
-        <img src={isMobileWithTablet ? mobileContent3 : content3} />
+        />
+        {/* <img src={isMobileWithTablet ? mobileContent3 : content3} /> */}
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <div className='w-100 flex justify-center items-end flex-wrap'>
@@ -166,7 +146,7 @@ const Content1 = ({ history, activeIndex }) => {
         <p className='lh-copy'>
           On the other hand, there are unique subjects that only appeared
           exploring specific languages: dreaming about{' '}
-          <span className='highlights'>cabbage</span> only appeared in Russian,
+          <span className='highlights'>picking mushrooms</span> only appeared in Russian,
           dreaming about <span className='highlights'>camels</span> in Arabic,
           dreaming about <span className='highlights'>garlic</span> in
           Portuguese, about <span className='highlights'>iguanas</span> in
@@ -186,23 +166,21 @@ const Content1 = ({ history, activeIndex }) => {
         <h2 className='mv3 mb5'>Unique subjects</h2>
       </div>
       <div className='w-100 tc mt4'>
-        {/* <LazyLoadImage
-        alt={'Chapter 1 fifth paragraph'}
-        effect="opacity"
-        src={isMobileWithTablet ? mobileContent4 : content4}
-        width='100%'
-      /> */}
-        <img src={isMobileWithTablet ? mobileContent4 : content4} />
+        <LazyLoadImage
+          alt={'Chapter 1 fifth paragraph'}
+          effect="opacity"
+          src={isMobileWithTablet ? mobileContent4 : content4}
+          width='100%'
+        />
+        {/* <img src={isMobileWithTablet ? mobileContent4 : content4} /> */}
       </div>
 
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
           And then we’ve found interesting data exploring subjects with peaks in
-          the search interest over the years. In 2011, the related query with the
-          highest value in Japanese was{' '}
-          <span className='highlights'>earthquake</span>, in 2016 the one with
-          the highest value in Arabic was{' '}
+          the search interest over the years. In 2016, the related query with the highest value in Arabic was{' '}
           <span className='highlights'>traveling</span>.
+          We've further explored the trends throughout the years in Chapter 3.
         </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>

@@ -71,7 +71,7 @@ const Content4 = ({ history, activeIndex }) => {
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          There are subjects that connected a specific language with the other ones in more than one year: such as <span className='highlights'>crying</span>, that linked Arabic with English in 2013 and 2018 and with Spanish and French in 2014.
+          There are subjects that connected a specific language with the other ones in more than one year: such as <span className='highlights'>crying</span>, that linked Arabic to English and Portuguese in 2018 and to Spanish and French in 2015.
         </p>
       </div>
       <div className='w-100 tc mt5'>
@@ -84,7 +84,8 @@ const Content4 = ({ history, activeIndex }) => {
       </div>
       <div className='tj f4 ph4 ph5-ns mt5'>
         <p className='lh-copy'>
-          We also found unique connections between couple of languages: such as dreaming about <span className='highlights'>elephants</span>, that connected English and Portuguese in 2011 and 2012 and dreaming about <span className='highlights'>toads</span>, that linked Portuguese and Spanish in 2015 and 2017.        </p>
+          We also found unique connections between couple of languages: such as dreaming about <span className='highlights'>toads</span>, that linked Portuguese and Spanish in 2015 and 2017.
+        </p>
       </div>
       <div className='w-100 tc mt5 flex flex-column items-center'>
         <div className='w-100 flex justify-center items-center'>

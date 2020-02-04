@@ -101,8 +101,8 @@ const Content2 = ({ history, activeIndex }) => {
           Also exploring the other categories is interesting: we discovered that
           over the years the language with more{' '}
           <span className='highlights'>Emotions</span> related subjects is
-          Japanese and we noticed a <span className='highlights'>Food</span>{' '}
-          peak in Russian in 2012.{' '}
+          Japanese and Russian has many <span className='highlights'>Food</span>{' '}
+          dream subjects.{' '}
         </p>
       </div>
       <div className='w-100 tc mt5'>
